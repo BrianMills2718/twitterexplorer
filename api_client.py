@@ -285,7 +285,18 @@ def execute_api_step(step_plan, previous_results, rapidapi_key):
     elif not final_data_structure and not data_key_found and len(all_results) == 0:
          final_data_structure = {} # Truly no data
 
-    # Return step info along with data/error for context
-    step_info = step_plan.copy() # Include original plan step details
-    step_info.update({"data": final_data_structure} if "error" not in final_data_structure else final_data_structure)
-    return step_info
+    # --- MODIFICATION START ---
+    # Prepare the final result dictionary
+    step_result_data = {"data": final_data_structure} if "error" not in final_data_structure else final_data_structure
+
+    # Include original plan info (like endpoint, step) and executed params
+    step_info_to_return = {
+        'endpoint': endpoint_suffix,
+        'step_executed': step_plan.get('step', -1), # Carry over step number if present
+        'executed_params': resolved_params, # Include the parameters used!
+        'reason': step_plan.get('reason') # Carry over reason
+    }
+    step_info_to_return.update(step_result_data) # Add data or error
+
+    return step_info_to_return
+    # --- MODIFICATION END ---
