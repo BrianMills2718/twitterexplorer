@@ -315,54 +315,19 @@ with graph_container:
     else:
         # --- Pyvis Integration ---
         try:
-            net = Network(height='600px', width='100%', directed=True, notebook=True, cdn_resources='in_line')
+            # Create a simpler network with fewer options to debug the loading issue
+            net = Network(height='600px', width='100%', directed=True, notebook=False)
             
-            # Add physics configuration buttons BEFORE setting options
-            # This ensures that options.configure is set up properly
-            net.show_buttons(filter_=['physics'])
-            
-            # Configure physics for better stability
-            physics_options = {
-                "enabled": True,
-                "solver": "barnesHut",
-                "barnesHut": {
-                    "gravitationalConstant": -10000,  # Strong repulsion to separate nodes
-                    "centralGravity": 0.3,            # Increased pull towards center for stability
-                    "springLength": 150,              # Longer edges for clearer visualization
-                    "springConstant": 0.04,           # Softer springs for slower motion
-                    "damping": 0.09,                  # Dampening for quicker settling
-                    "avoidOverlap": 0.5               # Increased overlap avoidance
-                },
-                "stabilization": {
-                    "enabled": True,
-                    "iterations": 1000,               # More iterations for initial stabilization
-                    "updateInterval": 50,             # Update view less frequently during stabilization
-                    "fit": True                       # Scale to fit all nodes when done
-                },
-                "minVelocity": 0.75,                  # Stop simulation when nodes slow down
-                "maxVelocity": 30                     # Cap maximum velocity to prevent "shooting" nodes
-            }
-            
-            # Set the physics configuration - with all options combined
-            options = {
-                "physics": physics_options,
-                "interaction": {
-                    "navigationButtons": True,        # Add navigation controls
-                    "hover": True,                    # Enable hover effects
-                },
-                "edges": {
-                    "smooth": {
-                        "type": "continuous",         # Smoother edge curves
-                        "forceDirection": "none",
-                    },
-                    "arrows": {
-                        "to": {"enabled": True, "scaleFactor": 0.5}  # Smaller arrows
-                    }
-                }
-            }
-            
-            # Apply all options at once AFTER show_buttons has been called
-            net.set_options(json.dumps(options))
+            # Use a more basic approach to physics - avoid show_buttons for now
+            # Instead use the built-in helper methods which are more reliable
+            net.barnes_hut(
+                gravity=-10000,
+                central_gravity=0.3,
+                spring_length=150,
+                spring_strength=0.05,
+                damping=0.09,
+                overlap=0.5
+            )
             
             # Add nodes and edges from NetworkX graph to Pyvis network
             # Map NetworkX attributes to Pyvis attributes
@@ -381,7 +346,7 @@ with graph_container:
                     pyvis_label = attrs.get('screen_name', node_id)
                     pyvis_title = f"<b>User:</b> @{pyvis_label}<br><b>Name:</b> {attrs.get('name', 'N/A')}<br><b>Bio:</b> {attrs.get('description', 'N/A')}<br><b>Followers:</b> {followers}"
                 elif node_type == "Tweet":
-                    pyvis_color = '#A_FB_A' # Green
+                    pyvis_color = '#A5F5A5' # Green (fixed color code typo)
                     engagement = attrs.get('retweets_count', 0) + attrs.get('likes_count', 0)
                     pyvis_size = 10 + int(min(max(engagement, 0)**0.25, 20))
                     pyvis_label = "" # Often hide tweet labels for clarity
@@ -391,9 +356,19 @@ with graph_container:
                      pyvis_size = 20
                      pyvis_label = attrs.get('name', node_id)
                      pyvis_title = f"<b>List:</b> {pyvis_label}<br><b>ID:</b> {attrs.get('list_id', node_id)}<br><b>Desc:</b> {attrs.get('description', 'N/A')}"
-                # Add elif for Space, Community...
+                # Add styling for Space, Community nodes
+                elif node_type == "Space":
+                     pyvis_color = '#FFA0BC' # Pink
+                     pyvis_size = 20
+                     pyvis_label = attrs.get('title', node_id)
+                     pyvis_title = f"<b>Space:</b> {pyvis_label}<br><b>ID:</b> {attrs.get('space_id', node_id)}<br><b>State:</b> {attrs.get('state', 'N/A')}"
+                elif node_type == "Community":
+                     pyvis_color = '#DDA0DD' # Purple (fixed color code)
+                     pyvis_size = 20
+                     pyvis_label = attrs.get('name', node_id)
+                     pyvis_title = f"<b>Community:</b> {pyvis_label}<br><b>ID:</b> {attrs.get('community_id', node_id)}"
 
-                net.add_node(str(node_id), label=pyvis_label, title=pyvis_title, color=pyvis_color, size=pyvis_size, node_type=node_type) # Store node_type if needed
+                net.add_node(str(node_id), label=pyvis_label, title=pyvis_title, color=pyvis_color, size=pyvis_size)
 
             edge_color_map = { # Same map as before
                 'FOLLOWS': '#DDDDDD', 'POSTED': '#BBBBBB', 'IS_REPLY_TO': '#77DD77',
@@ -407,50 +382,49 @@ with graph_container:
                 edge_color = edge_color_map.get(edge_type, '#888888')
                 edge_title = edge_type # Tooltip for edge type
 
-                net.add_edge(str(u), str(v), title=edge_title, color=edge_color, type=edge_type) # physics=False? Arrow settings?
+                net.add_edge(str(u), str(v), title=edge_title, color=edge_color)
 
-            # --- Generate and Display HTML ---
-            # Option 1: Save to file then display (might be more reliable for complex graphs)
-            # html_file = 'twitter_network.html'
-            # net.save_graph(html_file)
-            # with open(html_file, 'r', encoding='utf-8') as f:
-            #     html_content = f.read()
-            # components.html(html_content, height=610, scrolling=False)
-
-            # Option 2: Generate HTML string directly (simpler for moderate graphs)
+            # Generate HTML file
             try:
-                # Instead of using save_graph which relies on the system's default encoding
-                # Write the HTML directly with UTF-8 encoding
-                with open('pyvis_graph.html', 'w', encoding='utf-8') as f:
-                    f.write(net.generate_html())
+                # Simpler HTML generation - just create and display the file
+                file_path = "twitter_network.html"
+                net.save_graph(file_path)
                 
-                with open('pyvis_graph.html', 'r', encoding='utf-8') as f:
-                    html_content = f.read()
-                components.html(html_content, height=610, scrolling=False)
-            except UnicodeEncodeError as e:
-                # If we still have encoding issues, try a fallback approach
-                st.warning("Encountered encoding issues with graph data. Attempting fallback visualization...")
+                # Read and display HTML
+                with open(file_path, 'r', encoding='utf-8') as f:
+                    html_data = f.read()
+                    
+                # Include custom styles to improve display
+                html_data = html_data.replace('</head>', 
+                    '<style>.vis-network {border: 1px solid #ddd; border-radius: 5px;}</style></head>')
                 
-                # Clean node titles/labels to remove problematic characters
+                # Display the graph
+                components.html(html_data, height=610, scrolling=False)
+            except UnicodeEncodeError:
+                # Fallback if encoding issues occur
+                st.warning("Encountered character encoding issues. Using simplified visualization.")
+                # Create a new network with simplified node data
+                simple_net = Network(height='600px', width='100%', directed=True)
+                
+                # Copy nodes and edges but with simplified labels/titles
                 for node in net.nodes:
-                    if 'title' in node:
-                        # Replace any problematic characters with safe equivalents
-                        node['title'] = (str(node['title'])
-                                       .encode('ascii', 'replace')
-                                       .decode('ascii'))
-                    if 'label' in node:
-                        node['label'] = (str(node['label'])
-                                       .encode('ascii', 'replace')
-                                       .decode('ascii'))
+                    node_copy = node.copy()
+                    if 'title' in node_copy:
+                        node_copy['title'] = node_copy.get('label', str(node_copy['id']))
+                    simple_net.add_node(
+                        node_copy['id'], 
+                        label=node_copy.get('label', ''),
+                        color=node_copy.get('color', '#CCCCCC'),
+                        size=node_copy.get('size', 15)
+                    )
                 
-                # Try again with cleaned data
-                with open('pyvis_graph_clean.html', 'w', encoding='utf-8') as f:
-                    f.write(net.generate_html())
+                for edge in net.edges:
+                    simple_net.add_edge(edge['from'], edge['to'], color=edge.get('color', '#888888'))
                 
-                with open('pyvis_graph_clean.html', 'r', encoding='utf-8') as f:
-                    html_content = f.read()
-                components.html(html_content, height=610, scrolling=False)
-
+                # Save and display the simplified graph
+                simple_net.save_graph("twitter_network_simple.html")
+                with open("twitter_network_simple.html", 'r', encoding='utf-8') as f:
+                    components.html(f.read(), height=610, scrolling=False)
 
         except Exception as e:
             st.error(f"Failed to generate graph visualization: {e}")
