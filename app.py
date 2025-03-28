@@ -14,6 +14,63 @@ st.set_page_config(page_title="LLM Twitter Explorer", layout="wide")
 st.title("🕵️ LLM Twitter Explorer")
 st.caption("Ask questions about Twitter users, tweets, followers, etc.")
 
+# --- Examples Dropdown ---
+with st.expander("📋 Example Queries (Click to expand)", expanded=False):
+    st.markdown("""
+    ### Basic Info:
+    1. screenname.php: *"Tell me about the user @github."*
+    2. screenname.php: *"What is the location listed for @Google?"*
+    3. tweet.php: *"Show details for tweet 1905679299966914783."* (Use an ID from the timeline response)
+    4. tweet.php: *"How many retweets does tweet 1905677405760462873 have?"*
+    
+    ### Lists & Timelines:
+    5. timeline.php: *"What are the 5 most recent tweets from @YouTube?"* (Test implicit page limit)
+    6. timeline.php (Pagination): *"Show me 2 pages of the timeline for @reactjs."*
+    7. usermedia.php: *"Show recent photos or videos posted by @NatGeo."*
+    8. replies.php: *"What are some replies made by @nodejs?"* (Test this endpoint as documented)
+    9. latest_replies.php: *"Get replies to tweet 1905676627373113669."* (Use a known tweet ID)
+    10. tweet_thread.php: *"Show the conversation thread starting with tweet 1905679299966914783."* (Use ID of a likely thread start)
+    
+    ### Followers/Following:
+    11. followers.php: *"List some followers of @Docker."*
+    12. followers.php (Pagination): *"Get 2 pages of followers for @pythonlang."*
+    13. following.php: *"Who is @BillGates following?"*
+    14. checkfollow.php: *"Does @GoogleAI follow @MetaAI?"*
+    
+    ### Retweets & Interactions:
+    15. retweets.php: *"Who are some users that retweeted tweet 1905611611580084360?"* (Use a known tweet ID)
+    16. checkretweet.php: *"Did user @elonmusk retweet tweet 1905611611580084360?"*
+    
+    ### Search & Trends:
+    17. search.php: *"Search for recent tweets about 'artificial intelligence'."*
+    18. search.php (Type): *"Find 'People' accounts related to 'web development'."*
+    19. search.php (Type): *"Show the 'Latest' tweets containing #opensource."*
+    20. trends.php: *"What is trending in Canada?"*
+    
+    ### Lists (Requires Valid List IDs):
+    *To find List IDS use twitter search in browser then click the Lists tab after searching a topic, then click on the list and the id is at the end of the url like this https://x.com/i/lists/1558590202385518594*
+    
+    21. listtimeline.php: *"Show tweets from Twitter list ID 1558590202385518594."*
+    22. list_members.php: *"Who are the members of list 1558590202385518594?"*
+    23. list_followers.php: *"Get followers of list 1558590202385518594."*
+    
+    ### Communities & Spaces (Requires Valid IDs):
+    24. community_timeline.php: *"Show posts from community 1683580737021177863."*
+    *To find community id go to the left hand sidebar in your twitter browser, search your topic, then click the community then the id is at the end of the url such as https://x.com/i/communities/1816527453755703497*
+    
+    25. spaces.php: *"Get info about Twitter Space 1yoKMoOZwewJQ."*
+    *How to find a Space's URL: Tap the share icon then tap Copy Link. The URL should now be copied to your clipboard.*
+    
+    ### Bulk User Info:
+    26. screennames.php: *"Get profile details for user IDs 44196397, 1367531, 875856268056969216."* (Use known IDs)
+    
+    ### Multi-Step / Complex:
+    27. *"Find recent followers of @github and tell me their bios."* (Combines followers.php -> screennames.php)
+    28. *"Search for tweets about 'rust programming language', then show details of the first tweet found."* (search.php -> tweet.php)
+    29. *"Get the timeline for @MetaAI, find a tweet that quotes another tweet, and show the text of the quoted tweet."* (timeline.php -> requires logic to find quoted object)
+    30. *"Who follows @elonmusk? From that list, find someone who is blue verified and show their bio."* (followers.php -> filter -> screennames.php - may require multiple follower pages)
+    """)
+
 # --- Initialization ---
 # Load static data (ontology, endpoints)
 # This function is in state_manager and should ideally run only once.
