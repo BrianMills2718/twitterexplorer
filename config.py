@@ -14,14 +14,15 @@ RAPIDAPI_TWITTER_HOST = "twitter-api45.p.rapidapi.com"
 RAPIDAPI_BASE_URL = f"https://{RAPIDAPI_TWITTER_HOST}"
 
 # --- LLM Configuration ---
-GEMINI_MODEL_NAME = "gemini-1.5-pro-latest" # Or your preferred model
+#GEMINI_MODEL_NAME = "gemini-1.5-pro-latest" # Or your preferred model
+GEMINI_MODEL_NAME = "gemini-2.5-pro-exp-03-25"
 
 # --- Application Settings ---
 # HISTORY_FILE = "conversation_history.json" # No longer needed for session history
 ENDPOINTS_FILE = "merged_endpoints.json"
 ONTOLOGY_FILE = "ontology_synonyms.py"
 DEFAULT_MAX_PAGES_FALLBACK = 3
-API_TIMEOUT_SECONDS = 45
+API_TIMEOUT_SECONDS = 7
 
 # --- Prompt Templates ---
 # Note: Actual ontology/endpoints data will be loaded and inserted dynamically
