@@ -45,3 +45,9 @@ Thumbs.db
 
 # Conversation history (since we're not using file storage anymore)
 conversation_history.json 
+
+# Generated HTML files
+*.html
+pyvis_graph.html
+twitter_network.html
+twitter_network_simple.html 
