@@ -129,29 +129,35 @@ class AdaptivePlanner:
     def _select_strategy_type(self, situation: Dict, session: InvestigationSession) -> str:
         """Select the most appropriate strategy type based on situation"""
         
-        # If we haven't found anything yet, try broader approaches
-        if not situation['has_results'] and situation['total_searches'] > 5:
+        # FIRST PRIORITY: Start with the most basic searches
+        if situation['total_searches'] < 3:
+            return 'direct_search'
+        
+        # SECOND PRIORITY: If no results found yet, try name variations before going broad
+        if not situation['has_results'] and situation['total_searches'] < 8:
             if situation['query_characteristics']['is_person_specific']:
                 return 'alternative_spellings'
             else:
                 return 'contextual_search'
         
-        # If recent searches are ineffective, pivot strategy
-        if situation['recent_effectiveness'] < 3.0:
-            if len(situation['failed_approaches']) > 3:
-                return 'community_search'
+        # THIRD PRIORITY: If still no results after trying basics, go broader
+        if not situation['has_results'] and situation['total_searches'] >= 8:
+            return 'community_search'
+        
+        # FOURTH PRIORITY: If we found some results, build on success
+        if situation['has_results']:
+            if situation['satisfaction_score'] < 0.3:
+                return 'temporal_search'  # Try time-based refinement
+            elif situation['satisfaction_score'] < 0.6:
+                return 'contextual_search'  # Expand context
             else:
-                return 'contextual_search'
+                return 'direct_search'  # Drill deeper
         
-        # If we found some results, drill deeper
-        if situation['has_results'] and situation['satisfaction_score'] < 0.5:
-            return 'temporal_search'
+        # FALLBACK: If recent searches are very ineffective, try community approach
+        if situation['recent_effectiveness'] < 2.0:
+            return 'community_search'
         
-        # Default to direct search for new investigations
-        if situation['total_searches'] < 5:
-            return 'direct_search'
-        
-        return 'contextual_search'
+        return 'direct_search'
     
     def _generate_searches_for_strategy(self, strategy_type: str, session: InvestigationSession, situation: Dict) -> List[Dict]:
         """Generate specific searches for the chosen strategy"""
@@ -164,19 +170,42 @@ class AdaptivePlanner:
         if strategy_type == 'direct_search':
             if query_chars['extracted_names']:
                 name = query_chars['extracted_names'][0]
-                patterns = [
-                    f'"{name}" debunked',
-                    f'"{name}" hoax',
-                    f'"{name}" fact check',
-                    f'"{name}" false claims'
-                ]
+                
+                # VERY EARLY SEARCHES: Start with the most basic
+                if situation['total_searches'] < 2:
+                    patterns = [
+                        f'"{name}"',  # Just the name by itself
+                        f'{name}'     # Name without quotes
+                    ]
+                # EARLY SEARCHES: Add context but keep simple
+                elif situation['total_searches'] < 5:
+                    patterns = [
+                        f'"{name}" claims',
+                        f'"{name}" testimony',
+                        f'"{name}" story',
+                        f'"{name}" interview'
+                    ]
+                # LATER DIRECT SEARCHES: More specific terms
+                else:
+                    patterns = [
+                        f'"{name}" debunked',
+                        f'"{name}" hoax',
+                        f'"{name}" fact check',
+                        f'"{name}" false claims'
+                    ]
             else:
                 # Use key terms from query
                 key_term = ' '.join(query_chars['key_terms'][:2])
-                patterns = [
-                    f'"{key_term}" debunked',
-                    f'"{key_term}" hoax'
-                ]
+                if situation['total_searches'] < 2:
+                    patterns = [
+                        f'"{key_term}"',
+                        f'{key_term}'
+                    ]
+                else:
+                    patterns = [
+                        f'"{key_term}" debunked',
+                        f'"{key_term}" hoax'
+                    ]
         
         elif strategy_type == 'contextual_search':
             if query_chars['is_ufo_related']:
@@ -247,44 +276,42 @@ class AdaptivePlanner:
     def _create_enhanced_prompt(self, session: InvestigationSession, situation: Dict, strategy_type: str) -> str:
         """Create enhanced prompt that includes our analysis"""
         
-        context_parts = []
-        context_parts.append(f"ORIGINAL QUERY: {session.original_query}")
-        context_parts.append(f"SEARCHES COMPLETED: {situation['total_searches']}")
-        context_parts.append(f"RESULTS FOUND: {situation['total_results']}")
-        context_parts.append(f"SATISFACTION: {situation['satisfaction_score']:.1%}")
-        
-        if situation['failed_approaches']:
-            context_parts.append(f"FAILED APPROACHES: {', '.join(situation['failed_approaches'][-3:])}")
-        
-        if situation['successful_approaches']:
-            context_parts.append(f"SUCCESSFUL TERMS: {', '.join(situation['successful_approaches'][-3:])}")
-        
-        context_parts.append(f"RECOMMENDED STRATEGY: {strategy_type}")
-        context_parts.append(f"QUERY ANALYSIS: {situation['query_characteristics']}")
-        
-        prompt = f"""
-ITERATIVE INVESTIGATION - ADAPTIVE STRATEGY GENERATION
+        try:
+            from prompts.strategy_prompts import ADAPTIVE_STRATEGY_PROMPT
+            
+            context_parts = []
+            context_parts.append(f"SEARCHES COMPLETED: {situation['total_searches']}")
+            context_parts.append(f"RESULTS FOUND: {situation['total_results']}")
+            context_parts.append(f"SATISFACTION: {situation['satisfaction_score']:.1%}")
+            
+            if situation['failed_approaches']:
+                context_parts.append(f"FAILED APPROACHES: {', '.join(situation['failed_approaches'][-3:])}")
+            
+            if situation['successful_approaches']:
+                context_parts.append(f"SUCCESSFUL TERMS: {', '.join(situation['successful_approaches'][-3:])}")
+            
+            context_parts.append(f"RECOMMENDED STRATEGY: {strategy_type}")
+            context_parts.append(f"QUERY CHARACTERISTICS: {situation['query_characteristics']}")
+            
+            investigation_context = "\n".join(context_parts)
+            
+            return ADAPTIVE_STRATEGY_PROMPT.format(
+                original_query=session.original_query,
+                investigation_context=investigation_context
+            )
+            
+        except ImportError:
+            # Fallback to simpler prompt
+            return f"""
+Design the next strategic searches for: "{session.original_query}"
 
-{chr(10).join(context_parts)}
+CONTEXT: {situation['total_searches']} searches done, {situation['total_results']} results found
 
-Based on this analysis, generate 2-4 strategic Twitter searches that:
+STRATEGY FOCUS: {strategy_type}
 
-1. AVOID repeating failed approaches
-2. BUILD ON successful patterns found
-3. USE the recommended strategy type: {strategy_type}  
-4. ADAPT search terms based on what we've learned
-5. EXPLORE new angles if previous approaches failed
-
-For debunking investigations, prioritize:
-- Skeptical communities and fact-checkers
-- Expert analysis and credibility assessments
-- Alternative perspectives and critical voices
-- Specific claim analysis rather than general mentions
-
-Your searches should be strategic and build towards answering the original question.
+Based on what has been tried, design 2-4 searches that intelligently build on previous learning.
+Start simple if early in the investigation. Try variations if previous searches failed.
 """
-        
-        return prompt
     
     def _get_llm_strategy_refinement(self, enhanced_prompt: str) -> Dict[str, Any]:
         """Get LLM strategy refinement"""
