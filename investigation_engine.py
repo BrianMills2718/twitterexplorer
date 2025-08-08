@@ -261,20 +261,14 @@ class InvestigationEngine:
     def _generate_strategy(self, session: InvestigationSession) -> Dict[str, Any]:
         """Generate next investigation strategy using adaptive planner"""
         
-        try:
-            # Import here to avoid circular dependencies
-            from adaptive_planner import AdaptivePlanner
-            
-            # Use adaptive planner for intelligent strategy generation
-            planner = AdaptivePlanner()
-            strategy = planner.generate_adaptive_strategy(session)
-            
-            return strategy
-            
-        except Exception as e:
-            print(f"Adaptive planner failed: {e}")
-            # Fallback to simple strategy generation
-            return self._create_fallback_strategy(session)
+        # Import here to avoid circular dependencies
+        from adaptive_planner import AdaptivePlanner
+        
+        # Use adaptive planner for intelligent strategy generation
+        planner = AdaptivePlanner()
+        strategy = planner.generate_adaptive_strategy(session)
+        
+        return strategy
         
     def _build_strategy_context(self, session: InvestigationSession) -> str:
         """Build context string from previous investigation rounds"""
@@ -336,7 +330,7 @@ Design 2-4 strategic searches for this round that build on previous learnings.
         
         api_plan = llm_response.get('api_plan', [])
         if not api_plan:
-            return self._create_fallback_strategy(session)
+            raise ValueError(f"LLM strategy generation failed - no api_plan returned: {llm_response}")
             
         return {
             'description': llm_response.get('message_to_user', 'Continuing investigation'),
@@ -344,51 +338,6 @@ Design 2-4 strategic searches for this round that build on previous learnings.
             'reasoning': llm_response.get('message_to_user', '')
         }
         
-    def _create_fallback_strategy(self, session: InvestigationSession) -> Dict[str, Any]:
-        """Create fallback strategy when LLM fails"""
-        
-        base_query = session.original_query.lower()
-        
-        # Extract potential name from query
-        words = base_query.split()
-        potential_names = [word for word in words if word.isalpha() and len(word) > 3]
-        
-        searches = []
-        if potential_names and len(potential_names) >= 2:
-            name = f"{potential_names[0]} {potential_names[1]}"
-            searches = [
-                {
-                    'step': 1,
-                    'endpoint': 'search.php',
-                    'params': {'query': f'"{name}" debunked', 'result_type': 'latest'},
-                    'reason': f'Direct search for debunking information about {name}',
-                    'max_pages': 3
-                },
-                {
-                    'step': 2,
-                    'endpoint': 'search.php', 
-                    'params': {'query': f'"{name}" hoax', 'result_type': 'latest'},
-                    'reason': f'Search for hoax claims about {name}',
-                    'max_pages': 3
-                }
-            ]
-            
-        if not searches:
-            searches = [
-                {
-                    'step': 1,
-                    'endpoint': 'search.php',
-                    'params': {'query': base_query, 'result_type': 'latest'},
-                    'reason': 'Basic search for the query topic',
-                    'max_pages': 3
-                }
-            ]
-            
-        return {
-            'description': 'Fallback search strategy',
-            'searches': searches,
-            'reasoning': 'Using fallback strategy due to planning failure'
-        }
         
     def _execute_search(self, search_plan: Dict, search_id: int, round_number: int) -> SearchAttempt:
         """Execute a single search and return attempt record"""

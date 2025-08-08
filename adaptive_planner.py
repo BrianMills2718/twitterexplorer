@@ -300,29 +300,16 @@ class AdaptivePlanner:
                 investigation_context=investigation_context
             )
             
-        except ImportError:
-            # Fallback to simpler prompt
-            return f"""
-Design the next strategic searches for: "{session.original_query}"
-
-CONTEXT: {situation['total_searches']} searches done, {situation['total_results']} results found
-
-STRATEGY FOCUS: {strategy_type}
-
-Based on what has been tried, design 2-4 searches that intelligently build on previous learning.
-Start simple if early in the investigation. Try variations if previous searches failed.
-"""
+        except ImportError as e:
+            # Fail fast - don't hide import problems
+            raise ImportError(f"Failed to import strategy prompts: {e}")
     
     def _get_llm_strategy_refinement(self, enhanced_prompt: str) -> Dict[str, Any]:
         """Get LLM strategy refinement"""
         
-        try:
-            # Use existing LLM handler
-            llm_response = llm_handler.get_llm_plan(enhanced_prompt, "")
-            return llm_response
-        except Exception as e:
-            print(f"LLM strategy refinement failed: {e}")
-            return {'response_type': 'ERROR', 'message_to_user': 'Strategy refinement failed'}
+        # Use existing LLM handler - let it fail if it fails
+        llm_response = llm_handler.get_llm_plan(enhanced_prompt, "")
+        return llm_response
     
     def _merge_strategies(self, our_searches: List[Dict], llm_response: Dict, strategy_type: str) -> Dict[str, Any]:
         """Merge our intelligent strategy with LLM suggestions"""
