@@ -1,0 +1,94 @@
+{
+  "session_metadata": {
+    "session_id": "cbfe8bf5-7423-4819-95b6-646fc416f657",
+    "start_time": "2025-08-10T21:29:08.512996+00:00",
+    "end_time": "2025-08-10T21:29:45.752342+00:00",
+    "duration_seconds": 37.238346,
+    "user_query": "What are the latest developments with Elon Musk and Twitter/X platform?"
+  },
+  "configuration": {
+    "max_searches": 8,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.7,
+    "min_searches_before_satisfaction": 4,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "pages_per_search": 1,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true,
+    "enforce_endpoint_diversity": true,
+    "max_endpoint_repeats": 2,
+    "diversity_threshold": 0.3
+  },
+  "performance_metrics": {
+    "total_searches": 3,
+    "total_rounds": 1,
+    "total_results_found": 168,
+    "satisfaction_score": 0.24499999999999997,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.2,
+      "source_diversity": 0.1,
+      "evidence_quality": 0.6999999999999998,
+      "claim_specificity": 0.0,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Investigation failed: InvestigationSession.update_satisfaction_metrics() missing 1 required positional argument: 'findings'"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [],
+      "moderately_effective": [
+        {
+          "search_id": 1,
+          "query": "",
+          "results": 60,
+          "effectiveness": 7.0
+        },
+        {
+          "search_id": 2,
+          "query": "Elon Musk X Twitter recent developments OR news",
+          "results": 58,
+          "effectiveness": 7.0
+        },
+        {
+          "search_id": 3,
+          "query": "",
+          "results": 50,
+          "effectiveness": 7.0
+        }
+      ],
+      "low_effectiveness": [],
+      "ineffective": []
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "Graph Strategy: To establish a foundational understanding of the latest developments concerning Elon Musk and the X platform, it's crucial to gather information directly from his official statements, broadly from recent news and public discourse, and to identify any trending topics. This multi-pronged approach ensures a comprehensive initial scan, covering direct announcements, external perceptions, and real-time public interest, which is essential for a strategically coherent investigation.",
+        "avg_effectiveness": 7.0
+      }
+    ],
+    "dead_ends": [],
+    "promising_leads": [
+      "",
+      "Elon Musk X Twitter recent developments OR news"
+    ]
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Graph Strategy: To establish a foundational understanding of the latest developments concerning Elon Musk and the X platform, it's crucial to gather information directly from his official statements, broadly from recent news and public discourse, and to identify any trending topics. This multi-pronged approach ensures a comprehensive initial scan, covering direct announcements, external perceptions, and real-time public interest, which is essential for a strategically coherent investigation.",
+      "searches_count": 3,
+      "total_results": 168,
+      "effectiveness": 7.0,
+      "insights": [
+        "Grok, xAI's AI chatbot, is a major focus for Elon Musk and the X platform, with significant development and integration efforts.",
+        "Grok's capabilities include generating videos from images (Grok Imagine), one-shot coding for complex video games (with a future update to play and adjust code), and a natively multimodal V7 foundation model that processes video/audio directly.",
+        "Both the X app and Grok are performing strongly in app store rankings: X is the #1 News App (Free and Grossing), and Grok has risen significantly in productivity and overall app rankings (e.g., #2 Productivity, #6 Overall, #1 in Hong Kong)."
+      ]
+    }
+  ]
+}

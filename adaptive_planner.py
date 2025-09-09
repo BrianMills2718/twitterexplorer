@@ -5,8 +5,8 @@ import re
 from dataclasses import asdict
 
 # Import existing modules
-import llm_handler
-from investigation_engine import InvestigationSession, SearchAttempt
+from twitterexplorer import llm_handler
+from twitterexplorer.investigation_engine import InvestigationSession, SearchAttempt
 
 class AdaptivePlanner:
     """Intelligent search strategy planner that learns from previous results"""

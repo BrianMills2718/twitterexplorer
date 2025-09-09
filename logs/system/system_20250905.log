@@ -1,0 +1,694 @@
+2025-09-05 05:28:51,432 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-05 05:28:53,177 - INFO - Started investigation session 93a007dd-7fea-48ea-ba76-abe98354dd5c for query: What is Elon Musk saying about Twitter recently?...
+2025-09-05 05:28:53,178 - INFO - DIAGNOSTIC: Prompt size: 6871 chars, 798 words
+2025-09-05 05:28:53,178 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
+2025-09-05 05:28:53,184 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 05:29:18,210 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 05:29:18,227 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 05:29:18,229 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-09-05 05:29:18,229 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-09-05 05:29:18,229 - INFO - DIAGNOSTIC: Searches count: 3
+2025-09-05 05:29:18,229 - INFO - DIAGNOSTIC: Reasoning length: 859 chars
+2025-09-05 05:29:18,229 - INFO - DIAGNOSTIC: Search 1 - Endpoint: search.php
+2025-09-05 05:29:18,230 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': 'from:elonmusk (Twitter OR twitter) -filter:replies', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 05:29:18,230 - INFO - DIAGNOSTIC: Search 1 - Reasoning: Targeted, latest-only search for tweets Elon Musk authored that explicitly mention 'Twitter' (case-i...
+2025-09-05 05:29:18,230 - INFO - DIAGNOSTIC: Search 2 - Endpoint: timeline.php
+2025-09-05 05:29:18,230 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 05:29:18,230 - INFO - DIAGNOSTIC: Search 2 - Reasoning: Retrieve Elon Musk's recent chronological posts to capture any mentions of Twitter that don't includ...
+2025-09-05 05:29:18,230 - INFO - DIAGNOSTIC: Search 3 - Endpoint: trends.php
+2025-09-05 05:29:18,230 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': None, 'screenname': None, 'country': 'UnitedStates', 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 05:29:18,230 - INFO - DIAGNOSTIC: Search 3 - Reasoning: Gather trending topics in the United States to determine whether Twitter or related themes (free spe...
+2025-09-05 05:29:18,230 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
+2025-09-05 05:29:18,231 - INFO - DIAGNOSTIC: Endpoints used: ['search.php', 'timeline.php', 'trends.php']
+2025-09-05 05:29:40,544 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 05:30:55,092 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 05:30:55,093 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 05:30:55,095 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 05:32:05,206 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 05:32:05,208 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 05:32:05,209 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 05:33:00,715 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 05:33:00,717 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 05:33:00,721 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 05:33:00,862 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-09-05 05:33:01,013 - ERROR - Error in evaluate_batch_results: LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.
+2025-09-05 05:33:01,014 - INFO - Rejection context set: 562 chars
+2025-09-05 05:33:01,014 - INFO - DIAGNOSTIC: Prompt size: 8694 chars, 1052 words
+2025-09-05 05:33:01,014 - INFO - DIAGNOSTIC: Prompt lines: 199 lines
+2025-09-05 05:33:01,015 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 05:33:29,314 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 05:33:29,321 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 05:33:29,322 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-09-05 05:33:29,322 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-09-05 05:33:29,322 - INFO - DIAGNOSTIC: Searches count: 5
+2025-09-05 05:33:29,322 - INFO - DIAGNOSTIC: Reasoning length: 1006 chars
+2025-09-05 05:33:29,322 - INFO - DIAGNOSTIC: Search 1 - Endpoint: search.php
+2025-09-05 05:33:29,322 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': 'from:elonmusk Twitter', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 05:33:29,324 - INFO - DIAGNOSTIC: Search 1 - Reasoning: Direct, targeted latest-only search for tweets authored by Elon Musk that explicitly mention the wor...
+2025-09-05 05:33:29,324 - INFO - DIAGNOSTIC: Search 2 - Endpoint: search.php
+2025-09-05 05:33:29,324 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': 'from:elonmusk ("the platform" OR "the company" OR X OR "free speech" OR moderation OR verification OR subscription OR "Twitter Blue" OR policy)', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 05:33:29,324 - INFO - DIAGNOSTIC: Search 2 - Reasoning: Catches statements about Twitter-related topics where he may avoid the brand name (e.g., 'the platfo...
+2025-09-05 05:33:29,324 - INFO - DIAGNOSTIC: Search 3 - Endpoint: timeline.php
+2025-09-05 05:33:29,324 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 05:33:29,324 - INFO - DIAGNOSTIC: Search 3 - Reasoning: Fetch Elon Musk's recent chronological posts (including replies and threads). This provides context ...
+2025-09-05 05:33:29,324 - INFO - DIAGNOSTIC: Search 4 - Endpoint: screenname.php
+2025-09-05 05:33:29,324 - INFO - DIAGNOSTIC: Search 4 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 05:33:29,324 - INFO - DIAGNOSTIC: Search 4 - Reasoning: Retrieve profile metadata (display name, bio, rest_id, follower counts). The rest_id and profile inf...
+2025-09-05 05:33:29,324 - INFO - DIAGNOSTIC: Search 5 - Endpoint: following.php
+2025-09-05 05:33:29,324 - INFO - DIAGNOSTIC: Search 5 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 05:33:29,324 - INFO - DIAGNOSTIC: Search 5 - Reasoning: See who Elon follows (e.g., @Twitter, @TwitterSupport, journalists, key accounts). This helps identi...
+2025-09-05 05:33:29,324 - INFO - DIAGNOSTIC: Endpoint diversity score: 0.65
+2025-09-05 05:33:29,324 - INFO - DIAGNOSTIC: Endpoints used: ['search.php', 'timeline.php', 'trends.php', 'screenname.php', 'following.php']
+2025-09-05 05:34:05,956 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 05:35:03,083 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 05:35:03,085 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 05:35:03,086 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 05:35:50,562 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 05:35:50,563 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 05:35:50,564 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 05:37:03,504 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 05:37:03,506 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 05:37:03,507 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 05:37:16,910 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 05:37:16,912 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 05:37:16,913 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 05:38:07,897 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 05:38:07,963 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 05:38:07,965 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 05:38:09,854 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-09-05 05:38:09,861 - ERROR - Error in evaluate_batch_results: LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.
+2025-09-05 05:38:09,862 - INFO - Rejection context set: 605 chars
+2025-09-05 05:38:09,862 - INFO - DIAGNOSTIC: Prompt size: 9364 chars, 1144 words
+2025-09-05 05:38:09,862 - INFO - DIAGNOSTIC: Prompt lines: 203 lines
+2025-09-05 05:38:09,863 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 05:38:48,830 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 05:38:48,831 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 05:38:48,832 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-09-05 05:38:48,832 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-09-05 05:38:48,832 - INFO - DIAGNOSTIC: Searches count: 4
+2025-09-05 05:38:48,832 - INFO - DIAGNOSTIC: Reasoning length: 968 chars
+2025-09-05 05:38:48,833 - INFO - DIAGNOSTIC: Search 1 - Endpoint: search.php
+2025-09-05 05:38:48,833 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': 'from:elonmusk (Twitter OR twitter OR "the platform" OR X OR "free speech" OR verification OR subscribe)', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 05:38:48,833 - INFO - DIAGNOSTIC: Search 1 - Reasoning: One targeted, latest-only search limited to Elon Musk that covers explicit mentions of 'Twitter' plu...
+2025-09-05 05:38:48,833 - INFO - DIAGNOSTIC: Search 2 - Endpoint: timeline.php
+2025-09-05 05:38:48,833 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 05:38:48,833 - INFO - DIAGNOSTIC: Search 2 - Reasoning: Fetch Elon Musk's recent chronological posts (original tweets and tweets that are replies) to find m...
+2025-09-05 05:38:48,833 - INFO - DIAGNOSTIC: Search 3 - Endpoint: screenname.php
+2025-09-05 05:38:48,833 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 05:38:48,833 - INFO - DIAGNOSTIC: Search 3 - Reasoning: Verify the current account handle/profile metadata (display name, whether the account has been renam...
+2025-09-05 05:38:48,833 - INFO - DIAGNOSTIC: Search 4 - Endpoint: trends.php
+2025-09-05 05:38:48,833 - INFO - DIAGNOSTIC: Search 4 - Parameters: {'query': None, 'screenname': None, 'country': 'UnitedStates', 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 05:38:48,833 - INFO - DIAGNOSTIC: Search 4 - Reasoning: Determine whether Twitter-related topics (Twitter, X, free speech, moderation, verification) are cur...
+2025-09-05 05:38:48,833 - INFO - DIAGNOSTIC: Endpoint diversity score: 0.50
+2025-09-05 05:38:48,833 - INFO - DIAGNOSTIC: Endpoints used: ['search.php', 'timeline.php', 'trends.php', 'screenname.php', 'following.php']
+2025-09-05 05:39:06,716 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 05:40:02,125 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 05:40:02,126 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 05:40:02,127 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 05:41:01,906 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 05:41:01,907 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 05:41:01,909 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 05:41:02,117 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-09-05 05:41:02,125 - ERROR - Error in evaluate_batch_results: LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.
+2025-09-05 05:41:02,135 - INFO - Completed investigation session 93a007dd-7fea-48ea-ba76-abe98354dd5c - 10 searches, 640 results
+2025-09-05 06:04:16,615 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-05 06:04:18,251 - INFO - Started investigation session b09ceded-8ed5-4898-af7d-817422829a02 for query: What is Elon Musk saying about Twitter recently?...
+2025-09-05 06:04:18,252 - INFO - DIAGNOSTIC: Prompt size: 6871 chars, 798 words
+2025-09-05 06:04:18,252 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
+2025-09-05 06:04:18,258 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 06:04:44,563 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 06:04:44,570 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 06:04:44,572 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-09-05 06:04:44,572 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-09-05 06:04:44,572 - INFO - DIAGNOSTIC: Searches count: 5
+2025-09-05 06:04:44,572 - INFO - DIAGNOSTIC: Reasoning length: 669 chars
+2025-09-05 06:04:44,573 - INFO - DIAGNOSTIC: Search 1 - Endpoint: search.php
+2025-09-05 06:04:44,573 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': 'from:elonmusk (Twitter OR "X" OR "X.com" OR twitter.com)', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 06:04:44,573 - INFO - DIAGNOSTIC: Search 1 - Reasoning: Pulls Elon Musk's most recent posts that explicitly mention Twitter/X. Using Latest ensures we captu...
+2025-09-05 06:04:44,573 - INFO - DIAGNOSTIC: Search 2 - Endpoint: timeline.php
+2025-09-05 06:04:44,573 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 06:04:44,573 - INFO - DIAGNOSTIC: Search 2 - Reasoning: Gets Elon Musk's full recent chronology of posts so we can detect indirect comments about Twitter (a...
+2025-09-05 06:04:44,573 - INFO - DIAGNOSTIC: Search 3 - Endpoint: search.php
+2025-09-05 06:04:44,573 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': 'elonmusk Twitter -from:elonmusk', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Top', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 06:04:44,573 - INFO - DIAGNOSTIC: Search 3 - Reasoning: Captures top public reactions, media posts, and prominent threads referencing Elon Musk + Twitter. T...
+2025-09-05 06:04:44,573 - INFO - DIAGNOSTIC: Search 4 - Endpoint: screenname.php
+2025-09-05 06:04:44,573 - INFO - DIAGNOSTIC: Search 4 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 06:04:44,573 - INFO - DIAGNOSTIC: Search 4 - Reasoning: Verifies profile metadata (handle, bio, pinned tweet, follower counts) and helps confirm identity an...
+2025-09-05 06:04:44,573 - INFO - DIAGNOSTIC: Search 5 - Endpoint: trends.php
+2025-09-05 06:04:44,573 - INFO - DIAGNOSTIC: Search 5 - Parameters: {'query': None, 'screenname': None, 'country': 'UnitedStates', 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 06:04:44,573 - INFO - DIAGNOSTIC: Search 5 - Reasoning: Shows whether Twitter/X or related topics (e.g., content moderation, subscriptions, layoffs) are tre...
+2025-09-05 06:04:44,573 - INFO - DIAGNOSTIC: Endpoint diversity score: 0.82
+2025-09-05 06:04:44,573 - INFO - DIAGNOSTIC: Endpoints used: ['search.php', 'timeline.php', 'screenname.php', 'trends.php']
+2025-09-05 06:05:21,424 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 06:06:25,000 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 06:06:25,001 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 06:06:25,003 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 06:07:40,302 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 06:07:40,303 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 06:07:40,304 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 06:09:02,379 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 06:09:02,382 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 06:09:02,384 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 06:09:17,730 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 06:09:17,731 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 06:09:17,732 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 06:10:24,365 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 06:10:24,371 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 06:10:24,375 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 06:10:24,526 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-09-05 06:10:24,537 - ERROR - Error in evaluate_batch_results: LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.
+2025-09-05 06:10:24,538 - INFO - Rejection context set: 580 chars
+2025-09-05 06:10:24,538 - INFO - DIAGNOSTIC: Prompt size: 9094 chars, 1115 words
+2025-09-05 06:10:24,539 - INFO - DIAGNOSTIC: Prompt lines: 202 lines
+2025-09-05 06:10:24,539 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 06:10:51,698 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 06:10:51,699 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 06:10:51,699 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-09-05 06:10:51,699 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-09-05 06:10:51,700 - INFO - DIAGNOSTIC: Searches count: 6
+2025-09-05 06:10:51,700 - INFO - DIAGNOSTIC: Reasoning length: 825 chars
+2025-09-05 06:10:51,700 - INFO - DIAGNOSTIC: Search 1 - Endpoint: search.php
+2025-09-05 06:10:51,700 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': 'from:elonmusk (Twitter OR "X" OR "X.com" OR "Twitter/X" OR "@Twitter")', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 06:10:51,700 - INFO - DIAGNOSTIC: Search 1 - Reasoning: Direct targeted search for posts Elon posted that explicitly mention 'Twitter' or 'X' — this should ...
+2025-09-05 06:10:51,700 - INFO - DIAGNOSTIC: Search 2 - Endpoint: search.php
+2025-09-05 06:10:51,700 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': '("Elon Musk" Twitter OR "Elon Musk" X OR "Elon Musk" "X.com") (from:reuters OR from:nytimes OR from:bloomberg OR from:washingtonpost OR from:bbcnews)', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 06:10:51,700 - INFO - DIAGNOSTIC: Search 2 - Reasoning: Capture the most recent media articles/posts by major outlets that mention Elon Musk and Twitter/X. ...
+2025-09-05 06:10:51,700 - INFO - DIAGNOSTIC: Search 3 - Endpoint: timeline.php
+2025-09-05 06:10:51,701 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 06:10:51,701 - INFO - DIAGNOSTIC: Search 3 - Reasoning: Pull Elon Musk's full recent chronological posts. Some platform-related statements may be indirect (...
+2025-09-05 06:10:51,701 - INFO - DIAGNOSTIC: Search 4 - Endpoint: screenname.php
+2025-09-05 06:10:51,701 - INFO - DIAGNOSTIC: Search 4 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 06:10:51,701 - INFO - DIAGNOSTIC: Search 4 - Reasoning: Verify profile metadata (handle, bio text, pinned tweet id, follower count, verification state, rece...
+2025-09-05 06:10:51,701 - INFO - DIAGNOSTIC: Search 5 - Endpoint: followers.php
+2025-09-05 06:10:51,701 - INFO - DIAGNOSTIC: Search 5 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 06:10:51,701 - INFO - DIAGNOSTIC: Search 5 - Reasoning: Fetch Elon’s follower list (or top followers via pagination) to map key amplifiers and institutional...
+2025-09-05 06:10:51,701 - INFO - DIAGNOSTIC: Search 6 - Endpoint: trends.php
+2025-09-05 06:10:51,701 - INFO - DIAGNOSTIC: Search 6 - Parameters: {'query': None, 'screenname': None, 'country': 'UnitedStates', 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 06:10:51,701 - INFO - DIAGNOSTIC: Search 6 - Reasoning: Check whether 'Twitter', 'X', or related topics (content moderation, layoffs, subscription) are tren...
+2025-09-05 06:10:51,701 - INFO - DIAGNOSTIC: Endpoint diversity score: 0.53
+2025-09-05 06:10:51,701 - INFO - DIAGNOSTIC: Endpoints used: ['search.php', 'timeline.php', 'screenname.php', 'trends.php', 'followers.php']
+2025-09-05 06:11:29,307 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 06:12:43,870 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 06:12:43,871 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 06:12:43,872 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 06:13:17,058 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 06:13:17,060 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 06:13:17,060 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 06:14:02,745 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 06:14:02,747 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 06:14:02,748 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 06:14:21,151 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 06:14:21,153 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 06:14:21,154 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 06:15:37,919 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 06:15:37,920 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 06:15:37,922 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 06:15:38,431 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-09-05 06:15:38,440 - ERROR - Error in evaluate_batch_results: LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.
+2025-09-05 06:15:38,449 - INFO - Completed investigation session b09ceded-8ed5-4898-af7d-817422829a02 - 10 searches, 525 results
+2025-09-05 06:22:22,364 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-05 06:22:23,941 - INFO - Started investigation session 8e9020c4-92bb-44e3-a0f0-1cc3ea7b7687 for query: What is Elon Musk saying about Twitter recently?...
+2025-09-05 06:22:23,941 - INFO - DIAGNOSTIC: Prompt size: 6871 chars, 798 words
+2025-09-05 06:22:23,941 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
+2025-09-05 06:22:23,947 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 06:22:41,719 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 06:22:41,727 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 06:22:41,729 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-09-05 06:22:41,729 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-09-05 06:22:41,729 - INFO - DIAGNOSTIC: Searches count: 5
+2025-09-05 06:22:41,729 - INFO - DIAGNOSTIC: Reasoning length: 771 chars
+2025-09-05 06:22:41,729 - INFO - DIAGNOSTIC: Search 1 - Endpoint: timeline.php
+2025-09-05 06:22:41,729 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 06:22:41,729 - INFO - DIAGNOSTIC: Search 1 - Reasoning: Retrieve Elon Musk's most recent chronological posts so we can read exactly what he's said about Twi...
+2025-09-05 06:22:41,729 - INFO - DIAGNOSTIC: Search 2 - Endpoint: search.php
+2025-09-05 06:22:41,729 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': 'from:elonmusk (Twitter OR "Twitter" OR X) -filter:replies', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 06:22:41,729 - INFO - DIAGNOSTIC: Search 2 - Reasoning: Targeted search for recent tweets from Elon Musk that mention 'Twitter' or 'X' to catch explicit com...
+2025-09-05 06:22:41,729 - INFO - DIAGNOSTIC: Search 3 - Endpoint: search.php
+2025-09-05 06:22:41,729 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': 'elonmusk Twitter -from:elonmusk', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Top', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 06:22:41,729 - INFO - DIAGNOSTIC: Search 3 - Reasoning: Search for coverage and amplification (news articles, journalists, prominent accounts) discussing wh...
+2025-09-05 06:22:41,730 - INFO - DIAGNOSTIC: Search 4 - Endpoint: screenname.php
+2025-09-05 06:22:41,730 - INFO - DIAGNOSTIC: Search 4 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 06:22:41,730 - INFO - DIAGNOSTIC: Search 4 - Reasoning: Fetch profile metadata (bio, follower count, verification status, profile links, pinned tweet refere...
+2025-09-05 06:22:41,730 - INFO - DIAGNOSTIC: Search 5 - Endpoint: trends.php
+2025-09-05 06:22:41,730 - INFO - DIAGNOSTIC: Search 5 - Parameters: {'query': None, 'screenname': None, 'country': 'UnitedStates', 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 06:22:41,730 - INFO - DIAGNOSTIC: Search 5 - Reasoning: Check national trending topics to see if 'Twitter' or 'X' or related hashtags are trending; this hel...
+2025-09-05 06:22:41,730 - INFO - DIAGNOSTIC: Endpoint diversity score: 0.82
+2025-09-05 06:22:41,730 - INFO - DIAGNOSTIC: Endpoints used: ['timeline.php', 'search.php', 'screenname.php', 'trends.php']
+2025-09-05 06:23:16,863 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 06:24:29,602 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 06:24:29,603 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 06:24:29,604 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 06:25:33,418 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 06:25:33,419 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 06:25:33,420 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 06:27:05,123 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 06:27:05,125 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 06:27:05,126 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 06:27:18,728 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 06:27:18,729 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 06:27:18,731 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 06:28:21,281 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 06:28:21,282 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 06:28:21,287 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 06:28:21,836 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-09-05 06:28:21,847 - ERROR - Error in evaluate_batch_results: LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.
+2025-09-05 06:28:21,848 - INFO - Rejection context set: 605 chars
+2025-09-05 06:28:21,848 - INFO - DIAGNOSTIC: Prompt size: 9349 chars, 1148 words
+2025-09-05 06:28:21,848 - INFO - DIAGNOSTIC: Prompt lines: 202 lines
+2025-09-05 06:28:21,848 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 06:28:55,275 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 06:28:55,276 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 06:28:55,277 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-09-05 06:28:55,277 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-09-05 06:28:55,277 - INFO - DIAGNOSTIC: Searches count: 5
+2025-09-05 06:28:55,278 - INFO - DIAGNOSTIC: Reasoning length: 789 chars
+2025-09-05 06:28:55,278 - INFO - DIAGNOSTIC: Search 1 - Endpoint: timeline.php
+2025-09-05 06:28:55,278 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 06:28:55,278 - INFO - DIAGNOSTIC: Search 1 - Reasoning: Retrieve Elon Musk's most recent chronological posts (including pinned tweet reference and tweet IDs...
+2025-09-05 06:28:55,278 - INFO - DIAGNOSTIC: Search 2 - Endpoint: search.php
+2025-09-05 06:28:55,278 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': 'from:elonmusk (Twitter OR "Twitter" OR X OR "X")', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 06:28:55,278 - INFO - DIAGNOSTIC: Search 2 - Reasoning: Targeted search for Elon Musk's posts that explicitly mention 'Twitter' or 'X' to capture explicit c...
+2025-09-05 06:28:55,278 - INFO - DIAGNOSTIC: Search 3 - Endpoint: screenname.php
+2025-09-05 06:28:55,278 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 06:28:55,278 - INFO - DIAGNOSTIC: Search 3 - Reasoning: Fetch profile metadata (bio, follower count, verification, profile link, pinned_tweet reference) to ...
+2025-09-05 06:28:55,278 - INFO - DIAGNOSTIC: Search 4 - Endpoint: following.php
+2025-09-05 06:28:55,278 - INFO - DIAGNOSTIC: Search 4 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 06:28:55,278 - INFO - DIAGNOSTIC: Search 4 - Reasoning: Map who Elon Musk follows to identify potential interlocutors (journalists, employees, official acco...
+2025-09-05 06:28:55,278 - INFO - DIAGNOSTIC: Search 5 - Endpoint: trends.php
+2025-09-05 06:28:55,278 - INFO - DIAGNOSTIC: Search 5 - Parameters: {'query': None, 'screenname': None, 'country': 'UnitedStates', 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 06:28:55,279 - INFO - DIAGNOSTIC: Search 5 - Reasoning: Check national trending topics to see if 'Twitter', 'X', or related hashtags are trending—this asses...
+2025-09-05 06:28:55,279 - INFO - DIAGNOSTIC: Endpoint diversity score: 0.60
+2025-09-05 06:28:55,279 - INFO - DIAGNOSTIC: Endpoints used: ['timeline.php', 'search.php', 'screenname.php', 'trends.php', 'following.php']
+2025-09-05 06:29:28,737 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 06:30:56,516 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 06:30:56,553 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 06:30:56,555 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 06:31:57,629 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 06:31:57,631 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 06:31:57,632 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 06:32:11,322 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 06:32:11,325 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 06:32:11,326 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 06:33:25,799 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 06:33:25,865 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 06:33:25,866 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 06:34:16,876 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 06:34:16,877 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 06:34:16,879 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 06:34:17,072 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-09-05 06:34:17,081 - ERROR - Error in evaluate_batch_results: LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.
+2025-09-05 06:34:17,090 - INFO - Completed investigation session 8e9020c4-92bb-44e3-a0f0-1cc3ea7b7687 - 10 searches, 571 results
+2025-09-05 06:34:52,651 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-05 06:34:54,222 - INFO - Started investigation session f12e7fb8-2d65-49b4-a982-003fcd8c5cd4 for query: What is Elon Musk saying about Twitter recently?...
+2025-09-05 06:34:54,222 - INFO - DIAGNOSTIC: Prompt size: 6871 chars, 798 words
+2025-09-05 06:34:54,222 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
+2025-09-05 06:34:54,228 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 06:35:19,371 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 06:35:19,380 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 06:35:19,382 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-09-05 06:35:19,382 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-09-05 06:35:19,383 - INFO - DIAGNOSTIC: Searches count: 6
+2025-09-05 06:35:19,383 - INFO - DIAGNOSTIC: Reasoning length: 985 chars
+2025-09-05 06:35:19,383 - INFO - DIAGNOSTIC: Search 1 - Endpoint: timeline.php
+2025-09-05 06:35:19,383 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 06:35:19,383 - INFO - DIAGNOSTIC: Search 1 - Reasoning: Get Elon Musk's full recent chronological posts to see everything he has posted (tweets and replies)...
+2025-09-05 06:35:19,383 - INFO - DIAGNOSTIC: Search 2 - Endpoint: search.php
+2025-09-05 06:35:19,383 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': 'from:elonmusk (twitter OR "X" OR "X.com" OR "Twitter")', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 06:35:19,383 - INFO - DIAGNOSTIC: Search 2 - Reasoning: Targeted search to surface only Elon Musk's posts that explicitly mention Twitter/X so we don't miss...
+2025-09-05 06:35:19,383 - INFO - DIAGNOSTIC: Search 3 - Endpoint: screenname.php
+2025-09-05 06:35:19,383 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 06:35:19,383 - INFO - DIAGNOSTIC: Search 3 - Reasoning: Verify profile metadata (display name, verification, follower counts, bio) and get any recent profil...
+2025-09-05 06:35:19,383 - INFO - DIAGNOSTIC: Search 4 - Endpoint: trends.php
+2025-09-05 06:35:19,383 - INFO - DIAGNOSTIC: Search 4 - Parameters: {'query': None, 'screenname': None, 'country': 'UnitedStates', 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 06:35:19,383 - INFO - DIAGNOSTIC: Search 4 - Reasoning: Check whether Twitter/X or related topics are currently trending in the US to understand wider visib...
+2025-09-05 06:35:19,383 - INFO - DIAGNOSTIC: Search 5 - Endpoint: latest_replies.php
+2025-09-05 06:35:19,383 - INFO - DIAGNOSTIC: Search 5 - Parameters: {'query': None, 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': 'TO_BE_FILLED_WITH_TOP_TWEET_ID', 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 06:35:19,383 - INFO - DIAGNOSTIC: Search 5 - Reasoning: After identifying 1–3 high-impact tweets from the timeline/search results, fetch the latest replies ...
+2025-09-05 06:35:19,383 - INFO - DIAGNOSTIC: Search 6 - Endpoint: tweet_thread.php
+2025-09-05 06:35:19,384 - INFO - DIAGNOSTIC: Search 6 - Parameters: {'query': None, 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': 'TO_BE_FILLED_WITH_TOP_TWEET_ID', 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 06:35:19,384 - INFO - DIAGNOSTIC: Search 6 - Reasoning: For any high-engagement tweet, retrieve the full conversation thread to capture the original context...
+2025-09-05 06:35:19,384 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
+2025-09-05 06:35:19,384 - INFO - DIAGNOSTIC: Endpoints used: ['timeline.php', 'search.php', 'screenname.php', 'trends.php', 'latest_replies.php', 'tweet_thread.php']
+2025-09-05 06:35:52,634 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 06:36:57,681 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 06:36:57,683 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 06:36:57,684 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 06:38:02,955 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 06:38:02,957 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 06:38:02,958 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 06:38:15,062 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 06:38:15,063 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 06:38:15,064 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 06:39:22,146 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 06:39:22,147 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 06:39:22,148 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 06:39:33,576 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 06:39:33,577 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 06:39:33,582 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 06:39:33,735 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-09-05 06:39:33,747 - ERROR - Error in evaluate_batch_results: LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.
+2025-09-05 06:39:33,748 - INFO - Rejection context set: 334 chars
+2025-09-05 06:39:33,748 - INFO - DIAGNOSTIC: Prompt size: 8966 chars, 1088 words
+2025-09-05 06:39:33,748 - INFO - DIAGNOSTIC: Prompt lines: 202 lines
+2025-09-05 06:39:33,749 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 06:39:53,000 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 06:39:53,001 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 06:39:53,002 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-09-05 06:39:53,003 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-09-05 06:39:53,003 - INFO - DIAGNOSTIC: Searches count: 5
+2025-09-05 06:39:53,003 - INFO - DIAGNOSTIC: Reasoning length: 914 chars
+2025-09-05 06:39:53,003 - INFO - DIAGNOSTIC: Search 1 - Endpoint: timeline.php
+2025-09-05 06:39:53,003 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 06:39:53,003 - INFO - DIAGNOSTIC: Search 1 - Reasoning: Get Elon Musk's full recent chronological posts (tweets and replies) as the baseline dataset to iden...
+2025-09-05 06:39:53,003 - INFO - DIAGNOSTIC: Search 2 - Endpoint: search.php
+2025-09-05 06:39:53,003 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': 'from:elonmusk (Twitter OR X OR "X.com" OR twitter.com)', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 06:39:53,003 - INFO - DIAGNOSTIC: Search 2 - Reasoning: Targeted Latest search to surface only Elon Musk's posts that explicitly mention Twitter/X (includin...
+2025-09-05 06:39:53,003 - INFO - DIAGNOSTIC: Search 3 - Endpoint: screenname.php
+2025-09-05 06:39:53,003 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 06:39:53,003 - INFO - DIAGNOSTIC: Search 3 - Reasoning: Verify profile metadata (display name, bio, verification, follower counts) and detect recent profile...
+2025-09-05 06:39:53,003 - INFO - DIAGNOSTIC: Search 4 - Endpoint: trends.php
+2025-09-05 06:39:53,004 - INFO - DIAGNOSTIC: Search 4 - Parameters: {'query': None, 'screenname': None, 'country': 'UnitedStates', 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 06:39:53,004 - INFO - DIAGNOSTIC: Search 4 - Reasoning: Check whether 'Twitter', 'X', or related topics are trending in the United States to understand wide...
+2025-09-05 06:39:53,004 - INFO - DIAGNOSTIC: Search 5 - Endpoint: followers.php
+2025-09-05 06:39:53,004 - INFO - DIAGNOSTIC: Search 5 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 06:39:53,004 - INFO - DIAGNOSTIC: Search 5 - Reasoning: Fetch follower information and counts to quantify reach and to identify potential high-influence fol...
+2025-09-05 06:39:53,004 - INFO - DIAGNOSTIC: Endpoint diversity score: 0.71
+2025-09-05 06:39:53,004 - INFO - DIAGNOSTIC: Endpoints used: ['timeline.php', 'search.php', 'screenname.php', 'trends.php', 'latest_replies.php', 'tweet_thread.php', 'followers.php']
+2025-09-05 06:40:22,445 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 06:41:18,208 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 06:41:18,209 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 06:41:18,211 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 06:42:16,796 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 06:42:16,798 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 06:42:16,799 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 06:42:27,782 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 06:42:27,783 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 06:42:27,789 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 06:42:28,400 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-09-05 06:42:28,406 - ERROR - Error in evaluate_batch_results: LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.
+2025-09-05 06:42:28,414 - INFO - Completed investigation session f12e7fb8-2d65-49b4-a982-003fcd8c5cd4 - 10 searches, 293 results
+2025-09-05 07:49:46,176 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-05 07:50:45,419 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-05 07:51:02,568 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-05 07:51:20,503 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-05 07:53:25,810 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-05 08:07:37,925 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-05 08:07:54,575 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-05 08:08:17,303 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-05 08:09:35,107 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-05 08:09:36,808 - INFO - Started investigation session 8d243913-8d8d-4301-9ce4-c6e3ea09166f for query: Tesla stock performance analysis...
+2025-09-05 08:09:36,808 - INFO - DIAGNOSTIC: Prompt size: 7157 chars, 832 words
+2025-09-05 08:09:36,808 - INFO - DIAGNOSTIC: Prompt lines: 189 lines
+2025-09-05 08:09:36,814 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 08:10:04,730 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 08:10:04,737 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 08:10:04,739 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-09-05 08:10:04,739 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-09-05 08:10:04,739 - INFO - DIAGNOSTIC: Searches count: 5
+2025-09-05 08:10:04,739 - INFO - DIAGNOSTIC: Reasoning length: 799 chars
+2025-09-05 08:10:04,739 - INFO - DIAGNOSTIC: Search 1 - Endpoint: search.php
+2025-09-05 08:10:04,739 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': 'Tesla (stock OR $TSLA OR TSLA) -filter:replies', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 08:10:04,739 - INFO - DIAGNOSTIC: Search 1 - Reasoning: Capture the most recent tweets mentioning Tesla/TSLA to surface breaking news, retail sentiment, and...
+2025-09-05 08:10:04,739 - INFO - DIAGNOSTIC: Search 2 - Endpoint: timeline.php
+2025-09-05 08:10:04,739 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 08:10:04,739 - INFO - DIAGNOSTIC: Search 2 - Reasoning: Elon Musk's tweets frequently influence Tesla's stock. Pulling his recent timeline will identify any...
+2025-09-05 08:10:04,739 - INFO - DIAGNOSTIC: Search 3 - Endpoint: timeline.php
+2025-09-05 08:10:04,740 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': None, 'screenname': 'Tesla', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 08:10:04,740 - INFO - DIAGNOSTIC: Search 3 - Reasoning: The official Tesla account posts corporate updates (deliveries, product launches, earnings links) th...
+2025-09-05 08:10:04,740 - INFO - DIAGNOSTIC: Search 4 - Endpoint: trends.php
+2025-09-05 08:10:04,740 - INFO - DIAGNOSTIC: Search 4 - Parameters: {'query': None, 'screenname': None, 'country': 'UnitedStates', 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 08:10:04,740 - INFO - DIAGNOSTIC: Search 4 - Reasoning: Check whether 'Tesla' or 'TSLA' appears in US trending topics to gauge whether conversation volume i...
+2025-09-05 08:10:04,740 - INFO - DIAGNOSTIC: Search 5 - Endpoint: following.php
+2025-09-05 08:10:04,740 - INFO - DIAGNOSTIC: Search 5 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 08:10:04,740 - INFO - DIAGNOSTIC: Search 5 - Reasoning: Map who Elon follows to identify analysts, journalists, or firms he engages with; this small network...
+2025-09-05 08:10:04,740 - INFO - DIAGNOSTIC: Endpoint diversity score: 0.82
+2025-09-05 08:10:04,740 - INFO - DIAGNOSTIC: Endpoints used: ['search.php', 'timeline.php', 'trends.php', 'following.php']
+2025-09-05 08:10:32,603 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 08:11:57,654 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 08:11:57,729 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 08:11:57,733 - INFO - Completed investigation session 8d243913-8d8d-4301-9ce4-c6e3ea09166f - 3 searches, 178 results
+2025-09-05 08:12:20,315 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-05 08:14:07,179 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-05 08:14:08,799 - INFO - Started investigation session 173fefc8-7f5c-4737-b5c5-80e2ff98eaf1 for query: Bitcoin price movement today...
+2025-09-05 08:14:08,800 - INFO - DIAGNOSTIC: Prompt size: 7137 chars, 832 words
+2025-09-05 08:14:08,800 - INFO - DIAGNOSTIC: Prompt lines: 189 lines
+2025-09-05 08:14:08,805 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 08:14:52,667 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 08:14:52,675 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 08:14:52,677 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-09-05 08:14:52,678 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-09-05 08:14:52,678 - INFO - DIAGNOSTIC: Searches count: 8
+2025-09-05 08:14:52,678 - INFO - DIAGNOSTIC: Reasoning length: 900 chars
+2025-09-05 08:14:52,678 - INFO - DIAGNOSTIC: Search 1 - Endpoint: search.php
+2025-09-05 08:14:52,678 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': 'bitcoin price today OR "BTC price" OR #Bitcoin -filter:replies', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 08:14:52,678 - INFO - DIAGNOSTIC: Search 1 - Reasoning: Catch all real-time tweets mentioning current BTC price/movement (general market chatter, traders, n...
+2025-09-05 08:14:52,678 - INFO - DIAGNOSTIC: Search 2 - Endpoint: trends.php
+2025-09-05 08:14:52,678 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': None, 'screenname': None, 'country': 'UnitedStates', 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 08:14:52,678 - INFO - DIAGNOSTIC: Search 2 - Reasoning: Determine whether Bitcoin or related tags (e.g., #BTC, 'Bitcoin price', 'BTC') are trending in the U...
+2025-09-05 08:14:52,678 - INFO - DIAGNOSTIC: Search 3 - Endpoint: search.php
+2025-09-05 08:14:52,678 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': 'from:elonmusk bitcoin OR BTC', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 08:14:52,678 - INFO - DIAGNOSTIC: Search 3 - Reasoning: Elon Musk historically influences crypto markets. This targeted query captures any Elon posts today ...
+2025-09-05 08:14:52,678 - INFO - DIAGNOSTIC: Search 4 - Endpoint: timeline.php
+2025-09-05 08:14:52,679 - INFO - DIAGNOSTIC: Search 4 - Parameters: {'query': None, 'screenname': 'CoinDesk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 08:14:52,679 - INFO - DIAGNOSTIC: Search 4 - Reasoning: CoinDesk is a leading crypto news source; reviewing their chronological posts today will surface aut...
+2025-09-05 08:14:52,679 - INFO - DIAGNOSTIC: Search 5 - Endpoint: timeline.php
+2025-09-05 08:14:52,679 - INFO - DIAGNOSTIC: Search 5 - Parameters: {'query': None, 'screenname': 'Cointelegraph', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 08:14:52,679 - INFO - DIAGNOSTIC: Search 5 - Reasoning: Complement CoinDesk with another major crypto publisher to cross-check breaking stories and headline...
+2025-09-05 08:14:52,679 - INFO - DIAGNOSTIC: Search 6 - Endpoint: screenname.php
+2025-09-05 08:14:52,679 - INFO - DIAGNOSTIC: Search 6 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 08:14:52,679 - INFO - DIAGNOSTIC: Search 6 - Reasoning: Pull Elon Musk's profile metadata (followers, bio, recent activity pointer) to quickly gauge reach a...
+2025-09-05 08:14:52,679 - INFO - DIAGNOSTIC: Search 7 - Endpoint: search.php
+2025-09-05 08:14:52,679 - INFO - DIAGNOSTIC: Search 7 - Parameters: {'query': "bitcoin (ETF OR 'ETF approval' OR SEC OR hack OR 'exchange outage' OR 'liquidation')", 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Top', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 08:14:52,679 - INFO - DIAGNOSTIC: Search 7 - Reasoning: Search for top tweets tying Bitcoin moves to specific market-moving events (ETF news/regulatory deci...
+2025-09-05 08:14:52,679 - INFO - DIAGNOSTIC: Search 8 - Endpoint: search.php
+2025-09-05 08:14:52,679 - INFO - DIAGNOSTIC: Search 8 - Parameters: {'query': 'search:people bitcoin analyst OR "BTC analyst"', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'People', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 08:14:52,679 - INFO - DIAGNOSTIC: Search 8 - Reasoning: Identify prominent analysts and commentators tweeting about BTC today so we can pull their timelines...
+2025-09-05 08:14:52,679 - INFO - DIAGNOSTIC: Endpoint diversity score: 0.52
+2025-09-05 08:14:52,679 - INFO - DIAGNOSTIC: Endpoints used: ['search.php', 'trends.php', 'timeline.php', 'screenname.php']
+2025-09-05 08:15:04,528 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 08:15:38,323 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 08:15:38,324 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 08:15:38,327 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-09-05 08:15:38,941 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REMOVED_OPENAI_API_KEY "HTTP/1.1 400 Bad Request"
+2025-09-05 08:15:38,988 - ERROR - Error synthesizing insight: LiteLLM completion failed: litellm.AuthenticationError: geminiException - {
+  "error": {
+    "code": 400,
+    "message": "API key not valid. Please pass a valid API key.",
+    "status": "INVALID_ARGUMENT",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_INVALID",
+        "domain": "googleapis.com",
+        "metadata": {
+          "service": "generativelanguage.googleapis.com"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.LocalizedMessage",
+        "locale": "en-US",
+        "message": "API key not valid. Please pass a valid API key."
+      }
+    ]
+  }
+}
+
+2025-09-05 08:15:38,988 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 08:15:56,042 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 08:15:56,043 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 08:15:56,045 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-09-05 08:15:56,379 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REMOVED_OPENAI_API_KEY "HTTP/1.1 400 Bad Request"
+2025-09-05 08:15:56,394 - ERROR - Error synthesizing insight: LiteLLM completion failed: litellm.AuthenticationError: geminiException - {
+  "error": {
+    "code": 400,
+    "message": "API key not valid. Please pass a valid API key.",
+    "status": "INVALID_ARGUMENT",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_INVALID",
+        "domain": "googleapis.com",
+        "metadata": {
+          "service": "generativelanguage.googleapis.com"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.LocalizedMessage",
+        "locale": "en-US",
+        "message": "API key not valid. Please pass a valid API key."
+      }
+    ]
+  }
+}
+
+2025-09-05 08:15:56,396 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 08:15:56,612 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-09-05 08:15:56,637 - ERROR - Error in evaluate_batch_results: LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.
+2025-09-05 08:15:56,643 - INFO - Completed investigation session 173fefc8-7f5c-4737-b5c5-80e2ff98eaf1 - 2 searches, 110 results
+2025-09-05 08:17:13,687 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-05 08:17:15,340 - INFO - Started investigation session e0242ae0-d518-4e50-a999-ca1deea84664 for query: Nvidia stock price analysis today...
+2025-09-05 08:17:15,341 - INFO - DIAGNOSTIC: Prompt size: 7163 chars, 837 words
+2025-09-05 08:17:15,341 - INFO - DIAGNOSTIC: Prompt lines: 189 lines
+2025-09-05 08:17:15,346 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 08:17:52,415 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 08:17:52,433 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 08:17:52,441 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-09-05 08:17:52,441 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-09-05 08:17:52,441 - INFO - DIAGNOSTIC: Searches count: 6
+2025-09-05 08:17:52,441 - INFO - DIAGNOSTIC: Reasoning length: 666 chars
+2025-09-05 08:17:52,441 - INFO - DIAGNOSTIC: Search 1 - Endpoint: search.php
+2025-09-05 08:17:52,441 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': '($NVDA OR Nvidia) (stock OR price OR shares OR rally OR selloff OR guidance OR earnings) -filter:links', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 08:17:52,441 - INFO - DIAGNOSTIC: Search 1 - Reasoning: Capture the freshest, crowd-level tweets today mentioning Nvidia stock and key price drivers; exclud...
+2025-09-05 08:17:52,441 - INFO - DIAGNOSTIC: Search 2 - Endpoint: search.php
+2025-09-05 08:17:52,442 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': 'from:NVIDIA (earnings OR revenue OR guidance OR CEO OR Jensen Huang OR partnership OR AI OR product)', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 08:17:52,442 - INFO - DIAGNOSTIC: Search 2 - Reasoning: Pull Nvidia's official tweets today for company announcements or forward guidance that could directl...
+2025-09-05 08:17:52,442 - INFO - DIAGNOSTIC: Search 3 - Endpoint: timeline.php
+2025-09-05 08:17:52,442 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': None, 'screenname': 'CNBC', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 08:17:52,442 - INFO - DIAGNOSTIC: Search 3 - Reasoning: Scan recent CNBC posts for breaking market coverage, headlines, or clips that influence trader react...
+2025-09-05 08:17:52,442 - INFO - DIAGNOSTIC: Search 4 - Endpoint: timeline.php
+2025-09-05 08:17:52,442 - INFO - DIAGNOSTIC: Search 4 - Parameters: {'query': None, 'screenname': 'jimcramer', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 08:17:52,442 - INFO - DIAGNOSTIC: Search 4 - Reasoning: Check a high-influence retail/investor commentator for any NVDA calls or sentiment that can amplify ...
+2025-09-05 08:17:52,442 - INFO - DIAGNOSTIC: Search 5 - Endpoint: trends.php
+2025-09-05 08:17:52,442 - INFO - DIAGNOSTIC: Search 5 - Parameters: {'query': None, 'screenname': None, 'country': 'UnitedStates', 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 08:17:52,442 - INFO - DIAGNOSTIC: Search 5 - Reasoning: Determine whether NVDA / $NVDA / Nvidia-related topics are trending nationally today — provides cont...
+2025-09-05 08:17:52,442 - INFO - DIAGNOSTIC: Search 6 - Endpoint: tweet_thread.php
+2025-09-05 08:17:52,442 - INFO - DIAGNOSTIC: Search 6 - Parameters: {'query': None, 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': 'REPLACE_WITH_TOP_TWEET_ID', 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 08:17:52,442 - INFO - DIAGNOSTIC: Search 6 - Reasoning: Planned follow-up: once a high-engagement NVDA tweet is found from the search results, fetch the ful...
+2025-09-05 08:17:52,442 - INFO - DIAGNOSTIC: Endpoint diversity score: 0.72
+2025-09-05 08:17:52,442 - INFO - DIAGNOSTIC: Endpoints used: ['search.php', 'timeline.php', 'trends.php', 'tweet_thread.php']
+2025-09-05 08:18:14,809 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 08:18:37,894 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 08:18:37,895 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 08:18:37,897 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 08:19:00,789 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 08:19:00,795 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 08:19:00,796 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 08:19:16,774 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 08:19:16,785 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 08:19:16,788 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 08:19:27,773 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 08:19:27,775 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 08:19:27,778 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 08:19:28,008 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-09-05 08:19:28,019 - ERROR - Error in evaluate_batch_results: LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.
+2025-09-05 08:19:28,021 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 08:19:33,781 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 08:19:33,782 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 08:19:33,787 - INFO - Completed investigation session e0242ae0-d518-4e50-a999-ca1deea84664 - 3 searches, 138 results
+2025-09-05 08:19:57,144 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-05 08:19:59,004 - INFO - Started investigation session 56b9ab49-3b13-4c3e-aa15-9d846ae62cd0 for query: Apple stock news today...
+2025-09-05 08:19:59,004 - INFO - DIAGNOSTIC: Prompt size: 7107 chars, 832 words
+2025-09-05 08:19:59,004 - INFO - DIAGNOSTIC: Prompt lines: 189 lines
+2025-09-05 08:19:59,010 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 08:20:24,814 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 08:20:24,825 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 08:20:24,827 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-09-05 08:20:24,827 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-09-05 08:20:24,828 - INFO - DIAGNOSTIC: Searches count: 5
+2025-09-05 08:20:24,828 - INFO - DIAGNOSTIC: Reasoning length: 829 chars
+2025-09-05 08:20:24,828 - INFO - DIAGNOSTIC: Search 1 - Endpoint: search.php
+2025-09-05 08:20:24,828 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': 'Apple stock OR $AAPL OR AAPL today -fruit -food', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 08:20:24,828 - INFO - DIAGNOSTIC: Search 1 - Reasoning: Catch all recent tweets mentioning Apple stock or AAPL today (excluding fruit/food noise). This esta...
+2025-09-05 08:20:24,828 - INFO - DIAGNOSTIC: Search 2 - Endpoint: trends.php
+2025-09-05 08:20:24,828 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': None, 'screenname': None, 'country': 'UnitedStates', 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 08:20:24,828 - INFO - DIAGNOSTIC: Search 2 - Reasoning: Determine whether Apple, AAPL, or any Apple-related news is trending in the U.S.; trending status he...
+2025-09-05 08:20:24,828 - INFO - DIAGNOSTIC: Search 3 - Endpoint: search.php
+2025-09-05 08:20:24,828 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': 'from:CNBC (Apple OR AAPL OR "Apple stock")', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Top', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 08:20:24,828 - INFO - DIAGNOSTIC: Search 3 - Reasoning: Target top tweets from a major financial news account to quickly find authoritative coverage that co...
+2025-09-05 08:20:24,828 - INFO - DIAGNOSTIC: Search 4 - Endpoint: timeline.php
+2025-09-05 08:20:24,828 - INFO - DIAGNOSTIC: Search 4 - Parameters: {'query': None, 'screenname': 'CNBC', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 08:20:24,828 - INFO - DIAGNOSTIC: Search 4 - Reasoning: Pull CNBC's recent chronological posts to catch any raw or follow-up tweets about Apple that might n...
+2025-09-05 08:20:24,828 - INFO - DIAGNOSTIC: Search 5 - Endpoint: screenname.php
+2025-09-05 08:20:24,828 - INFO - DIAGNOSTIC: Search 5 - Parameters: {'query': None, 'screenname': 'CNBC', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-05 08:20:24,828 - INFO - DIAGNOSTIC: Search 5 - Reasoning: Verify the profile metadata (followers, verified status, bio) to assess credibility and prioritize w...
+2025-09-05 08:20:24,828 - INFO - DIAGNOSTIC: Endpoint diversity score: 0.82
+2025-09-05 08:20:24,829 - INFO - DIAGNOSTIC: Endpoints used: ['search.php', 'trends.php', 'timeline.php', 'screenname.php']
+2025-09-05 08:20:37,042 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 08:20:52,835 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 08:20:52,836 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 08:20:52,837 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 08:21:08,904 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 08:21:08,905 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 08:21:08,908 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 08:21:09,150 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-09-05 08:21:09,160 - ERROR - Error in evaluate_batch_results: LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.
+2025-09-05 08:21:09,162 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-05 08:21:15,349 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-05 08:21:15,354 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-05 08:21:15,359 - INFO - Completed investigation session 56b9ab49-3b13-4c3e-aa15-9d846ae62cd0 - 2 searches, 110 results

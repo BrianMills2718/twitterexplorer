@@ -1,0 +1,75 @@
+{
+  "session_metadata": {
+    "session_id": "e181bedc-d29b-44ed-9d02-9e963991f76d",
+    "start_time": "2025-08-28T18:28:08.428722+00:00",
+    "end_time": "2025-08-28T18:29:03.786225+00:00",
+    "duration_seconds": 55.356504,
+    "user_query": "What is Elon Musk saying about AI"
+  },
+  "configuration": {
+    "max_searches": 1,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.8,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "pages_per_search": 1,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true,
+    "enforce_endpoint_diversity": false,
+    "max_endpoint_repeats": 5,
+    "diversity_threshold": 0.3
+  },
+  "performance_metrics": {
+    "total_searches": 1,
+    "total_rounds": 1,
+    "total_results_found": 60,
+    "satisfaction_score": 0.0,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.0,
+      "source_diversity": 0.0,
+      "evidence_quality": 0.0,
+      "claim_specificity": 0.0,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Investigation failed: 'charmap' codec can't encode character '\\U0001f92d' in position 452: character maps to <undefined>"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [],
+      "moderately_effective": [
+        {
+          "search_id": 1,
+          "query": "from:elonmusk AI OR artificial intelligence OR xAI OR Neuralink",
+          "results": 60,
+          "effectiveness": 6.0
+        }
+      ],
+      "low_effectiveness": [],
+      "ineffective": []
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "Graph Strategy: To comprehensively understand what Elon Musk is saying about AI, a multi-faceted approach is necessary. We need to capture his direct statements, posts he shares, and also identify his network to infer his influences and areas of focus within AI. This strategy combines broad keyword searches with specific user timeline analysis and media content, along with network analysis to provide a holistic view.",
+        "avg_effectiveness": 6.0
+      }
+    ],
+    "dead_ends": [],
+    "promising_leads": []
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Graph Strategy: To comprehensively understand what Elon Musk is saying about AI, a multi-faceted approach is necessary. We need to capture his direct statements, posts he shares, and also identify his network to infer his influences and areas of focus within AI. This strategy combines broad keyword searches with specific user timeline analysis and media content, along with network analysis to provide a holistic view.",
+      "searches_count": 1,
+      "total_results": 60,
+      "effectiveness": 0.0,
+      "insights": []
+    }
+  ]
+}

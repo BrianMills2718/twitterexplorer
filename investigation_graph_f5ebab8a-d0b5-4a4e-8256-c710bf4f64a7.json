@@ -1,0 +1,561 @@
+{
+  "nodes": {
+    "a59d0993-0e4d-425c-8117-226970c4cee8": {
+      "id": "a59d0993-0e4d-425c-8117-226970c4cee8",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "Trump Epstein relationship contradictions",
+        "is_root": true,
+        "investigation_goal": "Trump Epstein relationship contradictions"
+      },
+      "created_at": "2025-09-08T00:09:01.663597"
+    },
+    "e2180bc6-e302-407d-9e20-2acb82a01048": {
+      "id": "e2180bc6-e302-407d-9e20-2acb82a01048",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Directly target any tweets posted by Trump's official account that mention Epstein \u2014 primary source for Trump's on-platform statements. 'Top' filters for the most relevant/engagement-heavy tweets, increasing chances of catching any notable remarks or quotes.",
+        "parent_analytic_question": "a59d0993-0e4d-425c-8117-226970c4cee8"
+      },
+      "created_at": "2025-09-08T00:09:35.313728"
+    },
+    "2e025691-dad1-497b-81e9-9b575560abed": {
+      "id": "2e025691-dad1-497b-81e9-9b575560abed",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "from:realDonaldTrump Epstein",
+          "search_type": "Top"
+        }
+      },
+      "created_at": "2025-09-08T00:09:35.313728"
+    },
+    "3fe71c16-0043-45ac-b556-b0ddd36e0904": {
+      "id": "3fe71c16-0043-45ac-b556-b0ddd36e0904",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Get Trump's full chronological timeline to spot indirect mentions, linked interviews, retweets, or deletions referencing Epstein; provides context around timing and whether statements were later contradicted or removed.",
+        "parent_analytic_question": "a59d0993-0e4d-425c-8117-226970c4cee8"
+      },
+      "created_at": "2025-09-08T00:09:35.313728"
+    },
+    "3ea2103a-be0f-4d61-8754-2cc955b72745": {
+      "id": "3ea2103a-be0f-4d61-8754-2cc955b72745",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "realDonaldTrump"
+        }
+      },
+      "created_at": "2025-09-08T00:09:35.313728"
+    },
+    "40167723-eb09-498b-bf7f-29b1e9e77ad8": {
+      "id": "40167723-eb09-498b-bf7f-29b1e9e77ad8",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Search for widely reported Trump quotes about Epstein (often from interviews, not tweets). This pulls third-party tweets quoting or linking to interviews/articles where Trump described Epstein positively \u2014 critical to identify textual contradictions between praise/association and later distancing.",
+        "parent_analytic_question": "a59d0993-0e4d-425c-8117-226970c4cee8"
+      },
+      "created_at": "2025-09-08T00:09:35.313728"
+    },
+    "f6b5aa2b-4006-45ce-8d8e-cf929b876a30": {
+      "id": "f6b5aa2b-4006-45ce-8d8e-cf929b876a30",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "\"I've known Jeff\" OR \"terrific guy\" Trump Epstein OR Jeffrey Epstein",
+          "search_type": "Top"
+        }
+      },
+      "created_at": "2025-09-08T00:09:35.313728"
+    },
+    "abb44e57-68f6-446c-beb6-81801bda0067": {
+      "id": "abb44e57-68f6-446c-beb6-81801bda0067",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Find images and videos on Twitter that show Trump and Epstein together (events, parties, photos). Media evidence is essential to contrast social proximity with public denials or distancing.",
+        "parent_analytic_question": "a59d0993-0e4d-425c-8117-226970c4cee8"
+      },
+      "created_at": "2025-09-08T00:09:35.313728"
+    },
+    "d1cbaf80-106e-4373-a6ec-8aa0fcdad52e": {
+      "id": "d1cbaf80-106e-4373-a6ec-8aa0fcdad52e",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "Trump Epstein (photo OR \"with Epstein\" OR \"together\")",
+          "search_type": "Media"
+        }
+      },
+      "created_at": "2025-09-08T00:09:35.313728"
+    },
+    "76444ec9-4890-4cb4-8505-0a4a14591f1a": {
+      "id": "76444ec9-4890-4cb4-8505-0a4a14591f1a",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Survey media (photos/videos) posted directly by Trump's account that might include images of him with Epstein or at the same events \u2014 a direct source of visual evidence from Trump's profile.",
+        "parent_analytic_question": "a59d0993-0e4d-425c-8117-226970c4cee8"
+      },
+      "created_at": "2025-09-08T00:09:35.313728"
+    },
+    "8b894e7b-9a13-4fb6-8e23-327ce008cf4a": {
+      "id": "8b894e7b-9a13-4fb6-8e23-327ce008cf4a",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "usermedia.php",
+        "parameters": {
+          "screenname": "realDonaldTrump"
+        }
+      },
+      "created_at": "2025-09-08T00:09:35.313728"
+    },
+    "6fa541f0-945b-43eb-bad7-3f8f01280f1d": {
+      "id": "6fa541f0-945b-43eb-bad7-3f8f01280f1d",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Quick verify whether Trump's account followed any Epstein-related account (historic follow relationships can show social ties). Even a negative result is informative; a positive result would be a direct, simple indicator of connection.",
+        "parent_analytic_question": "a59d0993-0e4d-425c-8117-226970c4cee8"
+      },
+      "created_at": "2025-09-08T00:09:35.313728"
+    },
+    "3fb8e88e-554c-42bb-ac05-1c5dfcfcf496": {
+      "id": "3fb8e88e-554c-42bb-ac05-1c5dfcfcf496",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "checkfollow.php",
+        "parameters": {
+          "user": "realDonaldTrump",
+          "follows": "JeffreyEpstein"
+        }
+      },
+      "created_at": "2025-09-08T00:09:35.313728"
+    },
+    "b535a2c1-bdd4-46f4-81cd-92df22607477": {
+      "id": "b535a2c1-bdd4-46f4-81cd-92df22607477",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Pull declared affiliations for an Epstein-related account to map organizations, institutions, or mutual connections that link him and Trump through shared networks; helps build the broader social context for contradictions.",
+        "parent_analytic_question": "a59d0993-0e4d-425c-8117-226970c4cee8"
+      },
+      "created_at": "2025-09-08T00:09:35.313728"
+    },
+    "eae36d0a-9156-48af-9308-3c3dc8f187a3": {
+      "id": "eae36d0a-9156-48af-9308-3c3dc8f187a3",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "affilates.php",
+        "parameters": {
+          "screenname": "JeffreyEpstein"
+        }
+      },
+      "created_at": "2025-09-08T00:09:35.313728"
+    },
+    "9423d448-629f-4e69-b33b-c29692d6ef75": {
+      "id": "9423d448-629f-4e69-b33b-c29692d6ef75",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "BREAKING: In a shocking moment, Trump lies again about his fondness for Epstein, saying he \"threw him out.\" But 2 years after he said Epstein had \"stolen\" Giuffre, he told New York Magazine Epstein was a \"terrific guy.\"\n\nTrump is hiding something.\nhttps://t.co/rV1PIPdX8T",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-08T00:10:49.102584",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.9,
+          "goal_relevance_score": 0.5
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-08T00:10:49.102584"
+      },
+      "created_at": "2025-09-08T00:10:49.102584"
+    },
+    "ad8de882-3d1b-4f34-aa76-f611599c8741": {
+      "id": "ad8de882-3d1b-4f34-aa76-f611599c8741",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Good morning and Happy Thursday to everyone who is disgusted to learn that trump said Epstein was a \"terrific guy...who likes women on the younger side\" two years AFTER he'd \"stolen\" 16-year-old Virginia Giuffre from Mar-a-Lago.\n\ntrump KNEW, and like Gym Jordan, he said nothing. https://t.co/yLBmgGdK9Z",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-08T00:10:49.102584",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.8,
+          "goal_relevance_score": 0.5
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-08T00:10:49.102584"
+      },
+      "created_at": "2025-09-08T00:10:49.102584"
+    },
+    "385d0782-f4dc-4fc8-9df1-f60f89150f9a": {
+      "id": "385d0782-f4dc-4fc8-9df1-f60f89150f9a",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Donald Trump: Jeffrey Epstein is a \"fun\" and \"terrific guy.\"\n\n#Epstein #Trump #EpsteinFiles https://t.co/XMP9n7oFg6",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-08T00:10:49.102584",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.85,
+          "goal_relevance_score": 0.5
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-08T00:10:49.102584"
+      },
+      "created_at": "2025-09-08T00:10:49.102584"
+    },
+    "7c60e75c-4a5b-4e2e-996a-aac55ec1c441": {
+      "id": "7c60e75c-4a5b-4e2e-996a-aac55ec1c441",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Those who are pissed at Les Wexner purchasing the Obamas home and blaming the Obamas, but ok that Trump was best friends with Epstein and called him a \u201cterrific guy\u201d are the most hypocritical pathetic human beings on earth.  Show me a picture of Obama partying it up with Epstein. https://t.co/dtbgejK5i4",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-08T00:10:49.102584",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.6,
+          "goal_relevance_score": 0.5
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-08T00:10:49.102584"
+      },
+      "created_at": "2025-09-08T00:10:49.102584"
+    },
+    "e0bf1e12-52d9-48d2-b1f6-47426f43ab36": {
+      "id": "e0bf1e12-52d9-48d2-b1f6-47426f43ab36",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "@Mollyploofkins \u201cI\u2019ve known Jeff Epstein for 15 years. Terrific guy. He\u2019s a lot of fun to be with. It is even said that he likes beautiful women as much as I do, and many of them are on the younger side.\u201d\n\u2013 Donald Trump in 2002, New York Magazine about Epstein https://t.co/NZdDiGaB4T",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-08T00:10:49.102584",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.85,
+          "goal_relevance_score": 0.5
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-08T00:10:49.102584"
+      },
+      "created_at": "2025-09-08T00:10:49.102584"
+    },
+    "1703de02-e9ff-4a9f-a93e-b9706896e461": {
+      "id": "1703de02-e9ff-4a9f-a93e-b9706896e461",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "@Dexertonox Reminds me of Trump on Epstein \n\n\u201cI\u2019ve known Jeff for fifteen years. Terrific guy. He\u2019s a lot of fun to be with. It is even said that he likes beautiful women as much as I do, and many of them are on the younger side.\u201d",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-08T00:10:49.102584",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.85,
+          "goal_relevance_score": 0.5
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-08T00:10:49.102584"
+      },
+      "created_at": "2025-09-08T00:10:49.102584"
+    },
+    "8de67a82-f204-4928-9029-576dd20029ca": {
+      "id": "8de67a82-f204-4928-9029-576dd20029ca",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "\ud83d\udc49 Trump and Epstein were friends for over 15 years, from the late 1980s to early 2000s.\n\nTrump himself said in 2002, \u201cI\u2019ve known Jeff for 15 years. Terrific guy. He\u2019s a lot of fun to be with.\u201d\n\nThey partied together at Trump\u2019s Mar-a-Lago club in Florida. Photos prove it. https://t.co/TC6ukMt6qk",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-08T00:10:49.102584",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.8,
+          "goal_relevance_score": 0.5
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-08T00:10:49.102584"
+      },
+      "created_at": "2025-09-08T00:10:49.102584"
+    },
+    "06f4b9c3-fb2b-42ac-b522-467af92cb4ab": {
+      "id": "06f4b9c3-fb2b-42ac-b522-467af92cb4ab",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "STOP GASLIGHTING! \nTo Donald Trump, Jeffrey Epstein was a \u201cterrific guy\u201d. Epstein believed himself to be Trump\u2019s \u201cclosest friend\u201d, and praised Trump as \u201ccharming\u201d.\n\n\u201cI\u2019ve known Jeff for 15 years. Terrific guy,\u201d Trump told New York magazine. \n\u201cHe\u2019s a lot of fun to be with. It is even said that he likes beautiful  women as much as I do, and many of them are on the younger side.\u201d\nDuring the 15 years that the men were friends, there were plenty of incidents that displayed Trump and Epstein\u2019s closeness.\nhttps://t.co/kRZrl0YoYG\n#LiveBlue #USDemocracy #DemsUnited",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-08T00:10:49.102584",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.9,
+          "goal_relevance_score": 0.5
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-08T00:10:49.102584"
+      },
+      "created_at": "2025-09-08T00:10:49.102584"
+    },
+    "f0ac54da-3004-4464-8aad-54040e4c830c": {
+      "id": "f0ac54da-3004-4464-8aad-54040e4c830c",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "\u201c In 2002, the year before he reportedly sent Epstein the alleged birthday note, Mr Trump told New York magazine: \u201cI\u2019ve known Jeff for 15 years. Terrific guy.\u201d\n\n\u201cHe\u2019s a lot of fun to be with. It is even said that he likes beautiful women as much as I do, and many of them are on the younger side. No doubt about it \u2013 Jeffrey enjoys his social life.\u201d\n\n#MAGAt\n\nIt\u2019s nuts that Americans\u2026or United Stateseans\u2026believe an 80 year old billionaire cares about their children\u2019s future, one he will not exist in. (Cholesterol) \n\nThe last US President who was not a millionaire+ was EIGHTY years ago. Wild.\n\nThese are the people who we are supposed to relate to? I don\u2019t know which way to interpret that question.\n\nThese. \ud83d\udc4f\ud83c\udffb People do not care about us. \n\nThese MAGAtfluencers have been working double time to help their Pedo in Chief coverup his shit pile. So I will go ahead and repost it every few months. You know, because we don\u2019t like people sexualizing children right? Does everyone agree with that one question? I know that even MAGAts would.\n\nAll the rich. Go watch ANTz.",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-08T00:10:49.102584",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.7,
+          "goal_relevance_score": 0.5
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-08T00:10:49.102584"
+      },
+      "created_at": "2025-09-08T00:10:49.102584"
+    }
+  },
+  "edges": [
+    {
+      "id": "17ec7657-9334-4eef-8e66-2fe0c04988e5",
+      "source_id": "a59d0993-0e4d-425c-8117-226970c4cee8",
+      "target_id": "e2180bc6-e302-407d-9e20-2acb82a01048",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-08T00:09:35.313728"
+    },
+    {
+      "id": "7ca7151e-3b76-4bcc-8534-bd18ad562089",
+      "source_id": "e2180bc6-e302-407d-9e20-2acb82a01048",
+      "target_id": "2e025691-dad1-497b-81e9-9b575560abed",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-08T00:09:35.313728"
+    },
+    {
+      "id": "9a76dcf8-222b-4fb2-84f1-100f95803794",
+      "source_id": "a59d0993-0e4d-425c-8117-226970c4cee8",
+      "target_id": "3fe71c16-0043-45ac-b556-b0ddd36e0904",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-08T00:09:35.313728"
+    },
+    {
+      "id": "610bccba-7373-4e7f-8f4c-55a6c4bc8b0d",
+      "source_id": "3fe71c16-0043-45ac-b556-b0ddd36e0904",
+      "target_id": "3ea2103a-be0f-4d61-8754-2cc955b72745",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-08T00:09:35.313728"
+    },
+    {
+      "id": "fada16c2-2876-4cdd-b7a5-f8361b26c745",
+      "source_id": "a59d0993-0e4d-425c-8117-226970c4cee8",
+      "target_id": "40167723-eb09-498b-bf7f-29b1e9e77ad8",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-08T00:09:35.313728"
+    },
+    {
+      "id": "86c1474e-be7d-4e42-bdaf-4e48e595bbca",
+      "source_id": "40167723-eb09-498b-bf7f-29b1e9e77ad8",
+      "target_id": "f6b5aa2b-4006-45ce-8d8e-cf929b876a30",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-08T00:09:35.313728"
+    },
+    {
+      "id": "a151f634-2bb5-486e-a76f-9638cd8ba9c5",
+      "source_id": "a59d0993-0e4d-425c-8117-226970c4cee8",
+      "target_id": "abb44e57-68f6-446c-beb6-81801bda0067",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-08T00:09:35.313728"
+    },
+    {
+      "id": "9dcdb9ff-e4e1-4fdd-90ea-9faef0a225f8",
+      "source_id": "abb44e57-68f6-446c-beb6-81801bda0067",
+      "target_id": "d1cbaf80-106e-4373-a6ec-8aa0fcdad52e",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-08T00:09:35.313728"
+    },
+    {
+      "id": "42b0343a-f69b-4611-bdab-b249538648a0",
+      "source_id": "a59d0993-0e4d-425c-8117-226970c4cee8",
+      "target_id": "76444ec9-4890-4cb4-8505-0a4a14591f1a",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-08T00:09:35.313728"
+    },
+    {
+      "id": "4f121f09-27db-483b-bf32-97f8b0280251",
+      "source_id": "76444ec9-4890-4cb4-8505-0a4a14591f1a",
+      "target_id": "8b894e7b-9a13-4fb6-8e23-327ce008cf4a",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-08T00:09:35.313728"
+    },
+    {
+      "id": "6bd65886-dfd0-4664-8da4-31f61d86efe0",
+      "source_id": "a59d0993-0e4d-425c-8117-226970c4cee8",
+      "target_id": "6fa541f0-945b-43eb-bad7-3f8f01280f1d",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-08T00:09:35.313728"
+    },
+    {
+      "id": "f83f717b-92d6-4d7f-9cab-8c6d208687d6",
+      "source_id": "6fa541f0-945b-43eb-bad7-3f8f01280f1d",
+      "target_id": "3fb8e88e-554c-42bb-ac05-1c5dfcfcf496",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-08T00:09:35.313728"
+    },
+    {
+      "id": "0dfa1bc3-aa4b-4cfa-bf28-886fb4cba119",
+      "source_id": "a59d0993-0e4d-425c-8117-226970c4cee8",
+      "target_id": "b535a2c1-bdd4-46f4-81cd-92df22607477",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-08T00:09:35.313728"
+    },
+    {
+      "id": "df728c4f-a0d8-40d1-9bc0-a38f8a2e1a03",
+      "source_id": "b535a2c1-bdd4-46f4-81cd-92df22607477",
+      "target_id": "eae36d0a-9156-48af-9308-3c3dc8f187a3",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-08T00:09:35.313728"
+    },
+    {
+      "id": "a228e296-bfe8-46f3-88c3-3aefd6335fde",
+      "source_id": "f6b5aa2b-4006-45ce-8d8e-cf929b876a30",
+      "target_id": "9423d448-629f-4e69-b33b-c29692d6ef75",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.9
+      },
+      "created_at": "2025-09-08T00:10:49.102584"
+    },
+    {
+      "id": "dce40e1b-1d94-4fc0-a1b3-3fec6d473115",
+      "source_id": "f6b5aa2b-4006-45ce-8d8e-cf929b876a30",
+      "target_id": "ad8de882-3d1b-4f34-aa76-f611599c8741",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.8
+      },
+      "created_at": "2025-09-08T00:10:49.102584"
+    },
+    {
+      "id": "476bcb4e-9641-45fb-9f0a-748712b1dd13",
+      "source_id": "f6b5aa2b-4006-45ce-8d8e-cf929b876a30",
+      "target_id": "385d0782-f4dc-4fc8-9df1-f60f89150f9a",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.85
+      },
+      "created_at": "2025-09-08T00:10:49.102584"
+    },
+    {
+      "id": "8548394a-25a1-41c8-85c7-895d1b17bcfe",
+      "source_id": "f6b5aa2b-4006-45ce-8d8e-cf929b876a30",
+      "target_id": "7c60e75c-4a5b-4e2e-996a-aac55ec1c441",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.6
+      },
+      "created_at": "2025-09-08T00:10:49.102584"
+    },
+    {
+      "id": "a6cadc6d-0790-4b71-8a12-a4d9b27672f1",
+      "source_id": "f6b5aa2b-4006-45ce-8d8e-cf929b876a30",
+      "target_id": "e0bf1e12-52d9-48d2-b1f6-47426f43ab36",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.85
+      },
+      "created_at": "2025-09-08T00:10:49.102584"
+    },
+    {
+      "id": "d68763c6-c161-4cf5-89b0-37e3946b6765",
+      "source_id": "f6b5aa2b-4006-45ce-8d8e-cf929b876a30",
+      "target_id": "1703de02-e9ff-4a9f-a93e-b9706896e461",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.85
+      },
+      "created_at": "2025-09-08T00:10:49.102584"
+    },
+    {
+      "id": "8c9319e5-4427-48b6-bde8-0fdf1fc4adc3",
+      "source_id": "f6b5aa2b-4006-45ce-8d8e-cf929b876a30",
+      "target_id": "8de67a82-f204-4928-9029-576dd20029ca",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.8
+      },
+      "created_at": "2025-09-08T00:10:49.102584"
+    },
+    {
+      "id": "9a9b0230-ef0b-4d2e-bee4-621a9e441cbb",
+      "source_id": "f6b5aa2b-4006-45ce-8d8e-cf929b876a30",
+      "target_id": "06f4b9c3-fb2b-42ac-b522-467af92cb4ab",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.9
+      },
+      "created_at": "2025-09-08T00:10:49.102584"
+    },
+    {
+      "id": "f1ed5797-0f10-4cb7-b76e-1c00620059d8",
+      "source_id": "f6b5aa2b-4006-45ce-8d8e-cf929b876a30",
+      "target_id": "f0ac54da-3004-4464-8aad-54040e4c830c",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.7
+      },
+      "created_at": "2025-09-08T00:10:49.102584"
+    }
+  ],
+  "analytic_question": "a59d0993-0e4d-425c-8117-226970c4cee8",
+  "created_at": "2025-09-08T00:10:51.307823"
+}

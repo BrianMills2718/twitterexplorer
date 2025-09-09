@@ -1,0 +1,518 @@
+{
+  "nodes": {
+    "fa121bc6-8707-4438-b3c6-7a4e259daf68": {
+      "id": "fa121bc6-8707-4438-b3c6-7a4e259daf68",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "Bitcoin price movement today",
+        "is_root": true,
+        "investigation_goal": "Bitcoin price movement today"
+      },
+      "created_at": "2025-09-05T08:14:08.798990"
+    },
+    "84e99488-1165-48a8-a91b-fd8089136274": {
+      "id": "84e99488-1165-48a8-a91b-fd8089136274",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Catch all real-time tweets mentioning current BTC price/movement (general market chatter, traders, news snippets). Latest results will surface immediate posts that could explain intraday moves.",
+        "parent_analytic_question": "fa121bc6-8707-4438-b3c6-7a4e259daf68"
+      },
+      "created_at": "2025-09-05T08:14:52.679685"
+    },
+    "da6c2302-73be-42c9-a62b-10346dcb640a": {
+      "id": "da6c2302-73be-42c9-a62b-10346dcb640a",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "bitcoin price today OR \"BTC price\" OR #Bitcoin -filter:replies",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-05T08:14:52.679685"
+    },
+    "f79ad539-a3de-46cf-9526-8ec9b97936b1": {
+      "id": "f79ad539-a3de-46cf-9526-8ec9b97936b1",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Determine whether Bitcoin or related tags (e.g., #BTC, 'Bitcoin price', 'BTC') are trending in the United States \u2014 helps assess broader attention and potential retail-driven moves.",
+        "parent_analytic_question": "fa121bc6-8707-4438-b3c6-7a4e259daf68"
+      },
+      "created_at": "2025-09-05T08:14:52.679685"
+    },
+    "14042b8f-e144-4dd4-b6f7-9bae695eb9e7": {
+      "id": "14042b8f-e144-4dd4-b6f7-9bae695eb9e7",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "trends.php",
+        "parameters": {
+          "country": "UnitedStates"
+        }
+      },
+      "created_at": "2025-09-05T08:14:52.679685"
+    },
+    "d2b7c0bb-75e7-4f38-9fac-6ed47a4d75f6": {
+      "id": "d2b7c0bb-75e7-4f38-9fac-6ed47a4d75f6",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Elon Musk historically influences crypto markets. This targeted query captures any Elon posts today about Bitcoin which could explain price moves.",
+        "parent_analytic_question": "fa121bc6-8707-4438-b3c6-7a4e259daf68"
+      },
+      "created_at": "2025-09-05T08:14:52.680198"
+    },
+    "a99fb776-b04c-419c-8194-32dced2b9275": {
+      "id": "a99fb776-b04c-419c-8194-32dced2b9275",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "from:elonmusk bitcoin OR BTC",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-05T08:14:52.680198"
+    },
+    "d1782a23-e27f-4b59-8b32-36a80f501db4": {
+      "id": "d1782a23-e27f-4b59-8b32-36a80f501db4",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: CoinDesk is a leading crypto news source; reviewing their chronological posts today will surface authoritative news (ETF updates, regulation, exchange events) that can drive price.",
+        "parent_analytic_question": "fa121bc6-8707-4438-b3c6-7a4e259daf68"
+      },
+      "created_at": "2025-09-05T08:14:52.680198"
+    },
+    "56b67146-2231-4b67-aead-5c4e1a34fe25": {
+      "id": "56b67146-2231-4b67-aead-5c4e1a34fe25",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "CoinDesk"
+        }
+      },
+      "created_at": "2025-09-05T08:14:52.680198"
+    },
+    "360ed2b6-e8cb-4994-869c-4ca89ce5e6df": {
+      "id": "360ed2b6-e8cb-4994-869c-4ca89ce5e6df",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Complement CoinDesk with another major crypto publisher to cross-check breaking stories and headlines that might be moving the market.",
+        "parent_analytic_question": "fa121bc6-8707-4438-b3c6-7a4e259daf68"
+      },
+      "created_at": "2025-09-05T08:14:52.680198"
+    },
+    "77cb0b58-9c6c-43b7-aa6d-1bee5ad5e68d": {
+      "id": "77cb0b58-9c6c-43b7-aa6d-1bee5ad5e68d",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "Cointelegraph"
+        }
+      },
+      "created_at": "2025-09-05T08:14:52.680198"
+    },
+    "59fa2b04-47ca-41bb-a2f1-4eee4553d3e3": {
+      "id": "59fa2b04-47ca-41bb-a2f1-4eee4553d3e3",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Pull Elon Musk's profile metadata (followers, bio, recent activity pointer) to quickly gauge reach and to prioritize any tweet found in the search results for deeper conversation analysis.",
+        "parent_analytic_question": "fa121bc6-8707-4438-b3c6-7a4e259daf68"
+      },
+      "created_at": "2025-09-05T08:14:52.680198"
+    },
+    "ca34f348-bb6d-4841-8534-3dbb1ab71720": {
+      "id": "ca34f348-bb6d-4841-8534-3dbb1ab71720",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "screenname.php",
+        "parameters": {
+          "screenname": "elonmusk"
+        }
+      },
+      "created_at": "2025-09-05T08:14:52.680198"
+    },
+    "9d281c7b-3698-4061-a5bd-b950927a09ea": {
+      "id": "9d281c7b-3698-4061-a5bd-b950927a09ea",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Search for top tweets tying Bitcoin moves to specific market-moving events (ETF news/regulatory decisions, exchange incidents, large liquidations). 'Top' returns high-engagement posts likely to explain major price swings.",
+        "parent_analytic_question": "fa121bc6-8707-4438-b3c6-7a4e259daf68"
+      },
+      "created_at": "2025-09-05T08:14:52.680198"
+    },
+    "c4a34742-8e3a-4e35-9bb7-f528ca436f3a": {
+      "id": "c4a34742-8e3a-4e35-9bb7-f528ca436f3a",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "bitcoin (ETF OR 'ETF approval' OR SEC OR hack OR 'exchange outage' OR 'liquidation')",
+          "search_type": "Top"
+        }
+      },
+      "created_at": "2025-09-05T08:14:52.680198"
+    },
+    "914a5c07-e305-4120-90fb-7ba5c712a227": {
+      "id": "914a5c07-e305-4120-90fb-7ba5c712a227",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Identify prominent analysts and commentators tweeting about BTC today so we can pull their timelines and assess sentiment and rationale behind intraday moves.",
+        "parent_analytic_question": "fa121bc6-8707-4438-b3c6-7a4e259daf68"
+      },
+      "created_at": "2025-09-05T08:14:52.680198"
+    },
+    "f56a506d-f1b4-4f51-8951-5ea101c3cf1b": {
+      "id": "f56a506d-f1b4-4f51-8951-5ea101c3cf1b",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "search:people bitcoin analyst OR \"BTC analyst\"",
+          "search_type": "People"
+        }
+      },
+      "created_at": "2025-09-05T08:14:52.680198"
+    },
+    "395e8497-921f-4eea-a097-5638430034e2": {
+      "id": "395e8497-921f-4eea-a097-5638430034e2",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "\ud83d\udea8 JUST IN \ud83d\udea8\n\n A great Friday for the crypto market. With #Bitcoin, #Ethereum, and #xrp on the rise, among others.\n\n \ud83d\udcc8 Friday with the market mostly in the green. #Bitcoin is trading at USD 112,400, up 1.37%, coming very close to the previous high of USD 113,500, the price it reached before the drop on August 29. Breaking it would end the current downtrend. \n\n\ud83d\udccc #ETH is holding at USD 4,400 (+0.04%), still trading sideways. \ud83d\udcc8 Among the #altcoins that are gaining the most are #HBAR (+2.52%), #SUI (+2.38%), and #HYPE (+2.14%). \n\n\ud83d\udcc9 Among the few in the red, #LINK fell 2.32% and #CRO fell 1.6%. Are we closing the week on a bullish note?",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-05T08:15:38.324388",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.9,
+          "goal_relevance_score": 0.5
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-05T08:15:38.324388"
+      },
+      "created_at": "2025-09-05T08:15:38.324388"
+    },
+    "3b2343c8-f327-4b21-9641-037c050854d2": {
+      "id": "3b2343c8-f327-4b21-9641-037c050854d2",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Bitcoin BTC Current Price:\n$110,605.37\n\n1h: -1.97%\n24h: +0.83%\n7d: +2.00%\n\n30d: -3.69%\n60d: +2.15%\n90d: +4.8%\n\n#btc $BTC #bitcoin",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-05T08:15:38.325387",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.95,
+          "goal_relevance_score": 0.5
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-05T08:15:38.325387"
+      },
+      "created_at": "2025-09-05T08:15:38.325387"
+    },
+    "6d3f7d05-85a0-4bf3-9e86-ff4cf9b29cdd": {
+      "id": "6d3f7d05-85a0-4bf3-9e86-ff4cf9b29cdd",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Has Bitcoin $BTC Topped? \ud83d\udc40\n\nI review the current price action and explore bullish possibilities in today's video. https://t.co/2lYrn9fHhP",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-05T08:15:38.325387",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.5,
+          "goal_relevance_score": 0.75
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-05T08:15:38.325387"
+      },
+      "created_at": "2025-09-05T08:15:38.325387"
+    },
+    "e1696489-4f1c-4fad-bbbe-ea37d0712f78": {
+      "id": "e1696489-4f1c-4fad-bbbe-ea37d0712f78",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Bitcoin's price remains strong despite disappointing US job numbers, bouncing back to erase a $113.4K drop! \ud83d\ude80\ud83d\udcb0 #Bitcoin #CryptoNews https://t.co/MOncPTPAmT",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-05T08:15:38.325387",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.85,
+          "goal_relevance_score": 0.5
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-05T08:15:38.325387"
+      },
+      "created_at": "2025-09-05T08:15:38.325387"
+    },
+    "4d850b0c-2984-420d-8a71-316edff7c44d": {
+      "id": "4d850b0c-2984-420d-8a71-316edff7c44d",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "\ud83d\udfe0 New Bitcoin update\n\n Bitcoin price ignores major US payrolls miss to erase $113.4K surge   \n\ud83d\udd17 https://t.co/2e8rPNu3A4  \n#Bitcoin #BTC #CryptoNews https://t.co/x4dUteSYu2",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-05T08:15:38.325387",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.8,
+          "goal_relevance_score": 0.5
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-05T08:15:38.325387"
+      },
+      "created_at": "2025-09-05T08:15:38.325387"
+    },
+    "02e949b4-5bb6-4395-8b38-6d37f196a307": {
+      "id": "02e949b4-5bb6-4395-8b38-6d37f196a307",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Bitcoin's price continues to show resilience even after a disappointing US payrolls report, shrugging off predictions of a major surge. Will $BTC find its footing again? \ud83d\udcc9\ud83d\udc94 #Bitcoin #CryptoNews #Mercex #MercexNews",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-05T08:15:38.325387",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.6,
+          "goal_relevance_score": 0.5
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-05T08:15:38.325387"
+      },
+      "created_at": "2025-09-05T08:15:38.325387"
+    }
+  },
+  "edges": [
+    {
+      "id": "efd373e1-bf89-4345-a9bd-8e717d9f2570",
+      "source_id": "fa121bc6-8707-4438-b3c6-7a4e259daf68",
+      "target_id": "84e99488-1165-48a8-a91b-fd8089136274",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-05T08:14:52.679685"
+    },
+    {
+      "id": "26ad8b96-6db2-49ab-a8af-b241333496d6",
+      "source_id": "84e99488-1165-48a8-a91b-fd8089136274",
+      "target_id": "da6c2302-73be-42c9-a62b-10346dcb640a",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-05T08:14:52.679685"
+    },
+    {
+      "id": "da4ca8c2-9099-4303-ac6b-cb58603404bb",
+      "source_id": "fa121bc6-8707-4438-b3c6-7a4e259daf68",
+      "target_id": "f79ad539-a3de-46cf-9526-8ec9b97936b1",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-05T08:14:52.679685"
+    },
+    {
+      "id": "8c0d094c-ce35-4aed-8f35-17f89eb3bd07",
+      "source_id": "f79ad539-a3de-46cf-9526-8ec9b97936b1",
+      "target_id": "14042b8f-e144-4dd4-b6f7-9bae695eb9e7",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-05T08:14:52.680188"
+    },
+    {
+      "id": "ac29b36d-54df-4afd-896f-3c3aa5445209",
+      "source_id": "fa121bc6-8707-4438-b3c6-7a4e259daf68",
+      "target_id": "d2b7c0bb-75e7-4f38-9fac-6ed47a4d75f6",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-05T08:14:52.680198"
+    },
+    {
+      "id": "1a943f85-c7d1-47d2-b912-246bc586e206",
+      "source_id": "d2b7c0bb-75e7-4f38-9fac-6ed47a4d75f6",
+      "target_id": "a99fb776-b04c-419c-8194-32dced2b9275",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-05T08:14:52.680198"
+    },
+    {
+      "id": "1a630430-27cc-43c7-a21e-a4310b2d5d9b",
+      "source_id": "fa121bc6-8707-4438-b3c6-7a4e259daf68",
+      "target_id": "d1782a23-e27f-4b59-8b32-36a80f501db4",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-05T08:14:52.680198"
+    },
+    {
+      "id": "60c90f64-ff74-4485-a9e5-632aeabefa28",
+      "source_id": "d1782a23-e27f-4b59-8b32-36a80f501db4",
+      "target_id": "56b67146-2231-4b67-aead-5c4e1a34fe25",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-05T08:14:52.680198"
+    },
+    {
+      "id": "ab1327e0-e617-4d37-8099-72b86b6d47d4",
+      "source_id": "fa121bc6-8707-4438-b3c6-7a4e259daf68",
+      "target_id": "360ed2b6-e8cb-4994-869c-4ca89ce5e6df",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-05T08:14:52.680198"
+    },
+    {
+      "id": "8cde5135-bfd5-4b96-9f0e-6cade1b9e716",
+      "source_id": "360ed2b6-e8cb-4994-869c-4ca89ce5e6df",
+      "target_id": "77cb0b58-9c6c-43b7-aa6d-1bee5ad5e68d",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-05T08:14:52.680198"
+    },
+    {
+      "id": "288b622f-aa8c-43d5-931e-0e7f64e51fb8",
+      "source_id": "fa121bc6-8707-4438-b3c6-7a4e259daf68",
+      "target_id": "59fa2b04-47ca-41bb-a2f1-4eee4553d3e3",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-05T08:14:52.680198"
+    },
+    {
+      "id": "421cb25e-5ab1-4efc-87e4-c9c70d56aa00",
+      "source_id": "59fa2b04-47ca-41bb-a2f1-4eee4553d3e3",
+      "target_id": "ca34f348-bb6d-4841-8534-3dbb1ab71720",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-05T08:14:52.680198"
+    },
+    {
+      "id": "447f88ea-4171-4900-abd3-e83ec45ac5f1",
+      "source_id": "fa121bc6-8707-4438-b3c6-7a4e259daf68",
+      "target_id": "9d281c7b-3698-4061-a5bd-b950927a09ea",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-05T08:14:52.680198"
+    },
+    {
+      "id": "c0373731-bca4-489c-aadc-bfef32dc51da",
+      "source_id": "9d281c7b-3698-4061-a5bd-b950927a09ea",
+      "target_id": "c4a34742-8e3a-4e35-9bb7-f528ca436f3a",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-05T08:14:52.680198"
+    },
+    {
+      "id": "e5fb2a77-ddd6-49fe-961d-040608f51127",
+      "source_id": "fa121bc6-8707-4438-b3c6-7a4e259daf68",
+      "target_id": "914a5c07-e305-4120-90fb-7ba5c712a227",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-05T08:14:52.680198"
+    },
+    {
+      "id": "45c2ecdf-40de-4de9-9a1d-bce016e19851",
+      "source_id": "914a5c07-e305-4120-90fb-7ba5c712a227",
+      "target_id": "f56a506d-f1b4-4f51-8951-5ea101c3cf1b",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-05T08:14:52.680198"
+    },
+    {
+      "id": "e351ac5c-2138-43fd-9622-ba197784fc9d",
+      "source_id": "da6c2302-73be-42c9-a62b-10346dcb640a",
+      "target_id": "395e8497-921f-4eea-a097-5638430034e2",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.9
+      },
+      "created_at": "2025-09-05T08:15:38.325387"
+    },
+    {
+      "id": "a1d33754-e0c8-42d9-aeb6-f960e8dd400b",
+      "source_id": "da6c2302-73be-42c9-a62b-10346dcb640a",
+      "target_id": "3b2343c8-f327-4b21-9641-037c050854d2",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.95
+      },
+      "created_at": "2025-09-05T08:15:38.325387"
+    },
+    {
+      "id": "aafbabf1-bc44-4334-bc65-94b657899e4b",
+      "source_id": "da6c2302-73be-42c9-a62b-10346dcb640a",
+      "target_id": "6d3f7d05-85a0-4bf3-9e86-ff4cf9b29cdd",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.5
+      },
+      "created_at": "2025-09-05T08:15:38.325387"
+    },
+    {
+      "id": "5cd22721-fb26-406d-aca0-5261b6be0d4b",
+      "source_id": "da6c2302-73be-42c9-a62b-10346dcb640a",
+      "target_id": "e1696489-4f1c-4fad-bbbe-ea37d0712f78",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.85
+      },
+      "created_at": "2025-09-05T08:15:38.325387"
+    },
+    {
+      "id": "68ec7bd8-69e6-4169-ab0c-b90786f5a6be",
+      "source_id": "da6c2302-73be-42c9-a62b-10346dcb640a",
+      "target_id": "4d850b0c-2984-420d-8a71-316edff7c44d",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.8
+      },
+      "created_at": "2025-09-05T08:15:38.325387"
+    },
+    {
+      "id": "b2c4d665-a434-4f28-92fc-870d76c38622",
+      "source_id": "da6c2302-73be-42c9-a62b-10346dcb640a",
+      "target_id": "02e949b4-5bb6-4395-8b38-6d37f196a307",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.6
+      },
+      "created_at": "2025-09-05T08:15:38.325387"
+    }
+  ],
+  "analytic_question": "fa121bc6-8707-4438-b3c6-7a4e259daf68",
+  "created_at": "2025-09-05T08:15:56.644599"
+}

@@ -1,0 +1,120 @@
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-05T09:49:22.534149"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:49:22.910575"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:49:22.910575"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:49:22.910575"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "Mock", "error": null, "timestamp": "2025-09-05T09:49:22.912575"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "Mock", "error": null, "timestamp": "2025-09-05T09:49:22.912575"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "Mock", "error": null, "timestamp": "2025-09-05T09:49:22.912575"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "Mock", "error": null, "timestamp": "2025-09-05T09:49:22.912575"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "'>' not supported between instances of 'Mock' and 'float'", "timestamp": "2025-09-05T09:49:22.912575"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "'>' not supported between instances of 'Mock' and 'float'", "timestamp": "2025-09-05T09:49:22.912575"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "'>' not supported between instances of 'Mock' and 'float'", "timestamp": "2025-09-05T09:49:22.912575"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "'>' not supported between instances of 'Mock' and 'float'", "timestamp": "2025-09-05T09:49:22.912575"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "Mock", "error": null, "timestamp": "2025-09-05T09:49:22.912575"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "Mock", "error": null, "timestamp": "2025-09-05T09:49:22.912575"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "Mock", "error": null, "timestamp": "2025-09-05T09:49:22.912575"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "Mock", "error": null, "timestamp": "2025-09-05T09:49:22.912575"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-05T09:50:00.452378"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-05T09:50:00.454355"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-05T09:50:00.454355"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:50:00.456379"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:50:00.456379"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:50:00.456379"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "Mock", "error": null, "timestamp": "2025-09-05T09:50:00.458355"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "Mock", "error": null, "timestamp": "2025-09-05T09:50:00.458355"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "Mock", "error": null, "timestamp": "2025-09-05T09:50:00.458355"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "Mock", "error": null, "timestamp": "2025-09-05T09:50:00.458355"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "'>' not supported between instances of 'Mock' and 'float'", "timestamp": "2025-09-05T09:50:00.458355"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "'>' not supported between instances of 'Mock' and 'float'", "timestamp": "2025-09-05T09:50:00.458355"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "'>' not supported between instances of 'Mock' and 'float'", "timestamp": "2025-09-05T09:50:00.458355"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "'>' not supported between instances of 'Mock' and 'float'", "timestamp": "2025-09-05T09:50:00.458355"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "Mock", "error": null, "timestamp": "2025-09-05T09:50:00.458355"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "Mock", "error": null, "timestamp": "2025-09-05T09:50:00.458355"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "Mock", "error": null, "timestamp": "2025-09-05T09:50:00.458355"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "Mock", "error": null, "timestamp": "2025-09-05T09:50:00.458355"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-05T09:50:12.932269"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:50:12.934269"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:50:12.934269"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LLM failed", "timestamp": "2025-09-05T09:50:12.936842"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LLM failed", "timestamp": "2025-09-05T09:50:12.936842"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LLM failed", "timestamp": "2025-09-05T09:50:12.936842"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LLM failed", "timestamp": "2025-09-05T09:50:12.936842"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LLM failed", "timestamp": "2025-09-05T09:50:12.936842"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LLM failed", "timestamp": "2025-09-05T09:50:12.936842"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LLM failed", "timestamp": "2025-09-05T09:50:12.936842"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LLM failed", "timestamp": "2025-09-05T09:50:12.936842"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-05T09:50:12.938842"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-05T09:50:12.938842"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-05T09:50:12.938842"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-05T09:50:12.938842"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-05T09:50:12.938842"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-05T09:50:32.700189"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:50:32.702189"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:50:32.702189"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LLM failed", "timestamp": "2025-09-05T09:50:32.705189"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LLM failed", "timestamp": "2025-09-05T09:50:32.705189"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LLM failed", "timestamp": "2025-09-05T09:50:32.705189"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LLM failed", "timestamp": "2025-09-05T09:50:32.705189"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LLM failed", "timestamp": "2025-09-05T09:50:32.705189"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LLM failed", "timestamp": "2025-09-05T09:50:32.705189"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LLM failed", "timestamp": "2025-09-05T09:50:32.705189"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LLM failed", "timestamp": "2025-09-05T09:50:32.705189"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-05T09:50:32.707189"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-05T09:50:32.707189"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-05T09:50:32.707189"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-05T09:50:32.707189"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-05T09:50:32.707189"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-05T09:55:52.947542"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-05T09:55:52.950543"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-05T09:55:52.950543"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:55:52.952543"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:55:52.952543"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:55:52.952543"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "Mock", "error": null, "timestamp": "2025-09-05T09:55:52.954543"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "Mock", "error": null, "timestamp": "2025-09-05T09:55:52.954543"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "Mock", "error": null, "timestamp": "2025-09-05T09:55:52.954543"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "Mock", "error": null, "timestamp": "2025-09-05T09:55:52.954543"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "'>' not supported between instances of 'Mock' and 'float'", "timestamp": "2025-09-05T09:55:52.955587"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "'>' not supported between instances of 'Mock' and 'float'", "timestamp": "2025-09-05T09:55:52.955587"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "'>' not supported between instances of 'Mock' and 'float'", "timestamp": "2025-09-05T09:55:52.955587"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "'>' not supported between instances of 'Mock' and 'float'", "timestamp": "2025-09-05T09:55:52.955587"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "Mock", "error": null, "timestamp": "2025-09-05T09:55:52.955587"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "Mock", "error": null, "timestamp": "2025-09-05T09:55:52.955587"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "Mock", "error": null, "timestamp": "2025-09-05T09:55:52.955587"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "Mock", "error": null, "timestamp": "2025-09-05T09:55:52.955587"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-05T09:55:52.960101"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-05T09:55:52.960101"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-05T09:55:52.960101"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-05T09:55:52.960101"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-05T09:55:52.960101"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:55:52.962098"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:55:52.962098"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:55:52.962098"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:55:52.962098"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:55:52.962098"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:55:52.962098"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LLM failed", "timestamp": "2025-09-05T09:55:52.965097"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LLM failed", "timestamp": "2025-09-05T09:55:52.965097"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LLM failed", "timestamp": "2025-09-05T09:55:52.965097"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LLM failed", "timestamp": "2025-09-05T09:55:52.965097"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LLM failed", "timestamp": "2025-09-05T09:55:52.965097"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LLM failed", "timestamp": "2025-09-05T09:55:52.965097"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LLM failed", "timestamp": "2025-09-05T09:55:52.965097"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LLM failed", "timestamp": "2025-09-05T09:55:52.965097"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LLM failed", "timestamp": "2025-09-05T09:55:52.966097"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LLM failed", "timestamp": "2025-09-05T09:55:52.966097"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LLM failed", "timestamp": "2025-09-05T09:55:52.966097"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LLM failed", "timestamp": "2025-09-05T09:55:52.966097"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LLM failed", "timestamp": "2025-09-05T09:55:52.966097"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LLM failed", "timestamp": "2025-09-05T09:55:52.966097"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LLM failed", "timestamp": "2025-09-05T09:55:52.966097"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LLM failed", "timestamp": "2025-09-05T09:55:52.966097"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-05T09:55:52.968119"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-05T09:55:52.968119"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-05T09:55:52.968119"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-05T09:55:52.968119"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-05T09:55:52.968119"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-05T09:55:52.968119"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-05T09:55:52.968119"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-05T09:55:52.968119"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-05T09:55:52.968119"}

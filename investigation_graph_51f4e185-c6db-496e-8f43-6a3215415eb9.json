@@ -1,0 +1,243 @@
+{
+  "nodes": {
+    "26db7b2b-55df-423f-a0c8-74f5b4ac8160": {
+      "id": "26db7b2b-55df-423f-a0c8-74f5b4ac8160",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "find me the best TV shows that are popular right now in 2024",
+        "is_root": true,
+        "investigation_goal": "find me the best TV shows that are popular right now in 2024"
+      },
+      "created_at": "2025-09-08T06:05:57.807208"
+    },
+    "2c9eb8b2-746c-4a10-85de-b4b864a0e302": {
+      "id": "2c9eb8b2-746c-4a10-85de-b4b864a0e302",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: To get a general understanding of what topics are currently trending in the United States, which is a major market for TV shows. This may reveal specific show titles, actors, or entertainment-related discussions indicating popularity.",
+        "parent_analytic_question": "26db7b2b-55df-423f-a0c8-74f5b4ac8160"
+      },
+      "created_at": "2025-09-08T06:06:07.004989"
+    },
+    "0d4f2342-a5e2-4757-84a8-76321b5c972f": {
+      "id": "0d4f2342-a5e2-4757-84a8-76321b5c972f",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "trends.php",
+        "parameters": {
+          "country": "UnitedStates"
+        }
+      },
+      "created_at": "2025-09-08T06:06:07.004989"
+    },
+    "7829fec9-bef8-4fb0-b469-d14b683901be": {
+      "id": "7829fec9-bef8-4fb0-b469-d14b683901be",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: This direct search aims to find widely discussed and highly-ranked TV shows explicitly mentioned as 'best' and 'popular right now' for 2024, focusing on top results to capture the most relevant conversations.",
+        "parent_analytic_question": "26db7b2b-55df-423f-a0c8-74f5b4ac8160"
+      },
+      "created_at": "2025-09-08T06:06:07.004989"
+    },
+    "865f6ec2-6d63-4e39-84c7-b2c2a9276340": {
+      "id": "865f6ec2-6d63-4e39-84c7-b2c2a9276340",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "best TV shows 2024 popular right now",
+          "search_type": "Top"
+        }
+      },
+      "created_at": "2025-09-08T06:06:07.004989"
+    },
+    "711bd853-26aa-41fe-8ead-695a3dc2108b": {
+      "id": "711bd853-26aa-41fe-8ead-695a3dc2108b",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: To identify key individuals or media outlets (critics, journalists, official accounts) that consistently report on popular TV shows. These accounts will be valuable for future timeline analysis to gather curated lists or expert opinions.",
+        "parent_analytic_question": "26db7b2b-55df-423f-a0c8-74f5b4ac8160"
+      },
+      "created_at": "2025-09-08T06:06:07.004989"
+    },
+    "6c9cee99-7e7b-4661-a1db-b362ea8cf838": {
+      "id": "6c9cee99-7e7b-4661-a1db-b362ea8cf838",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "entertainment news TV critics popular series",
+          "search_type": "People"
+        }
+      },
+      "created_at": "2025-09-08T06:06:07.004989"
+    },
+    "4a080cde-6b43-4a63-8f62-141c8d342a27": {
+      "id": "4a080cde-6b43-4a63-8f62-141c8d342a27",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Bridgerton Season 3 is #7 on IMDB\u2019s Top 10 Most Popular TV shows of 2024!\n\nPOLIN SEASON WILL ALWAYS BE ICONIC https://t.co/OWafujGgHX",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-08T06:06:43.672459",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.9,
+          "goal_relevance_score": 0.5
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-08T06:06:43.672459"
+      },
+      "created_at": "2025-09-08T06:06:43.672459"
+    },
+    "8fc4d77d-0ef0-49b8-9d0b-a054f54b41aa": {
+      "id": "8fc4d77d-0ef0-49b8-9d0b-a054f54b41aa",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "The 2 best series to watch on TV right now\n\nFROM - a horror thriller that keeps you in suspense wondering what's coming next\n\nThe Day Of The Jackal - an action thriller that will keep you on the edge of your seat https://t.co/gXNNvCp98n",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-08T06:06:43.672459",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.8,
+          "goal_relevance_score": 0.5
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-08T06:06:43.672459"
+      },
+      "created_at": "2025-09-08T06:06:43.672459"
+    },
+    "6b1b563c-c8ef-4d3f-87fe-dae81e37b55a": {
+      "id": "6b1b563c-c8ef-4d3f-87fe-dae81e37b55a",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Several TV shows are highlighted as currently popular in 2024. Bridgerton Season 3 is specifically noted as being #7 on IMDB\u2019s Top 10 Most Popular TV shows of 2024. Additionally, two other series, the horror thriller 'FROM' and the action thriller 'The Day Of The Jackal', are recommended as the best series to watch right now, indicating their current high popularity and relevance.",
+        "insight_type": "connection",
+        "confidence": 0.9,
+        "title": "Popular TV Shows in 2024 Include Bridgerton Season 3, FROM, and The Day Of The Jackal"
+      },
+      "created_at": "2025-09-08T06:06:59.925961"
+    }
+  },
+  "edges": [
+    {
+      "id": "159a24f8-9b13-43ee-8650-458e3502e4b7",
+      "source_id": "26db7b2b-55df-423f-a0c8-74f5b4ac8160",
+      "target_id": "2c9eb8b2-746c-4a10-85de-b4b864a0e302",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-08T06:06:07.004989"
+    },
+    {
+      "id": "8db5c26a-75a7-4b8a-a29c-eebe97329cff",
+      "source_id": "2c9eb8b2-746c-4a10-85de-b4b864a0e302",
+      "target_id": "0d4f2342-a5e2-4757-84a8-76321b5c972f",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-08T06:06:07.004989"
+    },
+    {
+      "id": "43f51e34-7edd-4a13-b844-ff30686636a0",
+      "source_id": "26db7b2b-55df-423f-a0c8-74f5b4ac8160",
+      "target_id": "7829fec9-bef8-4fb0-b469-d14b683901be",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-08T06:06:07.004989"
+    },
+    {
+      "id": "139de579-4997-4c48-83ea-da6e2ea328b4",
+      "source_id": "7829fec9-bef8-4fb0-b469-d14b683901be",
+      "target_id": "865f6ec2-6d63-4e39-84c7-b2c2a9276340",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-08T06:06:07.004989"
+    },
+    {
+      "id": "fac784d3-e9a2-441a-835a-8e71e0d94d9e",
+      "source_id": "26db7b2b-55df-423f-a0c8-74f5b4ac8160",
+      "target_id": "711bd853-26aa-41fe-8ead-695a3dc2108b",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-08T06:06:07.004989"
+    },
+    {
+      "id": "43ac69a1-31c0-49dc-8521-f96335120c2d",
+      "source_id": "711bd853-26aa-41fe-8ead-695a3dc2108b",
+      "target_id": "6c9cee99-7e7b-4661-a1db-b362ea8cf838",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-08T06:06:07.004989"
+    },
+    {
+      "id": "3692d20d-22e7-4d12-89d6-f6147b2416c3",
+      "source_id": "865f6ec2-6d63-4e39-84c7-b2c2a9276340",
+      "target_id": "4a080cde-6b43-4a63-8f62-141c8d342a27",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.9
+      },
+      "created_at": "2025-09-08T06:06:43.672459"
+    },
+    {
+      "id": "fdec1442-0a52-4de5-9e1b-cc644faa53ba",
+      "source_id": "865f6ec2-6d63-4e39-84c7-b2c2a9276340",
+      "target_id": "8fc4d77d-0ef0-49b8-9d0b-a054f54b41aa",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.8
+      },
+      "created_at": "2025-09-08T06:06:43.672459"
+    },
+    {
+      "id": "543d874a-f799-46d8-8a64-93563e5f68a1",
+      "source_id": "4a080cde-6b43-4a63-8f62-141c8d342a27",
+      "target_id": "6b1b563c-c8ef-4d3f-87fe-dae81e37b55a",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-08T06:06:59.925961"
+      },
+      "created_at": "2025-09-08T06:06:59.925961"
+    },
+    {
+      "id": "16f2e6e3-ce9d-4c6d-a878-840281ab8a27",
+      "source_id": "8fc4d77d-0ef0-49b8-9d0b-a054f54b41aa",
+      "target_id": "6b1b563c-c8ef-4d3f-87fe-dae81e37b55a",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-08T06:06:59.925961"
+      },
+      "created_at": "2025-09-08T06:06:59.926959"
+    },
+    {
+      "id": "c7616883-f2e1-44c2-94bb-877687fb3123",
+      "source_id": "4a080cde-6b43-4a63-8f62-141c8d342a27",
+      "target_id": "6b1b563c-c8ef-4d3f-87fe-dae81e37b55a",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-08T06:06:59.926959"
+      },
+      "created_at": "2025-09-08T06:06:59.926959"
+    }
+  ],
+  "analytic_question": "26db7b2b-55df-423f-a0c8-74f5b4ac8160",
+  "created_at": "2025-09-08T06:07:18.018814"
+}

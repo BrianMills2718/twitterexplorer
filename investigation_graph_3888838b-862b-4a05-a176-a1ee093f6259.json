@@ -1,0 +1,412 @@
+{
+  "nodes": {
+    "b57a5a68-8b30-4e49-95a5-5ac07da90adf": {
+      "id": "b57a5a68-8b30-4e49-95a5-5ac07da90adf",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "current issues in argentina",
+        "is_root": true,
+        "investigation_goal": "current issues in argentina"
+      },
+      "created_at": "2025-09-08T06:51:02.685706"
+    },
+    "159a9292-1037-4576-b914-c5806d7192c9": {
+      "id": "159a9292-1037-4576-b914-c5806d7192c9",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: This search will reveal trending topics within Argentina, providing insight into the current issues that are capturing public attention.",
+        "parent_analytic_question": "b57a5a68-8b30-4e49-95a5-5ac07da90adf"
+      },
+      "created_at": "2025-09-08T06:51:11.858481"
+    },
+    "5f6c2511-100d-41b6-a5a5-30096bb24db7": {
+      "id": "5f6c2511-100d-41b6-a5a5-30096bb24db7",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "trends.php",
+        "parameters": {
+          "query": "Argentina",
+          "screenname": "argentinaprofile",
+          "country": "Argentina",
+          "rest_id": "123456",
+          "rest_ids": "789012",
+          "cursor": "123abc",
+          "search_type": "Top",
+          "id": "tweet_789012",
+          "tweet_id": "789456",
+          "user": "argentinapolitica",
+          "follows": "argentina_news",
+          "list_id": "people_light"
+        }
+      },
+      "created_at": "2025-09-08T06:51:11.858481"
+    },
+    "9a089319-e0bb-40e5-8702-9a320c2505a0": {
+      "id": "9a089319-e0bb-40e5-8702-9a320c2505a0",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: This search will help gather recent tweets and discussions around current issues in Argentina, which can be analyzed for trends and sentiment.",
+        "parent_analytic_question": "b57a5a68-8b30-4e49-95a5-5ac07da90adf"
+      },
+      "created_at": "2025-09-08T06:51:11.858481"
+    },
+    "86601ab2-4a08-4f79-b112-ae05ce20b7ce": {
+      "id": "86601ab2-4a08-4f79-b112-ae05ce20b7ce",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "current issues in Argentina",
+          "screenname": "argentinapolitics",
+          "country": "Argentina",
+          "rest_id": "user_rest_id",
+          "rest_ids": "789012",
+          "cursor": "cursor_token",
+          "search_type": "Latest",
+          "id": "tweet_789012",
+          "tweet_id": "tweet_989789",
+          "user": "argentinapolitician",
+          "follows": "argentina_current",
+          "list_id": "issues_list"
+        }
+      },
+      "created_at": "2025-09-08T06:51:11.858481"
+    },
+    "90b13671-71ff-4182-9682-ab6c97499bf9": {
+      "id": "90b13671-71ff-4182-9682-ab6c97499bf9",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "108K posts",
+        "source_info": {
+          "source": "twitter_api_trends",
+          "relevance_score": 7.0,
+          "timestamp": "2025-09-08T06:51:32.923754"
+        }
+      },
+      "created_at": "2025-09-08T06:51:32.923754"
+    },
+    "60dad87b-0cde-4639-be62-7751ffada946": {
+      "id": "60dad87b-0cde-4639-be62-7751ffada946",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "43.6K posts",
+        "source_info": {
+          "source": "twitter_api_trends",
+          "relevance_score": 7.0,
+          "timestamp": "2025-09-08T06:51:32.923754"
+        }
+      },
+      "created_at": "2025-09-08T06:51:32.923754"
+    },
+    "ab75a4db-3ba6-45b5-8547-1cc7ce76b94d": {
+      "id": "ab75a4db-3ba6-45b5-8547-1cc7ce76b94d",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "153K posts",
+        "source_info": {
+          "source": "twitter_api_trends",
+          "relevance_score": 7.0,
+          "timestamp": "2025-09-08T06:51:32.923754"
+        }
+      },
+      "created_at": "2025-09-08T06:51:32.923754"
+    },
+    "4ac0051d-b332-4e25-8aaa-84d5795615f2": {
+      "id": "4ac0051d-b332-4e25-8aaa-84d5795615f2",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "57.2K posts",
+        "source_info": {
+          "source": "twitter_api_trends",
+          "relevance_score": 7.0,
+          "timestamp": "2025-09-08T06:51:32.923754"
+        }
+      },
+      "created_at": "2025-09-08T06:51:32.923754"
+    },
+    "1f03fd23-1585-4910-98ea-35979c4cbeeb": {
+      "id": "1f03fd23-1585-4910-98ea-35979c4cbeeb",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "91.2K posts",
+        "source_info": {
+          "source": "twitter_api_trends",
+          "relevance_score": 7.0,
+          "timestamp": "2025-09-08T06:51:32.923754"
+        }
+      },
+      "created_at": "2025-09-08T06:51:32.923754"
+    },
+    "be0ca266-edac-45f5-a396-5895d8dc1a1f": {
+      "id": "be0ca266-edac-45f5-a396-5895d8dc1a1f",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Major discussions on the economic crisis and inflation rates in Argentina.",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-08T06:51:32.923754"
+    },
+    "c9f8ce1f-d84f-4c50-8cff-55205afc46f8": {
+      "id": "c9f8ce1f-d84f-4c50-8cff-55205afc46f8",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Social issues including protests and governmental reforms are currently trending.",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-08T06:51:32.923754"
+    },
+    "d459e4b8-a41a-4edd-ad1a-c0547f9694f4": {
+      "id": "d459e4b8-a41a-4edd-ad1a-c0547f9694f4",
+      "node_type": "Insight",
+      "properties": {
+        "content": "There is significant political debate around the upcoming elections and candidates.",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-08T06:51:32.923754"
+    }
+  },
+  "edges": [
+    {
+      "id": "6a859ec7-20f4-4527-9378-c0f216948171",
+      "source_id": "b57a5a68-8b30-4e49-95a5-5ac07da90adf",
+      "target_id": "159a9292-1037-4576-b914-c5806d7192c9",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-08T06:51:11.858481"
+    },
+    {
+      "id": "e6bb84dd-26cb-435a-9381-ad416a3bdcf8",
+      "source_id": "159a9292-1037-4576-b914-c5806d7192c9",
+      "target_id": "5f6c2511-100d-41b6-a5a5-30096bb24db7",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-08T06:51:11.858481"
+    },
+    {
+      "id": "7fbda685-cb38-4edd-9e92-91206f0aed9f",
+      "source_id": "b57a5a68-8b30-4e49-95a5-5ac07da90adf",
+      "target_id": "9a089319-e0bb-40e5-8702-9a320c2505a0",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-08T06:51:11.858481"
+    },
+    {
+      "id": "977292c8-c376-4763-ab88-2c937a818f67",
+      "source_id": "9a089319-e0bb-40e5-8702-9a320c2505a0",
+      "target_id": "86601ab2-4a08-4f79-b112-ae05ce20b7ce",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-08T06:51:11.858481"
+    },
+    {
+      "id": "bd8173c0-7627-4920-9749-b1dbe2f0fbc5",
+      "source_id": "86601ab2-4a08-4f79-b112-ae05ce20b7ce",
+      "target_id": "90b13671-71ff-4182-9682-ab6c97499bf9",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 7.0
+      },
+      "created_at": "2025-09-08T06:51:32.923754"
+    },
+    {
+      "id": "9f853b65-0dea-4e8b-b378-f266f5d69084",
+      "source_id": "86601ab2-4a08-4f79-b112-ae05ce20b7ce",
+      "target_id": "60dad87b-0cde-4639-be62-7751ffada946",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 7.0
+      },
+      "created_at": "2025-09-08T06:51:32.923754"
+    },
+    {
+      "id": "01da53a7-30b2-4347-bb02-0945d714f9cb",
+      "source_id": "86601ab2-4a08-4f79-b112-ae05ce20b7ce",
+      "target_id": "ab75a4db-3ba6-45b5-8547-1cc7ce76b94d",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 7.0
+      },
+      "created_at": "2025-09-08T06:51:32.923754"
+    },
+    {
+      "id": "080d6316-8440-49de-9f42-020abcc38ad3",
+      "source_id": "86601ab2-4a08-4f79-b112-ae05ce20b7ce",
+      "target_id": "4ac0051d-b332-4e25-8aaa-84d5795615f2",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 7.0
+      },
+      "created_at": "2025-09-08T06:51:32.923754"
+    },
+    {
+      "id": "4d5da26a-8332-404c-a721-edee66ecb4dd",
+      "source_id": "86601ab2-4a08-4f79-b112-ae05ce20b7ce",
+      "target_id": "1f03fd23-1585-4910-98ea-35979c4cbeeb",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 7.0
+      },
+      "created_at": "2025-09-08T06:51:32.923754"
+    },
+    {
+      "id": "3b800551-befd-4b9d-8d48-ce47c6c1cc05",
+      "source_id": "90b13671-71ff-4182-9682-ab6c97499bf9",
+      "target_id": "be0ca266-edac-45f5-a396-5895d8dc1a1f",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-08T06:51:32.923754"
+    },
+    {
+      "id": "0d4026c1-7445-4cb6-8803-e8f4d3385992",
+      "source_id": "60dad87b-0cde-4639-be62-7751ffada946",
+      "target_id": "be0ca266-edac-45f5-a396-5895d8dc1a1f",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-08T06:51:32.923754"
+    },
+    {
+      "id": "a923e265-93bf-4cf3-9962-fee2248178e4",
+      "source_id": "ab75a4db-3ba6-45b5-8547-1cc7ce76b94d",
+      "target_id": "be0ca266-edac-45f5-a396-5895d8dc1a1f",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-08T06:51:32.923754"
+    },
+    {
+      "id": "1fa85df8-34dc-4d36-a270-90381d5bc491",
+      "source_id": "4ac0051d-b332-4e25-8aaa-84d5795615f2",
+      "target_id": "be0ca266-edac-45f5-a396-5895d8dc1a1f",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-08T06:51:32.923754"
+    },
+    {
+      "id": "03323ae1-f61a-4c8d-b9f0-7496815edc0d",
+      "source_id": "1f03fd23-1585-4910-98ea-35979c4cbeeb",
+      "target_id": "be0ca266-edac-45f5-a396-5895d8dc1a1f",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-08T06:51:32.923754"
+    },
+    {
+      "id": "6296505a-a58a-4ed8-ae9d-255ad3a0c0bd",
+      "source_id": "90b13671-71ff-4182-9682-ab6c97499bf9",
+      "target_id": "c9f8ce1f-d84f-4c50-8cff-55205afc46f8",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-08T06:51:32.923754"
+    },
+    {
+      "id": "60c2c561-e9e6-4fe2-8be2-c664635a8ac2",
+      "source_id": "60dad87b-0cde-4639-be62-7751ffada946",
+      "target_id": "c9f8ce1f-d84f-4c50-8cff-55205afc46f8",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-08T06:51:32.923754"
+    },
+    {
+      "id": "0d6df7d2-7fba-4ce5-8391-0a579d99c9ac",
+      "source_id": "ab75a4db-3ba6-45b5-8547-1cc7ce76b94d",
+      "target_id": "c9f8ce1f-d84f-4c50-8cff-55205afc46f8",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-08T06:51:32.923754"
+    },
+    {
+      "id": "ff322796-53b4-4c8d-9ffc-f8ec0197657d",
+      "source_id": "4ac0051d-b332-4e25-8aaa-84d5795615f2",
+      "target_id": "c9f8ce1f-d84f-4c50-8cff-55205afc46f8",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-08T06:51:32.923754"
+    },
+    {
+      "id": "80b3d14f-7ed0-402f-b4a1-0ab63aa59479",
+      "source_id": "1f03fd23-1585-4910-98ea-35979c4cbeeb",
+      "target_id": "c9f8ce1f-d84f-4c50-8cff-55205afc46f8",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-08T06:51:32.923754"
+    },
+    {
+      "id": "48ffde10-581b-4046-be68-9dbcd5db4aa2",
+      "source_id": "90b13671-71ff-4182-9682-ab6c97499bf9",
+      "target_id": "d459e4b8-a41a-4edd-ad1a-c0547f9694f4",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-08T06:51:32.923754"
+    },
+    {
+      "id": "8b3ab045-19e8-4815-8af0-9d40958ff663",
+      "source_id": "60dad87b-0cde-4639-be62-7751ffada946",
+      "target_id": "d459e4b8-a41a-4edd-ad1a-c0547f9694f4",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-08T06:51:32.923754"
+    },
+    {
+      "id": "f42f8076-75b5-4af4-b4bb-33d7c57c5870",
+      "source_id": "ab75a4db-3ba6-45b5-8547-1cc7ce76b94d",
+      "target_id": "d459e4b8-a41a-4edd-ad1a-c0547f9694f4",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-08T06:51:32.923754"
+    },
+    {
+      "id": "56952ef8-3b2f-43f4-9d6a-415052d84fde",
+      "source_id": "4ac0051d-b332-4e25-8aaa-84d5795615f2",
+      "target_id": "d459e4b8-a41a-4edd-ad1a-c0547f9694f4",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-08T06:51:32.923754"
+    },
+    {
+      "id": "d4a31a9e-ff44-497c-96c6-ea9bb7dbbe1c",
+      "source_id": "1f03fd23-1585-4910-98ea-35979c4cbeeb",
+      "target_id": "d459e4b8-a41a-4edd-ad1a-c0547f9694f4",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-08T06:51:32.923754"
+    }
+  ],
+  "analytic_question": "b57a5a68-8b30-4e49-95a5-5ac07da90adf",
+  "created_at": "2025-09-08T06:51:33.280072"
+}

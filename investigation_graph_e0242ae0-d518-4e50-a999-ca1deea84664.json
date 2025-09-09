@@ -1,0 +1,388 @@
+{
+  "nodes": {
+    "d49dae0b-9d55-4688-af0b-f692bd627dca": {
+      "id": "d49dae0b-9d55-4688-af0b-f692bd627dca",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "Nvidia stock price analysis today",
+        "is_root": true,
+        "investigation_goal": "Nvidia stock price analysis today"
+      },
+      "created_at": "2025-09-05T08:17:15.339308"
+    },
+    "8ff96bc9-8603-41e8-8afe-e4ee2ece28c0": {
+      "id": "8ff96bc9-8603-41e8-8afe-e4ee2ece28c0",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Capture the freshest, crowd-level tweets today mentioning Nvidia stock and key price drivers; excludes link-only repost noise to surface organic commentary and trading chatter.",
+        "parent_analytic_question": "d49dae0b-9d55-4688-af0b-f692bd627dca"
+      },
+      "created_at": "2025-09-05T08:17:52.442139"
+    },
+    "d0c26ea5-2a9e-4d9d-94f4-011f071222fe": {
+      "id": "d0c26ea5-2a9e-4d9d-94f4-011f071222fe",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "($NVDA OR Nvidia) (stock OR price OR shares OR rally OR selloff OR guidance OR earnings) -filter:links",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-05T08:17:52.442139"
+    },
+    "aff1a530-8e44-4330-b3e8-243f5998a114": {
+      "id": "aff1a530-8e44-4330-b3e8-243f5998a114",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Pull Nvidia's official tweets today for company announcements or forward guidance that could directly affect price.",
+        "parent_analytic_question": "d49dae0b-9d55-4688-af0b-f692bd627dca"
+      },
+      "created_at": "2025-09-05T08:17:52.442139"
+    },
+    "dfe14979-3fd9-464b-9b25-1fd21133cdcb": {
+      "id": "dfe14979-3fd9-464b-9b25-1fd21133cdcb",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "from:NVIDIA (earnings OR revenue OR guidance OR CEO OR Jensen Huang OR partnership OR AI OR product)",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-05T08:17:52.442139"
+    },
+    "27067321-bd84-41b5-8bd5-f68684ff2b78": {
+      "id": "27067321-bd84-41b5-8bd5-f68684ff2b78",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Scan recent CNBC posts for breaking market coverage, headlines, or clips that influence trader reaction to NVDA intraday.",
+        "parent_analytic_question": "d49dae0b-9d55-4688-af0b-f692bd627dca"
+      },
+      "created_at": "2025-09-05T08:17:52.442139"
+    },
+    "52c459c4-c876-48a4-8093-22a571f71dd3": {
+      "id": "52c459c4-c876-48a4-8093-22a571f71dd3",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "CNBC"
+        }
+      },
+      "created_at": "2025-09-05T08:17:52.442139"
+    },
+    "f82f39f8-d924-4d9f-a5cc-746dced371e1": {
+      "id": "f82f39f8-d924-4d9f-a5cc-746dced371e1",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Check a high-influence retail/investor commentator for any NVDA calls or sentiment that can amplify intraday moves.",
+        "parent_analytic_question": "d49dae0b-9d55-4688-af0b-f692bd627dca"
+      },
+      "created_at": "2025-09-05T08:17:52.442139"
+    },
+    "f38785d3-0edd-4161-9cce-befa7f9af086": {
+      "id": "f38785d3-0edd-4161-9cce-befa7f9af086",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "jimcramer"
+        }
+      },
+      "created_at": "2025-09-05T08:17:52.443138"
+    },
+    "82f8c800-ae22-4b64-aab6-0c7e34d69797": {
+      "id": "82f8c800-ae22-4b64-aab6-0c7e34d69797",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Determine whether NVDA / $NVDA / Nvidia-related topics are trending nationally today \u2014 provides context on breadth of attention vs niche chatter.",
+        "parent_analytic_question": "d49dae0b-9d55-4688-af0b-f692bd627dca"
+      },
+      "created_at": "2025-09-05T08:17:52.443138"
+    },
+    "7882111f-dc10-404f-8f69-4f3b3f43f959": {
+      "id": "7882111f-dc10-404f-8f69-4f3b3f43f959",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "trends.php",
+        "parameters": {
+          "country": "UnitedStates"
+        }
+      },
+      "created_at": "2025-09-05T08:17:52.443138"
+    },
+    "72c45438-ed0d-4a97-a4d2-bf8854d69e0b": {
+      "id": "72c45438-ed0d-4a97-a4d2-bf8854d69e0b",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Planned follow-up: once a high-engagement NVDA tweet is found from the search results, fetch the full thread to analyze claims, corrections, replies, and sentiment propagation (requires inserting the identified tweet ID).",
+        "parent_analytic_question": "d49dae0b-9d55-4688-af0b-f692bd627dca"
+      },
+      "created_at": "2025-09-05T08:17:52.443138"
+    },
+    "74ffb284-25c5-4654-9a17-4047a2699599": {
+      "id": "74ffb284-25c5-4654-9a17-4047a2699599",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "tweet_thread.php",
+        "parameters": {
+          "id": "REPLACE_WITH_TOP_TWEET_ID"
+        }
+      },
+      "created_at": "2025-09-05T08:17:52.443138"
+    },
+    "3a63cb8e-0350-4fbe-805b-57505a6280bb": {
+      "id": "3a63cb8e-0350-4fbe-805b-57505a6280bb",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "@WhiteHouse Stock Market and Companies needs two things: Clarity and certainty. Two things you are not providing. \n\nNvidia STILL does not have clarity on chips in China. Maybe Nivarro and Lutnick should get a clue.",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-05T08:18:37.897221",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.7,
+          "goal_relevance_score": 0.4
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-05T08:18:37.897221"
+      },
+      "created_at": "2025-09-05T08:18:37.897221"
+    },
+    "8172e16c-5fb5-41ac-91ca-69780951195a": {
+      "id": "8172e16c-5fb5-41ac-91ca-69780951195a",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Follow @TacticalTick for global market & investment insights \ud83d\udcca\ud83d\ude80\n\n- **NVIDIA (NVDA)**: With a robust price increase of 3.20% to $920.10, NVDA continues to demonstrate strong momentum in the finance sector. Consider potential entry points to capitalize on ongoing bullish sentiment.\n\n- **Apple (AAPL)**: Up 1.50% to $175.50, AAPL remains a reliable performer. Look for opportunities to leverage this growth, especially as tech-oriented strategies gain traction in the current market.\n\n- **JPMorgan Chase (JPM)**: Slow but steady, JPM's 0.50% rise to $150.75 indicates stable financial health. Watch for any signs of accelerated growth, especially with interest rate changes on the horizon.\n\n- **Alphabet (GOOGL)**: Minimal movement (0.10% increase to $135.90) suggests potential for volatility. Consider this stock for diversification, but stay alert to broader tech sector trends that could impact its performance.\n\n- **Microsoft (MSFT)**: A slight decline of 0.80% to $345.25 may present a buying opportunity for long-term investors. Assess recent developments and current valuations to determine if it's time to add MSFT to your portfolio.\n\n#GlobalMarkets #StockMarket #CryptoTrading #NVDA #AAPL #JPM #GOOGL #MSFT",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-05T08:18:37.897221",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.95,
+          "goal_relevance_score": 0.6
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-05T08:18:37.897221"
+      },
+      "created_at": "2025-09-05T08:18:37.897221"
+    },
+    "8bd9de79-7d40-4f38-aa8d-87c64706b435": {
+      "id": "8bd9de79-7d40-4f38-aa8d-87c64706b435",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Synthesis: Today's NVDA price surge (+3.20% to $920.10) shows strong market momentum driven by demand/AI fundamentals, even as multiple social posts highlight ongoing regulatory/geopolitical uncertainty\u2014specifically a lack of US government clarity on chip restrictions for China. This creates a clear tension: investors are currently pricing in growth and ignoring near-term policy ambiguity, which reduces downside in the short term but raises the risk of sharp volatility if the administration issues restrictive guidance or enforcement. Significant implications: (1) Positive momentum can continue while clarity is absent, but position sizing and hedging should account for policy-driven tail risk; (2) any forthcoming statements or actions from the White House (or named actors referenced in social chatter) will likely move NVDA more than routine fundamentals until clarity is established. Emerging theme: the market is prioritizing AI-driven earnings prospects over geopolitical/regulatory uncertainty, making NVDA sensitive to policy signals rather than only company fundamentals.",
+        "insight_type": "synthesis",
+        "confidence": 0.8,
+        "title": "Market optimism driving NVDA higher despite unresolved China chip-policy risk"
+      },
+      "created_at": "2025-09-05T08:19:27.775968"
+    }
+  },
+  "edges": [
+    {
+      "id": "9fb22cdc-3f19-49ec-a2b9-828d93dc38c3",
+      "source_id": "d49dae0b-9d55-4688-af0b-f692bd627dca",
+      "target_id": "8ff96bc9-8603-41e8-8afe-e4ee2ece28c0",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-05T08:17:52.442139"
+    },
+    {
+      "id": "6cf538a5-4fb4-4eb3-a7f7-3ac1c04f2deb",
+      "source_id": "8ff96bc9-8603-41e8-8afe-e4ee2ece28c0",
+      "target_id": "d0c26ea5-2a9e-4d9d-94f4-011f071222fe",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-05T08:17:52.442139"
+    },
+    {
+      "id": "82a7be3f-1801-4586-b951-0a89076aa3aa",
+      "source_id": "d49dae0b-9d55-4688-af0b-f692bd627dca",
+      "target_id": "aff1a530-8e44-4330-b3e8-243f5998a114",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-05T08:17:52.442139"
+    },
+    {
+      "id": "1a8e9912-ecd6-4525-937c-10694705f1af",
+      "source_id": "aff1a530-8e44-4330-b3e8-243f5998a114",
+      "target_id": "dfe14979-3fd9-464b-9b25-1fd21133cdcb",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-05T08:17:52.442139"
+    },
+    {
+      "id": "72c73f58-8212-4d21-a7a4-8b385110be0f",
+      "source_id": "d49dae0b-9d55-4688-af0b-f692bd627dca",
+      "target_id": "27067321-bd84-41b5-8bd5-f68684ff2b78",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-05T08:17:52.442139"
+    },
+    {
+      "id": "5fb7649f-2a36-4b36-85c9-381aee6e2a17",
+      "source_id": "27067321-bd84-41b5-8bd5-f68684ff2b78",
+      "target_id": "52c459c4-c876-48a4-8093-22a571f71dd3",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-05T08:17:52.442139"
+    },
+    {
+      "id": "93aea99d-cdd3-499e-a1c2-7b0e53d11fa7",
+      "source_id": "d49dae0b-9d55-4688-af0b-f692bd627dca",
+      "target_id": "f82f39f8-d924-4d9f-a5cc-746dced371e1",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-05T08:17:52.443138"
+    },
+    {
+      "id": "a93b5bad-5413-4875-8daa-b4b5ff18c908",
+      "source_id": "f82f39f8-d924-4d9f-a5cc-746dced371e1",
+      "target_id": "f38785d3-0edd-4161-9cce-befa7f9af086",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-05T08:17:52.443138"
+    },
+    {
+      "id": "ec85db89-1642-4052-b81a-1931aa19f7a9",
+      "source_id": "d49dae0b-9d55-4688-af0b-f692bd627dca",
+      "target_id": "82f8c800-ae22-4b64-aab6-0c7e34d69797",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-05T08:17:52.443138"
+    },
+    {
+      "id": "297c5b8c-5655-47eb-ac10-eb61275bec9d",
+      "source_id": "82f8c800-ae22-4b64-aab6-0c7e34d69797",
+      "target_id": "7882111f-dc10-404f-8f69-4f3b3f43f959",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-05T08:17:52.443138"
+    },
+    {
+      "id": "c2c091bd-9490-4cea-b820-fb3977f8ce61",
+      "source_id": "d49dae0b-9d55-4688-af0b-f692bd627dca",
+      "target_id": "72c45438-ed0d-4a97-a4d2-bf8854d69e0b",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-05T08:17:52.443138"
+    },
+    {
+      "id": "60570949-24a7-434b-97f8-f468d61cdd48",
+      "source_id": "72c45438-ed0d-4a97-a4d2-bf8854d69e0b",
+      "target_id": "74ffb284-25c5-4654-9a17-4047a2699599",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-05T08:17:52.443138"
+    },
+    {
+      "id": "73a30253-abfc-4d3f-9ed7-dd6e979c0f06",
+      "source_id": "d0c26ea5-2a9e-4d9d-94f4-011f071222fe",
+      "target_id": "3a63cb8e-0350-4fbe-805b-57505a6280bb",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.7
+      },
+      "created_at": "2025-09-05T08:18:37.897221"
+    },
+    {
+      "id": "c43e9985-e90a-49da-acac-923a0ffc52b4",
+      "source_id": "d0c26ea5-2a9e-4d9d-94f4-011f071222fe",
+      "target_id": "8172e16c-5fb5-41ac-91ca-69780951195a",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.95
+      },
+      "created_at": "2025-09-05T08:18:37.897221"
+    },
+    {
+      "id": "4a34e6c8-e371-4147-881c-b274124bb2d9",
+      "source_id": "3a63cb8e-0350-4fbe-805b-57505a6280bb",
+      "target_id": "8bd9de79-7d40-4f38-aa8d-87c64706b435",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-05T08:19:27.775968"
+      },
+      "created_at": "2025-09-05T08:19:27.775968"
+    },
+    {
+      "id": "692ece36-c5c6-4114-9ef9-251972bf4b16",
+      "source_id": "8172e16c-5fb5-41ac-91ca-69780951195a",
+      "target_id": "8bd9de79-7d40-4f38-aa8d-87c64706b435",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-05T08:19:27.775968"
+      },
+      "created_at": "2025-09-05T08:19:27.775968"
+    },
+    {
+      "id": "6ef6f9eb-32e1-440e-b593-1926cc831f8f",
+      "source_id": "3a63cb8e-0350-4fbe-805b-57505a6280bb",
+      "target_id": "8bd9de79-7d40-4f38-aa8d-87c64706b435",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-05T08:19:27.775968"
+      },
+      "created_at": "2025-09-05T08:19:27.775968"
+    },
+    {
+      "id": "102c131c-57f2-45be-b54c-163e4714ebf4",
+      "source_id": "8172e16c-5fb5-41ac-91ca-69780951195a",
+      "target_id": "8bd9de79-7d40-4f38-aa8d-87c64706b435",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-05T08:19:27.775968"
+      },
+      "created_at": "2025-09-05T08:19:27.775968"
+    },
+    {
+      "id": "ef8f1274-3eb2-45ee-a810-ce7ce23e0413",
+      "source_id": "3a63cb8e-0350-4fbe-805b-57505a6280bb",
+      "target_id": "8bd9de79-7d40-4f38-aa8d-87c64706b435",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-05T08:19:27.775968"
+      },
+      "created_at": "2025-09-05T08:19:27.775968"
+    }
+  ],
+  "analytic_question": "d49dae0b-9d55-4688-af0b-f692bd627dca",
+  "created_at": "2025-09-05T08:19:33.788850"
+}

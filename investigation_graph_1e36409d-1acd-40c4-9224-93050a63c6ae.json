@@ -1,0 +1,143 @@
+{
+  "nodes": {
+    "feaa8272-a294-4f8d-8e8f-144fe4d4694a": {
+      "id": "feaa8272-a294-4f8d-8e8f-144fe4d4694a",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "what are the current political and economic issues happening in Argentina right now",
+        "is_root": true,
+        "investigation_goal": "what are the current political and economic issues happening in Argentina right now"
+      },
+      "created_at": "2025-09-08T06:27:46.381547"
+    },
+    "968a60aa-561b-4aa1-a1da-f12135fead5c": {
+      "id": "968a60aa-561b-4aa1-a1da-f12135fead5c",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: This search aims to identify the most recent and relevant political discussions, crises, government actions, or election-related news in Argentina. Using 'Latest' search type ensures real-time information capture.",
+        "parent_analytic_question": "feaa8272-a294-4f8d-8e8f-144fe4d4694a"
+      },
+      "created_at": "2025-09-08T06:27:54.022963"
+    },
+    "09518edb-8601-4b9b-a147-481d26234251": {
+      "id": "09518edb-8601-4b9b-a147-481d26234251",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "Argentina political issues OR crisis OR government OR election",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-08T06:27:54.022963"
+    },
+    "fd89ec86-28f7-4a8a-bbd8-96182d5fa5b2": {
+      "id": "fd89ec86-28f7-4a8a-bbd8-96182d5fa5b2",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: This search focuses on the most current economic challenges, such as inflation, national debt, currency stability (peso), or involvement with international bodies like the IMF, which are typically key economic indicators in Argentina. 'Latest' search type ensures up-to-date information.",
+        "parent_analytic_question": "feaa8272-a294-4f8d-8e8f-144fe4d4694a"
+      },
+      "created_at": "2025-09-08T06:27:54.022963"
+    },
+    "f98808bb-64b1-4eb9-ae5d-28d8ad68aac0": {
+      "id": "f98808bb-64b1-4eb9-ae5d-28d8ad68aac0",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "Argentina economic crisis OR inflation OR debt OR peso OR IMF",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-08T06:27:54.022963"
+    },
+    "047cabd2-090e-420c-8d46-379d3cc22bd5": {
+      "id": "047cabd2-090e-420c-8d46-379d3cc22bd5",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Checking trends in Argentina directly will reveal the most talked-about subjects, which often include significant political or economic developments. This provides an unprompted view of what's currently on the public's mind, complementing the keyword-driven searches.",
+        "parent_analytic_question": "feaa8272-a294-4f8d-8e8f-144fe4d4694a"
+      },
+      "created_at": "2025-09-08T06:27:54.022963"
+    },
+    "d9c6534d-77cd-46af-a421-1fcefd18ace8": {
+      "id": "d9c6534d-77cd-46af-a421-1fcefd18ace8",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "trends.php",
+        "parameters": {
+          "country": "Argentina"
+        }
+      },
+      "created_at": "2025-09-08T06:27:54.022963"
+    }
+  },
+  "edges": [
+    {
+      "id": "9a1fbc69-702d-444b-a1b3-97e9dc12b9d0",
+      "source_id": "feaa8272-a294-4f8d-8e8f-144fe4d4694a",
+      "target_id": "968a60aa-561b-4aa1-a1da-f12135fead5c",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-08T06:27:54.022963"
+    },
+    {
+      "id": "5a4d8a3c-4197-4919-882d-ed1c36fd4b2b",
+      "source_id": "968a60aa-561b-4aa1-a1da-f12135fead5c",
+      "target_id": "09518edb-8601-4b9b-a147-481d26234251",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-08T06:27:54.022963"
+    },
+    {
+      "id": "79b08b0a-a15f-410a-afd7-4e638aafe181",
+      "source_id": "feaa8272-a294-4f8d-8e8f-144fe4d4694a",
+      "target_id": "fd89ec86-28f7-4a8a-bbd8-96182d5fa5b2",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-08T06:27:54.022963"
+    },
+    {
+      "id": "d8f1f0b4-3e16-4283-b1f1-a652765fb9ff",
+      "source_id": "fd89ec86-28f7-4a8a-bbd8-96182d5fa5b2",
+      "target_id": "f98808bb-64b1-4eb9-ae5d-28d8ad68aac0",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-08T06:27:54.022963"
+    },
+    {
+      "id": "158dd054-658c-43c9-8c57-e92a28ee7e58",
+      "source_id": "feaa8272-a294-4f8d-8e8f-144fe4d4694a",
+      "target_id": "047cabd2-090e-420c-8d46-379d3cc22bd5",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-08T06:27:54.022963"
+    },
+    {
+      "id": "40fb9b69-ae1d-46a9-b2cf-d23e7437d96a",
+      "source_id": "047cabd2-090e-420c-8d46-379d3cc22bd5",
+      "target_id": "d9c6534d-77cd-46af-a421-1fcefd18ace8",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-08T06:27:54.022963"
+    }
+  ],
+  "analytic_question": "feaa8272-a294-4f8d-8e8f-144fe4d4694a",
+  "created_at": "2025-09-08T06:28:30.404256"
+}

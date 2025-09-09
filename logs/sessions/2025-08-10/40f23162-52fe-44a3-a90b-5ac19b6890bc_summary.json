@@ -1,0 +1,88 @@
+{
+  "session_metadata": {
+    "session_id": "40f23162-52fe-44a3-a90b-5ac19b6890bc",
+    "start_time": "2025-08-11T01:25:24.618564+00:00",
+    "end_time": "2025-08-11T01:26:05.355517+00:00",
+    "duration_seconds": 40.735953,
+    "user_query": "Elon Musk Twitter announcement"
+  },
+  "configuration": {
+    "max_searches": 2,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.8,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "pages_per_search": 1,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true,
+    "enforce_endpoint_diversity": false,
+    "max_endpoint_repeats": 5,
+    "diversity_threshold": 0.3
+  },
+  "performance_metrics": {
+    "total_searches": 2,
+    "total_rounds": 1,
+    "total_results_found": 90,
+    "satisfaction_score": 0.24500000000000002,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.2,
+      "source_diversity": 0.1,
+      "evidence_quality": 0.7000000000000001,
+      "claim_specificity": 0.0,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Investigation failed: InvestigationSession.update_satisfaction_metrics() missing 1 required positional argument: 'findings'"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [],
+      "moderately_effective": [
+        {
+          "search_id": 1,
+          "query": "",
+          "results": 60,
+          "effectiveness": 7.0
+        },
+        {
+          "search_id": 2,
+          "query": "Elon Musk Twitter announcement OR announces OR revealed",
+          "results": 30,
+          "effectiveness": 7.0
+        }
+      ],
+      "low_effectiveness": [],
+      "ineffective": []
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "Graph Strategy: To address the undefined 'ORIGINAL GOAL' of an 'Elon Musk Twitter announcement', the most strategically coherent first step is to establish a foundational understanding. This involves directly looking at Elon Musk's recent Twitter activity for any announcements, simultaneously searching for public discourse surrounding such announcements, and gathering basic profile information about Elon Musk himself. This diverse set of initial searches will identify the primary source, gauge immediate public reaction, and provide essential context, effectively filling the initial information gaps and setting the stage for deeper analysis.",
+        "avg_effectiveness": 7.0
+      }
+    ],
+    "dead_ends": [],
+    "promising_leads": [
+      "",
+      "Elon Musk Twitter announcement OR announces OR revealed"
+    ]
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Graph Strategy: To address the undefined 'ORIGINAL GOAL' of an 'Elon Musk Twitter announcement', the most strategically coherent first step is to establish a foundational understanding. This involves directly looking at Elon Musk's recent Twitter activity for any announcements, simultaneously searching for public discourse surrounding such announcements, and gathering basic profile information about Elon Musk himself. This diverse set of initial searches will identify the primary source, gauge immediate public reaction, and provide essential context, effectively filling the initial information gaps and setting the stage for deeper analysis.",
+      "searches_count": 2,
+      "total_results": 90,
+      "effectiveness": 7.0,
+      "insights": [
+        "xAI's latest Grok model has finished pre-training and will be natively multimodal.",
+        "Grok 4 is now free for all users, offering a free tier with a limited number of daily queries.",
+        "Grok Imagine is coming soon to the web."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,495 @@
+2025-08-28 11:05:51,776 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-08-28 11:05:53,327 - INFO - Started investigation session 714ec49f-0f70-4e40-9006-6694cc897525 for query: find me different takes on the current trump epste...
+2025-08-28 11:05:53,327 - INFO - DIAGNOSTIC: Prompt size: 6844 chars, 794 words
+2025-08-28 11:05:53,327 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
+2025-08-28 11:05:53,336 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-28 11:06:01,842 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-28 11:06:01,844 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-28 11:06:01,846 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-08-28 11:06:01,846 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-08-28 11:06:01,846 - INFO - DIAGNOSTIC: Searches count: 3
+2025-08-28 11:06:01,847 - INFO - DIAGNOSTIC: Reasoning length: 370 chars
+2025-08-28 11:06:01,847 - INFO - DIAGNOSTIC: Search 1 - Endpoint: search.php
+2025-08-28 11:06:01,847 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': 'Trump Epstein drama', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 11:06:01,847 - INFO - DIAGNOSTIC: Search 1 - Reasoning: To capture the most recent and evolving discussions, sentiments, and news surrounding the Trump-Epst...
+2025-08-28 11:06:01,847 - INFO - DIAGNOSTIC: Search 2 - Endpoint: search.php
+2025-08-28 11:06:01,847 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': 'Trump Epstein theories OR perspectives OR narratives', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 11:06:01,847 - INFO - DIAGNOSTIC: Search 2 - Reasoning: To identify the various interpretations, conspiracy theories, and dominant narratives that are shapi...
+2025-08-28 11:06:01,847 - INFO - DIAGNOSTIC: Search 3 - Endpoint: timeline.php
+2025-08-28 11:06:01,847 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': None, 'screenname': 'FoxNews', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 11:06:01,847 - INFO - DIAGNOSTIC: Search 3 - Reasoning: To analyze the specific commentary and coverage from a major news outlet known for its particular po...
+2025-08-28 11:06:01,847 - INFO - DIAGNOSTIC: Endpoint diversity score: 0.72
+2025-08-28 11:06:01,847 - INFO - DIAGNOSTIC: Endpoints used: ['search.php', 'timeline.php']
+2025-08-28 11:06:09,569 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-28 11:06:43,037 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-28 11:06:43,038 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-28 11:06:43,040 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-28 11:06:50,103 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-28 11:06:50,113 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-28 11:06:50,118 - INFO - Completed investigation session 714ec49f-0f70-4e40-9006-6694cc897525 - 1 searches, 53 results
+2025-08-28 11:09:53,204 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-08-28 11:09:54,779 - INFO - Started investigation session 9888ed4e-7f29-422b-a941-06dac945557b for query: find me different takes on the current trump epste...
+2025-08-28 11:09:54,780 - INFO - DIAGNOSTIC: Prompt size: 6844 chars, 794 words
+2025-08-28 11:09:54,780 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
+2025-08-28 11:09:54,791 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-28 11:10:02,721 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-28 11:10:02,723 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-28 11:10:02,725 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-08-28 11:10:02,726 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-08-28 11:10:02,726 - INFO - DIAGNOSTIC: Searches count: 3
+2025-08-28 11:10:02,726 - INFO - DIAGNOSTIC: Reasoning length: 517 chars
+2025-08-28 11:10:02,726 - INFO - DIAGNOSTIC: Search 1 - Endpoint: search.php
+2025-08-28 11:10:02,726 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': 'Trump Epstein drama', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 11:10:02,726 - INFO - DIAGNOSTIC: Search 1 - Reasoning: This search will provide the most recent and varied public discussions, news articles, and opinions ...
+2025-08-28 11:10:02,726 - INFO - DIAGNOSTIC: Search 2 - Endpoint: timeline.php
+2025-08-28 11:10:02,726 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': None, 'screenname': 'MSNBC', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 11:10:02,726 - INFO - DIAGNOSTIC: Search 2 - Reasoning: Checking the timeline of a major news organization like MSNBC will provide a specific journalistic o...
+2025-08-28 11:10:02,726 - INFO - DIAGNOSTIC: Search 3 - Endpoint: trends.php
+2025-08-28 11:10:02,726 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': None, 'screenname': None, 'country': 'UnitedStates', 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 11:10:02,726 - INFO - DIAGNOSTIC: Search 3 - Reasoning: Investigating trends in the United States will help identify if the 'Trump Epstein drama' or related...
+2025-08-28 11:10:02,726 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
+2025-08-28 11:10:02,726 - INFO - DIAGNOSTIC: Endpoints used: ['search.php', 'timeline.php', 'trends.php']
+2025-08-28 11:10:10,663 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-28 11:10:43,952 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-28 11:10:43,953 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-28 11:10:43,955 - INFO - Completed investigation session 9888ed4e-7f29-422b-a941-06dac945557b - 1 searches, 52 results
+2025-08-28 11:11:06,308 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-08-28 11:11:07,879 - INFO - Started investigation session 37375dec-9974-4fc2-8626-766c3054fded for query: What is Elon Musk saying about AI...
+2025-08-28 11:11:07,880 - INFO - DIAGNOSTIC: Prompt size: 6819 chars, 791 words
+2025-08-28 11:11:07,880 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
+2025-08-28 11:11:07,889 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-28 11:11:14,846 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-28 11:11:14,847 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-28 11:11:14,849 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-08-28 11:11:14,850 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-08-28 11:11:14,850 - INFO - DIAGNOSTIC: Searches count: 3
+2025-08-28 11:11:14,850 - INFO - DIAGNOSTIC: Reasoning length: 350 chars
+2025-08-28 11:11:14,850 - INFO - DIAGNOSTIC: Search 1 - Endpoint: search.php
+2025-08-28 11:11:14,850 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': 'from:elonmusk AI OR "Artificial Intelligence" OR OpenAI OR xAI', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 11:11:14,850 - INFO - DIAGNOSTIC: Search 1 - Reasoning: This search directly targets Elon Musk's public statements on AI and related entities (OpenAI, xAI) ...
+2025-08-28 11:11:14,850 - INFO - DIAGNOSTIC: Search 2 - Endpoint: timeline.php
+2025-08-28 11:11:14,850 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 11:11:14,850 - INFO - DIAGNOSTIC: Search 2 - Reasoning: Examining Elon Musk's recent timeline provides a chronological view of his posts. This reveals his c...
+2025-08-28 11:11:14,850 - INFO - DIAGNOSTIC: Search 3 - Endpoint: following.php
+2025-08-28 11:11:14,850 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 11:11:14,850 - INFO - DIAGNOSTIC: Search 3 - Reasoning: By identifying who Elon Musk follows, particularly individuals or organizations prominent in AI, we ...
+2025-08-28 11:11:14,850 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
+2025-08-28 11:11:14,850 - INFO - DIAGNOSTIC: Endpoints used: ['search.php', 'timeline.php', 'following.php']
+2025-08-28 11:11:25,889 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-28 11:12:01,539 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-28 11:12:01,545 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-28 11:12:01,547 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-28 11:12:16,192 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-28 11:12:16,199 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-28 11:12:16,203 - INFO - Completed investigation session 37375dec-9974-4fc2-8626-766c3054fded - 1 searches, 52 results
+2025-08-28 11:27:12,764 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-08-28 11:27:14,288 - INFO - Started investigation session 7a77ad52-db19-4504-82e7-be68704a24cb for query: test query...
+2025-08-28 11:27:14,289 - INFO - DIAGNOSTIC: Prompt size: 6796 chars, 786 words
+2025-08-28 11:27:14,289 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
+2025-08-28 11:27:14,297 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-28 11:27:29,697 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-28 11:27:29,704 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-28 11:27:29,706 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-08-28 11:27:29,706 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-08-28 11:27:29,706 - INFO - DIAGNOSTIC: Searches count: 3
+2025-08-28 11:27:29,706 - INFO - DIAGNOSTIC: Reasoning length: 540 chars
+2025-08-28 11:27:29,706 - INFO - DIAGNOSTIC: Search 1 - Endpoint: trends.php
+2025-08-28 11:27:29,706 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': None, 'screenname': None, 'country': 'UnitedStates', 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 11:27:29,707 - INFO - DIAGNOSTIC: Search 1 - Reasoning: To identify overarching public interest topics and potential areas for initial focus, providing a hi...
+2025-08-28 11:27:29,707 - INFO - DIAGNOSTIC: Search 2 - Endpoint: search.php
+2025-08-28 11:27:29,707 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': 'AI ethics AND regulation', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 11:27:29,707 - INFO - DIAGNOSTIC: Search 2 - Reasoning: To gather recent discussions and news specifically on the societal implications of Artificial Intell...
+2025-08-28 11:27:29,707 - INFO - DIAGNOSTIC: Search 3 - Endpoint: screenname.php
+2025-08-28 11:27:29,707 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': None, 'screenname': 'DeepMind', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 11:27:29,707 - INFO - DIAGNOSTIC: Search 3 - Reasoning: To collect fundamental profile information and initial insights into a leading AI research organizat...
+2025-08-28 11:27:29,707 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
+2025-08-28 11:27:29,707 - INFO - DIAGNOSTIC: Endpoints used: ['trends.php', 'search.php', 'screenname.php']
+2025-08-28 11:27:35,218 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-28 11:27:52,181 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-28 11:27:52,182 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-28 11:27:52,183 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-28 11:27:57,246 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-28 11:27:57,247 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-28 11:27:57,249 - INFO - Completed investigation session 7a77ad52-db19-4504-82e7-be68704a24cb - 1 searches, 50 results
+2025-08-28 11:28:06,935 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-08-28 11:28:08,429 - INFO - Started investigation session e181bedc-d29b-44ed-9d02-9e963991f76d for query: What is Elon Musk saying about AI...
+2025-08-28 11:28:08,429 - INFO - DIAGNOSTIC: Prompt size: 6819 chars, 791 words
+2025-08-28 11:28:08,429 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
+2025-08-28 11:28:08,438 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-28 11:28:13,791 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-28 11:28:13,797 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-28 11:28:13,799 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-08-28 11:28:13,799 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-08-28 11:28:13,799 - INFO - DIAGNOSTIC: Searches count: 4
+2025-08-28 11:28:13,799 - INFO - DIAGNOSTIC: Reasoning length: 404 chars
+2025-08-28 11:28:13,799 - INFO - DIAGNOSTIC: Search 1 - Endpoint: search.php
+2025-08-28 11:28:13,800 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': 'from:elonmusk AI OR artificial intelligence OR xAI OR Neuralink', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 11:28:13,800 - INFO - DIAGNOSTIC: Search 1 - Reasoning: This search will capture the most recent direct statements or retweets by Elon Musk containing keywo...
+2025-08-28 11:28:13,800 - INFO - DIAGNOSTIC: Search 2 - Endpoint: timeline.php
+2025-08-28 11:28:13,800 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 11:28:13,800 - INFO - DIAGNOSTIC: Search 2 - Reasoning: This search will retrieve Elon Musk's complete recent timeline, ensuring no direct posts about AI ar...
+2025-08-28 11:28:13,800 - INFO - DIAGNOSTIC: Search 3 - Endpoint: usermedia.php
+2025-08-28 11:28:13,800 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 11:28:13,800 - INFO - DIAGNOSTIC: Search 3 - Reasoning: Elon Musk often shares videos, images, or links to articles/interviews where he discusses AI. This s...
+2025-08-28 11:28:13,800 - INFO - DIAGNOSTIC: Search 4 - Endpoint: following.php
+2025-08-28 11:28:13,800 - INFO - DIAGNOSTIC: Search 4 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 11:28:13,800 - INFO - DIAGNOSTIC: Search 4 - Reasoning: Understanding who Elon Musk follows can provide insights into his information sources, influences, a...
+2025-08-28 11:28:13,800 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
+2025-08-28 11:28:13,800 - INFO - DIAGNOSTIC: Endpoints used: ['search.php', 'timeline.php', 'usermedia.php', 'following.php']
+2025-08-28 11:28:23,484 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-28 11:29:03,781 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-28 11:29:03,782 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-28 11:29:03,786 - INFO - Completed investigation session e181bedc-d29b-44ed-9d02-9e963991f76d - 1 searches, 60 results
+2025-08-28 12:49:49,385 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-08-28 12:49:50,965 - INFO - Started investigation session 77b48f48-9dc6-48f6-b92b-972634aceba0 for query: Trump news today...
+2025-08-28 12:49:50,965 - INFO - DIAGNOSTIC: Prompt size: 6802 chars, 787 words
+2025-08-28 12:49:50,965 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
+2025-08-28 12:49:50,973 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-28 12:49:59,425 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-28 12:49:59,427 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-28 12:49:59,429 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-08-28 12:49:59,429 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-08-28 12:49:59,430 - INFO - DIAGNOSTIC: Searches count: 3
+2025-08-28 12:49:59,430 - INFO - DIAGNOSTIC: Reasoning length: 505 chars
+2025-08-28 12:49:59,430 - INFO - DIAGNOSTIC: Search 1 - Endpoint: search.php
+2025-08-28 12:49:59,430 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': 'Trump news today', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 12:49:59,430 - INFO - DIAGNOSTIC: Search 1 - Reasoning: This search will provide a broad overview of the most recent public discussions, articles, and menti...
+2025-08-28 12:49:59,430 - INFO - DIAGNOSTIC: Search 2 - Endpoint: timeline.php
+2025-08-28 12:49:59,430 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': None, 'screenname': 'realDonaldTrump', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 12:49:59,430 - INFO - DIAGNOSTIC: Search 2 - Reasoning: Accessing Donald Trump's official timeline is crucial for obtaining direct statements, announcements...
+2025-08-28 12:49:59,430 - INFO - DIAGNOSTIC: Search 3 - Endpoint: trends.php
+2025-08-28 12:49:59,430 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': None, 'screenname': None, 'country': 'UnitedStates', 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 12:49:59,430 - INFO - DIAGNOSTIC: Search 3 - Reasoning: Checking trending topics in the United States will help identify if Trump or related issues are sign...
+2025-08-28 12:49:59,430 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
+2025-08-28 12:49:59,430 - INFO - DIAGNOSTIC: Endpoints used: ['search.php', 'timeline.php', 'trends.php']
+2025-08-28 12:50:16,248 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-28 12:50:51,584 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-28 12:50:51,585 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-28 12:50:51,587 - INFO - Completed investigation session 77b48f48-9dc6-48f6-b92b-972634aceba0 - 2 searches, 120 results
+2025-08-28 12:51:39,731 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-08-28 12:51:41,248 - INFO - Started investigation session 48d1ed89-d50b-4ea7-9497-70a466ba302a for query: Different perspectives on Trump's economic policie...
+2025-08-28 12:51:41,249 - INFO - DIAGNOSTIC: Prompt size: 6855 chars, 793 words
+2025-08-28 12:51:41,249 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
+2025-08-28 12:51:41,258 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-28 12:51:55,702 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-28 12:51:55,704 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-28 12:51:55,706 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-08-28 12:51:55,706 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-08-28 12:51:55,706 - INFO - DIAGNOSTIC: Searches count: 5
+2025-08-28 12:51:55,707 - INFO - DIAGNOSTIC: Reasoning length: 519 chars
+2025-08-28 12:51:55,707 - INFO - DIAGNOSTIC: Search 1 - Endpoint: search.php
+2025-08-28 12:51:55,707 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': 'Trump economic policies effects overview', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 12:51:55,707 - INFO - DIAGNOSTIC: Search 1 - Reasoning: This broad search aims to provide a general understanding of the topic, identifying the most commonl...
+2025-08-28 12:51:55,707 - INFO - DIAGNOSTIC: Search 2 - Endpoint: search.php
+2025-08-28 12:51:55,707 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': 'positive impact Trump economic policies', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 12:51:55,707 - INFO - DIAGNOSTIC: Search 2 - Reasoning: To gather specific arguments and evidence from a supportive perspective, this search explicitly look...
+2025-08-28 12:51:55,707 - INFO - DIAGNOSTIC: Search 3 - Endpoint: search.php
+2025-08-28 12:51:55,707 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': 'negative impact Trump economic policies', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 12:51:55,707 - INFO - DIAGNOSTIC: Search 3 - Reasoning: To gather specific arguments and evidence from a critical perspective, this search explicitly looks ...
+2025-08-28 12:51:55,707 - INFO - DIAGNOSTIC: Search 4 - Endpoint: timeline.php
+2025-08-28 12:51:55,707 - INFO - DIAGNOSTIC: Search 4 - Parameters: {'query': None, 'screenname': 'WSJ', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 12:51:55,707 - INFO - DIAGNOSTIC: Search 4 - Reasoning: The Wall Street Journal is a prominent financial news outlet that extensively covered Trump's econom...
+2025-08-28 12:51:55,707 - INFO - DIAGNOSTIC: Search 5 - Endpoint: screenname.php
+2025-08-28 12:51:55,707 - INFO - DIAGNOSTIC: Search 5 - Parameters: {'query': None, 'screenname': 'PIIE', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 12:51:55,707 - INFO - DIAGNOSTIC: Search 5 - Reasoning: The Peterson Institute for International Economics (PIIE) is a nonpartisan research institution spec...
+2025-08-28 12:51:55,707 - INFO - DIAGNOSTIC: Endpoint diversity score: 0.62
+2025-08-28 12:51:55,707 - INFO - DIAGNOSTIC: Endpoints used: ['search.php', 'timeline.php', 'screenname.php']
+2025-08-28 12:52:35,737 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-28 12:53:41,739 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-28 12:53:41,745 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-28 12:53:41,748 - INFO - Completed investigation session 48d1ed89-d50b-4ea7-9497-70a466ba302a - 4 searches, 233 results
+2025-08-28 12:54:21,084 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-08-28 12:54:22,738 - INFO - Started investigation session ff1aebba-2fc4-4250-b8cc-9a1f084d3d8e for query: Trump economic policies...
+2025-08-28 12:54:22,738 - INFO - DIAGNOSTIC: Prompt size: 6809 chars, 787 words
+2025-08-28 12:54:22,738 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
+2025-08-28 12:54:22,748 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-28 12:54:31,450 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-28 12:54:31,474 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-28 12:54:31,476 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-08-28 12:54:31,476 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-08-28 12:54:31,476 - INFO - DIAGNOSTIC: Searches count: 3
+2025-08-28 12:54:31,477 - INFO - DIAGNOSTIC: Reasoning length: 613 chars
+2025-08-28 12:54:31,477 - INFO - DIAGNOSTIC: Search 1 - Endpoint: search.php
+2025-08-28 12:54:31,477 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': 'Trump economic policies', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 12:54:31,477 - INFO - DIAGNOSTIC: Search 1 - Reasoning: This initial broad search aims to capture current and recent discussions, key terminology, and popul...
+2025-08-28 12:54:31,477 - INFO - DIAGNOSTIC: Search 2 - Endpoint: timeline.php
+2025-08-28 12:54:31,477 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': None, 'screenname': 'WSJ', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 12:54:31,477 - INFO - DIAGNOSTIC: Search 2 - Reasoning: To gain an informed perspective from a credible financial news source, checking the timeline of the ...
+2025-08-28 12:54:31,477 - INFO - DIAGNOSTIC: Search 3 - Endpoint: screenname.php
+2025-08-28 12:54:31,477 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': None, 'screenname': 'WSJ', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 12:54:31,477 - INFO - DIAGNOSTIC: Search 3 - Reasoning: This search complements the timeline by providing essential context about the source itself. By retr...
+2025-08-28 12:54:31,477 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
+2025-08-28 12:54:31,477 - INFO - DIAGNOSTIC: Endpoints used: ['search.php', 'timeline.php', 'screenname.php']
+2025-08-28 12:54:40,310 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-28 12:54:55,853 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-28 12:54:55,855 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-28 12:54:55,856 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-28 12:55:43,383 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-28 12:55:43,392 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-28 12:55:43,395 - INFO - Completed investigation session ff1aebba-2fc4-4250-b8cc-9a1f084d3d8e - 1 searches, 54 results
+2025-08-28 12:56:43,780 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-08-28 12:56:45,397 - INFO - Started investigation session f5e348b7-97df-4f9c-b8b5-1a86d6549ba9 for query: Technology companies earnings reports this quarter...
+2025-08-28 12:56:45,397 - INFO - DIAGNOSTIC: Prompt size: 6836 chars, 790 words
+2025-08-28 12:56:45,398 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
+2025-08-28 12:56:45,407 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-28 12:56:53,516 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-28 12:56:53,522 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-28 12:56:53,525 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-08-28 12:56:53,525 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-08-28 12:56:53,525 - INFO - DIAGNOSTIC: Searches count: 3
+2025-08-28 12:56:53,525 - INFO - DIAGNOSTIC: Reasoning length: 343 chars
+2025-08-28 12:56:53,525 - INFO - DIAGNOSTIC: Search 1 - Endpoint: search.php
+2025-08-28 12:56:53,526 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': 'technology companies earnings reports "this quarter" OR "Q1 2024"', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 12:56:53,526 - INFO - DIAGNOSTIC: Search 1 - Reasoning: This broad search is crucial for identifying which major technology companies are reporting earnings...
+2025-08-28 12:56:53,526 - INFO - DIAGNOSTIC: Search 2 - Endpoint: timeline.php
+2025-08-28 12:56:53,526 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': None, 'screenname': 'BloombergTech', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 12:56:53,526 - INFO - DIAGNOSTIC: Search 2 - Reasoning: Monitoring a reputable financial news outlet specifically focused on technology will provide real-ti...
+2025-08-28 12:56:53,526 - INFO - DIAGNOSTIC: Search 3 - Endpoint: trends.php
+2025-08-28 12:56:53,526 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': None, 'screenname': None, 'country': 'UnitedStates', 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 12:56:53,526 - INFO - DIAGNOSTIC: Search 3 - Reasoning: Analyzing general trends in a major market like the United States can help gauge broader market atte...
+2025-08-28 12:56:53,526 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
+2025-08-28 12:56:53,526 - INFO - DIAGNOSTIC: Endpoints used: ['search.php', 'timeline.php', 'trends.php']
+2025-08-28 12:57:12,521 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-28 12:57:32,398 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-28 12:57:32,400 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-28 12:57:32,402 - INFO - Completed investigation session f5e348b7-97df-4f9c-b8b5-1a86d6549ba9 - 3 searches, 9 results
+2025-08-28 12:58:09,151 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-08-28 12:58:10,833 - INFO - Started investigation session b9d1659c-c776-414b-89cb-36815a5fc50b for query: Technology companies earnings reports this quarter...
+2025-08-28 12:58:10,833 - INFO - DIAGNOSTIC: Prompt size: 6836 chars, 790 words
+2025-08-28 12:58:10,834 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
+2025-08-28 12:58:10,843 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-28 12:58:18,576 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-28 12:58:18,578 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-28 12:58:18,580 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-08-28 12:58:18,581 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-08-28 12:58:18,581 - INFO - DIAGNOSTIC: Searches count: 3
+2025-08-28 12:58:18,581 - INFO - DIAGNOSTIC: Reasoning length: 689 chars
+2025-08-28 12:58:18,581 - INFO - DIAGNOSTIC: Search 1 - Endpoint: search.php
+2025-08-28 12:58:18,581 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': '"tech earnings reports" OR "technology Q2 earnings" OR "technology Q3 earnings" 2024', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 12:58:18,581 - INFO - DIAGNOSTIC: Search 1 - Reasoning: This search aims to capture the most recent and relevant discussions, news, and official reports con...
+2025-08-28 12:58:18,581 - INFO - DIAGNOSTIC: Search 2 - Endpoint: timeline.php
+2025-08-28 12:58:18,581 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': None, 'screenname': 'WSJTech', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 12:58:18,581 - INFO - DIAGNOSTIC: Search 2 - Reasoning: The Wall Street Journal's tech division is a primary source for in-depth analysis and breaking news ...
+2025-08-28 12:58:18,581 - INFO - DIAGNOSTIC: Search 3 - Endpoint: trends.php
+2025-08-28 12:58:18,581 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': None, 'screenname': None, 'country': 'UnitedStates', 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 12:58:18,581 - INFO - DIAGNOSTIC: Search 3 - Reasoning: Monitoring trends in a major financial market like the United States can highlight specific technolo...
+2025-08-28 12:58:18,581 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
+2025-08-28 12:58:18,581 - INFO - DIAGNOSTIC: Endpoints used: ['search.php', 'timeline.php', 'trends.php']
+2025-08-28 12:58:43,338 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-28 12:59:15,586 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-28 12:59:15,587 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-28 12:59:15,589 - INFO - Completed investigation session b9d1659c-c776-414b-89cb-36815a5fc50b - 3 searches, 156 results
+2025-08-28 13:03:59,416 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-08-28 13:04:01,045 - INFO - Started investigation session 86e0beec-b89b-44d0-8642-8ce0a8922341 for query: Elon Musk Twitter acquisition impact on free speec...
+2025-08-28 13:04:01,045 - INFO - DIAGNOSTIC: Prompt size: 6844 chars, 793 words
+2025-08-28 13:04:01,045 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
+2025-08-28 13:04:01,055 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-28 13:04:11,738 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-28 13:04:11,740 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-28 13:04:11,742 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-08-28 13:04:11,742 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-08-28 13:04:11,742 - INFO - DIAGNOSTIC: Searches count: 3
+2025-08-28 13:04:11,742 - INFO - DIAGNOSTIC: Reasoning length: 603 chars
+2025-08-28 13:04:11,742 - INFO - DIAGNOSTIC: Search 1 - Endpoint: search.php
+2025-08-28 13:04:11,742 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': 'Elon Musk Twitter acquisition free speech debate', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Top', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 13:04:11,742 - INFO - DIAGNOSTIC: Search 1 - Reasoning: This search aims to capture the initial and most prominent discussions surrounding the acquisition's...
+2025-08-28 13:04:11,742 - INFO - DIAGNOSTIC: Search 2 - Endpoint: timeline.php
+2025-08-28 13:04:11,742 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 13:04:11,742 - INFO - DIAGNOSTIC: Search 2 - Reasoning: To directly gather primary information from Elon Musk himself. His statements, announcements, and in...
+2025-08-28 13:04:11,742 - INFO - DIAGNOSTIC: Search 3 - Endpoint: trends.php
+2025-08-28 13:04:11,742 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': None, 'screenname': None, 'country': 'UnitedStates', 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 13:04:11,742 - INFO - DIAGNOSTIC: Search 3 - Reasoning: Monitoring trending topics in a key region like the United States provides context on public attenti...
+2025-08-28 13:04:11,742 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
+2025-08-28 13:04:11,742 - INFO - DIAGNOSTIC: Endpoints used: ['search.php', 'timeline.php', 'trends.php']
+2025-08-28 13:04:37,056 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-28 13:05:31,808 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-28 13:05:31,810 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-28 13:05:31,811 - INFO - Completed investigation session 86e0beec-b89b-44d0-8642-8ce0a8922341 - 3 searches, 168 results
+2025-08-28 13:05:44,052 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-08-28 13:05:45,585 - INFO - Started investigation session 62b27fd8-2ae5-411f-a7cb-d3b6451af789 for query: Elon Musk Twitter acquisition impact on free speec...
+2025-08-28 13:05:45,586 - INFO - DIAGNOSTIC: Prompt size: 6844 chars, 793 words
+2025-08-28 13:05:45,586 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
+2025-08-28 13:05:45,595 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-28 13:05:55,569 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-28 13:05:55,572 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-28 13:05:55,574 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-08-28 13:05:55,574 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-08-28 13:05:55,574 - INFO - DIAGNOSTIC: Searches count: 3
+2025-08-28 13:05:55,574 - INFO - DIAGNOSTIC: Reasoning length: 516 chars
+2025-08-28 13:05:55,574 - INFO - DIAGNOSTIC: Search 1 - Endpoint: search.php
+2025-08-28 13:05:55,574 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': 'Elon Musk Twitter acquisition "free speech" OR "content moderation" OR censorship', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 13:05:55,574 - INFO - DIAGNOSTIC: Search 1 - Reasoning: This search will capture the most recent and relevant public discussions, news articles, and opinion...
+2025-08-28 13:05:55,574 - INFO - DIAGNOSTIC: Search 2 - Endpoint: timeline.php
+2025-08-28 13:05:55,574 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 13:05:55,574 - INFO - DIAGNOSTIC: Search 2 - Reasoning: To understand Elon Musk's direct perspective, intentions, and policy announcements regarding free sp...
+2025-08-28 13:05:55,574 - INFO - DIAGNOSTIC: Search 3 - Endpoint: trends.php
+2025-08-28 13:05:55,574 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': None, 'screenname': None, 'country': 'UnitedStates', 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 13:05:55,575 - INFO - DIAGNOSTIC: Search 3 - Reasoning: Analyzing trending topics in a key country like the United States will provide insight into the gene...
+2025-08-28 13:05:55,575 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
+2025-08-28 13:05:55,575 - INFO - DIAGNOSTIC: Endpoints used: ['search.php', 'timeline.php', 'trends.php']
+2025-08-28 13:06:18,827 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-28 13:07:18,179 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-28 13:07:18,180 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-28 13:07:18,183 - INFO - Completed investigation session 62b27fd8-2ae5-411f-a7cb-d3b6451af789 - 3 searches, 163 results
+2025-08-28 13:08:09,164 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-08-28 13:08:10,708 - INFO - Started investigation session f63e1dba-5121-4ffe-bc53-19c1213c90fc for query: controversial tech CEO decisions about content mod...
+2025-08-28 13:08:10,708 - INFO - DIAGNOSTIC: Prompt size: 6843 chars, 791 words
+2025-08-28 13:08:10,708 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
+2025-08-28 13:08:10,718 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-28 13:08:19,418 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-28 13:08:19,420 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-28 13:08:19,422 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-08-28 13:08:19,422 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-08-28 13:08:19,422 - INFO - DIAGNOSTIC: Searches count: 3
+2025-08-28 13:08:19,422 - INFO - DIAGNOSTIC: Reasoning length: 626 chars
+2025-08-28 13:08:19,422 - INFO - DIAGNOSTIC: Search 1 - Endpoint: search.php
+2025-08-28 13:08:19,422 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': '"tech CEO" "content moderation" controversy OR "free speech" OR "platform safety"', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Top', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 13:08:19,423 - INFO - DIAGNOSTIC: Search 1 - Reasoning: To broadly identify prominent tech CEOs and the specific content moderation controversies they are a...
+2025-08-28 13:08:19,423 - INFO - DIAGNOSTIC: Search 2 - Endpoint: screenname.php
+2025-08-28 13:08:19,423 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 13:08:19,423 - INFO - DIAGNOSTIC: Search 2 - Reasoning: To gather foundational profile information for a highly prominent tech CEO (Elon Musk) known for con...
+2025-08-28 13:08:19,423 - INFO - DIAGNOSTIC: Search 3 - Endpoint: timeline.php
+2025-08-28 13:08:19,423 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 13:08:19,423 - INFO - DIAGNOSTIC: Search 3 - Reasoning: To directly observe Elon Musk's recent public statements and activities related to content moderatio...
+2025-08-28 13:08:19,423 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
+2025-08-28 13:08:19,423 - INFO - DIAGNOSTIC: Endpoints used: ['search.php', 'screenname.php', 'timeline.php']
+2025-08-28 13:08:35,106 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-28 13:08:41,590 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-28 13:08:41,591 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-28 13:08:41,592 - INFO - Completed investigation session f63e1dba-5121-4ffe-bc53-19c1213c90fc - 3 searches, 61 results
+2025-08-28 13:09:46,406 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-08-28 13:10:16,543 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-08-28 13:10:18,041 - INFO - Started investigation session 78848f4c-9220-4855-8926-62bb2ad3e745 for query: test1...
+2025-08-28 13:10:18,041 - INFO - DIAGNOSTIC: Prompt size: 6791 chars, 785 words
+2025-08-28 13:10:18,041 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
+2025-08-28 13:10:18,050 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-28 13:10:46,745 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-28 13:10:46,747 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-28 13:10:46,749 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-08-28 13:10:46,749 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-08-28 13:10:46,749 - INFO - DIAGNOSTIC: Searches count: 3
+2025-08-28 13:10:46,749 - INFO - DIAGNOSTIC: Reasoning length: 405 chars
+2025-08-28 13:10:46,750 - INFO - DIAGNOSTIC: Search 1 - Endpoint: search.php
+2025-08-28 13:10:46,750 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': 'test1', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 13:10:46,750 - INFO - DIAGNOSTIC: Search 1 - Reasoning: To get an immediate sense of recent discussions and content related to 'test1', understanding its cu...
+2025-08-28 13:10:46,750 - INFO - DIAGNOSTIC: Search 2 - Endpoint: trends.php
+2025-08-28 13:10:46,750 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': None, 'screenname': None, 'country': 'UnitedStates', 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 13:10:46,750 - INFO - DIAGNOSTIC: Search 2 - Reasoning: To understand the broader socio-political and public conversation landscape. This helps contextualiz...
+2025-08-28 13:10:46,750 - INFO - DIAGNOSTIC: Search 3 - Endpoint: screenname.php
+2025-08-28 13:10:46,750 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': None, 'screenname': 'test1', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 13:10:46,750 - INFO - DIAGNOSTIC: Search 3 - Reasoning: As 'test1' is a vague term, a common initial step is to ascertain if it refers to a specific user ac...
+2025-08-28 13:10:46,750 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
+2025-08-28 13:10:46,750 - INFO - DIAGNOSTIC: Endpoints used: ['search.php', 'trends.php', 'screenname.php']
+2025-08-28 13:10:58,670 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-28 13:36:26,089 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-08-28 13:37:35,394 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-08-28 13:37:37,040 - INFO - DIAGNOSTIC: Prompt size: 6796 chars, 786 words
+2025-08-28 13:37:37,040 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
+2025-08-28 13:37:37,054 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-28 13:37:44,375 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-28 13:37:44,377 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-28 13:37:44,378 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-08-28 13:37:44,379 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-08-28 13:37:44,379 - INFO - DIAGNOSTIC: Searches count: 3
+2025-08-28 13:37:44,380 - INFO - DIAGNOSTIC: Reasoning length: 485 chars
+2025-08-28 13:37:44,380 - INFO - DIAGNOSTIC: Search 1 - Endpoint: trends.php
+2025-08-28 13:37:44,380 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': None, 'screenname': None, 'country': 'UnitedStates', 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 13:37:44,380 - INFO - DIAGNOSTIC: Search 1 - Reasoning: To identify the most discussed topics and events in a major region. This provides a high-level overv...
+2025-08-28 13:37:44,380 - INFO - DIAGNOSTIC: Search 2 - Endpoint: search.php
+2025-08-28 13:37:44,380 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': 'breaking news', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'People', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 13:37:44,380 - INFO - DIAGNOSTIC: Search 2 - Reasoning: To discover influential individuals or organizations that are frequently associated with current and...
+2025-08-28 13:37:44,380 - INFO - DIAGNOSTIC: Search 3 - Endpoint: timeline.php
+2025-08-28 13:37:44,380 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': None, 'screenname': 'nytimes', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 13:37:44,380 - INFO - DIAGNOSTIC: Search 3 - Reasoning: To analyze the recent activity and specific content posted by a major, influential news organization...
+2025-08-28 13:37:44,380 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
+2025-08-28 13:37:44,380 - INFO - DIAGNOSTIC: Endpoints used: ['trends.php', 'search.php', 'timeline.php']
+2025-08-28 13:39:59,251 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-08-28 13:40:00,781 - INFO - Started investigation session ff4df5c7-4eb7-4591-9068-d8b5e78dcf05 for query: Latest news about artificial intelligence...
+2025-08-28 13:40:00,781 - INFO - DIAGNOSTIC: Prompt size: 6827 chars, 789 words
+2025-08-28 13:40:00,781 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
+2025-08-28 13:40:00,789 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-28 13:40:09,217 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-28 13:40:09,218 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-28 13:40:09,220 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-08-28 13:40:09,220 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-08-28 13:40:09,221 - INFO - DIAGNOSTIC: Searches count: 3
+2025-08-28 13:40:09,221 - INFO - DIAGNOSTIC: Reasoning length: 474 chars
+2025-08-28 13:40:09,221 - INFO - DIAGNOSTIC: Search 1 - Endpoint: search.php
+2025-08-28 13:40:09,221 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': 'artificial intelligence latest news OR AI breakthrough', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 13:40:09,221 - INFO - DIAGNOSTIC: Search 1 - Reasoning: This search directly targets the latest news and breakthroughs in artificial intelligence, providing...
+2025-08-28 13:40:09,221 - INFO - DIAGNOSTIC: Search 2 - Endpoint: timeline.php
+2025-08-28 13:40:09,221 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': None, 'screenname': 'WIRED', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 13:40:09,221 - INFO - DIAGNOSTIC: Search 2 - Reasoning: WIRED is a prominent technology publication known for its in-depth coverage of AI. Examining their l...
+2025-08-28 13:40:09,221 - INFO - DIAGNOSTIC: Search 3 - Endpoint: trends.php
+2025-08-28 13:40:09,221 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': None, 'screenname': None, 'country': 'UnitedStates', 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 13:40:09,221 - INFO - DIAGNOSTIC: Search 3 - Reasoning: Checking trending topics in a major country like the United States will reveal if any specific AI-re...
+2025-08-28 13:40:09,221 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
+2025-08-28 13:40:09,221 - INFO - DIAGNOSTIC: Endpoints used: ['search.php', 'timeline.php', 'trends.php']
+2025-08-28 13:40:31,592 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-28 13:40:45,639 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-28 13:40:45,640 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-28 13:40:45,641 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-28 13:42:36,663 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-08-28 13:42:38,270 - INFO - Started investigation session 0cc5ec6d-f034-41fb-8e10-2da22d3a0df8 for query: test query for multiple rounds...
+2025-08-28 13:42:38,270 - INFO - DIAGNOSTIC: Prompt size: 6816 chars, 789 words
+2025-08-28 13:42:38,270 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
+2025-08-28 13:42:38,280 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-28 13:42:48,497 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-28 13:42:48,499 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-28 13:42:48,502 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-08-28 13:42:48,502 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-08-28 13:42:48,502 - INFO - DIAGNOSTIC: Searches count: 3
+2025-08-28 13:42:48,502 - INFO - DIAGNOSTIC: Reasoning length: 530 chars
+2025-08-28 13:42:48,502 - INFO - DIAGNOSTIC: Search 1 - Endpoint: trends.php
+2025-08-28 13:42:48,502 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': None, 'screenname': None, 'country': 'UnitedStates', 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 13:42:48,502 - INFO - DIAGNOSTIC: Search 1 - Reasoning: Identify top trending topics in a major country to gauge public interest and potential areas for inv...
+2025-08-28 13:42:48,502 - INFO - DIAGNOSTIC: Search 2 - Endpoint: search.php
+2025-08-28 13:42:48,502 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': 'global events', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Top', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 13:42:48,502 - INFO - DIAGNOSTIC: Search 2 - Reasoning: Conduct a broad search for top global events or discussions to identify widely discussed significant...
+2025-08-28 13:42:48,502 - INFO - DIAGNOSTIC: Search 3 - Endpoint: timeline.php
+2025-08-28 13:42:48,502 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': None, 'screenname': 'Reuters', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-28 13:42:48,502 - INFO - DIAGNOSTIC: Search 3 - Reasoning: Obtain recent posts from a reputable global news organization to understand their prioritized report...
+2025-08-28 13:42:48,502 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
+2025-08-28 13:42:48,503 - INFO - DIAGNOSTIC: Endpoints used: ['trends.php', 'search.php', 'timeline.php']
+2025-08-28 13:43:14,960 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-28 13:43:35,248 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-28 13:43:35,248 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-28 13:43:35,250 - INFO - Completed investigation session 0cc5ec6d-f034-41fb-8e10-2da22d3a0df8 - 3 searches, 169 results

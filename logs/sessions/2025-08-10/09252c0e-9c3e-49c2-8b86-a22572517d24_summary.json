@@ -1,0 +1,595 @@
+{
+  "session_metadata": {
+    "session_id": "09252c0e-9c3e-49c2-8b86-a22572517d24",
+    "start_time": "2025-08-10T12:35:31.970934+00:00",
+    "end_time": "2025-08-10T12:49:39.149744+00:00",
+    "duration_seconds": 847.17881,
+    "user_query": "find information to debunk alleged ufo whistleblower michael herrera"
+  },
+  "configuration": {
+    "max_searches": 48,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.8,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "pages_per_search": 3,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true
+  },
+  "performance_metrics": {
+    "total_searches": 48,
+    "total_rounds": 13,
+    "total_results_found": 1428,
+    "satisfaction_score": 0.24500000000000036,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.2,
+      "source_diversity": 0.1,
+      "evidence_quality": 0.7000000000000014,
+      "claim_specificity": 0.0,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Reached maximum search limit (48)"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [
+        {
+          "search_id": 33,
+          "query": "\"Michael Herrera\" (UFO OR UAP) whistleblower OR claims",
+          "results": 60,
+          "effectiveness": 8.0
+        },
+        {
+          "search_id": 34,
+          "query": "\"Michael Herrera\" (skepticism OR debunked OR unverified OR hoax OR fraudulent OR dubious OR questions)",
+          "results": 38,
+          "effectiveness": 8.0
+        },
+        {
+          "search_id": 36,
+          "query": "\"Michael Herrera\" (UFO OR UAP)",
+          "results": 49,
+          "effectiveness": 8.0
+        }
+      ],
+      "moderately_effective": [
+        {
+          "search_id": 2,
+          "query": "\"Michael Herrera\" debunk OR hoax OR fraud OR discredit",
+          "results": 25,
+          "effectiveness": 7.0
+        },
+        {
+          "search_id": 4,
+          "query": "\"Michael Herrera\" (debunk OR hoax OR fraud OR discredited)",
+          "results": 20,
+          "effectiveness": 7.0
+        },
+        {
+          "search_id": 7,
+          "query": "\"Michael Herrera\" UFO claims",
+          "results": 25,
+          "effectiveness": 7.0
+        },
+        {
+          "search_id": 8,
+          "query": "Michael Herrera UFO whistleblower claims",
+          "results": 60,
+          "effectiveness": 7.0
+        },
+        {
+          "search_id": 9,
+          "query": "Michael Herrera (debunk OR hoax OR fraud OR skeptical OR discredit)",
+          "results": 60,
+          "effectiveness": 7.0
+        },
+        {
+          "search_id": 11,
+          "query": "from:mickwest michael herrera",
+          "results": 58,
+          "effectiveness": 6.0
+        },
+        {
+          "search_id": 13,
+          "query": "michael herrera (debunk OR hoax OR fraud OR skepticism OR disproven OR expose OR lie)",
+          "results": 60,
+          "effectiveness": 6.0
+        },
+        {
+          "search_id": 19,
+          "query": "Michael Herrera (hoax OR fraud OR debunked OR lie OR fabricated OR questionable OR disinfo OR inconsistencies)",
+          "results": 60,
+          "effectiveness": 7.0
+        },
+        {
+          "search_id": 20,
+          "query": "Michael Herrera UFO whistleblower testimony",
+          "results": 60,
+          "effectiveness": 7.5
+        },
+        {
+          "search_id": 21,
+          "query": "Michael Herrera (skepticism OR criticism OR questionable OR inconsistencies)",
+          "results": 60,
+          "effectiveness": 7.5
+        },
+        {
+          "search_id": 22,
+          "query": "from:mickwest Michael Herrera",
+          "results": 58,
+          "effectiveness": 7.5
+        },
+        {
+          "search_id": 26,
+          "query": "Michael Herrera (debunk OR hoax OR fraud OR disproven OR skeptical OR critical OR inconsistencies)",
+          "results": 60,
+          "effectiveness": 7.0
+        },
+        {
+          "search_id": 27,
+          "query": "from:MickWest Michael Herrera",
+          "results": 58,
+          "effectiveness": 7.0
+        },
+        {
+          "search_id": 37,
+          "query": "mick west michael herrera",
+          "results": 60,
+          "effectiveness": 6.0
+        },
+        {
+          "search_id": 38,
+          "query": "john greenewald michael herrera OR black vault michael herrera",
+          "results": 60,
+          "effectiveness": 6.0
+        },
+        {
+          "search_id": 39,
+          "query": "michael herrera (debunk OR refute OR skeptical OR hoax OR fraud OR disproven)",
+          "results": 60,
+          "effectiveness": 6.0
+        },
+        {
+          "search_id": 45,
+          "query": "Michael Herrera UFO",
+          "results": 59,
+          "effectiveness": 7.5
+        },
+        {
+          "search_id": 46,
+          "query": "Michael Herrera (skeptic OR investigation OR critical OR unverified)",
+          "results": 60,
+          "effectiveness": 7.5
+        }
+      ],
+      "low_effectiveness": [
+        {
+          "search_id": 35,
+          "query": "\"Michael Herrera\" (interview OR podcast OR testimony OR source OR alleged details)",
+          "results": 5,
+          "effectiveness": 2.0
+        },
+        {
+          "search_id": 41,
+          "query": "",
+          "results": 60,
+          "effectiveness": 4.0
+        },
+        {
+          "search_id": 44,
+          "query": "\"Michael Herrera\" UFO (claims OR allegations OR testimony)",
+          "results": 49,
+          "effectiveness": 4.0
+        }
+      ],
+      "ineffective": [
+        {
+          "search_id": 1,
+          "query": "\"Michael Herrera\" UFO whistleblower claims",
+          "results": 3,
+          "effectiveness": 1.05
+        },
+        {
+          "search_id": 3,
+          "query": "from:TheBlackVault1 \"Michael Herrera\" OR from:MickWest \"Michael Herrera\"",
+          "results": 0,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 5,
+          "query": "from:MickWest \"Michael Herrera\"",
+          "results": 0,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 6,
+          "query": "from:blackvaultcom \"Michael Herrera\"",
+          "results": 0,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 10,
+          "query": "from:MichaelHerreraUFO OR from:MichaelHerreraOfficial OR MichaelHerrera @whistleblower OR MichaelHerrera @uap",
+          "results": 0,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 12,
+          "query": "from:blackvaultcom michael herrera OR from:greenewald michael herrera",
+          "results": 0,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 14,
+          "query": "michael herrera (debunk OR hoax OR fraud OR skepticism OR disproven OR expose OR lie)",
+          "results": 0,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 15,
+          "query": "Michael Herrera whistleblower",
+          "results": 0,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 16,
+          "query": "Michael Herrera UFO whistleblower claims OR alleged UAP whistleblower Michael Herrera",
+          "results": 0,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 17,
+          "query": "(Mick West OR @mickwest) \"Michael Herrera\" (debunk OR skepticism OR analysis OR claims)",
+          "results": 0,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 18,
+          "query": "(John Greenewald OR @blackvaultcom) \"Michael Herrera\" (debunk OR investigation OR scrutiny OR claims)",
+          "results": 0,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 23,
+          "query": "from:TheBlackVault Michael Herrera",
+          "results": 0,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 24,
+          "query": "from:TheBlackVault (whistleblower OR UAP OR credibility OR evidence)",
+          "results": 0,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 25,
+          "query": "Michael Herrera UFO whistleblower (claims OR allegations)",
+          "results": 3,
+          "effectiveness": 1.05
+        },
+        {
+          "search_id": 28,
+          "query": "from:blackvaultcom Michael Herrera OR from:JohnGreenewald Michael Herrera",
+          "results": 0,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 29,
+          "query": "michael herrera mick west",
+          "results": 60,
+          "effectiveness": 1.0
+        },
+        {
+          "search_id": 30,
+          "query": "michael herrera (john greenewald OR black vault)",
+          "results": 60,
+          "effectiveness": 1.0
+        },
+        {
+          "search_id": 31,
+          "query": "michael herrera (debunk OR hoax OR fraud OR discredit)",
+          "results": 60,
+          "effectiveness": 1.0
+        },
+        {
+          "search_id": 32,
+          "query": "michael herrera UFO whistleblower claims",
+          "results": 3,
+          "effectiveness": 0.15
+        },
+        {
+          "search_id": 40,
+          "query": "michael herrera ufo whistleblower claims",
+          "results": 3,
+          "effectiveness": 0.8999999999999999
+        },
+        {
+          "search_id": 42,
+          "query": "",
+          "results": 0,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 43,
+          "query": "\"Michael Herrera\" (skeptic OR debunk OR ",
+          "results": 9,
+          "effectiveness": 1.8
+        },
+        {
+          "search_id": 47,
+          "query": "Michael Herrera (Mick West OR Greenewald OR \"Black Vault\")",
+          "results": 3,
+          "effectiveness": 1.125
+        },
+        {
+          "search_id": 48,
+          "query": "\"Michael Herrera\" (debunk OR hoax OR fraud OR \"not credible\" OR \"discredited\" OR \"false claims\")",
+          "results": 0,
+          "effectiveness": 0.0
+        }
+      ]
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "Graph Strategy: Previous direct searches for 'Michael Herrera' and associated debunking terms or specific debunkers yielded no data, indicating a critical information gap regarding his public presence and the specifics of his claims. The current strategy aims to broaden the search to establish whether Michael Herrera is a recognized figure within the UFO/UAP whistleblower discourse, identify the nature of his claims, and uncover any existing scrutiny, even if not explicit debunking. This multi-pronged approach uses various keyword combinations and search types to increase the probability of finding foundational information necessary for a debunking strategy. It specifically avoids previously failed approaches like highly targeted 'from:user' searches when general searches for the topic are failing.",
+        "avg_effectiveness": 6.5
+      },
+      {
+        "strategy": "Graph Strategy: The previous attempts to find information about Michael Herrera's UFO whistleblower claims, including general searches and direct queries to known debunkers (Mick West, John Greenewald Jr.), consistently yielded no data. This indicates either that the exact search terms were too restrictive, or that the claims lack significant widespread discussion on Twitter to register under 'Top' or 'Latest' search types with those specific keywords. The current strategy aims to broaden the search for any relevant discourse about Michael Herrera and UFOs, employ a wider range of skeptical keywords, and attempt to find indirect connections to debunkers, directly addressing the critical information gaps.",
+        "avg_effectiveness": 5.375
+      },
+      {
+        "strategy": "Graph Strategy: The primary strategic imperative is to fill the critical information gaps regarding existing skeptical analyses and the latest developments concerning Michael Herrera's claims. Previous direct searches for debunking content yielded no data, indicating either a lack of such content or issues with search specificity. This strategy broadens the scope for discovering critical perspectives by targeting prominent debunkers indirectly and refining general debunking terms. Additionally, it addresses the 'latest information' gap, which is crucial for a timely debunking strategy.",
+        "avg_effectiveness": 4.725
+      },
+      {
+        "strategy": "Graph Strategy: Previous attempts to find debunking efforts from specific, well-known debunkers (Mick West, John Greenewald Jr.) yielded no data, indicating that these figures might not have specifically addressed Michael Herrera yet. This necessitates a shift in strategy. The most coherent next action is to broaden the search for any critical analysis or counter-narratives regarding Michael Herrera's claims, while simultaneously trying to better understand the specific claims and their source. This allows for a more systematic identification of potential weaknesses or existing challenges to his narrative, fulfilling the core goal of debunking.",
+        "avg_effectiveness": 4.666666666666667
+      },
+      {
+        "strategy": "Graph Strategy: The previous direct searches for debunking information on Michael Herrera have consistently yielded no data, indicating a critical information gap that needs to be addressed through a more nuanced and multi-faceted search strategy. This approach aims to first, clearly define the specific claims made by Herrera to understand the target for debunking; second, to broadly identify any existing skeptical or critical analyses by expanding keyword variations; and third, to re-engage with prominent debunkers (Mick West, John Greenewald Jr.) through highly targeted queries, and also by examining their broader discussions on whistleblower and UAP credibility to uncover applicable methodologies or contextual information, thereby connecting previously failed threads and initiating a deeper investigation.",
+        "avg_effectiveness": 4.5
+      },
+      {
+        "strategy": "Graph Strategy: The primary objective is to fill the critical information gaps identified in the investigation progress, particularly the lack of data from previous attempts to find skeptical analyses and recent developments concerning Michael Herrera. The strategy focuses on using the 'search.php' endpoint with highly targeted and boolean queries to overcome previous 'no data' results. By directly targeting known debunkers and using a mix of 'Top' and 'Latest' search types, this approach aims to efficiently retrieve relevant critical information and current narratives, building on lessons learned from disconnected threads and failed approaches.",
+        "avg_effectiveness": 3.7625
+      },
+      {
+        "strategy": "Graph Strategy: The previous broad 'Top' and 'Latest' searches for 'Michael Herrera' yielded no data, indicating that the initial search terms were either too general or the subject is not prominently discussed under those exact phrases. To effectively debunk, we must first confirm the specifics of his claims and then identify any existing skeptical analyses. This strategy focuses on highly targeted `search.php` queries. By combining Michael Herrera's name with specific debunking keywords (debunk, hoax, fraud, discredited) and explicitly searching content from known skeptical voices (Mick West, The Black Vault), we aim to directly identify content challenging his credibility and uncover the discussions surrounding his allegations. This systematic approach ensures a more precise and effective retrieval of relevant information, directly addressing the core information gaps and enabling a more robust debunking strategy.",
+        "avg_effectiveness": 3.5
+      },
+      {
+        "strategy": "Graph Strategy: As an expert investigation strategist, the immediate priority is to establish a comprehensive understanding of Michael Herrera's alleged whistleblower claims and any existing efforts to scrutinize or debunk them. Given no prior progress, a multi-faceted search using the 'search.php' endpoint is most efficient to gather initial intelligence. We need to identify his specific claims, the public and expert reactions, and any direct counter-arguments or inconsistencies that have already surfaced. This foundational knowledge will inform subsequent, more targeted investigations into individuals, organizations, or specific pieces of evidence.",
+        "avg_effectiveness": 2.6833333333333336
+      },
+      {
+        "strategy": "Graph Strategy: The primary objective is to find existing debunking efforts and the latest information on Michael Herrera's claims, as previous attempts yielded no data. The strategy refines previous failed search queries by diversifying keywords and leveraging specific user timelines for known debunkers. By directly targeting Mick West and John Greenewald Jr.'s content, we efficiently check if these authorities have addressed Herrera. Concurrently, new generalized search queries with broader skeptical terms and alternative keywords for 'latest' information are implemented to cover the remaining critical gaps, avoiding direct repetition of failed queries while building on the strategic intent.",
+        "avg_effectiveness": 2.45
+      },
+      {
+        "strategy": "Graph Strategy: The previous attempts to find debunking information and details about Michael Herrera yielded no data, leaving critical gaps. This strategy re-approaches these gaps with refined and broadened search queries using search.php to maximize the chances of finding relevant content from known debunkers (Mick West, John Greenewald Jr.) and general skeptical discussions (using comprehensive boolean operators and both \"Top\" and \"Latest\" search types). Additionally, a \"People\" search is introduced to identify Michael Herrera's own social media presence, which is essential for understanding his claims directly and for future deeper analysis of his statements and network. This approach systematically covers the identified gaps and establishes a foundation for comprehensive debunking.",
+        "avg_effectiveness": 2.4
+      },
+      {
+        "strategy": "Graph Strategy: The current investigation is stalled by a fundamental lack of data regarding Michael Herrera's claims and any existing debunking efforts, as indicated by multiple 'searches yielded no data' gaps. The most strategically coherent next step is to use more robust and comprehensive `search.php` queries to address these critical information voids. This approach will attempt to capture the primary narrative of Herrera's claims and identify any skeptical analyses, both from specific known debunkers and the broader community, that might have been missed by previous, possibly too narrow, search attempts. If these refined searches continue to yield no data, it will itself be a significant finding regarding the public traction of Herrera's claims on the platform.",
+        "avg_effectiveness": 1.75
+      },
+      {
+        "strategy": "Graph Strategy: The most critical current information gaps revolve around the lack of data for existing skeptical analyses and the most recent developments concerning Michael Herrera. Previous attempts to locate this information were unsuccessful, particularly for key debunkers like Mick West and John Greenewald Jr., and general debunking terms. This strategy addresses these gaps by refining the search approach. Instead of solely relying on 'from:user' which yielded no results, searches will now broaden to include general mentions alongside key debunkers to capture any discussions or analyses involving them. Additionally, re-attempting the general debunking and latest claims searches with optimized 'search_type' parameters will prioritize the most relevant and current information.",
+        "avg_effectiveness": 0.7875
+      },
+      {
+        "strategy": "Graph Strategy: The primary objective is to address critical information gaps related to existing skeptical analyses and recent developments concerning Michael Herrera. Previous attempts with generic and specific 'from:' searches failed, indicating a need for more nuanced and comprehensive query strategies. By utilizing advanced boolean operators and targeting known debunking authorities within a broader search scope, we aim to uncover crucial debunking content and current narratives that were previously missed. This strategy directly addresses the core goal of gathering information to debunk Michael Herrera.",
+        "avg_effectiveness": 0.0
+      }
+    ],
+    "dead_ends": [
+      "\"Michael Herrera\" UFO whistleblower claims",
+      "from:TheBlackVault1 \"Michael Herrera\" OR from:MickWest \"Michael Herrera\"",
+      "from:MickWest \"Michael Herrera\"",
+      "from:blackvaultcom \"Michael Herrera\"",
+      "from:MichaelHerreraUFO OR from:MichaelHerreraOfficial OR MichaelHerrera @whistleblower OR MichaelHerrera @uap",
+      "from:blackvaultcom michael herrera OR from:greenewald michael herrera",
+      "michael herrera (debunk OR hoax OR fraud OR skepticism OR disproven OR expose OR lie)",
+      "Michael Herrera whistleblower",
+      "Michael Herrera UFO whistleblower claims OR alleged UAP whistleblower Michael Herrera",
+      "(Mick West OR @mickwest) \"Michael Herrera\" (debunk OR skepticism OR analysis OR claims)",
+      "(John Greenewald OR @blackvaultcom) \"Michael Herrera\" (debunk OR investigation OR scrutiny OR claims)",
+      "from:TheBlackVault Michael Herrera",
+      "from:TheBlackVault (whistleblower OR UAP OR credibility OR evidence)",
+      "Michael Herrera UFO whistleblower (claims OR allegations)",
+      "from:blackvaultcom Michael Herrera OR from:JohnGreenewald Michael Herrera",
+      "michael herrera mick west",
+      "michael herrera (john greenewald OR black vault)",
+      "michael herrera (debunk OR hoax OR fraud OR discredit)",
+      "michael herrera UFO whistleblower claims",
+      "michael herrera ufo whistleblower claims",
+      "",
+      "\"Michael Herrera\" (skeptic OR debunk OR ",
+      "Michael Herrera (Mick West OR Greenewald OR \"Black Vault\")",
+      "\"Michael Herrera\" (debunk OR hoax OR fraud OR \"not credible\" OR \"discredited\" OR \"false claims\")"
+    ],
+    "promising_leads": [
+      "\"Michael Herrera\" debunk OR hoax OR fraud OR discredit",
+      "\"Michael Herrera\" (debunk OR hoax OR fraud OR discredited)",
+      "\"Michael Herrera\" UFO claims",
+      "Michael Herrera UFO whistleblower claims",
+      "Michael Herrera (debunk OR hoax OR fraud OR skeptical OR discredit)",
+      "from:mickwest michael herrera",
+      "michael herrera (debunk OR hoax OR fraud OR skepticism OR disproven OR expose OR lie)",
+      "Michael Herrera (hoax OR fraud OR debunked OR lie OR fabricated OR questionable OR disinfo OR inconsistencies)",
+      "Michael Herrera UFO whistleblower testimony",
+      "Michael Herrera (skepticism OR criticism OR questionable OR inconsistencies)",
+      "from:mickwest Michael Herrera",
+      "Michael Herrera (debunk OR hoax OR fraud OR disproven OR skeptical OR critical OR inconsistencies)",
+      "from:MickWest Michael Herrera",
+      "\"Michael Herrera\" (UFO OR UAP) whistleblower OR claims",
+      "\"Michael Herrera\" (skepticism OR debunked OR unverified OR hoax OR fraudulent OR dubious OR questions)",
+      "\"Michael Herrera\" (UFO OR UAP)",
+      "mick west michael herrera",
+      "john greenewald michael herrera OR black vault michael herrera",
+      "michael herrera (debunk OR refute OR skeptical OR hoax OR fraud OR disproven)",
+      "Michael Herrera UFO",
+      "Michael Herrera (skeptic OR investigation OR critical OR unverified)"
+    ]
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Graph Strategy: As an expert investigation strategist, the immediate priority is to establish a comprehensive understanding of Michael Herrera's alleged whistleblower claims and any existing efforts to scrutinize or debunk them. Given no prior progress, a multi-faceted search using the 'search.php' endpoint is most efficient to gather initial intelligence. We need to identify his specific claims, the public and expert reactions, and any direct counter-arguments or inconsistencies that have already surfaced. This foundational knowledge will inform subsequent, more targeted investigations into individuals, organizations, or specific pieces of evidence.",
+      "searches_count": 3,
+      "total_results": 28,
+      "effectiveness": 2.6833333333333336,
+      "insights": [
+        "Michael Herrera is explicitly labeled a 'FRAUD' in one summary, citing a corroborating witness ('Randy') who is a friend and promotes a company, suggesting a potential conflict of interest.",
+        "A 'team leader' who served with Herrera reportedly came out publicly on a podcast to discredit him.",
+        "The common debunking argument that 'Marines wouldn't be armed in a humanitarian mission' is disputed by sources, undermining this specific line of discrediting."
+      ]
+    },
+    {
+      "round_number": 2,
+      "strategy": "Graph Strategy: The previous broad 'Top' and 'Latest' searches for 'Michael Herrera' yielded no data, indicating that the initial search terms were either too general or the subject is not prominently discussed under those exact phrases. To effectively debunk, we must first confirm the specifics of his claims and then identify any existing skeptical analyses. This strategy focuses on highly targeted `search.php` queries. By combining Michael Herrera's name with specific debunking keywords (debunk, hoax, fraud, discredited) and explicitly searching content from known skeptical voices (Mick West, The Black Vault), we aim to directly identify content challenging his credibility and uncover the discussions surrounding his allegations. This systematic approach ensures a more precise and effective retrieval of relevant information, directly addressing the core information gaps and enabling a more robust debunking strategy.",
+      "searches_count": 4,
+      "total_results": 45,
+      "effectiveness": 3.5,
+      "insights": [
+        "Michael Herrera's claims are actively debated, with sources discussing whether his encounter was real or a hoax.",
+        "Multiple online discussions indicate that while Michael Herrera's claims are mentioned, effective debunking or refutation of his story is often missing or proving difficult for some commentators/sources.",
+        "One specific attempt to debunk Herrera, allegedly by his 'fire team leader' using a photo, failed because the photo was reportedly not of Herrera."
+      ]
+    },
+    {
+      "round_number": 3,
+      "strategy": "Graph Strategy: Previous attempts to find debunking efforts from specific, well-known debunkers (Mick West, John Greenewald Jr.) yielded no data, indicating that these figures might not have specifically addressed Michael Herrera yet. This necessitates a shift in strategy. The most coherent next action is to broaden the search for any critical analysis or counter-narratives regarding Michael Herrera's claims, while simultaneously trying to better understand the specific claims and their source. This allows for a more systematic identification of potential weaknesses or existing challenges to his narrative, fulfilling the core goal of debunking.",
+      "searches_count": 3,
+      "total_results": 120,
+      "effectiveness": 4.666666666666667,
+      "insights": [
+        "Michael Herrera's core claim involves witnessing 'black ops men loading people into a hovering UFO' in the Indonesian jungle during humanitarian aid efforts following Typhoon Ketsana in September 2009, and he claims to have encountered a 'hovering 300-foot octagonal craft' and was 'intercepted and detained'.",
+        "Herrera's testimony was primarily presented at Dr. Steven Greer's events, a figure frequently associated with controversial UFO disclosure claims.",
+        "A key, specific lead for verification/debunking is the claim that Herrera provided a '2023 AARO Testimony Memorandum For Record' to Dr. Sean Kirkpatrick, then head of AARO."
+      ]
+    },
+    {
+      "round_number": 4,
+      "strategy": "Graph Strategy: The previous attempts to find debunking information and details about Michael Herrera yielded no data, leaving critical gaps. This strategy re-approaches these gaps with refined and broadened search queries using search.php to maximize the chances of finding relevant content from known debunkers (Mick West, John Greenewald Jr.) and general skeptical discussions (using comprehensive boolean operators and both \"Top\" and \"Latest\" search types). Additionally, a \"People\" search is introduced to identify Michael Herrera's own social media presence, which is essential for understanding his claims directly and for future deeper analysis of his statements and network. This approach systematically covers the identified gaps and establishes a foundation for comprehensive debunking.",
+      "searches_count": 5,
+      "total_results": 118,
+      "effectiveness": 2.4,
+      "insights": [
+        "Several search results indicate the presence of prominent skeptics and debunkers actively scrutinizing alleged UFO sightings and whistleblower claims.",
+        "A key strategy for debunking alleged UFO whistleblowers, as seen with Luis Elizondo, involves highlighting controversial or discrediting aspects of their past or character (e.g., alleged involvement in torture).",
+        "The collective results identify a likely key figure in the UFO debunking community (implied to be Mick West, given his frequent appearances and topics discussed), who maintains an evidence-based, skeptical stance on various conspiracy theories and paranormal claims."
+      ]
+    },
+    {
+      "round_number": 5,
+      "strategy": "Graph Strategy: The current investigation is stalled by a fundamental lack of data regarding Michael Herrera's claims and any existing debunking efforts, as indicated by multiple 'searches yielded no data' gaps. The most strategically coherent next step is to use more robust and comprehensive `search.php` queries to address these critical information voids. This approach will attempt to capture the primary narrative of Herrera's claims and identify any skeptical analyses, both from specific known debunkers and the broader community, that might have been missed by previous, possibly too narrow, search attempts. If these refined searches continue to yield no data, it will itself be a significant finding regarding the public traction of Herrera's claims on the platform.",
+      "searches_count": 4,
+      "total_results": 60,
+      "effectiveness": 1.75,
+      "insights": [
+        "There is a clear debate regarding whether Michael Herrera's UFO encounter is real or a hoax, indicating significant skepticism surrounding his claims.",
+        "One source directly labels Michael Herrera as a 'known fraud' who engages in 'lies' and 'delusions of grandeur'.",
+        "Michael Herrera's narrative about a 'secret Jungle mission' is inconsistent with standard military procedures and makes 'zero sense to most veterans', particularly regarding how individuals are selected and the known identity of his Team Leader, Nathan."
+      ]
+    },
+    {
+      "round_number": 6,
+      "strategy": "Graph Strategy: The previous direct searches for debunking information on Michael Herrera have consistently yielded no data, indicating a critical information gap that needs to be addressed through a more nuanced and multi-faceted search strategy. This approach aims to first, clearly define the specific claims made by Herrera to understand the target for debunking; second, to broadly identify any existing skeptical or critical analyses by expanding keyword variations; and third, to re-engage with prominent debunkers (Mick West, John Greenewald Jr.) through highly targeted queries, and also by examining their broader discussions on whistleblower and UAP credibility to uncover applicable methodologies or contextual information, thereby connecting previously failed threads and initiating a deeper investigation.",
+      "searches_count": 5,
+      "total_results": 178,
+      "effectiveness": 4.5,
+      "insights": [
+        "Michael Herrera's primary claim involves an encounter with a 300-foot octagonal craft and a 'covert black-ops network' in the Indonesian jungle during a 2009 humanitarian aid mission (Typhoon Ketsana), where he claims he was intercepted and detained, and saw 'strange metallic containers'.",
+        "Herrera has provided testimony at Dr. Steven Greer's UAP event in June 2023 and allegedly provided testimony to AARO (Sean Kirkpatrick) with a 'Memorandum For Record' (MFR) in 2023.",
+        "Jake Barber, a figure associated with the whistleblower community, claims that former AARO head Sean Kirkpatrick 'admitted directly' that Herrera's report 'did in fact happen exactly as reported'. This is a critical claim for investigation."
+      ]
+    },
+    {
+      "round_number": 7,
+      "strategy": "Graph Strategy: The primary objective is to fill the critical information gaps identified in the investigation progress, particularly the lack of data from previous attempts to find skeptical analyses and recent developments concerning Michael Herrera. The strategy focuses on using the 'search.php' endpoint with highly targeted and boolean queries to overcome previous 'no data' results. By directly targeting known debunkers and using a mix of 'Top' and 'Latest' search types, this approach aims to efficiently retrieve relevant critical information and current narratives, building on lessons learned from disconnected threads and failed approaches.",
+      "searches_count": 4,
+      "total_results": 121,
+      "effectiveness": 3.7625,
+      "insights": [
+        "Michael Herrera is widely considered a 'known fraud' in many circles, with accusations of 'lies' and 'delusions of grandeur'.",
+        "His UFO story 'makes zero sense to most veterans', citing inconsistencies with military procedures like being 'secretly chosen for a secret Jungle mission'.",
+        "A specific detail mentioned is that his 'Team Leader was Nathan', which could be a point for further verification or refutation."
+      ]
+    },
+    {
+      "round_number": 8,
+      "strategy": "Graph Strategy: The most critical current information gaps revolve around the lack of data for existing skeptical analyses and the most recent developments concerning Michael Herrera. Previous attempts to locate this information were unsuccessful, particularly for key debunkers like Mick West and John Greenewald Jr., and general debunking terms. This strategy addresses these gaps by refining the search approach. Instead of solely relying on 'from:user' which yielded no results, searches will now broaden to include general mentions alongside key debunkers to capture any discussions or analyses involving them. Additionally, re-attempting the general debunking and latest claims searches with optimized 'search_type' parameters will prioritize the most relevant and current information.",
+      "searches_count": 4,
+      "total_results": 183,
+      "effectiveness": 0.7875,
+      "insights": [
+        "One result indirectly confirms the existence of a 'Michael Herrera' associated with 'Black Program Insiders' and potential 'evidence' related to classified programs, aligning with the subject of a UFO whistleblower.",
+        "The vast majority of results are irrelevant, referring to various individuals named Michael or Miguel Herrera, primarily in sports (football/soccer), or completely unrelated topics."
+      ]
+    },
+    {
+      "round_number": 9,
+      "strategy": "Graph Strategy: Previous direct searches for 'Michael Herrera' and associated debunking terms or specific debunkers yielded no data, indicating a critical information gap regarding his public presence and the specifics of his claims. The current strategy aims to broaden the search to establish whether Michael Herrera is a recognized figure within the UFO/UAP whistleblower discourse, identify the nature of his claims, and uncover any existing scrutiny, even if not explicit debunking. This multi-pronged approach uses various keyword combinations and search types to increase the probability of finding foundational information necessary for a debunking strategy. It specifically avoids previously failed approaches like highly targeted 'from:user' searches when general searches for the topic are failing.",
+      "searches_count": 4,
+      "total_results": 152,
+      "effectiveness": 6.5,
+      "insights": [
+        "Michael Herrera's primary claim involves witnessing a 'football field-sized' or 'octagonal' UFO being loaded with weapons by unmarked US forces in Indonesia in 2009, with his unit allegedly threatened at gunpoint (Results 3, 6, 8, 20).",
+        "He claims to have testified under oath to the government's All-domain Anomaly Resolution Office (AARO) (Results 8, 15).",
+        "A direct counter-claim exists from Michael Herrera's Marine Team Leader, Nathan, who states the Indonesia UFO story is a 'complete lie' and claims to possess 'photos disproving the story' (Result 9). This is the most significant lead for debunking."
+      ]
+    },
+    {
+      "round_number": 10,
+      "strategy": "Graph Strategy: The primary strategic imperative is to fill the critical information gaps regarding existing skeptical analyses and the latest developments concerning Michael Herrera's claims. Previous direct searches for debunking content yielded no data, indicating either a lack of such content or issues with search specificity. This strategy broadens the scope for discovering critical perspectives by targeting prominent debunkers indirectly and refining general debunking terms. Additionally, it addresses the 'latest information' gap, which is crucial for a timely debunking strategy.",
+      "searches_count": 4,
+      "total_results": 183,
+      "effectiveness": 4.725,
+      "insights": [
+        "Michael Herrera is identified as an alleged UFO whistleblower.",
+        "He is reportedly being assisted by 'Black Program Insiders' who are expected to reveal evidence.",
+        "There is an indication that the evidence might be subject to scrutiny or approval from a figure like Mick West (implied by 'Mi...')."
+      ]
+    },
+    {
+      "round_number": 11,
+      "strategy": "Graph Strategy: The primary objective is to find existing debunking efforts and the latest information on Michael Herrera's claims, as previous attempts yielded no data. The strategy refines previous failed search queries by diversifying keywords and leveraging specific user timelines for known debunkers. By directly targeting Mick West and John Greenewald Jr.'s content, we efficiently check if these authorities have addressed Herrera. Concurrently, new generalized search queries with broader skeptical terms and alternative keywords for 'latest' information are implemented to cover the remaining critical gaps, avoiding direct repetition of failed queries while building on the strategic intent.",
+      "searches_count": 4,
+      "total_results": 118,
+      "effectiveness": 2.45,
+      "insights": [
+        "A common strategy for debunking UFO claims is to demand specific, verifiable data (date, time, location, direction) that would allow for mundane explanations.",
+        "Many alleged UFO sightings can be explained by common objects or phenomena such as birds, bats, insects, satellites, or atmospheric optical phenomena.",
+        "The refusal by UFO proponents to provide exact, verifiable data for their claims (e.g., UFO videos) is often a strong indicator that the claims are not robust and can be easily explained."
+      ]
+    },
+    {
+      "round_number": 12,
+      "strategy": "Graph Strategy: The previous attempts to find information about Michael Herrera's UFO whistleblower claims, including general searches and direct queries to known debunkers (Mick West, John Greenewald Jr.), consistently yielded no data. This indicates either that the exact search terms were too restrictive, or that the claims lack significant widespread discussion on Twitter to register under 'Top' or 'Latest' search types with those specific keywords. The current strategy aims to broaden the search for any relevant discourse about Michael Herrera and UFOs, employ a wider range of skeptical keywords, and attempt to find indirect connections to debunkers, directly addressing the critical information gaps.",
+      "searches_count": 3,
+      "total_results": 122,
+      "effectiveness": 5.375,
+      "insights": [
+        "Michael Herrera's core claim involves witnessing black ops personnel loading either 'people' (Result 9) or 'weapons' (Results 12, 14) into a hovering octagonal UFO in the Indonesian jungle during a 2009 humanitarian aid mission (Results 2, 9, 12, 14). He claims his unit was threatened at gunpoint by unmarked US forces (Results 12, 14).",
+        "Herrera states 5 other Marines witnessed the event but remain silent (Result 14).",
+        "His claims are part of a 'Great UFO Debate' with some considering them a 'hoax' (Result 13)."
+      ]
+    },
+    {
+      "round_number": 13,
+      "strategy": "Graph Strategy: The primary objective is to address critical information gaps related to existing skeptical analyses and recent developments concerning Michael Herrera. Previous attempts with generic and specific 'from:' searches failed, indicating a need for more nuanced and comprehensive query strategies. By utilizing advanced boolean operators and targeting known debunking authorities within a broader search scope, we aim to uncover crucial debunking content and current narratives that were previously missed. This strategy directly addresses the core goal of gathering information to debunk Michael Herrera.",
+      "searches_count": 1,
+      "total_results": 0,
+      "effectiveness": 0.0,
+      "insights": []
+    }
+  ]
+}

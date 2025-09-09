@@ -1,7 +1,7 @@
 # state_manager.py
 import json
 import os
-import config
+import twitter_config as config
 import importlib.util
 
 endpoints_data = None

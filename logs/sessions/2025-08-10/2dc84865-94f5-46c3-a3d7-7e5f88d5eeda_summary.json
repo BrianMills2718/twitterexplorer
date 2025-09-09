@@ -1,0 +1,88 @@
+{
+  "session_metadata": {
+    "session_id": "2dc84865-94f5-46c3-a3d7-7e5f88d5eeda",
+    "start_time": "2025-08-11T01:22:46.225312+00:00",
+    "end_time": "2025-08-11T01:23:31.192880+00:00",
+    "duration_seconds": 44.966589,
+    "user_query": "Elon Musk X platform news"
+  },
+  "configuration": {
+    "max_searches": 2,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.8,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "pages_per_search": 1,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true,
+    "enforce_endpoint_diversity": false,
+    "max_endpoint_repeats": 5,
+    "diversity_threshold": 0.3
+  },
+  "performance_metrics": {
+    "total_searches": 2,
+    "total_rounds": 1,
+    "total_results_found": 111,
+    "satisfaction_score": 0.24500000000000002,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.2,
+      "source_diversity": 0.1,
+      "evidence_quality": 0.7000000000000001,
+      "claim_specificity": 0.0,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Investigation failed: InvestigationSession.update_satisfaction_metrics() missing 1 required positional argument: 'findings'"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [
+        {
+          "search_id": 1,
+          "query": "Elon Musk X platform news",
+          "results": 51,
+          "effectiveness": 8.0
+        },
+        {
+          "search_id": 2,
+          "query": "",
+          "results": 60,
+          "effectiveness": 8.0
+        }
+      ],
+      "moderately_effective": [],
+      "low_effectiveness": [],
+      "ineffective": []
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "Graph Strategy: To establish a comprehensive understanding of recent news and official statements regarding Elon Musk and the X platform, this initial phase combines broad news searches with direct information from key official sources. This approach aims to gather foundational context, identify key narratives, and confirm official channels for future in-depth investigation.",
+        "avg_effectiveness": 8.0
+      }
+    ],
+    "dead_ends": [],
+    "promising_leads": [
+      "Elon Musk X platform news",
+      ""
+    ]
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Graph Strategy: To establish a comprehensive understanding of recent news and official statements regarding Elon Musk and the X platform, this initial phase combines broad news searches with direct information from key official sources. This approach aims to gather foundational context, identify key narratives, and confirm official channels for future in-depth investigation.",
+      "searches_count": 2,
+      "total_results": 111,
+      "effectiveness": 8.0,
+      "insights": [
+        "X, under Elon Musk, is integrating Grok AI (an 'edgy' and 'controversial' chatbot) into the platform, with plans to introduce ads within Grok's responses as a new revenue engine.",
+        "Musk's motivation for X as a news platform is rooted in his belief that legacy media is biased, promoting X as a platform for free speech, real-time updates, and citizen journalism.",
+        "X has achieved significant milestones, topping news app charts in specific countries like Mexico and Azerbaijan."
+      ]
+    }
+  ]
+}

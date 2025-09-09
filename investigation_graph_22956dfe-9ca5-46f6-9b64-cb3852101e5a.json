@@ -1,0 +1,17 @@
+{
+  "nodes": {
+    "0b5a7fa6-854c-4dce-b63d-6b15b71ecb15": {
+      "id": "0b5a7fa6-854c-4dce-b63d-6b15b71ecb15",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "current issues in Argentina politics and economy",
+        "is_root": true,
+        "investigation_goal": "current issues in Argentina politics and economy"
+      },
+      "created_at": "2025-09-08T06:38:33.366055"
+    }
+  },
+  "edges": [],
+  "analytic_question": "0b5a7fa6-854c-4dce-b63d-6b15b71ecb15",
+  "created_at": "2025-09-08T06:38:35.600516"
+}

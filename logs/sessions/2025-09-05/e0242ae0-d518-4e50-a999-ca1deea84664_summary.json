@@ -1,0 +1,96 @@
+{
+  "session_metadata": {
+    "session_id": "e0242ae0-d518-4e50-a999-ca1deea84664",
+    "start_time": "2025-09-05T15:17:15.339308+00:00",
+    "end_time": "2025-09-05T15:19:33.787850+00:00",
+    "duration_seconds": 138.447542,
+    "user_query": "Nvidia stock price analysis today"
+  },
+  "configuration": {
+    "max_searches": 3,
+    "max_time_minutes": 2,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.1,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "pages_per_search": 1,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true,
+    "enforce_endpoint_diversity": false,
+    "max_endpoint_repeats": 5,
+    "diversity_threshold": 0.3
+  },
+  "performance_metrics": {
+    "total_searches": 3,
+    "total_rounds": 1,
+    "total_results_found": 138,
+    "satisfaction_score": 0.33270833333333333,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.4,
+      "source_diversity": 0.2,
+      "evidence_quality": 0.7208333333333333,
+      "claim_specificity": 0.08333333333333333,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Reached maximum search limit (3)"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [],
+      "moderately_effective": [
+        {
+          "search_id": 2,
+          "query": "from:NVIDIA (earnings OR revenue OR guidance OR CEO OR Jensen Huang OR partnership OR AI OR product)",
+          "results": 60,
+          "effectiveness": 6.0
+        },
+        {
+          "search_id": 3,
+          "query": "",
+          "results": 59,
+          "effectiveness": 5.9
+        }
+      ],
+      "low_effectiveness": [],
+      "ineffective": [
+        {
+          "search_id": 1,
+          "query": "($NVDA OR Nvidia) (stock OR price OR shares OR rally OR selloff OR guidance OR earnings) -filter:links",
+          "results": 19,
+          "effectiveness": 1.9
+        }
+      ]
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "Graph Strategy: We currently have no Twitter-derived data about Nvidia (NVDA) for today. The highest-priority gaps are: (1) real-time market sentiment and volume of conversation, (2) official company messaging or news that could move the stock today, and (3) commentary from high‑reach financial news accounts and influencers. The next round should therefore collect a broad set of Twitter signals (latest public mentions and top tweets), authoritative timelines (company + major financial outlets/influencers), and trending context. This plan uses multiple endpoints to satisfy the diversity rule and enables a follow-up deep dive on any high-engagement tweet or thread identified.",
+        "avg_effectiveness": 4.6000000000000005
+      }
+    ],
+    "dead_ends": [
+      "($NVDA OR Nvidia) (stock OR price OR shares OR rally OR selloff OR guidance OR earnings) -filter:links"
+    ],
+    "promising_leads": [
+      "from:NVIDIA (earnings OR revenue OR guidance OR CEO OR Jensen Huang OR partnership OR AI OR product)",
+      ""
+    ]
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Graph Strategy: We currently have no Twitter-derived data about Nvidia (NVDA) for today. The highest-priority gaps are: (1) real-time market sentiment and volume of conversation, (2) official company messaging or news that could move the stock today, and (3) commentary from high‑reach financial news accounts and influencers. The next round should therefore collect a broad set of Twitter signals (latest public mentions and top tweets), authoritative timelines (company + major financial outlets/influencers), and trending context. This plan uses multiple endpoints to satisfy the diversity rule and enables a follow-up deep dive on any high-engagement tweet or thread identified.",
+      "searches_count": 3,
+      "total_results": 138,
+      "effectiveness": 4.6000000000000005,
+      "insights": [
+        "Found 119 relevant results",
+        "1 searches yielded no results"
+      ]
+    }
+  ]
+}

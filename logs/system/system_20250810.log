@@ -1,0 +1,341 @@
+2025-08-10 05:30:41,133 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-08-10 14:16:49,044 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-08-10 14:17:08,535 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-08-10 14:25:08,712 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-08-10 14:25:27,942 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-08-10 14:25:58,640 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-08-10 14:26:00,284 - INFO - Started investigation session 3d68977b-0d6a-429e-b26f-31db8f3bb62d for query: What is Elon Musk saying about Twitter recently?...
+2025-08-10 14:26:00,284 - INFO - DIAGNOSTIC: Prompt size: 6834 chars, 792 words
+2025-08-10 14:26:00,284 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
+2025-08-10 14:26:00,295 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-10 14:26:07,415 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-10 14:26:07,418 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-10 14:26:07,420 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-08-10 14:26:07,421 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-08-10 14:26:07,421 - INFO - DIAGNOSTIC: Searches count: 4
+2025-08-10 14:26:07,421 - INFO - DIAGNOSTIC: Reasoning length: 571 chars
+2025-08-10 14:26:07,421 - INFO - DIAGNOSTIC: Search 1 - Endpoint: timeline.php
+2025-08-10 14:26:07,421 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-10 14:26:07,421 - INFO - DIAGNOSTIC: Search 1 - Reasoning: This will retrieve Elon Musk's most recent posts chronologically, providing a direct view of his rec...
+2025-08-10 14:26:07,421 - INFO - DIAGNOSTIC: Search 2 - Endpoint: search.php
+2025-08-10 14:26:07,421 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': 'from:elonmusk Twitter OR X', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-10 14:26:07,421 - INFO - DIAGNOSTIC: Search 2 - Reasoning: This search specifically targets posts made by Elon Musk that contain the terms 'Twitter' or 'X', en...
+2025-08-10 14:26:07,421 - INFO - DIAGNOSTIC: Search 3 - Endpoint: search.php
+2025-08-10 14:26:07,421 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': 'Elon Musk Twitter OR X recent', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-10 14:26:07,421 - INFO - DIAGNOSTIC: Search 3 - Reasoning: This broader search will capture recent news, discussions, and articles from various sources that me...
+2025-08-10 14:26:07,421 - INFO - DIAGNOSTIC: Search 4 - Endpoint: following.php
+2025-08-10 14:26:07,421 - INFO - DIAGNOSTIC: Search 4 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-10 14:26:07,421 - INFO - DIAGNOSTIC: Search 4 - Reasoning: Understanding who Elon Musk follows can reveal his sources of information or the accounts he interac...
+2025-08-10 14:26:07,422 - INFO - DIAGNOSTIC: Endpoint diversity score: 0.78
+2025-08-10 14:26:07,422 - INFO - DIAGNOSTIC: Endpoints used: ['timeline.php', 'search.php', 'following.php']
+2025-08-10 14:26:37,023 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-10 14:26:46,558 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-10 14:26:46,559 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-10 14:26:46,562 - INFO - Completed investigation session 3d68977b-0d6a-429e-b26f-31db8f3bb62d - 4 searches, 303 results
+2025-08-10 14:27:14,196 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-08-10 14:27:15,850 - INFO - Started investigation session c41cf295-dec5-497e-9aee-4fbce58b2ae5 for query: What is Elon Musk saying about Twitter recently?...
+2025-08-10 14:27:15,850 - INFO - DIAGNOSTIC: Prompt size: 6834 chars, 792 words
+2025-08-10 14:27:15,850 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
+2025-08-10 14:27:15,859 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-10 14:27:21,295 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-10 14:27:21,298 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-10 14:27:21,299 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-08-10 14:27:21,300 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-08-10 14:27:21,300 - INFO - DIAGNOSTIC: Searches count: 3
+2025-08-10 14:27:21,301 - INFO - DIAGNOSTIC: Reasoning length: 476 chars
+2025-08-10 14:27:21,301 - INFO - DIAGNOSTIC: Search 1 - Endpoint: timeline.php
+2025-08-10 14:27:21,301 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-10 14:27:21,301 - INFO - DIAGNOSTIC: Search 1 - Reasoning: To get a direct, chronological view of Elon Musk's most recent posts, which would include his statem...
+2025-08-10 14:27:21,301 - INFO - DIAGNOSTIC: Search 2 - Endpoint: search.php
+2025-08-10 14:27:21,301 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': 'from:elonmusk (Twitter OR X)', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-10 14:27:21,301 - INFO - DIAGNOSTIC: Search 2 - Reasoning: This targeted search will specifically filter for Elon Musk's recent tweets that contain either 'Twi...
+2025-08-10 14:27:21,301 - INFO - DIAGNOSTIC: Search 3 - Endpoint: usermedia.php
+2025-08-10 14:27:21,301 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-10 14:27:21,301 - INFO - DIAGNOSTIC: Search 3 - Reasoning: Elon Musk frequently communicates through memes, images, or videos. Examining his recent media posts...
+2025-08-10 14:27:21,301 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
+2025-08-10 14:27:21,301 - INFO - DIAGNOSTIC: Endpoints used: ['timeline.php', 'search.php', 'usermedia.php']
+2025-08-10 14:27:46,892 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-10 14:27:58,309 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-10 14:27:58,309 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-10 14:27:58,312 - INFO - Completed investigation session c41cf295-dec5-497e-9aee-4fbce58b2ae5 - 3 searches, 145 results
+2025-08-10 14:29:06,910 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-08-10 14:29:08,513 - INFO - Started investigation session cbfe8bf5-7423-4819-95b6-646fc416f657 for query: What are the latest developments with Elon Musk an...
+2025-08-10 14:29:08,513 - INFO - DIAGNOSTIC: Prompt size: 6857 chars, 795 words
+2025-08-10 14:29:08,513 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
+2025-08-10 14:29:08,522 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-10 14:29:16,045 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-10 14:29:16,047 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-10 14:29:16,049 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-08-10 14:29:16,050 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-08-10 14:29:16,050 - INFO - DIAGNOSTIC: Searches count: 3
+2025-08-10 14:29:16,050 - INFO - DIAGNOSTIC: Reasoning length: 480 chars
+2025-08-10 14:29:16,050 - INFO - DIAGNOSTIC: Search 1 - Endpoint: timeline.php
+2025-08-10 14:29:16,050 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-10 14:29:16,050 - INFO - DIAGNOSTIC: Search 1 - Reasoning: To directly observe Elon Musk's most recent official statements, announcements, and activities relat...
+2025-08-10 14:29:16,050 - INFO - DIAGNOSTIC: Search 2 - Endpoint: search.php
+2025-08-10 14:29:16,050 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': 'Elon Musk X Twitter recent developments OR news', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-10 14:29:16,050 - INFO - DIAGNOSTIC: Search 2 - Reasoning: To gather the latest news, analyses, and public discussions from a wider range of sources regarding ...
+2025-08-10 14:29:16,050 - INFO - DIAGNOSTIC: Search 3 - Endpoint: trends.php
+2025-08-10 14:29:16,050 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': None, 'screenname': None, 'country': 'UnitedStates', 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-10 14:29:16,050 - INFO - DIAGNOSTIC: Search 3 - Reasoning: To identify if topics related to 'Elon Musk', 'X', or 'Twitter' are currently trending within a majo...
+2025-08-10 14:29:16,050 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
+2025-08-10 14:29:16,050 - INFO - DIAGNOSTIC: Endpoints used: ['timeline.php', 'search.php', 'trends.php']
+2025-08-10 14:29:37,702 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-10 14:29:45,749 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-10 14:29:45,750 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-10 14:29:45,752 - INFO - Completed investigation session cbfe8bf5-7423-4819-95b6-646fc416f657 - 3 searches, 168 results
+2025-08-10 14:40:07,320 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-08-10 14:41:03,460 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-08-10 14:41:05,241 - INFO - Started investigation session c9ef3d05-4b61-4142-8a91-8c80bb5aa074 for query: What is Elon Musk's latest announcement about X pl...
+2025-08-10 14:41:05,241 - INFO - DIAGNOSTIC: Prompt size: 6843 chars, 793 words
+2025-08-10 14:41:05,241 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
+2025-08-10 14:41:05,251 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-10 14:41:10,729 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-10 14:41:10,731 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-10 14:41:10,734 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-08-10 14:41:10,734 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-08-10 14:41:10,734 - INFO - DIAGNOSTIC: Searches count: 3
+2025-08-10 14:41:10,734 - INFO - DIAGNOSTIC: Reasoning length: 468 chars
+2025-08-10 14:41:10,734 - INFO - DIAGNOSTIC: Search 1 - Endpoint: search.php
+2025-08-10 14:41:10,734 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': 'from:elonmusk X platform announcement OR news OR update', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-10 14:41:10,734 - INFO - DIAGNOSTIC: Search 1 - Reasoning: This search directly targets Elon Musk's recent posts on X about the platform, focusing on 'announce...
+2025-08-10 14:41:10,734 - INFO - DIAGNOSTIC: Search 2 - Endpoint: timeline.php
+2025-08-10 14:41:10,734 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-10 14:41:10,734 - INFO - DIAGNOSTIC: Search 2 - Reasoning: Reviewing Elon Musk's personal timeline is crucial as he frequently makes direct announcements or pr...
+2025-08-10 14:41:10,734 - INFO - DIAGNOSTIC: Search 3 - Endpoint: trends.php
+2025-08-10 14:41:10,735 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': None, 'screenname': None, 'country': 'UnitedStates', 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-10 14:41:10,735 - INFO - DIAGNOSTIC: Search 3 - Reasoning: Checking trending topics in a relevant country like the United States can reveal if there's signific...
+2025-08-10 14:41:10,735 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
+2025-08-10 14:41:10,735 - INFO - DIAGNOSTIC: Endpoints used: ['search.php', 'timeline.php', 'trends.php']
+2025-08-10 14:41:24,415 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-10 14:41:35,054 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-10 14:41:35,055 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-10 14:41:35,057 - INFO - Completed investigation session c9ef3d05-4b61-4142-8a91-8c80bb5aa074 - 2 searches, 61 results
+2025-08-10 18:16:04,301 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-08-10 18:16:08,877 - INFO - Started investigation session 672a4a50-b860-4ddf-baae-73b5f2c991b3 for query: What is Elon Musk announcing about X?...
+2025-08-10 18:16:08,877 - INFO - DIAGNOSTIC: Prompt size: 6823 chars, 791 words
+2025-08-10 18:16:08,877 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
+2025-08-10 18:16:08,892 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-10 18:16:20,452 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-10 18:16:20,454 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-10 18:16:20,456 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-08-10 18:16:20,456 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-08-10 18:16:20,456 - INFO - DIAGNOSTIC: Searches count: 3
+2025-08-10 18:16:20,456 - INFO - DIAGNOSTIC: Reasoning length: 445 chars
+2025-08-10 18:16:20,457 - INFO - DIAGNOSTIC: Search 1 - Endpoint: timeline.php
+2025-08-10 18:16:20,457 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-10 18:16:20,457 - INFO - DIAGNOSTIC: Search 1 - Reasoning: This search directly retrieves Elon Musk's most recent posts on X, which is the primary source for a...
+2025-08-10 18:16:20,457 - INFO - DIAGNOSTIC: Search 2 - Endpoint: search.php
+2025-08-10 18:16:20,457 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': 'Elon Musk X announcement OR X updates from:elonmusk', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-10 18:16:20,457 - INFO - DIAGNOSTIC: Search 2 - Reasoning: This general search aims to capture recent public discussions, news, and reactions related to Elon M...
+2025-08-10 18:16:20,457 - INFO - DIAGNOSTIC: Search 3 - Endpoint: usermedia.php
+2025-08-10 18:16:20,457 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-10 18:16:20,457 - INFO - DIAGNOSTIC: Search 3 - Reasoning: Announcements are often accompanied by images or videos. Checking Elon Musk's media timeline will id...
+2025-08-10 18:16:20,457 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
+2025-08-10 18:16:20,457 - INFO - DIAGNOSTIC: Endpoints used: ['timeline.php', 'search.php', 'usermedia.php']
+2025-08-10 18:16:33,927 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-10 18:16:44,163 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-10 18:16:44,164 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-10 18:16:44,166 - INFO - Completed investigation session 672a4a50-b860-4ddf-baae-73b5f2c991b3 - 2 searches, 60 results
+2025-08-10 18:16:56,328 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-08-10 18:17:22,068 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-08-10 18:17:23,574 - INFO - Started investigation session a4fdddb3-c17b-4397-8734-a6ae338bc6b2 for query: What is Elon Musk announcing about X?...
+2025-08-10 18:17:23,575 - INFO - DIAGNOSTIC: Prompt size: 6823 chars, 791 words
+2025-08-10 18:17:23,575 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
+2025-08-10 18:17:23,583 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-10 18:17:33,751 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-10 18:17:33,753 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-10 18:17:33,755 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-08-10 18:17:33,755 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-08-10 18:17:33,755 - INFO - DIAGNOSTIC: Searches count: 3
+2025-08-10 18:17:33,756 - INFO - DIAGNOSTIC: Reasoning length: 602 chars
+2025-08-10 18:17:33,756 - INFO - DIAGNOSTIC: Search 1 - Endpoint: timeline.php
+2025-08-10 18:17:33,756 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-10 18:17:33,756 - INFO - DIAGNOSTIC: Search 1 - Reasoning: To find direct announcements, the most reliable source is Elon Musk's own timeline. This search will...
+2025-08-10 18:17:33,756 - INFO - DIAGNOSTIC: Search 2 - Endpoint: search.php
+2025-08-10 18:17:33,756 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': "Elon Musk X announcement OR 'new features X'", 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-10 18:17:33,756 - INFO - DIAGNOSTIC: Search 2 - Reasoning: While Elon Musk's timeline provides direct information, significant announcements are often discusse...
+2025-08-10 18:17:33,756 - INFO - DIAGNOSTIC: Search 3 - Endpoint: usermedia.php
+2025-08-10 18:17:33,756 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-10 18:17:33,756 - INFO - DIAGNOSTIC: Search 3 - Reasoning: Announcements, especially related to technology or product features, are frequently conveyed through...
+2025-08-10 18:17:33,756 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
+2025-08-10 18:17:33,756 - INFO - DIAGNOSTIC: Endpoints used: ['timeline.php', 'search.php', 'usermedia.php']
+2025-08-10 18:17:50,390 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-10 18:18:03,869 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-10 18:18:03,870 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-10 18:18:03,873 - INFO - Completed investigation session a4fdddb3-c17b-4397-8734-a6ae338bc6b2 - 2 searches, 112 results
+2025-08-10 18:18:36,496 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-08-10 18:18:37,986 - INFO - Started investigation session 335ca556-1b34-45bc-bc3d-a3b7970f0478 for query: What is Elon Musk announcing about X?...
+2025-08-10 18:18:37,986 - INFO - DIAGNOSTIC: Prompt size: 6823 chars, 791 words
+2025-08-10 18:18:37,986 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
+2025-08-10 18:18:37,994 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-10 18:18:48,927 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-10 18:18:48,929 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-10 18:18:48,931 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-08-10 18:18:48,931 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-08-10 18:18:48,931 - INFO - DIAGNOSTIC: Searches count: 3
+2025-08-10 18:18:48,931 - INFO - DIAGNOSTIC: Reasoning length: 429 chars
+2025-08-10 18:18:48,931 - INFO - DIAGNOSTIC: Search 1 - Endpoint: timeline.php
+2025-08-10 18:18:48,931 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-10 18:18:48,931 - INFO - DIAGNOSTIC: Search 1 - Reasoning: Directly checking Elon Musk's latest posts on X is the most effective way to identify his recent ann...
+2025-08-10 18:18:48,931 - INFO - DIAGNOSTIC: Search 2 - Endpoint: search.php
+2025-08-10 18:18:48,931 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': 'from:elonmusk X announcement OR news OR update', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-10 18:18:48,931 - INFO - DIAGNOSTIC: Search 2 - Reasoning: This search specifically targets Elon Musk's tweets for keywords indicating an announcement or signi...
+2025-08-10 18:18:48,931 - INFO - DIAGNOSTIC: Search 3 - Endpoint: trends.php
+2025-08-10 18:18:48,932 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': None, 'screenname': None, 'country': 'UnitedStates', 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-10 18:18:48,932 - INFO - DIAGNOSTIC: Search 3 - Reasoning: Checking trending topics in a major market like the United States can reveal if 'X', 'Elon Musk', or...
+2025-08-10 18:18:48,932 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
+2025-08-10 18:18:48,932 - INFO - DIAGNOSTIC: Endpoints used: ['timeline.php', 'search.php', 'trends.php']
+2025-08-10 18:19:01,863 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-10 18:19:14,392 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-10 18:19:14,393 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-10 18:19:14,395 - INFO - Completed investigation session 335ca556-1b34-45bc-bc3d-a3b7970f0478 - 2 searches, 77 results
+2025-08-10 18:19:36,882 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-08-10 18:19:38,356 - INFO - Started investigation session e25fcb30-2bf5-47aa-86e8-9ea76bb86b8c for query: What is Elon Musk announcing about X?...
+2025-08-10 18:19:38,356 - INFO - DIAGNOSTIC: Prompt size: 6823 chars, 791 words
+2025-08-10 18:19:38,357 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
+2025-08-10 18:19:38,365 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-10 18:19:47,968 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-10 18:19:47,970 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-10 18:19:47,972 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-08-10 18:19:47,972 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-08-10 18:19:47,972 - INFO - DIAGNOSTIC: Searches count: 3
+2025-08-10 18:19:47,972 - INFO - DIAGNOSTIC: Reasoning length: 311 chars
+2025-08-10 18:19:47,973 - INFO - DIAGNOSTIC: Search 1 - Endpoint: timeline.php
+2025-08-10 18:19:47,973 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-10 18:19:47,973 - INFO - DIAGNOSTIC: Search 1 - Reasoning: To get direct, unmediated announcements from Elon Musk's official account, as he frequently uses it ...
+2025-08-10 18:19:47,973 - INFO - DIAGNOSTIC: Search 2 - Endpoint: timeline.php
+2025-08-10 18:19:47,973 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': None, 'screenname': 'X', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-10 18:19:47,973 - INFO - DIAGNOSTIC: Search 2 - Reasoning: To check the official X platform account for any formal announcements or corroborating information a...
+2025-08-10 18:19:47,973 - INFO - DIAGNOSTIC: Search 3 - Endpoint: search.php
+2025-08-10 18:19:47,973 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': "Elon Musk X announcement OR 'major update' OR 'new feature'", 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-10 18:19:47,973 - INFO - DIAGNOSTIC: Search 3 - Reasoning: To identify if there are broader public discussions, news reports, or other users reacting to or dis...
+2025-08-10 18:19:47,973 - INFO - DIAGNOSTIC: Endpoint diversity score: 0.72
+2025-08-10 18:19:47,973 - INFO - DIAGNOSTIC: Endpoints used: ['timeline.php', 'search.php']
+2025-08-10 18:20:02,728 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-10 18:20:20,574 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-10 18:20:20,574 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-10 18:20:20,577 - INFO - Completed investigation session e25fcb30-2bf5-47aa-86e8-9ea76bb86b8c - 2 searches, 80 results
+2025-08-10 18:20:20,577 - INFO - Started investigation session 082a2f21-a203-4f03-9d74-685619a36173 for query: What is Elon Musk announcing about X?...
+2025-08-10 18:20:20,577 - INFO - DIAGNOSTIC: Prompt size: 6823 chars, 791 words
+2025-08-10 18:20:20,577 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
+2025-08-10 18:20:20,581 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-10 18:20:28,287 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-10 18:20:28,287 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-10 18:20:28,288 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-08-10 18:20:28,289 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-08-10 18:20:28,289 - INFO - DIAGNOSTIC: Searches count: 3
+2025-08-10 18:20:28,289 - INFO - DIAGNOSTIC: Reasoning length: 424 chars
+2025-08-10 18:20:28,289 - INFO - DIAGNOSTIC: Search 1 - Endpoint: timeline.php
+2025-08-10 18:20:28,289 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-10 18:20:28,289 - INFO - DIAGNOSTIC: Search 1 - Reasoning: This search directly targets Elon Musk's official timeline on X, which is the primary source for his...
+2025-08-10 18:20:28,289 - INFO - DIAGNOSTIC: Search 2 - Endpoint: search.php
+2025-08-10 18:20:28,289 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': "Elon Musk X announcement OR 'Elon Musk announces X' OR 'Elon Musk new X'", 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-10 18:20:28,290 - INFO - DIAGNOSTIC: Search 2 - Reasoning: This broad search will capture recent discussions, news reports, and public reactions related to any...
+2025-08-10 18:20:28,290 - INFO - DIAGNOSTIC: Search 3 - Endpoint: trends.php
+2025-08-10 18:20:28,290 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': None, 'screenname': None, 'country': 'UnitedStates', 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-10 18:20:28,290 - INFO - DIAGNOSTIC: Search 3 - Reasoning: Checking trending topics in a key region will indicate if 'X', 'Elon Musk', or specific related new ...
+2025-08-10 18:20:28,290 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
+2025-08-10 18:20:28,290 - INFO - DIAGNOSTIC: Endpoints used: ['timeline.php', 'search.php', 'trends.php']
+2025-08-10 18:20:49,210 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-10 18:21:02,665 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-10 18:21:02,666 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-10 18:21:02,668 - INFO - Completed investigation session 082a2f21-a203-4f03-9d74-685619a36173 - 2 searches, 60 results
+2025-08-10 18:22:44,724 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-08-10 18:22:46,225 - INFO - Started investigation session 2dc84865-94f5-46c3-a3d7-7e5f88d5eeda for query: Elon Musk X platform news...
+2025-08-10 18:22:46,226 - INFO - DIAGNOSTIC: Prompt size: 6811 chars, 789 words
+2025-08-10 18:22:46,226 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
+2025-08-10 18:22:46,234 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-10 18:22:58,264 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-10 18:22:58,266 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-10 18:22:58,268 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-08-10 18:22:58,268 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-08-10 18:22:58,268 - INFO - DIAGNOSTIC: Searches count: 3
+2025-08-10 18:22:58,268 - INFO - DIAGNOSTIC: Reasoning length: 361 chars
+2025-08-10 18:22:58,268 - INFO - DIAGNOSTIC: Search 1 - Endpoint: search.php
+2025-08-10 18:22:58,268 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': 'Elon Musk X platform news', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-10 18:22:58,268 - INFO - DIAGNOSTIC: Search 1 - Reasoning: This search will provide the most recent and broad news coverage related to Elon Musk and the X plat...
+2025-08-10 18:22:58,268 - INFO - DIAGNOSTIC: Search 2 - Endpoint: timeline.php
+2025-08-10 18:22:58,269 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-10 18:22:58,269 - INFO - DIAGNOSTIC: Search 2 - Reasoning: Directly accessing Elon Musk's timeline is crucial for obtaining first-hand announcements, opinions,...
+2025-08-10 18:22:58,269 - INFO - DIAGNOSTIC: Search 3 - Endpoint: screenname.php
+2025-08-10 18:22:58,269 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': None, 'screenname': 'X', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-10 18:22:58,269 - INFO - DIAGNOSTIC: Search 3 - Reasoning: Verifying and obtaining profile details for the official X platform account (@X) is essential. This ...
+2025-08-10 18:22:58,269 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
+2025-08-10 18:22:58,269 - INFO - DIAGNOSTIC: Endpoints used: ['search.php', 'timeline.php', 'screenname.php']
+2025-08-10 18:23:14,286 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-10 18:23:31,189 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-10 18:23:31,190 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-10 18:23:31,193 - INFO - Completed investigation session 2dc84865-94f5-46c3-a3d7-7e5f88d5eeda - 2 searches, 111 results
+2025-08-10 18:25:23,033 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-08-10 18:25:24,618 - INFO - Started investigation session 40f23162-52fe-44a3-a90b-5ac19b6890bc for query: Elon Musk Twitter announcement...
+2025-08-10 18:25:24,618 - INFO - DIAGNOSTIC: Prompt size: 6816 chars, 788 words
+2025-08-10 18:25:24,619 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
+2025-08-10 18:25:24,627 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-10 18:25:34,785 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-10 18:25:34,787 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-10 18:25:34,789 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-08-10 18:25:34,790 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-08-10 18:25:34,790 - INFO - DIAGNOSTIC: Searches count: 3
+2025-08-10 18:25:34,790 - INFO - DIAGNOSTIC: Reasoning length: 632 chars
+2025-08-10 18:25:34,790 - INFO - DIAGNOSTIC: Search 1 - Endpoint: timeline.php
+2025-08-10 18:25:34,790 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-10 18:25:34,790 - INFO - DIAGNOSTIC: Search 1 - Reasoning: This search directly targets Elon Musk's official Twitter timeline to identify any recent announceme...
+2025-08-10 18:25:34,790 - INFO - DIAGNOSTIC: Search 2 - Endpoint: search.php
+2025-08-10 18:25:34,790 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': 'Elon Musk Twitter announcement OR announces OR revealed', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-10 18:25:34,790 - INFO - DIAGNOSTIC: Search 2 - Reasoning: This search complements the timeline by capturing broader public and media reactions or discussions ...
+2025-08-10 18:25:34,790 - INFO - DIAGNOSTIC: Search 3 - Endpoint: screenname.php
+2025-08-10 18:25:34,790 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-10 18:25:34,790 - INFO - DIAGNOSTIC: Search 3 - Reasoning: To provide essential foundational context for Elon Musk, including his official name, follower count...
+2025-08-10 18:25:34,790 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
+2025-08-10 18:25:34,791 - INFO - DIAGNOSTIC: Endpoints used: ['timeline.php', 'search.php', 'screenname.php']
+2025-08-10 18:25:52,282 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-10 18:26:05,352 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-10 18:26:05,353 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-10 18:26:05,357 - INFO - Completed investigation session 40f23162-52fe-44a3-a90b-5ac19b6890bc - 2 searches, 90 results
+2025-08-10 18:28:21,410 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-08-10 18:28:37,899 - INFO - Started investigation session 6863d115-65c3-471e-baba-bee2c9fd4f8a for query: What is Elon Musk's latest announcement about X pl...
+2025-08-10 18:28:37,899 - INFO - DIAGNOSTIC: Prompt size: 6843 chars, 793 words
+2025-08-10 18:28:37,899 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
+2025-08-10 18:28:37,912 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-08-10 18:28:43,858 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-10 18:28:43,861 - INFO - Wrapper: Completed Call, calling success_handler
+2025-08-10 18:28:44,324 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-08-10 18:28:44,324 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-08-10 18:28:44,325 - INFO - DIAGNOSTIC: Searches count: 3
+2025-08-10 18:28:44,325 - INFO - DIAGNOSTIC: Reasoning length: 467 chars
+2025-08-10 18:28:44,325 - INFO - DIAGNOSTIC: Search 1 - Endpoint: timeline.php
+2025-08-10 18:28:44,325 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': None, 'screenname': 'elonmusk', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-10 18:28:44,325 - INFO - DIAGNOSTIC: Search 1 - Reasoning: Directly checking Elon Musk's timeline is the most reliable way to find his latest official announce...
+2025-08-10 18:28:44,325 - INFO - DIAGNOSTIC: Search 2 - Endpoint: search.php
+2025-08-10 18:28:44,325 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': 'Elon Musk X platform announcement', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-10 18:28:44,325 - INFO - DIAGNOSTIC: Search 2 - Reasoning: This search aims to capture recent mentions, news articles, or discussions across the platform regar...
+2025-08-10 18:28:44,325 - INFO - DIAGNOSTIC: Search 3 - Endpoint: trends.php
+2025-08-10 18:28:44,325 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': None, 'screenname': None, 'country': 'UnitedStates', 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-08-10 18:28:44,325 - INFO - DIAGNOSTIC: Search 3 - Reasoning: Monitoring trends in a major region like the United States can help identify if a significant announ...
+2025-08-10 18:28:44,325 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
+2025-08-10 18:28:44,325 - INFO - DIAGNOSTIC: Endpoints used: ['timeline.php', 'search.php', 'trends.php']
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    

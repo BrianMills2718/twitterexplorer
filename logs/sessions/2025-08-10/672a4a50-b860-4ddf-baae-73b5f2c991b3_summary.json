@@ -1,0 +1,90 @@
+{
+  "session_metadata": {
+    "session_id": "672a4a50-b860-4ddf-baae-73b5f2c991b3",
+    "start_time": "2025-08-11T01:16:08.876059+00:00",
+    "end_time": "2025-08-11T01:16:44.166430+00:00",
+    "duration_seconds": 35.289371,
+    "user_query": "What is Elon Musk announcing about X?"
+  },
+  "configuration": {
+    "max_searches": 2,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.8,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "pages_per_search": 1,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true,
+    "enforce_endpoint_diversity": false,
+    "max_endpoint_repeats": 5,
+    "diversity_threshold": 0.3
+  },
+  "performance_metrics": {
+    "total_searches": 2,
+    "total_rounds": 1,
+    "total_results_found": 60,
+    "satisfaction_score": 0.245,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.2,
+      "source_diversity": 0.1,
+      "evidence_quality": 0.7,
+      "claim_specificity": 0.0,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Investigation failed: InvestigationSession.update_satisfaction_metrics() missing 1 required positional argument: 'findings'"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [
+        {
+          "search_id": 1,
+          "query": "",
+          "results": 60,
+          "effectiveness": 9.0
+        }
+      ],
+      "moderately_effective": [],
+      "low_effectiveness": [],
+      "ineffective": [
+        {
+          "search_id": 2,
+          "query": "Elon Musk X announcement OR X updates from:elonmusk",
+          "results": 0,
+          "effectiveness": 0.0
+        }
+      ]
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "Graph Strategy: To determine what Elon Musk is announcing about X, the initial strategy focuses on directly observing his communications on the platform and gathering immediate public discourse. Checking his personal timeline and media uploads provides primary source information, while a broad search identifies recent public reactions and news coverage. This multi-faceted approach ensures a comprehensive initial understanding of any potential announcements.",
+        "avg_effectiveness": 4.5
+      }
+    ],
+    "dead_ends": [
+      "Elon Musk X announcement OR X updates from:elonmusk"
+    ],
+    "promising_leads": [
+      ""
+    ]
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Graph Strategy: To determine what Elon Musk is announcing about X, the initial strategy focuses on directly observing his communications on the platform and gathering immediate public discourse. Checking his personal timeline and media uploads provides primary source information, while a broad search identifies recent public reactions and news coverage. This multi-faceted approach ensures a comprehensive initial understanding of any potential announcements.",
+      "searches_count": 2,
+      "total_results": 60,
+      "effectiveness": 4.5,
+      "insights": [
+        "xAI's latest Grok model has finished pre-training and will be natively multimodal.",
+        "Grok 4 is now available with a free tier for all users on X, allowing a small number of daily queries.",
+        "A new feature on X allows users to turn any image into a video using 'Make Video with Grok'."
+      ]
+    }
+  ]
+}

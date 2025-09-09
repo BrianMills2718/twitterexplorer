@@ -1,0 +1,100 @@
+{
+  "nodes": {
+    "4f2f32b7-3e38-4135-b7b5-19c820a2a583": {
+      "id": "4f2f32b7-3e38-4135-b7b5-19c820a2a583",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "test bridge investigation: tv shows",
+        "is_root": true,
+        "investigation_goal": "test bridge investigation: tv shows"
+      },
+      "created_at": "2025-09-08T06:56:40.563415"
+    },
+    "2082d2a8-1ab7-4427-9a82-18e07463fb39": {
+      "id": "2082d2a8-1ab7-4427-9a82-18e07463fb39",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Searching for tweets with the latest discussions around 'test bridge investigation tv shows' will provide real-time insights into what users are saying and the themes emerging in current conversations.",
+        "parent_analytic_question": "4f2f32b7-3e38-4135-b7b5-19c820a2a583"
+      },
+      "created_at": "2025-09-08T06:56:49.558208"
+    },
+    "f405a730-eb18-456c-b7ea-e2286b55e86e": {
+      "id": "f405a730-eb18-456c-b7ea-e2286b55e86e",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "test bridge investigation tv shows",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-08T06:56:49.558208"
+    },
+    "265bd123-a78f-4945-b6ba-f81cc315dce9": {
+      "id": "265bd123-a78f-4945-b6ba-f81cc315dce9",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: By checking the timeline of a known expert or influencer in the field of TV shows and investigations, we can gain deeper insights into key topics, trends, and discussions that might not surface through generic searches alone.",
+        "parent_analytic_question": "4f2f32b7-3e38-4135-b7b5-19c820a2a583"
+      },
+      "created_at": "2025-09-08T06:56:49.558208"
+    },
+    "50bd1fd3-7eae-40e8-8a09-37bb8dcb1a4a": {
+      "id": "50bd1fd3-7eae-40e8-8a09-37bb8dcb1a4a",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "query": "investigation_tv_shows_expert",
+          "screenname": "tvshowsinformer"
+        }
+      },
+      "created_at": "2025-09-08T06:56:49.558208"
+    }
+  },
+  "edges": [
+    {
+      "id": "be99378b-b44f-490c-85f8-f9f37245fe3d",
+      "source_id": "4f2f32b7-3e38-4135-b7b5-19c820a2a583",
+      "target_id": "2082d2a8-1ab7-4427-9a82-18e07463fb39",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-08T06:56:49.558208"
+    },
+    {
+      "id": "382fe55c-b164-4756-b3b5-970982c98ea6",
+      "source_id": "2082d2a8-1ab7-4427-9a82-18e07463fb39",
+      "target_id": "f405a730-eb18-456c-b7ea-e2286b55e86e",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-08T06:56:49.558208"
+    },
+    {
+      "id": "02f52c75-9dab-44d0-b98a-51ad81ed087e",
+      "source_id": "4f2f32b7-3e38-4135-b7b5-19c820a2a583",
+      "target_id": "265bd123-a78f-4945-b6ba-f81cc315dce9",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-08T06:56:49.558208"
+    },
+    {
+      "id": "774f5608-4b07-4b6a-9a9f-e4a0e7883376",
+      "source_id": "265bd123-a78f-4945-b6ba-f81cc315dce9",
+      "target_id": "50bd1fd3-7eae-40e8-8a09-37bb8dcb1a4a",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-08T06:56:49.558208"
+    }
+  ],
+  "analytic_question": "4f2f32b7-3e38-4135-b7b5-19c820a2a583",
+  "created_at": "2025-09-08T06:56:54.516163"
+}

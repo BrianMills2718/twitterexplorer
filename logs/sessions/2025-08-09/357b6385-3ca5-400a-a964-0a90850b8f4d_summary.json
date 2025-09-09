@@ -1,0 +1,166 @@
+{
+  "session_metadata": {
+    "session_id": "357b6385-3ca5-400a-a964-0a90850b8f4d",
+    "start_time": "2025-08-09T20:48:20.954074+00:00",
+    "end_time": "2025-08-09T20:50:52.661143+00:00",
+    "duration_seconds": 151.707069,
+    "user_query": "find me information that debunks ufo whistelblower michael herrera"
+  },
+  "configuration": {
+    "max_searches": 48,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.8,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "pages_per_search": 3,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true
+  },
+  "performance_metrics": {
+    "total_searches": 9,
+    "total_rounds": 3,
+    "total_results_found": 156,
+    "satisfaction_score": 0.0,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.0,
+      "source_diversity": 0.0,
+      "evidence_quality": 0.0,
+      "claim_specificity": 0.0,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Investigation failed: LLM coordinator failed to make investigation decision: LLM returned invalid JSON response: Expecting ',' delimiter: line 8 column 66 (char 1064). Response: ```json\n{\n  \"reasoning\": \"This round focuses on deepening our understanding of the 'fraud' accusations against Michael Herrera by targeting specific individuals and potential motives mentioned in the ..."
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [],
+      "moderately_effective": [
+        {
+          "search_id": 1,
+          "query": "\"Michael Herrera\" debunk OR refute OR false OR discredited OR hoax",
+          "results": 43,
+          "effectiveness": 5.0
+        }
+      ],
+      "low_effectiveness": [
+        {
+          "search_id": 2,
+          "query": "\"Michael Herrera\" UFO whistleblower claims OR allegations OR testimony",
+          "results": 10,
+          "effectiveness": 2.5
+        }
+      ],
+      "ineffective": [
+        {
+          "search_id": 3,
+          "query": "\"Michael Herrera\" background OR history OR credibility OR past controversy",
+          "results": 0,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 4,
+          "query": "Michael Herrera past fraud OR hoaxer OR fabricated OR discredited OR scam OR mental health OR prior debunked claims",
+          "results": 60,
+          "effectiveness": 1.0
+        },
+        {
+          "search_id": 5,
+          "query": "Michael Herrera \"300 foot UFO\" OR \"held at gunpoint\" OR \"trucks loading containers\" OR \"NDA debunked\" OR \"story inconsistencies\"",
+          "results": 1,
+          "effectiveness": 0.05
+        },
+        {
+          "search_id": 6,
+          "query": "UFO debunkers Michael Herrera OR skeptical community Michael Herrera OR 'fake alien' Michael Herrera OR 'hoax exposed' Michael Herrera",
+          "results": 40,
+          "effectiveness": 1.0
+        },
+        {
+          "search_id": 7,
+          "query": "\"Michael Herrera\" UFO whistleblower (debunk OR skepticism OR inconsistencies OR questioned OR hoax OR fabricated OR fraud OR discredited OR retraction OR recanted OR unverified OR credibility OR critical OR 'fake')",
+          "results": 2,
+          "effectiveness": 0.75
+        },
+        {
+          "search_id": 8,
+          "query": "\"Michael Herrera\" UFO (\"no longer doing interviews\" OR \"stopped interviews\" OR withdrew OR silence OR quiet OR 'reason for stopping')",
+          "results": 0,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 9,
+          "query": "(\"UFO skepticism\" OR \"UAP skepticism\" OR \"debunking UAP\" OR \"debunking UFO\" OR \"alien hoax\") AND \"Michael Herrera\"",
+          "results": 0,
+          "effectiveness": 0.0
+        }
+      ]
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "LLM Strategy: Our primary goal is to debunk Michael Herrera. Since we're at the very start of the investigation with no prior searches, our biggest information gaps are understanding who he is, what specific claims he's made, and if any debunking efforts or skepticism already exist on Twitter. This round focuses on broad discovery using `search.php` to identify these key pieces of information, and critically, to find his potential Twitter screenname if he has an active presence, which would enable more targeted searches in future rounds.",
+        "avg_effectiveness": 2.5
+      },
+      {
+        "strategy": "LLM Strategy: This round focuses on directly addressing the information gaps related to Michael Herrera's credibility and the specific details of his UFO claims. We'll refine previous less effective searches by using more targeted keywords. The strategy is to first look for any pre-existing debunking information or red flags in his background, then directly target the specific, questionable elements of his story for counter-evidence, and finally, identify potential skeptical voices or communities that might have already analyzed his claims.",
+        "avg_effectiveness": 0.6833333333333332
+      },
+      {
+        "strategy": "LLM Strategy: The primary challenge is the name ambiguity of 'Michael Herrera' and the lack of specific debunking information. This round focuses on overcoming these by targeting searches to the unique context of the UFO whistleblower and using a wider range of debunking-related keywords. We will also leverage the known fact that he is no longer giving interviews, which can act as a specific filter. The goal is to identify critical analysis, inconsistencies, or direct refutations of his claims within the online discourse.",
+        "avg_effectiveness": 0.25
+      }
+    ],
+    "dead_ends": [
+      "\"Michael Herrera\" background OR history OR credibility OR past controversy",
+      "Michael Herrera past fraud OR hoaxer OR fabricated OR discredited OR scam OR mental health OR prior debunked claims",
+      "Michael Herrera \"300 foot UFO\" OR \"held at gunpoint\" OR \"trucks loading containers\" OR \"NDA debunked\" OR \"story inconsistencies\"",
+      "UFO debunkers Michael Herrera OR skeptical community Michael Herrera OR 'fake alien' Michael Herrera OR 'hoax exposed' Michael Herrera",
+      "\"Michael Herrera\" UFO whistleblower (debunk OR skepticism OR inconsistencies OR questioned OR hoax OR fabricated OR fraud OR discredited OR retraction OR recanted OR unverified OR credibility OR critical OR 'fake')",
+      "\"Michael Herrera\" UFO (\"no longer doing interviews\" OR \"stopped interviews\" OR withdrew OR silence OR quiet OR 'reason for stopping')",
+      "(\"UFO skepticism\" OR \"UAP skepticism\" OR \"debunking UAP\" OR \"debunking UFO\" OR \"alien hoax\") AND \"Michael Herrera\""
+    ],
+    "promising_leads": []
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "LLM Strategy: Our primary goal is to debunk Michael Herrera. Since we're at the very start of the investigation with no prior searches, our biggest information gaps are understanding who he is, what specific claims he's made, and if any debunking efforts or skepticism already exist on Twitter. This round focuses on broad discovery using `search.php` to identify these key pieces of information, and critically, to find his potential Twitter screenname if he has an active presence, which would enable more targeted searches in future rounds.",
+      "searches_count": 3,
+      "total_results": 53,
+      "effectiveness": 2.5,
+      "insights": [
+        "Michael Herrera's UFO encounter is a subject of active debate, with explicit questions raised about whether it is 'Real or a Hoax' (Result 1).",
+        "His story is being discussed as a 'UFO conspiracy,' implying scrutiny and potential skepticism (Result 2).",
+        "Specific components of Herrera's narrative (300' UFO, being held at gunpoint, trucks loading containers, signing an NDA) are being questioned or framed as subjective 'beliefs,' indicating potential points of debunking or scrutiny (Result 10)."
+      ]
+    },
+    {
+      "round_number": 2,
+      "strategy": "LLM Strategy: This round focuses on directly addressing the information gaps related to Michael Herrera's credibility and the specific details of his UFO claims. We'll refine previous less effective searches by using more targeted keywords. The strategy is to first look for any pre-existing debunking information or red flags in his background, then directly target the specific, questionable elements of his story for counter-evidence, and finally, identify potential skeptical voices or communities that might have already analyzed his claims.",
+      "searches_count": 3,
+      "total_results": 101,
+      "effectiveness": 0.6833333333333332,
+      "insights": [
+        "The search results largely suffer from name ambiguity, with most referring to a soccer coach 'Miguel Herrera' or a politician 'Brandon Herrera' rather than 'Michael Herrera,' the UFO whistleblower.",
+        "Result 10 is the only highly relevant result, confirming the existence of a UFO whistleblower named Michael Herrera.",
+        "Michael Herrera is reportedly no longer conducting interviews for podcasts or documentaries, stating he has delivered his whistleblower testimony and is focusing on non-UFO related businesses."
+      ]
+    },
+    {
+      "round_number": 3,
+      "strategy": "LLM Strategy: The primary challenge is the name ambiguity of 'Michael Herrera' and the lack of specific debunking information. This round focuses on overcoming these by targeting searches to the unique context of the UFO whistleblower and using a wider range of debunking-related keywords. We will also leverage the known fact that he is no longer giving interviews, which can act as a specific filter. The goal is to identify critical analysis, inconsistencies, or direct refutations of his claims within the online discourse.",
+      "searches_count": 3,
+      "total_results": 2,
+      "effectiveness": 0.25,
+      "insights": [
+        "Michael Herrera is being accused of being a 'fraudulent' UFO whistleblower.",
+        "A person named 'Randy' is friends with Michael Herrera and is mentioned in relation to the alleged fraud.",
+        "Randy potentially corroborates Herrera's story, specifically mentioning 'psionics' as a shared detail."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,224 @@
+{
+  "nodes": {
+    "f310eb2b-4aea-4a97-bb46-0f794ccc40f4": {
+      "id": "f310eb2b-4aea-4a97-bb46-0f794ccc40f4",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "Tesla stock performance analysis",
+        "is_root": true,
+        "investigation_goal": "Tesla stock performance analysis"
+      },
+      "created_at": "2025-09-05T08:09:36.807566"
+    },
+    "043160d5-27b9-4c38-83c3-a0ade2480e23": {
+      "id": "043160d5-27b9-4c38-83c3-a0ade2480e23",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Capture the most recent tweets mentioning Tesla/TSLA to surface breaking news, retail sentiment, and short-term drivers of price moves.",
+        "parent_analytic_question": "f310eb2b-4aea-4a97-bb46-0f794ccc40f4"
+      },
+      "created_at": "2025-09-05T08:10:04.740054"
+    },
+    "ced2104e-236a-4781-affa-e4efa9bd950b": {
+      "id": "ced2104e-236a-4781-affa-e4efa9bd950b",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "Tesla (stock OR $TSLA OR TSLA) -filter:replies",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-05T08:10:04.740054"
+    },
+    "dbb21567-6b9d-4690-9cb7-95aeadc4408c": {
+      "id": "dbb21567-6b9d-4690-9cb7-95aeadc4408c",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Elon Musk's tweets frequently influence Tesla's stock. Pulling his recent timeline will identify any direct statements, memes, or signals likely to impact TSLA.",
+        "parent_analytic_question": "f310eb2b-4aea-4a97-bb46-0f794ccc40f4"
+      },
+      "created_at": "2025-09-05T08:10:04.740054"
+    },
+    "99e4863e-b00f-4001-8502-82dc217373c7": {
+      "id": "99e4863e-b00f-4001-8502-82dc217373c7",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "elonmusk"
+        }
+      },
+      "created_at": "2025-09-05T08:10:04.740054"
+    },
+    "f5f6a0a3-8887-4717-a20a-911ee6fc0a2e": {
+      "id": "f5f6a0a3-8887-4717-a20a-911ee6fc0a2e",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: The official Tesla account posts corporate updates (deliveries, product launches, earnings links) that can affect investor expectations; collect recent posts for context.",
+        "parent_analytic_question": "f310eb2b-4aea-4a97-bb46-0f794ccc40f4"
+      },
+      "created_at": "2025-09-05T08:10:04.740054"
+    },
+    "f1fee729-5845-4696-a720-de166760bde7": {
+      "id": "f1fee729-5845-4696-a720-de166760bde7",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "Tesla"
+        }
+      },
+      "created_at": "2025-09-05T08:10:04.740054"
+    },
+    "5dbc4a37-7d59-48ad-8c81-b951816952cb": {
+      "id": "5dbc4a37-7d59-48ad-8c81-b951816952cb",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Check whether 'Tesla' or 'TSLA' appears in US trending topics to gauge whether conversation volume is elevated relative to baseline (a proxy for news-driven volatility risk).",
+        "parent_analytic_question": "f310eb2b-4aea-4a97-bb46-0f794ccc40f4"
+      },
+      "created_at": "2025-09-05T08:10:04.740054"
+    },
+    "e66c058e-77ac-4b48-b14c-5cce10b110f4": {
+      "id": "e66c058e-77ac-4b48-b14c-5cce10b110f4",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "trends.php",
+        "parameters": {
+          "country": "UnitedStates"
+        }
+      },
+      "created_at": "2025-09-05T08:10:04.740054"
+    },
+    "ccb36a46-8ede-4b87-86d4-49e4ca825170": {
+      "id": "ccb36a46-8ede-4b87-86d4-49e4ca825170",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Map who Elon follows to identify analysts, journalists, or firms he engages with; this small network signal can reveal influential sources and likely amplifiers of Tesla-related narratives.",
+        "parent_analytic_question": "f310eb2b-4aea-4a97-bb46-0f794ccc40f4"
+      },
+      "created_at": "2025-09-05T08:10:04.740054"
+    },
+    "32aac01b-48b6-44ee-9503-69986f9ab5c9": {
+      "id": "32aac01b-48b6-44ee-9503-69986f9ab5c9",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "following.php",
+        "parameters": {
+          "screenname": "elonmusk"
+        }
+      },
+      "created_at": "2025-09-05T08:10:04.740054"
+    }
+  },
+  "edges": [
+    {
+      "id": "9cbda343-d259-4408-98a3-cd314bb15d4b",
+      "source_id": "f310eb2b-4aea-4a97-bb46-0f794ccc40f4",
+      "target_id": "043160d5-27b9-4c38-83c3-a0ade2480e23",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-05T08:10:04.740054"
+    },
+    {
+      "id": "0a8f8318-46a5-4d1c-a4c5-258399303c27",
+      "source_id": "043160d5-27b9-4c38-83c3-a0ade2480e23",
+      "target_id": "ced2104e-236a-4781-affa-e4efa9bd950b",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-05T08:10:04.740054"
+    },
+    {
+      "id": "48a49b91-b8ba-44bc-a1c8-07959a9c85e1",
+      "source_id": "f310eb2b-4aea-4a97-bb46-0f794ccc40f4",
+      "target_id": "dbb21567-6b9d-4690-9cb7-95aeadc4408c",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-05T08:10:04.740054"
+    },
+    {
+      "id": "5b063a19-56bc-4390-9445-bc6b3f224fad",
+      "source_id": "dbb21567-6b9d-4690-9cb7-95aeadc4408c",
+      "target_id": "99e4863e-b00f-4001-8502-82dc217373c7",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-05T08:10:04.740054"
+    },
+    {
+      "id": "41b27bce-086d-473e-acc0-d4c7592765f6",
+      "source_id": "f310eb2b-4aea-4a97-bb46-0f794ccc40f4",
+      "target_id": "f5f6a0a3-8887-4717-a20a-911ee6fc0a2e",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-05T08:10:04.740054"
+    },
+    {
+      "id": "a5513bc3-36db-40cd-890a-855f8180a3a8",
+      "source_id": "f5f6a0a3-8887-4717-a20a-911ee6fc0a2e",
+      "target_id": "f1fee729-5845-4696-a720-de166760bde7",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-05T08:10:04.740054"
+    },
+    {
+      "id": "848e5ff3-fb29-43aa-8ba6-853c78eda712",
+      "source_id": "f310eb2b-4aea-4a97-bb46-0f794ccc40f4",
+      "target_id": "5dbc4a37-7d59-48ad-8c81-b951816952cb",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-05T08:10:04.740054"
+    },
+    {
+      "id": "4d23e562-67b6-4e2f-ac87-9591aa4226b5",
+      "source_id": "5dbc4a37-7d59-48ad-8c81-b951816952cb",
+      "target_id": "e66c058e-77ac-4b48-b14c-5cce10b110f4",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-05T08:10:04.740054"
+    },
+    {
+      "id": "666f2848-6a73-40b9-886b-ca055741db5c",
+      "source_id": "f310eb2b-4aea-4a97-bb46-0f794ccc40f4",
+      "target_id": "ccb36a46-8ede-4b87-86d4-49e4ca825170",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-05T08:10:04.740054"
+    },
+    {
+      "id": "16d63089-73a6-49fd-97f3-dba9d6afa411",
+      "source_id": "ccb36a46-8ede-4b87-86d4-49e4ca825170",
+      "target_id": "32aac01b-48b6-44ee-9503-69986f9ab5c9",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-05T08:10:04.740054"
+    }
+  ],
+  "analytic_question": "f310eb2b-4aea-4a97-bb46-0f794ccc40f4",
+  "created_at": "2025-09-05T08:11:57.733429"
+}

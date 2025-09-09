@@ -1,0 +1,28 @@
+# TwitterExplorer Model Configuration
+# Using working OpenAI models to avoid Gemini server overload
+
+default_provider: openai
+
+models:
+  # Core investigation operations
+  strategic_coordinator: "gpt-4o-mini"
+  finding_evaluator: "gpt-4o-mini"
+  insight_synthesizer: "gpt-4o-mini"
+  emergent_questions: "gpt-4o-mini"
+  
+  # Analysis operations  
+  cross_reference: "gpt-4o-mini"
+  temporal_analysis: "gpt-4o-mini"
+  
+  # Fallback models
+  fallback_primary: "gpt-3.5-turbo"
+  fallback_secondary: "gemini/gemini-2.5-flash"
+
+# Provider-specific settings
+provider_settings:
+  gemini:
+    temperature: 0.3
+    max_tokens: 8000
+  openai:
+    temperature: 0.3
+    max_tokens: 4000

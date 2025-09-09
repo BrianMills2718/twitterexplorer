@@ -1,0 +1,87 @@
+{
+  "session_metadata": {
+    "session_id": "62b27fd8-2ae5-411f-a7cb-d3b6451af789",
+    "start_time": "2025-08-28T20:05:45.584084+00:00",
+    "end_time": "2025-08-28T20:07:18.182157+00:00",
+    "duration_seconds": 92.596437,
+    "user_query": "Elon Musk Twitter acquisition impact on free speech debate"
+  },
+  "configuration": {
+    "max_searches": 6,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.8,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "pages_per_search": 1,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true,
+    "enforce_endpoint_diversity": false,
+    "max_endpoint_repeats": 5,
+    "diversity_threshold": 0.3
+  },
+  "performance_metrics": {
+    "total_searches": 3,
+    "total_rounds": 1,
+    "total_results_found": 163,
+    "satisfaction_score": 0.0,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.0,
+      "source_diversity": 0.0,
+      "evidence_quality": 0.0,
+      "claim_specificity": 0.0,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Investigation failed: 'InvestigationEngine' object has no attribute 'logger'"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [],
+      "moderately_effective": [
+        {
+          "search_id": 1,
+          "query": "Elon Musk Twitter acquisition \"free speech\" OR \"content moderation\" OR censorship",
+          "results": 54,
+          "effectiveness": 5.4
+        },
+        {
+          "search_id": 2,
+          "query": "",
+          "results": 59,
+          "effectiveness": 5.9
+        },
+        {
+          "search_id": 3,
+          "query": "",
+          "results": 50,
+          "effectiveness": 5.0
+        }
+      ],
+      "low_effectiveness": [],
+      "ineffective": []
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "Graph Strategy: The investigation aims to understand the impact of Elon Musk's Twitter acquisition on the free speech debate. To build a comprehensive understanding, the initial strategic move must focus on establishing a baseline of the public discourse, capturing key statements from the central figure (Elon Musk), and identifying the immediate public reception and trending topics related to free speech. This approach systematically addresses the primary information gaps by gathering diverse data points from different angles.",
+        "avg_effectiveness": 5.433333333333334
+      }
+    ],
+    "dead_ends": [],
+    "promising_leads": []
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Graph Strategy: The investigation aims to understand the impact of Elon Musk's Twitter acquisition on the free speech debate. To build a comprehensive understanding, the initial strategic move must focus on establishing a baseline of the public discourse, capturing key statements from the central figure (Elon Musk), and identifying the immediate public reception and trending topics related to free speech. This approach systematically addresses the primary information gaps by gathering diverse data points from different angles.",
+      "searches_count": 3,
+      "total_results": 163,
+      "effectiveness": 0.0,
+      "insights": []
+    }
+  ]
+}

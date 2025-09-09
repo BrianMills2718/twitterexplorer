@@ -1,0 +1,754 @@
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-05T10:04:46.133105"}
+{"event": "datapoint_added", "datapoint_id": "9423d448-629f-4e69-b33b-c29692d6ef75", "pending_count": 1, "timestamp": "2025-09-08T00:10:49.102584"}
+{"event": "datapoint_added", "datapoint_id": "ad8de882-3d1b-4f34-aa76-f611599c8741", "pending_count": 2, "timestamp": "2025-09-08T00:10:49.103925"}
+{"event": "datapoint_added", "datapoint_id": "385d0782-f4dc-4fc8-9df1-f60f89150f9a", "pending_count": 3, "timestamp": "2025-09-08T00:10:49.103925"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.AuthenticationError: geminiException - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key not valid. Please pass a valid API key.\"\n      }\n    ]\n  }\n}\n", "timestamp": "2025-09-08T00:10:49.794892"}
+{"event": "datapoint_added", "datapoint_id": "7c60e75c-4a5b-4e2e-996a-aac55ec1c441", "pending_count": 4, "timestamp": "2025-09-08T00:10:49.794892"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.AuthenticationError: geminiException - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key not valid. Please pass a valid API key.\"\n      }\n    ]\n  }\n}\n", "timestamp": "2025-09-08T00:10:49.902215"}
+{"event": "datapoint_added", "datapoint_id": "e0bf1e12-52d9-48d2-b1f6-47426f43ab36", "pending_count": 5, "timestamp": "2025-09-08T00:10:49.902215"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.AuthenticationError: geminiException - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key not valid. Please pass a valid API key.\"\n      }\n    ]\n  }\n}\n", "timestamp": "2025-09-08T00:10:50.042475"}
+{"event": "datapoint_added", "datapoint_id": "1703de02-e9ff-4a9f-a93e-b9706896e461", "pending_count": 6, "timestamp": "2025-09-08T00:10:50.043565"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.AuthenticationError: geminiException - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key not valid. Please pass a valid API key.\"\n      }\n    ]\n  }\n}\n", "timestamp": "2025-09-08T00:10:50.142576"}
+{"event": "datapoint_added", "datapoint_id": "8de67a82-f204-4928-9029-576dd20029ca", "pending_count": 7, "timestamp": "2025-09-08T00:10:50.142576"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.AuthenticationError: geminiException - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key not valid. Please pass a valid API key.\"\n      }\n    ]\n  }\n}\n", "timestamp": "2025-09-08T00:10:50.289752"}
+{"event": "datapoint_added", "datapoint_id": "06f4b9c3-fb2b-42ac-b522-467af92cb4ab", "pending_count": 8, "timestamp": "2025-09-08T00:10:50.290754"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.AuthenticationError: geminiException - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key not valid. Please pass a valid API key.\"\n      }\n    ]\n  }\n}\n", "timestamp": "2025-09-08T00:10:50.379988"}
+{"event": "synthesis_triggered", "pending_count": 8, "timestamp": "2025-09-08T00:10:50.379988"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.AuthenticationError: geminiException - {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n        \"message\": \"API key not valid. Please pass a valid API key.\"\n      }\n    ]\n  }\n}\n", "timestamp": "2025-09-08T00:10:50.542107"}
+{"event": "semantic_grouping", "input_datapoint_count": 8, "output_groups": 1, "groups": [{"theme": "general_group", "datapoint_count": 8, "synthesis_worthy": true}], "timestamp": "2025-09-08T00:10:50.542107"}
+{"event": "synthesis_completed", "insights_created": 0, "timestamp": "2025-09-08T00:10:50.542107"}
+{"event": "datapoint_added", "datapoint_id": "f0ac54da-3004-4464-8aad-54040e4c830c", "pending_count": 1, "timestamp": "2025-09-08T00:10:50.542107"}
+{"event": "datapoint_added", "datapoint_id": "45e8dcbf-9b33-49bb-991a-3e0f5bcd7208", "pending_count": 1, "timestamp": "2025-09-08T01:00:32.034113"}
+{"event": "datapoint_added", "datapoint_id": "0fb806ae-4323-4c28-b0a9-b58a349ad719", "pending_count": 2, "timestamp": "2025-09-08T01:00:32.036113"}
+{"event": "datapoint_added", "datapoint_id": "79371dcd-1db9-4090-89ef-3477ca76fa58", "pending_count": 3, "timestamp": "2025-09-08T01:00:32.036113"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T01:00:34.888045"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-08T01:00:34.889045"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-08T01:00:38.523748"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 1, "groups": [{"theme": "Diverse perspectives on environmental regulations and their economic impacts", "datapoint_count": 3, "synthesis_worthy": true}], "timestamp": "2025-09-08T01:00:38.524747"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T01:00:42.354378"}
+{"event": "insight_creation", "success": true, "insight_title": "Consistent Debate on Climate Policy: Balancing Environmental Regulations with Economic Impacts", "insight_confidence": 0.9, "timestamp": "2025-09-08T01:00:57.869622"}
+{"event": "synthesis_completed", "insights_created": 1, "timestamp": "2025-09-08T01:00:57.869622"}
+{"event": "datapoint_added", "datapoint_id": "2d67bf02-d3e5-4ef2-9b61-6e21b93f0a62", "pending_count": 1, "timestamp": "2025-09-08T01:00:57.869622"}
+{"event": "datapoint_added", "datapoint_id": "0dd7771f-ab95-4982-bc86-77b4499f1bb1", "pending_count": 2, "timestamp": "2025-09-08T01:00:57.870622"}
+{"event": "datapoint_added", "datapoint_id": "416a97c2-1a12-40d3-adee-30534c87537e", "pending_count": 3, "timestamp": "2025-09-08T01:00:57.870622"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T01:01:03.105849"}
+{"event": "datapoint_added", "datapoint_id": "98ac3761-fa87-492a-b0d3-34c5c4ebfdcf", "pending_count": 4, "timestamp": "2025-09-08T01:01:03.106852"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T01:01:08.503123"}
+{"event": "synthesis_triggered", "pending_count": 4, "timestamp": "2025-09-08T01:01:08.504118"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-08T01:01:13.357268"}
+{"event": "semantic_grouping", "input_datapoint_count": 4, "output_groups": 1, "groups": [{"theme": "Discussions on the economic and regulatory impacts of climate policies", "datapoint_count": 4, "synthesis_worthy": true}], "timestamp": "2025-09-08T01:01:13.358267"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T01:01:19.455972"}
+{"event": "insight_creation", "success": true, "insight_title": "Consistent Debate: Balancing Environmental Regulations and Economic Impacts in Climate Policy", "insight_confidence": 0.95, "timestamp": "2025-09-08T01:01:41.689718"}
+{"event": "synthesis_completed", "insights_created": 1, "timestamp": "2025-09-08T01:01:41.690719"}
+{"event": "datapoint_added", "datapoint_id": "b6a5c62b-b124-4f09-84c5-8cc9dc10f6b0", "pending_count": 1, "timestamp": "2025-09-08T01:01:41.690719"}
+{"event": "datapoint_added", "datapoint_id": "33db6d74-89a2-4503-acce-ea1ac47cfe08", "pending_count": 2, "timestamp": "2025-09-08T01:01:41.690719"}
+{"event": "datapoint_added", "datapoint_id": "fe0f6667-027c-445e-a927-86c0567cab75", "pending_count": 3, "timestamp": "2025-09-08T01:01:41.690719"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T01:01:46.297135"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-08T01:01:46.298134"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-08T01:01:51.121438"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 1, "groups": [{"theme": "Diverse viewpoints on environmental regulations and their economic implications in climate change policy debates", "datapoint_count": 3, "synthesis_worthy": true}], "timestamp": "2025-09-08T01:01:51.122438"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T01:01:55.446858"}
+{"event": "insight_creation", "success": true, "insight_title": "Climate Change Policy Debates Centered on Balancing Environmental Regulations and Economic Impacts", "insight_confidence": 0.9, "timestamp": "2025-09-08T01:02:16.800756"}
+{"event": "synthesis_completed", "insights_created": 1, "timestamp": "2025-09-08T01:02:16.801739"}
+{"event": "datapoint_added", "datapoint_id": "0cf8d3f5-ab4e-479d-a857-9227316d7299", "pending_count": 1, "timestamp": "2025-09-08T02:25:54.270264"}
+{"event": "datapoint_added", "datapoint_id": "6860bfd1-5e49-4619-89e4-31efb8f0dd57", "pending_count": 2, "timestamp": "2025-09-08T02:25:54.274267"}
+{"event": "datapoint_added", "datapoint_id": "bb1b9e15-ac8d-473c-9a64-153e6ca1c79e", "pending_count": 3, "timestamp": "2025-09-08T02:25:54.275266"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:25:54.556504"}
+{"event": "datapoint_added", "datapoint_id": "75d563de-26da-4bc1-a3ee-4fa5bd897079", "pending_count": 4, "timestamp": "2025-09-08T02:25:54.556504"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:25:54.758057"}
+{"event": "datapoint_added", "datapoint_id": "89dd22d3-c31f-442c-9aab-ccbf4676ead2", "pending_count": 5, "timestamp": "2025-09-08T02:25:54.758057"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:25:54.886946"}
+{"event": "datapoint_added", "datapoint_id": "32adc908-ba45-4906-b831-0975d92e0523", "pending_count": 6, "timestamp": "2025-09-08T02:25:54.886946"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:25:55.037707"}
+{"event": "datapoint_added", "datapoint_id": "48e77043-53c7-4e5f-aefe-a5149617dd97", "pending_count": 7, "timestamp": "2025-09-08T02:25:55.037707"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:25:55.208689"}
+{"event": "datapoint_added", "datapoint_id": "4307ebad-0d5f-4196-a59f-57d8769e48bb", "pending_count": 8, "timestamp": "2025-09-08T02:25:55.208689"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:25:55.431532"}
+{"event": "synthesis_triggered", "pending_count": 8, "timestamp": "2025-09-08T02:25:55.431532"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:25:56.029179"}
+{"event": "semantic_grouping", "input_datapoint_count": 8, "output_groups": 1, "groups": [{"theme": "general_group", "datapoint_count": 8, "synthesis_worthy": true}], "timestamp": "2025-09-08T02:25:56.029179"}
+{"event": "synthesis_completed", "insights_created": 0, "timestamp": "2025-09-08T02:25:56.029179"}
+{"event": "datapoint_added", "datapoint_id": "7406bd47-d2cb-41a0-aa51-105a8894d75e", "pending_count": 1, "timestamp": "2025-09-08T02:25:56.029179"}
+{"event": "datapoint_added", "datapoint_id": "337cb84f-eead-496d-825e-683e2dacce2f", "pending_count": 2, "timestamp": "2025-09-08T02:25:56.029179"}
+{"event": "datapoint_added", "datapoint_id": "0cf8d3f5-ab4e-479d-a857-9227316d7299", "pending_count": 3, "timestamp": "2025-09-08T02:26:18.626813"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:26:18.815540"}
+{"event": "datapoint_added", "datapoint_id": "6860bfd1-5e49-4619-89e4-31efb8f0dd57", "pending_count": 4, "timestamp": "2025-09-08T02:26:18.815540"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:26:19.018702"}
+{"event": "datapoint_added", "datapoint_id": "bb1b9e15-ac8d-473c-9a64-153e6ca1c79e", "pending_count": 5, "timestamp": "2025-09-08T02:26:19.018702"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:26:19.202500"}
+{"event": "datapoint_added", "datapoint_id": "75d563de-26da-4bc1-a3ee-4fa5bd897079", "pending_count": 6, "timestamp": "2025-09-08T02:26:19.202500"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:26:19.351934"}
+{"event": "datapoint_added", "datapoint_id": "89dd22d3-c31f-442c-9aab-ccbf4676ead2", "pending_count": 7, "timestamp": "2025-09-08T02:26:19.351934"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:26:19.586230"}
+{"event": "datapoint_added", "datapoint_id": "32adc908-ba45-4906-b831-0975d92e0523", "pending_count": 8, "timestamp": "2025-09-08T02:26:19.587230"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:26:19.798463"}
+{"event": "synthesis_triggered", "pending_count": 8, "timestamp": "2025-09-08T02:26:19.798463"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:26:19.989624"}
+{"event": "semantic_grouping", "input_datapoint_count": 8, "output_groups": 1, "groups": [{"theme": "general_group", "datapoint_count": 8, "synthesis_worthy": true}], "timestamp": "2025-09-08T02:26:19.989624"}
+{"event": "synthesis_completed", "insights_created": 0, "timestamp": "2025-09-08T02:26:19.989624"}
+{"event": "datapoint_added", "datapoint_id": "48e77043-53c7-4e5f-aefe-a5149617dd97", "pending_count": 1, "timestamp": "2025-09-08T02:26:19.989624"}
+{"event": "datapoint_added", "datapoint_id": "4307ebad-0d5f-4196-a59f-57d8769e48bb", "pending_count": 2, "timestamp": "2025-09-08T02:26:19.989624"}
+{"event": "datapoint_added", "datapoint_id": "7406bd47-d2cb-41a0-aa51-105a8894d75e", "pending_count": 3, "timestamp": "2025-09-08T02:26:19.989624"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:26:20.201376"}
+{"event": "datapoint_added", "datapoint_id": "337cb84f-eead-496d-825e-683e2dacce2f", "pending_count": 4, "timestamp": "2025-09-08T02:26:20.201376"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:26:20.356866"}
+{"event": "datapoint_added", "datapoint_id": "f9beb98c-47f1-4b24-b105-9f292bf88b35", "pending_count": 5, "timestamp": "2025-09-08T02:26:20.356866"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:26:20.544282"}
+{"event": "datapoint_added", "datapoint_id": "6a5d96bc-0bba-4751-b55a-ddb22c8322d6", "pending_count": 6, "timestamp": "2025-09-08T02:26:20.544282"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:26:20.840896"}
+{"event": "datapoint_added", "datapoint_id": "68814323-4147-4ad5-96c6-5d8e7ca7b0da", "pending_count": 7, "timestamp": "2025-09-08T02:26:20.840896"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:26:20.992764"}
+{"event": "datapoint_added", "datapoint_id": "255109a1-d8f0-4ebd-a14d-f78e876f079b", "pending_count": 8, "timestamp": "2025-09-08T02:26:20.992764"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:26:21.186109"}
+{"event": "synthesis_triggered", "pending_count": 8, "timestamp": "2025-09-08T02:26:21.186109"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:26:21.369144"}
+{"event": "semantic_grouping", "input_datapoint_count": 8, "output_groups": 1, "groups": [{"theme": "general_group", "datapoint_count": 8, "synthesis_worthy": true}], "timestamp": "2025-09-08T02:26:21.369144"}
+{"event": "synthesis_completed", "insights_created": 0, "timestamp": "2025-09-08T02:26:21.369144"}
+{"event": "datapoint_added", "datapoint_id": "1ef9607a-686b-4aa6-9306-53352cfbd1ac", "pending_count": 1, "timestamp": "2025-09-08T02:26:21.369144"}
+{"event": "datapoint_added", "datapoint_id": "821b9afa-7385-4e65-b4c1-83e76e3c3a19", "pending_count": 2, "timestamp": "2025-09-08T02:26:21.369144"}
+{"event": "datapoint_added", "datapoint_id": "3ea95eb5-6b5b-4954-af6a-2af1742636fe", "pending_count": 3, "timestamp": "2025-09-08T02:26:21.369144"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:26:21.591613"}
+{"event": "datapoint_added", "datapoint_id": "0cf8d3f5-ab4e-479d-a857-9227316d7299", "pending_count": 4, "timestamp": "2025-09-08T02:26:42.532432"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:26:42.717819"}
+{"event": "datapoint_added", "datapoint_id": "6860bfd1-5e49-4619-89e4-31efb8f0dd57", "pending_count": 5, "timestamp": "2025-09-08T02:26:42.717819"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:26:42.920320"}
+{"event": "datapoint_added", "datapoint_id": "bb1b9e15-ac8d-473c-9a64-153e6ca1c79e", "pending_count": 6, "timestamp": "2025-09-08T02:26:42.920320"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:26:43.196067"}
+{"event": "datapoint_added", "datapoint_id": "75d563de-26da-4bc1-a3ee-4fa5bd897079", "pending_count": 7, "timestamp": "2025-09-08T02:26:43.196067"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:26:43.375849"}
+{"event": "datapoint_added", "datapoint_id": "89dd22d3-c31f-442c-9aab-ccbf4676ead2", "pending_count": 8, "timestamp": "2025-09-08T02:26:43.375849"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:26:43.581360"}
+{"event": "synthesis_triggered", "pending_count": 8, "timestamp": "2025-09-08T02:26:43.581360"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:26:43.740157"}
+{"event": "semantic_grouping", "input_datapoint_count": 8, "output_groups": 1, "groups": [{"theme": "general_group", "datapoint_count": 8, "synthesis_worthy": true}], "timestamp": "2025-09-08T02:26:43.741158"}
+{"event": "synthesis_completed", "insights_created": 0, "timestamp": "2025-09-08T02:26:43.741158"}
+{"event": "datapoint_added", "datapoint_id": "32adc908-ba45-4906-b831-0975d92e0523", "pending_count": 1, "timestamp": "2025-09-08T02:26:43.741158"}
+{"event": "datapoint_added", "datapoint_id": "48e77043-53c7-4e5f-aefe-a5149617dd97", "pending_count": 2, "timestamp": "2025-09-08T02:26:43.741158"}
+{"event": "datapoint_added", "datapoint_id": "4307ebad-0d5f-4196-a59f-57d8769e48bb", "pending_count": 3, "timestamp": "2025-09-08T02:26:43.741158"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:26:43.920157"}
+{"event": "datapoint_added", "datapoint_id": "7406bd47-d2cb-41a0-aa51-105a8894d75e", "pending_count": 4, "timestamp": "2025-09-08T02:26:43.921157"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:26:44.141146"}
+{"event": "datapoint_added", "datapoint_id": "337cb84f-eead-496d-825e-683e2dacce2f", "pending_count": 5, "timestamp": "2025-09-08T02:26:44.142147"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:26:44.380897"}
+{"event": "datapoint_added", "datapoint_id": "f9beb98c-47f1-4b24-b105-9f292bf88b35", "pending_count": 6, "timestamp": "2025-09-08T02:26:44.380897"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:26:45.160890"}
+{"event": "datapoint_added", "datapoint_id": "6a5d96bc-0bba-4751-b55a-ddb22c8322d6", "pending_count": 7, "timestamp": "2025-09-08T02:26:45.160890"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:26:45.663384"}
+{"event": "datapoint_added", "datapoint_id": "68814323-4147-4ad5-96c6-5d8e7ca7b0da", "pending_count": 8, "timestamp": "2025-09-08T02:26:45.664384"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:26:45.826210"}
+{"event": "synthesis_triggered", "pending_count": 8, "timestamp": "2025-09-08T02:26:45.826210"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:26:46.017329"}
+{"event": "semantic_grouping", "input_datapoint_count": 8, "output_groups": 1, "groups": [{"theme": "general_group", "datapoint_count": 8, "synthesis_worthy": true}], "timestamp": "2025-09-08T02:26:46.017329"}
+{"event": "synthesis_completed", "insights_created": 0, "timestamp": "2025-09-08T02:26:46.017329"}
+{"event": "datapoint_added", "datapoint_id": "255109a1-d8f0-4ebd-a14d-f78e876f079b", "pending_count": 1, "timestamp": "2025-09-08T02:26:46.017329"}
+{"event": "datapoint_added", "datapoint_id": "1ef9607a-686b-4aa6-9306-53352cfbd1ac", "pending_count": 2, "timestamp": "2025-09-08T02:26:46.017329"}
+{"event": "datapoint_added", "datapoint_id": "821b9afa-7385-4e65-b4c1-83e76e3c3a19", "pending_count": 3, "timestamp": "2025-09-08T02:26:46.017329"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:26:46.225401"}
+{"event": "datapoint_added", "datapoint_id": "3ea95eb5-6b5b-4954-af6a-2af1742636fe", "pending_count": 4, "timestamp": "2025-09-08T02:26:46.226401"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:26:46.402077"}
+{"event": "datapoint_added", "datapoint_id": "83da8eba-960c-4fc8-b05a-beed4a4eae6b", "pending_count": 5, "timestamp": "2025-09-08T02:26:46.402590"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:26:46.606281"}
+{"event": "datapoint_added", "datapoint_id": "0647c32f-32bd-45f3-af45-ed5a142bd757", "pending_count": 6, "timestamp": "2025-09-08T02:26:46.606281"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:26:46.817484"}
+{"event": "datapoint_added", "datapoint_id": "328c46f2-794f-4c4f-9e14-cc9ebf15ec71", "pending_count": 7, "timestamp": "2025-09-08T02:26:46.818484"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:26:46.980392"}
+{"event": "datapoint_added", "datapoint_id": "c0b22303-269d-43bd-abe2-f9649b4472ae", "pending_count": 8, "timestamp": "2025-09-08T02:26:46.980392"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:26:47.191408"}
+{"event": "synthesis_triggered", "pending_count": 8, "timestamp": "2025-09-08T02:26:47.191408"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:26:47.358609"}
+{"event": "semantic_grouping", "input_datapoint_count": 8, "output_groups": 1, "groups": [{"theme": "general_group", "datapoint_count": 8, "synthesis_worthy": true}], "timestamp": "2025-09-08T02:26:47.358609"}
+{"event": "synthesis_completed", "insights_created": 0, "timestamp": "2025-09-08T02:26:47.358609"}
+{"event": "datapoint_added", "datapoint_id": "05042f8d-7221-4115-b5fb-1561350574f4", "pending_count": 1, "timestamp": "2025-09-08T02:26:47.358609"}
+{"event": "datapoint_added", "datapoint_id": "0cf8d3f5-ab4e-479d-a857-9227316d7299", "pending_count": 2, "timestamp": "2025-09-08T02:26:59.114782"}
+{"event": "datapoint_added", "datapoint_id": "6860bfd1-5e49-4619-89e4-31efb8f0dd57", "pending_count": 3, "timestamp": "2025-09-08T02:26:59.114782"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:26:59.278075"}
+{"event": "datapoint_added", "datapoint_id": "bb1b9e15-ac8d-473c-9a64-153e6ca1c79e", "pending_count": 4, "timestamp": "2025-09-08T02:26:59.278075"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:26:59.491815"}
+{"event": "datapoint_added", "datapoint_id": "75d563de-26da-4bc1-a3ee-4fa5bd897079", "pending_count": 5, "timestamp": "2025-09-08T02:26:59.491815"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:26:59.680219"}
+{"event": "datapoint_added", "datapoint_id": "89dd22d3-c31f-442c-9aab-ccbf4676ead2", "pending_count": 6, "timestamp": "2025-09-08T02:26:59.680219"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:26:59.862732"}
+{"event": "datapoint_added", "datapoint_id": "32adc908-ba45-4906-b831-0975d92e0523", "pending_count": 7, "timestamp": "2025-09-08T02:26:59.862732"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:00.016849"}
+{"event": "datapoint_added", "datapoint_id": "48e77043-53c7-4e5f-aefe-a5149617dd97", "pending_count": 8, "timestamp": "2025-09-08T02:27:00.016849"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:00.172049"}
+{"event": "synthesis_triggered", "pending_count": 8, "timestamp": "2025-09-08T02:27:00.172049"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:00.362960"}
+{"event": "semantic_grouping", "input_datapoint_count": 8, "output_groups": 1, "groups": [{"theme": "general_group", "datapoint_count": 8, "synthesis_worthy": true}], "timestamp": "2025-09-08T02:27:00.362960"}
+{"event": "synthesis_completed", "insights_created": 0, "timestamp": "2025-09-08T02:27:00.362960"}
+{"event": "datapoint_added", "datapoint_id": "4307ebad-0d5f-4196-a59f-57d8769e48bb", "pending_count": 1, "timestamp": "2025-09-08T02:27:00.362960"}
+{"event": "datapoint_added", "datapoint_id": "7406bd47-d2cb-41a0-aa51-105a8894d75e", "pending_count": 2, "timestamp": "2025-09-08T02:27:00.362960"}
+{"event": "datapoint_added", "datapoint_id": "337cb84f-eead-496d-825e-683e2dacce2f", "pending_count": 3, "timestamp": "2025-09-08T02:27:00.363961"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:00.535797"}
+{"event": "datapoint_added", "datapoint_id": "f9beb98c-47f1-4b24-b105-9f292bf88b35", "pending_count": 4, "timestamp": "2025-09-08T02:27:00.535797"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:00.700024"}
+{"event": "datapoint_added", "datapoint_id": "6a5d96bc-0bba-4751-b55a-ddb22c8322d6", "pending_count": 5, "timestamp": "2025-09-08T02:27:00.701026"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:00.856702"}
+{"event": "datapoint_added", "datapoint_id": "68814323-4147-4ad5-96c6-5d8e7ca7b0da", "pending_count": 6, "timestamp": "2025-09-08T02:27:00.856702"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:00.979705"}
+{"event": "datapoint_added", "datapoint_id": "255109a1-d8f0-4ebd-a14d-f78e876f079b", "pending_count": 7, "timestamp": "2025-09-08T02:27:00.980685"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:01.100186"}
+{"event": "datapoint_added", "datapoint_id": "1ef9607a-686b-4aa6-9306-53352cfbd1ac", "pending_count": 8, "timestamp": "2025-09-08T02:27:01.100186"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:01.247362"}
+{"event": "synthesis_triggered", "pending_count": 8, "timestamp": "2025-09-08T02:27:01.247362"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:01.408704"}
+{"event": "semantic_grouping", "input_datapoint_count": 8, "output_groups": 1, "groups": [{"theme": "general_group", "datapoint_count": 8, "synthesis_worthy": true}], "timestamp": "2025-09-08T02:27:01.408704"}
+{"event": "synthesis_completed", "insights_created": 0, "timestamp": "2025-09-08T02:27:01.408704"}
+{"event": "datapoint_added", "datapoint_id": "821b9afa-7385-4e65-b4c1-83e76e3c3a19", "pending_count": 1, "timestamp": "2025-09-08T02:27:01.408704"}
+{"event": "datapoint_added", "datapoint_id": "3ea95eb5-6b5b-4954-af6a-2af1742636fe", "pending_count": 2, "timestamp": "2025-09-08T02:27:01.408704"}
+{"event": "datapoint_added", "datapoint_id": "83da8eba-960c-4fc8-b05a-beed4a4eae6b", "pending_count": 3, "timestamp": "2025-09-08T02:27:01.408704"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:01.605108"}
+{"event": "datapoint_added", "datapoint_id": "0647c32f-32bd-45f3-af45-ed5a142bd757", "pending_count": 4, "timestamp": "2025-09-08T02:27:01.605108"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:01.781687"}
+{"event": "datapoint_added", "datapoint_id": "328c46f2-794f-4c4f-9e14-cc9ebf15ec71", "pending_count": 5, "timestamp": "2025-09-08T02:27:01.781687"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:01.977298"}
+{"event": "datapoint_added", "datapoint_id": "c0b22303-269d-43bd-abe2-f9649b4472ae", "pending_count": 6, "timestamp": "2025-09-08T02:27:01.977298"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:02.156744"}
+{"event": "datapoint_added", "datapoint_id": "05042f8d-7221-4115-b5fb-1561350574f4", "pending_count": 7, "timestamp": "2025-09-08T02:27:02.157744"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:02.355712"}
+{"event": "datapoint_added", "datapoint_id": "8e1f7184-bf96-416e-83ea-c6789bee3c71", "pending_count": 8, "timestamp": "2025-09-08T02:27:02.355712"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:02.541032"}
+{"event": "synthesis_triggered", "pending_count": 8, "timestamp": "2025-09-08T02:27:02.541032"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:02.707406"}
+{"event": "semantic_grouping", "input_datapoint_count": 8, "output_groups": 1, "groups": [{"theme": "general_group", "datapoint_count": 8, "synthesis_worthy": true}], "timestamp": "2025-09-08T02:27:02.707406"}
+{"event": "synthesis_completed", "insights_created": 0, "timestamp": "2025-09-08T02:27:02.707406"}
+{"event": "datapoint_added", "datapoint_id": "0cf8d3f5-ab4e-479d-a857-9227316d7299", "pending_count": 1, "timestamp": "2025-09-08T02:27:02.707406"}
+{"event": "datapoint_added", "datapoint_id": "6860bfd1-5e49-4619-89e4-31efb8f0dd57", "pending_count": 2, "timestamp": "2025-09-08T02:27:02.707406"}
+{"event": "datapoint_added", "datapoint_id": "bb1b9e15-ac8d-473c-9a64-153e6ca1c79e", "pending_count": 3, "timestamp": "2025-09-08T02:27:02.707406"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:02.875382"}
+{"event": "datapoint_added", "datapoint_id": "75d563de-26da-4bc1-a3ee-4fa5bd897079", "pending_count": 4, "timestamp": "2025-09-08T02:27:02.875382"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:03.062168"}
+{"event": "datapoint_added", "datapoint_id": "89dd22d3-c31f-442c-9aab-ccbf4676ead2", "pending_count": 5, "timestamp": "2025-09-08T02:27:03.062168"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:03.238093"}
+{"event": "datapoint_added", "datapoint_id": "32adc908-ba45-4906-b831-0975d92e0523", "pending_count": 6, "timestamp": "2025-09-08T02:27:03.238093"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:03.390318"}
+{"event": "datapoint_added", "datapoint_id": "48e77043-53c7-4e5f-aefe-a5149617dd97", "pending_count": 7, "timestamp": "2025-09-08T02:27:03.390318"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:03.556441"}
+{"event": "datapoint_added", "datapoint_id": "4307ebad-0d5f-4196-a59f-57d8769e48bb", "pending_count": 8, "timestamp": "2025-09-08T02:27:03.556441"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:03.761491"}
+{"event": "synthesis_triggered", "pending_count": 8, "timestamp": "2025-09-08T02:27:03.761491"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:03.936271"}
+{"event": "semantic_grouping", "input_datapoint_count": 8, "output_groups": 1, "groups": [{"theme": "general_group", "datapoint_count": 8, "synthesis_worthy": true}], "timestamp": "2025-09-08T02:27:03.936271"}
+{"event": "synthesis_completed", "insights_created": 0, "timestamp": "2025-09-08T02:27:03.936271"}
+{"event": "datapoint_added", "datapoint_id": "7406bd47-d2cb-41a0-aa51-105a8894d75e", "pending_count": 1, "timestamp": "2025-09-08T02:27:03.936271"}
+{"event": "datapoint_added", "datapoint_id": "337cb84f-eead-496d-825e-683e2dacce2f", "pending_count": 2, "timestamp": "2025-09-08T02:27:03.936271"}
+{"event": "datapoint_added", "datapoint_id": "f9beb98c-47f1-4b24-b105-9f292bf88b35", "pending_count": 3, "timestamp": "2025-09-08T02:27:03.936271"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:04.142545"}
+{"event": "datapoint_added", "datapoint_id": "6a5d96bc-0bba-4751-b55a-ddb22c8322d6", "pending_count": 4, "timestamp": "2025-09-08T02:27:04.142545"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:04.316015"}
+{"event": "datapoint_added", "datapoint_id": "68814323-4147-4ad5-96c6-5d8e7ca7b0da", "pending_count": 5, "timestamp": "2025-09-08T02:27:04.316015"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:04.511522"}
+{"event": "datapoint_added", "datapoint_id": "255109a1-d8f0-4ebd-a14d-f78e876f079b", "pending_count": 6, "timestamp": "2025-09-08T02:27:04.512044"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:04.695536"}
+{"event": "datapoint_added", "datapoint_id": "1ef9607a-686b-4aa6-9306-53352cfbd1ac", "pending_count": 7, "timestamp": "2025-09-08T02:27:04.695536"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:04.892474"}
+{"event": "datapoint_added", "datapoint_id": "821b9afa-7385-4e65-b4c1-83e76e3c3a19", "pending_count": 8, "timestamp": "2025-09-08T02:27:04.892474"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:05.096231"}
+{"event": "synthesis_triggered", "pending_count": 8, "timestamp": "2025-09-08T02:27:05.096231"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:05.306356"}
+{"event": "semantic_grouping", "input_datapoint_count": 8, "output_groups": 1, "groups": [{"theme": "general_group", "datapoint_count": 8, "synthesis_worthy": true}], "timestamp": "2025-09-08T02:27:05.306356"}
+{"event": "synthesis_completed", "insights_created": 0, "timestamp": "2025-09-08T02:27:05.306356"}
+{"event": "datapoint_added", "datapoint_id": "3ea95eb5-6b5b-4954-af6a-2af1742636fe", "pending_count": 1, "timestamp": "2025-09-08T02:27:05.306356"}
+{"event": "datapoint_added", "datapoint_id": "83da8eba-960c-4fc8-b05a-beed4a4eae6b", "pending_count": 2, "timestamp": "2025-09-08T02:27:05.306356"}
+{"event": "datapoint_added", "datapoint_id": "0647c32f-32bd-45f3-af45-ed5a142bd757", "pending_count": 3, "timestamp": "2025-09-08T02:27:05.307356"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:05.440555"}
+{"event": "datapoint_added", "datapoint_id": "328c46f2-794f-4c4f-9e14-cc9ebf15ec71", "pending_count": 4, "timestamp": "2025-09-08T02:27:05.440555"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:05.627985"}
+{"event": "datapoint_added", "datapoint_id": "c0b22303-269d-43bd-abe2-f9649b4472ae", "pending_count": 5, "timestamp": "2025-09-08T02:27:05.628985"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:05.746759"}
+{"event": "datapoint_added", "datapoint_id": "05042f8d-7221-4115-b5fb-1561350574f4", "pending_count": 6, "timestamp": "2025-09-08T02:27:05.746759"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:05.925810"}
+{"event": "datapoint_added", "datapoint_id": "8e1f7184-bf96-416e-83ea-c6789bee3c71", "pending_count": 7, "timestamp": "2025-09-08T02:27:05.925810"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:06.136130"}
+{"event": "datapoint_added", "datapoint_id": "0cf8d3f5-ab4e-479d-a857-9227316d7299", "pending_count": 8, "timestamp": "2025-09-08T02:27:12.455991"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:12.635146"}
+{"event": "synthesis_triggered", "pending_count": 8, "timestamp": "2025-09-08T02:27:12.635146"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:12.951822"}
+{"event": "semantic_grouping", "input_datapoint_count": 8, "output_groups": 1, "groups": [{"theme": "general_group", "datapoint_count": 8, "synthesis_worthy": true}], "timestamp": "2025-09-08T02:27:12.951822"}
+{"event": "synthesis_completed", "insights_created": 0, "timestamp": "2025-09-08T02:27:12.952823"}
+{"event": "datapoint_added", "datapoint_id": "6860bfd1-5e49-4619-89e4-31efb8f0dd57", "pending_count": 1, "timestamp": "2025-09-08T02:27:12.952823"}
+{"event": "datapoint_added", "datapoint_id": "bb1b9e15-ac8d-473c-9a64-153e6ca1c79e", "pending_count": 2, "timestamp": "2025-09-08T02:27:12.952823"}
+{"event": "datapoint_added", "datapoint_id": "75d563de-26da-4bc1-a3ee-4fa5bd897079", "pending_count": 3, "timestamp": "2025-09-08T02:27:12.952823"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:13.118514"}
+{"event": "datapoint_added", "datapoint_id": "89dd22d3-c31f-442c-9aab-ccbf4676ead2", "pending_count": 4, "timestamp": "2025-09-08T02:27:13.118514"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:13.299551"}
+{"event": "datapoint_added", "datapoint_id": "32adc908-ba45-4906-b831-0975d92e0523", "pending_count": 5, "timestamp": "2025-09-08T02:27:13.299551"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:13.478306"}
+{"event": "datapoint_added", "datapoint_id": "48e77043-53c7-4e5f-aefe-a5149617dd97", "pending_count": 6, "timestamp": "2025-09-08T02:27:13.478306"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:13.646568"}
+{"event": "datapoint_added", "datapoint_id": "4307ebad-0d5f-4196-a59f-57d8769e48bb", "pending_count": 7, "timestamp": "2025-09-08T02:27:13.646568"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:13.874508"}
+{"event": "datapoint_added", "datapoint_id": "7406bd47-d2cb-41a0-aa51-105a8894d75e", "pending_count": 8, "timestamp": "2025-09-08T02:27:13.874508"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:14.094552"}
+{"event": "synthesis_triggered", "pending_count": 8, "timestamp": "2025-09-08T02:27:14.095551"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:14.267618"}
+{"event": "semantic_grouping", "input_datapoint_count": 8, "output_groups": 1, "groups": [{"theme": "general_group", "datapoint_count": 8, "synthesis_worthy": true}], "timestamp": "2025-09-08T02:27:14.267618"}
+{"event": "synthesis_completed", "insights_created": 0, "timestamp": "2025-09-08T02:27:14.267618"}
+{"event": "datapoint_added", "datapoint_id": "337cb84f-eead-496d-825e-683e2dacce2f", "pending_count": 1, "timestamp": "2025-09-08T02:27:14.267618"}
+{"event": "datapoint_added", "datapoint_id": "f9beb98c-47f1-4b24-b105-9f292bf88b35", "pending_count": 2, "timestamp": "2025-09-08T02:27:14.267618"}
+{"event": "datapoint_added", "datapoint_id": "6a5d96bc-0bba-4751-b55a-ddb22c8322d6", "pending_count": 3, "timestamp": "2025-09-08T02:27:14.267618"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:14.469312"}
+{"event": "datapoint_added", "datapoint_id": "68814323-4147-4ad5-96c6-5d8e7ca7b0da", "pending_count": 4, "timestamp": "2025-09-08T02:27:14.469312"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:14.637516"}
+{"event": "datapoint_added", "datapoint_id": "255109a1-d8f0-4ebd-a14d-f78e876f079b", "pending_count": 5, "timestamp": "2025-09-08T02:27:14.637516"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:14.844158"}
+{"event": "datapoint_added", "datapoint_id": "1ef9607a-686b-4aa6-9306-53352cfbd1ac", "pending_count": 6, "timestamp": "2025-09-08T02:27:14.845158"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:15.092569"}
+{"event": "datapoint_added", "datapoint_id": "821b9afa-7385-4e65-b4c1-83e76e3c3a19", "pending_count": 7, "timestamp": "2025-09-08T02:27:15.092569"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:15.295665"}
+{"event": "datapoint_added", "datapoint_id": "3ea95eb5-6b5b-4954-af6a-2af1742636fe", "pending_count": 8, "timestamp": "2025-09-08T02:27:15.295665"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:15.506414"}
+{"event": "synthesis_triggered", "pending_count": 8, "timestamp": "2025-09-08T02:27:15.506414"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:15.645467"}
+{"event": "semantic_grouping", "input_datapoint_count": 8, "output_groups": 1, "groups": [{"theme": "general_group", "datapoint_count": 8, "synthesis_worthy": true}], "timestamp": "2025-09-08T02:27:15.645467"}
+{"event": "synthesis_completed", "insights_created": 0, "timestamp": "2025-09-08T02:27:15.645467"}
+{"event": "datapoint_added", "datapoint_id": "83da8eba-960c-4fc8-b05a-beed4a4eae6b", "pending_count": 1, "timestamp": "2025-09-08T02:27:15.645467"}
+{"event": "datapoint_added", "datapoint_id": "0647c32f-32bd-45f3-af45-ed5a142bd757", "pending_count": 2, "timestamp": "2025-09-08T02:27:15.645467"}
+{"event": "datapoint_added", "datapoint_id": "328c46f2-794f-4c4f-9e14-cc9ebf15ec71", "pending_count": 3, "timestamp": "2025-09-08T02:27:15.645467"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:15.836798"}
+{"event": "datapoint_added", "datapoint_id": "c0b22303-269d-43bd-abe2-f9649b4472ae", "pending_count": 4, "timestamp": "2025-09-08T02:27:15.836798"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:15.976586"}
+{"event": "datapoint_added", "datapoint_id": "05042f8d-7221-4115-b5fb-1561350574f4", "pending_count": 5, "timestamp": "2025-09-08T02:27:15.976586"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:16.187583"}
+{"event": "datapoint_added", "datapoint_id": "8e1f7184-bf96-416e-83ea-c6789bee3c71", "pending_count": 6, "timestamp": "2025-09-08T02:27:16.187583"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:16.360863"}
+{"event": "datapoint_added", "datapoint_id": "0cf8d3f5-ab4e-479d-a857-9227316d7299", "pending_count": 7, "timestamp": "2025-09-08T02:27:29.194069"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:29.361570"}
+{"event": "datapoint_added", "datapoint_id": "6860bfd1-5e49-4619-89e4-31efb8f0dd57", "pending_count": 8, "timestamp": "2025-09-08T02:27:29.361570"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:29.520549"}
+{"event": "synthesis_triggered", "pending_count": 8, "timestamp": "2025-09-08T02:27:29.520549"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:29.670826"}
+{"event": "semantic_grouping", "input_datapoint_count": 8, "output_groups": 1, "groups": [{"theme": "general_group", "datapoint_count": 8, "synthesis_worthy": true}], "timestamp": "2025-09-08T02:27:29.670826"}
+{"event": "synthesis_completed", "insights_created": 0, "timestamp": "2025-09-08T02:27:29.670826"}
+{"event": "datapoint_added", "datapoint_id": "bb1b9e15-ac8d-473c-9a64-153e6ca1c79e", "pending_count": 1, "timestamp": "2025-09-08T02:27:29.670826"}
+{"event": "datapoint_added", "datapoint_id": "75d563de-26da-4bc1-a3ee-4fa5bd897079", "pending_count": 2, "timestamp": "2025-09-08T02:27:29.670826"}
+{"event": "datapoint_added", "datapoint_id": "89dd22d3-c31f-442c-9aab-ccbf4676ead2", "pending_count": 3, "timestamp": "2025-09-08T02:27:29.670826"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:29.800995"}
+{"event": "datapoint_added", "datapoint_id": "32adc908-ba45-4906-b831-0975d92e0523", "pending_count": 4, "timestamp": "2025-09-08T02:27:29.800995"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:31.079601"}
+{"event": "datapoint_added", "datapoint_id": "48e77043-53c7-4e5f-aefe-a5149617dd97", "pending_count": 5, "timestamp": "2025-09-08T02:27:31.080603"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:31.257972"}
+{"event": "datapoint_added", "datapoint_id": "4307ebad-0d5f-4196-a59f-57d8769e48bb", "pending_count": 6, "timestamp": "2025-09-08T02:27:31.257972"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:31.446512"}
+{"event": "datapoint_added", "datapoint_id": "7406bd47-d2cb-41a0-aa51-105a8894d75e", "pending_count": 7, "timestamp": "2025-09-08T02:27:31.446512"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:31.645537"}
+{"event": "datapoint_added", "datapoint_id": "337cb84f-eead-496d-825e-683e2dacce2f", "pending_count": 8, "timestamp": "2025-09-08T02:27:31.645537"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:31.799436"}
+{"event": "synthesis_triggered", "pending_count": 8, "timestamp": "2025-09-08T02:27:31.799436"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:31.944770"}
+{"event": "semantic_grouping", "input_datapoint_count": 8, "output_groups": 1, "groups": [{"theme": "general_group", "datapoint_count": 8, "synthesis_worthy": true}], "timestamp": "2025-09-08T02:27:31.944770"}
+{"event": "synthesis_completed", "insights_created": 0, "timestamp": "2025-09-08T02:27:31.944770"}
+{"event": "datapoint_added", "datapoint_id": "f9beb98c-47f1-4b24-b105-9f292bf88b35", "pending_count": 1, "timestamp": "2025-09-08T02:27:31.944770"}
+{"event": "datapoint_added", "datapoint_id": "6a5d96bc-0bba-4751-b55a-ddb22c8322d6", "pending_count": 2, "timestamp": "2025-09-08T02:27:31.944770"}
+{"event": "datapoint_added", "datapoint_id": "68814323-4147-4ad5-96c6-5d8e7ca7b0da", "pending_count": 3, "timestamp": "2025-09-08T02:27:31.944770"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:32.064405"}
+{"event": "datapoint_added", "datapoint_id": "255109a1-d8f0-4ebd-a14d-f78e876f079b", "pending_count": 4, "timestamp": "2025-09-08T02:27:32.064405"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:32.265639"}
+{"event": "datapoint_added", "datapoint_id": "1ef9607a-686b-4aa6-9306-53352cfbd1ac", "pending_count": 5, "timestamp": "2025-09-08T02:27:32.266639"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:32.433853"}
+{"event": "datapoint_added", "datapoint_id": "821b9afa-7385-4e65-b4c1-83e76e3c3a19", "pending_count": 6, "timestamp": "2025-09-08T02:27:32.434853"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:32.611731"}
+{"event": "datapoint_added", "datapoint_id": "3ea95eb5-6b5b-4954-af6a-2af1742636fe", "pending_count": 7, "timestamp": "2025-09-08T02:27:32.611731"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:32.847290"}
+{"event": "datapoint_added", "datapoint_id": "83da8eba-960c-4fc8-b05a-beed4a4eae6b", "pending_count": 8, "timestamp": "2025-09-08T02:27:32.847290"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:32.979429"}
+{"event": "synthesis_triggered", "pending_count": 8, "timestamp": "2025-09-08T02:27:32.979429"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:33.154853"}
+{"event": "semantic_grouping", "input_datapoint_count": 8, "output_groups": 1, "groups": [{"theme": "general_group", "datapoint_count": 8, "synthesis_worthy": true}], "timestamp": "2025-09-08T02:27:33.154853"}
+{"event": "synthesis_completed", "insights_created": 0, "timestamp": "2025-09-08T02:27:33.155755"}
+{"event": "datapoint_added", "datapoint_id": "0647c32f-32bd-45f3-af45-ed5a142bd757", "pending_count": 1, "timestamp": "2025-09-08T02:27:33.155755"}
+{"event": "datapoint_added", "datapoint_id": "328c46f2-794f-4c4f-9e14-cc9ebf15ec71", "pending_count": 2, "timestamp": "2025-09-08T02:27:33.155755"}
+{"event": "datapoint_added", "datapoint_id": "c0b22303-269d-43bd-abe2-f9649b4472ae", "pending_count": 3, "timestamp": "2025-09-08T02:27:33.155755"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:33.324692"}
+{"event": "datapoint_added", "datapoint_id": "05042f8d-7221-4115-b5fb-1561350574f4", "pending_count": 4, "timestamp": "2025-09-08T02:27:33.324692"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:33.488541"}
+{"event": "datapoint_added", "datapoint_id": "8e1f7184-bf96-416e-83ea-c6789bee3c71", "pending_count": 5, "timestamp": "2025-09-08T02:27:33.489541"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:33.650600"}
+{"event": "datapoint_added", "datapoint_id": "0cf8d3f5-ab4e-479d-a857-9227316d7299", "pending_count": 6, "timestamp": "2025-09-08T02:27:47.491041"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:47.675993"}
+{"event": "datapoint_added", "datapoint_id": "6860bfd1-5e49-4619-89e4-31efb8f0dd57", "pending_count": 7, "timestamp": "2025-09-08T02:27:47.675993"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:47.895492"}
+{"event": "datapoint_added", "datapoint_id": "bb1b9e15-ac8d-473c-9a64-153e6ca1c79e", "pending_count": 8, "timestamp": "2025-09-08T02:27:47.895492"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:48.060743"}
+{"event": "synthesis_triggered", "pending_count": 8, "timestamp": "2025-09-08T02:27:48.060743"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:48.218314"}
+{"event": "semantic_grouping", "input_datapoint_count": 8, "output_groups": 1, "groups": [{"theme": "general_group", "datapoint_count": 8, "synthesis_worthy": true}], "timestamp": "2025-09-08T02:27:48.218314"}
+{"event": "synthesis_completed", "insights_created": 0, "timestamp": "2025-09-08T02:27:48.218314"}
+{"event": "datapoint_added", "datapoint_id": "75d563de-26da-4bc1-a3ee-4fa5bd897079", "pending_count": 1, "timestamp": "2025-09-08T02:27:48.218314"}
+{"event": "datapoint_added", "datapoint_id": "89dd22d3-c31f-442c-9aab-ccbf4676ead2", "pending_count": 2, "timestamp": "2025-09-08T02:27:48.218314"}
+{"event": "datapoint_added", "datapoint_id": "32adc908-ba45-4906-b831-0975d92e0523", "pending_count": 3, "timestamp": "2025-09-08T02:27:48.218314"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:48.375280"}
+{"event": "datapoint_added", "datapoint_id": "48e77043-53c7-4e5f-aefe-a5149617dd97", "pending_count": 4, "timestamp": "2025-09-08T02:27:48.375280"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:48.558677"}
+{"event": "datapoint_added", "datapoint_id": "4307ebad-0d5f-4196-a59f-57d8769e48bb", "pending_count": 5, "timestamp": "2025-09-08T02:27:48.558677"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:48.790437"}
+{"event": "datapoint_added", "datapoint_id": "7406bd47-d2cb-41a0-aa51-105a8894d75e", "pending_count": 6, "timestamp": "2025-09-08T02:27:48.791438"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:49.004978"}
+{"event": "datapoint_added", "datapoint_id": "337cb84f-eead-496d-825e-683e2dacce2f", "pending_count": 7, "timestamp": "2025-09-08T02:27:49.004978"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:49.219232"}
+{"event": "datapoint_added", "datapoint_id": "f9beb98c-47f1-4b24-b105-9f292bf88b35", "pending_count": 8, "timestamp": "2025-09-08T02:27:49.219232"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:49.375183"}
+{"event": "synthesis_triggered", "pending_count": 8, "timestamp": "2025-09-08T02:27:49.375183"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:49.571155"}
+{"event": "semantic_grouping", "input_datapoint_count": 8, "output_groups": 1, "groups": [{"theme": "general_group", "datapoint_count": 8, "synthesis_worthy": true}], "timestamp": "2025-09-08T02:27:49.571155"}
+{"event": "synthesis_completed", "insights_created": 0, "timestamp": "2025-09-08T02:27:49.571155"}
+{"event": "datapoint_added", "datapoint_id": "6a5d96bc-0bba-4751-b55a-ddb22c8322d6", "pending_count": 1, "timestamp": "2025-09-08T02:27:49.572154"}
+{"event": "datapoint_added", "datapoint_id": "68814323-4147-4ad5-96c6-5d8e7ca7b0da", "pending_count": 2, "timestamp": "2025-09-08T02:27:49.572154"}
+{"event": "datapoint_added", "datapoint_id": "255109a1-d8f0-4ebd-a14d-f78e876f079b", "pending_count": 3, "timestamp": "2025-09-08T02:27:49.572154"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:49.760944"}
+{"event": "datapoint_added", "datapoint_id": "1ef9607a-686b-4aa6-9306-53352cfbd1ac", "pending_count": 4, "timestamp": "2025-09-08T02:27:49.760944"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:49.950808"}
+{"event": "datapoint_added", "datapoint_id": "821b9afa-7385-4e65-b4c1-83e76e3c3a19", "pending_count": 5, "timestamp": "2025-09-08T02:27:49.950808"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:50.096345"}
+{"event": "datapoint_added", "datapoint_id": "3ea95eb5-6b5b-4954-af6a-2af1742636fe", "pending_count": 6, "timestamp": "2025-09-08T02:27:50.096345"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:50.255449"}
+{"event": "datapoint_added", "datapoint_id": "83da8eba-960c-4fc8-b05a-beed4a4eae6b", "pending_count": 7, "timestamp": "2025-09-08T02:27:50.255449"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:50.419768"}
+{"event": "datapoint_added", "datapoint_id": "0647c32f-32bd-45f3-af45-ed5a142bd757", "pending_count": 8, "timestamp": "2025-09-08T02:27:50.419768"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:50.574978"}
+{"event": "synthesis_triggered", "pending_count": 8, "timestamp": "2025-09-08T02:27:50.574978"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:50.815386"}
+{"event": "semantic_grouping", "input_datapoint_count": 8, "output_groups": 1, "groups": [{"theme": "general_group", "datapoint_count": 8, "synthesis_worthy": true}], "timestamp": "2025-09-08T02:27:50.815386"}
+{"event": "synthesis_completed", "insights_created": 0, "timestamp": "2025-09-08T02:27:50.815386"}
+{"event": "datapoint_added", "datapoint_id": "328c46f2-794f-4c4f-9e14-cc9ebf15ec71", "pending_count": 1, "timestamp": "2025-09-08T02:27:50.815386"}
+{"event": "datapoint_added", "datapoint_id": "c0b22303-269d-43bd-abe2-f9649b4472ae", "pending_count": 2, "timestamp": "2025-09-08T02:27:50.815386"}
+{"event": "datapoint_added", "datapoint_id": "05042f8d-7221-4115-b5fb-1561350574f4", "pending_count": 3, "timestamp": "2025-09-08T02:27:50.815386"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:50.991560"}
+{"event": "datapoint_added", "datapoint_id": "8e1f7184-bf96-416e-83ea-c6789bee3c71", "pending_count": 4, "timestamp": "2025-09-08T02:27:50.991560"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "LiteLLM completion failed: litellm.BadRequestError: OpenAIException - Unknown parameter: 'response_format.response_schema'.", "timestamp": "2025-09-08T02:27:51.162260"}
+{"event": "datapoint_added", "datapoint_id": "b4becf7b-121e-4f64-871a-0f1a7d1997f2", "pending_count": 1, "timestamp": "2025-09-08T02:58:14.174241"}
+{"event": "datapoint_added", "datapoint_id": "55ec56fd-2376-4311-bf3f-2300043644c8", "pending_count": 2, "timestamp": "2025-09-08T02:58:14.175242"}
+{"event": "datapoint_added", "datapoint_id": "b4becf7b-121e-4f64-871a-0f1a7d1997f2", "pending_count": 3, "timestamp": "2025-09-08T02:58:45.013769"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T02:58:52.599423"}
+{"event": "datapoint_added", "datapoint_id": "55ec56fd-2376-4311-bf3f-2300043644c8", "pending_count": 4, "timestamp": "2025-09-08T02:58:52.599937"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T02:59:01.058490"}
+{"event": "synthesis_triggered", "pending_count": 4, "timestamp": "2025-09-08T02:59:01.059491"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-08T02:59:13.312828"}
+{"event": "semantic_grouping", "input_datapoint_count": 4, "output_groups": 1, "groups": [{"theme": "Explanations/analyses of why Trump deployed troops to Venezuela", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-08T02:59:13.312828"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T02:59:25.721228"}
+{"event": "insight_creation", "success": true, "insight_title": "Both sources frame the Venezuela deployment as a deliberate 'test'\u2014political signaling and operational probing", "insight_confidence": 0.72, "timestamp": "2025-09-08T02:59:25.945760"}
+{"event": "synthesis_completed", "insights_created": 1, "timestamp": "2025-09-08T02:59:25.945760"}
+{"event": "datapoint_added", "datapoint_id": "af845240-837f-445f-be93-0eb7cdd57bd6", "pending_count": 1, "timestamp": "2025-09-08T02:59:25.945760"}
+{"event": "datapoint_added", "datapoint_id": "b4becf7b-121e-4f64-871a-0f1a7d1997f2", "pending_count": 2, "timestamp": "2025-09-08T02:59:43.245816"}
+{"event": "datapoint_added", "datapoint_id": "55ec56fd-2376-4311-bf3f-2300043644c8", "pending_count": 3, "timestamp": "2025-09-08T02:59:43.247817"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T02:59:50.237702"}
+{"event": "datapoint_added", "datapoint_id": "af845240-837f-445f-be93-0eb7cdd57bd6", "pending_count": 4, "timestamp": "2025-09-08T02:59:50.238258"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T02:59:58.590770"}
+{"event": "datapoint_added", "datapoint_id": "7ee2ff2c-3100-400d-b6fe-14e8bcb5438d", "pending_count": 1, "timestamp": "2025-09-08T03:01:37.313341"}
+{"event": "datapoint_added", "datapoint_id": "5a557133-2975-4e29-9ece-94aab0d5e8b5", "pending_count": 2, "timestamp": "2025-09-08T03:01:37.313854"}
+{"event": "datapoint_added", "datapoint_id": "d0b706a5-d442-41a5-9f7a-2fc74b1abbba", "pending_count": 3, "timestamp": "2025-09-08T03:01:37.313854"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T03:01:43.689782"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-08T03:01:43.690781"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-08T03:01:56.586392"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Scale and assets of U.S. military deployment near Venezuela", "datapoint_count": 3, "synthesis_worthy": true}, {"theme": "Questioning the justification for deployment (Maduro framed as drug-cartel / suspect accusations)", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-08T03:01:56.587392"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T03:02:07.781979"}
+{"event": "insight_creation", "success": true, "insight_title": "Military escalation justified by weak accusations signals risk of intervention", "insight_confidence": 0.8, "timestamp": "2025-09-08T03:02:07.984327"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T03:02:17.628389"}
+{"event": "insight_creation", "success": true, "insight_title": "Unsubstantiated criminal accusation used as pretext to justify substantial military mobilization", "insight_confidence": 0.7, "timestamp": "2025-09-08T03:02:17.904989"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-08T03:02:17.905989"}
+{"event": "datapoint_added", "datapoint_id": "0e032f2d-c05e-4b48-91f7-a69063a25f69", "pending_count": 1, "timestamp": "2025-09-08T03:02:17.905989"}
+{"event": "datapoint_added", "datapoint_id": "1d1b9366-7718-4c1f-ad63-ea96b2cad89f", "pending_count": 2, "timestamp": "2025-09-08T03:02:17.905989"}
+{"event": "datapoint_added", "datapoint_id": "b9258b84-8560-41f0-af20-235d6b72e2a8", "pending_count": 3, "timestamp": "2025-09-08T03:02:17.905989"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T03:02:24.208811"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-08T03:02:24.209811"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-08T03:02:42.409909"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Reported military deployment details (warships, troop counts, location)", "datapoint_count": 3, "synthesis_worthy": true}, {"theme": "Contested purpose and possible misinformation (counternarcotics pretext vs political motives / existence of 'Cartel de los Soles')", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-08T03:02:42.410416"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T03:02:57.129160"}
+{"event": "insight_creation", "success": true, "insight_title": "Deployment rationale and scale are inconsistent\u2014suggesting political cover and operational opacity", "insight_confidence": 0.75, "timestamp": "2025-09-08T03:02:57.318785"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T03:03:13.219989"}
+{"event": "insight_creation", "success": true, "insight_title": "Official counternarcotics rationale conflicts with weak evidence for 'Cartel de los Soles'\u2014possible political/military pretext", "insight_confidence": 0.7, "timestamp": "2025-09-08T03:03:13.387877"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-08T03:03:13.387877"}
+{"event": "datapoint_added", "datapoint_id": "34942869-3f30-452d-82e4-c7e81c40e4a4", "pending_count": 1, "timestamp": "2025-09-08T03:03:13.387877"}
+{"event": "datapoint_added", "datapoint_id": "ca3f0445-65a8-415f-beb7-079e0a8a5866", "pending_count": 2, "timestamp": "2025-09-08T03:03:13.388879"}
+{"event": "datapoint_added", "datapoint_id": "3ca308ca-96cd-4935-baf3-e45c75c92471", "pending_count": 3, "timestamp": "2025-09-08T03:03:13.389019"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T03:03:24.476992"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-08T03:03:24.478582"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-08T03:03:42.097534"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 3, "groups": [{"theme": "Alleged US military deployment to Venezuela (claims about ships/troops)", "datapoint_count": 3, "synthesis_worthy": true}, {"theme": "Reported Venezuelan response \u2014 militia activation and high alert", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Partisan/abusive framing of Trump and emotive accusations", "datapoint_count": 2, "synthesis_worthy": false}], "timestamp": "2025-09-08T03:03:42.098603"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T03:03:56.380620"}
+{"event": "insight_creation", "success": true, "insight_title": "Social-media claims of a US military deployment to Venezuela are unverified but pose a real escalation risk by driving mobilization and confusion", "insight_confidence": 0.5, "timestamp": "2025-09-08T03:03:56.578745"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T03:04:12.745804"}
+{"event": "synthesis_completed", "insights_created": 1, "timestamp": "2025-09-08T03:04:12.746804"}
+{"event": "datapoint_added", "datapoint_id": "7ee2ff2c-3100-400d-b6fe-14e8bcb5438d", "pending_count": 1, "timestamp": "2025-09-08T03:04:32.253435"}
+{"event": "datapoint_added", "datapoint_id": "5a557133-2975-4e29-9ece-94aab0d5e8b5", "pending_count": 2, "timestamp": "2025-09-08T03:04:32.254981"}
+{"event": "datapoint_added", "datapoint_id": "d0b706a5-d442-41a5-9f7a-2fc74b1abbba", "pending_count": 3, "timestamp": "2025-09-08T03:04:32.254981"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T03:04:38.764124"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-08T03:04:38.765118"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-08T03:04:53.131138"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Alleged US military deployment details (troop counts, ships, proximity to Venezuela)", "datapoint_count": 3, "synthesis_worthy": true}, {"theme": "Questioning the legitimacy of Trump's justification (accusation that Maduro is a drug-cartel leader)", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-08T03:04:53.132172"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T03:05:05.141188"}
+{"event": "insight_creation", "success": true, "insight_title": "Escalatory military posture backed by disputed justification and inconsistent reporting", "insight_confidence": 0.82, "timestamp": "2025-09-08T03:05:05.330598"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T03:05:17.640067"}
+{"event": "insight_creation", "success": true, "insight_title": "Disproportionate military deployment signals motives beyond weak narcotics claims", "insight_confidence": 0.8, "timestamp": "2025-09-08T03:05:17.923107"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-08T03:05:17.923107"}
+{"event": "datapoint_added", "datapoint_id": "0e032f2d-c05e-4b48-91f7-a69063a25f69", "pending_count": 1, "timestamp": "2025-09-08T03:05:17.923107"}
+{"event": "datapoint_added", "datapoint_id": "1d1b9366-7718-4c1f-ad63-ea96b2cad89f", "pending_count": 2, "timestamp": "2025-09-08T03:05:17.923107"}
+{"event": "datapoint_added", "datapoint_id": "b9258b84-8560-41f0-af20-235d6b72e2a8", "pending_count": 3, "timestamp": "2025-09-08T03:05:17.923107"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T03:05:24.860656"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-08T03:05:24.860656"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-08T03:05:49.916245"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Reported scale and positioning of U.S. military forces near Venezuela (warships, troop numbers, location)", "datapoint_count": 3, "synthesis_worthy": true}, {"theme": "Stated mission and contested justification (counternarcotics claim, named targets like 'Cartel de los Soles', and suggested political motives)", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-08T03:05:49.917238"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T03:06:04.837991"}
+{"event": "insight_creation", "success": true, "insight_title": "Conflicting reports on scale and rationale undermine the official 'counternarcotics' narrative", "insight_confidence": 0.8, "timestamp": "2025-09-08T03:06:05.021855"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T03:06:16.201394"}
+{"event": "insight_creation", "success": true, "insight_title": "Military deployment framed as counternarcotics appears at odds with weak evidence for its stated target, suggesting a pretextual or political motive", "insight_confidence": 0.67, "timestamp": "2025-09-08T03:06:16.337280"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-08T03:06:16.337280"}
+{"event": "datapoint_added", "datapoint_id": "34942869-3f30-452d-82e4-c7e81c40e4a4", "pending_count": 1, "timestamp": "2025-09-08T03:06:16.337280"}
+{"event": "datapoint_added", "datapoint_id": "ca3f0445-65a8-415f-beb7-079e0a8a5866", "pending_count": 2, "timestamp": "2025-09-08T03:06:16.337280"}
+{"event": "datapoint_added", "datapoint_id": "3ca308ca-96cd-4935-baf3-e45c75c92471", "pending_count": 3, "timestamp": "2025-09-08T03:06:16.337280"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T03:06:24.016879"}
+{"event": "datapoint_added", "datapoint_id": "04649b28-9bb0-4651-a504-e4aea84a2e90", "pending_count": 4, "timestamp": "2025-09-08T03:06:24.017879"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T03:06:35.101082"}
+{"event": "datapoint_added", "datapoint_id": "0da0b772-d98b-4f1b-8471-958ae1cfe79c", "pending_count": 5, "timestamp": "2025-09-08T03:06:35.102134"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T03:06:42.931756"}
+{"event": "datapoint_added", "datapoint_id": "e4ed9c98-217a-41fa-ad42-e4249cc72341", "pending_count": 6, "timestamp": "2025-09-08T03:06:42.932756"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T03:06:51.511137"}
+{"event": "synthesis_triggered", "pending_count": 6, "timestamp": "2025-09-08T03:06:51.512119"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-08T03:07:38.333451"}
+{"event": "semantic_grouping", "input_datapoint_count": 6, "output_groups": 3, "groups": [{"theme": "External military involvement and threats to Venezuela (foreign forces and operations)", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Social-media claims alleging US troop/warship deployment and Venezuelan militia mobilization (sensational/hostile framing)", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Trump campaign communications / candidate endorsements (contextual noise, not about Venezuela)", "datapoint_count": 2, "synthesis_worthy": false}], "timestamp": "2025-09-08T03:07:38.333451"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T03:07:49.861838"}
+{"event": "insight_creation", "success": true, "insight_title": "Military deployment used as a coercive, multi-domain strategy against cartels and foreign influence in Venezuela", "insight_confidence": 0.78, "timestamp": "2025-09-08T03:07:50.054579"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T03:08:08.823079"}
+{"event": "insight_creation", "success": true, "insight_title": "Social-media amplification of unverified claims of U.S. military deployment to Venezuela", "insight_confidence": 0.45, "timestamp": "2025-09-08T03:08:09.028126"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-08T03:08:09.028126"}
+{"event": "datapoint_added", "datapoint_id": "44a44957-ff0d-4dbc-ae39-db79c69ac4ac", "pending_count": 1, "timestamp": "2025-09-08T03:12:05.565914"}
+{"event": "datapoint_added", "datapoint_id": "958bd135-6bdf-4a69-99ac-3ca7104b1042", "pending_count": 2, "timestamp": "2025-09-08T03:12:05.565914"}
+{"event": "datapoint_added", "datapoint_id": "03286936-452b-4d2b-9de8-d61ead907893", "pending_count": 3, "timestamp": "2025-09-08T03:12:05.565914"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T03:12:14.162155"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-08T03:12:14.162155"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-08T03:12:33.091854"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Assertions of imminent U.S. military intervention / pro-intervention framing (official voice)", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Skepticism and motive-speculation (conspiracy, resources, drugs)", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-08T03:12:33.091854"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T03:12:49.807071"}
+{"event": "insight_creation", "success": true, "insight_title": "Rhetorical Push for Military Action Outruns Public Evidence \u2014 Political Signaling and Strategic Ambiguity Drive Conflicting Narratives", "insight_confidence": 0.75, "timestamp": "2025-09-08T03:12:50.042630"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T03:13:11.182159"}
+{"event": "insight_creation", "success": true, "insight_title": "Domestic political narratives (strategic/security vs. conspiratorial) drive polarized claims about a US invasion of Venezuela despite weak public evidence, increasing geopolitical risk and misinformation", "insight_confidence": 0.7, "timestamp": "2025-09-08T03:13:11.397526"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-08T03:13:11.397526"}
+{"event": "datapoint_added", "datapoint_id": "44a44957-ff0d-4dbc-ae39-db79c69ac4ac", "pending_count": 1, "timestamp": "2025-09-08T03:13:31.781213"}
+{"event": "datapoint_added", "datapoint_id": "958bd135-6bdf-4a69-99ac-3ca7104b1042", "pending_count": 2, "timestamp": "2025-09-08T03:13:31.782221"}
+{"event": "datapoint_added", "datapoint_id": "03286936-452b-4d2b-9de8-d61ead907893", "pending_count": 3, "timestamp": "2025-09-08T03:13:31.782221"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T03:13:41.361923"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-08T03:13:41.362924"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-08T03:13:58.987400"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Advocacy/reporting of US military action against Maduro \u2014 direct calls or alerts that US may invade Venezuela (blaming Maduro; strategic/resource justifications)", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Critics and conspiratorial interpretations of motives for invasion \u2014 claims the move would serve hidden/personal or geopolitical interests (e.g., cover-up, drugs, oil)", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-08T03:13:58.987400"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T03:14:16.866836"}
+{"event": "insight_creation", "success": true, "insight_title": "Rhetorical escalation frames intervention as justified security/energy action despite weak public evidence, creating geopolitical risk and narrative conflict", "insight_confidence": 0.7, "timestamp": "2025-09-08T03:14:17.209892"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T03:14:36.117711"}
+{"event": "insight_creation", "success": true, "insight_title": "Foreign-policy brinkmanship framed as domestic distraction: weak evidence, high geopolitical risk", "insight_confidence": 0.65, "timestamp": "2025-09-08T03:14:36.480847"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-08T03:14:36.480847"}
+{"event": "datapoint_added", "datapoint_id": "f892ebfb-1b36-4669-a5f6-f5d7ff4de9a6", "pending_count": 1, "timestamp": "2025-09-08T03:14:36.480847"}
+{"event": "datapoint_added", "datapoint_id": "3096b404-4041-4f0f-b8b8-7594f93e8a9a", "pending_count": 2, "timestamp": "2025-09-08T03:14:36.480847"}
+{"event": "datapoint_added", "datapoint_id": "305b580f-2dd7-45a6-88df-feb3ec7b033a", "pending_count": 3, "timestamp": "2025-09-08T03:14:36.480847"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T03:14:44.415044"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-08T03:14:44.416036"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-08T03:15:05.245605"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 3, "groups": [{"theme": "Political advocacy for U.S. military expansion / regime change in Venezuela", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Operational incidents and alleged provocations used as justification for action", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Forward basing and regional posture as a response to Venezuelan tension", "datapoint_count": 2, "synthesis_worthy": false}], "timestamp": "2025-09-08T03:15:05.246607"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T03:15:23.791414"}
+{"event": "insight_creation", "success": true, "insight_title": "Aggressive public signaling of U.S. readiness for Venezuelan regime change creates a high-risk gap between rhetoric and legal/operational reality, raising acute geopolitical escalation risks", "insight_confidence": 0.72, "timestamp": "2025-09-08T03:15:24.232764"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T03:15:41.521964"}
+{"event": "insight_creation", "success": true, "insight_title": "Mixed Signals \u2014 Tactical Actions and Regime\u2011change Rhetoric Raise Escalation Risk", "insight_confidence": 0.78, "timestamp": "2025-09-08T03:15:41.739170"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-08T03:15:41.739170"}
+{"event": "datapoint_added", "datapoint_id": "d05623da-6d77-47e1-8f9d-c8f0ac3c0031", "pending_count": 1, "timestamp": "2025-09-08T03:15:41.739170"}
+{"event": "datapoint_added", "datapoint_id": "0f95aad9-4212-44e1-b2d2-b2e33f8992b8", "pending_count": 2, "timestamp": "2025-09-08T03:15:41.739170"}
+{"event": "datapoint_added", "datapoint_id": "6f71926e-eff9-4061-a048-d56a477a327b", "pending_count": 3, "timestamp": "2025-09-08T03:15:41.739170"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T03:15:50.516304"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-08T03:15:50.516304"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-08T03:16:10.414031"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Accusations that U.S. action toward Venezuela is driven by oil interests and uses anti-drug rhetoric as a cover", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Media reporting and regional tension: Maduro warnings, talk of potential U.S. military strikes and broader Latin America reactions", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-08T03:16:10.415031"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T03:16:29.399621"}
+{"event": "insight_creation", "success": true, "insight_title": "Stated 'drug-war' Rationale Masks Resource-Driven Motives, Producing Political Support at Home and International Backlash", "insight_confidence": 0.8, "timestamp": "2025-09-08T03:16:29.612461"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T03:16:56.530752"}
+{"event": "insight_creation", "success": true, "insight_title": "Perception Gap: Strategic Rationale vs. Resource-Grabbing Narrative Shapes Reactions to US Military Action in Venezuela", "insight_confidence": 0.75, "timestamp": "2025-09-08T03:16:56.850474"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-08T03:16:56.850474"}
+{"event": "datapoint_added", "datapoint_id": "5cc60344-4771-4f33-9f21-7fda184132b0", "pending_count": 1, "timestamp": "2025-09-08T03:16:56.850474"}
+{"event": "datapoint_added", "datapoint_id": "e5250bc8-44a5-4416-aba1-848a4a99c755", "pending_count": 2, "timestamp": "2025-09-08T03:16:56.850474"}
+{"event": "datapoint_added", "datapoint_id": "44a44957-ff0d-4dbc-ae39-db79c69ac4ac", "pending_count": 3, "timestamp": "2025-09-08T03:17:12.943133"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T03:17:21.386816"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-08T03:17:21.387817"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-08T03:17:40.187226"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Drug-trafficking as justification for US military action (Ecuador/Venezuela nexus)", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Political framing and calls for US intervention / invasion (blaming Maduro)", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-08T03:17:40.188292"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T03:18:04.502500"}
+{"event": "insight_creation", "success": true, "insight_title": "Rhetoric of Drug Interdiction Used to Justify Extraterritorial Force \u2014 Weak Evidence and High Geopolitical Risk", "insight_confidence": 0.72, "timestamp": "2025-09-08T03:18:04.633571"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T03:18:28.861861"}
+{"event": "insight_creation", "success": true, "insight_title": "Political narratives and unverified social-media claims converge to justify potential military action while obscuring legal, factual, and geopolitical risks", "insight_confidence": 0.78, "timestamp": "2025-09-08T03:18:29.063618"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-08T03:18:29.064619"}
+{"event": "datapoint_added", "datapoint_id": "958bd135-6bdf-4a69-99ac-3ca7104b1042", "pending_count": 1, "timestamp": "2025-09-08T03:18:29.064619"}
+{"event": "datapoint_added", "datapoint_id": "03286936-452b-4d2b-9de8-d61ead907893", "pending_count": 2, "timestamp": "2025-09-08T03:18:29.064619"}
+{"event": "datapoint_added", "datapoint_id": "f892ebfb-1b36-4669-a5f6-f5d7ff4de9a6", "pending_count": 3, "timestamp": "2025-09-08T03:18:29.064619"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T03:18:36.929665"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-08T03:18:36.930665"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-08T03:18:55.784397"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Public speculation and conspiracy narratives about an imminent U.S. invasion of Venezuela (motives: cover-ups, resources)", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Policy-level signals and reporting on U.S. military expansion in the region (bases/force posture) with potential implications for Venezuela", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-08T03:18:55.785397"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T03:19:13.540288"}
+{"event": "insight_creation", "success": true, "insight_title": "Foreign-policy pretext vs. political diversion \u2014 competing narratives about a possible US intervention in Venezuela", "insight_confidence": 0.75, "timestamp": "2025-09-08T03:19:13.677439"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T03:19:36.690444"}
+{"event": "insight_creation", "success": true, "insight_title": "Framing U.S. military action against Venezuela as power projection \u2014 disputed motives, weak public factual basis, high geopolitical risk", "insight_confidence": 0.75, "timestamp": "2025-09-08T03:19:36.852460"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-08T03:19:36.852460"}
+{"event": "datapoint_added", "datapoint_id": "3096b404-4041-4f0f-b8b8-7594f93e8a9a", "pending_count": 1, "timestamp": "2025-09-08T03:19:36.852460"}
+{"event": "datapoint_added", "datapoint_id": "305b580f-2dd7-45a6-88df-feb3ec7b033a", "pending_count": 2, "timestamp": "2025-09-08T03:19:36.853461"}
+{"event": "datapoint_added", "datapoint_id": "d05623da-6d77-47e1-8f9d-c8f0ac3c0031", "pending_count": 3, "timestamp": "2025-09-08T03:19:36.853461"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T03:19:46.025399"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-08T03:19:46.026400"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-08T03:20:15.883981"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 3, "groups": [{"theme": "Immediate military incidents and escalation dynamics (US naval engagement, Pentagon reaction, readiness for intervention)", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Competing framings for intervention: 'drug war' justification vs accusations of resource-driven motives", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Political advocacy vs criticism over regime change and underlying motives (public calls for intervention contrasted with accusations of illegitimate aims)", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-08T03:20:15.884912"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T03:20:38.670116"}
+{"event": "insight_creation", "success": true, "insight_title": "Rhetoric-plus-limited-public-evidence is producing a pretext for escalation: administration messaging and discrete military actions create an escalatory cycle with major geopolitical risks", "insight_confidence": 0.8, "timestamp": "2025-09-08T03:20:39.359025"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T03:20:59.644828"}
+{"event": "insight_creation", "success": true, "insight_title": "Dual Narratives (Drug Interdiction vs Resource Grab) Drive Conflicting Interpretations and Heighten Escalation Risk", "insight_confidence": 0.76, "timestamp": "2025-09-08T03:20:59.841800"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T03:21:23.720409"}
+{"event": "insight_creation", "success": true, "insight_title": "Rhetoric of readiness vs. contested motives \u2014 media signaling, contested facts, and high geopolitical risk", "insight_confidence": 0.75, "timestamp": "2025-09-08T03:21:24.074957"}
+{"event": "synthesis_completed", "insights_created": 3, "timestamp": "2025-09-08T03:21:24.074957"}
+{"event": "datapoint_added", "datapoint_id": "0f95aad9-4212-44e1-b2d2-b2e33f8992b8", "pending_count": 1, "timestamp": "2025-09-08T03:21:24.074957"}
+{"event": "datapoint_added", "datapoint_id": "6f71926e-eff9-4061-a048-d56a477a327b", "pending_count": 2, "timestamp": "2025-09-08T03:21:24.074957"}
+{"event": "datapoint_added", "datapoint_id": "5cc60344-4771-4f33-9f21-7fda184132b0", "pending_count": 3, "timestamp": "2025-09-08T03:21:24.074957"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T03:21:32.835025"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-08T03:21:32.836025"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-08T03:21:49.584659"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Direct military threat / regional security requests (warnings, strikes, and deployments)", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Critique of motives: anti-drug rhetoric as cover for energy/oil interests", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-08T03:21:49.585706"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T03:22:09.248183"}
+{"event": "insight_creation", "success": true, "insight_title": "Security pretext vs. sovereignty risks: competing narratives and weak public evidence drive regional polarization", "insight_confidence": 0.75, "timestamp": "2025-09-08T03:22:09.577662"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T03:22:29.356139"}
+{"event": "insight_creation", "success": true, "insight_title": "Counter\u2011narcotics Rhetoric as a Strategic Cover for Power and Resource Objectives", "insight_confidence": 0.8, "timestamp": "2025-09-08T03:22:29.707427"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-08T03:22:29.707427"}
+{"event": "datapoint_added", "datapoint_id": "e5250bc8-44a5-4416-aba1-848a4a99c755", "pending_count": 1, "timestamp": "2025-09-08T03:22:29.707427"}
+{"event": "datapoint_added", "datapoint_id": "44a44957-ff0d-4dbc-ae39-db79c69ac4ac", "pending_count": 2, "timestamp": "2025-09-08T03:22:41.310782"}
+{"event": "datapoint_added", "datapoint_id": "958bd135-6bdf-4a69-99ac-3ca7104b1042", "pending_count": 3, "timestamp": "2025-09-08T03:22:41.310782"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T03:22:50.573844"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-08T03:22:50.573844"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-08T03:23:12.378520"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Calls for or depiction of aggressive U.S. military action toward Venezuela (invasion/kinetic strikes)", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Criticism and attribution of non-security motives (political diversion / conspiracy theories about motive for action)", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-08T03:23:12.378520"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T03:23:27.804025"}
+{"event": "insight_creation", "success": true, "insight_title": "Political rhetoric of imminent invasion contrasts with thin public evidence \u2014 signaling risk of geopolitical escalation", "insight_confidence": 0.75, "timestamp": "2025-09-08T03:23:28.026015"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T03:23:48.068023"}
+{"event": "insight_creation", "success": true, "insight_title": "Claims of a Venezuela military action reveal a pattern of politicized framing and weak evidentiary support, creating geopolitical risk and information-disorder that complicates investigation", "insight_confidence": 0.8, "timestamp": "2025-09-08T03:23:48.200421"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-08T03:23:48.200421"}
+{"event": "datapoint_added", "datapoint_id": "03286936-452b-4d2b-9de8-d61ead907893", "pending_count": 1, "timestamp": "2025-09-08T03:23:48.200421"}
+{"event": "datapoint_added", "datapoint_id": "f892ebfb-1b36-4669-a5f6-f5d7ff4de9a6", "pending_count": 2, "timestamp": "2025-09-08T03:23:48.200421"}
+{"event": "datapoint_added", "datapoint_id": "3096b404-4041-4f0f-b8b8-7594f93e8a9a", "pending_count": 3, "timestamp": "2025-09-08T03:23:48.200421"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T03:23:54.725019"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-08T03:23:54.726020"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-08T03:24:18.218346"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 3, "groups": [{"theme": "Allegations of U.S. military intervention motives (drugs, oil, strategic expansion)", "datapoint_count": 3, "synthesis_worthy": true}, {"theme": "Military incidents and operational justification (naval encounters, drug-interdiction claims, potential bases)", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Public alarm and political messaging\u2014social media fears versus elite rhetoric", "datapoint_count": 2, "synthesis_worthy": false}], "timestamp": "2025-09-08T03:24:18.218862"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T03:24:35.706138"}
+{"event": "insight_creation", "success": true, "insight_title": "Claims of a US military move toward Venezuela reflect a connected pattern: security narrative used to justify possible force despite limited public evidence and high geopolitical risk", "insight_confidence": 0.75, "timestamp": "2025-09-08T03:24:36.199571"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T03:24:53.181928"}
+{"event": "insight_creation", "success": true, "insight_title": "Drug-interdiction rhetoric plus force posture links domestic political signaling to heightened regional escalation risk", "insight_confidence": 0.82, "timestamp": "2025-09-08T03:24:53.362362"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-08T03:24:53.362362"}
+{"event": "datapoint_added", "datapoint_id": "305b580f-2dd7-45a6-88df-feb3ec7b033a", "pending_count": 1, "timestamp": "2025-09-08T03:24:53.362362"}
+{"event": "datapoint_added", "datapoint_id": "d05623da-6d77-47e1-8f9d-c8f0ac3c0031", "pending_count": 2, "timestamp": "2025-09-08T03:24:53.362362"}
+{"event": "datapoint_added", "datapoint_id": "0f95aad9-4212-44e1-b2d2-b2e33f8992b8", "pending_count": 3, "timestamp": "2025-09-08T03:24:53.362362"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T03:25:05.709037"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-08T03:25:05.709037"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-08T03:25:29.429881"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Pro-intervention rhetoric and operational readiness for military action in Venezuela", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Critical narrative about US motives (seizing oil / misframing as drug war)", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-08T03:25:29.429881"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T03:25:45.565441"}
+{"event": "insight_creation", "success": true, "insight_title": "Rhetorical readiness vs operational and legal constraints: political signaling risks regional escalation", "insight_confidence": 0.78, "timestamp": "2025-09-08T03:25:45.752931"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T03:26:02.443117"}
+{"event": "insight_creation", "success": true, "insight_title": "Public security narrative vs. strategic economic aims \u2014 competing narratives about U.S. military options in Venezuela", "insight_confidence": 0.75, "timestamp": "2025-09-08T03:26:03.038087"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-08T03:26:03.038087"}
+{"event": "datapoint_added", "datapoint_id": "6f71926e-eff9-4061-a048-d56a477a327b", "pending_count": 1, "timestamp": "2025-09-08T03:26:03.038087"}
+{"event": "datapoint_added", "datapoint_id": "5cc60344-4771-4f33-9f21-7fda184132b0", "pending_count": 2, "timestamp": "2025-09-08T03:26:03.038087"}
+{"event": "datapoint_added", "datapoint_id": "e5250bc8-44a5-4416-aba1-848a4a99c755", "pending_count": 3, "timestamp": "2025-09-08T03:26:03.038087"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T03:26:10.750757"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-08T03:26:10.751757"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-08T03:26:30.988557"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Critique: Anti-drug rhetoric as a pretext for broader geopolitical/oil objectives", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Operational drug-interdiction and regional cooperation requests (Ecuador/Manta base) as justification for U.S. military involvement", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-08T03:26:30.988557"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T03:26:49.486104"}
+{"event": "insight_creation", "success": true, "insight_title": "Anti\u2011drug rhetoric as a strategic cover that reframes interventionist aims and risks regional blowback", "insight_confidence": 0.75, "timestamp": "2025-09-08T03:26:49.698966"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T03:27:09.686324"}
+{"event": "insight_creation", "success": true, "insight_title": "Securitization + Social-media Amplification Create Justification Narrative for Military Action Despite Weak Public Legal-Factual Basis, Raising Regional Sovereignty and Escalation Risks", "insight_confidence": 0.75, "timestamp": "2025-09-08T03:27:09.873858"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-08T03:27:09.873858"}
+{"event": "datapoint_added", "datapoint_id": "44a44957-ff0d-4dbc-ae39-db79c69ac4ac", "pending_count": 1, "timestamp": "2025-09-08T03:27:17.221327"}
+{"event": "datapoint_added", "datapoint_id": "958bd135-6bdf-4a69-99ac-3ca7104b1042", "pending_count": 2, "timestamp": "2025-09-08T03:27:17.221327"}
+{"event": "datapoint_added", "datapoint_id": "03286936-452b-4d2b-9de8-d61ead907893", "pending_count": 3, "timestamp": "2025-09-08T03:27:17.221327"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T03:27:25.655180"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-08T03:27:25.656427"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-08T03:27:41.373908"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Direct advocacy/claims that the U.S. is preparing to invade Venezuela", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Speculative motives offered for a potential U.S. intervention (cover-up, drugs, oil)", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-08T03:27:41.374907"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T03:28:01.352352"}
+{"event": "insight_creation", "success": true, "insight_title": "Rhetoric of imminent invasion contrasts with thin operational evidence and signals partisan deterrence with high geopolitical risk", "insight_confidence": 0.75, "timestamp": "2025-09-08T03:28:01.843940"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T03:28:30.605099"}
+{"event": "insight_creation", "success": true, "insight_title": "Hawkish Rhetoric and Conspiracy Claims Drive Speculation of an Imminent U.S. Invasion of Venezuela \u2014 but public evidence is weak; narrative serves domestic politics and geopolitical signaling", "insight_confidence": 0.75, "timestamp": "2025-09-08T03:28:30.799736"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-08T03:28:30.799736"}
+{"event": "datapoint_added", "datapoint_id": "f892ebfb-1b36-4669-a5f6-f5d7ff4de9a6", "pending_count": 1, "timestamp": "2025-09-08T03:28:30.799736"}
+{"event": "datapoint_added", "datapoint_id": "3096b404-4041-4f0f-b8b8-7594f93e8a9a", "pending_count": 2, "timestamp": "2025-09-08T03:28:30.799736"}
+{"event": "datapoint_added", "datapoint_id": "305b580f-2dd7-45a6-88df-feb3ec7b033a", "pending_count": 3, "timestamp": "2025-09-08T03:28:30.799736"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T03:28:44.465683"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-08T03:28:44.465683"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-08T03:29:10.788437"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Political advocacy for U.S. military expansion or regime change in/near Venezuela", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Operational incidents and official justifications cited to justify U.S. military posture toward Venezuela", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-08T03:29:10.789436"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T03:29:30.862181"}
+{"event": "insight_creation", "success": true, "insight_title": "Rhetorical Militarization vs. Limited Operational Basis: Political Push for Venezuelan Intervention Raises Major Geopolitical Risks", "insight_confidence": 0.7, "timestamp": "2025-09-08T03:29:31.060597"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T03:29:48.626172"}
+{"event": "insight_creation", "success": true, "insight_title": "Rhetoric and limited kinetic actions are being used to construct a pretext for intervention, producing contradictory signals and raising regional escalation risks", "insight_confidence": 0.82, "timestamp": "2025-09-08T03:29:48.837857"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-08T03:29:48.837857"}
+{"event": "datapoint_added", "datapoint_id": "d05623da-6d77-47e1-8f9d-c8f0ac3c0031", "pending_count": 1, "timestamp": "2025-09-08T03:29:48.837857"}
+{"event": "datapoint_added", "datapoint_id": "0f95aad9-4212-44e1-b2d2-b2e33f8992b8", "pending_count": 2, "timestamp": "2025-09-08T03:29:48.837857"}
+{"event": "datapoint_added", "datapoint_id": "6f71926e-eff9-4061-a048-d56a477a327b", "pending_count": 3, "timestamp": "2025-09-08T03:29:48.837857"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T03:29:59.687598"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-08T03:29:59.688599"}
+{"event": "datapoint_added", "datapoint_id": "0cf8d3f5-ab4e-479d-a857-9227316d7299", "pending_count": 1, "timestamp": "2025-09-08T03:53:46.881651"}
+{"event": "datapoint_added", "datapoint_id": "0cf8d3f5-ab4e-479d-a857-9227316d7299", "pending_count": 1, "timestamp": "2025-09-08T03:54:18.847759"}
+{"event": "datapoint_added", "datapoint_id": "6860bfd1-5e49-4619-89e4-31efb8f0dd57", "pending_count": 2, "timestamp": "2025-09-08T03:54:18.847759"}
+{"event": "datapoint_added", "datapoint_id": "bb1b9e15-ac8d-473c-9a64-153e6ca1c79e", "pending_count": 3, "timestamp": "2025-09-08T03:54:18.848758"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T03:54:24.703246"}
+{"event": "datapoint_added", "datapoint_id": "75d563de-26da-4bc1-a3ee-4fa5bd897079", "pending_count": 4, "timestamp": "2025-09-08T03:54:24.703246"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T03:54:30.739999"}
+{"event": "datapoint_added", "datapoint_id": "89dd22d3-c31f-442c-9aab-ccbf4676ead2", "pending_count": 5, "timestamp": "2025-09-08T03:54:30.741023"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T03:54:36.808189"}
+{"event": "datapoint_added", "datapoint_id": "48e77043-53c7-4e5f-aefe-a5149617dd97", "pending_count": 6, "timestamp": "2025-09-08T03:54:36.809190"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T03:54:42.289302"}
+{"event": "datapoint_added", "datapoint_id": "4307ebad-0d5f-4196-a59f-57d8769e48bb", "pending_count": 7, "timestamp": "2025-09-08T03:54:42.290338"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T03:54:47.775644"}
+{"event": "datapoint_added", "datapoint_id": "7406bd47-d2cb-41a0-aa51-105a8894d75e", "pending_count": 8, "timestamp": "2025-09-08T03:54:47.776643"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T03:54:54.663195"}
+{"event": "datapoint_added", "datapoint_id": "337cb84f-eead-496d-825e-683e2dacce2f", "pending_count": 9, "timestamp": "2025-09-08T03:54:54.664195"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T03:54:59.118580"}
+{"event": "datapoint_added", "datapoint_id": "f9beb98c-47f1-4b24-b105-9f292bf88b35", "pending_count": 10, "timestamp": "2025-09-08T03:54:59.118580"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T03:55:05.197047"}
+{"event": "datapoint_added", "datapoint_id": "68814323-4147-4ad5-96c6-5d8e7ca7b0da", "pending_count": 11, "timestamp": "2025-09-08T03:55:05.198046"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T03:55:11.855202"}
+{"event": "datapoint_added", "datapoint_id": "1ef9607a-686b-4aa6-9306-53352cfbd1ac", "pending_count": 12, "timestamp": "2025-09-08T03:55:11.855202"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T03:55:19.701311"}
+{"event": "datapoint_added", "datapoint_id": "821b9afa-7385-4e65-b4c1-83e76e3c3a19", "pending_count": 13, "timestamp": "2025-09-08T03:55:19.701311"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T03:55:25.537061"}
+{"event": "datapoint_added", "datapoint_id": "3ea95eb5-6b5b-4954-af6a-2af1742636fe", "pending_count": 14, "timestamp": "2025-09-08T03:55:25.537580"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T03:55:30.057497"}
+{"event": "datapoint_added", "datapoint_id": "83da8eba-960c-4fc8-b05a-beed4a4eae6b", "pending_count": 15, "timestamp": "2025-09-08T03:55:30.057497"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T03:55:34.527688"}
+{"event": "datapoint_added", "datapoint_id": "328c46f2-794f-4c4f-9e14-cc9ebf15ec71", "pending_count": 16, "timestamp": "2025-09-08T03:55:34.528688"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T03:55:40.826920"}
+{"event": "datapoint_added", "datapoint_id": "c0b22303-269d-43bd-abe2-f9649b4472ae", "pending_count": 17, "timestamp": "2025-09-08T03:55:40.826920"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T03:55:44.428925"}
+{"event": "datapoint_added", "datapoint_id": "8e1f7184-bf96-416e-83ea-c6789bee3c71", "pending_count": 18, "timestamp": "2025-09-08T03:55:44.429924"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T03:55:50.721316"}
+{"event": "datapoint_added", "datapoint_id": "4a080cde-6b43-4a63-8f62-141c8d342a27", "pending_count": 1, "timestamp": "2025-09-08T06:06:43.672459"}
+{"event": "datapoint_added", "datapoint_id": "8fc4d77d-0ef0-49b8-9d0b-a054f54b41aa", "pending_count": 2, "timestamp": "2025-09-08T06:06:43.673458"}
+{"event": "datapoint_added", "datapoint_id": "4a080cde-6b43-4a63-8f62-141c8d342a27", "pending_count": 3, "timestamp": "2025-09-08T06:06:43.673458"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T06:06:47.917046"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-08T06:06:47.918045"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-08T06:06:55.074599"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 1, "groups": [{"theme": "Currently Popular and Recommended TV Shows of 2024", "datapoint_count": 3, "synthesis_worthy": true}], "timestamp": "2025-09-08T06:06:55.074599"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T06:06:59.925961"}
+{"event": "insight_creation", "success": true, "insight_title": "Popular TV Shows in 2024 Include Bridgerton Season 3, FROM, and The Day Of The Jackal", "insight_confidence": 0.9, "timestamp": "2025-09-08T06:07:00.069714"}
+{"event": "synthesis_completed", "insights_created": 1, "timestamp": "2025-09-08T06:07:00.069714"}
+{"event": "datapoint_added", "datapoint_id": "8fc4d77d-0ef0-49b8-9d0b-a054f54b41aa", "pending_count": 1, "timestamp": "2025-09-08T06:07:00.070714"}
+{"event": "datapoint_added", "datapoint_id": "1f82faa7-e61d-4604-972d-bde12711a018", "pending_count": 1, "timestamp": "2025-09-08T06:20:25.057886"}
+{"event": "datapoint_added", "datapoint_id": "fbccfc30-28f4-4eb2-94a9-0f44607ea15d", "pending_count": 2, "timestamp": "2025-09-08T06:20:25.058886"}
+{"event": "datapoint_added", "datapoint_id": "4ff07667-1ff5-40dd-8771-f4b8fa8aa650", "pending_count": 3, "timestamp": "2025-09-08T06:20:25.058886"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T06:20:29.290670"}
+{"event": "datapoint_added", "datapoint_id": "1f82faa7-e61d-4604-972d-bde12711a018", "pending_count": 4, "timestamp": "2025-09-08T06:20:44.756860"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T06:20:50.575636"}
+{"event": "datapoint_added", "datapoint_id": "fbccfc30-28f4-4eb2-94a9-0f44607ea15d", "pending_count": 5, "timestamp": "2025-09-08T06:20:50.576664"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T06:20:55.568264"}
+{"event": "datapoint_added", "datapoint_id": "4ff07667-1ff5-40dd-8771-f4b8fa8aa650", "pending_count": 6, "timestamp": "2025-09-08T06:20:55.569283"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T06:21:01.577848"}
+{"event": "datapoint_added", "datapoint_id": "d10cb586-fd06-44ab-82e8-938deb61225f", "pending_count": 1, "timestamp": "2025-09-08T07:04:18.992309"}
+{"event": "datapoint_added", "datapoint_id": "abeecd7a-25d9-4959-ba29-a48dda04c89b", "pending_count": 2, "timestamp": "2025-09-08T07:04:18.993309"}
+{"event": "datapoint_added", "datapoint_id": "fa2d54e0-1cc4-48eb-8d24-ec16399b0991", "pending_count": 3, "timestamp": "2025-09-08T07:04:18.993309"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T07:04:21.103063"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-08T07:04:21.103579"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-08T07:04:26.245608"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Popular TV Shows Rankings", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Impact of TV Shows on Locations", "datapoint_count": 1, "synthesis_worthy": false}], "timestamp": "2025-09-08T07:04:26.246120"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T07:04:39.224554"}
+{"event": "insight_creation", "success": true, "insight_title": "Consistency in Popularity of TV Shows", "insight_confidence": 0.85, "timestamp": "2025-09-08T07:04:45.910027"}
+{"event": "synthesis_completed", "insights_created": 1, "timestamp": "2025-09-08T07:04:45.910027"}

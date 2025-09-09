@@ -1,0 +1,226 @@
+{
+  "nodes": {
+    "a6d42a5e-a7c8-4d1d-8fb1-f0e717d9bc44": {
+      "id": "a6d42a5e-a7c8-4d1d-8fb1-f0e717d9bc44",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "find the latest news about AI developments in 2024",
+        "is_root": true,
+        "investigation_goal": "find the latest news about AI developments in 2024"
+      },
+      "created_at": "2025-09-08T06:19:43.040203"
+    },
+    "e2205ce8-8d66-4a31-8786-f623057db9aa": {
+      "id": "e2205ce8-8d66-4a31-8786-f623057db9aa",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: This search aims to gather the most recent tweets and discussions specifically mentioning 'AI developments' or 'artificial intelligence news' within the context of '2024'. Using 'Latest' ensures the information is current, directly addressing the 'latest news' aspect of the goal.",
+        "parent_analytic_question": "a6d42a5e-a7c8-4d1d-8fb1-f0e717d9bc44"
+      },
+      "created_at": "2025-09-08T06:19:52.794213"
+    },
+    "869093c0-4816-449d-9ef1-e18ad3b56082": {
+      "id": "869093c0-4816-449d-9ef1-e18ad3b56082",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "AI developments 2024 OR artificial intelligence news 2024",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-08T06:19:52.794213"
+    },
+    "50150571-0aff-4304-a1dc-640021860384": {
+      "id": "50150571-0aff-4304-a1dc-640021860384",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: TechCrunch is a leading technology news publication often covering AI advancements. Retrieving their latest timeline posts will provide direct, reliable news and developments from a trusted source, complementing the broad keyword search by offering curated information from an expert perspective.",
+        "parent_analytic_question": "a6d42a5e-a7c8-4d1d-8fb1-f0e717d9bc44"
+      },
+      "created_at": "2025-09-08T06:19:52.794213"
+    },
+    "12f4d686-fed0-418c-a4d3-91bc2b7e1b60": {
+      "id": "12f4d686-fed0-418c-a4d3-91bc2b7e1b60",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "TechCrunch"
+        }
+      },
+      "created_at": "2025-09-08T06:19:52.794213"
+    },
+    "3ee1f2ae-ea32-4670-bcbb-4b6ebfeda2c5": {
+      "id": "3ee1f2ae-ea32-4670-bcbb-4b6ebfeda2c5",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Examining trending topics in a major technology-driven country like the United States can reveal specific AI-related discussions that are gaining significant public attention. This helps identify emerging developments, hot-button issues, or popular narratives surrounding AI in 2024 that might not be immediately apparent through direct searches.",
+        "parent_analytic_question": "a6d42a5e-a7c8-4d1d-8fb1-f0e717d9bc44"
+      },
+      "created_at": "2025-09-08T06:19:52.794213"
+    },
+    "a9c66156-730b-4bee-9850-48da196b8c4d": {
+      "id": "a9c66156-730b-4bee-9850-48da196b8c4d",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "trends.php",
+        "parameters": {
+          "country": "UnitedStates"
+        }
+      },
+      "created_at": "2025-09-08T06:19:52.794213"
+    },
+    "1f82faa7-e61d-4604-972d-bde12711a018": {
+      "id": "1f82faa7-e61d-4604-972d-bde12711a018",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Top news in AI brought to you by Grok\n\nHere are some of the top news stories and developments in the field of artificial intelligence (AI) as of December 27, 2024:\n\nDeepSeek-V3 Model Outshines Rivals: DeepSeek, a Chinese AI company, has released DeepSeek-V3, an open-source language model with 671 billion parameters. This model has demonstrated superior performance over several top-tier AI models in tasks like coding and translation. It was notably developed with significantly lower costs, using only $5.5 million and 2048 GPUs over two months. This development has sparked conversations about the potential of open-source models to challenge established players.\ud83d\udcf7\n\nOpenAI's Shift to Public Benefit Corporation: OpenAI's Board is contemplating converting its for-profit arm into a Delaware Public Benefit Corporation (PBC). This move aims to secure more capital for advancing its mission of ensuring AI benefits humanity, highlighting a significant strategic shift from its non-profit beginnings.\ud83d\udcf7\n\nMicrosoft and OpenAI Redefine AGI by Profits: Microsoft and OpenAI have redefined what constitutes Artificial General Intelligence (AGI) by setting a profit benchmark of $100 billion. This financial definition has stirred debate about the true essence of AGI, focusing on commercial success rather than cognitive capabilities.\ud83d\udcf7\n\nOpenAI Explores Humanoid Robot Development: After initially exiting the robotics field, OpenAI is now exploring the development of humanoid robots. This move aligns with broader industry trends where companies like Microsoft are adjusting strategies around AI development, and xAI secures significant funding for its AI initiatives.\ud83d\udcf7\n\nxAI Secures $6 Billion in Funding: Elon Musk's AI company, xAI, has raised $6 billion in a Series C funding round, valuing the company at over $40 billion. The funds are aimed at enhancing research, expanding infrastructure, and launching new AI products, reflecting the high investment interest in AI ventures.\ud83d\udcf7",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-08T06:20:25.057886",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 1.0,
+          "goal_relevance_score": 1.0
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-08T06:20:25.057886"
+      },
+      "created_at": "2025-09-08T06:20:25.057886"
+    },
+    "fbccfc30-28f4-4eb2-94a9-0f44607ea15d": {
+      "id": "fbccfc30-28f4-4eb2-94a9-0f44607ea15d",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Join us for an exclusive AI panel event as experts discuss how the latest AI developments from 2023 and 2024 are shaping a positive future for humanity. [The Independent on https://t.co/sFQ48Js5t5] #ArtificialIntelligence #FutureOfTech https://t.co/vinXkJV3Fp",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-08T06:20:25.057886",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.8,
+          "goal_relevance_score": 0.5
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-08T06:20:25.057886"
+      },
+      "created_at": "2025-09-08T06:20:25.057886"
+    },
+    "4ff07667-1ff5-40dd-8771-f4b8fa8aa650": {
+      "id": "4ff07667-1ff5-40dd-8771-f4b8fa8aa650",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Join our exclusive AI panel event as our experts reflect on key AI developments from 2023 and 2024 and their positive impact on humanity's future. [The Independent on https://t.co/sFQ48Js5t5] #ArtificialIntelligence #FutureTech https://t.co/vinXkJV3Fp",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-08T06:20:25.057886",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.8,
+          "goal_relevance_score": 0.5
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-08T06:20:25.057886"
+      },
+      "created_at": "2025-09-08T06:20:25.057886"
+    }
+  },
+  "edges": [
+    {
+      "id": "d9c1573f-5811-4292-bc8c-89a6fdfe5148",
+      "source_id": "a6d42a5e-a7c8-4d1d-8fb1-f0e717d9bc44",
+      "target_id": "e2205ce8-8d66-4a31-8786-f623057db9aa",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-08T06:19:52.794213"
+    },
+    {
+      "id": "67e74b6e-f139-49cd-8033-f4fc73662504",
+      "source_id": "e2205ce8-8d66-4a31-8786-f623057db9aa",
+      "target_id": "869093c0-4816-449d-9ef1-e18ad3b56082",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-08T06:19:52.794213"
+    },
+    {
+      "id": "7842d800-927c-411d-92a6-3252e46d8c08",
+      "source_id": "a6d42a5e-a7c8-4d1d-8fb1-f0e717d9bc44",
+      "target_id": "50150571-0aff-4304-a1dc-640021860384",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-08T06:19:52.794213"
+    },
+    {
+      "id": "a5d8d2d9-4eb0-480e-a050-c5cdc196c292",
+      "source_id": "50150571-0aff-4304-a1dc-640021860384",
+      "target_id": "12f4d686-fed0-418c-a4d3-91bc2b7e1b60",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-08T06:19:52.794213"
+    },
+    {
+      "id": "1f11c424-25b8-4c63-bf90-8c33bdf752cc",
+      "source_id": "a6d42a5e-a7c8-4d1d-8fb1-f0e717d9bc44",
+      "target_id": "3ee1f2ae-ea32-4670-bcbb-4b6ebfeda2c5",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-08T06:19:52.794213"
+    },
+    {
+      "id": "cef2b4aa-ba38-4d18-98ec-04d10f686300",
+      "source_id": "3ee1f2ae-ea32-4670-bcbb-4b6ebfeda2c5",
+      "target_id": "a9c66156-730b-4bee-9850-48da196b8c4d",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-08T06:19:52.794213"
+    },
+    {
+      "id": "58a9d77e-366b-4ddc-a3c4-c3098ce178f6",
+      "source_id": "869093c0-4816-449d-9ef1-e18ad3b56082",
+      "target_id": "1f82faa7-e61d-4604-972d-bde12711a018",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 1.0
+      },
+      "created_at": "2025-09-08T06:20:25.057886"
+    },
+    {
+      "id": "23016143-6572-452e-8832-6610fda70f92",
+      "source_id": "869093c0-4816-449d-9ef1-e18ad3b56082",
+      "target_id": "fbccfc30-28f4-4eb2-94a9-0f44607ea15d",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.8
+      },
+      "created_at": "2025-09-08T06:20:25.057886"
+    },
+    {
+      "id": "4a322ef4-75c0-4307-b979-61dd02f57e23",
+      "source_id": "869093c0-4816-449d-9ef1-e18ad3b56082",
+      "target_id": "4ff07667-1ff5-40dd-8771-f4b8fa8aa650",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.8
+      },
+      "created_at": "2025-09-08T06:20:25.057886"
+    }
+  ],
+  "analytic_question": "a6d42a5e-a7c8-4d1d-8fb1-f0e717d9bc44",
+  "created_at": "2025-09-08T06:21:02.793843"
+}

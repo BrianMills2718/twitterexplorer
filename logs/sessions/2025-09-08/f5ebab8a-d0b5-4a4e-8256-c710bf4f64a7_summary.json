@@ -1,0 +1,96 @@
+{
+  "session_metadata": {
+    "session_id": "f5ebab8a-d0b5-4a4e-8256-c710bf4f64a7",
+    "start_time": "2025-09-08T07:09:01.663597+00:00",
+    "end_time": "2025-09-08T07:10:51.306823+00:00",
+    "duration_seconds": 109.643226,
+    "user_query": "Trump Epstein relationship contradictions"
+  },
+  "configuration": {
+    "max_searches": 3,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.8,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "pages_per_search": 3,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true,
+    "enforce_endpoint_diversity": false,
+    "max_endpoint_repeats": 5,
+    "diversity_threshold": 0.3
+  },
+  "performance_metrics": {
+    "total_searches": 3,
+    "total_rounds": 1,
+    "total_results_found": 121,
+    "satisfaction_score": 0.38276315789473675,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.4,
+      "source_diversity": 0.2,
+      "evidence_quality": 0.7499999999999997,
+      "claim_specificity": 0.3684210526315789,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Reached maximum search limit (3)"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [],
+      "moderately_effective": [
+        {
+          "search_id": 2,
+          "query": "",
+          "results": 60,
+          "effectiveness": 6.0
+        },
+        {
+          "search_id": 3,
+          "query": "\"I've known Jeff\" OR \"terrific guy\" Trump Epstein OR Jeffrey Epstein",
+          "results": 59,
+          "effectiveness": 5.9
+        }
+      ],
+      "low_effectiveness": [],
+      "ineffective": [
+        {
+          "search_id": 1,
+          "query": "from:realDonaldTrump Epstein",
+          "results": 2,
+          "effectiveness": 0.2
+        }
+      ]
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "Graph Strategy: The investigation currently lacks two critical threads: (1) Trump's own public statements/perspective about Jeffrey Epstein and (2) contextual evidence showing Trump's prior social relationship with Epstein. To fill these gaps efficiently and coherently on Twitter, we must collect direct material (Trump's tweets and timelines), corroborating secondary posts (quotes, screenshots, media), and network signals (follow relationships and declared affiliations). The strategy uses multiple endpoints to produce complementary evidence streams: textual statements (search + timeline), visual proof (media search / usermedia), and network verification (checkfollow + affiliates). This multi-endpoint approach will expose contradictions between Trump's words (denials, distancing, or minimizations) and historical social evidence (photos, mentions, follows, affiliations) and create clear threads to follow next.",
+        "avg_effectiveness": 4.033333333333334
+      }
+    ],
+    "dead_ends": [
+      "from:realDonaldTrump Epstein"
+    ],
+    "promising_leads": [
+      "",
+      "\"I've known Jeff\" OR \"terrific guy\" Trump Epstein OR Jeffrey Epstein"
+    ]
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Graph Strategy: The investigation currently lacks two critical threads: (1) Trump's own public statements/perspective about Jeffrey Epstein and (2) contextual evidence showing Trump's prior social relationship with Epstein. To fill these gaps efficiently and coherently on Twitter, we must collect direct material (Trump's tweets and timelines), corroborating secondary posts (quotes, screenshots, media), and network signals (follow relationships and declared affiliations). The strategy uses multiple endpoints to produce complementary evidence streams: textual statements (search + timeline), visual proof (media search / usermedia), and network verification (checkfollow + affiliates). This multi-endpoint approach will expose contradictions between Trump's words (denials, distancing, or minimizations) and historical social evidence (photos, mentions, follows, affiliations) and create clear threads to follow next.",
+      "searches_count": 3,
+      "total_results": 121,
+      "effectiveness": 4.033333333333334,
+      "insights": [
+        "Found 119 relevant results",
+        "1 searches yielded no results"
+      ]
+    }
+  ]
+}

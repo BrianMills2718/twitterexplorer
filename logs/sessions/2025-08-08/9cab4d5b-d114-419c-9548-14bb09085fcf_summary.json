@@ -1,0 +1,51 @@
+{
+  "session_metadata": {
+    "session_id": "9cab4d5b-d114-419c-9548-14bb09085fcf",
+    "start_time": "2025-08-08T22:22:07.587199+00:00",
+    "end_time": "2025-08-08T22:22:07.589200+00:00",
+    "duration_seconds": 0.001001,
+    "user_query": "Test investigation for logging verification"
+  },
+  "configuration": {
+    "max_searches": 5,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.8,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "pages_per_search": 3,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true
+  },
+  "performance_metrics": {
+    "total_searches": 3,
+    "total_rounds": 0,
+    "total_results_found": 25,
+    "satisfaction_score": 0.0,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.0,
+      "source_diversity": 0.0,
+      "evidence_quality": 0.0,
+      "claim_specificity": 0.0,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Test completed successfully"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [],
+      "moderately_effective": [],
+      "low_effectiveness": [],
+      "ineffective": []
+    },
+    "most_effective_strategies": [],
+    "dead_ends": [],
+    "promising_leads": []
+  },
+  "rounds_summary": []
+}

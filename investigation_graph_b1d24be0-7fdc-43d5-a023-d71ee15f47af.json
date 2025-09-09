@@ -1,0 +1,17 @@
+{
+  "nodes": {
+    "b4d06d1c-51e8-401a-a35d-cf5b2d52d974": {
+      "id": "b4d06d1c-51e8-401a-a35d-cf5b2d52d974",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "current issues in argentina",
+        "is_root": true,
+        "investigation_goal": "current issues in argentina"
+      },
+      "created_at": "2025-09-08T06:45:42.888351"
+    }
+  },
+  "edges": [],
+  "analytic_question": "b4d06d1c-51e8-401a-a35d-cf5b2d52d974",
+  "created_at": "2025-09-08T06:45:43.664884"
+}

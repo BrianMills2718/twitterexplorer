@@ -2,7 +2,7 @@
 from typing import List, Dict, Any, Tuple
 import re
 from dataclasses import dataclass
-from investigation_engine import InvestigationSession, SearchAttempt, SatisfactionMetrics, Finding
+from twitterexplorer.investigation_engine import InvestigationSession, SearchAttempt, SatisfactionMetrics, Finding
 
 @dataclass
 class ContentAnalysis:

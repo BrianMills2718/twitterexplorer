@@ -1,0 +1,10 @@
+{"event": "datapoint_added", "datapoint_id": "dp_0", "pending_count": 1, "timestamp": "2025-09-05T09:55:33.586654"}
+{"event": "datapoint_added", "datapoint_id": "dp_1", "pending_count": 2, "timestamp": "2025-09-05T09:55:33.586654"}
+{"event": "datapoint_added", "datapoint_id": "dp_2", "pending_count": 3, "timestamp": "2025-09-05T09:55:33.586654"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:55:33.586654"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-05T09:55:33.586654"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-05T09:55:33.587655"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 1, "groups": [{"theme": "Trump Epstein relationship contradictions", "datapoint_count": 5, "synthesis_worthy": true}], "timestamp": "2025-09-05T09:55:33.587655"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-05T09:55:33.587655"}
+{"event": "insight_creation", "success": true, "insight_title": "Contradiction Pattern in Trump-Epstein Statements", "insight_confidence": 0.85, "timestamp": "2025-09-05T09:55:33.587655"}
+{"event": "synthesis_completed", "insights_created": 1, "timestamp": "2025-09-05T09:55:33.587655"}

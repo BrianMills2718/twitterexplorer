@@ -6,7 +6,7 @@ import json
 import re
 from datetime import datetime
 
-from investigation_engine import InvestigationSession, SearchAttempt, Finding
+from twitterexplorer.investigation_engine import InvestigationSession, SearchAttempt, Finding
 
 @dataclass
 class KnowledgeNode:
@@ -279,33 +279,38 @@ class KnowledgeBuilder:
         debunking_nodes = [n for n in self.memory.knowledge_nodes.values() if n.category == 'debunking']
         credibility_nodes = [n for n in self.memory.knowledge_nodes.values() if n.category == 'credibility']
         
-        if len(debunking_nodes) > len(credibility_nodes):
-            insights.append("Investigation found more debunking/skeptical information than supportive content")
-        elif len(credibility_nodes) > len(debunking_nodes):
-            insights.append("Investigation found more supportive/credible information than debunking content")
-        else:
-            insights.append("Investigation found mixed or balanced perspectives")
+        # Only generate insights if data was actually found
+        if len(debunking_nodes) > 0 or len(credibility_nodes) > 0:
+            if len(debunking_nodes) > len(credibility_nodes):
+                insights.append("Investigation found more debunking/skeptical information than supportive content")
+            elif len(credibility_nodes) > len(debunking_nodes):
+                insights.append("Investigation found more supportive/credible information than debunking content")
+            else:
+                insights.append("Investigation found mixed or balanced perspectives")
         
-        # Insight 2: Source quality
-        high_confidence_nodes = [n for n in self.memory.knowledge_nodes.values() if n.confidence > 0.7]
-        if len(high_confidence_nodes) > len(self.memory.knowledge_nodes) * 0.5:
-            insights.append("Investigation uncovered high-quality, reliable sources")
-        else:
-            insights.append("Investigation found limited high-confidence information")
+        # Insight 2: Source quality (only if data found)
+        if len(self.memory.knowledge_nodes) > 0:
+            high_confidence_nodes = [n for n in self.memory.knowledge_nodes.values() if n.confidence > 0.7]
+            if len(high_confidence_nodes) > len(self.memory.knowledge_nodes) * 0.5:
+                insights.append("Investigation uncovered high-quality, reliable sources")
+            else:
+                insights.append("Investigation found limited high-confidence information")
         
-        # Insight 3: Research depth
-        categories_found = set(n.category for n in self.memory.knowledge_nodes.values())
-        if len(categories_found) >= 4:
-            insights.append("Investigation covered multiple aspects of the topic comprehensively")
-        else:
-            insights.append("Investigation focused on limited aspects of the topic")
+        # Insight 3: Research depth (only if data found)
+        if len(self.memory.knowledge_nodes) > 0:
+            categories_found = set(n.category for n in self.memory.knowledge_nodes.values())
+            if len(categories_found) >= 4:
+                insights.append("Investigation covered multiple aspects of the topic comprehensively")
+            else:
+                insights.append("Investigation focused on limited aspects of the topic")
         
-        # Insight 4: Fact-checking availability
-        fact_check_nodes = [n for n in self.memory.knowledge_nodes.values() if n.category == 'fact_check']
-        if fact_check_nodes:
-            insights.append("Professional fact-checking resources were found for this topic")
-        else:
-            insights.append("Limited professional fact-checking available for this topic")
+        # Insight 4: Fact-checking availability (only if data found)
+        if len(self.memory.knowledge_nodes) > 0:
+            fact_check_nodes = [n for n in self.memory.knowledge_nodes.values() if n.category == 'fact_check']
+            if fact_check_nodes:
+                insights.append("Professional fact-checking resources were found for this topic")
+            else:
+                insights.append("Limited professional fact-checking available for this topic")
         
         self.memory.key_insights = insights
     

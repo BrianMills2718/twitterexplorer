@@ -1,0 +1,1020 @@
+{
+  "session_metadata": {
+    "session_id": "bc171921-7d6d-4371-a6e4-6897152ea127",
+    "start_time": "2025-08-08T22:45:19.557665+00:00",
+    "end_time": "2025-08-08T23:10:32.987622+00:00",
+    "duration_seconds": 1513.428957,
+    "user_query": "find me different takes on the current epstein trama drama and who is on the different sides"
+  },
+  "configuration": {
+    "max_searches": 100,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.8,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "pages_per_search": 3,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true
+  },
+  "performance_metrics": {
+    "total_searches": 100,
+    "total_rounds": 41,
+    "total_results_found": 5609,
+    "satisfaction_score": 0.24499999999999988,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.2,
+      "source_diversity": 0.1,
+      "evidence_quality": 0.6999999999999995,
+      "claim_specificity": 0.0,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Reached maximum search limit (100)"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [],
+      "moderately_effective": [
+        {
+          "search_id": 23,
+          "query": "\"Epstein\" (scandal OR case OR trial OR controversy)",
+          "results": 49,
+          "effectiveness": 5.901252912336516
+        },
+        {
+          "search_id": 24,
+          "query": "\"Epstein\" (narrative OR theory OR \"true story\" OR \"what happened\")",
+          "results": 54,
+          "effectiveness": 6.580770355605708
+        },
+        {
+          "search_id": 25,
+          "query": "find different 2024",
+          "results": 59,
+          "effectiveness": 5.193707277919478
+        },
+        {
+          "search_id": 27,
+          "query": "find different 2024",
+          "results": 59,
+          "effectiveness": 5.19475892786714
+        },
+        {
+          "search_id": 39,
+          "query": "\"Epstein\" (sides OR takes OR narrative OR theories OR \"cover up\" OR \"conspiracy\")",
+          "results": 51,
+          "effectiveness": 7.25612965498226
+        },
+        {
+          "search_id": 63,
+          "query": "\"Epstein\" (unsealed OR documents OR revelations OR \"new details\") (narrative OR theory OR \"cover up\" OR \"conspiracy\")",
+          "results": 49,
+          "effectiveness": 6.339561783480887
+        },
+        {
+          "search_id": 64,
+          "query": "\"Epstein\" (\"client list\" OR \"involved parties\" OR \"co-conspirators\" OR \"names released\")",
+          "results": 57,
+          "effectiveness": 7.24612082488532
+        },
+        {
+          "search_id": 71,
+          "query": "\"Epstein\" (\"unsealed documents\" OR \"client list\" OR \"names released\") (reaction OR implications OR fallout)",
+          "results": 55,
+          "effectiveness": 6.48761331361262
+        },
+        {
+          "search_id": 72,
+          "query": "\"Epstein\" (narrative OR theory OR \"cover up\" OR \"conspiracy\") (opposing OR \"different view\" OR \"alternative explanation\")",
+          "results": 50,
+          "effectiveness": 5.104279389944225
+        }
+      ],
+      "low_effectiveness": [
+        {
+          "search_id": 1,
+          "query": "\"find different\"",
+          "results": 59,
+          "effectiveness": 4.5
+        },
+        {
+          "search_id": 2,
+          "query": "find different",
+          "results": 59,
+          "effectiveness": 4.5
+        },
+        {
+          "search_id": 3,
+          "query": "\"find different\" debunked",
+          "results": 6,
+          "effectiveness": 4.2527955321506905
+        },
+        {
+          "search_id": 4,
+          "query": "\"find different\" hoax",
+          "results": 6,
+          "effectiveness": 4.038022307060256
+        },
+        {
+          "search_id": 5,
+          "query": "find different 2024",
+          "results": 59,
+          "effectiveness": 4.586000743941047
+        },
+        {
+          "search_id": 6,
+          "query": "find different recent",
+          "results": 60,
+          "effectiveness": 4.639157104644307
+        },
+        {
+          "search_id": 7,
+          "query": "find different 2024",
+          "results": 59,
+          "effectiveness": 4.5
+        },
+        {
+          "search_id": 8,
+          "query": "find different recent",
+          "results": 60,
+          "effectiveness": 4.5
+        },
+        {
+          "search_id": 9,
+          "query": "find different 2024",
+          "results": 59,
+          "effectiveness": 4.5
+        },
+        {
+          "search_id": 10,
+          "query": "find different recent",
+          "results": 60,
+          "effectiveness": 4.5
+        },
+        {
+          "search_id": 11,
+          "query": "find different 2024",
+          "results": 59,
+          "effectiveness": 4.5
+        },
+        {
+          "search_id": 12,
+          "query": "find different recent",
+          "results": 60,
+          "effectiveness": 4.52756584728454
+        },
+        {
+          "search_id": 13,
+          "query": "find different 2024",
+          "results": 59,
+          "effectiveness": 4.570000047941208
+        },
+        {
+          "search_id": 14,
+          "query": "find different recent",
+          "results": 60,
+          "effectiveness": 4.635946403963247
+        },
+        {
+          "search_id": 15,
+          "query": "find different 2024",
+          "results": 59,
+          "effectiveness": 4.814584954085306
+        },
+        {
+          "search_id": 16,
+          "query": "find different recent",
+          "results": 60,
+          "effectiveness": 4.6729660936547734
+        },
+        {
+          "search_id": 17,
+          "query": "find different 2024",
+          "results": 59,
+          "effectiveness": 4.809135027910989
+        },
+        {
+          "search_id": 18,
+          "query": "find different recent",
+          "results": 60,
+          "effectiveness": 4.841236248184315
+        },
+        {
+          "search_id": 19,
+          "query": "find different 2024",
+          "results": 59,
+          "effectiveness": 4.5
+        },
+        {
+          "search_id": 20,
+          "query": "find different recent",
+          "results": 60,
+          "effectiveness": 4.5
+        },
+        {
+          "search_id": 21,
+          "query": "find different 2024",
+          "results": 59,
+          "effectiveness": 4.660890870161037
+        },
+        {
+          "search_id": 22,
+          "query": "find different recent",
+          "results": 60,
+          "effectiveness": 4.5
+        },
+        {
+          "search_id": 26,
+          "query": "find different recent",
+          "results": 60,
+          "effectiveness": 4.6989864189641555
+        },
+        {
+          "search_id": 28,
+          "query": "find different recent",
+          "results": 60,
+          "effectiveness": 4.634625220360788
+        },
+        {
+          "search_id": 29,
+          "query": "find different 2024",
+          "results": 59,
+          "effectiveness": 4.733027615902813
+        },
+        {
+          "search_id": 30,
+          "query": "find different recent",
+          "results": 60,
+          "effectiveness": 4.820738753976476
+        },
+        {
+          "search_id": 31,
+          "query": "find different 2024",
+          "results": 59,
+          "effectiveness": 4.5
+        },
+        {
+          "search_id": 32,
+          "query": "find different recent",
+          "results": 60,
+          "effectiveness": 4.731650408798201
+        },
+        {
+          "search_id": 33,
+          "query": "find different 2024",
+          "results": 59,
+          "effectiveness": 4.60194691182077
+        },
+        {
+          "search_id": 34,
+          "query": "find different recent",
+          "results": 60,
+          "effectiveness": 4.5
+        },
+        {
+          "search_id": 35,
+          "query": "find different 2024",
+          "results": 59,
+          "effectiveness": 4.5
+        },
+        {
+          "search_id": 36,
+          "query": "find different recent",
+          "results": 60,
+          "effectiveness": 4.5
+        },
+        {
+          "search_id": 37,
+          "query": "find different 2024",
+          "results": 59,
+          "effectiveness": 4.724068139787642
+        },
+        {
+          "search_id": 38,
+          "query": "find different recent",
+          "results": 60,
+          "effectiveness": 4.761696783967185
+        },
+        {
+          "search_id": 40,
+          "query": "\"Epstein\" (list OR names OR \"accused\" OR \"involved\" OR \"linked\" OR \"associates\")",
+          "results": 59,
+          "effectiveness": 4.590849098857291
+        },
+        {
+          "search_id": 41,
+          "query": "find different 2024",
+          "results": 59,
+          "effectiveness": 4.877738838694378
+        },
+        {
+          "search_id": 42,
+          "query": "find different recent",
+          "results": 60,
+          "effectiveness": 4.5927203468168685
+        },
+        {
+          "search_id": 43,
+          "query": "\"Epstein\" (sides OR takes OR debate OR dispute OR \"opposing views\" OR \"different narratives\")",
+          "results": 59,
+          "effectiveness": 4.53757115720786
+        },
+        {
+          "search_id": 44,
+          "query": "\"Epstein\" (\"unsealed documents\" OR \"client list\" OR \"latest revelations\" OR \"2024 updates\")",
+          "results": 58,
+          "effectiveness": 4.737313269878401
+        },
+        {
+          "search_id": 45,
+          "query": "find different 2024",
+          "results": 59,
+          "effectiveness": 4.5
+        },
+        {
+          "search_id": 46,
+          "query": "find different recent",
+          "results": 60,
+          "effectiveness": 4.5
+        },
+        {
+          "search_id": 47,
+          "query": "find different 2024",
+          "results": 59,
+          "effectiveness": 4.5
+        },
+        {
+          "search_id": 48,
+          "query": "find different recent",
+          "results": 60,
+          "effectiveness": 4.673674251503649
+        },
+        {
+          "search_id": 49,
+          "query": "find different 2024",
+          "results": 59,
+          "effectiveness": 4.816660287195872
+        },
+        {
+          "search_id": 50,
+          "query": "find different recent",
+          "results": 60,
+          "effectiveness": 4.5
+        },
+        {
+          "search_id": 51,
+          "query": "\"Epstein\" (scandal OR case OR revelations OR list OR files) (narrative OR theory OR \"cover up\" OR \"conspiracy\")",
+          "results": 60,
+          "effectiveness": 4.5
+        },
+        {
+          "search_id": 52,
+          "query": "\"Epstein\" (defend OR support OR expose OR accuse OR \"protecting\" OR \"implicated\")",
+          "results": 59,
+          "effectiveness": 4.5
+        },
+        {
+          "search_id": 53,
+          "query": "find different 2024",
+          "results": 59,
+          "effectiveness": 4.5
+        },
+        {
+          "search_id": 54,
+          "query": "find different recent",
+          "results": 60,
+          "effectiveness": 4.918529870339563
+        },
+        {
+          "search_id": 56,
+          "query": "\"Epstein\" (\"client list\" OR \"unsealed documents\" OR \"names revealed\" OR \"cover-up\" OR \"conspiracy\")",
+          "results": 58,
+          "effectiveness": 4.518901083294073
+        },
+        {
+          "search_id": 57,
+          "query": "find different 2024",
+          "results": 59,
+          "effectiveness": 4.832490663827482
+        },
+        {
+          "search_id": 58,
+          "query": "find different recent",
+          "results": 60,
+          "effectiveness": 4.517870902094041
+        },
+        {
+          "search_id": 59,
+          "query": "find different 2024",
+          "results": 59,
+          "effectiveness": 4.677413107420222
+        },
+        {
+          "search_id": 60,
+          "query": "find different recent",
+          "results": 60,
+          "effectiveness": 4.5
+        },
+        {
+          "search_id": 61,
+          "query": "find different 2024",
+          "results": 59,
+          "effectiveness": 4.6912834526119145
+        },
+        {
+          "search_id": 62,
+          "query": "find different recent",
+          "results": 60,
+          "effectiveness": 4.822471409899215
+        },
+        {
+          "search_id": 65,
+          "query": "find different 2024",
+          "results": 59,
+          "effectiveness": 4.821802440141098
+        },
+        {
+          "search_id": 66,
+          "query": "find different recent",
+          "results": 60,
+          "effectiveness": 4.790293836691677
+        },
+        {
+          "search_id": 67,
+          "query": "\"Epstein unsealed documents\" (narrative OR theory OR \"official story\" OR \"alternative view\" OR \"real story\")",
+          "results": 1,
+          "effectiveness": 2.9052333632378438
+        },
+        {
+          "search_id": 68,
+          "query": "\"Epstein client list\" (implicated OR protecting OR \"cover up\" OR \"justice\" OR \"accountability\")",
+          "results": 60,
+          "effectiveness": 4.5
+        },
+        {
+          "search_id": 69,
+          "query": "find different 2024",
+          "results": 59,
+          "effectiveness": 4.682275684506506
+        },
+        {
+          "search_id": 70,
+          "query": "find different recent",
+          "results": 60,
+          "effectiveness": 4.602391846205177
+        },
+        {
+          "search_id": 73,
+          "query": "find different 2024",
+          "results": 59,
+          "effectiveness": 4.5
+        },
+        {
+          "search_id": 74,
+          "query": "find different recent",
+          "results": 60,
+          "effectiveness": 4.5
+        },
+        {
+          "search_id": 75,
+          "query": "find different 2024",
+          "results": 59,
+          "effectiveness": 4.5
+        },
+        {
+          "search_id": 76,
+          "query": "find different recent",
+          "results": 60,
+          "effectiveness": 4.5
+        },
+        {
+          "search_id": 77,
+          "query": "find different 2024",
+          "results": 59,
+          "effectiveness": 4.792185715842842
+        },
+        {
+          "search_id": 78,
+          "query": "find different recent",
+          "results": 60,
+          "effectiveness": 4.5
+        },
+        {
+          "search_id": 79,
+          "query": "find different 2024",
+          "results": 59,
+          "effectiveness": 4.669192988747474
+        },
+        {
+          "search_id": 80,
+          "query": "find different recent",
+          "results": 60,
+          "effectiveness": 4.5
+        },
+        {
+          "search_id": 81,
+          "query": "find different 2024",
+          "results": 59,
+          "effectiveness": 4.730230021433234
+        },
+        {
+          "search_id": 82,
+          "query": "find different recent",
+          "results": 60,
+          "effectiveness": 4.5
+        },
+        {
+          "search_id": 84,
+          "query": "\"Epstein client list\" (hoax OR \"real list\" OR \"distraction\" OR \"truth\" OR \"cover up\")",
+          "results": 59,
+          "effectiveness": 4.854560346649077
+        },
+        {
+          "search_id": 85,
+          "query": "find different 2024",
+          "results": 59,
+          "effectiveness": 4.564465408234668
+        },
+        {
+          "search_id": 86,
+          "query": "find different recent",
+          "results": 60,
+          "effectiveness": 4.644665758045292
+        },
+        {
+          "search_id": 87,
+          "query": "find different 2024",
+          "results": 59,
+          "effectiveness": 4.689827995202723
+        },
+        {
+          "search_id": 88,
+          "query": "find different recent",
+          "results": 60,
+          "effectiveness": 4.5
+        },
+        {
+          "search_id": 89,
+          "query": "find different 2024",
+          "results": 59,
+          "effectiveness": 4.5
+        },
+        {
+          "search_id": 90,
+          "query": "find different recent",
+          "results": 60,
+          "effectiveness": 4.5
+        },
+        {
+          "search_id": 91,
+          "query": "find different 2024",
+          "results": 59,
+          "effectiveness": 4.831939145275969
+        },
+        {
+          "search_id": 92,
+          "query": "find different recent",
+          "results": 60,
+          "effectiveness": 4.865246336636828
+        },
+        {
+          "search_id": 93,
+          "query": "find different 2024",
+          "results": 59,
+          "effectiveness": 4.950587937084013
+        },
+        {
+          "search_id": 94,
+          "query": "find different recent",
+          "results": 60,
+          "effectiveness": 4.527908419140171
+        },
+        {
+          "search_id": 95,
+          "query": "find different 2024",
+          "results": 59,
+          "effectiveness": 4.5
+        },
+        {
+          "search_id": 96,
+          "query": "find different recent",
+          "results": 60,
+          "effectiveness": 4.5
+        },
+        {
+          "search_id": 97,
+          "query": "find different 2024",
+          "results": 59,
+          "effectiveness": 4.5
+        },
+        {
+          "search_id": 98,
+          "query": "find different recent",
+          "results": 60,
+          "effectiveness": 4.6318856482027515
+        },
+        {
+          "search_id": 99,
+          "query": "find different 2024",
+          "results": 59,
+          "effectiveness": 4.651677732115463
+        },
+        {
+          "search_id": 100,
+          "query": "find different recent",
+          "results": 60,
+          "effectiveness": 4.5549616088947875
+        }
+      ],
+      "ineffective": [
+        {
+          "search_id": 55,
+          "query": "\"Epstein drama\" (current OR ongoing OR \"new developments\" OR \"latest news\") (takes OR sides OR narratives OR theories)",
+          "results": 0,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 83,
+          "query": "\"Epstein unsealed documents\" (defend OR \"protecting\" OR \"attack\" OR \"criticize\")",
+          "results": 0,
+          "effectiveness": 0.0
+        }
+      ]
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "Temporal Search - Adaptive Investigation Round",
+        "avg_effectiveness": 4.603319670505125
+      },
+      {
+        "strategy": "Direct Search - Adaptive Investigation Round",
+        "avg_effectiveness": 4.145408919605473
+      }
+    ],
+    "dead_ends": [
+      "\"Epstein drama\" (current OR ongoing OR \"new developments\" OR \"latest news\") (takes OR sides OR narratives OR theories)",
+      "\"Epstein unsealed documents\" (defend OR \"protecting\" OR \"attack\" OR \"criticize\")"
+    ],
+    "promising_leads": [
+      "\"Epstein\" (scandal OR case OR trial OR controversy)",
+      "\"Epstein\" (narrative OR theory OR \"true story\" OR \"what happened\")",
+      "find different 2024",
+      "\"Epstein\" (sides OR takes OR narrative OR theories OR \"cover up\" OR \"conspiracy\")",
+      "\"Epstein\" (unsealed OR documents OR revelations OR \"new details\") (narrative OR theory OR \"cover up\" OR \"conspiracy\")",
+      "\"Epstein\" (\"client list\" OR \"involved parties\" OR \"co-conspirators\" OR \"names released\")",
+      "\"Epstein\" (\"unsealed documents\" OR \"client list\" OR \"names released\") (reaction OR implications OR fallout)",
+      "\"Epstein\" (narrative OR theory OR \"cover up\" OR \"conspiracy\") (opposing OR \"different view\" OR \"alternative explanation\")"
+    ]
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Direct Search - Adaptive Investigation Round",
+      "searches_count": 2,
+      "total_results": 118,
+      "effectiveness": 4.5,
+      "insights": []
+    },
+    {
+      "round_number": 2,
+      "strategy": "Direct Search - Adaptive Investigation Round",
+      "searches_count": 2,
+      "total_results": 12,
+      "effectiveness": 4.145408919605473,
+      "insights": []
+    },
+    {
+      "round_number": 3,
+      "strategy": "Temporal Search - Adaptive Investigation Round",
+      "searches_count": 2,
+      "total_results": 119,
+      "effectiveness": 4.612578924292677,
+      "insights": []
+    },
+    {
+      "round_number": 4,
+      "strategy": "Temporal Search - Adaptive Investigation Round",
+      "searches_count": 2,
+      "total_results": 119,
+      "effectiveness": 4.5,
+      "insights": []
+    },
+    {
+      "round_number": 5,
+      "strategy": "Temporal Search - Adaptive Investigation Round",
+      "searches_count": 2,
+      "total_results": 119,
+      "effectiveness": 4.5,
+      "insights": []
+    },
+    {
+      "round_number": 6,
+      "strategy": "Temporal Search - Adaptive Investigation Round",
+      "searches_count": 2,
+      "total_results": 119,
+      "effectiveness": 4.51378292364227,
+      "insights": []
+    },
+    {
+      "round_number": 7,
+      "strategy": "Temporal Search - Adaptive Investigation Round",
+      "searches_count": 2,
+      "total_results": 119,
+      "effectiveness": 4.602973225952228,
+      "insights": []
+    },
+    {
+      "round_number": 8,
+      "strategy": "Temporal Search - Adaptive Investigation Round",
+      "searches_count": 2,
+      "total_results": 119,
+      "effectiveness": 4.74377552387004,
+      "insights": []
+    },
+    {
+      "round_number": 9,
+      "strategy": "Temporal Search - Adaptive Investigation Round",
+      "searches_count": 2,
+      "total_results": 119,
+      "effectiveness": 4.825185638047651,
+      "insights": []
+    },
+    {
+      "round_number": 10,
+      "strategy": "Temporal Search - Adaptive Investigation Round",
+      "searches_count": 2,
+      "total_results": 119,
+      "effectiveness": 4.5,
+      "insights": []
+    },
+    {
+      "round_number": 11,
+      "strategy": "Temporal Search - Adaptive Investigation Round",
+      "searches_count": 4,
+      "total_results": 222,
+      "effectiveness": 5.410728534525815,
+      "insights": [
+        "Found 103 relevant results"
+      ]
+    },
+    {
+      "round_number": 12,
+      "strategy": "Temporal Search - Adaptive Investigation Round",
+      "searches_count": 2,
+      "total_results": 119,
+      "effectiveness": 4.9463468484418165,
+      "insights": [
+        "Found 59 relevant results"
+      ]
+    },
+    {
+      "round_number": 13,
+      "strategy": "Temporal Search - Adaptive Investigation Round",
+      "searches_count": 2,
+      "total_results": 119,
+      "effectiveness": 4.9146920741139635,
+      "insights": [
+        "Found 59 relevant results"
+      ]
+    },
+    {
+      "round_number": 14,
+      "strategy": "Temporal Search - Adaptive Investigation Round",
+      "searches_count": 2,
+      "total_results": 119,
+      "effectiveness": 4.776883184939645,
+      "insights": []
+    },
+    {
+      "round_number": 15,
+      "strategy": "Temporal Search - Adaptive Investigation Round",
+      "searches_count": 2,
+      "total_results": 119,
+      "effectiveness": 4.6158252043991,
+      "insights": []
+    },
+    {
+      "round_number": 16,
+      "strategy": "Temporal Search - Adaptive Investigation Round",
+      "searches_count": 2,
+      "total_results": 119,
+      "effectiveness": 4.550973455910385,
+      "insights": []
+    },
+    {
+      "round_number": 17,
+      "strategy": "Temporal Search - Adaptive Investigation Round",
+      "searches_count": 2,
+      "total_results": 119,
+      "effectiveness": 4.5,
+      "insights": []
+    },
+    {
+      "round_number": 18,
+      "strategy": "Temporal Search - Adaptive Investigation Round",
+      "searches_count": 4,
+      "total_results": 229,
+      "effectiveness": 5.333185919398595,
+      "insights": [
+        "Found 51 relevant results"
+      ]
+    },
+    {
+      "round_number": 19,
+      "strategy": "Temporal Search - Adaptive Investigation Round",
+      "searches_count": 4,
+      "total_results": 236,
+      "effectiveness": 4.686335903149377,
+      "insights": []
+    },
+    {
+      "round_number": 20,
+      "strategy": "Temporal Search - Adaptive Investigation Round",
+      "searches_count": 2,
+      "total_results": 119,
+      "effectiveness": 4.5,
+      "insights": []
+    },
+    {
+      "round_number": 21,
+      "strategy": "Temporal Search - Adaptive Investigation Round",
+      "searches_count": 2,
+      "total_results": 119,
+      "effectiveness": 4.586837125751824,
+      "insights": []
+    },
+    {
+      "round_number": 22,
+      "strategy": "Temporal Search - Adaptive Investigation Round",
+      "searches_count": 4,
+      "total_results": 238,
+      "effectiveness": 4.579165071798968,
+      "insights": []
+    },
+    {
+      "round_number": 23,
+      "strategy": "Temporal Search - Adaptive Investigation Round",
+      "searches_count": 4,
+      "total_results": 177,
+      "effectiveness": 3.4843577384084083,
+      "insights": [
+        "1 searches yielded no results"
+      ]
+    },
+    {
+      "round_number": 24,
+      "strategy": "Temporal Search - Adaptive Investigation Round",
+      "searches_count": 2,
+      "total_results": 119,
+      "effectiveness": 4.675180782960761,
+      "insights": []
+    },
+    {
+      "round_number": 25,
+      "strategy": "Temporal Search - Adaptive Investigation Round",
+      "searches_count": 2,
+      "total_results": 119,
+      "effectiveness": 4.588706553710111,
+      "insights": []
+    },
+    {
+      "round_number": 26,
+      "strategy": "Temporal Search - Adaptive Investigation Round",
+      "searches_count": 4,
+      "total_results": 225,
+      "effectiveness": 5.774859367719334,
+      "insights": [
+        "Found 106 relevant results"
+      ]
+    },
+    {
+      "round_number": 27,
+      "strategy": "Temporal Search - Adaptive Investigation Round",
+      "searches_count": 4,
+      "total_results": 180,
+      "effectiveness": 4.254332410017655,
+      "insights": []
+    },
+    {
+      "round_number": 28,
+      "strategy": "Temporal Search - Adaptive Investigation Round",
+      "searches_count": 4,
+      "total_results": 224,
+      "effectiveness": 5.219140058567132,
+      "insights": [
+        "Found 105 relevant results"
+      ]
+    },
+    {
+      "round_number": 29,
+      "strategy": "Temporal Search - Adaptive Investigation Round",
+      "searches_count": 2,
+      "total_results": 119,
+      "effectiveness": 4.5,
+      "insights": []
+    },
+    {
+      "round_number": 30,
+      "strategy": "Temporal Search - Adaptive Investigation Round",
+      "searches_count": 2,
+      "total_results": 119,
+      "effectiveness": 4.5,
+      "insights": []
+    },
+    {
+      "round_number": 31,
+      "strategy": "Temporal Search - Adaptive Investigation Round",
+      "searches_count": 2,
+      "total_results": 119,
+      "effectiveness": 4.6460928579214205,
+      "insights": []
+    },
+    {
+      "round_number": 32,
+      "strategy": "Temporal Search - Adaptive Investigation Round",
+      "searches_count": 2,
+      "total_results": 119,
+      "effectiveness": 4.584596494373737,
+      "insights": []
+    },
+    {
+      "round_number": 33,
+      "strategy": "Temporal Search - Adaptive Investigation Round",
+      "searches_count": 4,
+      "total_results": 178,
+      "effectiveness": 3.5211975920205774,
+      "insights": [
+        "1 searches yielded no results"
+      ]
+    },
+    {
+      "round_number": 34,
+      "strategy": "Temporal Search - Adaptive Investigation Round",
+      "searches_count": 2,
+      "total_results": 119,
+      "effectiveness": 4.60456558313998,
+      "insights": []
+    },
+    {
+      "round_number": 35,
+      "strategy": "Temporal Search - Adaptive Investigation Round",
+      "searches_count": 2,
+      "total_results": 119,
+      "effectiveness": 4.5949139976013615,
+      "insights": []
+    },
+    {
+      "round_number": 36,
+      "strategy": "Temporal Search - Adaptive Investigation Round",
+      "searches_count": 2,
+      "total_results": 119,
+      "effectiveness": 4.5,
+      "insights": []
+    },
+    {
+      "round_number": 37,
+      "strategy": "Temporal Search - Adaptive Investigation Round",
+      "searches_count": 2,
+      "total_results": 119,
+      "effectiveness": 4.8485927409563985,
+      "insights": []
+    },
+    {
+      "round_number": 38,
+      "strategy": "Temporal Search - Adaptive Investigation Round",
+      "searches_count": 2,
+      "total_results": 119,
+      "effectiveness": 4.739248178112092,
+      "insights": []
+    },
+    {
+      "round_number": 39,
+      "strategy": "Temporal Search - Adaptive Investigation Round",
+      "searches_count": 2,
+      "total_results": 119,
+      "effectiveness": 4.5,
+      "insights": []
+    },
+    {
+      "round_number": 40,
+      "strategy": "Temporal Search - Adaptive Investigation Round",
+      "searches_count": 2,
+      "total_results": 119,
+      "effectiveness": 4.565942824101375,
+      "insights": []
+    },
+    {
+      "round_number": 41,
+      "strategy": "Temporal Search - Adaptive Investigation Round",
+      "searches_count": 2,
+      "total_results": 119,
+      "effectiveness": 4.603319670505125,
+      "insights": []
+    }
+  ]
+}

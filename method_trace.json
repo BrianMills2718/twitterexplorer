@@ -1,0 +1,7 @@
+[
+  {
+    "method": "_analyze_round_results_with_llm",
+    "args_count": 3,
+    "kwargs": []
+  }
+]

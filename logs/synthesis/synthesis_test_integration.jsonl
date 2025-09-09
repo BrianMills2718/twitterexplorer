@@ -1,0 +1,143 @@
+{"event": "datapoint_added", "datapoint_id": "dp_4", "pending_count": 1, "timestamp": "2025-09-05T09:50:43.864124"}
+{"event": "datapoint_added", "datapoint_id": "dp_0", "pending_count": 1, "timestamp": "2025-09-05T09:50:44.252284"}
+{"event": "datapoint_added", "datapoint_id": "dp_0", "pending_count": 1, "timestamp": "2025-09-05T09:50:44.252284"}
+{"event": "datapoint_added", "datapoint_id": "dp_1", "pending_count": 2, "timestamp": "2025-09-05T09:50:44.252794"}
+{"event": "datapoint_added", "datapoint_id": "dp_1", "pending_count": 2, "timestamp": "2025-09-05T09:50:44.252794"}
+{"event": "datapoint_added", "datapoint_id": "dp_2", "pending_count": 3, "timestamp": "2025-09-05T09:50:44.253315"}
+{"event": "datapoint_added", "datapoint_id": "dp_2", "pending_count": 3, "timestamp": "2025-09-05T09:50:44.253315"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "'Mock' object is not subscriptable", "timestamp": "2025-09-05T09:50:44.253824"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "'Mock' object is not subscriptable", "timestamp": "2025-09-05T09:50:44.253824"}
+{"event": "datapoint_added", "datapoint_id": "dp_3", "pending_count": 4, "timestamp": "2025-09-05T09:50:44.253824"}
+{"event": "datapoint_added", "datapoint_id": "dp_3", "pending_count": 4, "timestamp": "2025-09-05T09:50:44.253824"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "'Mock' object is not subscriptable", "timestamp": "2025-09-05T09:50:44.253824"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "'Mock' object is not subscriptable", "timestamp": "2025-09-05T09:50:44.253824"}
+{"event": "datapoint_added", "datapoint_id": "dp_4", "pending_count": 5, "timestamp": "2025-09-05T09:50:44.253824"}
+{"event": "datapoint_added", "datapoint_id": "dp_4", "pending_count": 5, "timestamp": "2025-09-05T09:50:44.253824"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "'Mock' object is not subscriptable", "timestamp": "2025-09-05T09:50:44.253824"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "'Mock' object is not subscriptable", "timestamp": "2025-09-05T09:50:44.253824"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:50:44.265643"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:50:44.265643"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:50:44.265643"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:50:44.265643"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:50:44.265643"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:50:44.265643"}
+{"event": "datapoint_added", "datapoint_id": "dp_0", "pending_count": 1, "timestamp": "2025-09-05T09:51:14.804285"}
+{"event": "datapoint_added", "datapoint_id": "dp_1", "pending_count": 2, "timestamp": "2025-09-05T09:51:14.804809"}
+{"event": "datapoint_added", "datapoint_id": "dp_2", "pending_count": 3, "timestamp": "2025-09-05T09:51:14.804809"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:51:14.805901"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-05T09:51:14.806059"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-05T09:51:14.806059"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 1, "groups": [{"theme": "Trump Epstein relationship", "datapoint_count": 5, "synthesis_worthy": true}], "timestamp": "2025-09-05T09:51:14.806577"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-05T09:51:14.806577"}
+{"event": "grouping_error", "error": "'Mock' object does not support item assignment", "datapoint_count": 3, "timestamp": "2025-09-05T09:51:14.807080"}
+{"event": "synthesis_completed", "insights_created": 0, "timestamp": "2025-09-05T09:51:14.807137"}
+{"event": "datapoint_added", "datapoint_id": "dp_3", "pending_count": 1, "timestamp": "2025-09-05T09:51:14.807137"}
+{"event": "datapoint_added", "datapoint_id": "dp_4", "pending_count": 2, "timestamp": "2025-09-05T09:51:14.807137"}
+{"event": "datapoint_added", "datapoint_id": "dp_0", "pending_count": 1, "timestamp": "2025-09-05T09:51:15.174631"}
+{"event": "datapoint_added", "datapoint_id": "dp_0", "pending_count": 1, "timestamp": "2025-09-05T09:51:15.174631"}
+{"event": "datapoint_added", "datapoint_id": "dp_1", "pending_count": 2, "timestamp": "2025-09-05T09:51:15.174631"}
+{"event": "datapoint_added", "datapoint_id": "dp_1", "pending_count": 2, "timestamp": "2025-09-05T09:51:15.174631"}
+{"event": "datapoint_added", "datapoint_id": "dp_2", "pending_count": 3, "timestamp": "2025-09-05T09:51:15.174631"}
+{"event": "datapoint_added", "datapoint_id": "dp_2", "pending_count": 3, "timestamp": "2025-09-05T09:51:15.174631"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "'Mock' object is not subscriptable", "timestamp": "2025-09-05T09:51:15.175629"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "'Mock' object is not subscriptable", "timestamp": "2025-09-05T09:51:15.175629"}
+{"event": "datapoint_added", "datapoint_id": "dp_3", "pending_count": 4, "timestamp": "2025-09-05T09:51:15.175629"}
+{"event": "datapoint_added", "datapoint_id": "dp_3", "pending_count": 4, "timestamp": "2025-09-05T09:51:15.175629"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "'Mock' object is not subscriptable", "timestamp": "2025-09-05T09:51:15.175629"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "'Mock' object is not subscriptable", "timestamp": "2025-09-05T09:51:15.175629"}
+{"event": "datapoint_added", "datapoint_id": "dp_4", "pending_count": 5, "timestamp": "2025-09-05T09:51:15.175629"}
+{"event": "datapoint_added", "datapoint_id": "dp_4", "pending_count": 5, "timestamp": "2025-09-05T09:51:15.175629"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "'Mock' object is not subscriptable", "timestamp": "2025-09-05T09:51:15.175629"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "'Mock' object is not subscriptable", "timestamp": "2025-09-05T09:51:15.175629"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": false, "result_type": null, "error": "LLM connection failed", "timestamp": "2025-09-05T09:51:15.180629"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": false, "result_type": null, "error": "LLM connection failed", "timestamp": "2025-09-05T09:51:15.180629"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": false, "result_type": null, "error": "LLM connection failed", "timestamp": "2025-09-05T09:51:15.180629"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": false, "result_type": null, "error": "LLM connection failed", "timestamp": "2025-09-05T09:51:15.180629"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:51:15.183629"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:51:15.183629"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:51:15.183629"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:51:15.183629"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:51:15.183629"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:51:15.183629"}
+{"event": "datapoint_added", "datapoint_id": "dp_0", "pending_count": 1, "timestamp": "2025-09-05T09:51:37.587898"}
+{"event": "datapoint_added", "datapoint_id": "dp_1", "pending_count": 2, "timestamp": "2025-09-05T09:51:37.587898"}
+{"event": "datapoint_added", "datapoint_id": "dp_2", "pending_count": 3, "timestamp": "2025-09-05T09:51:37.587898"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:51:37.588898"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-05T09:51:37.588898"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-05T09:51:37.588898"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 1, "groups": [{"theme": "Trump Epstein relationship", "datapoint_count": 5, "synthesis_worthy": true}], "timestamp": "2025-09-05T09:51:37.588898"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-05T09:51:37.588898"}
+{"event": "insight_creation", "success": true, "insight_title": "Pattern in Trump Statements", "insight_confidence": 0.8, "timestamp": "2025-09-05T09:51:37.589898"}
+{"event": "synthesis_completed", "insights_created": 1, "timestamp": "2025-09-05T09:51:37.589898"}
+{"event": "datapoint_added", "datapoint_id": "dp_0", "pending_count": 1, "timestamp": "2025-09-05T09:51:48.941802"}
+{"event": "datapoint_added", "datapoint_id": "dp_1", "pending_count": 2, "timestamp": "2025-09-05T09:51:48.941802"}
+{"event": "datapoint_added", "datapoint_id": "dp_2", "pending_count": 3, "timestamp": "2025-09-05T09:51:48.941802"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:51:48.942901"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-05T09:51:48.942901"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-05T09:51:48.942901"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 1, "groups": [{"theme": "Trump Epstein relationship", "datapoint_count": 5, "synthesis_worthy": true}], "timestamp": "2025-09-05T09:51:48.942901"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-05T09:51:48.942901"}
+{"event": "insight_creation", "success": true, "insight_title": "Pattern in Trump Statements", "insight_confidence": 0.8, "timestamp": "2025-09-05T09:51:48.942901"}
+{"event": "synthesis_completed", "insights_created": 1, "timestamp": "2025-09-05T09:51:48.942901"}
+{"event": "datapoint_added", "datapoint_id": "dp_0", "pending_count": 1, "timestamp": "2025-09-05T09:51:48.944925"}
+{"event": "datapoint_added", "datapoint_id": "dp_0", "pending_count": 1, "timestamp": "2025-09-05T09:51:48.944925"}
+{"event": "datapoint_added", "datapoint_id": "dp_1", "pending_count": 2, "timestamp": "2025-09-05T09:51:48.944925"}
+{"event": "datapoint_added", "datapoint_id": "dp_1", "pending_count": 2, "timestamp": "2025-09-05T09:51:48.944925"}
+{"event": "datapoint_added", "datapoint_id": "dp_2", "pending_count": 3, "timestamp": "2025-09-05T09:51:48.944925"}
+{"event": "datapoint_added", "datapoint_id": "dp_2", "pending_count": 3, "timestamp": "2025-09-05T09:51:48.944925"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "'Mock' object is not subscriptable", "timestamp": "2025-09-05T09:51:48.945925"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "'Mock' object is not subscriptable", "timestamp": "2025-09-05T09:51:48.945925"}
+{"event": "datapoint_added", "datapoint_id": "dp_3", "pending_count": 4, "timestamp": "2025-09-05T09:51:48.945925"}
+{"event": "datapoint_added", "datapoint_id": "dp_3", "pending_count": 4, "timestamp": "2025-09-05T09:51:48.945925"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "'Mock' object is not subscriptable", "timestamp": "2025-09-05T09:51:48.945925"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "'Mock' object is not subscriptable", "timestamp": "2025-09-05T09:51:48.945925"}
+{"event": "datapoint_added", "datapoint_id": "dp_4", "pending_count": 5, "timestamp": "2025-09-05T09:51:48.945925"}
+{"event": "datapoint_added", "datapoint_id": "dp_4", "pending_count": 5, "timestamp": "2025-09-05T09:51:48.945925"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "'Mock' object is not subscriptable", "timestamp": "2025-09-05T09:51:48.945925"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "'Mock' object is not subscriptable", "timestamp": "2025-09-05T09:51:48.945925"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": false, "result_type": null, "error": "LLM connection failed", "timestamp": "2025-09-05T09:51:48.948919"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": false, "result_type": null, "error": "LLM connection failed", "timestamp": "2025-09-05T09:51:48.948919"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": false, "result_type": null, "error": "LLM connection failed", "timestamp": "2025-09-05T09:51:48.948919"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": false, "result_type": null, "error": "LLM connection failed", "timestamp": "2025-09-05T09:51:48.948919"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:51:48.952921"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:51:48.952921"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:51:48.952921"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:51:48.952921"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:51:48.952921"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:51:48.952921"}
+{"event": "datapoint_added", "datapoint_id": "dp_0", "pending_count": 1, "timestamp": "2025-09-05T09:55:52.970098"}
+{"event": "datapoint_added", "datapoint_id": "dp_1", "pending_count": 2, "timestamp": "2025-09-05T09:55:52.970098"}
+{"event": "datapoint_added", "datapoint_id": "dp_2", "pending_count": 3, "timestamp": "2025-09-05T09:55:52.970098"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:55:52.971207"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-05T09:55:52.971207"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-05T09:55:52.971718"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 1, "groups": [{"theme": "Trump Epstein relationship", "datapoint_count": 5, "synthesis_worthy": true}], "timestamp": "2025-09-05T09:55:52.971718"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-05T09:55:52.971718"}
+{"event": "insight_creation", "success": true, "insight_title": "Pattern in Trump Statements", "insight_confidence": 0.8, "timestamp": "2025-09-05T09:55:52.971718"}
+{"event": "synthesis_completed", "insights_created": 1, "timestamp": "2025-09-05T09:55:52.971718"}
+{"event": "datapoint_added", "datapoint_id": "dp_0", "pending_count": 1, "timestamp": "2025-09-05T09:55:52.973738"}
+{"event": "datapoint_added", "datapoint_id": "dp_0", "pending_count": 1, "timestamp": "2025-09-05T09:55:52.973738"}
+{"event": "datapoint_added", "datapoint_id": "dp_1", "pending_count": 2, "timestamp": "2025-09-05T09:55:52.973738"}
+{"event": "datapoint_added", "datapoint_id": "dp_1", "pending_count": 2, "timestamp": "2025-09-05T09:55:52.973738"}
+{"event": "datapoint_added", "datapoint_id": "dp_2", "pending_count": 3, "timestamp": "2025-09-05T09:55:52.973738"}
+{"event": "datapoint_added", "datapoint_id": "dp_2", "pending_count": 3, "timestamp": "2025-09-05T09:55:52.973738"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "'Mock' object is not subscriptable", "timestamp": "2025-09-05T09:55:52.973738"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "'Mock' object is not subscriptable", "timestamp": "2025-09-05T09:55:52.973738"}
+{"event": "datapoint_added", "datapoint_id": "dp_3", "pending_count": 4, "timestamp": "2025-09-05T09:55:52.973738"}
+{"event": "datapoint_added", "datapoint_id": "dp_3", "pending_count": 4, "timestamp": "2025-09-05T09:55:52.973738"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "'Mock' object is not subscriptable", "timestamp": "2025-09-05T09:55:52.973738"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "'Mock' object is not subscriptable", "timestamp": "2025-09-05T09:55:52.973738"}
+{"event": "datapoint_added", "datapoint_id": "dp_4", "pending_count": 5, "timestamp": "2025-09-05T09:55:52.974735"}
+{"event": "datapoint_added", "datapoint_id": "dp_4", "pending_count": 5, "timestamp": "2025-09-05T09:55:52.974735"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "'Mock' object is not subscriptable", "timestamp": "2025-09-05T09:55:52.974735"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": false, "result_type": null, "error": "'Mock' object is not subscriptable", "timestamp": "2025-09-05T09:55:52.974735"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": false, "result_type": null, "error": "LLM connection failed", "timestamp": "2025-09-05T09:55:52.977717"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": false, "result_type": null, "error": "LLM connection failed", "timestamp": "2025-09-05T09:55:52.977717"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": false, "result_type": null, "error": "LLM connection failed", "timestamp": "2025-09-05T09:55:52.977717"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": false, "result_type": null, "error": "LLM connection failed", "timestamp": "2025-09-05T09:55:52.977717"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:55:52.981716"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:55:52.981716"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:55:52.981716"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:55:52.981716"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:55:52.981716"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-05T09:55:52.981716"}

@@ -1,0 +1,23 @@
+{
+  "llm_evaluation": {
+    "works": true,
+    "score": 1.0
+  },
+  "analysis_flow": {
+    "pre_analysis": {
+      "session_findings": 0,
+      "results_count": 1
+    },
+    "post_analysis": {
+      "session_findings": 2,
+      "graph_nodes": 11,
+      "datapoint_nodes": 2
+    }
+  },
+  "final_state": {
+    "total_findings": 2,
+    "satisfaction": 0.29500000000000004,
+    "graph_nodes": 11,
+    "datapoint_nodes": 2
+  }
+}

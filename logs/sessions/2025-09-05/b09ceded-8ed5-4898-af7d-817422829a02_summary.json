@@ -1,0 +1,157 @@
+{
+  "session_metadata": {
+    "session_id": "b09ceded-8ed5-4898-af7d-817422829a02",
+    "start_time": "2025-09-05T13:04:18.251520+00:00",
+    "end_time": "2025-09-05T13:15:38.448087+00:00",
+    "duration_seconds": 680.195568,
+    "user_query": "What is Elon Musk saying about Twitter recently?"
+  },
+  "configuration": {
+    "max_searches": 10,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.7,
+    "min_searches_before_satisfaction": 3,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "pages_per_search": 2,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true,
+    "enforce_endpoint_diversity": true,
+    "max_endpoint_repeats": 3,
+    "diversity_threshold": 0.3
+  },
+  "performance_metrics": {
+    "total_searches": 10,
+    "total_rounds": 2,
+    "total_results_found": 525,
+    "satisfaction_score": 0.33999999999999986,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.4,
+      "source_diversity": 0.3,
+      "evidence_quality": 0.6749999999999996,
+      "claim_specificity": 0.075,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Reached maximum search limit (10)"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [
+        {
+          "search_id": 10,
+          "query": "",
+          "results": 166,
+          "effectiveness": 8.0
+        }
+      ],
+      "moderately_effective": [
+        {
+          "search_id": 1,
+          "query": "from:elonmusk (Twitter OR \"X\" OR \"X.com\" OR twitter.com)",
+          "results": 60,
+          "effectiveness": 6.0
+        },
+        {
+          "search_id": 2,
+          "query": "",
+          "results": 60,
+          "effectiveness": 6.0
+        },
+        {
+          "search_id": 3,
+          "query": "elonmusk Twitter -from:elonmusk",
+          "results": 60,
+          "effectiveness": 6.0
+        },
+        {
+          "search_id": 5,
+          "query": "",
+          "results": 50,
+          "effectiveness": 5.0
+        },
+        {
+          "search_id": 6,
+          "query": "from:elonmusk (Twitter OR \"X\" OR \"X.com\" OR \"Twitter/X\" OR \"@Twitter\")",
+          "results": 60,
+          "effectiveness": 6.0
+        },
+        {
+          "search_id": 8,
+          "query": "",
+          "results": 60,
+          "effectiveness": 6.0
+        }
+      ],
+      "low_effectiveness": [],
+      "ineffective": [
+        {
+          "search_id": 4,
+          "query": "",
+          "results": 1,
+          "effectiveness": 0.1
+        },
+        {
+          "search_id": 7,
+          "query": "(\"Elon Musk\" Twitter OR \"Elon Musk\" X OR \"Elon Musk\" \"X.com\") (from:reuters OR from:nytimes OR from:bloomberg OR from:washingtonpost OR from:bbcnews)",
+          "results": 7,
+          "effectiveness": 0.7
+        },
+        {
+          "search_id": 9,
+          "query": "",
+          "results": 1,
+          "effectiveness": 0.1
+        }
+      ]
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "Graph Strategy: We need to close the primary information gap: what exactly Elon Musk has been saying about Twitter (a.k.a. X) in the recent period. The investigation should (1) capture his direct statements that mention Twitter/X, (2) capture context from his full recent timeline to spot indirect statements or policy/operational announcements, (3) collect how others are framing or reacting to his Twitter/X comments, and (4) situate those statements against current public interest/trends. To do this efficiently and robustly, the next round must use multiple endpoints (not only search) to get primary-source tweets, profile metadata, broader public reaction, and trending context.",
+        "avg_effectiveness": 4.62
+      },
+      {
+        "strategy": "Graph Strategy: We need to fill the investigation's biggest gaps: (1) capture Elon Musk's *explicit* recent mentions of Twitter/X, (2) capture his full recent chronology to detect indirect platform-related comments, (3) collect top media/public reactions, and (4) verify profile metadata and trending context. To do that efficiently and reliably, the next round must use multiple complementary endpoints (not just search.php). The planned queries combine targeted 'from:' searches for direct statements, a full timeline pull to catch implicit/indirect commentary, media-targeted searches for how press outlets frame his remarks, profile verification, follower mapping for key amplifiers, and trends to check public salience. This set follows the Diversity Rule (multiple endpoint types) and addresses the explicit gaps listed in the context.",
+        "avg_effectiveness": 4.159999999999999
+      }
+    ],
+    "dead_ends": [
+      "",
+      "(\"Elon Musk\" Twitter OR \"Elon Musk\" X OR \"Elon Musk\" \"X.com\") (from:reuters OR from:nytimes OR from:bloomberg OR from:washingtonpost OR from:bbcnews)"
+    ],
+    "promising_leads": [
+      "from:elonmusk (Twitter OR \"X\" OR \"X.com\" OR twitter.com)",
+      "",
+      "elonmusk Twitter -from:elonmusk",
+      "from:elonmusk (Twitter OR \"X\" OR \"X.com\" OR \"Twitter/X\" OR \"@Twitter\")"
+    ]
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Graph Strategy: We need to close the primary information gap: what exactly Elon Musk has been saying about Twitter (a.k.a. X) in the recent period. The investigation should (1) capture his direct statements that mention Twitter/X, (2) capture context from his full recent timeline to spot indirect statements or policy/operational announcements, (3) collect how others are framing or reacting to his Twitter/X comments, and (4) situate those statements against current public interest/trends. To do this efficiently and robustly, the next round must use multiple endpoints (not only search) to get primary-source tweets, profile metadata, broader public reaction, and trending context.",
+      "searches_count": 5,
+      "total_results": 231,
+      "effectiveness": 4.62,
+      "insights": [
+        "Found 180 relevant results",
+        "1 searches yielded no results"
+      ]
+    },
+    {
+      "round_number": 2,
+      "strategy": "Graph Strategy: We need to fill the investigation's biggest gaps: (1) capture Elon Musk's *explicit* recent mentions of Twitter/X, (2) capture his full recent chronology to detect indirect platform-related comments, (3) collect top media/public reactions, and (4) verify profile metadata and trending context. To do that efficiently and reliably, the next round must use multiple complementary endpoints (not just search.php). The planned queries combine targeted 'from:' searches for direct statements, a full timeline pull to catch implicit/indirect commentary, media-targeted searches for how press outlets frame his remarks, profile verification, follower mapping for key amplifiers, and trends to check public salience. This set follows the Diversity Rule (multiple endpoint types) and addresses the explicit gaps listed in the context.",
+      "searches_count": 5,
+      "total_results": 294,
+      "effectiveness": 4.159999999999999,
+      "insights": [
+        "Found 286 relevant results",
+        "2 searches yielded no results"
+      ]
+    }
+  ]
+}

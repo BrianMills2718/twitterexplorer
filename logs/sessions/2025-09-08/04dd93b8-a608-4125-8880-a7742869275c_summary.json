@@ -1,0 +1,127 @@
+{
+  "session_metadata": {
+    "session_id": "04dd93b8-a608-4125-8880-a7742869275c",
+    "start_time": "2025-09-08T09:24:08.707114+00:00",
+    "end_time": "2025-09-08T09:27:51.350827+00:00",
+    "duration_seconds": 222.642713,
+    "user_query": "Trump sent military to Venezuela recent news"
+  },
+  "configuration": {
+    "max_searches": 8,
+    "max_time_minutes": 3,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.8,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "pages_per_search": 3,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true,
+    "enforce_endpoint_diversity": false,
+    "max_endpoint_repeats": 5,
+    "diversity_threshold": 0.3
+  },
+  "performance_metrics": {
+    "total_searches": 8,
+    "total_rounds": 1,
+    "total_results_found": 312,
+    "satisfaction_score": 0.4247368421052631,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.4,
+      "source_diversity": 0.3,
+      "evidence_quality": 0.7747368421052627,
+      "claim_specificity": 0.47368421052631576,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Reached maximum search limit (8)"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [],
+      "moderately_effective": [
+        {
+          "search_id": 2,
+          "query": "(\"Trump\" AND (Venezuela OR Venezuelan) AND (troops OR military OR 'sent troops' OR 'sent military')) -filter:replies",
+          "results": 59,
+          "effectiveness": 5.9
+        },
+        {
+          "search_id": 4,
+          "query": "",
+          "results": 61,
+          "effectiveness": 6.1
+        },
+        {
+          "search_id": 7,
+          "query": "",
+          "results": 60,
+          "effectiveness": 6.0
+        },
+        {
+          "search_id": 8,
+          "query": "",
+          "results": 50,
+          "effectiveness": 5.0
+        }
+      ],
+      "low_effectiveness": [
+        {
+          "search_id": 1,
+          "query": "\"Trump sent military to Venezuela\" OR \"sent troops to Venezuela\" OR \"Trump troops Venezuela\"",
+          "results": 38,
+          "effectiveness": 3.8
+        },
+        {
+          "search_id": 3,
+          "query": "from:reuters Trump Venezuela OR \"sent troops\"",
+          "results": 43,
+          "effectiveness": 4.3
+        }
+      ],
+      "ineffective": [
+        {
+          "search_id": 5,
+          "query": "",
+          "results": 0,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 6,
+          "query": "",
+          "results": 1,
+          "effectiveness": 0.1
+        }
+      ]
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "Graph Strategy: The primary gap is verifying whether there is any credible, recent reporting or direct social-media claims that \"Trump sent military to Venezuela.\" We must (1) locate origin tweets or viral posts that assert this, (2) check reputable news outlets for reporting or denials, and (3) collect official accounts (US DoD, White House, Venezuelan government) for confirmation/response. To satisfy the investigation constraints, the plan uses multiple endpoint types (search, timelines, profile/status, trends) so results can be cross-checked and we can pivot to conversation-level analysis (tweet/thread endpoints) once candidate tweets are found.",
+        "avg_effectiveness": 3.9000000000000004
+      }
+    ],
+    "dead_ends": [
+      ""
+    ],
+    "promising_leads": [
+      "(\"Trump\" AND (Venezuela OR Venezuelan) AND (troops OR military OR 'sent troops' OR 'sent military')) -filter:replies",
+      ""
+    ]
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Graph Strategy: The primary gap is verifying whether there is any credible, recent reporting or direct social-media claims that \"Trump sent military to Venezuela.\" We must (1) locate origin tweets or viral posts that assert this, (2) check reputable news outlets for reporting or denials, and (3) collect official accounts (US DoD, White House, Venezuelan government) for confirmation/response. To satisfy the investigation constraints, the plan uses multiple endpoint types (search, timelines, profile/status, trends) so results can be cross-checked and we can pivot to conversation-level analysis (tweet/thread endpoints) once candidate tweets are found.",
+      "searches_count": 8,
+      "total_results": 312,
+      "effectiveness": 3.9000000000000004,
+      "insights": [
+        "Found 180 relevant results",
+        "2 searches yielded no results"
+      ]
+    }
+  ]
+}

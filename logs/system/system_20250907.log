@@ -1,0 +1,67 @@
+2025-09-07 18:03:48,239 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-07 18:04:01,699 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-07 18:05:32,363 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-07 18:05:33,864 - INFO - ConcreteInvestigationBridge initialized - architectural integration active
+2025-09-07 18:40:21,000 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-07 18:40:33,899 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-07 18:40:58,425 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-07 18:45:36,771 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-07 18:45:54,748 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-07 18:47:55,689 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-07 18:47:57,281 - INFO - ConcreteInvestigationBridge initialized - architectural integration active
+2025-09-07 18:47:57,282 - INFO - Started investigation session 9b71ed29-b9e1-4b36-bb3b-a8dd5348dea6 for query: Bridge scoping test...
+2025-09-07 18:47:57,282 - INFO - DIAGNOSTIC: Prompt size: 7091 chars, 827 words
+2025-09-07 18:47:57,282 - INFO - DIAGNOSTIC: Prompt lines: 189 lines
+2025-09-07 18:47:57,287 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-07 18:48:35,071 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-07 18:48:35,078 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-07 18:48:35,079 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-09-07 18:48:35,080 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-09-07 18:48:35,080 - INFO - DIAGNOSTIC: Searches count: 6
+2025-09-07 18:48:35,080 - INFO - DIAGNOSTIC: Reasoning length: 878 chars
+2025-09-07 18:48:35,080 - INFO - DIAGNOSTIC: Search 1 - Endpoint: search.php
+2025-09-07 18:48:35,080 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': '"Bridge scoping test"', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-07 18:48:35,081 - INFO - DIAGNOSTIC: Search 1 - Reasoning: Find exact-phrase, recent posts that explicitly mention 'Bridge scoping test' so we can identify pri...
+2025-09-07 18:48:35,081 - INFO - DIAGNOSTIC: Search 2 - Endpoint: search.php
+2025-09-07 18:48:35,081 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': 'bridge scoping OR "scoping test" (bridge OR "bridge inspection" OR "bridge assessment")', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Top', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-07 18:48:35,081 - INFO - DIAGNOSTIC: Search 2 - Reasoning: Capture broader wording and top/most-engaged tweets about scoping tests related to bridges. This com...
+2025-09-07 18:48:35,081 - INFO - DIAGNOSTIC: Search 3 - Endpoint: trends.php
+2025-09-07 18:48:35,081 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': None, 'screenname': None, 'country': 'UnitedStates', 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-07 18:48:35,081 - INFO - DIAGNOSTIC: Search 3 - Reasoning: Check national trending topics to see if there is any spike in public attention around bridges, insp...
+2025-09-07 18:48:35,081 - INFO - DIAGNOSTIC: Search 4 - Endpoint: tweet_thread.php
+2025-09-07 18:48:35,081 - INFO - DIAGNOSTIC: Search 4 - Parameters: {'query': None, 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': '<tweet_id_from_search_1_top_result>', 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-07 18:48:35,081 - INFO - DIAGNOSTIC: Search 4 - Reasoning: Retrieve the full conversation for the top tweet found in the exact-phrase search. This reveals repl...
+2025-09-07 18:48:35,081 - INFO - DIAGNOSTIC: Search 5 - Endpoint: timeline.php
+2025-09-07 18:48:35,081 - INFO - DIAGNOSTIC: Search 5 - Parameters: {'query': None, 'screenname': '<top_poster_screenname_from_search_results>', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-07 18:48:35,081 - INFO - DIAGNOSTIC: Search 5 - Reasoning: Fetch the recent posts from the top poster discovered in the searches to understand their activity p...
+2025-09-07 18:48:35,081 - INFO - DIAGNOSTIC: Search 6 - Endpoint: affilates.php
+2025-09-07 18:48:35,081 - INFO - DIAGNOSTIC: Search 6 - Parameters: {'query': None, 'screenname': '<top_poster_screenname_from_search_results>', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-07 18:48:35,081 - INFO - DIAGNOSTIC: Search 6 - Reasoning: Map declared affiliations for the same top poster (employer, institution, project links) to assess c...
+2025-09-07 18:48:35,081 - INFO - DIAGNOSTIC: Endpoint diversity score: 0.85
+2025-09-07 18:48:35,082 - INFO - DIAGNOSTIC: Endpoints used: ['search.php', 'trends.php', 'tweet_thread.php', 'timeline.php', 'affilates.php']
+2025-09-07 18:48:35,692 - INFO - Completed investigation session 9b71ed29-b9e1-4b36-bb3b-a8dd5348dea6 - 1 searches, 0 results
+2025-09-07 18:49:14,579 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-07 18:49:16,141 - INFO - ConcreteInvestigationBridge initialized - architectural integration active
+2025-09-07 18:49:16,142 - INFO - Started investigation session 45fe4aca-b24d-4c4c-9a09-e7abfa698749 for query: Trump Epstein contradiction test...
+2025-09-07 18:49:16,142 - INFO - DIAGNOSTIC: Prompt size: 7225 chars, 839 words
+2025-09-07 18:49:16,143 - INFO - DIAGNOSTIC: Prompt lines: 190 lines
+2025-09-07 18:49:16,143 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-09-07 18:49:16,143 - ERROR - Error in make_strategic_decision: the JSON object must be str, bytes or bytearray, not Mock
+2025-09-07 18:49:16,143 - ERROR - DIAGNOSTIC: Prompt was: 
+You are an expert investigation strategist. Your goal: Trump Epstein contradiction test
+
+
+INVESTIGATION CONTEXT:
+- Goal: Trump Epstein contradiction test
+- Key Focus Areas: trump, epstein, contradiction, test
+- Scope: twitter_investigation
+
+IMPORTANT: All search strategies must stay relevant to the investigation goal.
+Avoid searches that would find content unrelated to: Trump Epstein contradiction test
+
+COMPLETE INVESTIGATION CONTEXT:
+ORIGINAL GOAL: Trump Epstein contradiction test
+
+INVESTIGATI...
+2025-09-07 18:49:16,144 - INFO - Completed investigation session 45fe4aca-b24d-4c4c-9a09-e7abfa698749 - 0 searches, 0 results

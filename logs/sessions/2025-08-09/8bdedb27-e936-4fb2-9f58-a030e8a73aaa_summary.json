@@ -1,0 +1,248 @@
+{
+  "session_metadata": {
+    "session_id": "8bdedb27-e936-4fb2-9f58-a030e8a73aaa",
+    "start_time": "2025-08-09T22:18:00.889185+00:00",
+    "end_time": "2025-08-09T22:23:12.742908+00:00",
+    "duration_seconds": 311.853192,
+    "user_query": "find information debugging ufo whistleblower michael herrera"
+  },
+  "configuration": {
+    "max_searches": 48,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.8,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "pages_per_search": 3,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true
+  },
+  "performance_metrics": {
+    "total_searches": 17,
+    "total_rounds": 5,
+    "total_results_found": 639,
+    "satisfaction_score": 0.2449999999999999,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.2,
+      "source_diversity": 0.1,
+      "evidence_quality": 0.6999999999999996,
+      "claim_specificity": 0.0,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Investigation failed: LLM strategic decision failed: LLM returned no parsed structured output. Check LiteLLM configuration and API key."
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [
+        {
+          "search_id": 1,
+          "query": "Michael Herrera UFO whistleblower claims",
+          "results": 60,
+          "effectiveness": 8.0
+        },
+        {
+          "search_id": 10,
+          "query": "Michael Herrera UFO",
+          "results": 44,
+          "effectiveness": 8.0
+        },
+        {
+          "search_id": 11,
+          "query": "Michael Herrera (UFO OR whistleblower OR UAP OR 'The Black Vault' OR 'disclosure' OR 'UFO community' OR 'whistleblowers')",
+          "results": 60,
+          "effectiveness": 8.0
+        },
+        {
+          "search_id": 12,
+          "query": "Michael Herrera",
+          "results": 60,
+          "effectiveness": 8.0
+        }
+      ],
+      "moderately_effective": [
+        {
+          "search_id": 7,
+          "query": "\"Michael Herrera\" \"UFO whistleblower\"",
+          "results": 48,
+          "effectiveness": 7.0
+        },
+        {
+          "search_id": 8,
+          "query": "UFO whistleblower claims OR testimony OR disclosure",
+          "results": 58,
+          "effectiveness": 7.0
+        },
+        {
+          "search_id": 9,
+          "query": "\"Michael Herrera\" -football -soccer -baseball -music -art -chef -sports -actress",
+          "results": 55,
+          "effectiveness": 7.0
+        }
+      ],
+      "low_effectiveness": [
+        {
+          "search_id": 2,
+          "query": "Michael Herrera UFO (debunk OR disproven OR inconsistencies OR skepticism OR fraud OR hoax)",
+          "results": 6,
+          "effectiveness": 2.4
+        },
+        {
+          "search_id": 4,
+          "query": "UFO whistleblower (list OR names OR alleged OR claims)",
+          "results": 59,
+          "effectiveness": 3.0
+        },
+        {
+          "search_id": 6,
+          "query": "Michael Herrera",
+          "results": 59,
+          "effectiveness": 3.0
+        },
+        {
+          "search_id": 13,
+          "query": "Michael Herrera (debunk OR hoax OR fraud OR disinfo OR 'not credible')",
+          "results": 5,
+          "effectiveness": 2.0
+        },
+        {
+          "search_id": 14,
+          "query": "\"Michael Herrera\"",
+          "results": 60,
+          "effectiveness": 2.0
+        },
+        {
+          "search_id": 15,
+          "query": "\"Michael Herrera\" (UFO OR whistleblower)",
+          "results": 48,
+          "effectiveness": 2.0
+        }
+      ],
+      "ineffective": [
+        {
+          "search_id": 3,
+          "query": "Michael Herrera UFO",
+          "results": 1,
+          "effectiveness": 0.4
+        },
+        {
+          "search_id": 5,
+          "query": "from:blackvaultcom Herrera OR from:johngreenewald Herrera",
+          "results": 0,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 16,
+          "query": "\"unknown UFO whistleblower\" OR \"unverified UFO claims\" OR \"new UFO claims lacking evidence\"",
+          "results": 16,
+          "effectiveness": 1.6
+        },
+        {
+          "search_id": 17,
+          "query": "from:johngreenewald \"Herrera\" OR from:johngreenewald \"whistleblower UFO\"",
+          "results": 0,
+          "effectiveness": 0.0
+        }
+      ]
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "Graph Strategy: All previous search attempts to establish the identity, claims, or any critical analysis of 'Michael Herrera, UFO whistleblower' have yielded no data. This represents a fundamental and critical information gap. We cannot 'debug' someone if we cannot even confirm their public existence or specific claims in this context. The immediate strategic imperative is to gain any initial foothold of information regarding Michael Herrera. The proposed searches utilize diverse query strategies within the 'search.php' endpoint, aiming to cast a wider net, filter irrelevant results, and catch emerging information, addressing the persistent lack of data.",
+        "avg_effectiveness": 7.0
+      },
+      {
+        "strategy": "Graph Strategy: The most critical issue is the complete absence of data regarding Michael Herrera as a UFO whistleblower from previous broad and targeted searches. This indicates a fundamental information gap: confirming his existence and public relevance in this context. Before any 'debugging' can occur, we must first establish a baseline understanding of who he is and whether he is a recognized figure. The current strategy prioritizes basic discovery, moving from general to more specific, and explicitly targets the failed attempts to find social media presence and mentions within key communities. If these fundamental searches continue to yield no results, it will necessitate a significant strategic pivot, potentially questioning the premise of 'Michael Herrera' as a known UFO whistleblower.",
+        "avg_effectiveness": 6.5
+      },
+      {
+        "strategy": "Graph Strategy: The investigation is at its nascent stage, with zero progress and an undefined original goal beyond the broad 'debugging' task. To 'debug' Michael Herrera, we first need to establish a foundational understanding of who he is, what specific claims he has made as a UFO whistleblower, and what existing public discourse (especially critical or debunking efforts) surrounds him. This initial deep dive into content discovery is crucial for building a comprehensive understanding and identifying key entities, claims, and counter-arguments, which are currently major information gaps.",
+        "avg_effectiveness": 3.6
+      },
+      {
+        "strategy": "Graph Strategy: The most critical current information gap is the complete lack of data from all initial searches regarding Michael Herrera, indicating a fundamental issue with the original search queries or the premise itself. The strategy focuses on overcoming this 'no data' state by employing broader, more context-aware searches, and leveraging known influential figures in the UFO/UAP community to validate or refute Michael Herrera's existence and claims as a whistleblower within public discourse.",
+        "avg_effectiveness": 2.0
+      },
+      {
+        "strategy": "Graph Strategy: The repeated failure of highly specific 'search.php' queries for 'Michael Herrera' as a UFO whistleblower indicates a fundamental information gap: either he is extremely obscure, not widely discussed on Twitter in that context, or the initial premise is flawed. The current strategy needs to pivot from direct validation to broader discovery and investigation into *why* no data exists. This involves first establishing his general online presence, then searching for any broader associations with 'UFO' or 'whistleblower' terms, and finally exploring discussions about 'unknown' or 'unverified' whistleblowers to gain context for the lack of information. This approach systematically addresses the 'no data' gaps and disconnected threads by broadening the search scope.",
+        "avg_effectiveness": 1.4
+      }
+    ],
+    "dead_ends": [
+      "Michael Herrera UFO",
+      "from:blackvaultcom Herrera OR from:johngreenewald Herrera",
+      "\"unknown UFO whistleblower\" OR \"unverified UFO claims\" OR \"new UFO claims lacking evidence\"",
+      "from:johngreenewald \"Herrera\" OR from:johngreenewald \"whistleblower UFO\""
+    ],
+    "promising_leads": [
+      "Michael Herrera UFO whistleblower claims",
+      "\"Michael Herrera\" \"UFO whistleblower\"",
+      "UFO whistleblower claims OR testimony OR disclosure",
+      "\"Michael Herrera\" -football -soccer -baseball -music -art -chef -sports -actress",
+      "Michael Herrera UFO",
+      "Michael Herrera (UFO OR whistleblower OR UAP OR 'The Black Vault' OR 'disclosure' OR 'UFO community' OR 'whistleblowers')",
+      "Michael Herrera"
+    ]
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Graph Strategy: The investigation is at its nascent stage, with zero progress and an undefined original goal beyond the broad 'debugging' task. To 'debug' Michael Herrera, we first need to establish a foundational understanding of who he is, what specific claims he has made as a UFO whistleblower, and what existing public discourse (especially critical or debunking efforts) surrounds him. This initial deep dive into content discovery is crucial for building a comprehensive understanding and identifying key entities, claims, and counter-arguments, which are currently major information gaps.",
+      "searches_count": 3,
+      "total_results": 67,
+      "effectiveness": 3.6,
+      "insights": [
+        "Michael Herrera is a former US Marine, described as part of a 'highly decorated unit', who became a prominent UFO whistleblower.",
+        "His primary alleged encounter occurred on September 30, 2009, in Western Indonesia during humanitarian aid operations following Typhoon Ketsana.",
+        "He claims to have encountered a hovering 300-foot octagonal craft, witnessed 'strange metallic containers', and was intercepted and detained by 'men in black'."
+      ]
+    },
+    {
+      "round_number": 2,
+      "strategy": "Graph Strategy: The most critical current information gap is the complete lack of data from all initial searches regarding Michael Herrera, indicating a fundamental issue with the original search queries or the premise itself. The strategy focuses on overcoming this 'no data' state by employing broader, more context-aware searches, and leveraging known influential figures in the UFO/UAP community to validate or refute Michael Herrera's existence and claims as a whistleblower within public discourse.",
+      "searches_count": 3,
+      "total_results": 118,
+      "effectiveness": 2.0,
+      "insights": [
+        "No information specifically about a UFO whistleblower named Michael Herrera was found in any of the results.",
+        "The broader topic of 'debugging' or scrutinizing UFO whistleblower claims is present in several results, often highlighting skepticism, unverified claims, or official dismissals (e.g., results 1, 6, 10, 11, 15, 20).",
+        "Various other individuals are named as UFO whistleblowers, indicating a diverse landscape of claims (e.g., @nobody94267, Dr. Eric Davis, Jake Barber, David Grusch, Emery Smith)."
+      ]
+    },
+    {
+      "round_number": 3,
+      "strategy": "Graph Strategy: All previous search attempts to establish the identity, claims, or any critical analysis of 'Michael Herrera, UFO whistleblower' have yielded no data. This represents a fundamental and critical information gap. We cannot 'debug' someone if we cannot even confirm their public existence or specific claims in this context. The immediate strategic imperative is to gain any initial foothold of information regarding Michael Herrera. The proposed searches utilize diverse query strategies within the 'search.php' endpoint, aiming to cast a wider net, filter irrelevant results, and catch emerging information, addressing the persistent lack of data.",
+      "searches_count": 3,
+      "total_results": 161,
+      "effectiveness": 7.0,
+      "insights": [
+        "Michael Herrera is closely associated with another 'UFO whistleblower' named Randy Andersen, a former Green Beret.",
+        "There are direct claims labeling Randy Andersen (and implicitly Herrera, due to friendship and shared details) as a 'FRAUD' due to Randy's promotion of his company and shared fantastical elements like 'psionics'. This suggests potential financial motives and fabricated narratives.",
+        "One specific and extreme claim attributed to Herrera involves Lockheed Martin using their technology for human trafficking."
+      ]
+    },
+    {
+      "round_number": 4,
+      "strategy": "Graph Strategy: The most critical issue is the complete absence of data regarding Michael Herrera as a UFO whistleblower from previous broad and targeted searches. This indicates a fundamental information gap: confirming his existence and public relevance in this context. Before any 'debugging' can occur, we must first establish a baseline understanding of who he is and whether he is a recognized figure. The current strategy prioritizes basic discovery, moving from general to more specific, and explicitly targets the failed attempts to find social media presence and mentions within key communities. If these fundamental searches continue to yield no results, it will necessitate a significant strategic pivot, potentially questioning the premise of 'Michael Herrera' as a known UFO whistleblower.",
+      "searches_count": 4,
+      "total_results": 169,
+      "effectiveness": 6.5,
+      "insights": [
+        "Michael Herrera is a former US Marine who claims to have witnessed a 300-ft octagonal UFO and encountered a covert military unit during a 2009 humanitarian mission in Sumatra, Indonesia.",
+        "His claims involve being detained, threatened with death, and experiencing intimidation/surveillance after the incident, breaking a 14-year silence to disclose the information.",
+        "Herrera has shared his story on prominent platforms such as the Shawn Ryan Show, with investigative journalist Ross Coulthart, and in the Daily Mail."
+      ]
+    },
+    {
+      "round_number": 5,
+      "strategy": "Graph Strategy: The repeated failure of highly specific 'search.php' queries for 'Michael Herrera' as a UFO whistleblower indicates a fundamental information gap: either he is extremely obscure, not widely discussed on Twitter in that context, or the initial premise is flawed. The current strategy needs to pivot from direct validation to broader discovery and investigation into *why* no data exists. This involves first establishing his general online presence, then searching for any broader associations with 'UFO' or 'whistleblower' terms, and finally exploring discussions about 'unknown' or 'unverified' whistleblowers to gain context for the lack of information. This approach systematically addresses the 'no data' gaps and disconnected threads by broadening the search scope.",
+      "searches_count": 4,
+      "total_results": 124,
+      "effectiveness": 1.4,
+      "insights": []
+    }
+  ]
+}

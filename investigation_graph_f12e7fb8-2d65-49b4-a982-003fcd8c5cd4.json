@@ -1,0 +1,788 @@
+{
+  "nodes": {
+    "7c3bb3b8-e1fa-4010-8566-8edeb7d6c094": {
+      "id": "7c3bb3b8-e1fa-4010-8566-8edeb7d6c094",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "What is Elon Musk saying about Twitter recently?",
+        "is_root": true,
+        "investigation_goal": "What is Elon Musk saying about Twitter recently?"
+      },
+      "created_at": "2025-09-05T06:34:54.221567"
+    },
+    "eb331cd9-6c78-4f17-9248-fbd6bf852cdb": {
+      "id": "eb331cd9-6c78-4f17-9248-fbd6bf852cdb",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Get Elon Musk's full recent chronological posts to see everything he has posted (tweets and replies). This provides the baseline dataset to identify messages about Twitter/X, timing, and any patterns.",
+        "parent_analytic_question": "7c3bb3b8-e1fa-4010-8566-8edeb7d6c094"
+      },
+      "created_at": "2025-09-05T06:35:19.384000"
+    },
+    "8b437fc6-6f40-467c-81fb-a3778c25866c": {
+      "id": "8b437fc6-6f40-467c-81fb-a3778c25866c",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "elonmusk"
+        }
+      },
+      "created_at": "2025-09-05T06:35:19.384000"
+    },
+    "bca9ba78-abc8-4f2a-922e-276c6dbfe0d0": {
+      "id": "bca9ba78-abc8-4f2a-922e-276c6dbfe0d0",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Targeted search to surface only Elon Musk's posts that explicitly mention Twitter/X so we don't miss short or embedded references. Using Latest ensures we capture the most recent mentions first.",
+        "parent_analytic_question": "7c3bb3b8-e1fa-4010-8566-8edeb7d6c094"
+      },
+      "created_at": "2025-09-05T06:35:19.384000"
+    },
+    "5e09003a-3c0f-462e-b388-163800aa2844": {
+      "id": "5e09003a-3c0f-462e-b388-163800aa2844",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "from:elonmusk (twitter OR \"X\" OR \"X.com\" OR \"Twitter\")",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-05T06:35:19.384000"
+    },
+    "3cc978ba-9825-4f4c-bc3c-8f1f1951dc0d": {
+      "id": "3cc978ba-9825-4f4c-bc3c-8f1f1951dc0d",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Verify profile metadata (display name, verification, follower counts, bio) and get any recent profile changes (e.g., name changes referencing 'X' or 'Twitter'), which provide context about intent and influence.",
+        "parent_analytic_question": "7c3bb3b8-e1fa-4010-8566-8edeb7d6c094"
+      },
+      "created_at": "2025-09-05T06:35:19.384000"
+    },
+    "d6050927-c4c6-4a0f-be8b-e710169234be": {
+      "id": "d6050927-c4c6-4a0f-be8b-e710169234be",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "screenname.php",
+        "parameters": {
+          "screenname": "elonmusk"
+        }
+      },
+      "created_at": "2025-09-05T06:35:19.384000"
+    },
+    "5db70098-8bc8-4c5a-8281-777e6fa14d3a": {
+      "id": "5db70098-8bc8-4c5a-8281-777e6fa14d3a",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Check whether Twitter/X or related topics are currently trending in the US to understand wider visibility and whether Elon\u2019s comments are part of a broader conversation or driving the trend.",
+        "parent_analytic_question": "7c3bb3b8-e1fa-4010-8566-8edeb7d6c094"
+      },
+      "created_at": "2025-09-05T06:35:19.384000"
+    },
+    "ab33dc6c-038a-4a33-8cc6-c7b76be34802": {
+      "id": "ab33dc6c-038a-4a33-8cc6-c7b76be34802",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "trends.php",
+        "parameters": {
+          "country": "UnitedStates"
+        }
+      },
+      "created_at": "2025-09-05T06:35:19.384000"
+    },
+    "838bd0c1-641f-404d-8264-58a7b1fcc3a7": {
+      "id": "838bd0c1-641f-404d-8264-58a7b1fcc3a7",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: After identifying 1\u20133 high-impact tweets from the timeline/search results, fetch the latest replies for those tweet IDs to analyze public reaction, corrections, amplification, and sentiment. This is stage-2 and depends on results from timeline/search.",
+        "parent_analytic_question": "7c3bb3b8-e1fa-4010-8566-8edeb7d6c094"
+      },
+      "created_at": "2025-09-05T06:35:19.384000"
+    },
+    "cb25337b-6d11-4248-906f-6b9f3f59423b": {
+      "id": "cb25337b-6d11-4248-906f-6b9f3f59423b",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "latest_replies.php",
+        "parameters": {
+          "id": "TO_BE_FILLED_WITH_TOP_TWEET_ID"
+        }
+      },
+      "created_at": "2025-09-05T06:35:19.384000"
+    },
+    "5964f9fb-ec79-4cb5-a309-2e2e8c62f570": {
+      "id": "5964f9fb-ec79-4cb5-a309-2e2e8c62f570",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: For any high-engagement tweet, retrieve the full conversation thread to capture the original context, follow-ups by Elon, and sustained discussion. This complements latest_replies and helps identify whether his comments are part of a longer narrative.",
+        "parent_analytic_question": "7c3bb3b8-e1fa-4010-8566-8edeb7d6c094"
+      },
+      "created_at": "2025-09-05T06:35:19.384000"
+    },
+    "cf759498-db1c-43c1-a1c9-5b64f7faddbe": {
+      "id": "cf759498-db1c-43c1-a1c9-5b64f7faddbe",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "tweet_thread.php",
+        "parameters": {
+          "id": "TO_BE_FILLED_WITH_TOP_TWEET_ID"
+        }
+      },
+      "created_at": "2025-09-05T06:35:19.384000"
+    },
+    "bb130601-5c16-4e73-9991-209ad246cda3": {
+      "id": "bb130601-5c16-4e73-9991-209ad246cda3",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Convert an image to a video with one tap when posting!",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-05T06:38:02.957666",
+          "entities": {
+            "organizations": [
+              "Twitter/X (implicit)"
+            ],
+            "features": [
+              "image-to-video conversion"
+            ],
+            "people": []
+          },
+          "follow_up_needed": "Retrieve the full tweet context or linked announcement to confirm whether this is a new Twitter/X feature, its availability, rollout scope, and release date."
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-05T06:38:02.957666"
+      },
+      "created_at": "2025-09-05T06:38:02.957666"
+    },
+    "ea2be57e-fa4f-456e-95f6-c4ca763849c0": {
+      "id": "ea2be57e-fa4f-456e-95f6-c4ca763849c0",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Get Elon Musk's full recent chronological posts (tweets and replies) as the baseline dataset to identify all his messages about Twitter/X, their timing, and patterns.",
+        "parent_analytic_question": "7c3bb3b8-e1fa-4010-8566-8edeb7d6c094"
+      },
+      "created_at": "2025-09-05T06:39:53.004256"
+    },
+    "0f73f258-a866-4b34-b5fb-b2d7c8017107": {
+      "id": "0f73f258-a866-4b34-b5fb-b2d7c8017107",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "elonmusk"
+        }
+      },
+      "created_at": "2025-09-05T06:39:53.004761"
+    },
+    "edd353af-e83b-4137-8973-669f6e9fcd69": {
+      "id": "edd353af-e83b-4137-8973-669f6e9fcd69",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Targeted Latest search to surface only Elon Musk's posts that explicitly mention Twitter/X (including short posts and links). This ensures we don't miss embedded or terse references.",
+        "parent_analytic_question": "7c3bb3b8-e1fa-4010-8566-8edeb7d6c094"
+      },
+      "created_at": "2025-09-05T06:39:53.004774"
+    },
+    "3a2efe7b-124f-49f9-ae5a-50d40da4f280": {
+      "id": "3a2efe7b-124f-49f9-ae5a-50d40da4f280",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "from:elonmusk (Twitter OR X OR \"X.com\" OR twitter.com)",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-05T06:39:53.004774"
+    },
+    "12f2fbd1-2379-4929-ba63-c36732df2e1f": {
+      "id": "12f2fbd1-2379-4929-ba63-c36732df2e1f",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Verify profile metadata (display name, bio, verification, follower counts) and detect recent profile changes (e.g., name changes referencing 'X' or 'Twitter') to provide context about intent and influence.",
+        "parent_analytic_question": "7c3bb3b8-e1fa-4010-8566-8edeb7d6c094"
+      },
+      "created_at": "2025-09-05T06:39:53.004774"
+    },
+    "0f40ecc4-522e-4ef1-9af2-959d1921d508": {
+      "id": "0f40ecc4-522e-4ef1-9af2-959d1921d508",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "screenname.php",
+        "parameters": {
+          "screenname": "elonmusk"
+        }
+      },
+      "created_at": "2025-09-05T06:39:53.004774"
+    },
+    "d7991477-a7b7-4a23-be2e-99bd25608782": {
+      "id": "d7991477-a7b7-4a23-be2e-99bd25608782",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Check whether 'Twitter', 'X', or related topics are trending in the United States to understand wider visibility and whether Elon\u2019s comments are part of, or driving, a broader conversation.",
+        "parent_analytic_question": "7c3bb3b8-e1fa-4010-8566-8edeb7d6c094"
+      },
+      "created_at": "2025-09-05T06:39:53.004774"
+    },
+    "18a9a495-bdcc-4494-9824-88e4a76fc42d": {
+      "id": "18a9a495-bdcc-4494-9824-88e4a76fc42d",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "trends.php",
+        "parameters": {
+          "country": "UnitedStates"
+        }
+      },
+      "created_at": "2025-09-05T06:39:53.004774"
+    },
+    "34b996ab-88cc-4f6c-a4d9-5bb72ec5b4bc": {
+      "id": "34b996ab-88cc-4f6c-a4d9-5bb72ec5b4bc",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Fetch follower information and counts to quantify reach and to identify potential high-influence followers for subsequent network/reaction analysis.",
+        "parent_analytic_question": "7c3bb3b8-e1fa-4010-8566-8edeb7d6c094"
+      },
+      "created_at": "2025-09-05T06:39:53.004774"
+    },
+    "268210dd-f197-40b1-b155-574c3854a07b": {
+      "id": "268210dd-f197-40b1-b155-574c3854a07b",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "followers.php",
+        "parameters": {
+          "screenname": "elonmusk"
+        }
+      },
+      "created_at": "2025-09-05T06:39:53.004774"
+    },
+    "5ed34bf6-b447-47d4-96f5-a8a2371fadf7": {
+      "id": "5ed34bf6-b447-47d4-96f5-a8a2371fadf7",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Convert an image to a video with one tap when posting!",
+        "source_info": {
+          "source": "timeline.php",
+          "timestamp": "2025-09-05T06:41:18.210623",
+          "entities": {
+            "feature": [
+              "convert image to video",
+              "one-tap posting"
+            ],
+            "platform": [
+              "posting (implied social platform/Twitter)"
+            ]
+          },
+          "follow_up_needed": "Retrieve the original tweet URL/timestamp and any linked images or demo to confirm this is a Twitter/X product feature and learn rollout details (who, where, when)."
+        },
+        "source": "timeline.php",
+        "timestamp": "2025-09-05T06:41:18.210623"
+      },
+      "created_at": "2025-09-05T06:41:18.210623"
+    },
+    "5c033f5b-4483-40f8-beaf-9c98be51bad5": {
+      "id": "5c033f5b-4483-40f8-beaf-9c98be51bad5",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "RT @dvorahfr: Have you noticed that you can access Grok from the banner. https://t.co/b2uwM60zc4",
+        "source_info": {
+          "source": "timeline.php",
+          "timestamp": "2025-09-05T06:41:18.210623",
+          "entities": {
+            "person": [
+              "@dvorahfr"
+            ],
+            "product/feature": [
+              "Grok",
+              "banner access"
+            ],
+            "platform": [
+              "implied Twitter/X banner"
+            ]
+          },
+          "follow_up_needed": "Open the referenced link/media and capture a screenshot; confirm whether this is an in-product Twitter/X banner integration and when it was rolled out."
+        },
+        "source": "timeline.php",
+        "timestamp": "2025-09-05T06:41:18.210623"
+      },
+      "created_at": "2025-09-05T06:41:18.210623"
+    },
+    "369c231b-1317-4350-8faf-069131417d6d": {
+      "id": "369c231b-1317-4350-8faf-069131417d6d",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "@visegrad24 Animated with Grok \ud83d\ude02 https://t.co/9GSMjCCNG4",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-05T06:42:16.798070",
+          "entities": {
+            "Person_handle": "@visegrad24",
+            "Product": "Grok",
+            "URL": "https://t.co/9GSMjCCNG4"
+          },
+          "follow_up_needed": "Open the linked content to confirm what was animated and whether Musk is highlighting a new Grok capability or third\u2011party use."
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-05T06:42:16.798070"
+      },
+      "created_at": "2025-09-05T06:42:16.798070"
+    },
+    "b80652c7-b6f2-43b1-8768-4daa76794690": {
+      "id": "b80652c7-b6f2-43b1-8768-4daa76794690",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Convert an image to a video with one tap when posting!",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-05T06:42:16.798070",
+          "entities": {
+            "Product": "Twitter/X",
+            "Feature": "Convert image to video (one\u2011tap when posting)"
+          },
+          "follow_up_needed": "Verify rollout details (when, to whom), find screenshots or official announcement, and note whether this is platform-native or a client feature."
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-05T06:42:16.798070"
+      },
+      "created_at": "2025-09-05T06:42:16.798070"
+    },
+    "c9efc660-7ab3-4ba2-87a3-84b1be26bdce": {
+      "id": "c9efc660-7ab3-4ba2-87a3-84b1be26bdce",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "xAI Seattle office opening",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-05T06:42:16.798070",
+          "entities": {
+            "Organization": "xAI",
+            "Location": "Seattle",
+            "Event": "office opening"
+          },
+          "follow_up_needed": "Check for a press release or photo confirming the office opening and whether Musk ties this to Twitter/X roadmaps or product integration."
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-05T06:42:16.798070"
+      },
+      "created_at": "2025-09-05T06:42:16.798070"
+    },
+    "ea84da19-b6e3-4129-ba82-3d036d40b3dd": {
+      "id": "ea84da19-b6e3-4129-ba82-3d036d40b3dd",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "@Suffragent_ @elliegoulding @lilyallen Shame on those two for being child rapist apologists!",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-05T06:42:16.799088",
+          "entities": {
+            "Person_handles": [
+              "@Suffragent_",
+              "@elliegoulding",
+              "@lilyallen"
+            ],
+            "Topic": "allegation / apologist accusation"
+          },
+          "follow_up_needed": "Fetch the tweet thread to see context, evidence, or quotes that prompted this accusation; check how this affected platform moderation/visibility."
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-05T06:42:16.799088"
+      },
+      "created_at": "2025-09-05T06:42:16.799088"
+    },
+    "067c0f0a-d9b5-4c90-970f-f04476058846": {
+      "id": "067c0f0a-d9b5-4c90-970f-f04476058846",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "According to a Philips, some members of the police in the UK participated in the gang rapes of children.\n\nHave they been prosecuted?",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-05T06:42:16.799088",
+          "entities": {
+            "Person_or_Source": "Philips",
+            "Location": "UK",
+            "Topic": "police involvement in child gang rape",
+            "Topic_type": "criminal allegation"
+          },
+          "follow_up_needed": "Identify who/what 'Philips' refers to (person, media, organization), locate the original source, and verify the allegation and any prosecutions in UK criminal records or news reports."
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-05T06:42:16.799088"
+      },
+      "created_at": "2025-09-05T06:42:16.799088"
+    },
+    "62b94fb9-0c54-4ee6-891f-28287f0d3fe5": {
+      "id": "62b94fb9-0c54-4ee6-891f-28287f0d3fe5",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Something is seriously wrong. \n\nTrans sex hormone drugs are driving extreme violence and should be banned.",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-05T06:42:16.799088",
+          "entities": {
+            "Topic": "transgender healthcare",
+            "Policy": "call to ban trans sex hormone drugs"
+          },
+          "follow_up_needed": "Request supporting evidence cited by Musk or check whether he links to studies; monitor reactions and any policy/moderation responses on the platform."
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-05T06:42:16.799088"
+      },
+      "created_at": "2025-09-05T06:42:16.799088"
+    },
+    "e1fee4a9-ee67-4902-a462-b662e29864a4": {
+      "id": "e1fee4a9-ee67-4902-a462-b662e29864a4",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Grok Code is now seeing more usage on OpenRouter than all others combined https://t.co/iKSmsuefq6",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-05T06:42:16.799088",
+          "entities": {
+            "Product": "Grok Code",
+            "Platform": "OpenRouter",
+            "URL": "https://t.co/iKSmsuefq6"
+          },
+          "follow_up_needed": "Verify OpenRouter usage statistics or statements from OpenRouter to confirm the claim; open the linked content for corroboration."
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-05T06:42:16.799088"
+      },
+      "created_at": "2025-09-05T06:42:16.799088"
+    }
+  },
+  "edges": [
+    {
+      "id": "63f03464-6950-4280-9806-dd4fc18b0786",
+      "source_id": "7c3bb3b8-e1fa-4010-8566-8edeb7d6c094",
+      "target_id": "eb331cd9-6c78-4f17-9248-fbd6bf852cdb",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-05T06:35:19.384000"
+    },
+    {
+      "id": "753b3ce4-67af-4b70-88bb-88bfb9eb1774",
+      "source_id": "eb331cd9-6c78-4f17-9248-fbd6bf852cdb",
+      "target_id": "8b437fc6-6f40-467c-81fb-a3778c25866c",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-05T06:35:19.384000"
+    },
+    {
+      "id": "d16757b8-04e7-49c6-9a01-6905b5e51f4f",
+      "source_id": "7c3bb3b8-e1fa-4010-8566-8edeb7d6c094",
+      "target_id": "bca9ba78-abc8-4f2a-922e-276c6dbfe0d0",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-05T06:35:19.384000"
+    },
+    {
+      "id": "f69e83d8-2ae4-41f5-88a7-fd343b93b489",
+      "source_id": "bca9ba78-abc8-4f2a-922e-276c6dbfe0d0",
+      "target_id": "5e09003a-3c0f-462e-b388-163800aa2844",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-05T06:35:19.384000"
+    },
+    {
+      "id": "5d91136f-1930-4724-bbbf-ff40e3c12232",
+      "source_id": "7c3bb3b8-e1fa-4010-8566-8edeb7d6c094",
+      "target_id": "3cc978ba-9825-4f4c-bc3c-8f1f1951dc0d",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-05T06:35:19.384000"
+    },
+    {
+      "id": "d8b3646c-3554-487d-81db-b9535602774b",
+      "source_id": "3cc978ba-9825-4f4c-bc3c-8f1f1951dc0d",
+      "target_id": "d6050927-c4c6-4a0f-be8b-e710169234be",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-05T06:35:19.384000"
+    },
+    {
+      "id": "e30d1024-6059-4d4f-a835-389a49bb00b2",
+      "source_id": "7c3bb3b8-e1fa-4010-8566-8edeb7d6c094",
+      "target_id": "5db70098-8bc8-4c5a-8281-777e6fa14d3a",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-05T06:35:19.384000"
+    },
+    {
+      "id": "8fde352e-fd40-4642-8cd6-5129b4479ebe",
+      "source_id": "5db70098-8bc8-4c5a-8281-777e6fa14d3a",
+      "target_id": "ab33dc6c-038a-4a33-8cc6-c7b76be34802",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-05T06:35:19.384000"
+    },
+    {
+      "id": "944b5b18-c144-4ed0-90b6-9e8a5a844b17",
+      "source_id": "7c3bb3b8-e1fa-4010-8566-8edeb7d6c094",
+      "target_id": "838bd0c1-641f-404d-8264-58a7b1fcc3a7",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-05T06:35:19.384000"
+    },
+    {
+      "id": "75df2dc7-a1fb-46e9-b22b-a2986bce9b3d",
+      "source_id": "838bd0c1-641f-404d-8264-58a7b1fcc3a7",
+      "target_id": "cb25337b-6d11-4248-906f-6b9f3f59423b",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-05T06:35:19.384000"
+    },
+    {
+      "id": "e3c3c337-50fe-4474-a4c4-c98119a5057a",
+      "source_id": "7c3bb3b8-e1fa-4010-8566-8edeb7d6c094",
+      "target_id": "5964f9fb-ec79-4cb5-a309-2e2e8c62f570",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-05T06:35:19.384000"
+    },
+    {
+      "id": "bdb0aa7d-7058-4924-8510-fc4ad8007fdb",
+      "source_id": "5964f9fb-ec79-4cb5-a309-2e2e8c62f570",
+      "target_id": "cf759498-db1c-43c1-a1c9-5b64f7faddbe",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-05T06:35:19.384000"
+    },
+    {
+      "id": "3e4b5adb-88eb-4134-ab84-78b055b5e38c",
+      "source_id": "5e09003a-3c0f-462e-b388-163800aa2844",
+      "target_id": "bb130601-5c16-4e73-9991-209ad246cda3",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.9
+      },
+      "created_at": "2025-09-05T06:38:02.957666"
+    },
+    {
+      "id": "d21154a6-e9a6-413c-bd21-f4924c9a9d89",
+      "source_id": "7c3bb3b8-e1fa-4010-8566-8edeb7d6c094",
+      "target_id": "ea2be57e-fa4f-456e-95f6-c4ca763849c0",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-05T06:39:53.004256"
+    },
+    {
+      "id": "8d8db27c-5aeb-4241-aad7-2592fac3afc5",
+      "source_id": "ea2be57e-fa4f-456e-95f6-c4ca763849c0",
+      "target_id": "0f73f258-a866-4b34-b5fb-b2d7c8017107",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-05T06:39:53.004767"
+    },
+    {
+      "id": "40ec161a-1e9f-423c-b4cc-b665686c54fd",
+      "source_id": "7c3bb3b8-e1fa-4010-8566-8edeb7d6c094",
+      "target_id": "edd353af-e83b-4137-8973-669f6e9fcd69",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-05T06:39:53.004774"
+    },
+    {
+      "id": "dadc23c8-9445-4d82-88df-cea47d15790a",
+      "source_id": "edd353af-e83b-4137-8973-669f6e9fcd69",
+      "target_id": "3a2efe7b-124f-49f9-ae5a-50d40da4f280",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-05T06:39:53.004774"
+    },
+    {
+      "id": "8e35abf3-15ef-49b2-8f68-8cee186c7e8f",
+      "source_id": "7c3bb3b8-e1fa-4010-8566-8edeb7d6c094",
+      "target_id": "12f2fbd1-2379-4929-ba63-c36732df2e1f",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-05T06:39:53.004774"
+    },
+    {
+      "id": "d5297cbe-ca2d-4002-aec8-d24508652f1a",
+      "source_id": "12f2fbd1-2379-4929-ba63-c36732df2e1f",
+      "target_id": "0f40ecc4-522e-4ef1-9af2-959d1921d508",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-05T06:39:53.004774"
+    },
+    {
+      "id": "64ffe46d-7fb9-49db-8867-0bd228af6197",
+      "source_id": "7c3bb3b8-e1fa-4010-8566-8edeb7d6c094",
+      "target_id": "d7991477-a7b7-4a23-be2e-99bd25608782",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-05T06:39:53.004774"
+    },
+    {
+      "id": "a2e25918-c058-474a-80be-6cfe83b2954e",
+      "source_id": "d7991477-a7b7-4a23-be2e-99bd25608782",
+      "target_id": "18a9a495-bdcc-4494-9824-88e4a76fc42d",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-05T06:39:53.004774"
+    },
+    {
+      "id": "8403aa65-60bb-437f-bb09-e5de689ee29f",
+      "source_id": "7c3bb3b8-e1fa-4010-8566-8edeb7d6c094",
+      "target_id": "34b996ab-88cc-4f6c-a4d9-5bb72ec5b4bc",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-05T06:39:53.004774"
+    },
+    {
+      "id": "32b59218-0b0e-4795-8691-c15a6f3a9386",
+      "source_id": "34b996ab-88cc-4f6c-a4d9-5bb72ec5b4bc",
+      "target_id": "268210dd-f197-40b1-b155-574c3854a07b",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-05T06:39:53.004774"
+    },
+    {
+      "id": "51c85548-2b2d-41bd-ba0d-2be52bffaeea",
+      "source_id": "8b437fc6-6f40-467c-81fb-a3778c25866c",
+      "target_id": "5ed34bf6-b447-47d4-96f5-a8a2371fadf7",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.9
+      },
+      "created_at": "2025-09-05T06:41:18.210623"
+    },
+    {
+      "id": "fcbfa104-1cf7-47ed-994c-87a7297d5ce1",
+      "source_id": "8b437fc6-6f40-467c-81fb-a3778c25866c",
+      "target_id": "5c033f5b-4483-40f8-beaf-9c98be51bad5",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.85
+      },
+      "created_at": "2025-09-05T06:41:18.210623"
+    },
+    {
+      "id": "f1955ad2-8613-46cd-9dca-671031ee09c5",
+      "source_id": "3a2efe7b-124f-49f9-ae5a-50d40da4f280",
+      "target_id": "369c231b-1317-4350-8faf-069131417d6d",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.4
+      },
+      "created_at": "2025-09-05T06:42:16.798070"
+    },
+    {
+      "id": "e8cfc6b1-84ce-4043-974f-55f1246c18ea",
+      "source_id": "3a2efe7b-124f-49f9-ae5a-50d40da4f280",
+      "target_id": "b80652c7-b6f2-43b1-8768-4daa76794690",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.9
+      },
+      "created_at": "2025-09-05T06:42:16.798070"
+    },
+    {
+      "id": "b623e1e4-5a00-4d47-bb3c-465101902839",
+      "source_id": "3a2efe7b-124f-49f9-ae5a-50d40da4f280",
+      "target_id": "c9efc660-7ab3-4ba2-87a3-84b1be26bdce",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.4
+      },
+      "created_at": "2025-09-05T06:42:16.799088"
+    },
+    {
+      "id": "9542cbcc-551b-410c-a343-228e27b05460",
+      "source_id": "3a2efe7b-124f-49f9-ae5a-50d40da4f280",
+      "target_id": "ea84da19-b6e3-4129-ba82-3d036d40b3dd",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.3
+      },
+      "created_at": "2025-09-05T06:42:16.799088"
+    },
+    {
+      "id": "3a3f7228-9500-40f3-b5d4-2bb2407fba64",
+      "source_id": "3a2efe7b-124f-49f9-ae5a-50d40da4f280",
+      "target_id": "067c0f0a-d9b5-4c90-970f-f04476058846",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.45
+      },
+      "created_at": "2025-09-05T06:42:16.799088"
+    },
+    {
+      "id": "025ffddb-055b-4fd6-bec6-8b82d6db92c7",
+      "source_id": "3a2efe7b-124f-49f9-ae5a-50d40da4f280",
+      "target_id": "62b94fb9-0c54-4ee6-891f-28287f0d3fe5",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.5
+      },
+      "created_at": "2025-09-05T06:42:16.799088"
+    },
+    {
+      "id": "c4e749e3-d79e-410f-9594-3d3277005b60",
+      "source_id": "3a2efe7b-124f-49f9-ae5a-50d40da4f280",
+      "target_id": "e1fee4a9-ee67-4902-a462-b662e29864a4",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.6
+      },
+      "created_at": "2025-09-05T06:42:16.799088"
+    }
+  ],
+  "analytic_question": "7c3bb3b8-e1fa-4010-8566-8edeb7d6c094",
+  "created_at": "2025-09-05T06:42:28.483070"
+}

@@ -1,0 +1,81 @@
+{
+  "session_metadata": {
+    "session_id": "37375dec-9974-4fc2-8626-766c3054fded",
+    "start_time": "2025-08-28T18:11:07.879575+00:00",
+    "end_time": "2025-08-28T18:12:16.203057+00:00",
+    "duration_seconds": 68.322482,
+    "user_query": "What is Elon Musk saying about AI"
+  },
+  "configuration": {
+    "max_searches": 1,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.8,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "pages_per_search": 1,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true,
+    "enforce_endpoint_diversity": false,
+    "max_endpoint_repeats": 5,
+    "diversity_threshold": 0.3
+  },
+  "performance_metrics": {
+    "total_searches": 1,
+    "total_rounds": 1,
+    "total_results_found": 52,
+    "satisfaction_score": 0.36624999999999996,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.4,
+      "source_diversity": 0.2,
+      "evidence_quality": 0.9049999999999999,
+      "claim_specificity": 0.0,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Reached maximum search limit (1)"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [
+        {
+          "search_id": 1,
+          "query": "from:elonmusk AI OR \"Artificial Intelligence\" OR OpenAI OR xAI",
+          "results": 52,
+          "effectiveness": 9.0
+        }
+      ],
+      "moderately_effective": [],
+      "low_effectiveness": [],
+      "ineffective": []
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "Graph Strategy: To comprehensively understand what Elon Musk is saying about AI, it's crucial to gather his direct statements, observe his recent activities for contextual relevance, and identify key figures or organizations he follows within the AI space. This multi-endpoint approach ensures a broad initial collection of data, addressing the main information gap.",
+        "avg_effectiveness": 9.0
+      }
+    ],
+    "dead_ends": [],
+    "promising_leads": [
+      "from:elonmusk AI OR \"Artificial Intelligence\" OR OpenAI OR xAI"
+    ]
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Graph Strategy: To comprehensively understand what Elon Musk is saying about AI, it's crucial to gather his direct statements, observe his recent activities for contextual relevance, and identify key figures or organizations he follows within the AI space. This multi-endpoint approach ensures a broad initial collection of data, addressing the main information gap.",
+      "searches_count": 1,
+      "total_results": 52,
+      "effectiveness": 9.0,
+      "insights": [
+        "Elon Musk's company, xAI, is actively building AI, including a \"purely AI software company\" called Macrohard.",
+        "Musk claims Grok (xAI's AI) is evolving rapidly, outperforming other AIs in tests (e.g., coding), and believes xAI will outpace or significantly exceed Google in AI.",
+        "xAI is making its Grok models open source (Grok 2.5 now, Grok 3 in about 6 months)."
+      ]
+    }
+  ]
+}

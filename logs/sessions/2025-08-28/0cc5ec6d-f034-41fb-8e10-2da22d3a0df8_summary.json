@@ -1,0 +1,87 @@
+{
+  "session_metadata": {
+    "session_id": "0cc5ec6d-f034-41fb-8e10-2da22d3a0df8",
+    "start_time": "2025-08-28T20:42:38.269966+00:00",
+    "end_time": "2025-08-28T20:43:35.250657+00:00",
+    "duration_seconds": 56.979691,
+    "user_query": "test query for multiple rounds"
+  },
+  "configuration": {
+    "max_searches": 15,
+    "max_time_minutes": 5,
+    "satisfaction_enabled": false,
+    "satisfaction_threshold": 0.8,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "pages_per_search": 1,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true,
+    "enforce_endpoint_diversity": false,
+    "max_endpoint_repeats": 5,
+    "diversity_threshold": 0.3
+  },
+  "performance_metrics": {
+    "total_searches": 3,
+    "total_rounds": 1,
+    "total_results_found": 169,
+    "satisfaction_score": 0.0,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.0,
+      "source_diversity": 0.0,
+      "evidence_quality": 0.0,
+      "claim_specificity": 0.0,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Investigation failed: 'InvestigationEngine' object has no attribute 'logger'"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [],
+      "moderately_effective": [
+        {
+          "search_id": 1,
+          "query": "",
+          "results": 50,
+          "effectiveness": 5.0
+        },
+        {
+          "search_id": 2,
+          "query": "global events",
+          "results": 59,
+          "effectiveness": 5.9
+        },
+        {
+          "search_id": 3,
+          "query": "",
+          "results": 60,
+          "effectiveness": 6.0
+        }
+      ],
+      "low_effectiveness": [],
+      "ineffective": []
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "Graph Strategy: To establish a foundational understanding, this initial round focuses on broad content discovery. By combining trending topics, general search for significant global discussions, and the timeline of a major news outlet, we aim to identify key themes, potential influential entities, and areas of high public interest that can guide subsequent, more targeted investigation rounds. This approach prioritizes diversity of information sources to prevent early bias and ensure a comprehensive initial scan of the information landscape.",
+        "avg_effectiveness": 5.633333333333333
+      }
+    ],
+    "dead_ends": [],
+    "promising_leads": []
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Graph Strategy: To establish a foundational understanding, this initial round focuses on broad content discovery. By combining trending topics, general search for significant global discussions, and the timeline of a major news outlet, we aim to identify key themes, potential influential entities, and areas of high public interest that can guide subsequent, more targeted investigation rounds. This approach prioritizes diversity of information sources to prevent early bias and ensure a comprehensive initial scan of the information landscape.",
+      "searches_count": 3,
+      "total_results": 169,
+      "effectiveness": 0.0,
+      "insights": []
+    }
+  ]
+}

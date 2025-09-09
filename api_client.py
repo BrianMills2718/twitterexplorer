@@ -3,7 +3,7 @@ import requests
 import json
 import time
 from urllib.parse import urljoin
-import config
+import twitter_config as config
 
 # Helper function for safe nested access
 def get_nested_value(data, path_string):
@@ -146,7 +146,7 @@ def execute_api_step(step_plan, previous_results, rapidapi_key):
     current_page = 0
     next_cursor = None
     retry_count = 0
-    max_retries = 2 # For transient server errors
+    max_retries = 3 # For transient server errors and network timeouts
     page_data = None # Keep track of last page data for structure merging
     data_key_found = None # Keep track of key where list data was found
 
@@ -247,8 +247,15 @@ def execute_api_step(step_plan, previous_results, rapidapi_key):
 
         except requests.exceptions.RequestException as e:
             print(f"  Request failed: {e}")
-            # Could retry transient network errors
-            return {"error": f"Request failed: {e}", "endpoint": endpoint_suffix}
+            # Retry transient network errors (timeout, connection errors)
+            if retry_count < max_retries:
+                wait_time = (2 ** retry_count) + 1  # Exponential backoff: 2s, 4s, 8s, 16s
+                print(f"  Network error. Retrying in {wait_time}s ({retry_count+1}/{max_retries})...")
+                time.sleep(wait_time)
+                retry_count += 1
+                continue  # Retry the current page request
+            else:
+                return {"error": f"Request failed after {max_retries} retries: {e}", "endpoint": endpoint_suffix}
         except json.JSONDecodeError as e:
              print(f"  Failed to decode JSON response: {e}")
              # Add response text to error if possible

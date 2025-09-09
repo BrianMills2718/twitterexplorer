@@ -8,7 +8,7 @@ import streamlit.components.v1 as components
 from datetime import datetime
 
 # Import existing modules
-import config
+import twitter_config as config
 import state_manager
 import llm_handler
 import api_client
@@ -18,7 +18,7 @@ import graph_manager
 from investigation_engine import InvestigationEngine, InvestigationConfig, InvestigationSession
 from adaptive_planner import AdaptivePlanner
 from satisfaction_assessor import SatisfactionAssessor
-from knowledge_builder import KnowledgeBuilder
+from twitterexplorer.knowledge_builder import KnowledgeBuilder
 
 # --- Page Config ---
 st.set_page_config(page_title="🔍 Advanced Twitter Investigation Engine", layout="wide")
@@ -33,8 +33,9 @@ with st.sidebar:
     
     # Investigation configuration
     with st.expander("Investigation Configuration", expanded=False):
-        max_searches = st.slider("Maximum Searches", min_value=10, max_value=200, value=100, step=10,
-                                 help="Maximum number of searches before stopping")
+        max_batches = st.slider("Maximum Batches", min_value=3, max_value=25, value=12, step=1,
+                               help="Maximum number of search batches before stopping (each batch = ~4 searches)")
+        max_searches = max_batches * 4  # Convert batches to searches for internal compatibility
         
         satisfaction_enabled = st.checkbox("Enable Satisfaction Stopping", value=True, 
                                           help="Stop when investigation satisfaction threshold is reached")
@@ -60,23 +61,80 @@ with st.sidebar:
     
     # Quick presets
     st.subheader("⚡ Quick Presets")
-    if st.button("🔍 Quick Investigation (25 searches)"):
+    if st.button("🔍 Quick Investigation (6 batches)"):
         st.session_state.config_preset = 'quick'
-    if st.button("🔬 Deep Investigation (100 searches)"):
+    if st.button("🔬 Deep Investigation (12 batches)"):
         st.session_state.config_preset = 'deep'
-    if st.button("🚀 Exhaustive Investigation (200 searches)"):
+    if st.button("🚀 Exhaustive Investigation (20 batches)"):
         st.session_state.config_preset = 'exhaustive'
+    
+    # Logging Analysis
+    st.subheader("📊 Log Analysis")
+    with st.expander("View Investigation Logs", expanded=False):
+        st.caption("Analyze your investigation patterns and performance")
+        
+        if st.button("📈 Show Session Performance"):
+            try:
+                from log_analyzer import create_analysis_report
+                analysis = create_analysis_report()
+                st.text_area("Performance Analysis", analysis, height=300)
+            except Exception as e:
+                st.error(f"Failed to generate analysis: {e}")
+        
+        if st.button("🔍 Show Search Effectiveness"):
+            try:
+                from log_analyzer import LogAnalyzer
+                analyzer = LogAnalyzer()
+                effectiveness = analyzer.analyze_search_effectiveness()
+                st.json(effectiveness)
+            except Exception as e:
+                st.error(f"Failed to analyze search effectiveness: {e}")
+        
+        if st.button("🤖 Show LLM Performance"):
+            try:
+                from log_analyzer import LogAnalyzer
+                analyzer = LogAnalyzer()
+                llm_perf = analyzer.analyze_llm_performance()
+                st.json(llm_perf)
+            except Exception as e:
+                st.error(f"Failed to analyze LLM performance: {e}")
+        
+        # Session-specific analysis
+        if st.session_state.get('investigation_session'):
+            session = st.session_state['investigation_session']
+            if hasattr(session, 'start_time') and st.button("📋 Current Session Report"):
+                try:
+                    from log_analyzer import LogAnalyzer
+                    analyzer = LogAnalyzer()
+                    # Try to find session by looking for recent sessions
+                    recent_sessions = analyzer._load_sessions()
+                    if recent_sessions:
+                        # Get the most recent session (likely the current one)
+                        latest_session = max(recent_sessions, key=lambda x: x.get('session_metadata', {}).get('start_time', ''))
+                        session_id = latest_session.get('session_metadata', {}).get('session_id')
+                        if session_id:
+                            report = analyzer.generate_investigation_report(session_id)
+                            st.json(report)
+                        else:
+                            st.info("Current session not yet logged completely")
+                    else:
+                        st.info("No completed sessions found in logs")
+                except Exception as e:
+                    st.error(f"Failed to generate session report: {e}")
     
     # Apply presets
     if 'config_preset' in st.session_state:
         if st.session_state.config_preset == 'quick':
-            max_searches = 25
+            max_batches = 6  # 24 searches total
+            max_searches = 24
             satisfaction_threshold = 0.7
         elif st.session_state.config_preset == 'deep':
-            max_searches = 100
+            max_batches = 12  # 48 searches total  
+            max_searches = 48
             satisfaction_threshold = 0.8
         elif st.session_state.config_preset == 'exhaustive':
-            max_searches = 200
+            max_batches = 20  # 80 searches total
+            max_searches = 80
             satisfaction_threshold = 0.9
         del st.session_state.config_preset
 
@@ -125,21 +183,42 @@ except Exception as e:
     st.error(f"Error during initial data load: {e}")
     st.stop()
 
-# Load API keys from secrets
-try:
-    GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
-    RAPIDAPI_KEY = st.secrets["RAPIDAPI_KEY"]
-except KeyError as e:
-    st.error(f"Missing API Key in Streamlit Secrets (secrets.toml): {e}")
-    st.info("Please create a `.streamlit/secrets.toml` file with your GEMINI_API_KEY and RAPIDAPI_KEY.")
-    st.stop()
+# Initialize API keys as None - will be loaded in main()
+OPENAI_API_KEY = None
+RAPIDAPI_KEY = None
+
+def load_api_keys():
+    """Load API keys from secrets"""
+    global OPENAI_API_KEY, RAPIDAPI_KEY
+    try:
+        OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
+        RAPIDAPI_KEY = st.secrets["RAPIDAPI_KEY"]
+    except KeyError as e:
+        st.error(f"Missing API Key in Streamlit Secrets (secrets.toml): {e}")
+        st.info("Please create a `.streamlit/secrets.toml` file with your OPENAI_API_KEY and RAPIDAPI_KEY.")
+        st.stop()
+
+# Only run this when app is actually running, not during import
+if __name__ == "__main__" or "streamlit" in sys.modules:
+    # Load API keys before initializing services
+    if 'api_keys_loaded' not in st.session_state:
+        load_api_keys()
+        st.session_state['api_keys_loaded'] = True
 
 # Initialize LLM Handler
 try:
-    llm_handler.set_llm_model(GEMINI_API_KEY)
+    llm_handler.set_llm_model(OPENAI_API_KEY)
 except Exception as e:
     st.error(f"Failed to initialize the LLM handler: {e}")
     st.stop()
+
+# Initialize Logging System
+try:
+    from logging_system import investigation_logger
+    st.success("✅ Logging system initialized successfully")
+except Exception as e:
+    st.warning(f"⚠️ Logging system initialization failed: {e}")
+    st.info("Investigation will continue without comprehensive logging")
 
 # --- Initialize Session State ---
 if "messages" not in st.session_state:
@@ -161,7 +240,9 @@ if st.session_state.get('investigation_session'):
     col1, col2, col3, col4, col5 = st.columns(5)
     
     with col1:
-        st.metric("Searches", f"{session.search_count}/{session.config.max_searches}")
+        current_batches = (session.search_count + 3) // 4
+        max_batches_display = (session.config.max_searches + 3) // 4
+        st.metric("Batches", f"{current_batches}/{max_batches_display}")
     with col2:
         st.metric("Results Found", session.total_results_found)
     with col3:
@@ -173,9 +254,11 @@ if st.session_state.get('investigation_session'):
         elapsed = (datetime.now() - session.start_time).seconds / 60
         st.metric("Time (min)", f"{elapsed:.1f}")
     
-    # Progress bar
+    # Progress bar - show both batches and searches
     progress = session.search_count / session.config.max_searches
-    st.progress(progress, text=f"Investigation Progress: {session.search_count}/{session.config.max_searches} searches")
+    current_batches = (session.search_count + 3) // 4  # Round up to nearest batch
+    max_batches_display = (session.config.max_searches + 3) // 4  # Round up to nearest batch
+    st.progress(progress, text=f"Progress: {current_batches}/{max_batches_display} batches ({session.search_count}/{session.config.max_searches} searches)")
     
     # Status indicator
     if session.is_active:
@@ -270,9 +353,16 @@ if prompt := st.chat_input("Enter your investigation query..."):
                 # Initialize investigation engine
                 investigation_engine = InvestigationEngine(RAPIDAPI_KEY)
                 
+                # === NEW: Set up progress container for real-time updates ===
+                progress_placeholder = st.empty()
+                with progress_placeholder.container():
+                    progress_container = st.container()
+                investigation_engine.set_progress_container(progress_container)
+                
                 # Display investigation start
                 st.markdown(f"🚀 **Starting Investigation:** {prompt}")
-                st.markdown(f"**Configuration:** {investigation_config.max_searches} max searches, "
+                max_batches_config = (investigation_config.max_searches + 3) // 4
+                st.markdown(f"**Configuration:** {max_batches_config} max batches ({investigation_config.max_searches} searches), "
                            f"{investigation_config.satisfaction_threshold:.0%} satisfaction threshold")
                 st.markdown("---")
                 
@@ -285,6 +375,20 @@ if prompt := st.chat_input("Enter your investigation query..."):
                 # Store session
                 st.session_state['investigation_session'] = session
                 st.session_state['investigation_active'] = False
+                
+                # Display final summary if available
+                if hasattr(session, 'final_summary') and session.final_summary:
+                    st.markdown("---")
+                    st.markdown("## 📊 Investigation Results")
+                    st.markdown(session.final_summary)
+                    
+                    # Add download button for summary
+                    st.download_button(
+                        label="📥 Download Summary",
+                        data=session.final_summary,
+                        file_name=f"investigation_summary_{datetime.now().strftime('%Y%m%d_%H%M%S')}.md",
+                        mime="text/markdown"
+                    )
                 
                 # Generate final summary using LLM
                 if session.search_history:

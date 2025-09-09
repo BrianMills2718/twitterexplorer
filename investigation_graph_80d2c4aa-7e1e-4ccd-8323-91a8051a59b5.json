@@ -1,0 +1,17 @@
+{
+  "nodes": {
+    "492862c5-ee48-4277-9be4-e958def652ff": {
+      "id": "492862c5-ee48-4277-9be4-e958def652ff",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "find me the best TV shows that are popular right now in 2024",
+        "is_root": true,
+        "investigation_goal": "find me the best TV shows that are popular right now in 2024"
+      },
+      "created_at": "2025-09-08T06:05:02.279593"
+    }
+  },
+  "edges": [],
+  "analytic_question": "492862c5-ee48-4277-9be4-e958def652ff",
+  "created_at": "2025-09-08T06:05:03.061342"
+}

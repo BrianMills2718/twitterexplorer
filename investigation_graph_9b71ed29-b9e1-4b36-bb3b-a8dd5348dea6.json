@@ -1,0 +1,277 @@
+{
+  "nodes": {
+    "78c545bb-624c-40f2-bbba-67a6f0ed448a": {
+      "id": "78c545bb-624c-40f2-bbba-67a6f0ed448a",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "Bridge scoping test",
+        "is_root": true,
+        "investigation_goal": "Bridge scoping test"
+      },
+      "created_at": "2025-09-07T18:47:57.281270"
+    },
+    "dc1ea808-8b08-4ad5-8eb8-ea183e2a580e": {
+      "id": "dc1ea808-8b08-4ad5-8eb8-ea183e2a580e",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Find exact-phrase, recent posts that explicitly mention 'Bridge scoping test' so we can identify primary tweets and time patterns. Using Latest surfaces the most recent public discussion for immediate relevance.",
+        "parent_analytic_question": "78c545bb-624c-40f2-bbba-67a6f0ed448a"
+      },
+      "created_at": "2025-09-07T18:48:35.082436"
+    },
+    "f5223075-2ff9-43ce-a5c7-1420a477d554": {
+      "id": "f5223075-2ff9-43ce-a5c7-1420a477d554",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "\"Bridge scoping test\"",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-07T18:48:35.082436"
+    },
+    "d228afba-f356-49fc-a263-c6eb1e8bd2a3": {
+      "id": "d228afba-f356-49fc-a263-c6eb1e8bd2a3",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Capture broader wording and top/most-engaged tweets about scoping tests related to bridges. This complements the exact-phrase search by surfacing influential posts that may use variant phrasing or industry terms.",
+        "parent_analytic_question": "78c545bb-624c-40f2-bbba-67a6f0ed448a"
+      },
+      "created_at": "2025-09-07T18:48:35.082436"
+    },
+    "2830fa02-176c-4871-a95e-f64541049c1b": {
+      "id": "2830fa02-176c-4871-a95e-f64541049c1b",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "bridge scoping OR \"scoping test\" (bridge OR \"bridge inspection\" OR \"bridge assessment\")",
+          "search_type": "Top"
+        }
+      },
+      "created_at": "2025-09-07T18:48:35.082436"
+    },
+    "aafb40ee-7379-4015-8aa6-fcaf0117f089": {
+      "id": "aafb40ee-7379-4015-8aa6-fcaf0117f089",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Check national trending topics to see if there is any spike in public attention around bridges, inspections, or 'scoping test' related terms. If not trending in the US, we can iterate to other countries. This helps prioritize investigative effort and timing.",
+        "parent_analytic_question": "78c545bb-624c-40f2-bbba-67a6f0ed448a"
+      },
+      "created_at": "2025-09-07T18:48:35.082436"
+    },
+    "1ec48178-3f53-4eae-9104-a05ab1a734a9": {
+      "id": "1ec48178-3f53-4eae-9104-a05ab1a734a9",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "trends.php",
+        "parameters": {
+          "country": "UnitedStates"
+        }
+      },
+      "created_at": "2025-09-07T18:48:35.082436"
+    },
+    "4322fe12-e84b-49a7-8cd9-d8078bbe0fba": {
+      "id": "4322fe12-e84b-49a7-8cd9-d8078bbe0fba",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Retrieve the full conversation for the top tweet found in the exact-phrase search. This reveals replies, threads, quote-tweets and context (technical details, criticisms, follow-up indicators) necessary to assess the scope and origin of the claim/event.",
+        "parent_analytic_question": "78c545bb-624c-40f2-bbba-67a6f0ed448a"
+      },
+      "created_at": "2025-09-07T18:48:35.082436"
+    },
+    "2518d2a2-a95e-4c72-bed7-e461dc901771": {
+      "id": "2518d2a2-a95e-4c72-bed7-e461dc901771",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "tweet_thread.php",
+        "parameters": {
+          "id": "<tweet_id_from_search_1_top_result>"
+        }
+      },
+      "created_at": "2025-09-07T18:48:35.082436"
+    },
+    "3e77dcee-0742-4374-a215-b0d39ff1e522": {
+      "id": "3e77dcee-0742-4374-a215-b0d39ff1e522",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Fetch the recent posts from the top poster discovered in the searches to understand their activity pattern, whether they are an individual practitioner, journalist, agency, or org, and to find other posts that reference or elaborate on the scoping test.",
+        "parent_analytic_question": "78c545bb-624c-40f2-bbba-67a6f0ed448a"
+      },
+      "created_at": "2025-09-07T18:48:35.082436"
+    },
+    "3251e501-b712-4d3f-8b03-ed8708ac6b49": {
+      "id": "3251e501-b712-4d3f-8b03-ed8708ac6b49",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "<top_poster_screenname_from_search_results>"
+        }
+      },
+      "created_at": "2025-09-07T18:48:35.082436"
+    },
+    "dcb05360-cca9-4bf2-9b0a-1a0ec0c9b99c": {
+      "id": "dcb05360-cca9-4bf2-9b0a-1a0ec0c9b99c",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Map declared affiliations for the same top poster (employer, institution, project links) to assess credibility and identify organizational stakeholders to pursue for technical confirmation or follow-up.",
+        "parent_analytic_question": "78c545bb-624c-40f2-bbba-67a6f0ed448a"
+      },
+      "created_at": "2025-09-07T18:48:35.082436"
+    },
+    "63116dc2-a8c6-47e3-943b-5cb713bd64db": {
+      "id": "63116dc2-a8c6-47e3-943b-5cb713bd64db",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "affilates.php",
+        "parameters": {
+          "screenname": "<top_poster_screenname_from_search_results>"
+        }
+      },
+      "created_at": "2025-09-07T18:48:35.082436"
+    },
+    "581389ee-eb7c-4040-af74-cc64243f55f3": {
+      "id": "581389ee-eb7c-4040-af74-cc64243f55f3",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "test"
+        }
+      },
+      "created_at": "2025-09-07T18:48:35.691093"
+    }
+  },
+  "edges": [
+    {
+      "id": "03ef43fb-edf4-45bb-b3b0-4b6640f459df",
+      "source_id": "78c545bb-624c-40f2-bbba-67a6f0ed448a",
+      "target_id": "dc1ea808-8b08-4ad5-8eb8-ea183e2a580e",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-07T18:48:35.082436"
+    },
+    {
+      "id": "ec941d18-8bb7-4ccd-996a-f4095203cd49",
+      "source_id": "dc1ea808-8b08-4ad5-8eb8-ea183e2a580e",
+      "target_id": "f5223075-2ff9-43ce-a5c7-1420a477d554",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-07T18:48:35.082436"
+    },
+    {
+      "id": "0b4a9d84-459e-4c62-836a-39bca48d7112",
+      "source_id": "78c545bb-624c-40f2-bbba-67a6f0ed448a",
+      "target_id": "d228afba-f356-49fc-a263-c6eb1e8bd2a3",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-07T18:48:35.082436"
+    },
+    {
+      "id": "41335d62-1be1-4eca-98db-230c41f3c7ad",
+      "source_id": "d228afba-f356-49fc-a263-c6eb1e8bd2a3",
+      "target_id": "2830fa02-176c-4871-a95e-f64541049c1b",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-07T18:48:35.082436"
+    },
+    {
+      "id": "db63c22e-4223-49dc-a60f-1ee374732db7",
+      "source_id": "78c545bb-624c-40f2-bbba-67a6f0ed448a",
+      "target_id": "aafb40ee-7379-4015-8aa6-fcaf0117f089",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-07T18:48:35.082436"
+    },
+    {
+      "id": "21cf371c-9d70-4b21-9bfb-f23d8f9acda3",
+      "source_id": "aafb40ee-7379-4015-8aa6-fcaf0117f089",
+      "target_id": "1ec48178-3f53-4eae-9104-a05ab1a734a9",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-07T18:48:35.082436"
+    },
+    {
+      "id": "2fdfb6c7-e130-4c66-9ef1-fad63fe74051",
+      "source_id": "78c545bb-624c-40f2-bbba-67a6f0ed448a",
+      "target_id": "4322fe12-e84b-49a7-8cd9-d8078bbe0fba",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-07T18:48:35.082436"
+    },
+    {
+      "id": "97f9feed-5d1d-4790-853c-6451fec4339a",
+      "source_id": "4322fe12-e84b-49a7-8cd9-d8078bbe0fba",
+      "target_id": "2518d2a2-a95e-4c72-bed7-e461dc901771",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-07T18:48:35.082436"
+    },
+    {
+      "id": "de0412e2-e3a8-4f9e-b8c6-c2fcabb39314",
+      "source_id": "78c545bb-624c-40f2-bbba-67a6f0ed448a",
+      "target_id": "3e77dcee-0742-4374-a215-b0d39ff1e522",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-07T18:48:35.082436"
+    },
+    {
+      "id": "17773de5-6e3a-48b8-9a42-db7d54bf39fd",
+      "source_id": "3e77dcee-0742-4374-a215-b0d39ff1e522",
+      "target_id": "3251e501-b712-4d3f-8b03-ed8708ac6b49",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-07T18:48:35.082436"
+    },
+    {
+      "id": "8b2bddda-77ff-4ef6-a6c9-c6545274ee0b",
+      "source_id": "78c545bb-624c-40f2-bbba-67a6f0ed448a",
+      "target_id": "dcb05360-cca9-4bf2-9b0a-1a0ec0c9b99c",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-07T18:48:35.082436"
+    },
+    {
+      "id": "9a63eece-fac5-465a-af08-a31d55d69f49",
+      "source_id": "dcb05360-cca9-4bf2-9b0a-1a0ec0c9b99c",
+      "target_id": "63116dc2-a8c6-47e3-943b-5cb713bd64db",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-07T18:48:35.082436"
+    }
+  ],
+  "analytic_question": "78c545bb-624c-40f2-bbba-67a6f0ed448a",
+  "created_at": "2025-09-07T18:48:35.693094"
+}

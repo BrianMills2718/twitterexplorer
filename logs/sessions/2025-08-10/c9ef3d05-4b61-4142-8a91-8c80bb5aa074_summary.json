@@ -1,0 +1,88 @@
+{
+  "session_metadata": {
+    "session_id": "c9ef3d05-4b61-4142-8a91-8c80bb5aa074",
+    "start_time": "2025-08-10T21:41:05.240711+00:00",
+    "end_time": "2025-08-10T21:41:35.057311+00:00",
+    "duration_seconds": 29.814602,
+    "user_query": "What is Elon Musk's latest announcement about X platform?"
+  },
+  "configuration": {
+    "max_searches": 2,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.8,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "pages_per_search": 1,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true,
+    "enforce_endpoint_diversity": false,
+    "max_endpoint_repeats": 5,
+    "diversity_threshold": 0.3
+  },
+  "performance_metrics": {
+    "total_searches": 2,
+    "total_rounds": 1,
+    "total_results_found": 61,
+    "satisfaction_score": 0.0,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.0,
+      "source_diversity": 0.0,
+      "evidence_quality": 0.0,
+      "claim_specificity": 0.0,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Investigation failed: InvestigationSession.update_satisfaction_metrics() missing 1 required positional argument: 'findings'"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [],
+      "moderately_effective": [
+        {
+          "search_id": 2,
+          "query": "",
+          "results": 60,
+          "effectiveness": 5.0
+        }
+      ],
+      "low_effectiveness": [],
+      "ineffective": [
+        {
+          "search_id": 1,
+          "query": "from:elonmusk X platform announcement OR news OR update",
+          "results": 1,
+          "effectiveness": 0.25
+        }
+      ]
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "Graph Strategy: The primary goal is to identify Elon Musk's latest announcement regarding the X platform. To achieve this comprehensively, a multi-faceted approach is necessary, leveraging diverse endpoints. Directly searching for announcements, reviewing his personal timeline for direct communication, and checking broader trends related to 'X platform' will provide the most current and relevant information. This strategy prioritizes direct sources and immediate public discourse.",
+        "avg_effectiveness": 2.625
+      }
+    ],
+    "dead_ends": [
+      "from:elonmusk X platform announcement OR news OR update"
+    ],
+    "promising_leads": []
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Graph Strategy: The primary goal is to identify Elon Musk's latest announcement regarding the X platform. To achieve this comprehensively, a multi-faceted approach is necessary, leveraging diverse endpoints. Directly searching for announcements, reviewing his personal timeline for direct communication, and checking broader trends related to 'X platform' will provide the most current and relevant information. This strategy prioritizes direct sources and immediate public discourse.",
+      "searches_count": 2,
+      "total_results": 61,
+      "effectiveness": 2.625,
+      "insights": [
+        "X is reported to be the #1 News App (Free and Grossing) in app stores, indicating strong download and revenue performance.",
+        "Grok (xAI's AI, integrated with X) is ranked #2 in Productivity Apps and #6 Overall, with skyrocketing downloads.",
+        "Grok has new features like 'Grok Imagine' which allows users to turn imagination into video or images into video through a long-press function on the iOS app (Android coming soon)."
+      ]
+    }
+  ]
+}

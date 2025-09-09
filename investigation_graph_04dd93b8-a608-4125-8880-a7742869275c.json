@@ -1,0 +1,993 @@
+{
+  "nodes": {
+    "7568a760-dc51-4144-a585-c8db1ca24644": {
+      "id": "7568a760-dc51-4144-a585-c8db1ca24644",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "Trump sent military to Venezuela recent news",
+        "is_root": true,
+        "investigation_goal": "Trump sent military to Venezuela recent news"
+      },
+      "created_at": "2025-09-08T02:24:08.707114"
+    },
+    "4ebe27f2-42d9-4751-804c-64f1ee6185e1": {
+      "id": "4ebe27f2-42d9-4751-804c-64f1ee6185e1",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Target exact-phrase and close-variant queries to capture any recent tweets explicitly claiming Trump sent troops to Venezuela. Use Latest to surface newest posts and viral claims that may have started circulating.",
+        "parent_analytic_question": "7568a760-dc51-4144-a585-c8db1ca24644"
+      },
+      "created_at": "2025-09-08T02:24:42.047444"
+    },
+    "3e68e436-17ad-4cae-b18a-33fbbbb2db37": {
+      "id": "3e68e436-17ad-4cae-b18a-33fbbbb2db37",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "\"Trump sent military to Venezuela\" OR \"sent troops to Venezuela\" OR \"Trump troops Venezuela\"",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-08T02:24:42.047444"
+    },
+    "1a66b198-cb47-4c28-97ff-7b216d9cfb50": {
+      "id": "1a66b198-cb47-4c28-97ff-7b216d9cfb50",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: A broader boolean search to catch tweets that mention Trump + Venezuela + military language. Using Top will surface high-engagement tweets (potential misinformation spreaders or influential sources). Excluding replies reduces noise.",
+        "parent_analytic_question": "7568a760-dc51-4144-a585-c8db1ca24644"
+      },
+      "created_at": "2025-09-08T02:24:42.047444"
+    },
+    "4aca2751-9ccc-4538-9a34-bb3e34d7e5d0": {
+      "id": "4aca2751-9ccc-4538-9a34-bb3e34d7e5d0",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "(\"Trump\" AND (Venezuela OR Venezuelan) AND (troops OR military OR 'sent troops' OR 'sent military')) -filter:replies",
+          "search_type": "Top"
+        }
+      },
+      "created_at": "2025-09-08T02:24:42.047444"
+    },
+    "59c433fd-5a61-4bc5-baaf-58a4a6135e56": {
+      "id": "59c433fd-5a61-4bc5-baaf-58a4a6135e56",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Check Reuters' feed specifically for any reporting or corrections. Replicate with other major outlets (AP, BBC, NYTimes, CNN) in follow-ups if Reuters returns nothing.",
+        "parent_analytic_question": "7568a760-dc51-4144-a585-c8db1ca24644"
+      },
+      "created_at": "2025-09-08T02:24:42.047444"
+    },
+    "6f840dcf-3bee-4098-bab2-ebd72a3743b4": {
+      "id": "6f840dcf-3bee-4098-bab2-ebd72a3743b4",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "from:reuters Trump Venezuela OR \"sent troops\"",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-08T02:24:42.047444"
+    },
+    "ed0a97ae-c80e-4e85-a4ac-e30456433d79": {
+      "id": "ed0a97ae-c80e-4e85-a4ac-e30456433d79",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Scan the Reuters chronological feed for any breaking coverage about US military action or Venezuela mentions to corroborate search results and capture timestamps and links.",
+        "parent_analytic_question": "7568a760-dc51-4144-a585-c8db1ca24644"
+      },
+      "created_at": "2025-09-08T02:24:42.047444"
+    },
+    "3fbda200-b829-4576-a02a-0ecf05699ea2": {
+      "id": "3fbda200-b829-4576-a02a-0ecf05699ea2",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "reuters"
+        }
+      },
+      "created_at": "2025-09-08T02:24:42.047444"
+    },
+    "86b8a052-3f53-4313-bb1b-7b89b68ac29d": {
+      "id": "86b8a052-3f53-4313-bb1b-7b89b68ac29d",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Check the Department of Defense official timeline for statements, press releases, or denial/confirmation about US military movements related to Venezuela. Official accounts are essential for verification.",
+        "parent_analytic_question": "7568a760-dc51-4144-a585-c8db1ca24644"
+      },
+      "created_at": "2025-09-08T02:24:42.047444"
+    },
+    "e0a41333-f1bf-43a1-a328-da6416f8e3f7": {
+      "id": "e0a41333-f1bf-43a1-a328-da6416f8e3f7",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "DeptofDefense"
+        }
+      },
+      "created_at": "2025-09-08T02:24:42.047444"
+    },
+    "d8fc6637-2d76-4170-b351-7104876a6151": {
+      "id": "d8fc6637-2d76-4170-b351-7104876a6151",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Verify the status of Trump's account and look for any public statement from him; even if suspended, this call will confirm account status and guide whether to search alternative Trump-related accounts (e.g., spokespeople, campaign accounts).",
+        "parent_analytic_question": "7568a760-dc51-4144-a585-c8db1ca24644"
+      },
+      "created_at": "2025-09-08T02:24:42.047444"
+    },
+    "3f2f5ec2-70dd-4213-918f-02d7a28feb89": {
+      "id": "3f2f5ec2-70dd-4213-918f-02d7a28feb89",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "screenname.php",
+        "parameters": {
+          "screenname": "realDonaldTrump"
+        }
+      },
+      "created_at": "2025-09-08T02:24:42.047444"
+    },
+    "503b5d7f-a437-451e-a859-98082fe544ac": {
+      "id": "503b5d7f-a437-451e-a859-98082fe544ac",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Check the Venezuelan president's timeline for any claims, responses, or alerts about US military presence \u2014 useful to identify origin of claims or official Venezuelan framing.",
+        "parent_analytic_question": "7568a760-dc51-4144-a585-c8db1ca24644"
+      },
+      "created_at": "2025-09-08T02:24:42.047444"
+    },
+    "314ba1dc-217f-4509-baff-54e46b9761bb": {
+      "id": "314ba1dc-217f-4509-baff-54e46b9761bb",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "NicolasMaduro"
+        }
+      },
+      "created_at": "2025-09-08T02:24:42.047444"
+    },
+    "750109da-4eb5-4a73-ac03-add420402fb2": {
+      "id": "750109da-4eb5-4a73-ac03-add420402fb2",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: See whether the topic (Venezuela / Trump / troops) is trending in the US; if so, that indicates broader circulation and helps prioritize which search threads to deep-dive.",
+        "parent_analytic_question": "7568a760-dc51-4144-a585-c8db1ca24644"
+      },
+      "created_at": "2025-09-08T02:24:42.047444"
+    },
+    "c21900f7-a6ea-4032-b13a-a7e7f3f72feb": {
+      "id": "c21900f7-a6ea-4032-b13a-a7e7f3f72feb",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "trends.php",
+        "parameters": {
+          "country": "UnitedStates"
+        }
+      },
+      "created_at": "2025-09-08T02:24:42.047444"
+    },
+    "0cf8d3f5-ab4e-479d-a857-9227316d7299": {
+      "id": "0cf8d3f5-ab4e-479d-a857-9227316d7299",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "The real reason Trump has sent troops to Venezuela https://t.co/9j7tIO9KWA via @YouTube",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-08T02:25:54.269264",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.8,
+          "goal_relevance_score": 0.6
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-08T02:25:54.269264"
+      },
+      "created_at": "2025-09-08T02:25:54.269264"
+    },
+    "6860bfd1-5e49-4619-89e4-31efb8f0dd57": {
+      "id": "6860bfd1-5e49-4619-89e4-31efb8f0dd57",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "The real reason Trump has sent troops to Venezuela #PatriotRodSteel https://t.co/MUSsM5PuQY via @YouTube @originalmarkz @SisterCounselor @NickVeniamin @PPN1776",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-08T02:25:54.269264",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.7,
+          "goal_relevance_score": 0.6
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-08T02:25:54.269264"
+      },
+      "created_at": "2025-09-08T02:25:54.269264"
+    },
+    "bb1b9e15-ac8d-473c-9a64-153e6ca1c79e": {
+      "id": "bb1b9e15-ac8d-473c-9a64-153e6ca1c79e",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "The real reason Trump has sent troops to Venezuela https://t.co/WhDYUsP9eb via @YouTube",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-08T02:25:54.269264",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.8,
+          "goal_relevance_score": 0.6
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-08T02:25:54.269264"
+      },
+      "created_at": "2025-09-08T02:25:54.269264"
+    },
+    "75d563de-26da-4bc1-a3ee-4fa5bd897079": {
+      "id": "75d563de-26da-4bc1-a3ee-4fa5bd897079",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Interesting observation as to why Trump sent troops to Venezuela \nSeptember 3, 2025\n\nhttps://t.co/ktonF1bos6",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-08T02:25:54.269264",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.9,
+          "goal_relevance_score": 0.6
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-08T02:25:54.269264"
+      },
+      "created_at": "2025-09-08T02:25:54.269264"
+    },
+    "89dd22d3-c31f-442c-9aab-ccbf4676ead2": {
+      "id": "89dd22d3-c31f-442c-9aab-ccbf4676ead2",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "The real reason Trump has sent troops to Venezuela https://t.co/QDtVY4Id9Y via @YouTube fdfd;",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-08T02:25:54.269264",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.6,
+          "goal_relevance_score": 0.6
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-08T02:25:54.269264"
+      },
+      "created_at": "2025-09-08T02:25:54.269264"
+    },
+    "32adc908-ba45-4906-b831-0975d92e0523": {
+      "id": "32adc908-ba45-4906-b831-0975d92e0523",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "The real reason Trump has sent troops to Venezuela . Thoughts \ud83d\udcad \u2049\ufe0f https://t.co/AjVtMHwXsy",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-08T02:25:54.269264",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.75,
+          "goal_relevance_score": 0.6
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-08T02:25:54.269264"
+      },
+      "created_at": "2025-09-08T02:25:54.269264"
+    },
+    "48e77043-53c7-4e5f-aefe-a5149617dd97": {
+      "id": "48e77043-53c7-4e5f-aefe-a5149617dd97",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "The real reason Trump has sent troops to Venezuela https://t.co/c4gguiDJpK via @YouTube",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-08T02:25:54.269264",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.7,
+          "goal_relevance_score": 0.6
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-08T02:25:54.269264"
+      },
+      "created_at": "2025-09-08T02:25:54.270264"
+    },
+    "4307ebad-0d5f-4196-a59f-57d8769e48bb": {
+      "id": "4307ebad-0d5f-4196-a59f-57d8769e48bb",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "The real reason Trump has sent troops to Venezuela https://t.co/byG5jZWKbN via @YouTube",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-08T02:25:54.270264",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.7,
+          "goal_relevance_score": 0.6
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-08T02:25:54.270264"
+      },
+      "created_at": "2025-09-08T02:25:54.270264"
+    },
+    "7406bd47-d2cb-41a0-aa51-105a8894d75e": {
+      "id": "7406bd47-d2cb-41a0-aa51-105a8894d75e",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "The real reason Trump has sent troops to Venezuela https://t.co/ICsQf3SzBW via @YouTube",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-08T02:25:54.270264",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.7,
+          "goal_relevance_score": 0.6
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-08T02:25:54.270264"
+      },
+      "created_at": "2025-09-08T02:25:54.270264"
+    },
+    "337cb84f-eead-496d-825e-683e2dacce2f": {
+      "id": "337cb84f-eead-496d-825e-683e2dacce2f",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "The real reason Trump has sent troops to Venezuela - YouTube https://t.co/Hy4f3Jxgdu",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-08T02:25:54.270264",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.85,
+          "goal_relevance_score": 0.6
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-08T02:25:54.270264"
+      },
+      "created_at": "2025-09-08T02:25:54.270264"
+    },
+    "f9beb98c-47f1-4b24-b105-9f292bf88b35": {
+      "id": "f9beb98c-47f1-4b24-b105-9f292bf88b35",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "PM of Trinidad &amp; Tobago, along with Governor of Virgin Islands are happy with Trumps strike on Venezuela drug boat and said good for the islands.  https://t.co/U8v0qlOIR5",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-08T02:26:18.626813",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.8,
+          "goal_relevance_score": 0.4
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-08T02:26:18.626813"
+      },
+      "created_at": "2025-09-08T02:26:18.626813"
+    },
+    "6a5d96bc-0bba-4751-b55a-ddb22c8322d6": {
+      "id": "6a5d96bc-0bba-4751-b55a-ddb22c8322d6",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "\u2757\ufe0f#Venezuela President #Maduro is preparing the country's army for possible military action against the United States. This was prompted by the fact that Trump had previously sent thousands of soldiers and a dozen #US Navy ships to Venezuela, which have already arrived.\n\n#Trump https://t.co/YnN3havrgl",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-08T02:26:18.626813",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.92,
+          "goal_relevance_score": 0.8
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-08T02:26:18.626813"
+      },
+      "created_at": "2025-09-08T02:26:18.626813"
+    },
+    "68814323-4147-4ad5-96c6-5d8e7ca7b0da": {
+      "id": "68814323-4147-4ad5-96c6-5d8e7ca7b0da",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "More National Guard deployments into more cities, expanded military operations in Venezuela, Iran and North Korea (!?!?), and our troops being misused and politicized. \n\nTrump is on plan. And picking up steam. And nothing is stopping him. \n\nThis is the most important story in America. Maybe in the world. \n\nI joined Nicolle Wallace on MSNBC for my weekly visit to break it all down. \n\nAnd I\u2019ll have much more tonight on MSNBC\u2019s 11th Hour Nightcap with Stephanie Ruhle at 11ET. We spend the full hour to get into all this, Kennedy Jr\u2019s disastrous testimony, Trump\u2019s economic promises, and my special back-to-school MVP. It\u2019s a good one. \n\nTune in or watch online to recap this crazy first week of September. (After baseball & football of course). Happy weekend!?!?\ud83d\udea8\ud83c\uddfa\ud83c\uddf8",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-08T02:26:18.626813",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.78,
+          "goal_relevance_score": 0.6
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-08T02:26:18.626813"
+      },
+      "created_at": "2025-09-08T02:26:18.626813"
+    },
+    "255109a1-d8f0-4ebd-a14d-f78e876f079b": {
+      "id": "255109a1-d8f0-4ebd-a14d-f78e876f079b",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "\ud83c\uddfa\ud83c\uddf2\u26a1\ufe0f\ud83c\uddfb\ud83c\uddea The US military is already practicing landing its troops on Venezuelan soil using various military equipment. President Nicolas Maduro has mobilized 8 million paramilitaries and reinforced his borders and coasts with military personnel. President Trump wants a war with Venezuela. A war with Venezuela will not end the way the US Pentagon envisions.",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-08T02:26:18.626813",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.86,
+          "goal_relevance_score": 0.6
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-08T02:26:18.626813"
+      },
+      "created_at": "2025-09-08T02:26:18.626813"
+    },
+    "1ef9607a-686b-4aa6-9306-53352cfbd1ac": {
+      "id": "1ef9607a-686b-4aa6-9306-53352cfbd1ac",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Is Trump preparing a US military attack on Venezuela?\n\nTrump deployed 3 warships and 4000 troops around Venezuela.\n\nTrump put a mafia-style $50 million bounty on the head of President Maduro, and absurdly claimed he is the leader of a \"terrorist cartel\", to justify intervention. https://t.co/8O31H7U7r7",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-08T02:26:18.626813",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.95,
+          "goal_relevance_score": 0.6
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-08T02:26:18.626813"
+      },
+      "created_at": "2025-09-08T02:26:18.626813"
+    },
+    "821b9afa-7385-4e65-b4c1-83e76e3c3a19": {
+      "id": "821b9afa-7385-4e65-b4c1-83e76e3c3a19",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "US Military Strikes Drug-Carrying Cartel Boat From Venezuela, Killing 11 Narcoterrorists\n\nTrump sent a clear message. And, of course,\u00a0 Democrats are bewailing the  death of these murderers. They take the wrong side on ever issue.  They\u2019re really insane.\n\nhttps://t.co/xyuurJYX6b https://t.co/C7uz1eChIC",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-08T02:26:18.626813",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.88,
+          "goal_relevance_score": 0.8
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-08T02:26:18.626813"
+      },
+      "created_at": "2025-09-08T02:26:18.626813"
+    },
+    "3ea95eb5-6b5b-4954-af6a-2af1742636fe": {
+      "id": "3ea95eb5-6b5b-4954-af6a-2af1742636fe",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Unable to defeat Russia and Iran, the US is now picking on a much smaller country: Venezuela.\n\nTrump has sent three U.S. Navy missile destroyers\u2014USS Gravely, USS Jason Dunham and USS Sampson\u2014and around 4,000 military personnel to the edge of Venezuela\u2019s territorial waters.\n\nMaduro needs Russian protection.",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-08T02:26:18.626813",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.95,
+          "goal_relevance_score": 0.8
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-08T02:26:18.626813"
+      },
+      "created_at": "2025-09-08T02:26:18.626813"
+    },
+    "83da8eba-960c-4fc8-b05a-beed4a4eae6b": {
+      "id": "83da8eba-960c-4fc8-b05a-beed4a4eae6b",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "The US is not talking about regime change in Venezuela, President Trump said, as the US ordered an additional 10 stealth fighter jets to be deployed in the Caribbean https://t.co/r8zRn3gbyP https://t.co/DrJKOpY3vD",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-08T02:26:42.532432",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.85,
+          "goal_relevance_score": 0.4
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-08T02:26:42.532432"
+      },
+      "created_at": "2025-09-08T02:26:42.532432"
+    },
+    "0647c32f-32bd-45f3-af45-ed5a142bd757": {
+      "id": "0647c32f-32bd-45f3-af45-ed5a142bd757",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "\ud83d\udd0a Today on the Reuters World News daily podcast:\n- Hundreds arrested in massive ICE raid at Hyundai plant\n- US sends stealth jets to the Caribbean amid Venezuela tensions\n- Trump backs RFK Jr. despite Congress grilling\nhttps://t.co/hFNtfat3cX https://t.co/APxN9W13Bf",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-08T02:26:42.532432",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.8,
+          "goal_relevance_score": 0.6
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-08T02:26:42.532432"
+      },
+      "created_at": "2025-09-08T02:26:42.532432"
+    },
+    "328c46f2-794f-4c4f-9e14-cc9ebf15ec71": {
+      "id": "328c46f2-794f-4c4f-9e14-cc9ebf15ec71",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Trump weighs strikes targeting cartels inside Venezuela, CNN reports https://t.co/NXV7BjR1BY https://t.co/NXV7BjR1BY",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-08T02:26:42.532432",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.9,
+          "goal_relevance_score": 0.4
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-08T02:26:42.532432"
+      },
+      "created_at": "2025-09-08T02:26:42.532432"
+    },
+    "c0b22303-269d-43bd-abe2-f9649b4472ae": {
+      "id": "c0b22303-269d-43bd-abe2-f9649b4472ae",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Trump weighs strikes targeting cartels inside Venezuela, CNN reports https://t.co/SK6MtDmp0H https://t.co/SK6MtDmp0H",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-08T02:26:42.532432",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.9,
+          "goal_relevance_score": 0.4
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-08T02:26:42.532432"
+      },
+      "created_at": "2025-09-08T02:26:42.532432"
+    },
+    "05042f8d-7221-4115-b5fb-1561350574f4": {
+      "id": "05042f8d-7221-4115-b5fb-1561350574f4",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "\ud83d\udd0a 'The Trump administration has not provided any proof that the people on that boat were armed.' @tomhals explores the legality of the US fatal military attack on a Venezuelan boat Trump says was carrying illegal drugs. More on Reuters World News https://t.co/2Nunnt822F",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-08T02:26:42.532432",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.95,
+          "goal_relevance_score": 0.8
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-08T02:26:42.532432"
+      },
+      "created_at": "2025-09-08T02:26:42.532432"
+    },
+    "8e1f7184-bf96-416e-83ea-c6789bee3c71": {
+      "id": "8e1f7184-bf96-416e-83ea-c6789bee3c71",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Venezuela to boost troops to tackle drug trafficking as US strengthens military in Caribbean https://t.co/OwvxhqmiVx https://t.co/OwvxhqmiVx",
+        "source_info": {
+          "source": "timeline.php",
+          "timestamp": "2025-09-08T02:26:59.114782",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.9,
+          "goal_relevance_score": 0.4
+        },
+        "source": "timeline.php",
+        "timestamp": "2025-09-08T02:26:59.114782"
+      },
+      "created_at": "2025-09-08T02:26:59.114782"
+    }
+  },
+  "edges": [
+    {
+      "id": "744973ab-069b-41c5-a074-1faf86c4333d",
+      "source_id": "7568a760-dc51-4144-a585-c8db1ca24644",
+      "target_id": "4ebe27f2-42d9-4751-804c-64f1ee6185e1",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-08T02:24:42.047444"
+    },
+    {
+      "id": "53ca27dc-181c-4912-b0ec-c5fd7623517f",
+      "source_id": "4ebe27f2-42d9-4751-804c-64f1ee6185e1",
+      "target_id": "3e68e436-17ad-4cae-b18a-33fbbbb2db37",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-08T02:24:42.047444"
+    },
+    {
+      "id": "ef4a801f-1148-4a5d-b52b-9cccfbe458c2",
+      "source_id": "7568a760-dc51-4144-a585-c8db1ca24644",
+      "target_id": "1a66b198-cb47-4c28-97ff-7b216d9cfb50",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-08T02:24:42.047444"
+    },
+    {
+      "id": "75c0fc42-87f9-45a8-854f-8b493067c2b4",
+      "source_id": "1a66b198-cb47-4c28-97ff-7b216d9cfb50",
+      "target_id": "4aca2751-9ccc-4538-9a34-bb3e34d7e5d0",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-08T02:24:42.047444"
+    },
+    {
+      "id": "eb85f14f-5374-4b6e-b59d-8380c35017ee",
+      "source_id": "7568a760-dc51-4144-a585-c8db1ca24644",
+      "target_id": "59c433fd-5a61-4bc5-baaf-58a4a6135e56",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-08T02:24:42.047444"
+    },
+    {
+      "id": "ee78bbd9-eaf4-4d37-8047-f7eb01ce1c09",
+      "source_id": "59c433fd-5a61-4bc5-baaf-58a4a6135e56",
+      "target_id": "6f840dcf-3bee-4098-bab2-ebd72a3743b4",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-08T02:24:42.047444"
+    },
+    {
+      "id": "0c1e3f5a-3bb2-4f95-ae26-e67cd449d81f",
+      "source_id": "7568a760-dc51-4144-a585-c8db1ca24644",
+      "target_id": "ed0a97ae-c80e-4e85-a4ac-e30456433d79",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-08T02:24:42.047444"
+    },
+    {
+      "id": "0a0a1ff5-76dc-4a75-9a5b-b8a2eb9b5f7a",
+      "source_id": "ed0a97ae-c80e-4e85-a4ac-e30456433d79",
+      "target_id": "3fbda200-b829-4576-a02a-0ecf05699ea2",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-08T02:24:42.047444"
+    },
+    {
+      "id": "c261f33f-1059-48c2-8836-dce895976beb",
+      "source_id": "7568a760-dc51-4144-a585-c8db1ca24644",
+      "target_id": "86b8a052-3f53-4313-bb1b-7b89b68ac29d",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-08T02:24:42.047444"
+    },
+    {
+      "id": "cb1cb0f5-004a-4ebd-b468-38a1d80c2c26",
+      "source_id": "86b8a052-3f53-4313-bb1b-7b89b68ac29d",
+      "target_id": "e0a41333-f1bf-43a1-a328-da6416f8e3f7",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-08T02:24:42.047444"
+    },
+    {
+      "id": "d425f8b3-4d4a-49a0-88cd-e43d2e9ddb89",
+      "source_id": "7568a760-dc51-4144-a585-c8db1ca24644",
+      "target_id": "d8fc6637-2d76-4170-b351-7104876a6151",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-08T02:24:42.047444"
+    },
+    {
+      "id": "b5580d4f-5af6-465d-841e-82ed634d25f8",
+      "source_id": "d8fc6637-2d76-4170-b351-7104876a6151",
+      "target_id": "3f2f5ec2-70dd-4213-918f-02d7a28feb89",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-08T02:24:42.047444"
+    },
+    {
+      "id": "e0ed3b3c-8534-4c50-8af5-5eede821e9a6",
+      "source_id": "7568a760-dc51-4144-a585-c8db1ca24644",
+      "target_id": "503b5d7f-a437-451e-a859-98082fe544ac",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-08T02:24:42.047444"
+    },
+    {
+      "id": "4ecdc989-1b8d-447f-8dd7-eb0dfa0bf5ef",
+      "source_id": "503b5d7f-a437-451e-a859-98082fe544ac",
+      "target_id": "314ba1dc-217f-4509-baff-54e46b9761bb",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-08T02:24:42.047444"
+    },
+    {
+      "id": "53bf84df-cef7-41aa-905a-5fda1948290e",
+      "source_id": "7568a760-dc51-4144-a585-c8db1ca24644",
+      "target_id": "750109da-4eb5-4a73-ac03-add420402fb2",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-08T02:24:42.047444"
+    },
+    {
+      "id": "caf7cb86-3ca4-4431-85ac-33f7a27b73d6",
+      "source_id": "750109da-4eb5-4a73-ac03-add420402fb2",
+      "target_id": "c21900f7-a6ea-4032-b13a-a7e7f3f72feb",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-08T02:24:42.047444"
+    },
+    {
+      "id": "b8f788e4-a6ca-427f-bc3d-67057dc86332",
+      "source_id": "3e68e436-17ad-4cae-b18a-33fbbbb2db37",
+      "target_id": "0cf8d3f5-ab4e-479d-a857-9227316d7299",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.8
+      },
+      "created_at": "2025-09-08T02:25:54.269264"
+    },
+    {
+      "id": "2a4279c2-8812-4ba5-a16e-d8efb3ea32e1",
+      "source_id": "3e68e436-17ad-4cae-b18a-33fbbbb2db37",
+      "target_id": "6860bfd1-5e49-4619-89e4-31efb8f0dd57",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.7
+      },
+      "created_at": "2025-09-08T02:25:54.269264"
+    },
+    {
+      "id": "b137d8a1-6e78-4942-80a9-74f155ff81f7",
+      "source_id": "3e68e436-17ad-4cae-b18a-33fbbbb2db37",
+      "target_id": "bb1b9e15-ac8d-473c-9a64-153e6ca1c79e",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.8
+      },
+      "created_at": "2025-09-08T02:25:54.269264"
+    },
+    {
+      "id": "02ee8466-59b1-4b9c-ac56-d12284c132b1",
+      "source_id": "3e68e436-17ad-4cae-b18a-33fbbbb2db37",
+      "target_id": "75d563de-26da-4bc1-a3ee-4fa5bd897079",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.9
+      },
+      "created_at": "2025-09-08T02:25:54.269264"
+    },
+    {
+      "id": "14299cb7-40c4-4d59-a0e5-c7721bd5c6fe",
+      "source_id": "3e68e436-17ad-4cae-b18a-33fbbbb2db37",
+      "target_id": "89dd22d3-c31f-442c-9aab-ccbf4676ead2",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.6
+      },
+      "created_at": "2025-09-08T02:25:54.269264"
+    },
+    {
+      "id": "4d7a28e4-7975-45b8-833f-65d188843053",
+      "source_id": "3e68e436-17ad-4cae-b18a-33fbbbb2db37",
+      "target_id": "32adc908-ba45-4906-b831-0975d92e0523",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.75
+      },
+      "created_at": "2025-09-08T02:25:54.269264"
+    },
+    {
+      "id": "9ba03549-0f19-45b7-9566-fc0fd2c5fccd",
+      "source_id": "3e68e436-17ad-4cae-b18a-33fbbbb2db37",
+      "target_id": "48e77043-53c7-4e5f-aefe-a5149617dd97",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.7
+      },
+      "created_at": "2025-09-08T02:25:54.270264"
+    },
+    {
+      "id": "4e5d6513-a4f5-4b20-bd9d-33f642b0dad6",
+      "source_id": "3e68e436-17ad-4cae-b18a-33fbbbb2db37",
+      "target_id": "4307ebad-0d5f-4196-a59f-57d8769e48bb",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.7
+      },
+      "created_at": "2025-09-08T02:25:54.270264"
+    },
+    {
+      "id": "6bb9f7f8-0442-4c4e-b638-d97be7ff0de0",
+      "source_id": "3e68e436-17ad-4cae-b18a-33fbbbb2db37",
+      "target_id": "7406bd47-d2cb-41a0-aa51-105a8894d75e",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.7
+      },
+      "created_at": "2025-09-08T02:25:54.270264"
+    },
+    {
+      "id": "95cd676b-833b-4dd1-ad81-9c9c43d03b57",
+      "source_id": "3e68e436-17ad-4cae-b18a-33fbbbb2db37",
+      "target_id": "337cb84f-eead-496d-825e-683e2dacce2f",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.85
+      },
+      "created_at": "2025-09-08T02:25:54.270264"
+    },
+    {
+      "id": "199664f3-50fe-4797-8815-8edf3a1c6b34",
+      "source_id": "4aca2751-9ccc-4538-9a34-bb3e34d7e5d0",
+      "target_id": "f9beb98c-47f1-4b24-b105-9f292bf88b35",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.8
+      },
+      "created_at": "2025-09-08T02:26:18.626813"
+    },
+    {
+      "id": "7e64406b-0638-410a-b69a-a8130f452d93",
+      "source_id": "4aca2751-9ccc-4538-9a34-bb3e34d7e5d0",
+      "target_id": "6a5d96bc-0bba-4751-b55a-ddb22c8322d6",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.92
+      },
+      "created_at": "2025-09-08T02:26:18.626813"
+    },
+    {
+      "id": "c6a107e3-1a2d-43fb-bc8d-c9f11fdef41c",
+      "source_id": "4aca2751-9ccc-4538-9a34-bb3e34d7e5d0",
+      "target_id": "68814323-4147-4ad5-96c6-5d8e7ca7b0da",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.78
+      },
+      "created_at": "2025-09-08T02:26:18.626813"
+    },
+    {
+      "id": "9834f678-a1b0-4134-876c-5a797ac89f9f",
+      "source_id": "4aca2751-9ccc-4538-9a34-bb3e34d7e5d0",
+      "target_id": "255109a1-d8f0-4ebd-a14d-f78e876f079b",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.86
+      },
+      "created_at": "2025-09-08T02:26:18.626813"
+    },
+    {
+      "id": "68187aa7-a5b6-4e37-8b8d-82ffedf44972",
+      "source_id": "4aca2751-9ccc-4538-9a34-bb3e34d7e5d0",
+      "target_id": "1ef9607a-686b-4aa6-9306-53352cfbd1ac",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.95
+      },
+      "created_at": "2025-09-08T02:26:18.626813"
+    },
+    {
+      "id": "ca65636a-ce93-44cf-9714-82e280ee73ed",
+      "source_id": "4aca2751-9ccc-4538-9a34-bb3e34d7e5d0",
+      "target_id": "821b9afa-7385-4e65-b4c1-83e76e3c3a19",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.88
+      },
+      "created_at": "2025-09-08T02:26:18.626813"
+    },
+    {
+      "id": "0cefe7e4-0ebd-4b37-b3fa-70c889ee3779",
+      "source_id": "4aca2751-9ccc-4538-9a34-bb3e34d7e5d0",
+      "target_id": "3ea95eb5-6b5b-4954-af6a-2af1742636fe",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.95
+      },
+      "created_at": "2025-09-08T02:26:18.626813"
+    },
+    {
+      "id": "4d7b64a2-dbb9-4a2b-9e6f-29a44fd4d70b",
+      "source_id": "6f840dcf-3bee-4098-bab2-ebd72a3743b4",
+      "target_id": "83da8eba-960c-4fc8-b05a-beed4a4eae6b",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.85
+      },
+      "created_at": "2025-09-08T02:26:42.532432"
+    },
+    {
+      "id": "e86016b4-0e94-4d33-a3c0-f58ac14aed2b",
+      "source_id": "6f840dcf-3bee-4098-bab2-ebd72a3743b4",
+      "target_id": "0647c32f-32bd-45f3-af45-ed5a142bd757",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.8
+      },
+      "created_at": "2025-09-08T02:26:42.532432"
+    },
+    {
+      "id": "214294a0-25f9-47ba-912c-e624a6e4b774",
+      "source_id": "6f840dcf-3bee-4098-bab2-ebd72a3743b4",
+      "target_id": "328c46f2-794f-4c4f-9e14-cc9ebf15ec71",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.9
+      },
+      "created_at": "2025-09-08T02:26:42.532432"
+    },
+    {
+      "id": "099c7e4e-4523-459c-8280-5e48a2192a1d",
+      "source_id": "6f840dcf-3bee-4098-bab2-ebd72a3743b4",
+      "target_id": "c0b22303-269d-43bd-abe2-f9649b4472ae",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.9
+      },
+      "created_at": "2025-09-08T02:26:42.532432"
+    },
+    {
+      "id": "842423e0-dd69-4108-9a29-74809c71b85e",
+      "source_id": "6f840dcf-3bee-4098-bab2-ebd72a3743b4",
+      "target_id": "05042f8d-7221-4115-b5fb-1561350574f4",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.95
+      },
+      "created_at": "2025-09-08T02:26:42.532432"
+    },
+    {
+      "id": "cbfebfcf-0e8b-42a1-9596-4494319fec07",
+      "source_id": "3fbda200-b829-4576-a02a-0ecf05699ea2",
+      "target_id": "8e1f7184-bf96-416e-83ea-c6789bee3c71",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.9
+      },
+      "created_at": "2025-09-08T02:26:59.114782"
+    }
+  ],
+  "analytic_question": "7568a760-dc51-4144-a585-c8db1ca24644",
+  "created_at": "2025-09-08T02:27:51.353826"
+}

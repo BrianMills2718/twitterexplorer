@@ -1,0 +1,88 @@
+{
+  "session_metadata": {
+    "session_id": "f63e1dba-5121-4ffe-bc53-19c1213c90fc",
+    "start_time": "2025-08-28T20:08:10.707565+00:00",
+    "end_time": "2025-08-28T20:08:41.592357+00:00",
+    "duration_seconds": 30.883666,
+    "user_query": "controversial tech CEO decisions about content moderation"
+  },
+  "configuration": {
+    "max_searches": 9,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.8,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "pages_per_search": 1,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true,
+    "enforce_endpoint_diversity": false,
+    "max_endpoint_repeats": 5,
+    "diversity_threshold": 0.3
+  },
+  "performance_metrics": {
+    "total_searches": 3,
+    "total_rounds": 1,
+    "total_results_found": 61,
+    "satisfaction_score": 0.0,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.0,
+      "source_diversity": 0.0,
+      "evidence_quality": 0.0,
+      "claim_specificity": 0.0,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Investigation failed: 'InvestigationEngine' object has no attribute 'logger'"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [],
+      "moderately_effective": [
+        {
+          "search_id": 3,
+          "query": "",
+          "results": 59,
+          "effectiveness": 5.9
+        }
+      ],
+      "low_effectiveness": [],
+      "ineffective": [
+        {
+          "search_id": 1,
+          "query": "\"tech CEO\" \"content moderation\" controversy OR \"free speech\" OR \"platform safety\"",
+          "results": 1,
+          "effectiveness": 0.1
+        },
+        {
+          "search_id": 2,
+          "query": "",
+          "results": 1,
+          "effectiveness": 0.1
+        }
+      ]
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "Graph Strategy: The investigation's original goal is undefined, and there are significant information gaps. The most strategically coherent next action is to establish a foundational understanding by identifying key tech CEOs involved in content moderation controversies and examining their direct communication. This approach combines broad discovery with specific actor analysis, using diverse endpoints to systematically gather initial data. We start by identifying prominent controversies and then immediately focus on a key figure's profile and recent statements to gather concrete information and potential leads for further deep dives.",
+        "avg_effectiveness": 2.0333333333333337
+      }
+    ],
+    "dead_ends": [],
+    "promising_leads": []
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Graph Strategy: The investigation's original goal is undefined, and there are significant information gaps. The most strategically coherent next action is to establish a foundational understanding by identifying key tech CEOs involved in content moderation controversies and examining their direct communication. This approach combines broad discovery with specific actor analysis, using diverse endpoints to systematically gather initial data. We start by identifying prominent controversies and then immediately focus on a key figure's profile and recent statements to gather concrete information and potential leads for further deep dives.",
+      "searches_count": 3,
+      "total_results": 61,
+      "effectiveness": 0.0,
+      "insights": []
+    }
+  ]
+}

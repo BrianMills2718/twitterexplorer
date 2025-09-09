@@ -1,0 +1,16 @@
+2025-08-10 12:25:05,973 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-08-10 12:25:08.185 
+  [33m[1mWarning:[0m to view this Streamlit app on a browser, run it with the following
+  command:
+
+    streamlit run test_ui_integration.py [ARGUMENTS]
+
+=== Testing UI Integration ===
+
+[OK] Progress container can be set on engine
+[OK] Updates are sent to container
+[OK] Satisfaction updates work
+[OK] DataPoint creation triggers progress update
+[OK] Insight creation triggers progress update
+
+[SUCCESS] All UI integration tests passed!

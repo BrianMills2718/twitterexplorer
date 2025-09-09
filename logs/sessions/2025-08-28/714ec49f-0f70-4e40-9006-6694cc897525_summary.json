@@ -1,0 +1,81 @@
+{
+  "session_metadata": {
+    "session_id": "714ec49f-0f70-4e40-9006-6694cc897525",
+    "start_time": "2025-08-28T18:05:53.326264+00:00",
+    "end_time": "2025-08-28T18:06:50.117956+00:00",
+    "duration_seconds": 56.791692,
+    "user_query": "find me different takes on the current trump epstein drama"
+  },
+  "configuration": {
+    "max_searches": 1,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.8,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "pages_per_search": 1,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true,
+    "enforce_endpoint_diversity": false,
+    "max_endpoint_repeats": 5,
+    "diversity_threshold": 0.3
+  },
+  "performance_metrics": {
+    "total_searches": 1,
+    "total_rounds": 1,
+    "total_results_found": 53,
+    "satisfaction_score": 0.3483333333333334,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.4,
+      "source_diversity": 0.2,
+      "evidence_quality": 0.8333333333333334,
+      "claim_specificity": 0.0,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Reached maximum search limit (1)"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [],
+      "moderately_effective": [
+        {
+          "search_id": 1,
+          "query": "Trump Epstein drama",
+          "results": 53,
+          "effectiveness": 7.0
+        }
+      ],
+      "low_effectiveness": [],
+      "ineffective": []
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "Graph Strategy: To comprehensively understand the diverse perspectives and narratives surrounding the 'Trump Epstein drama', this initial phase will gather broad public discourse, identify key angles, and pinpoint specific influential voices. This approach ensures a wide net is cast before diving into deeper analysis, directly addressing the information gap regarding different takes.",
+        "avg_effectiveness": 7.0
+      }
+    ],
+    "dead_ends": [],
+    "promising_leads": [
+      "Trump Epstein drama"
+    ]
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Graph Strategy: To comprehensively understand the diverse perspectives and narratives surrounding the 'Trump Epstein drama', this initial phase will gather broad public discourse, identify key angles, and pinpoint specific influential voices. This approach ensures a wide net is cast before diving into deeper analysis, directly addressing the information gap regarding different takes.",
+      "searches_count": 1,
+      "total_results": 53,
+      "effectiveness": 7.0,
+      "insights": [
+        "Multiple takes suggest Trump uses ongoing drama (e.g., political stunts, other controversies) as a deliberate distraction from his connections to Jeffrey Epstein or the Epstein files.",
+        "A contrasting take posits that the \"Trump drama\" itself is a distraction created by others to divert attention away from Epstein.",
+        "Some explicitly claim Trump was an Epstein client."
+      ]
+    }
+  ]
+}

@@ -2,7 +2,8 @@
 import google.generativeai as genai
 from google.generativeai.types import GenerationConfig
 import json
-import config
+import time
+import twitter_config as config
 # import state_manager # No longer needed for history formatting here
 
 # Configuration should happen once in app.py using secrets
@@ -72,6 +73,7 @@ def get_llm_plan(user_query, formatted_history):
     )
 
     response_text = ""
+    start_time = time.time()
     try:
         response = model.generate_content(
             prompt,
@@ -111,20 +113,87 @@ def get_llm_plan(user_query, formatted_history):
              if 'api_plan' not in llm_output:
                  llm_output['api_plan'] = []
 
+        # Log successful LLM interaction
+        processing_time = time.time() - start_time
+        try:
+            from logging_system import investigation_logger
+            investigation_logger.log_llm_interaction(
+                interaction_type="strategy_generation",
+                prompt_sent=prompt,
+                llm_response=llm_output,
+                processing_time=processing_time,
+                success=True
+            )
+        except:
+            pass  # Don't fail if logging fails
+        
         return llm_output
 
     except json.JSONDecodeError as e:
+        processing_time = time.time() - start_time
+        error_response = {"response_type": "ERROR", "message_to_user": "Sorry, I received an invalid response format from the planning module. Please try rephrasing."}
+        
+        # Log failed LLM interaction
+        try:
+            from logging_system import investigation_logger
+            investigation_logger.log_llm_interaction(
+                interaction_type="strategy_generation",
+                prompt_sent=prompt,
+                llm_response=error_response,
+                processing_time=processing_time,
+                success=False,
+                error=f"JSON decode error: {e}"
+            )
+        except:
+            pass
+        
         print(f"Error decoding LLM JSON response: {e}")
         print(f"Raw response was: {response_text}")
-        return {"response_type": "ERROR", "message_to_user": "Sorry, I received an invalid response format from the planning module. Please try rephrasing."}
+        return error_response
+        
     except ValueError as e:
-         print(f"LLM response validation error: {e}")
-         return {"response_type": "ERROR", "message_to_user": f"Sorry, there was an issue with the planned response structure: {e}"}
+        processing_time = time.time() - start_time
+        error_response = {"response_type": "ERROR", "message_to_user": f"Sorry, there was an issue with the planned response structure: {e}"}
+        
+        # Log failed LLM interaction
+        try:
+            from logging_system import investigation_logger
+            investigation_logger.log_llm_interaction(
+                interaction_type="strategy_generation",
+                prompt_sent=prompt,
+                llm_response=error_response,
+                processing_time=processing_time,
+                success=False,
+                error=f"Validation error: {e}"
+            )
+        except:
+            pass
+        
+        print(f"LLM response validation error: {e}")
+        return error_response
+        
     except Exception as e:
-        print(f"Error calling/processing Gemini API: {e}")
+        processing_time = time.time() - start_time
         error_detail = str(e)
         error_message = f"Sorry, I encountered an error during planning: {type(e).__name__}. Detail: {error_detail}"
-        return {"response_type": "ERROR", "message_to_user": error_message}
+        error_response = {"response_type": "ERROR", "message_to_user": error_message}
+        
+        # Log failed LLM interaction
+        try:
+            from logging_system import investigation_logger
+            investigation_logger.log_llm_interaction(
+                interaction_type="strategy_generation",
+                prompt_sent=prompt,
+                llm_response=error_response,
+                processing_time=processing_time,
+                success=False,
+                error=error_detail
+            )
+        except:
+            pass
+            
+        print(f"Error calling/processing Gemini API: {e}")
+        return error_response
 
 # --- MODIFY FUNCTION SIGNATURE ---
 def get_llm_summary(original_query, retrieved_data):
@@ -168,23 +237,75 @@ def get_llm_summary(original_query, retrieved_data):
         # max_output_tokens=2048
     )
 
+    start_time = time.time()
     try:
         response = model.generate_content(
             prompt,
             generation_config=generation_config
         )
+        
+        processing_time = time.time() - start_time
+        
         # Handle potential blocks or lack of content
         if not response.parts:
              block_reason = response.prompt_feedback.block_reason if hasattr(response, 'prompt_feedback') else 'Unknown'
+             error_message = f"Sorry, my summary generation was blocked (Reason: {block_reason})."
+             
+             # Log failed LLM interaction
+             try:
+                 from logging_system import investigation_logger
+                 investigation_logger.log_llm_interaction(
+                     interaction_type="summarization",
+                     prompt_sent=prompt,
+                     llm_response={"error": error_message, "block_reason": block_reason},
+                     processing_time=processing_time,
+                     success=False,
+                     error=f"LLM response blocked: {block_reason}"
+                 )
+             except:
+                 pass
+             
              print(f"Warning: LLM summary response was empty or blocked. Reason: {block_reason}")
-             return f"Sorry, my summary generation was blocked (Reason: {block_reason})."
+             return error_message
 
         summary = response.text.strip()
+        
+        # Log successful LLM interaction
+        try:
+            from logging_system import investigation_logger
+            investigation_logger.log_llm_interaction(
+                interaction_type="summarization",
+                prompt_sent=prompt,
+                llm_response={"summary": summary},
+                processing_time=processing_time,
+                success=True
+            )
+        except:
+            pass  # Don't fail if logging fails
+        
         print("\n--- LLM Raw Summary Response ---")
         print(summary)
         print("--- End LLM Raw Summary Response ---")
         return summary
+        
     except Exception as e:
-        print(f"Error calling Gemini API for summarization: {e}")
+        processing_time = time.time() - start_time
         error_detail = str(e)
-        return f"Sorry, I encountered an error while summarizing the results: {type(e).__name__}. Detail: {error_detail}"
+        error_message = f"Sorry, I encountered an error while summarizing the results: {type(e).__name__}. Detail: {error_detail}"
+        
+        # Log failed LLM interaction
+        try:
+            from logging_system import investigation_logger
+            investigation_logger.log_llm_interaction(
+                interaction_type="summarization",
+                prompt_sent=prompt,
+                llm_response={"error": error_message},
+                processing_time=processing_time,
+                success=False,
+                error=error_detail
+            )
+        except:
+            pass
+        
+        print(f"Error calling Gemini API for summarization: {e}")
+        return error_message

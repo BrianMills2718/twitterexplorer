@@ -1,0 +1,253 @@
+{
+  "nodes": {
+    "a9f9da4d-fc74-4a57-8d61-256a8109a271": {
+      "id": "a9f9da4d-fc74-4a57-8d61-256a8109a271",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "Apple stock news today",
+        "is_root": true,
+        "investigation_goal": "Apple stock news today"
+      },
+      "created_at": "2025-09-05T08:19:59.003116"
+    },
+    "e81048d1-3d41-4456-ba61-efd590e8fafd": {
+      "id": "e81048d1-3d41-4456-ba61-efd590e8fafd",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Catch all recent tweets mentioning Apple stock or AAPL today (excluding fruit/food noise). This establishes the real-time twitter signal and surfaces breaking posts, rumors, and market commentary.",
+        "parent_analytic_question": "a9f9da4d-fc74-4a57-8d61-256a8109a271"
+      },
+      "created_at": "2025-09-05T08:20:24.829436"
+    },
+    "58bb1faf-7e18-4839-8b77-aa0c8b47b794": {
+      "id": "58bb1faf-7e18-4839-8b77-aa0c8b47b794",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "Apple stock OR $AAPL OR AAPL today -fruit -food",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-05T08:20:24.829436"
+    },
+    "656e2f1d-2e42-471b-801f-fd30fc9817df": {
+      "id": "656e2f1d-2e42-471b-801f-fd30fc9817df",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Determine whether Apple, AAPL, or any Apple-related news is trending in the U.S.; trending status helps prioritize which tweets/stories to investigate for market impact.",
+        "parent_analytic_question": "a9f9da4d-fc74-4a57-8d61-256a8109a271"
+      },
+      "created_at": "2025-09-05T08:20:24.829436"
+    },
+    "a4032ea8-55a6-4636-9a94-61be760a8549": {
+      "id": "a4032ea8-55a6-4636-9a94-61be760a8549",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "trends.php",
+        "parameters": {
+          "country": "UnitedStates"
+        }
+      },
+      "created_at": "2025-09-05T08:20:24.829436"
+    },
+    "38d6d934-12d3-4976-ab79-bdcd2e1f622d": {
+      "id": "38d6d934-12d3-4976-ab79-bdcd2e1f622d",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Target top tweets from a major financial news account to quickly find authoritative coverage that could be driving investor reactions.",
+        "parent_analytic_question": "a9f9da4d-fc74-4a57-8d61-256a8109a271"
+      },
+      "created_at": "2025-09-05T08:20:24.829436"
+    },
+    "2d0cad30-17a7-41ec-ba13-31b18b04fe6c": {
+      "id": "2d0cad30-17a7-41ec-ba13-31b18b04fe6c",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "from:CNBC (Apple OR AAPL OR \"Apple stock\")",
+          "search_type": "Top"
+        }
+      },
+      "created_at": "2025-09-05T08:20:24.829436"
+    },
+    "e78e9014-b505-44d6-8dd2-a16594f207eb": {
+      "id": "e78e9014-b505-44d6-8dd2-a16594f207eb",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Pull CNBC's recent chronological posts to catch any raw or follow-up tweets about Apple that might not surface in 'Top' search results and to capture timestamps and context.",
+        "parent_analytic_question": "a9f9da4d-fc74-4a57-8d61-256a8109a271"
+      },
+      "created_at": "2025-09-05T08:20:24.829436"
+    },
+    "636e3ff3-c343-4d80-9beb-6d90e3d2defc": {
+      "id": "636e3ff3-c343-4d80-9beb-6d90e3d2defc",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "CNBC"
+        }
+      },
+      "created_at": "2025-09-05T08:20:24.829436"
+    },
+    "af938a8c-9036-404d-a541-d55ec12e59dc": {
+      "id": "af938a8c-9036-404d-a541-d55ec12e59dc",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Verify the profile metadata (followers, verified status, bio) to assess credibility and prioritize which outlet tweets to trust when assessing market-moving claims.",
+        "parent_analytic_question": "a9f9da4d-fc74-4a57-8d61-256a8109a271"
+      },
+      "created_at": "2025-09-05T08:20:24.829436"
+    },
+    "e901f4b0-04c5-490b-a7c9-22ff7797a0d2": {
+      "id": "e901f4b0-04c5-490b-a7c9-22ff7797a0d2",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "screenname.php",
+        "parameters": {
+          "screenname": "CNBC"
+        }
+      },
+      "created_at": "2025-09-05T08:20:24.829436"
+    },
+    "1e760348-97c1-41b4-b981-01852aa5d324": {
+      "id": "1e760348-97c1-41b4-b981-01852aa5d324",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "If you had to choose today\u2014 $GOOGL or $AAPL?  \n\nGoogle just scored a legal win and pushes AI/cloud growth; Apple protects $20B deal and leans into AI-enabled ecosystem.  \n\nI\u2019ve posted the full playbooks in my group\u2014join free \ud83d\udc49 https://t.co/p2caWvp9bh https://t.co/XqzWGT6ZUG",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-05T08:20:52.836473",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.85,
+          "goal_relevance_score": 0.5
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-05T08:20:52.836473"
+      },
+      "created_at": "2025-09-05T08:20:52.836473"
+    }
+  },
+  "edges": [
+    {
+      "id": "b1848e8d-4d59-4929-b40b-54d16c250757",
+      "source_id": "a9f9da4d-fc74-4a57-8d61-256a8109a271",
+      "target_id": "e81048d1-3d41-4456-ba61-efd590e8fafd",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-05T08:20:24.829436"
+    },
+    {
+      "id": "5d607019-92d4-4dfe-8bcd-391db33b1d13",
+      "source_id": "e81048d1-3d41-4456-ba61-efd590e8fafd",
+      "target_id": "58bb1faf-7e18-4839-8b77-aa0c8b47b794",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-05T08:20:24.829436"
+    },
+    {
+      "id": "25209fea-2fb1-4151-850e-cb99a82b6f9e",
+      "source_id": "a9f9da4d-fc74-4a57-8d61-256a8109a271",
+      "target_id": "656e2f1d-2e42-471b-801f-fd30fc9817df",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-05T08:20:24.829436"
+    },
+    {
+      "id": "7f7afa76-1113-4d5f-9f09-0a96adfa8713",
+      "source_id": "656e2f1d-2e42-471b-801f-fd30fc9817df",
+      "target_id": "a4032ea8-55a6-4636-9a94-61be760a8549",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-05T08:20:24.829436"
+    },
+    {
+      "id": "fe288639-b976-4e29-999c-7dd6154c7302",
+      "source_id": "a9f9da4d-fc74-4a57-8d61-256a8109a271",
+      "target_id": "38d6d934-12d3-4976-ab79-bdcd2e1f622d",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-05T08:20:24.829436"
+    },
+    {
+      "id": "9293b4df-9c50-402b-a378-8097731f0dfd",
+      "source_id": "38d6d934-12d3-4976-ab79-bdcd2e1f622d",
+      "target_id": "2d0cad30-17a7-41ec-ba13-31b18b04fe6c",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-05T08:20:24.829436"
+    },
+    {
+      "id": "eab465c0-f101-448d-9fcf-d09ee9e728e2",
+      "source_id": "a9f9da4d-fc74-4a57-8d61-256a8109a271",
+      "target_id": "e78e9014-b505-44d6-8dd2-a16594f207eb",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-05T08:20:24.829436"
+    },
+    {
+      "id": "fcff367d-b161-4d34-9167-ab487e0c682f",
+      "source_id": "e78e9014-b505-44d6-8dd2-a16594f207eb",
+      "target_id": "636e3ff3-c343-4d80-9beb-6d90e3d2defc",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-05T08:20:24.829436"
+    },
+    {
+      "id": "6682e4eb-0553-43b5-bdd1-80e45f41c086",
+      "source_id": "a9f9da4d-fc74-4a57-8d61-256a8109a271",
+      "target_id": "af938a8c-9036-404d-a541-d55ec12e59dc",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-05T08:20:24.829436"
+    },
+    {
+      "id": "19eca7ed-8dee-4f6c-bcb4-b14612448502",
+      "source_id": "af938a8c-9036-404d-a541-d55ec12e59dc",
+      "target_id": "e901f4b0-04c5-490b-a7c9-22ff7797a0d2",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-05T08:20:24.829436"
+    },
+    {
+      "id": "7659f3e0-b545-4f2a-a01a-d9c55ce85c2f",
+      "source_id": "58bb1faf-7e18-4839-8b77-aa0c8b47b794",
+      "target_id": "1e760348-97c1-41b4-b981-01852aa5d324",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.85
+      },
+      "created_at": "2025-09-05T08:20:52.836473"
+    }
+  ],
+  "analytic_question": "a9f9da4d-fc74-4a57-8d61-256a8109a271",
+  "created_at": "2025-09-05T08:21:15.359955"
+}

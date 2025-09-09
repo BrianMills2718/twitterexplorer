@@ -1,0 +1,487 @@
+{
+  "session_metadata": {
+    "session_id": "a7016173-b088-48e5-ae1f-406b45f0c154",
+    "start_time": "2025-08-09T21:21:42.538104+00:00",
+    "end_time": "2025-08-09T21:34:17.149019+00:00",
+    "duration_seconds": 754.610915,
+    "user_query": "find me information on twitter that debunks alleged ufo whistleblower michael herrera"
+  },
+  "configuration": {
+    "max_searches": 48,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.8,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "pages_per_search": 3,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true
+  },
+  "performance_metrics": {
+    "total_searches": 37,
+    "total_rounds": 12,
+    "total_results_found": 1223,
+    "satisfaction_score": 0.24500000000000013,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.2,
+      "source_diversity": 0.1,
+      "evidence_quality": 0.7000000000000005,
+      "claim_specificity": 0.0,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Investigation failed: LLM strategic decision failed: LLM returned no parsed structured output. Check LiteLLM configuration and API key."
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [
+        {
+          "search_id": 6,
+          "query": "michael herrera (skeptic OR skeptical OR question OR doubt) (UAP OR UFO)",
+          "results": 60,
+          "effectiveness": 8.0
+        },
+        {
+          "search_id": 20,
+          "query": "@blackvaultcom (skeptic OR debunk OR critical OR 'no evidence' OR 'unsubstantiated' OR 'unverified') AND (whistleblower OR UAP OR UFO OR 'classified claims')",
+          "results": 60,
+          "effectiveness": 8.0
+        },
+        {
+          "search_id": 21,
+          "query": "UAP whistleblower (skeptic OR skeptical OR discredit OR unreliable OR 'no evidence' OR unsubstantiated) -Herrera",
+          "results": 60,
+          "effectiveness": 8.0
+        },
+        {
+          "search_id": 30,
+          "query": "Michael Herrera debunk OR Michael Herrera hoax OR Michael Herrera fraud OR Michael Herrera unsubstantiated",
+          "results": 60,
+          "effectiveness": 8.0
+        },
+        {
+          "search_id": 31,
+          "query": "Michael Herrera credibility OR 'lack of evidence' OR 'Herrera claims questioned'",
+          "results": 60,
+          "effectiveness": 8.0
+        }
+      ],
+      "moderately_effective": [
+        {
+          "search_id": 1,
+          "query": "Michael Herrera debunk OR hoax OR fraud OR lie OR disproven OR discredited UFO",
+          "results": 60,
+          "effectiveness": 7.0
+        },
+        {
+          "search_id": 2,
+          "query": "Michael Herrera credibility OR reliability OR unverified OR 'no evidence' UFO",
+          "results": 60,
+          "effectiveness": 7.0
+        },
+        {
+          "search_id": 3,
+          "query": "",
+          "results": 60,
+          "effectiveness": 7.0
+        },
+        {
+          "search_id": 12,
+          "query": "(Michael Herrera OR \"Herrera UAP\") (hoax OR fraud OR fake OR deception OR misinformation OR disinformation OR disproven)",
+          "results": 44,
+          "effectiveness": 6.0
+        },
+        {
+          "search_id": 19,
+          "query": "\"Michael Herrera\" (debunk OR debunked OR hoax OR disproved OR fraud OR \"false claim\" OR \"no evidence\" OR unsubstantiated OR unverified OR skeptical OR questionable OR unreliable)",
+          "results": 19,
+          "effectiveness": 7.6
+        },
+        {
+          "search_id": 23,
+          "query": "Michael Herrera (skeptic OR debunk OR discredit OR 'no evidence' OR 'unsubstantiated' OR 'questioned claims' OR 'debunked' OR 'fabricated' OR 'hoax')",
+          "results": 60,
+          "effectiveness": 6.0
+        },
+        {
+          "search_id": 24,
+          "query": "Michael Herrera UFO whistleblower",
+          "results": 60,
+          "effectiveness": 6.0
+        },
+        {
+          "search_id": 25,
+          "query": "UFO skepticism OR UAP debunking OR 'UFO hoax' OR 'UAP critics' OR 'UFO fraud'",
+          "results": 60,
+          "effectiveness": 6.0
+        }
+      ],
+      "low_effectiveness": [
+        {
+          "search_id": 14,
+          "query": "",
+          "results": 60,
+          "effectiveness": 2.0
+        },
+        {
+          "search_id": 15,
+          "query": "Michael Herrera claims OR allegations (unsubstantiated OR unverified OR 'no evidence' OR 'lacks proof' OR discredited) -UFO",
+          "results": 60,
+          "effectiveness": 2.0
+        },
+        {
+          "search_id": 16,
+          "query": "Michael Herrera whistleblower UAP OR UFO claims OR allegations",
+          "results": 60,
+          "effectiveness": 3.0
+        },
+        {
+          "search_id": 18,
+          "query": "Michael Herrera (disproven OR fabricated OR hoax OR fraud OR unverified OR unsubstantiated OR 'no evidence' OR 'lacks evidence' OR 'false claims')",
+          "results": 60,
+          "effectiveness": 3.0
+        },
+        {
+          "search_id": 33,
+          "query": "Michael Herrera (discredited OR fraudulent OR hoax OR fabricated OR 'no proof' OR 'unverified' OR 'speculative' OR 'lack of evidence' OR 'not credible' OR 'false claims' OR 'debunked' OR 'debunk') -UAP -UFO -alien -disclosure -whistleblower",
+          "results": 60,
+          "effectiveness": 3.0
+        },
+        {
+          "search_id": 34,
+          "query": "Michael Herrera claims (questioned OR challenged OR doubted OR refuted OR 'fact check' OR 'analysis') OR Michael Herrera (criticism OR scrutiny)",
+          "results": 60,
+          "effectiveness": 3.0
+        },
+        {
+          "search_id": 35,
+          "query": "\"Michael Herrera\" whistleblower UFO OR UAP",
+          "results": 60,
+          "effectiveness": 2.0
+        },
+        {
+          "search_id": 36,
+          "query": "",
+          "results": 60,
+          "effectiveness": 2.0
+        }
+      ],
+      "ineffective": [
+        {
+          "search_id": 4,
+          "query": "michael herrera \"no evidence\" OR \"lack of evidence\" OR \"unsubstantiated claim\" OR \"critical analysis\" OR \"unverified story\"",
+          "results": 0,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 5,
+          "query": "",
+          "results": 0,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 7,
+          "query": "",
+          "results": 0,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 8,
+          "query": "Herrera OR whistleblower OR unsubstantiated OR credibility OR no evidence OR questioned OR skeptical",
+          "results": 0,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 9,
+          "query": "Michael Herrera claims OR alleged UAP whistleblower OR UAP crash retrieval \"no evidence\" OR \"unsubstantiated\" OR \"questioned\" OR \"doubt\" OR \"skeptical viewpoint\"",
+          "results": 0,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 10,
+          "query": "",
+          "results": 0,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 11,
+          "query": "(Michael Herrera OR \"Herrera claims\") (\"no evidence\" OR \"lack of evidence\" OR \"unsubstantiated\" OR \"unverified\" OR \"credibility issues\" OR \"not corroborated\")",
+          "results": 0,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 13,
+          "query": "",
+          "results": 0,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 17,
+          "query": "",
+          "results": 0,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 22,
+          "query": "",
+          "results": 0,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 26,
+          "query": "",
+          "results": 0,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 27,
+          "query": "\"Michael Herrera\" (no evidence OR unsubstantiated OR credibility OR questionable OR skeptical OR hoax OR analysis OR \"fact check\") lang:en -filter:retweets",
+          "results": 8,
+          "effectiveness": 0.8
+        },
+        {
+          "search_id": 28,
+          "query": "(\"Michael Herrera\" AND (debunk OR refute OR disprove OR \"false claims\" OR \"called out\" OR \"red flags\")) lang:en -filter:retweets",
+          "results": 11,
+          "effectiveness": 1.1
+        },
+        {
+          "search_id": 29,
+          "query": "",
+          "results": 0,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 32,
+          "query": "",
+          "results": 0,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 37,
+          "query": "\"Michael Herrera\" (questionable OR scrutiny OR 'lack of proof' OR 'unverified' OR 'doubtful')",
+          "results": 1,
+          "effectiveness": 0.1
+        }
+      ]
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "Graph Strategy: The investigation has consistently failed to find direct debunking or nuanced skepticism concerning Michael Herrera's claims. This strategy focuses on a multi-pronged approach to address these critical information gaps: re-attempting broad skeptical searches with refined keywords, and implementing indirect methods to leverage known skeptical figures like John Greenewald Jr., given the explicit instruction to avoid direct repetition of previously failed 'following.php' attempts for him. This ensures comprehensive coverage while adhering to the 'avoid repetition' constraint.",
+        "avg_effectiveness": 7.866666666666667
+      },
+      {
+        "strategy": "Graph Strategy: The primary goal is to find information that debunks Michael Herrera. This requires a multi-pronged approach on Twitter, starting with broad keyword searches to identify direct debunking claims and potential debunkers, then moving to specific user timelines to understand the stance and arguments of known skeptical voices. This strategy aims to cover the most critical information gap by systematically exploring different content types and sources on Twitter.",
+        "avg_effectiveness": 7.0
+      },
+      {
+        "strategy": "Graph Strategy: This strategy directly addresses the most critical information gaps by correcting a previously failed network analysis attempt and refining broad content discovery searches. By fixing the `following.php` parameter, we unlock the ability to systematically identify other skeptical voices from John Greenewald Jr.'s network, which is crucial for uncovering potential debunkers. Simultaneously, the refined `search.php` queries use more specific negative keywords to capture both direct debunking claims and nuanced critical discussions about Michael Herrera, which previous broad searches failed to yield. This approach builds on a known skeptical entity (Greenewald) and diversifies the content search, ensuring a more coherent and effective investigation.",
+        "avg_effectiveness": 5.333333333333333
+      },
+      {
+        "strategy": "Graph Strategy: Previous attempts to find direct debunking of Michael Herrera or leverage key skeptical figures like John Greenewald Jr. have yielded no data or failed due to incorrect parameter usage. This strategy prioritizes correcting the parameter usage for network analysis and refines content discovery to specifically look for nuanced critical discussions and the accounts that engage in them. By identifying who Greenewald Jr. follows, we can expand the pool of potential skeptical sources. Simultaneously, using more targeted keywords and considering different result types (recent vs. popular) for content discovery aims to capture any available critical commentary, addressing the core goal of finding debunking information. Furthermore, a broader search for general UFO/UAP skepticism aims to identify key skeptical accounts if direct debunking of Herrera is scarce.",
+        "avg_effectiveness": 4.5
+      },
+      {
+        "strategy": "Graph Strategy: Previous direct searches for debunking Michael Herrera and a specific skeptic's timeline (John Greenewald Jr.) yielded no data, indicating a need to refine search methodology and explore indirect avenues. The strategy now pivots to more nuanced keyword targeting for critical analysis and leverages network analysis on known skeptics to identify new potential sources of debunking information. This directly addresses the current information gaps and re-engages the disconnected thread related to John Greenewald Jr. by exploring who he follows, which can reveal other relevant skeptical voices.",
+        "avg_effectiveness": 2.6666666666666665
+      },
+      {
+        "strategy": "Graph Strategy: The core issue is a complete lack of data from previous broad searches and direct checks. The strategy needs to pivot from general 'debunk' terms to identifying potential sources of skepticism and looking for more nuanced forms of critique. By leveraging John Greenewald Jr.'s network, we can identify other credible skeptical voices. Simultaneously, refining keyword searches to focus on the *reasons* for debunking (e.g., lack of evidence, credibility issues) and direct negative sentiment aims to capture discussions that might not explicitly use 'debunk' but serve the same purpose. This approach systematically addresses key information gaps and employs diverse endpoint strategies to overcome the 'no data' challenge.",
+        "avg_effectiveness": 2.0
+      },
+      {
+        "strategy": "Graph Strategy: The investigation currently lacks any successful data points for debunking Michael Herrera. Previous broad search attempts and a targeted check of a known skeptic (John Greenewald Jr.) have yielded no direct results. The critical next step is to accurately identify *where* Michael Herrera's alleged whistleblower claims were first made public or gained significant traction. By finding the original source (e.g., a specific journalist's tweet, a podcast's announcement, or an organization's post), we can then strategically use conversation analysis endpoints like `latest_replies.php` and `tweet_thread.php` to uncover direct counter-arguments, skeptical reactions, and potential debunking efforts that exist *within the specific conversation* surrounding his claims. This shifts from a general, unfruitful keyword search to a targeted analysis of primary discussions. Additionally, a refined keyword search that implies debunking without using the direct term 'debunk' will be employed to cover previous broad search gaps.",
+        "avg_effectiveness": 2.0
+      },
+      {
+        "strategy": "Graph Strategy: The investigation is currently stalled on finding direct debunking claims and expanding the network of skeptical sources, as evidenced by 'no data' gaps and repeated failures with the 'following.php' endpoint for John Greenewald Jr. This strategy directly addresses these critical gaps by re-attempting network expansion with corrected parameter usage for 'following.php' and introducing more targeted and nuanced search queries for 'search.php' to identify specific critical discussions or direct challenges to Herrera's claims. The goal is to move beyond broad searches and either find direct debunking or identify highly scrutinized tweets/users for deeper conversation analysis in subsequent steps.",
+        "avg_effectiveness": 2.0
+      },
+      {
+        "strategy": "Graph Strategy: The primary strategic objective is to find information that debunks Michael Herrera. Current progress shows a significant gap in finding any direct debunking claims or even nuanced critical discussions, despite multiple attempts with `search.php` and specific user timeline checks. The `following.php` endpoint for @blackvaultcom also consistently failed. Therefore, the most coherent next action is to pivot search strategies to identify the primary discussion points around Herrera's claims, target another prominent skeptic known for debunking, and refine general critical keyword searches to capture more subtle forms of scrutiny, all while strictly avoiding the previously failed approach.",
+        "avg_effectiveness": 1.3666666666666665
+      },
+      {
+        "strategy": "Graph Strategy: Previous broad searches and direct checks on a known skeptic's timeline (John Greenewald Jr.) yielded no direct debunking information for Michael Herrera. The most strategically coherent next action is to leverage network analysis to identify new skeptical voices who might have addressed Herrera, and simultaneously refine general search terms to capture more nuanced critical discussions. By exploring who Greenewald follows, we can identify additional authoritative skeptics in the UAP space. Checking the timeline of another prominent debunker (Mick West) provides a direct, targeted approach. Finally, refining search keywords aims to capture critical discourse that might not explicitly use 'debunk' terminology but still questions or discredits Herrera's claims, addressing the past failure of broad keyword searches.",
+        "avg_effectiveness": 1.3333333333333333
+      },
+      {
+        "strategy": "Graph Strategy: The core challenge is the lack of direct debunking or critical information on Michael Herrera, as evidenced by all previous searches yielding no data. This strategy focuses on two key approaches to fill these gaps: 1. Expanding the network of potential skeptical sources by leveraging a known figure (@blackvaultcom). The previous attempt to use 'following.php' was listed as a 'failed approach,' likely due to a syntax issue or an ineffective initial call, not the endpoint's inherent unsuitability. Re-attempting this correctly is critical for broadening the search for credible skeptics. 2. Refining keyword searches for critical analysis, moving beyond just 'debunk' to capture more nuanced skepticism, lack of evidence discussions, or credibility challenges, which might be present if direct debunking is scarce. This systematic approach aims to uncover leads for further investigation.",
+        "avg_effectiveness": 0.6333333333333334
+      },
+      {
+        "strategy": "Graph Strategy: Previous direct keyword searches for debunking claims related to Michael Herrera yielded no data, indicating a need to identify new sources of skeptical information within the UAP/UFO community. Leveraging John Greenewald Jr.'s network by examining who he follows is the most strategically coherent next step to uncover other prominent skeptics or investigative journalists who might have addressed Herrera's claims or similar whistleblower allegations. This approach directly addresses the current information gap by generating new leads for investigation, and the subsequent targeted searches will aim to capture any existing debunking efforts or critical discussions from these newfound sources, as well as a more nuanced broad search.",
+        "avg_effectiveness": 0.0
+      }
+    ],
+    "dead_ends": [
+      "michael herrera \"no evidence\" OR \"lack of evidence\" OR \"unsubstantiated claim\" OR \"critical analysis\" OR \"unverified story\"",
+      "",
+      "Herrera OR whistleblower OR unsubstantiated OR credibility OR no evidence OR questioned OR skeptical",
+      "Michael Herrera claims OR alleged UAP whistleblower OR UAP crash retrieval \"no evidence\" OR \"unsubstantiated\" OR \"questioned\" OR \"doubt\" OR \"skeptical viewpoint\"",
+      "(Michael Herrera OR \"Herrera claims\") (\"no evidence\" OR \"lack of evidence\" OR \"unsubstantiated\" OR \"unverified\" OR \"credibility issues\" OR \"not corroborated\")",
+      "\"Michael Herrera\" (no evidence OR unsubstantiated OR credibility OR questionable OR skeptical OR hoax OR analysis OR \"fact check\") lang:en -filter:retweets",
+      "(\"Michael Herrera\" AND (debunk OR refute OR disprove OR \"false claims\" OR \"called out\" OR \"red flags\")) lang:en -filter:retweets",
+      "\"Michael Herrera\" (questionable OR scrutiny OR 'lack of proof' OR 'unverified' OR 'doubtful')"
+    ],
+    "promising_leads": [
+      "Michael Herrera debunk OR hoax OR fraud OR lie OR disproven OR discredited UFO",
+      "Michael Herrera credibility OR reliability OR unverified OR 'no evidence' UFO",
+      "",
+      "michael herrera (skeptic OR skeptical OR question OR doubt) (UAP OR UFO)",
+      "(Michael Herrera OR \"Herrera UAP\") (hoax OR fraud OR fake OR deception OR misinformation OR disinformation OR disproven)",
+      "\"Michael Herrera\" (debunk OR debunked OR hoax OR disproved OR fraud OR \"false claim\" OR \"no evidence\" OR unsubstantiated OR unverified OR skeptical OR questionable OR unreliable)",
+      "@blackvaultcom (skeptic OR debunk OR critical OR 'no evidence' OR 'unsubstantiated' OR 'unverified') AND (whistleblower OR UAP OR UFO OR 'classified claims')",
+      "UAP whistleblower (skeptic OR skeptical OR discredit OR unreliable OR 'no evidence' OR unsubstantiated) -Herrera",
+      "Michael Herrera (skeptic OR debunk OR discredit OR 'no evidence' OR 'unsubstantiated' OR 'questioned claims' OR 'debunked' OR 'fabricated' OR 'hoax')",
+      "Michael Herrera UFO whistleblower",
+      "UFO skepticism OR UAP debunking OR 'UFO hoax' OR 'UAP critics' OR 'UFO fraud'",
+      "Michael Herrera debunk OR Michael Herrera hoax OR Michael Herrera fraud OR Michael Herrera unsubstantiated",
+      "Michael Herrera credibility OR 'lack of evidence' OR 'Herrera claims questioned'"
+    ]
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Graph Strategy: The primary goal is to find information that debunks Michael Herrera. This requires a multi-pronged approach on Twitter, starting with broad keyword searches to identify direct debunking claims and potential debunkers, then moving to specific user timelines to understand the stance and arguments of known skeptical voices. This strategy aims to cover the most critical information gap by systematically exploring different content types and sources on Twitter.",
+      "searches_count": 3,
+      "total_results": 180,
+      "effectiveness": 7.0,
+      "insights": [
+        "Michael Herrera's former Marine Team Leader, identified as 'Nathan', explicitly states that Herrera's 2009 Indonesia UFO story is a 'complete lie'.",
+        "Nathan reportedly possesses 'photos disproving the story'.",
+        "Herrera's story 'makes zero sense to most veterans', with a specific critique being the implausibility of being 'secretly chosen for a secret Jungle mission right next to deployment' according to military protocol."
+      ]
+    },
+    {
+      "round_number": 2,
+      "strategy": "Graph Strategy: Previous direct searches for debunking Michael Herrera and a specific skeptic's timeline (John Greenewald Jr.) yielded no data, indicating a need to refine search methodology and explore indirect avenues. The strategy now pivots to more nuanced keyword targeting for critical analysis and leverages network analysis on known skeptics to identify new potential sources of debunking information. This directly addresses the current information gaps and re-engages the disconnected thread related to John Greenewald Jr. by exploring who he follows, which can reveal other relevant skeptical voices.",
+      "searches_count": 3,
+      "total_results": 60,
+      "effectiveness": 2.6666666666666665,
+      "insights": [
+        "Michael Herrera's alleged UFO encounter story is deemed nonsensical by many veterans, specifically due to the implausibility of being secretly chosen for a mission while alongside his team leader (Result 6).",
+        "There is a direct claim that Michael Herrera's story was 'completely fabricated' by its author (Result 7).",
+        "It is explicitly stated that Michael Herrera has been 'discredited by the soldiers who accompanied him' during the alleged incident, providing a strong counter-claim from potential direct witnesses (Result 7)."
+      ]
+    },
+    {
+      "round_number": 3,
+      "strategy": "Graph Strategy: Previous direct keyword searches for debunking claims related to Michael Herrera yielded no data, indicating a need to identify new sources of skeptical information within the UAP/UFO community. Leveraging John Greenewald Jr.'s network by examining who he follows is the most strategically coherent next step to uncover other prominent skeptics or investigative journalists who might have addressed Herrera's claims or similar whistleblower allegations. This approach directly addresses the current information gap by generating new leads for investigation, and the subsequent targeted searches will aim to capture any existing debunking efforts or critical discussions from these newfound sources, as well as a more nuanced broad search.",
+      "searches_count": 3,
+      "total_results": 0,
+      "effectiveness": 0.0,
+      "insights": []
+    },
+    {
+      "round_number": 4,
+      "strategy": "Graph Strategy: The core issue is a complete lack of data from previous broad searches and direct checks. The strategy needs to pivot from general 'debunk' terms to identifying potential sources of skepticism and looking for more nuanced forms of critique. By leveraging John Greenewald Jr.'s network, we can identify other credible skeptical voices. Simultaneously, refining keyword searches to focus on the *reasons* for debunking (e.g., lack of evidence, credibility issues) and direct negative sentiment aims to capture discussions that might not explicitly use 'debunk' but serve the same purpose. This approach systematically addresses key information gaps and employs diverse endpoint strategies to overcome the 'no data' challenge.",
+      "searches_count": 3,
+      "total_results": 44,
+      "effectiveness": 2.0,
+      "insights": [
+        "Discussions on Twitter directly question Michael Herrera's story, using terms like 'fake' and asking if his story was a 'hoax' (Results 1, 8).",
+        "One tweet implicitly debunks Michael Herrera's credibility by associating him with 'credible sources' (sarcastically) and a clown emoji (Result 20).",
+        "Michael Herrera himself has spoken about 'disinformation agents' within the UFO community (Result 4), indicating an environment where claims of deception are prevalent, though this specific tweet is Herrera's statement, not a debunking of him."
+      ]
+    },
+    {
+      "round_number": 5,
+      "strategy": "Graph Strategy: Previous broad searches and direct checks on a known skeptic's timeline (John Greenewald Jr.) yielded no direct debunking information for Michael Herrera. The most strategically coherent next action is to leverage network analysis to identify new skeptical voices who might have addressed Herrera, and simultaneously refine general search terms to capture more nuanced critical discussions. By exploring who Greenewald follows, we can identify additional authoritative skeptics in the UAP space. Checking the timeline of another prominent debunker (Mick West) provides a direct, targeted approach. Finally, refining search keywords aims to capture critical discourse that might not explicitly use 'debunk' terminology but still questions or discredits Herrera's claims, addressing the past failure of broad keyword searches.",
+      "searches_count": 3,
+      "total_results": 120,
+      "effectiveness": 1.3333333333333333,
+      "insights": [
+        "The search results contain general skepticism and debunking efforts related to UFO/UAP claims, often attributing sightings to misidentified objects (e.g., birds, satellites) or demanding specific details (date, time, location) for video evidence.",
+        "Some results mention debunking claims made by other specific individuals or organizations in the UAP/UFO community (e.g., Chris Bledsoe, Avi Loeb, The Sol Foundation).",
+        "Mick West, a prominent UFO debunker, is mentioned as having an upcoming interview, indicating a potential resource for debunking information in general."
+      ]
+    },
+    {
+      "round_number": 6,
+      "strategy": "Graph Strategy: The investigation currently lacks any successful data points for debunking Michael Herrera. Previous broad search attempts and a targeted check of a known skeptic (John Greenewald Jr.) have yielded no direct results. The critical next step is to accurately identify *where* Michael Herrera's alleged whistleblower claims were first made public or gained significant traction. By finding the original source (e.g., a specific journalist's tweet, a podcast's announcement, or an organization's post), we can then strategically use conversation analysis endpoints like `latest_replies.php` and `tweet_thread.php` to uncover direct counter-arguments, skeptical reactions, and potential debunking efforts that exist *within the specific conversation* surrounding his claims. This shifts from a general, unfruitful keyword search to a targeted analysis of primary discussions. Additionally, a refined keyword search that implies debunking without using the direct term 'debunk' will be employed to cover previous broad search gaps.",
+      "searches_count": 3,
+      "total_results": 120,
+      "effectiveness": 2.0,
+      "insights": [
+        "Michael Herrera is an alleged UFO whistleblower who claims to have encountered a colossal octagonal craft and a covert black-ops network in Indonesia in 2009.",
+        "He has given testimony at Dr. Steven Greer's UAP events.",
+        "While some results discuss general methods of discrediting UFO reports or allege that *other* whistleblowers are 'run and controlled' operations, no such debunking information is presented specifically for Michael Herrera."
+      ]
+    },
+    {
+      "round_number": 7,
+      "strategy": "Graph Strategy: The investigation has consistently failed to find direct debunking or nuanced skepticism concerning Michael Herrera's claims. This strategy focuses on a multi-pronged approach to address these critical information gaps: re-attempting broad skeptical searches with refined keywords, and implementing indirect methods to leverage known skeptical figures like John Greenewald Jr., given the explicit instruction to avoid direct repetition of previously failed 'following.php' attempts for him. This ensures comprehensive coverage while adhering to the 'avoid repetition' constraint.",
+      "searches_count": 3,
+      "total_results": 139,
+      "effectiveness": 7.866666666666667,
+      "insights": [
+        "Michael Herrera's claims are actively debated, with some sources explicitly labeling them as a 'hoax' or 'fraud'.",
+        "There is a specific claim that Michael Herrera was 'debunked by his team leader' several months ago.",
+        "A significant counter-claim exists stating that the 'team leader's' debunking attempt failed because the provided photo used as evidence was not actually of Michael Herrera."
+      ]
+    },
+    {
+      "round_number": 8,
+      "strategy": "Graph Strategy: Previous attempts to find direct debunking of Michael Herrera or leverage key skeptical figures like John Greenewald Jr. have yielded no data or failed due to incorrect parameter usage. This strategy prioritizes correcting the parameter usage for network analysis and refines content discovery to specifically look for nuanced critical discussions and the accounts that engage in them. By identifying who Greenewald Jr. follows, we can expand the pool of potential skeptical sources. Simultaneously, using more targeted keywords and considering different result types (recent vs. popular) for content discovery aims to capture any available critical commentary, addressing the core goal of finding debunking information. Furthermore, a broader search for general UFO/UAP skepticism aims to identify key skeptical accounts if direct debunking of Herrera is scarce.",
+      "searches_count": 4,
+      "total_results": 180,
+      "effectiveness": 4.5,
+      "insights": [
+        "Michael Herrera's claims as a UFO whistleblower are being challenged due to a stated lack of corroboration or evidence beyond personal testimony (Results 7, 17).",
+        "He is categorized as 'not a good witness' and associated with 'Dr. Greer rabbit hole' (Result 8), implying his claims are linked to a discredited narrative or source.",
+        "Strong language is used to debunk him, including claims that he is a 'charlatan who makes things up - demonstrably so' (Result 15) and that 'Todo lo que dice este señor es falso, es incompleto o está tergiversado' (Everything this man says is false, incomplete or distorted - Result 9)."
+      ]
+    },
+    {
+      "round_number": 9,
+      "strategy": "Graph Strategy: The core challenge is the lack of direct debunking or critical information on Michael Herrera, as evidenced by all previous searches yielding no data. This strategy focuses on two key approaches to fill these gaps: 1. Expanding the network of potential skeptical sources by leveraging a known figure (@blackvaultcom). The previous attempt to use 'following.php' was listed as a 'failed approach,' likely due to a syntax issue or an ineffective initial call, not the endpoint's inherent unsuitability. Re-attempting this correctly is critical for broadening the search for credible skeptics. 2. Refining keyword searches for critical analysis, moving beyond just 'debunk' to capture more nuanced skepticism, lack of evidence discussions, or credibility challenges, which might be present if direct debunking is scarce. This systematic approach aims to uncover leads for further investigation.",
+      "searches_count": 3,
+      "total_results": 19,
+      "effectiveness": 0.6333333333333334,
+      "insights": [
+        "3 searches yielded no results"
+      ]
+    },
+    {
+      "round_number": 10,
+      "strategy": "Graph Strategy: This strategy directly addresses the most critical information gaps by correcting a previously failed network analysis attempt and refining broad content discovery searches. By fixing the `following.php` parameter, we unlock the ability to systematically identify other skeptical voices from John Greenewald Jr.'s network, which is crucial for uncovering potential debunkers. Simultaneously, the refined `search.php` queries use more specific negative keywords to capture both direct debunking claims and nuanced critical discussions about Michael Herrera, which previous broad searches failed to yield. This approach builds on a known skeptical entity (Greenewald) and diversifies the content search, ensuring a more coherent and effective investigation.",
+      "searches_count": 3,
+      "total_results": 120,
+      "effectiveness": 5.333333333333333,
+      "insights": [
+        "Multiple sources on Twitter claim to have thoroughly debunked Michael Herrera's story, with terms like 'zero sense,' 'entirely debunked,' 'ridiculous claims,' 'completely fabricated,' '100% fake,' and 'none of this is true' being used.",
+        "Specific debunking points include allegations that his story 'makes zero sense to most veterans' due to military procedure inconsistencies, and claims that 'his own internal emails prove he’s lying' and he 'falsified memos.'",
+        "Several tweets indicate that detailed debunking information is available in linked 'threads,' suggesting more comprehensive arguments and evidence exist."
+      ]
+    },
+    {
+      "round_number": 11,
+      "strategy": "Graph Strategy: The investigation is currently stalled on finding direct debunking claims and expanding the network of skeptical sources, as evidenced by 'no data' gaps and repeated failures with the 'following.php' endpoint for John Greenewald Jr. This strategy directly addresses these critical gaps by re-attempting network expansion with corrected parameter usage for 'following.php' and introducing more targeted and nuanced search queries for 'search.php' to identify specific critical discussions or direct challenges to Herrera's claims. The goal is to move beyond broad searches and either find direct debunking or identify highly scrutinized tweets/users for deeper conversation analysis in subsequent steps.",
+      "searches_count": 3,
+      "total_results": 120,
+      "effectiveness": 2.0,
+      "insights": [
+        "Some veterans claim Michael Herrera's story, particularly his account of being secretly chosen for a jungle mission alongside his team leader, Nathan, makes 'zero sense' and is inconsistent with military protocols.",
+        "There are direct accusations labeling Michael Herrera as a 'fake whistleblower' and a 'UFO nutball'."
+      ]
+    },
+    {
+      "round_number": 12,
+      "strategy": "Graph Strategy: The primary strategic objective is to find information that debunks Michael Herrera. Current progress shows a significant gap in finding any direct debunking claims or even nuanced critical discussions, despite multiple attempts with `search.php` and specific user timeline checks. The `following.php` endpoint for @blackvaultcom also consistently failed. Therefore, the most coherent next action is to pivot search strategies to identify the primary discussion points around Herrera's claims, target another prominent skeptic known for debunking, and refine general critical keyword searches to capture more subtle forms of scrutiny, all while strictly avoiding the previously failed approach.",
+      "searches_count": 3,
+      "total_results": 121,
+      "effectiveness": 1.3666666666666665,
+      "insights": [
+        "The vast majority of Twitter results promote Michael Herrera as a legitimate 'UFO Whistleblower,' focusing on his interviews and claims.",
+        "One tweet claims the AARO Report 'confirms' Herrera's legitimacy, stating he testified and saw 'football field-sized UFO Being Loaded With Weapons.'",
+        "Herrera's alleged claims, as mentioned in the results, include 'elite' possessing advanced tracking devices and discussions of 'UAP Shootdowns' and 'Psionics.'"
+      ]
+    }
+  ]
+}

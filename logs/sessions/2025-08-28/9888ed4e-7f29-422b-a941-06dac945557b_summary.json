@@ -1,0 +1,75 @@
+{
+  "session_metadata": {
+    "session_id": "9888ed4e-7f29-422b-a941-06dac945557b",
+    "start_time": "2025-08-28T18:09:54.778824+00:00",
+    "end_time": "2025-08-28T18:10:43.954759+00:00",
+    "duration_seconds": 49.17495,
+    "user_query": "find me different takes on the current trump epstein drama"
+  },
+  "configuration": {
+    "max_searches": 1,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.8,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "pages_per_search": 1,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true,
+    "enforce_endpoint_diversity": false,
+    "max_endpoint_repeats": 5,
+    "diversity_threshold": 0.3
+  },
+  "performance_metrics": {
+    "total_searches": 1,
+    "total_rounds": 1,
+    "total_results_found": 52,
+    "satisfaction_score": 0.0,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.0,
+      "source_diversity": 0.0,
+      "evidence_quality": 0.0,
+      "claim_specificity": 0.0,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Investigation failed: LLM batch evaluation failed - investigation cannot continue: Expecting value: line 1 column 1 (char 0)"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [],
+      "moderately_effective": [
+        {
+          "search_id": 1,
+          "query": "Trump Epstein drama",
+          "results": 52,
+          "effectiveness": 5.2
+        }
+      ],
+      "low_effectiveness": [],
+      "ineffective": []
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "Graph Strategy: The goal is to find 'different takes on the current Trump Epstein drama'. To achieve this, a multi-faceted initial approach is necessary to capture a broad spectrum of information, from general public discourse to specific media perspectives and trending topics. This round focuses on casting a wide net to identify key narratives, prominent voices, and overall public sentiment. By using diverse endpoints (search.php, timeline.php, trends.php), we ensure comprehensive coverage while adhering to the diversity rule.",
+        "avg_effectiveness": 5.2
+      }
+    ],
+    "dead_ends": [],
+    "promising_leads": []
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Graph Strategy: The goal is to find 'different takes on the current Trump Epstein drama'. To achieve this, a multi-faceted initial approach is necessary to capture a broad spectrum of information, from general public discourse to specific media perspectives and trending topics. This round focuses on casting a wide net to identify key narratives, prominent voices, and overall public sentiment. By using diverse endpoints (search.php, timeline.php, trends.php), we ensure comprehensive coverage while adhering to the diversity rule.",
+      "searches_count": 1,
+      "total_results": 52,
+      "effectiveness": 0.0,
+      "insights": []
+    }
+  ]
+}

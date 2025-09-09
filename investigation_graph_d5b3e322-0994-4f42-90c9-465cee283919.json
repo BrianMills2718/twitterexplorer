@@ -1,0 +1,226 @@
+{
+  "nodes": {
+    "c8cc5b82-0dec-411f-9c2a-a0db0412c208": {
+      "id": "c8cc5b82-0dec-411f-9c2a-a0db0412c208",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "Bridge creation test",
+        "is_root": true,
+        "investigation_goal": "Bridge creation test"
+      },
+      "created_at": "2025-09-08T00:07:41.510139"
+    },
+    "1ef4ee7f-12dd-4b55-a572-5920df54e27f": {
+      "id": "1ef4ee7f-12dd-4b55-a572-5920df54e27f",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Target recent posts that explicitly mention \"bridge creation test\" or close variants; yields candidate tweets, timestamps, and initial actors to follow up. Using Latest helps find ongoing or recent tests.",
+        "parent_analytic_question": "c8cc5b82-0dec-411f-9c2a-a0db0412c208"
+      },
+      "created_at": "2025-09-08T00:08:14.310263"
+    },
+    "c3b00590-ed0c-4263-9701-df4a344ad5fb": {
+      "id": "c3b00590-ed0c-4263-9701-df4a344ad5fb",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "\"bridge creation test\" OR \"bridge creation\" test OR \"bridge build test\" OR \"bridge load test\"",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-08T00:08:14.310263"
+    },
+    "ca90e651-0d89-48d1-9d09-f5d5b08d5015": {
+      "id": "ca90e651-0d89-48d1-9d09-f5d5b08d5015",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Find photos/videos of bridge creation or load-testing events. Media-heavy results help confirm that the posts describe an actual test (not a metaphor or unrelated use of the word \"bridge\").",
+        "parent_analytic_question": "c8cc5b82-0dec-411f-9c2a-a0db0412c208"
+      },
+      "created_at": "2025-09-08T00:08:14.310263"
+    },
+    "e0bd7075-845b-49eb-b526-63998e2fd657": {
+      "id": "e0bd7075-845b-49eb-b526-63998e2fd657",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "\"bridge creation test\" OR \"bridge load test\" OR \"bridge test\" filter:media",
+          "search_type": "Media"
+        }
+      },
+      "created_at": "2025-09-08T00:08:14.310263"
+    },
+    "bd3186f7-55c7-4b1f-bf7b-07d267b2a4b9": {
+      "id": "bd3186f7-55c7-4b1f-bf7b-07d267b2a4b9",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Locate accounts (individuals, organizations, labs, contractors, government agencies) that have used the phrase. This produces a short-list of authoritative or repeatedly-posting accounts to profile.",
+        "parent_analytic_question": "c8cc5b82-0dec-411f-9c2a-a0db0412c208"
+      },
+      "created_at": "2025-09-08T00:08:14.310263"
+    },
+    "7732b32e-be1e-45e2-83d2-77b7420442d5": {
+      "id": "7732b32e-be1e-45e2-83d2-77b7420442d5",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "\"bridge creation test\"",
+          "search_type": "People"
+        }
+      },
+      "created_at": "2025-09-08T00:08:14.310263"
+    },
+    "53a9f6be-61e9-4736-99bd-b6dbf7b63c96": {
+      "id": "53a9f6be-61e9-4736-99bd-b6dbf7b63c96",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Check whether bridge-related topics or specific tests are trending nationally. If so, that indicates wider public interest and suggests additional hashtags or search terms to follow.",
+        "parent_analytic_question": "c8cc5b82-0dec-411f-9c2a-a0db0412c208"
+      },
+      "created_at": "2025-09-08T00:08:14.311263"
+    },
+    "e7851575-cc5b-473e-82a7-6994d586ec8d": {
+      "id": "e7851575-cc5b-473e-82a7-6994d586ec8d",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "trends.php",
+        "parameters": {
+          "country": "UnitedStates"
+        }
+      },
+      "created_at": "2025-09-08T00:08:14.311263"
+    },
+    "7cd3e198-b961-4beb-a683-e79b7145d6ae": {
+      "id": "7cd3e198-b961-4beb-a683-e79b7145d6ae",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: After the People search returns candidate accounts, pull the recent timeline of the top/most relevant account (e.g., a government agency, university lab, contractor) to build context, collect related posts not using the exact search phrase, and identify tweet IDs for conversation analysis.",
+        "parent_analytic_question": "c8cc5b82-0dec-411f-9c2a-a0db0412c208"
+      },
+      "created_at": "2025-09-08T00:08:14.311263"
+    },
+    "228a1909-7090-49d4-8320-0dca247d2671": {
+      "id": "228a1909-7090-49d4-8320-0dca247d2671",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "TOP_ACCOUNT_FROM_PEOPLE_SEARCH"
+        }
+      },
+      "created_at": "2025-09-08T00:08:14.311263"
+    }
+  },
+  "edges": [
+    {
+      "id": "c868f922-1193-4a11-9f74-41acdb9934a8",
+      "source_id": "c8cc5b82-0dec-411f-9c2a-a0db0412c208",
+      "target_id": "1ef4ee7f-12dd-4b55-a572-5920df54e27f",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-08T00:08:14.310263"
+    },
+    {
+      "id": "161b8329-d4a9-4236-89eb-bcb15f8ffdad",
+      "source_id": "1ef4ee7f-12dd-4b55-a572-5920df54e27f",
+      "target_id": "c3b00590-ed0c-4263-9701-df4a344ad5fb",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-08T00:08:14.310263"
+    },
+    {
+      "id": "cef2f8b4-1983-4afe-826a-8c4c351dc09a",
+      "source_id": "c8cc5b82-0dec-411f-9c2a-a0db0412c208",
+      "target_id": "ca90e651-0d89-48d1-9d09-f5d5b08d5015",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-08T00:08:14.310263"
+    },
+    {
+      "id": "ea2814b5-2e45-4ed3-b9ec-fa9f0963c6e8",
+      "source_id": "ca90e651-0d89-48d1-9d09-f5d5b08d5015",
+      "target_id": "e0bd7075-845b-49eb-b526-63998e2fd657",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-08T00:08:14.310263"
+    },
+    {
+      "id": "32e34907-8e09-4549-81b9-58165f82ae36",
+      "source_id": "c8cc5b82-0dec-411f-9c2a-a0db0412c208",
+      "target_id": "bd3186f7-55c7-4b1f-bf7b-07d267b2a4b9",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-08T00:08:14.310263"
+    },
+    {
+      "id": "2bfe5d36-2e01-4b69-9371-e8a79a22e94c",
+      "source_id": "bd3186f7-55c7-4b1f-bf7b-07d267b2a4b9",
+      "target_id": "7732b32e-be1e-45e2-83d2-77b7420442d5",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-08T00:08:14.310263"
+    },
+    {
+      "id": "5dd60ee2-4deb-45e3-97ef-61d769b4e567",
+      "source_id": "c8cc5b82-0dec-411f-9c2a-a0db0412c208",
+      "target_id": "53a9f6be-61e9-4736-99bd-b6dbf7b63c96",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-08T00:08:14.311263"
+    },
+    {
+      "id": "717a6513-c89f-44c1-b04c-921e038055c3",
+      "source_id": "53a9f6be-61e9-4736-99bd-b6dbf7b63c96",
+      "target_id": "e7851575-cc5b-473e-82a7-6994d586ec8d",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-08T00:08:14.311263"
+    },
+    {
+      "id": "b0429d57-17f8-4146-a99f-d2d4c028a45f",
+      "source_id": "c8cc5b82-0dec-411f-9c2a-a0db0412c208",
+      "target_id": "7cd3e198-b961-4beb-a683-e79b7145d6ae",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-08T00:08:14.311263"
+    },
+    {
+      "id": "6801f87c-0439-47d6-858e-8c2232f323e7",
+      "source_id": "7cd3e198-b961-4beb-a683-e79b7145d6ae",
+      "target_id": "228a1909-7090-49d4-8320-0dca247d2671",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling",
+        "coherence_score": 0.8
+      },
+      "created_at": "2025-09-08T00:08:14.311263"
+    }
+  ],
+  "analytic_question": "c8cc5b82-0dec-411f-9c2a-a0db0412c208",
+  "created_at": "2025-09-08T00:08:15.546864"
+}

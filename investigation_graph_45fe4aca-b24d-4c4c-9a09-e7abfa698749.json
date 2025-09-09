@@ -1,0 +1,17 @@
+{
+  "nodes": {
+    "d7d6af4f-45ea-4c54-88c0-07b3a57a3a95": {
+      "id": "d7d6af4f-45ea-4c54-88c0-07b3a57a3a95",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "Trump Epstein contradiction test",
+        "is_root": true,
+        "investigation_goal": "Trump Epstein contradiction test"
+      },
+      "created_at": "2025-09-07T18:49:16.141722"
+    }
+  },
+  "edges": [],
+  "analytic_question": "d7d6af4f-45ea-4c54-88c0-07b3a57a3a95",
+  "created_at": "2025-09-07T18:49:16.144725"
+}

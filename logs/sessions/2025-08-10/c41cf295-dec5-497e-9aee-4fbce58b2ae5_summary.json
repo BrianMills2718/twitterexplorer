@@ -1,0 +1,91 @@
+{
+  "session_metadata": {
+    "session_id": "c41cf295-dec5-497e-9aee-4fbce58b2ae5",
+    "start_time": "2025-08-10T21:27:15.849703+00:00",
+    "end_time": "2025-08-10T21:27:58.311920+00:00",
+    "duration_seconds": 42.461216,
+    "user_query": "What is Elon Musk saying about Twitter recently?"
+  },
+  "configuration": {
+    "max_searches": 10,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.7,
+    "min_searches_before_satisfaction": 3,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "pages_per_search": 2,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true,
+    "enforce_endpoint_diversity": true,
+    "max_endpoint_repeats": 3,
+    "diversity_threshold": 0.3
+  },
+  "performance_metrics": {
+    "total_searches": 3,
+    "total_rounds": 1,
+    "total_results_found": 145,
+    "satisfaction_score": 0.0,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.0,
+      "source_diversity": 0.0,
+      "evidence_quality": 0.0,
+      "claim_specificity": 0.0,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Investigation failed: InvestigationSession.update_satisfaction_metrics() missing 1 required positional argument: 'findings'"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [],
+      "moderately_effective": [],
+      "low_effectiveness": [
+        {
+          "search_id": 1,
+          "query": "",
+          "results": 60,
+          "effectiveness": 3.0
+        },
+        {
+          "search_id": 2,
+          "query": "from:elonmusk (Twitter OR X)",
+          "results": 60,
+          "effectiveness": 3.0
+        },
+        {
+          "search_id": 3,
+          "query": "",
+          "results": 25,
+          "effectiveness": 3.0
+        }
+      ],
+      "ineffective": []
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "Graph Strategy: The core objective is to understand Elon Musk's recent statements about Twitter. This strategic decision focuses on directly accessing his public communications across various modalities (text, media) and using targeted search to capture relevant mentions. This approach directly addresses the primary information gap by gathering initial data from the most authoritative source – Elon Musk himself – and also from broader search results, ensuring diversity in endpoint usage.",
+        "avg_effectiveness": 3.0
+      }
+    ],
+    "dead_ends": [],
+    "promising_leads": []
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Graph Strategy: The core objective is to understand Elon Musk's recent statements about Twitter. This strategic decision focuses on directly accessing his public communications across various modalities (text, media) and using targeted search to capture relevant mentions. This approach directly addresses the primary information gap by gathering initial data from the most authoritative source – Elon Musk himself – and also from broader search results, ensuring diversity in endpoint usage.",
+      "searches_count": 3,
+      "total_results": 145,
+      "effectiveness": 3.0,
+      "insights": [
+        "Elon Musk's platform X (formerly Twitter) is reportedly ranked #1 as a News App (both free and grossing).",
+        "Grok (Elon Musk's AI) is gaining significant traction in app store rankings, reaching #2 in Productivity and #6 overall.",
+        "Grok is being developed with advanced capabilities, including turning images into videos and one-shot coding for video games."
+      ]
+    }
+  ]
+}

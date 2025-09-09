@@ -1,0 +1,82 @@
+{
+  "session_metadata": {
+    "session_id": "4d1e9a2c-37f2-4bac-8397-decb9c3ba935",
+    "start_time": "2025-08-27T22:49:41.247296+00:00",
+    "end_time": "2025-08-27T22:50:09.958638+00:00",
+    "duration_seconds": 28.710342,
+    "user_query": "What is Elon Musk's latest announcement about X platform?"
+  },
+  "configuration": {
+    "max_searches": 2,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.8,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "pages_per_search": 1,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true,
+    "enforce_endpoint_diversity": false,
+    "max_endpoint_repeats": 5,
+    "diversity_threshold": 0.3
+  },
+  "performance_metrics": {
+    "total_searches": 2,
+    "total_rounds": 1,
+    "total_results_found": 71,
+    "satisfaction_score": 0.0,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.0,
+      "source_diversity": 0.0,
+      "evidence_quality": 0.0,
+      "claim_specificity": 0.0,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Investigation failed: LLM batch evaluation failed - investigation cannot continue: LiteLLM completion failed: 'dict' object has no attribute 'model_json_schema'"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [],
+      "moderately_effective": [
+        {
+          "search_id": 1,
+          "query": "",
+          "results": 59,
+          "effectiveness": 5.9
+        }
+      ],
+      "low_effectiveness": [],
+      "ineffective": [
+        {
+          "search_id": 2,
+          "query": "Elon Musk X platform latest announcement OR update",
+          "results": 12,
+          "effectiveness": 1.2
+        }
+      ]
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "Graph Strategy: The primary goal is to identify Elon Musk's latest announcement regarding the X platform. This requires a multi-pronged approach to ensure comprehensive coverage, including direct sources, general news, and trending topics. By utilizing diverse endpoints, we aim to quickly pinpoint relevant information while also assessing its broader impact and context.",
+        "avg_effectiveness": 3.5500000000000003
+      }
+    ],
+    "dead_ends": [],
+    "promising_leads": []
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Graph Strategy: The primary goal is to identify Elon Musk's latest announcement regarding the X platform. This requires a multi-pronged approach to ensure comprehensive coverage, including direct sources, general news, and trending topics. By utilizing diverse endpoints, we aim to quickly pinpoint relevant information while also assessing its broader impact and context.",
+      "searches_count": 2,
+      "total_results": 71,
+      "effectiveness": 0.0,
+      "insights": []
+    }
+  ]
+}

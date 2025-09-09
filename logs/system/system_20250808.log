@@ -1,0 +1,202 @@
+2025-08-08 15:22:07,588 - INFO - Started investigation session 9cab4d5b-d114-419c-9548-14bb09085fcf for query: Test investigation for logging verification...
+2025-08-08 15:22:07,590 - INFO - Completed investigation session 9cab4d5b-d114-419c-9548-14bb09085fcf - 3 searches, 25 results
+2025-08-08 15:45:19,558 - INFO - Started investigation session bc171921-7d6d-4371-a6e4-6897152ea127 for query: find me different takes on the current epstein tra...
+2025-08-08 16:10:32,989 - INFO - Completed investigation session bc171921-7d6d-4371-a6e4-6897152ea127 - 100 searches, 5609 results
+2025-08-08 16:10:58,626 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,626 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,626 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,626 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,627 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,627 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,627 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,627 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,627 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,627 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,627 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,627 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,628 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,628 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,628 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,628 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,628 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,628 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,628 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,628 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,629 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,629 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,629 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,629 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,629 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,629 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,629 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,629 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,630 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,630 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,630 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,630 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,630 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,630 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,630 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,630 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,631 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,631 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,631 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,631 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,631 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,631 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,631 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,631 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,632 - INFO - Processing data from endpoint: https://twitter-api45.p.rapidapi.com/search.php
+2025-08-08 16:10:58,632 - WARNING - No specific parsing logic implemented for endpoint: https://twitter-api45.p.rapidapi.com/search.php
+2025-08-08 16:10:58,632 - INFO - Processing data from endpoint: https://twitter-api45.p.rapidapi.com/search.php
+2025-08-08 16:10:58,632 - WARNING - No specific parsing logic implemented for endpoint: https://twitter-api45.p.rapidapi.com/search.php
+2025-08-08 16:10:58,632 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,632 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,632 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,632 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,633 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,633 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,633 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,633 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,633 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,633 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,633 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,633 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,633 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,634 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,634 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,634 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,634 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,634 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,634 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,634 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,634 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,635 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,635 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,635 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,635 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,635 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,635 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,635 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,635 - INFO - Processing data from endpoint: https://twitter-api45.p.rapidapi.com/search.php
+2025-08-08 16:10:58,636 - WARNING - No specific parsing logic implemented for endpoint: https://twitter-api45.p.rapidapi.com/search.php
+2025-08-08 16:10:58,636 - INFO - Processing data from endpoint: https://twitter-api45.p.rapidapi.com/search.php
+2025-08-08 16:10:58,636 - WARNING - No specific parsing logic implemented for endpoint: https://twitter-api45.p.rapidapi.com/search.php
+2025-08-08 16:10:58,636 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,636 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,636 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,636 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,636 - INFO - Processing data from endpoint: https://twitter-api45.p.rapidapi.com/search.php
+2025-08-08 16:10:58,636 - WARNING - No specific parsing logic implemented for endpoint: https://twitter-api45.p.rapidapi.com/search.php
+2025-08-08 16:10:58,637 - INFO - Processing data from endpoint: https://twitter-api45.p.rapidapi.com/search.php
+2025-08-08 16:10:58,637 - WARNING - No specific parsing logic implemented for endpoint: https://twitter-api45.p.rapidapi.com/search.php
+2025-08-08 16:10:58,637 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,637 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,637 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,637 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,637 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,637 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,638 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,638 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,638 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,638 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,638 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,638 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,638 - INFO - Processing data from endpoint: https://twitter-api45.p.rapidapi.com/search.php
+2025-08-08 16:10:58,638 - WARNING - No specific parsing logic implemented for endpoint: https://twitter-api45.p.rapidapi.com/search.php
+2025-08-08 16:10:58,639 - INFO - Processing data from endpoint: https://twitter-api45.p.rapidapi.com/search.php
+2025-08-08 16:10:58,639 - WARNING - No specific parsing logic implemented for endpoint: https://twitter-api45.p.rapidapi.com/search.php
+2025-08-08 16:10:58,639 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,639 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,639 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,639 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,640 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,640 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,640 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,640 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,641 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,641 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,641 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,641 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,641 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,641 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,641 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,641 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,641 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,642 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,642 - INFO - Processing data from endpoint: https://twitter-api45.p.rapidapi.com/search.php
+2025-08-08 16:10:58,642 - WARNING - No specific parsing logic implemented for endpoint: https://twitter-api45.p.rapidapi.com/search.php
+2025-08-08 16:10:58,642 - INFO - Processing data from endpoint: https://twitter-api45.p.rapidapi.com/search.php
+2025-08-08 16:10:58,642 - WARNING - No specific parsing logic implemented for endpoint: https://twitter-api45.p.rapidapi.com/search.php
+2025-08-08 16:10:58,642 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,642 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,642 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,643 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,643 - INFO - Processing data from endpoint: https://twitter-api45.p.rapidapi.com/search.php
+2025-08-08 16:10:58,643 - WARNING - No specific parsing logic implemented for endpoint: https://twitter-api45.p.rapidapi.com/search.php
+2025-08-08 16:10:58,643 - INFO - Processing data from endpoint: https://twitter-api45.p.rapidapi.com/search.php
+2025-08-08 16:10:58,643 - WARNING - No specific parsing logic implemented for endpoint: https://twitter-api45.p.rapidapi.com/search.php
+2025-08-08 16:10:58,643 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,643 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,643 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,644 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,644 - INFO - Processing data from endpoint: https://twitter-api45.p.rapidapi.com/search.php
+2025-08-08 16:10:58,644 - WARNING - No specific parsing logic implemented for endpoint: https://twitter-api45.p.rapidapi.com/search.php
+2025-08-08 16:10:58,644 - INFO - Processing data from endpoint: https://twitter-api45.p.rapidapi.com/search.php
+2025-08-08 16:10:58,644 - WARNING - No specific parsing logic implemented for endpoint: https://twitter-api45.p.rapidapi.com/search.php
+2025-08-08 16:10:58,644 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,644 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,644 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,644 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,645 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,645 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,645 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,645 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,645 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,645 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,645 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,645 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,645 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,646 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,646 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,646 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,646 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,646 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,646 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,646 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,646 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,647 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,647 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,647 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,647 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,647 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,647 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,647 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,647 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,647 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,648 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,648 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,648 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,648 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,648 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,648 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,648 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,648 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,649 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,649 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,649 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,649 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,649 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,649 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,649 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,649 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,649 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,650 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,650 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,650 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,650 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,650 - INFO - Parsing 5 tweets from search.php
+2025-08-08 16:10:58,650 - INFO - Processing data from endpoint: search.php
+2025-08-08 16:10:58,650 - INFO - Parsing 5 tweets from search.php
+2025-08-08 17:20:07,335 - INFO - Started investigation session 551595d2-6e8b-46f7-bb9b-1eac32fc5ca7 for query: Test investigation for logging verification...
+2025-08-08 17:20:07,336 - INFO - Completed investigation session 551595d2-6e8b-46f7-bb9b-1eac32fc5ca7 - 3 searches, 25 results

@@ -1,0 +1,75 @@
+{
+  "session_metadata": {
+    "session_id": "03106067-1942-4962-94f5-7350b971b5f9",
+    "start_time": "2025-08-27T23:34:32.596858+00:00",
+    "end_time": "2025-08-27T23:35:33.466095+00:00",
+    "duration_seconds": 60.868727,
+    "user_query": "What is Elon Musk saying about AI"
+  },
+  "configuration": {
+    "max_searches": 1,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.8,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "pages_per_search": 1,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true,
+    "enforce_endpoint_diversity": false,
+    "max_endpoint_repeats": 5,
+    "diversity_threshold": 0.3
+  },
+  "performance_metrics": {
+    "total_searches": 1,
+    "total_rounds": 1,
+    "total_results_found": 60,
+    "satisfaction_score": 0.0,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.0,
+      "source_diversity": 0.0,
+      "evidence_quality": 0.0,
+      "claim_specificity": 0.0,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Investigation failed: 'charmap' codec can't encode character '\\U0001f92d' in position 452: character maps to <undefined>"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [],
+      "moderately_effective": [
+        {
+          "search_id": 1,
+          "query": "from:elonmusk AI OR Artificial Intelligence OR Neuralink OR xAI",
+          "results": 60,
+          "effectiveness": 6.0
+        }
+      ],
+      "low_effectiveness": [],
+      "ineffective": []
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "Graph Strategy: To understand what Elon Musk is saying about AI, the most strategically coherent next action is to directly search for his statements, review his recent posts, and identify who he follows in the AI space. This multi-pronged approach ensures we capture his direct comments, recent focus, and potential influences or information sources, providing a comprehensive initial understanding while adhering to endpoint diversity.",
+        "avg_effectiveness": 6.0
+      }
+    ],
+    "dead_ends": [],
+    "promising_leads": []
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Graph Strategy: To understand what Elon Musk is saying about AI, the most strategically coherent next action is to directly search for his statements, review his recent posts, and identify who he follows in the AI space. This multi-pronged approach ensures we capture his direct comments, recent focus, and potential influences or information sources, providing a comprehensive initial understanding while adhering to endpoint diversity.",
+      "searches_count": 1,
+      "total_results": 60,
+      "effectiveness": 0.0,
+      "insights": []
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{"event": "datapoint_added", "datapoint_id": "test_dp_0", "pending_count": 1, "timestamp": "2025-09-08T05:47:32.496433"}
+{"event": "datapoint_added", "datapoint_id": "test_dp_1", "pending_count": 2, "timestamp": "2025-09-08T05:47:32.496433"}
+{"event": "datapoint_added", "datapoint_id": "test_dp_2", "pending_count": 3, "timestamp": "2025-09-08T05:47:32.496433"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-08T05:47:42.454688"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-08T05:47:42.455687"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-08T05:47:50.485731"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 1, "groups": [{"theme": "Contradictory findings about the Trump\u2013Epstein relationship", "datapoint_count": 3, "synthesis_worthy": true}], "timestamp": "2025-09-08T05:47:50.486732"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-08T05:48:02.028418"}
+{"event": "insight_creation", "success": true, "insight_title": "Contradictory Accounts Create an Ambiguous Core Narrative", "insight_confidence": 0.82, "timestamp": "2025-09-08T05:48:02.029420"}
+{"event": "synthesis_completed", "insights_created": 1, "timestamp": "2025-09-08T05:48:02.029420"}
