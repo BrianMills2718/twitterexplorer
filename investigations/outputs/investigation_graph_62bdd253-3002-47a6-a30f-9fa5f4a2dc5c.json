@@ -1,0 +1,185 @@
+{
+  "nodes": {
+    "1555a598-b2ab-4c67-98ee-14a2d8530ebf": {
+      "id": "1555a598-b2ab-4c67-98ee-14a2d8530ebf",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "test placeholder parameter resolution fix",
+        "is_root": true,
+        "investigation_goal": "test placeholder parameter resolution fix"
+      },
+      "created_at": "2025-09-10T04:07:27.057018"
+    },
+    "2a92cd83-62bc-4e94-8640-2089fcb5f37b": {
+      "id": "2a92cd83-62bc-4e94-8640-2089fcb5f37b",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: This search is designed to directly engage with the core topic by identifying tweets that explicitly mention the parameters related to the placeholder resolution fix in discussions or announcements. The 'Top' search type will prioritize tweets with higher engagement.",
+        "parent_analytic_question": "1555a598-b2ab-4c67-98ee-14a2d8530ebf"
+      },
+      "created_at": "2025-09-10T04:08:01.486292"
+    },
+    "6ceb3b2d-efe4-423f-9905-1aef593d1d19": {
+      "id": "6ceb3b2d-efe4-423f-9905-1aef593d1d19",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Elon Musk is a highly influential figure in technology discussions including topics around parameter resolution fixes and similar technological innovations. Reviewing his recent timeline can provide insights into relevant discussions or statements related to the testing of placeholder parameters.",
+        "parent_analytic_question": "1555a598-b2ab-4c67-98ee-14a2d8530ebf"
+      },
+      "created_at": "2025-09-10T04:08:01.487297"
+    },
+    "91e375ae-7643-42d3-8d17-26e808c4e1e8": {
+      "id": "91e375ae-7643-42d3-8d17-26e808c4e1e8",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "elonmusk"
+        }
+      },
+      "created_at": "2025-09-10T04:08:01.487297"
+    },
+    "b4972300-0bb9-4c05-8a10-a9871079dce7": {
+      "id": "b4972300-0bb9-4c05-8a10-a9871079dce7",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: The connection of AI safety with parameter testing is crucial due to the dependencies and implications of parameter resolutions in AI contexts. Looking for the latest contributions on this topic can reveal emerging discussions relevant to our investigation.",
+        "parent_analytic_question": "1555a598-b2ab-4c67-98ee-14a2d8530ebf"
+      },
+      "created_at": "2025-09-10T04:08:01.487297"
+    },
+    "67ba25ac-65a1-4ffe-901a-d05139ca492f": {
+      "id": "67ba25ac-65a1-4ffe-901a-d05139ca492f",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "AI safety",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-10T04:08:01.487297"
+    },
+    "1a77f367-36e3-40c3-9f16-cb1768b6eec0": {
+      "id": "1a77f367-36e3-40c3-9f16-cb1768b6eec0",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "test placeholder parameter resolution fix",
+          "search_type": "Top"
+        }
+      },
+      "created_at": "2025-09-10T04:08:29.273720"
+    },
+    "0317aa59-155c-4f07-af0d-dc4d7065262f": {
+      "id": "0317aa59-155c-4f07-af0d-dc4d7065262f",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "What the PROS don't want YOU \ud83e\udef5 to know part #26\n\nThe REAL Secrets of optimizing your monitor (NEVER SEEN BEFORE)\n\n1. Open nvidia control panel, go to change resolution, select customize.\n\n2. Enable resolutions not exposed by display & click create custom resolution.\n\n3. Set desired resolution & set timing to manual instead of automatic.\n\n4. Decrease both Front Porch & Sync Width on both sides using the test button until you notice display glitching/out of range/not turning on. Click no if your screen is visibly fine and continue dialing them in. Then once you've dialed in the front porch and sync widths to the lowest number, you're going to increase the Vertical Total at the bottom right to the highest value you can. I would recommend doing it by 25-50 increases in the number.\n\nMisc: When you use the test button in the nvidia control panel it resets the setting you applied using the test button in 15 seconds if you dont click yes. Sometimes it can bug out & you have to switch your GPU hdmi/display port to get it back. You can mess with the polarities but I use positive/negative. This wont damage anything, it's safe to do.\n\nIf you want more real secrets like this you have to show me you care by following, dropping a comment, or at least liking my tweets. All i ask is a little respect <3\n\n(disc below for help/services/etc)",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T04:08:37.327708",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.8,
+          "goal_relevance_score": 0.4
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T04:08:37.327708"
+      },
+      "created_at": "2025-09-10T04:08:37.327708"
+    },
+    "960ba5e2-ee92-4e27-a211-17120ab3a464": {
+      "id": "960ba5e2-ee92-4e27-a211-17120ab3a464",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Changing screen resolution from 1280x720 to 2560x1440 resolved an issue for one user.",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-10T04:08:54.975729"
+    },
+    "2b2528d1-8341-4070-a8d0-e5ce94ea802c": {
+      "id": "2b2528d1-8341-4070-a8d0-e5ce94ea802c",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Testing fixes can involve reverting changes and confirming the resolution issue is fixed through test prompts.",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-10T04:08:54.975729"
+    },
+    "3f98d27a-f653-425f-9f5c-fd616d959143": {
+      "id": "3f98d27a-f653-425f-9f5c-fd616d959143",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Using Screen.SetResolution method in Unity can help create resolution dialogues effectively.",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-10T04:08:54.975729"
+    }
+  },
+  "edges": [
+    {
+      "id": "090fc941-d0ec-4210-a9c3-c8ba7e5e7859",
+      "source_id": "1555a598-b2ab-4c67-98ee-14a2d8530ebf",
+      "target_id": "2a92cd83-62bc-4e94-8640-2089fcb5f37b",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T04:08:01.486300"
+    },
+    {
+      "id": "28688c91-5333-4115-b5cc-f1a8d6aa4a1c",
+      "source_id": "1555a598-b2ab-4c67-98ee-14a2d8530ebf",
+      "target_id": "6ceb3b2d-efe4-423f-9905-1aef593d1d19",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T04:08:01.487297"
+    },
+    {
+      "id": "a4a83817-f897-480f-a0c2-bc80bd5d62ff",
+      "source_id": "6ceb3b2d-efe4-423f-9905-1aef593d1d19",
+      "target_id": "91e375ae-7643-42d3-8d17-26e808c4e1e8",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T04:08:01.487297"
+    },
+    {
+      "id": "a2174471-3184-44f8-925c-4b6aac358054",
+      "source_id": "1555a598-b2ab-4c67-98ee-14a2d8530ebf",
+      "target_id": "b4972300-0bb9-4c05-8a10-a9871079dce7",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T04:08:01.487297"
+    },
+    {
+      "id": "c6d054ec-5845-493a-a824-00cbb4421a6b",
+      "source_id": "b4972300-0bb9-4c05-8a10-a9871079dce7",
+      "target_id": "67ba25ac-65a1-4ffe-901a-d05139ca492f",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T04:08:01.487297"
+    },
+    {
+      "id": "65d82470-0f38-4804-aa1f-766a6a9ed565",
+      "source_id": "1a77f367-36e3-40c3-9f16-cb1768b6eec0",
+      "target_id": "0317aa59-155c-4f07-af0d-dc4d7065262f",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.8
+      },
+      "created_at": "2025-09-10T04:08:37.327708"
+    }
+  ],
+  "analytic_question": "1555a598-b2ab-4c67-98ee-14a2d8530ebf",
+  "created_at": "2025-09-10T04:08:54.980894"
+}

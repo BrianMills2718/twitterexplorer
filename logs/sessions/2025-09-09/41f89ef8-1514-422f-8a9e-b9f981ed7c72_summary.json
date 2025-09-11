@@ -1,0 +1,95 @@
+{
+  "session_metadata": {
+    "session_id": "41f89ef8-1514-422f-8a9e-b9f981ed7c72",
+    "start_time": "2025-09-09T14:45:37.758286+00:00",
+    "end_time": "2025-09-09T14:46:43.072219+00:00",
+    "duration_seconds": 65.313417,
+    "user_query": "bitcoin price trends 2024"
+  },
+  "configuration": {
+    "max_searches": 3,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.6,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "model_provider": "gemini",
+    "pages_per_search": 3,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true,
+    "enforce_endpoint_diversity": false,
+    "max_endpoint_repeats": 5,
+    "diversity_threshold": 0.3
+  },
+  "performance_metrics": {
+    "total_searches": 3,
+    "total_rounds": 1,
+    "total_results_found": 111,
+    "satisfaction_score": 0.44500000000000006,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.2,
+      "source_diversity": 0.1,
+      "evidence_quality": 0.9,
+      "claim_specificity": 1.0,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Reached maximum search limit (3)"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [],
+      "moderately_effective": [],
+      "low_effectiveness": [
+        {
+          "search_id": 2,
+          "query": "",
+          "results": 61,
+          "effectiveness": 4.0
+        },
+        {
+          "search_id": 3,
+          "query": "",
+          "results": 50,
+          "effectiveness": 4.0
+        }
+      ],
+      "ineffective": [
+        {
+          "search_id": 1,
+          "query": "bitcoin price trend 2024 OR BTC prediction 2024 OR crypto market outlook 2024",
+          "results": 0,
+          "effectiveness": 0.0
+        }
+      ]
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "Graph Strategy: The initial investigation requires a broad understanding of the current discourse around Bitcoin price trends for 2024. This strategy focuses on gathering direct discussions, expert opinions from reputable financial/crypto news sources, and identifying overall market sentiment indicators through trending topics. This multi-endpoint approach ensures comprehensive initial data collection, covering direct search queries, specific influencer perspectives, and broader public interest, while adhering to the diversity requirement.",
+        "avg_effectiveness": 2.6666666666666665
+      }
+    ],
+    "dead_ends": [
+      "bitcoin price trend 2024 OR BTC prediction 2024 OR crypto market outlook 2024"
+    ],
+    "promising_leads": []
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Graph Strategy: The initial investigation requires a broad understanding of the current discourse around Bitcoin price trends for 2024. This strategy focuses on gathering direct discussions, expert opinions from reputable financial/crypto news sources, and identifying overall market sentiment indicators through trending topics. This multi-endpoint approach ensures comprehensive initial data collection, covering direct search queries, specific influencer perspectives, and broader public interest, while adhering to the diversity requirement.",
+      "searches_count": 3,
+      "total_results": 111,
+      "effectiveness": 2.6666666666666665,
+      "insights": [
+        "Cboe is set to launch continuous Bitcoin and Ethereum futures trading, which could enhance market liquidity and institutional participation.",
+        "Ongoing regulatory movements in the US include an upcoming SEC public crypto roundtable and calls for a crypto 'Clarity Act', indicating potential for clearer market rules.",
+        "A warning from Ledger's CTO about a large-scale crypto hack in the JavaScript ecosystem highlights significant security concerns that could affect market sentiment."
+      ]
+    }
+  ]
+}

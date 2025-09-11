@@ -1,0 +1,185 @@
+{
+  "nodes": {
+    "fe7495d0-5912-49be-bec3-974cd7ea618f": {
+      "id": "fe7495d0-5912-49be-bec3-974cd7ea618f",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "simple test query",
+        "is_root": true,
+        "investigation_goal": "simple test query"
+      },
+      "created_at": "2025-09-09T07:38:31.712330"
+    },
+    "eda86372-5eea-4d53-8255-2be8fe0c923a": {
+      "id": "eda86372-5eea-4d53-8255-2be8fe0c923a",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Conduct a direct keyword search for the exact phrase 'simple test query' to identify any explicit mentions or discussions. Starting with 'Top' results will highlight the most relevant or popular content. This is the most direct way to address the core investigation goal.",
+        "parent_analytic_question": "fe7495d0-5912-49be-bec3-974cd7ea618f"
+      },
+      "created_at": "2025-09-09T07:38:46.108100"
+    },
+    "ae0ba938-2222-4b68-b3f4-ce34f40c883c": {
+      "id": "ae0ba938-2222-4b68-b3f4-ce34f40c883c",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "\"simple test query\"",
+          "search_type": "Top"
+        }
+      },
+      "created_at": "2025-09-09T07:38:46.109095"
+    },
+    "ddabc98f-950c-4f2b-bd6d-e4ba518bf5b5": {
+      "id": "ddabc98f-950c-4f2b-bd6d-e4ba518bf5b5",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Examine the recent posts of a highly relevant technical account like StackOverflow. This helps understand the common usage and context of terms related to 'query' or 'test' within a professional or technical community, providing potential indirect insights and identifying influential accounts or topics.",
+        "parent_analytic_question": "fe7495d0-5912-49be-bec3-974cd7ea618f"
+      },
+      "created_at": "2025-09-09T07:38:46.109095"
+    },
+    "6954fe0c-1a6f-4d88-be9f-6771e9922735": {
+      "id": "6954fe0c-1a6f-4d88-be9f-6771e9922735",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "StackOverflow"
+        }
+      },
+      "created_at": "2025-09-09T07:38:46.109095"
+    },
+    "ab92d040-7502-42a3-b3c6-12d29f59bef0": {
+      "id": "ab92d040-7502-42a3-b3c6-12d29f59bef0",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Identify any overarching trending topics in a major country like the United States. This broadens the context by revealing if any concepts related to 'testing', 'querying', or 'simplicity' are currently prominent in public discourse, which might offer peripheral understanding or unexpected associations.",
+        "parent_analytic_question": "fe7495d0-5912-49be-bec3-974cd7ea618f"
+      },
+      "created_at": "2025-09-09T07:38:46.109095"
+    },
+    "d9baa494-f271-47fb-9199-bf84c885dce8": {
+      "id": "d9baa494-f271-47fb-9199-bf84c885dce8",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "trends.php",
+        "parameters": {
+          "country": "UnitedStates"
+        }
+      },
+      "created_at": "2025-09-09T07:38:46.109095"
+    },
+    "70bd2499-f4dd-4a42-8174-a0f912f3defb": {
+      "id": "70bd2499-f4dd-4a42-8174-a0f912f3defb",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "@pk_iv underwhelming TBH - I have a simple test query i do with all of these CUA agents, and this one is no different. We clearly have a long ways to go.",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-09T07:39:04.996638",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 1.0,
+          "goal_relevance_score": 1.0
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-09T07:39:04.996638"
+      },
+      "created_at": "2025-09-09T07:39:04.996638"
+    },
+    "e7203eab-c3dc-452c-9b75-9ad1b7ac710c": {
+      "id": "e7203eab-c3dc-452c-9b75-9ad1b7ac710c",
+      "node_type": "Insight",
+      "properties": {
+        "content": "\"Simple test queries\" are used to evaluate \"CUA agents\".",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-09T07:39:35.432143"
+    },
+    "31456b4a-fe0c-4620-a915-e7e279bac2b0": {
+      "id": "31456b4a-fe0c-4620-a915-e7e279bac2b0",
+      "node_type": "Insight",
+      "properties": {
+        "content": "The performance of \"CUA agents\" when subjected to these queries is often considered \"underwhelming\", suggesting significant room for improvement in their development.",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-09T07:39:35.432143"
+    }
+  },
+  "edges": [
+    {
+      "id": "85be06cd-4872-4540-bd1d-205d85aa25d9",
+      "source_id": "fe7495d0-5912-49be-bec3-974cd7ea618f",
+      "target_id": "eda86372-5eea-4d53-8255-2be8fe0c923a",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T07:38:46.108100"
+    },
+    {
+      "id": "0ae0812c-4478-4d6c-b505-d5420f09f681",
+      "source_id": "eda86372-5eea-4d53-8255-2be8fe0c923a",
+      "target_id": "ae0ba938-2222-4b68-b3f4-ce34f40c883c",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T07:38:46.109095"
+    },
+    {
+      "id": "7642b2b7-247a-4417-b206-17ad55b00fd3",
+      "source_id": "fe7495d0-5912-49be-bec3-974cd7ea618f",
+      "target_id": "ddabc98f-950c-4f2b-bd6d-e4ba518bf5b5",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T07:38:46.109095"
+    },
+    {
+      "id": "0aa43064-f607-42ad-b67b-3d59bf2aaa6e",
+      "source_id": "ddabc98f-950c-4f2b-bd6d-e4ba518bf5b5",
+      "target_id": "6954fe0c-1a6f-4d88-be9f-6771e9922735",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T07:38:46.109095"
+    },
+    {
+      "id": "7168ba92-4230-4f14-8bec-ca164ed6b1b7",
+      "source_id": "fe7495d0-5912-49be-bec3-974cd7ea618f",
+      "target_id": "ab92d040-7502-42a3-b3c6-12d29f59bef0",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T07:38:46.109095"
+    },
+    {
+      "id": "71a7345c-481a-4f0a-b351-9336996b58c4",
+      "source_id": "ab92d040-7502-42a3-b3c6-12d29f59bef0",
+      "target_id": "d9baa494-f271-47fb-9199-bf84c885dce8",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T07:38:46.109095"
+    },
+    {
+      "id": "3a287277-a5c1-4296-9d9a-c6df34e12c57",
+      "source_id": "ae0ba938-2222-4b68-b3f4-ce34f40c883c",
+      "target_id": "70bd2499-f4dd-4a42-8174-a0f912f3defb",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 1.0
+      },
+      "created_at": "2025-09-09T07:39:04.996638"
+    }
+  ],
+  "analytic_question": "fe7495d0-5912-49be-bec3-974cd7ea618f",
+  "created_at": "2025-09-09T07:39:35.437207"
+}

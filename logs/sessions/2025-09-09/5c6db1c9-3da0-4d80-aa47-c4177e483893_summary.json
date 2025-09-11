@@ -1,0 +1,108 @@
+{
+  "session_metadata": {
+    "session_id": "5c6db1c9-3da0-4d80-aa47-c4177e483893",
+    "start_time": "2025-09-09T12:54:55.674571+00:00",
+    "end_time": "2025-09-09T13:02:32.350840+00:00",
+    "duration_seconds": 456.675213,
+    "user_query": "test short query"
+  },
+  "configuration": {
+    "max_searches": 5,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.6,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "pages_per_search": 3,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true,
+    "enforce_endpoint_diversity": false,
+    "max_endpoint_repeats": 5,
+    "diversity_threshold": 0.3
+  },
+  "performance_metrics": {
+    "total_searches": 5,
+    "total_rounds": 1,
+    "total_results_found": 280,
+    "satisfaction_score": 0.3075,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.2,
+      "source_diversity": 0.1,
+      "evidence_quality": 0.71,
+      "claim_specificity": 0.4,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Reached maximum search limit (5)"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [],
+      "moderately_effective": [],
+      "low_effectiveness": [],
+      "ineffective": [
+        {
+          "search_id": 1,
+          "query": "a",
+          "results": 53,
+          "effectiveness": 1.0
+        },
+        {
+          "search_id": 2,
+          "query": "ok",
+          "results": 58,
+          "effectiveness": 1.0
+        },
+        {
+          "search_id": 3,
+          "query": "test",
+          "results": 60,
+          "effectiveness": 1.0
+        },
+        {
+          "search_id": 4,
+          "query": "",
+          "results": 59,
+          "effectiveness": 1.0
+        },
+        {
+          "search_id": 5,
+          "query": "",
+          "results": 50,
+          "effectiveness": 1.0
+        }
+      ]
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "Graph Strategy: The investigation currently has no searches or data. The highest-priority gap is to empirically test how very short queries (single-character, two-character, and short words) behave across different Twitter endpoints and search modes. To get a broad, complementary view we must: (1) run targeted short queries in multiple search modes (Latest, Top, People) to observe result differences; (2) sample a high-volume account timeline to collect real-world short-query examples for validation; and (3) check trending topics to see whether very short tokens appear as trends. This mix uses diverse endpoints (search.php, timeline.php, trends.php) to satisfy the mandatory diversity rule and produces results that connect to later conversation- and tweet-level follow-ups (e.g., grab tweet IDs for thread/reply inspection).",
+        "avg_effectiveness": 1.0
+      }
+    ],
+    "dead_ends": [
+      "a",
+      "ok",
+      "test",
+      ""
+    ],
+    "promising_leads": []
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Graph Strategy: The investigation currently has no searches or data. The highest-priority gap is to empirically test how very short queries (single-character, two-character, and short words) behave across different Twitter endpoints and search modes. To get a broad, complementary view we must: (1) run targeted short queries in multiple search modes (Latest, Top, People) to observe result differences; (2) sample a high-volume account timeline to collect real-world short-query examples for validation; and (3) check trending topics to see whether very short tokens appear as trends. This mix uses diverse endpoints (search.php, timeline.php, trends.php) to satisfy the mandatory diversity rule and produces results that connect to later conversation- and tweet-level follow-ups (e.g., grab tweet IDs for thread/reply inspection).",
+      "searches_count": 5,
+      "total_results": 280,
+      "effectiveness": 1.0,
+      "insights": [
+        "The result set is a heterogeneous mix of short social-media posts (tweets) in multiple languages and a few links; there is no coherent topical focus.",
+        "Several items touch on politics, conspiracy theories, defense tech (Anduril helmet), sports, music, and mycology — indicating broad noise rather than relevance to a specific investigation.",
+        "Many entries are conversational or ephemeral (replies, tweets) and lack context or provenance beyond a snippet or link."
+      ]
+    }
+  ]
+}

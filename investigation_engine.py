@@ -3,9 +3,94 @@ from dataclasses import dataclass, field
 from typing import List, Dict, Any, Optional, Tuple
 from datetime import datetime
 import json
-import streamlit as st
 import time
 import math
+
+# Lazy import of streamlit for complete CLI isolation
+# Streamlit will only be imported when actually needed by UI functions
+st = None
+STREAMLIT_AVAILABLE = None  # Will be determined on first access
+
+# Streamlit helper functions with lazy import for complete CLI isolation
+def safe_streamlit(func_name, *args, **kwargs):
+    """Safely call streamlit functions only when available - lazy import on first use"""
+    global st, STREAMLIT_AVAILABLE
+    
+    # Check if CLI mode is explicitly disabled
+    import os
+    if os.environ.get('DISABLE_STREAMLIT', '').lower() in ('1', 'true', 'yes'):
+        return None
+    
+    # Lazy import - only import when actually needed
+    if STREAMLIT_AVAILABLE is None:
+        try:
+            import streamlit as st_module
+            st = st_module
+            STREAMLIT_AVAILABLE = True
+        except ImportError:
+            st = None
+            STREAMLIT_AVAILABLE = False
+    
+    if STREAMLIT_AVAILABLE and st is not None:
+        func = getattr(st, func_name, None)
+        if func:
+            return func(*args, **kwargs)
+    return None
+
+# Create streamlit-compatible no-op objects for CLI mode
+class MockContainer:
+    def __enter__(self):
+        return self
+    def __exit__(self, *args):
+        pass
+    def __getattr__(self, name):
+        return lambda *args, **kwargs: None
+
+def get_streamlit_container():
+    """Get streamlit container or no-op equivalent - lazy import"""
+    global st, STREAMLIT_AVAILABLE
+    
+    # Check if CLI mode is explicitly disabled
+    import os
+    if os.environ.get('DISABLE_STREAMLIT', '').lower() in ('1', 'true', 'yes'):
+        return MockContainer()
+    
+    # Lazy import - only import when actually needed
+    if STREAMLIT_AVAILABLE is None:
+        try:
+            import streamlit as st_module
+            st = st_module
+            STREAMLIT_AVAILABLE = True
+        except ImportError:
+            st = None
+            STREAMLIT_AVAILABLE = False
+    
+    if STREAMLIT_AVAILABLE and st is not None:
+        return st.container()
+    return MockContainer()
+
+def get_streamlit_empty():
+    """Get streamlit empty or no-op equivalent - lazy import"""
+    global st, STREAMLIT_AVAILABLE
+    
+    # Check if CLI mode is explicitly disabled  
+    import os
+    if os.environ.get('DISABLE_STREAMLIT', '').lower() in ('1', 'true', 'yes'):
+        return MockContainer()
+    
+    # Lazy import - only import when actually needed  
+    if STREAMLIT_AVAILABLE is None:
+        try:
+            import streamlit as st_module
+            st = st_module
+            STREAMLIT_AVAILABLE = True
+        except ImportError:
+            st = None
+            STREAMLIT_AVAILABLE = False
+    
+    if STREAMLIT_AVAILABLE and st is not None:
+        return st.empty()
+    return MockContainer()
 
 # Import existing modules
 import llm_handler
@@ -49,6 +134,9 @@ class InvestigationConfig:
     enable_strategy_adaptation: bool = True
     enable_alternative_approaches: bool = True
     enable_name_variation_search: bool = True
+    
+    # Model configuration
+    model_provider: str = 'openai'  # Options: 'openai', 'gemini'
     
     # Search behavior
     pages_per_search: int = 3
@@ -259,7 +347,7 @@ class InvestigationEngine:
     def _generate_provider_config(provider: str) -> str:
         """Generate temporary config for provider switching"""
         if provider == "openai":
-            models = {op: "gpt-4o-mini" for op in [
+            models = {op: "gpt-5-mini" for op in [
                 "strategic_coordinator", "finding_evaluator", "insight_synthesizer",
                 "emergent_questions", "cross_reference", "temporal_analysis"
             ]}
@@ -430,13 +518,24 @@ class InvestigationEngine:
         session_id = investigation_logger.start_session(query, config)
         session.session_id = session_id  # Store session ID on session object
         
-        # Create containers for real-time updates if not already set
-        if self.progress_container:
+        # Create containers for real-time updates only if in Streamlit context
+        # Detect CLI mode by checking command line arguments or environment
+        import sys
+        is_cli_mode = ('cli_test.py' in sys.argv[0] or 
+                      len(sys.argv) > 1 and not sys.argv[0].endswith('streamlit'))
+        
+        if self.progress_container and not is_cli_mode:
+            # Already have a container (Streamlit mode)
             progress_container = self.progress_container
-            details_container = st.container()
+            details_container = get_streamlit_container()
+        elif not is_cli_mode:
+            # Only create containers if NOT in CLI mode
+            progress_container = get_streamlit_container()
+            details_container = get_streamlit_container()
         else:
-            progress_container = st.container()
-            details_container = st.container()
+            # CLI mode - no containers needed
+            progress_container = None
+            details_container = None
         
         # Send initial progress update
         self.send_progress_update(f"🚀 Starting investigation: {query}", "info")
@@ -464,7 +563,10 @@ class InvestigationEngine:
                 )
                 
                 # Display round header
-                with progress_container:
+                if progress_container:
+                    with progress_container:
+                        self._display_round_header(session, current_round, strategy)
+                else:
                     self._display_round_header(session, current_round, strategy)
                 
                 # Execute searches for this round
@@ -476,8 +578,12 @@ class InvestigationEngine:
                     self.send_progress_update(f"🔍 Executing search {i+1}/{len(strategy['searches'])}: {search_plan.get('query', 'Unknown query')}", "info")
                     
                     # Display search attempt
-                    with details_container:
-                        search_placeholder = st.empty()
+                    if details_container:
+                        with details_container:
+                            search_placeholder = get_streamlit_empty()
+                            self._display_search_attempt(search_placeholder, search_plan, search_id)
+                    else:
+                        search_placeholder = get_streamlit_empty()
                         self._display_search_attempt(search_placeholder, search_plan, search_id)
                     
                     # Execute the search
@@ -499,7 +605,10 @@ class InvestigationEngine:
                     )
                     
                     # Update display with results
-                    with details_container:
+                    if details_container:
+                        with details_container:
+                            self._display_search_results(search_placeholder, attempt)
+                    else:
                         self._display_search_results(search_placeholder, attempt)
                     
                     # Break if we hit limits mid-round
@@ -535,11 +644,17 @@ class InvestigationEngine:
                 )
                 
                 # Display batch evaluation results and learning
-                with details_container:
+                if details_container:
+                    with details_container:
+                        self._display_batch_evaluation(current_round, round_results)
+                else:
                     self._display_batch_evaluation(current_round, round_results)
                 
                 # Update progress display
-                with progress_container:
+                if progress_container:
+                    with progress_container:
+                        self._display_investigation_progress(session)
+                else:
                     self._display_investigation_progress(session)
                     
             # Investigation complete
@@ -665,7 +780,7 @@ class InvestigationEngine:
             # Automatically export graph even on error (if graph was built)
             self._export_investigation_graph(session)
             
-            st.error(f"Investigation error: {e}")
+            safe_streamlit("error", f"Investigation error: {e}")
             return session
     
     def _export_investigation_graph(self, session: InvestigationSession):
@@ -801,14 +916,38 @@ class InvestigationEngine:
             pass  # Log disabled temporarily
         
         if self.graph_mode:
+            # EMERGENT QUESTIONS FEEDBACK LOOP: Get emergent questions to drive new searches
+            emergent_questions = []
+            if hasattr(self.llm_coordinator, 'graph'):
+                # Get all EmergentQuestion nodes from the graph
+                emergent_nodes = self.llm_coordinator.graph.get_nodes_by_type('EmergentQuestion')
+                emergent_questions = [node.properties.get('text', '') for node in emergent_nodes if node.properties.get('text')]
+                
+                if emergent_questions:
+                    self.send_progress_update(f"🔍 **Feedback Loop Active**: Using {len(emergent_questions)} emergent questions from previous insights", "info")
+                    # Show sample questions for transparency
+                    sample_questions = emergent_questions[:2]  # Show first 2 questions
+                    for i, q in enumerate(sample_questions, 1):
+                        short_q = q[:60] + "..." if len(q) > 60 else q
+                        self.send_progress_update(f"   {i}. {short_q}", "markdown")
+                elif session.round_count == 1:
+                    self.send_progress_update("ℹ️ **Round 1**: No previous emergent questions yet - using initial strategy", "info")
+                else:
+                    self.send_progress_update("ℹ️ No emergent questions generated from previous rounds", "info")
+            
             # Use Graph-Aware LLM Coordinator
             # Pass rejection context if available
             if hasattr(self.llm_coordinator, 'set_rejection_context') and rejection_context:
                 self.llm_coordinator.set_rejection_context(rejection_context)
+            
+            # Pass emergent questions context to the coordinator
+            if hasattr(self.llm_coordinator, 'set_emergent_questions_context'):
+                self.llm_coordinator.set_emergent_questions_context(emergent_questions)
+            
             decision = self.llm_coordinator.make_strategic_decision(session.original_query)
             
             # Display user update
-            st.info(f"🤖 **Strategic Decision:** {decision.reasoning}")
+            safe_streamlit("info", f"🤖 **Strategic Decision:** {decision.reasoning}")
             
             # Convert decision to strategy format
             searches = []
@@ -904,7 +1043,7 @@ class InvestigationEngine:
             
             # Display user update if available
             if decision.get('user_update'):
-                st.info(f"🤖 **Investigation Update:** {decision['user_update']}")
+                safe_streamlit("info", f"🤖 **Investigation Update:** {decision['user_update']}")
             
             # Convert decision to strategy format - support multiple searches per round
             searches = []
@@ -1518,7 +1657,8 @@ Design 2-4 strategic searches for this round that build on previous learnings.
                         insight = self.llm_coordinator.graph.create_insight_node_enhanced(
                             content=insight_data.get('synthesis', 'Pattern detected'),
                             confidence=insight_data.get('confidence', 0.5),
-                            supporting_datapoints=[dp.id for dp in round_datapoints[:5]]
+                            supporting_datapoints=[dp.id for dp in round_datapoints[:5]],
+                            title=insight_data.get('title', 'Investigation Pattern')  # CRITICAL FIX: Pass title from LLM
                         )
                         
                         # Send progress update
@@ -1680,7 +1820,7 @@ Design 2-4 strategic searches for this round that build on previous learnings.
     def _display_round_header(self, session: InvestigationSession, round_obj: InvestigationRound, strategy: Dict):
         """Display investigation round header"""
         
-        st.markdown(f"""
+        safe_streamlit("markdown", f"""
         ### 🔍 INVESTIGATION ROUND {round_obj.round_number}/{session.config.max_searches//4}
         **Strategy:** {strategy['description']}
         
@@ -1726,7 +1866,7 @@ Design 2-4 strategic searches for this round that build on previous learnings.
         
         should_continue, reason = session.should_continue()
         
-        st.markdown(f"""
+        safe_streamlit("markdown", f"""
         ---
         **📊 Investigation Status:** {reason}
         
@@ -1756,11 +1896,11 @@ Design 2-4 strategic searches for this round that build on previous learnings.
             "🔴"
         )
         
-        st.markdown("---")
-        st.markdown(f"### {effectiveness_color} **BATCH {current_round.round_number} EVALUATION**")
+        safe_streamlit("markdown", "---")
+        safe_streamlit("markdown", f"### {effectiveness_color} **BATCH {current_round.round_number} EVALUATION**")
         
         # Display batch results summary
-        st.markdown(f"""
+        safe_streamlit("markdown", f"""
         **📊 Batch Results:**
         - **Searches Executed:** {len(results)}
         - **Total Results Found:** {total_results} tweets
@@ -1770,26 +1910,26 @@ Design 2-4 strategic searches for this round that build on previous learnings.
         
         # Display LLM key insights
         if current_round.key_insights:
-            st.markdown("**🧠 LLM Analysis - What We Learned:**")
+            safe_streamlit("markdown", "**🧠 LLM Analysis - What We Learned:**")
             for i, insight in enumerate(current_round.key_insights, 1):
-                st.markdown(f"  {i}. {insight}")
+                safe_streamlit("markdown", f"  {i}. {insight}")
         else:
-            st.markdown("**🧠 LLM Analysis:** No significant insights extracted from this batch")
+            safe_streamlit("markdown", "**🧠 LLM Analysis:** No significant insights extracted from this batch")
         
         # Display most/least effective searches for learning
         if len(results) > 1:
             best_search = max(results, key=lambda r: r.effectiveness_score)
             worst_search = min(results, key=lambda r: r.effectiveness_score)
             
-            st.markdown("**📈 Search Performance Analysis:**")
-            st.markdown(f"- **Most Effective:** `{best_search.params.get('query', 'Unknown')}` → {best_search.results_count} results ({best_search.effectiveness_score:.1f}/10)")
-            st.markdown(f"- **Least Effective:** `{worst_search.params.get('query', 'Unknown')}` → {worst_search.results_count} results ({worst_search.effectiveness_score:.1f}/10)")
+            safe_streamlit("markdown", "**📈 Search Performance Analysis:**")
+            safe_streamlit("markdown", f"- **Most Effective:** `{best_search.params.get('query', 'Unknown')}` → {best_search.results_count} results ({best_search.effectiveness_score:.1f}/10)")
+            safe_streamlit("markdown", f"- **Least Effective:** `{worst_search.params.get('query', 'Unknown')}` → {worst_search.results_count} results ({worst_search.effectiveness_score:.1f}/10)")
         
         # Display strategy hints for next round
         if current_round.next_strategy_hints:
-            st.markdown("**🎯 Strategy Recommendations for Next Round:**")
+            safe_streamlit("markdown", "**🎯 Strategy Recommendations for Next Round:**")
             for hint in current_round.next_strategy_hints:
-                st.markdown(f"  • {hint}")
+                safe_streamlit("markdown", f"  • {hint}")
         
         # Show graph context influence (if graph mode)
         if hasattr(self, 'graph_mode') and self.graph_mode:
@@ -1798,8 +1938,8 @@ Design 2-4 strategic searches for this round that build on previous learnings.
                     graph = self.llm_coordinator.graph
                     knowledge_nodes = len(graph.nodes) if hasattr(graph, 'nodes') else 0
                     if knowledge_nodes > 0:
-                        st.markdown(f"**🕸️ Investigation Graph:** {knowledge_nodes} knowledge nodes accumulated")
+                        safe_streamlit("markdown", f"**🕸️ Investigation Graph:** {knowledge_nodes} knowledge nodes accumulated")
             except:
                 pass  # Don't break display if graph info fails
         
-        st.markdown("---")
+        safe_streamlit("markdown", "---")

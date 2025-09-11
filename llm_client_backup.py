@@ -123,8 +123,34 @@ class LiteLLMClient:
                 
                 # NO manual prompt modification needed - LiteLLM handles this internally!
             
-            # Make the direct litellm API call (not through self.completion wrapper)
-            response = completion(**completion_params)
+            # Make the direct litellm API call with retry logic
+            max_retries = 3
+            retry_count = 0
+            
+            while retry_count <= max_retries:
+                try:
+                    response = completion(**completion_params)
+                    break  # Success, exit retry loop
+                    
+                except Exception as e:
+                    error_str = str(e).lower()
+                    
+                    # Check for retryable errors (503 service unavailable, rate limits, timeouts)
+                    if (retry_count < max_retries and 
+                        ('503' in error_str or 'service unavailable' in error_str or 
+                         'overloaded' in error_str or 'rate limit' in error_str or
+                         'timeout' in error_str or 'connection' in error_str)):
+                        
+                        wait_time = (2 ** retry_count) + 1  # Exponential backoff: 2s, 5s, 9s
+                        print(f"LLM service error ({error_str[:100]}), retrying in {wait_time}s ({retry_count+1}/{max_retries})")
+                        
+                        import time
+                        time.sleep(wait_time)
+                        retry_count += 1
+                        continue
+                    else:
+                        # Non-retryable error or max retries exceeded
+                        raise e
             
             # If structured output requested, parse and attach the model
             if response_format and response.choices and response.choices[0].message:

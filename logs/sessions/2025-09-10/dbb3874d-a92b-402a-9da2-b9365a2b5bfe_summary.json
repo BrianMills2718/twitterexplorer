@@ -1,0 +1,120 @@
+{
+  "session_metadata": {
+    "session_id": "dbb3874d-a92b-402a-9da2-b9365a2b5bfe",
+    "start_time": "2025-09-10T13:22:46.475255+00:00",
+    "end_time": "2025-09-10T13:24:57.061588+00:00",
+    "duration_seconds": 130.585353,
+    "user_query": "test issue validation"
+  },
+  "configuration": {
+    "max_searches": 5,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.6,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "model_provider": "gemini",
+    "pages_per_search": 3,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true,
+    "enforce_endpoint_diversity": false,
+    "max_endpoint_repeats": 5,
+    "diversity_threshold": 0.3
+  },
+  "performance_metrics": {
+    "total_searches": 5,
+    "total_rounds": 2,
+    "total_results_found": 173,
+    "satisfaction_score": 0.43875,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.2,
+      "source_diversity": 0.1,
+      "evidence_quality": 0.875,
+      "claim_specificity": 1.0,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Reached maximum search limit (5)"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [],
+      "moderately_effective": [
+        {
+          "search_id": 2,
+          "query": "",
+          "results": 50,
+          "effectiveness": 5.0
+        },
+        {
+          "search_id": 3,
+          "query": "",
+          "results": 60,
+          "effectiveness": 6.0
+        }
+      ],
+      "low_effectiveness": [
+        {
+          "search_id": 5,
+          "query": "",
+          "results": 60,
+          "effectiveness": 4.0
+        }
+      ],
+      "ineffective": [
+        {
+          "search_id": 1,
+          "query": "issue validation process challenges",
+          "results": 3,
+          "effectiveness": 0.3
+        },
+        {
+          "search_id": 4,
+          "query": "\"issue validation process\" OR \"bug validation workflow\" software development",
+          "results": 0,
+          "effectiveness": 0.0
+        }
+      ]
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "Graph Strategy: The primary goal is to 'test issue validation,' which requires a foundational understanding of what issue validation entails, common challenges, and how it is discussed in relevant professional contexts. This initial strategy aims to fill core information gaps by broadly surveying direct discussions, understanding related industry trends, and observing a prominent voice in the tech sphere. This diverse approach leverages multiple endpoints to ensure comprehensive initial data collection.",
+        "avg_effectiveness": 3.766666666666667
+      },
+      {
+        "strategy": "Graph Strategy: The previous attempts to find data on 'issue validation' yielded no results or irrelevant content due to overly broad or misdirected searches. This strategy refines the direct content search by narrowing the context to 'software development' and simultaneously employs a multi-faceted approach to identify and investigate potentially relevant entities. By examining the timeline and network of a known cybersecurity firm like @SectigoHQ, which is likely to have robust validation processes, we aim to uncover specific discussions, expert profiles, or related organizations, thus moving beyond generic industry trends.",
+        "avg_effectiveness": 2.0
+      }
+    ],
+    "dead_ends": [
+      "\"issue validation process\" OR \"bug validation workflow\" software development"
+    ],
+    "promising_leads": []
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Graph Strategy: The primary goal is to 'test issue validation,' which requires a foundational understanding of what issue validation entails, common challenges, and how it is discussed in relevant professional contexts. This initial strategy aims to fill core information gaps by broadly surveying direct discussions, understanding related industry trends, and observing a prominent voice in the tech sphere. This diverse approach leverages multiple endpoints to ensure comprehensive initial data collection.",
+      "searches_count": 3,
+      "total_results": 113,
+      "effectiveness": 0.0,
+      "insights": []
+    },
+    {
+      "round_number": 2,
+      "strategy": "Graph Strategy: The previous attempts to find data on 'issue validation' yielded no results or irrelevant content due to overly broad or misdirected searches. This strategy refines the direct content search by narrowing the context to 'software development' and simultaneously employs a multi-faceted approach to identify and investigate potentially relevant entities. By examining the timeline and network of a known cybersecurity firm like @SectigoHQ, which is likely to have robust validation processes, we aim to uncover specific discussions, expert profiles, or related organizations, thus moving beyond generic industry trends.",
+      "searches_count": 2,
+      "total_results": 60,
+      "effectiveness": 2.0,
+      "insights": [
+        "OCSP (Online Certificate Status Protocol) is a mechanism used for validating the status of SSL/TLS certificates, which helps ensure digital information protection and prevent issues related to invalid certificates.",
+        "Expired security certificates are a common issue that can lead to various problems, highlighting the need for proactive prevention and validation strategies.",
+        "Challenges exist in certificate management, such as the division between public-facing and internal processes and over-reliance on solutions like Microsoft's Active Directory Certificate Services (AD CS)."
+      ]
+    }
+  ]
+}

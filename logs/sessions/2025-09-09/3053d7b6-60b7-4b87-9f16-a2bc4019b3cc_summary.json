@@ -1,0 +1,85 @@
+{
+  "session_metadata": {
+    "session_id": "3053d7b6-60b7-4b87-9f16-a2bc4019b3cc",
+    "start_time": "2025-09-09T14:47:44.562260+00:00",
+    "end_time": "2025-09-09T14:48:22.002048+00:00",
+    "duration_seconds": 37.439265,
+    "user_query": "AI development trends"
+  },
+  "configuration": {
+    "max_searches": 2,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.6,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "model_provider": "gemini",
+    "pages_per_search": 3,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true,
+    "enforce_endpoint_diversity": false,
+    "max_endpoint_repeats": 5,
+    "diversity_threshold": 0.3
+  },
+  "performance_metrics": {
+    "total_searches": 2,
+    "total_rounds": 1,
+    "total_results_found": 50,
+    "satisfaction_score": 0.0,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.0,
+      "source_diversity": 0.0,
+      "evidence_quality": 0.0,
+      "claim_specificity": 0.0,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Reached maximum search limit (2)"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [],
+      "moderately_effective": [],
+      "low_effectiveness": [],
+      "ineffective": [
+        {
+          "search_id": 1,
+          "query": "AI development trends OR 'future of AI' OR 'AI innovation' OR 'generative AI advancements' OR 'machine learning breakthroughs'",
+          "results": 0,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 2,
+          "query": "",
+          "results": 50,
+          "effectiveness": 0.0
+        }
+      ]
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "Graph Strategy: The investigation is at its initial stage, requiring broad data collection to establish a foundational understanding of 'AI development trends'. This strategy focuses on diverse methods to identify key themes, trending topics, and influential entities from multiple angles. By combining general keyword searches, country-specific trend analysis, and direct observation of a leading organization's communication, we aim to quickly cover initial information gaps and identify promising avenues for deeper exploration.",
+        "avg_effectiveness": 0.0
+      }
+    ],
+    "dead_ends": [
+      "AI development trends OR 'future of AI' OR 'AI innovation' OR 'generative AI advancements' OR 'machine learning breakthroughs'",
+      ""
+    ],
+    "promising_leads": []
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Graph Strategy: The investigation is at its initial stage, requiring broad data collection to establish a foundational understanding of 'AI development trends'. This strategy focuses on diverse methods to identify key themes, trending topics, and influential entities from multiple angles. By combining general keyword searches, country-specific trend analysis, and direct observation of a leading organization's communication, we aim to quickly cover initial information gaps and identify promising avenues for deeper exploration.",
+      "searches_count": 2,
+      "total_results": 50,
+      "effectiveness": 0.0,
+      "insights": []
+    }
+  ]
+}

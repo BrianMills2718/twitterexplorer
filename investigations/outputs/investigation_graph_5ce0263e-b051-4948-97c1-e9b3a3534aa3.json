@@ -1,0 +1,169 @@
+{
+  "nodes": {
+    "63e79a86-9647-4483-ad75-eb3de5fdd750": {
+      "id": "63e79a86-9647-4483-ad75-eb3de5fdd750",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "test insight title fix validation",
+        "is_root": true,
+        "investigation_goal": "test insight title fix validation"
+      },
+      "created_at": "2025-09-10T04:24:11.078778"
+    },
+    "2b2ab49d-e399-4737-90b3-c8a291d576a8": {
+      "id": "2b2ab49d-e399-4737-90b3-c8a291d576a8",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: This search will uncover the latest discussions and posts related to 'insight title fix validation', helping to identify relevant voices and potential user feedback on this topic.",
+        "parent_analytic_question": "63e79a86-9647-4483-ad75-eb3de5fdd750"
+      },
+      "created_at": "2025-09-10T04:24:22.381881"
+    },
+    "75b6fac6-ea59-463f-aa6c-1be58c3060fd": {
+      "id": "75b6fac6-ea59-463f-aa6c-1be58c3060fd",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "insight title fix validation",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-10T04:24:22.382882"
+    },
+    "253c612c-bbe6-4d75-9089-5dea59a0c1f8": {
+      "id": "253c612c-bbe6-4d75-9089-5dea59a0c1f8",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Examining Elon Musk's recent tweets could provide insights given his influence on social media discussions. His input or follower interactions might give clues regarding 'title",
+        "parent_analytic_question": "63e79a86-9647-4483-ad75-eb3de5fdd750"
+      },
+      "created_at": "2025-09-10T04:24:22.382882"
+    },
+    "a9b169f9-9e8c-4b3b-8c10-52c037efac28": {
+      "id": "a9b169f9-9e8c-4b3b-8c10-52c037efac28",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "elonmusk"
+        }
+      },
+      "created_at": "2025-09-10T04:24:22.382882"
+    },
+    "6cfed2fe-2041-4c29-81cc-5705c02b7fe2": {
+      "id": "6cfed2fe-2041-4c29-81cc-5705c02b7fe2",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Following NASA's recent posts may reveal how titles and validations are perceived in scientific discussions, which may parallel the insights being sought in this investigation.",
+        "parent_analytic_question": "63e79a86-9647-4483-ad75-eb3de5fdd750"
+      },
+      "created_at": "2025-09-10T04:24:22.382882"
+    },
+    "488d1f85-abdf-448e-8e65-1e0bc01a3a02": {
+      "id": "488d1f85-abdf-448e-8e65-1e0bc01a3a02",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "nasa"
+        }
+      },
+      "created_at": "2025-09-10T04:24:22.382882"
+    },
+    "199ead49-3cb3-4566-a67f-86314eb1275b": {
+      "id": "199ead49-3cb3-4566-a67f-86314eb1275b",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Many tweets discuss violence and crime, specifically focusing on the Iryna Zarutska case, which may indicate a significant public interest or sentiment regarding crime and safety.",
+        "insight_type": "evaluation_derived",
+        "title": "Many tweets discuss violence and crime,...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.3,
+        "key_evidence": [
+          "Many tweets discuss violence and crime, specifically focusing on the Iryna Zarutska case, which may indicate a significant public interest or sentiment regarding crime and safety."
+        ]
+      },
+      "created_at": "2025-09-10T04:25:03.514612"
+    },
+    "04845627-70ae-4642-8a56-f44b07d328c7": {
+      "id": "04845627-70ae-4642-8a56-f44b07d328c7",
+      "node_type": "Insight",
+      "properties": {
+        "content": "There is a recurring theme around the societal and political implications of crime, with various figures commenting on the state of violence and its causes.",
+        "insight_type": "evaluation_derived",
+        "title": "There is a recurring theme around...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.3,
+        "key_evidence": [
+          "There is a recurring theme around the societal and political implications of crime, with various figures commenting on the state of violence and its causes."
+        ]
+      },
+      "created_at": "2025-09-10T04:25:03.514612"
+    }
+  },
+  "edges": [
+    {
+      "id": "a9efef6e-519c-4e95-8484-62cd963f2ab5",
+      "source_id": "63e79a86-9647-4483-ad75-eb3de5fdd750",
+      "target_id": "2b2ab49d-e399-4737-90b3-c8a291d576a8",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T04:24:22.381881"
+    },
+    {
+      "id": "20f6de66-4c8c-48cd-a0fe-1de6881b3c68",
+      "source_id": "2b2ab49d-e399-4737-90b3-c8a291d576a8",
+      "target_id": "75b6fac6-ea59-463f-aa6c-1be58c3060fd",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T04:24:22.382882"
+    },
+    {
+      "id": "cab88a7d-84bf-45b1-a289-63500cb0f9ad",
+      "source_id": "63e79a86-9647-4483-ad75-eb3de5fdd750",
+      "target_id": "253c612c-bbe6-4d75-9089-5dea59a0c1f8",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T04:24:22.382882"
+    },
+    {
+      "id": "2f015f05-4b1f-49b0-b3c6-58995c56b201",
+      "source_id": "253c612c-bbe6-4d75-9089-5dea59a0c1f8",
+      "target_id": "a9b169f9-9e8c-4b3b-8c10-52c037efac28",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T04:24:22.382882"
+    },
+    {
+      "id": "bab8ee4a-0492-43ce-ba12-eb7fef4b3e81",
+      "source_id": "63e79a86-9647-4483-ad75-eb3de5fdd750",
+      "target_id": "6cfed2fe-2041-4c29-81cc-5705c02b7fe2",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T04:24:22.382882"
+    },
+    {
+      "id": "2950e963-64cc-409a-902a-59f358742e5a",
+      "source_id": "6cfed2fe-2041-4c29-81cc-5705c02b7fe2",
+      "target_id": "488d1f85-abdf-448e-8e65-1e0bc01a3a02",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T04:24:22.382882"
+    }
+  ],
+  "analytic_question": "63e79a86-9647-4483-ad75-eb3de5fdd750",
+  "created_at": "2025-09-10T04:25:03.517612"
+}

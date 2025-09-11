@@ -1,0 +1,2185 @@
+{
+  "nodes": {
+    "c8fea866-a4f8-46a4-9ffd-84d9955dd4ff": {
+      "id": "c8fea866-a4f8-46a4-9ffd-84d9955dd4ff",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "find me different takes on trump epstein drama",
+        "is_root": true,
+        "investigation_goal": "find me different takes on trump epstein drama"
+      },
+      "created_at": "2025-09-10T08:12:12.053262"
+    },
+    "ef643ca8-ec6d-483c-b686-7312961285c5": {
+      "id": "ef643ca8-ec6d-483c-b686-7312961285c5",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: This search directly addresses the 'Missing investigation into Trump's perspective/statements' gap by looking for Trump's direct remarks or comments related to Epstein. This will provide one key 'take' from the primary subject.",
+        "parent_analytic_question": "c8fea866-a4f8-46a4-9ffd-84d9955dd4ff"
+      },
+      "created_at": "2025-09-10T08:12:43.518350"
+    },
+    "d1ea1bd1-ec47-4e9c-81b3-045821344409": {
+      "id": "d1ea1bd1-ec47-4e9c-81b3-045821344409",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "Trump Epstein statements OR comments OR defense"
+        }
+      },
+      "created_at": "2025-09-10T08:12:43.518350"
+    },
+    "800f85db-3c02-4ab6-8005-30c8358f98b5": {
+      "id": "800f85db-3c02-4ab6-8005-30c8358f98b5",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: This search aims to uncover broader public and media reactions, critical analyses, and diverse viewpoints on the Trump-Epstein drama, contributing to the 'different takes' objective and providing more context on the Epstein background as it relates to Trump.",
+        "parent_analytic_question": "c8fea866-a4f8-46a4-9ffd-84d9955dd4ff"
+      },
+      "created_at": "2025-09-10T08:12:43.518350"
+    },
+    "7b2ddf49-957c-4230-b89e-d7ff32da6f6b": {
+      "id": "7b2ddf49-957c-4230-b89e-d7ff32da6f6b",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "(Trump OR Donald Trump) Epstein drama OR scandal critical OR analysis"
+        }
+      },
+      "created_at": "2025-09-10T08:12:43.518350"
+    },
+    "715ac5a1-716b-4fc2-adfa-85c862fd0c65": {
+      "id": "715ac5a1-716b-4fc2-adfa-85c862fd0c65",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Reviewing the timeline of a prominent political journalist like Maggie Haberman is crucial for identifying journalistic 'takes' and insights, as she often covers high-profile political figures and related controversies. While not directly filterable by topic, her recent posts will likely reflect current political discussions relevant to the investigation, providing a professional media perspective and ensuring endpoint diversity.",
+        "parent_analytic_question": "c8fea866-a4f8-46a4-9ffd-84d9955dd4ff"
+      },
+      "created_at": "2025-09-10T08:12:43.518350"
+    },
+    "3fcb6515-6a3d-49a5-8448-f76fcdb44d3e": {
+      "id": "3fcb6515-6a3d-49a5-8448-f76fcdb44d3e",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "MaggieHaberman"
+        }
+      },
+      "created_at": "2025-09-10T08:12:43.518350"
+    },
+    "1c9a9895-da1f-4531-b178-7c3c1a41b215": {
+      "id": "1c9a9895-da1f-4531-b178-7c3c1a41b215",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "True to form @cnn does a cutaway while Trump calls \u2018Epstein whatever\u2019 and then spews usual projection word salad. His message: I\u2019m protecting myself and rich and powerful who abused children.  #epsteintrumpcoverup #releasethefiles #epsteinvictims https://t.co/2eDr3Z285m",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T08:13:20.150885",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.9,
+          "goal_relevance_score": 0.6666666666666666
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T08:13:20.150885"
+      },
+      "created_at": "2025-09-10T08:13:20.150885"
+    },
+    "cb28d737-a217-4743-8eec-6e3a82d04027": {
+      "id": "cb28d737-a217-4743-8eec-6e3a82d04027",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Wed, Sep 3: A bunch of Jeffrey Epstein survivors spoke up on Capitol Hill as part of a bipartisan push in Congress to make the US DOJ release the Epstein files. Trump quickly dismissed their comments when talking to the press. Here's what happened. #epsteinfiles #capitolhill https://t.co/1VQah7iaFW",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T08:13:20.150885",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.9,
+          "goal_relevance_score": 0.6666666666666666
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T08:13:20.150885"
+      },
+      "created_at": "2025-09-10T08:13:20.150885"
+    },
+    "0f6ebbed-8ac2-482e-9e34-c4b96f9fd797": {
+      "id": "0f6ebbed-8ac2-482e-9e34-c4b96f9fd797",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Epstein pleading amendments that I didn\u2019t even know were possible over whether he \u201cever socialized with Donald Trump in the presence of females under the age of 18\u201d. Trump is cooked lmfao https://t.co/tZrHko1I9l",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T08:13:20.150885",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 1.0,
+          "goal_relevance_score": 0.6666666666666666
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T08:13:20.150885"
+      },
+      "created_at": "2025-09-10T08:13:20.150885"
+    },
+    "bd272cd3-2c9b-4554-a86f-d58ddec634f1": {
+      "id": "bd272cd3-2c9b-4554-a86f-d58ddec634f1",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Trump campaign releases statement assuring supporters Trump went to Epstein Island to have sex with 14 year olds and not for \"any funny business\" https://t.co/ZJYQGVZsjH",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T08:13:20.150885",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.8,
+          "goal_relevance_score": 0.6666666666666666
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T08:13:20.150885"
+      },
+      "created_at": "2025-09-10T08:13:20.150885"
+    },
+    "fa6d1009-73aa-4ef8-9265-c3d33ba6723a": {
+      "id": "fa6d1009-73aa-4ef8-9265-c3d33ba6723a",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Good morning and Happy Thursday to everyone who is disgusted to learn that trump said Epstein was a \"terrific guy...who likes women on the younger side\" two years AFTER he'd \"stolen\" 16-year-old Virginia Giuffre from Mar-a-Lago.\n\ntrump KNEW, and like Gym Jordan, he said nothing. https://t.co/yLBmgGdK9Z",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T08:13:20.150885",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 1.0,
+          "goal_relevance_score": 0.6666666666666666
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T08:13:20.150885"
+      },
+      "created_at": "2025-09-10T08:13:20.150885"
+    },
+    "08c61e54-ba3f-4e69-9320-d75cb310a018": {
+      "id": "08c61e54-ba3f-4e69-9320-d75cb310a018",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Rachel Maddow points out that Trump\u2019s signature on the letter to Jeffrey Epstein is clearly his: \u201cIf the White House is hinging it\u2019s whole defense against how ferociously creepy and suspicious this all is on how much these signatures don\u2019t look alike, that\u2019s a terrible defense\u201d https://t.co/onRMM02dXa",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T08:13:20.150885",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.9,
+          "goal_relevance_score": 0.6666666666666666
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T08:13:20.150885"
+      },
+      "created_at": "2025-09-10T08:13:20.150885"
+    },
+    "5756811c-3cd6-423e-91ec-8905d314ee50": {
+      "id": "5756811c-3cd6-423e-91ec-8905d314ee50",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "On 9/3/25, Epstein's victims will hold a presser in DC. These women were children when the abuse happened. Also, trump was not in politics at the time. He was a rich businessman. Keep that in mind when you hear their statements. \n#EpsteinTrumpFiles \n\n#DV1 #wtpBLUE #DemsUnited https://t.co/ATp5JZ1o6u",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T08:13:20.150885",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.9,
+          "goal_relevance_score": 0.6666666666666666
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T08:13:20.150885"
+      },
+      "created_at": "2025-09-10T08:13:20.150885"
+    },
+    "fe6d260e-7631-477d-834e-b6326648e393": {
+      "id": "fe6d260e-7631-477d-834e-b6326648e393",
+      "node_type": "Insight",
+      "properties": {
+        "content": "The findings reveal a pattern where Donald Trump attempts to dismiss or downplay his association with Jeffrey Epstein and the severity of the allegations, even as legal proceedings and public testimony directly implicate his potential involvement. This includes avoiding direct commentary and dismissing victims' statements while facing specific legal questions about socializing with Epstein in the presence of underage females.",
+        "insight_type": "connection",
+        "title": "Trump's Dismissal and Legal Scrutiny in Epstein Case",
+        "confidence": 0.8,
+        "investigation_relevance": 1.0,
+        "key_evidence": [
+          "True to form @cnn does a cutaway while Trump calls 'Epstein whatever' and then spews usual projection word salad. His message: I'm protecting myself and rich and powerful who abused children.",
+          "Trump quickly dismissed their comments",
+          "Epstein pleading amendments that I didn't even know were possible over whether he 'ever socialized with Donald Trump in the presence of females under the age of 18'."
+        ]
+      },
+      "created_at": "2025-09-10T08:13:41.868315"
+    },
+    "96e4516d-1974-4c8f-9144-8e7cf212bb5f": {
+      "id": "96e4516d-1974-4c8f-9144-8e7cf212bb5f",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What is the full extent and nature of Donald Trump's 'potential involvement' with Jeffrey Epstein, beyond just socializing, especially considering the specific legal questions about underage females?",
+        "emergence_reason": "The insight mentions 'potential involvement' and 'socializing with Epstein in the presence of underage females' as areas of legal questioning, but does not detail the depth or type of this involvement. This represents a significant gap in current understanding and points directly to a crucial area for further investigation."
+      },
+      "created_at": "2025-09-10T08:13:51.278792"
+    },
+    "5066a6d9-faaa-46fa-8008-3cf52ff7d26d": {
+      "id": "5066a6d9-faaa-46fa-8008-3cf52ff7d26d",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What specific evidence from current legal proceedings and public testimony most directly contradicts Donald Trump's attempts to dismiss or downplay his association with Jeffrey Epstein and the allegations?",
+        "emergence_reason": "The insight highlights a direct contradiction: Trump's attempts to dismiss association 'even as legal proceedings and public testimony directly implicate his potential involvement.' This question seeks to identify the specific sources and nature of this implicating evidence to understand the full scope of the contradiction."
+      },
+      "created_at": "2025-09-10T08:13:51.278792"
+    },
+    "ae8486c4-68bc-40d0-8dda-88308991e122": {
+      "id": "ae8486c4-68bc-40d0-8dda-88308991e122",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What are the strategic implications or motivations behind Donald Trump's consistent pattern of avoiding direct commentary and dismissing victims' statements even when faced with specific legal questions about his association with Jeffrey Epstein?",
+        "emergence_reason": "The insight details a consistent pattern of behavior (avoiding direct commentary, dismissing victims' statements) despite direct legal challenges. This pattern raises questions about the underlying strategy or motivations, which requires further explanation beyond simply observing the behavior."
+      },
+      "created_at": "2025-09-10T08:13:51.278792"
+    },
+    "62b12230-fe64-4c02-b1d7-afc21445a52a": {
+      "id": "62b12230-fe64-4c02-b1d7-afc21445a52a",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Incompetence or a Strategic Operation?\n\nTrump\u2019s Epstein response felt out of character. An unsigned memo, missing footage, and public backlash\u2014none of it was necessary. Unless\u2026 it was. This may not be a mistake. It may be 5D chess. But if it is, we need to see the board. https://t.co/sz3ZcVfcV6",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T08:15:05.990837",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.9,
+          "goal_relevance_score": 0.6666666666666666
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T08:15:05.990837"
+      },
+      "created_at": "2025-09-10T08:15:05.990837"
+    },
+    "76278e24-57c7-4f56-83c6-76eebf20e368": {
+      "id": "76278e24-57c7-4f56-83c6-76eebf20e368",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Trump is generally vulnerable and the Epstein saga is only highlighting his weakness on everything from the economy to war. @stuartpstevens with more on @11thHour. https://t.co/7x2uqbsIVM",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T08:15:05.990837",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.8,
+          "goal_relevance_score": 0.6666666666666666
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T08:15:05.990837"
+      },
+      "created_at": "2025-09-10T08:15:05.990837"
+    },
+    "818a39ca-6e34-4dcc-9693-2ed72cffb41d": {
+      "id": "818a39ca-6e34-4dcc-9693-2ed72cffb41d",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Buried deep in the bones of the Epstein saga is a very real battle between classes.\n\nDonald Trump began his political career by calling out the elite pedophile class by name. It's true. Look it up. \n\nTrump's dynasty was built on giving the 'forgotten man' a fighting chance against their cruel ruling class overlords.\n\nTrump channeled this class-warfare dynamic masterfully and has been rewarded with landslide elections victories for it.\n\nThis dynamic lives deep in the bones of the Epstein debate. That's why I'm asking you to reframe the Epstein crisis into a kinetic class war issue.\n\nEpstein represents the repulsive elite class arc-type: Mysteriously filthy rich - despite no discernible skill or talent - feeding poor working class children to royals and billionaires on private islands for fun under the full protection of the federal government.\n\nA villain straight from Hell. Epstein got away with it, too. So did his rich friends. No punishment.\n\nJust another public insult to the forgotten man who never catches a break. That man is tired. He wants to see justice, just once in his life, against the ruling class. That's why he voted Trump.\n\nThis is precisely why Trump should finish what he started...",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T08:15:05.990837",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.9,
+          "goal_relevance_score": 0.6666666666666666
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T08:15:05.990837"
+      },
+      "created_at": "2025-09-10T08:15:05.990837"
+    },
+    "52e8244f-0939-419b-84c7-955946673b79": {
+      "id": "52e8244f-0939-419b-84c7-955946673b79",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Epstein Files Haunt Trump\n\nThe Epstein files made public in the US have reignited questions about Donald Trump\u2019s past ties with Jeffrey Epstein, the convicted sex offender.\n\nCriticism also stems from Trump\u2019s own conduct\u2014sexist remarks, objectifying women, and controversial comments about his daughter.  \n\nWatch this report for more details.",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T08:15:05.990837",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.7,
+          "goal_relevance_score": 0.6666666666666666
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T08:15:05.990837"
+      },
+      "created_at": "2025-09-10T08:15:05.990837"
+    },
+    "eaae2fec-ef3b-4efb-b81e-3e7386097428": {
+      "id": "eaae2fec-ef3b-4efb-b81e-3e7386097428",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Trump Just Can't Escape the Epstein Scandal!\n\nDespite his attempts to distract them, real America First voters are not letting it go and they shouldn't.\n\n\u26a0\ufe0f Follow for independent analysis! CC: @JasonBermas @Geopolitics_Emp #Trump #TrumpEpsteinCoverup #Epstein #EpsteinTrumpFiles https://t.co/x0I0f7chNw",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T08:15:05.990837",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.8,
+          "goal_relevance_score": 0.6666666666666666
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T08:15:05.990837"
+      },
+      "created_at": "2025-09-10T08:15:05.990837"
+    },
+    "f5304a25-99fc-45d7-87f2-782a778e324e": {
+      "id": "f5304a25-99fc-45d7-87f2-782a778e324e",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "They did nothing when it happened, as did the Republicans. Why now? Democrats seek independent voters, while Republicans dislike Trump. It\u2019s a political ploy, with victims caught in the middle. Neither party prioritizes their interests, using them for their own agendas.\n\nClaims about Trump and Epstein are unfounded. The women\u2019s lawyer and victims said Trump wasn\u2019t involved. Yet, TDS ignores this. Many big donors and high-profile people were likely involved, affiliated with both sides.",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T08:15:05.990837",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.9,
+          "goal_relevance_score": 0.6666666666666666
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T08:15:05.990837"
+      },
+      "created_at": "2025-09-10T08:15:05.990837"
+    },
+    "2169dcd8-30cf-4f2d-8d20-0769c1cbff6d": {
+      "id": "2169dcd8-30cf-4f2d-8d20-0769c1cbff6d",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Both Donald Trump and Jeffrey Epstein aimed to manage their public persona. Trump did this by paying hush money and having his allies in the media catch-and-kill stories, which concerned him. Jeffrey Epstein also aimed to catch-and-kill negative press, but he went even further, trying to wrestle control of entire media organisations. It should also be noted that neither man was able to fully catch-and-kill the stories which plagued them.\n\nOnce Donald Trump took office, many of Epstein\u2019s previous colleagues and business partners relentlessly attacked and undermined his presidency. Whether this was related to a previous ideological split in the Democratic Party or whether it was savvy political thinkers creating a faux dialectic, Epstein's relationship with Trump never publicly returned to the golden age of 2002.\n\nThere is a possibility that a manufactured dialectic was designed to allow what we\u2019ve seen unfold. During the period we\u2019ve examined, the Democratic Party were not in the White House. The party elite were looking for potential future leaders who could regain power. At the time, Barack Obama was relatively unknown, and the very essence of \u201chope and change\u201d was lacking within the party rank and file.\n\nWhen all seemed lost, something miraculous happened. Instead of the Democrats of 2002 taking control of the White House, many of them eventually took control of the Republican Party. A disgruntled Donald Trump, who had been consistently overlooked as a potential Democratic Party nominee for President, repositioned himself politically speaking. Other solid Democrats of the era have also since switched allegiances in what appears to be a naturally occurring manner.\n\nHowever, imagine if Clinton, Trump and Epstein had decided they didn\u2019t want to compete fairly to gain the presidency on behalf of the Democrats. Instead, what if they decided to rig the game? So that whoever the electorate voted for, Republican or Democrat, they\u2019d always be picking from the same very small group of wealthy elites.\n\nAs the voting public, we are often turned against each other. We argue over key issues and, however much we disagree, we always get the same result. We are told that those who are jostling for power during our elections are opposing forces, while at the same time we watch them all mingle together, cavort, and party, as though they\u2019re brethren.\n\nWe\u2019ll study that in the next article involving Trump and Epstein.\n\n\ud83e\uddf58/10",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T08:15:05.990837",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.8,
+          "goal_relevance_score": 0.6666666666666666
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T08:15:05.990837"
+      },
+      "created_at": "2025-09-10T08:15:05.990837"
+    },
+    "fa8383bf-4693-47d3-9489-c9eb13d594c8": {
+      "id": "fa8383bf-4693-47d3-9489-c9eb13d594c8",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "\ud83d\udd25 Just dropped: A thought-provoking conversation on Gaza and the Epstein scandal. Is Trump fumbled or gaslit? \ud83e\udd14 Dive into these critical perspectives! #Gaza #Trump #Epstein #Politics #Insight https://t.co/buGFZslkdt",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T08:15:05.990837",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.8,
+          "goal_relevance_score": 0.6666666666666666
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T08:15:05.990837"
+      },
+      "created_at": "2025-09-10T08:15:05.990837"
+    },
+    "86181329-47b1-4f68-abd5-439c0b80b529": {
+      "id": "86181329-47b1-4f68-abd5-439c0b80b529",
+      "node_type": "Insight",
+      "properties": {
+        "content": "This insight highlights a specific 'take' on Donald Trump's connection to Jeffrey Epstein, emphasizing that during the period of Epstein's alleged abuses, Trump was primarily a private businessman, not a political figure. This context frames the nature of his association within wealthy social and business circles rather than official capacity, offering a different perspective compared to the existing insight which focuses on his reactions (dismissal and downplaying) to the allegations.",
+        "insight_type": "implication",
+        "title": "Trump's Status as Businessman During Epstein Era",
+        "confidence": 0.75,
+        "investigation_relevance": 0.9,
+        "key_evidence": [
+          "trump was not in politics at the time. He was a rich businessman.",
+          "On 9/3/25, Epstein's victims will hold a presser in DC. These women were children when the abuse happened."
+        ]
+      },
+      "created_at": "2025-09-10T08:15:55.319487"
+    },
+    "044a84d9-1e02-4328-8cad-c9961721a189": {
+      "id": "044a84d9-1e02-4328-8cad-c9961721a189",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What specific legal proceedings, public testimonies, and direct questions have directly implicated Donald Trump's potential involvement with Jeffrey Epstein, particularly regarding socializing in the presence of underage females, and what were his precise responses or lack thereof?",
+        "emergence_reason": "Insight 1 states that 'legal proceedings and public testimony directly implicate his potential involvement' and that he faces 'specific legal questions about socializing with Epstein in the presence of underage females,' but provides no concrete details. This is a critical gap in understanding the foundation of the allegations and the nature of his legal challenges."
+      },
+      "created_at": "2025-09-10T08:16:08.485989"
+    },
+    "59bd00cd-fdba-4325-a05f-4bb0cd31ca2a": {
+      "id": "59bd00cd-fdba-4325-a05f-4bb0cd31ca2a",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Given that Donald Trump's association with Jeffrey Epstein is contextualized as occurring when Trump was primarily a private businessman, what are the primary motivations behind his persistent attempts to dismiss and downplay this association, especially when faced with direct legal questions and implicating testimony?",
+        "emergence_reason": "Insight 2 frames the association in a less politically charged way by highlighting Trump's status as a private businessman at the time. However, Insight 1 describes very strong and defensive reactions (dismissal, downplaying) to current allegations, even under legal scrutiny. This creates a tension between the historical context of their relationship and his current intense efforts to distance himself, raising questions about his true motivations and potential deeper concerns."
+      },
+      "created_at": "2025-09-10T08:16:08.485989"
+    },
+    "5878f3c3-89de-4ead-ad27-4f1fffbe80ce": {
+      "id": "5878f3c3-89de-4ead-ad27-4f1fffbe80ce",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How did Donald Trump's status as a private businessman during the period of Jeffrey Epstein's alleged abuses specifically shape the nature of their association, and what were the full extent and specifics of their interactions within these 'wealthy social and business circles'?",
+        "emergence_reason": "Insight 2 emphasizes his private businessman status as a contextual factor but does not detail *how* this specifically influenced their interactions. This represents a gap in understanding the scope, purpose, and specific activities involved in their relationship beyond general 'socializing,' and offers a new direction for investigating the nuances of their connections."
+      },
+      "created_at": "2025-09-10T08:16:08.485989"
+    },
+    "02ad6085-723f-4aea-ae02-fe5ac6699db8": {
+      "id": "02ad6085-723f-4aea-ae02-fe5ac6699db8",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "To what extent was Donald Trump aware of Jeffrey Epstein's alleged abusive activities during their association, particularly given the specific mention in legal contexts of socializing in the presence of underage females?",
+        "emergence_reason": "Both insights discuss Trump's association with Epstein, and Insight 1 specifically references legal questions about socializing in the presence of underage females. A critical gap in current understanding is the extent of Trump's knowledge regarding Epstein's illicit activities, which is crucial for assessing potential complicity or deliberate ignorance."
+      },
+      "created_at": "2025-09-10T08:16:08.485989"
+    },
+    "9cab3673-09a4-4ca4-948a-2c5d0c736ff8": {
+      "id": "9cab3673-09a4-4ca4-948a-2c5d0c736ff8",
+      "node_type": "Insight",
+      "properties": {
+        "content": "This new finding suggests that Donald Trump's handling of his association with Jeffrey Epstein might be a calculated strategic operation rather than simple incompetence or outright dismissal. It highlights elements like an unsigned memo, missing footage, and public backlash as potentially deliberate actions to obscure or manage public perception, rather than merely downplaying the connection. This provides a 'take' that focuses on the method and intent behind his public response, offering a different perspective from existing insights which focus on the fact of his dismissal or his status during their association.",
+        "insight_type": "implication",
+        "title": "Trump's Strategic Management of Epstein Association",
+        "confidence": 0.65,
+        "investigation_relevance": 0.9,
+        "key_evidence": [
+          "Incompetence or a Strategic Operation? Trump\ny2019s Epstein response felt out of character.",
+          "An unsigned memo, missing footage, and public backlash\ny2014none of it was necessary. Unless\ny2026 it was.",
+          "This may not be"
+        ]
+      },
+      "created_at": "2025-09-10T08:16:52.503941"
+    },
+    "0b7f8637-8564-48c5-b3b5-9197a1d655a9": {
+      "id": "0b7f8637-8564-48c5-b3b5-9197a1d655a9",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What are the specific details and evidence supporting the claim of a 'calculated strategic operation' concerning Donald Trump's association with Jeffrey Epstein, including the unsigned memo and missing footage?",
+        "emergence_reason": "Insight 3 introduces the significant concept of a 'calculated strategic operation' involving specific elements like an unsigned memo and missing footage. This directly reframes previous understandings of Trump's actions as potentially deliberate rather than mere dismissal. Investigating these specific claims is crucial to validate and understand the depth of this strategy, representing a new investigation direction and a gap in current understanding."
+      },
+      "created_at": "2025-09-10T08:17:04.553409"
+    },
+    "f2b23b80-dc1c-4789-998f-6f00af1300aa": {
+      "id": "f2b23b80-dc1c-4789-998f-6f00af1300aa",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How did Donald Trump's status as a private businessman during the period of Jeffrey Epstein's alleged abuses influence or enable the 'calculated strategic operation' identified in managing his association and public perception?",
+        "emergence_reason": "Insight 2 provides the context that Trump was a private businessman during the period of alleged abuses, while Insight 3 suggests a 'calculated strategic operation' in managing his association. This question seeks to bridge these two insights, exploring how his private status (e.g., access to resources, lack of immediate political scrutiny) might have facilitated or shaped the alleged strategic efforts, representing a gap in the current integrated understanding and a new investigation direction."
+      },
+      "created_at": "2025-09-10T08:17:04.553409"
+    },
+    "4b19fbad-00dd-41bd-972f-ab1f7d241c38": {
+      "id": "4b19fbad-00dd-41bd-972f-ab1f7d241c38",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "To what extent does the identification of a 'calculated strategic operation' (Insight 3) alter or deepen the understanding of Donald Trump's pattern of dismissing and downplaying his association with Jeffrey Epstein (Insight 1)?",
+        "emergence_reason": "Insight 1 establishes Trump's pattern of dismissing and downplaying, while Insight 3 offers a 'take' that this might be a 'calculated strategic operation' rather than simple incompetence or dismissal. This question addresses the unexpected finding that the *nature* of his response might be far more deliberate, requiring an explanation of how these two perspectives integrate or if the latter completely re-interprets the former, thereby clarifying the intent behind the observed behaviors."
+      },
+      "created_at": "2025-09-10T08:17:04.553409"
+    },
+    "13587f0b-005b-46cc-8feb-9a4541a228b1": {
+      "id": "13587f0b-005b-46cc-8feb-9a4541a228b1",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What specific instances of 'public backlash' are referenced in the 'calculated strategic operation' insight, and how were these instances allegedly managed as part of the strategy?",
+        "emergence_reason": "Insight 3 mentions 'public backlash' as an element that was potentially managed within the 'calculated strategic operation.' To fully understand the strategic intent and execution, it's necessary to identify these specific instances of backlash and the methods purportedly used to manage them, representing a gap in the current understanding and a new, detailed investigation direction."
+      },
+      "created_at": "2025-09-10T08:17:04.553409"
+    },
+    "ffd0b8d2-8698-4265-a14d-36184a655d1a": {
+      "id": "ffd0b8d2-8698-4265-a14d-36184a655d1a",
+      "node_type": "Insight",
+      "properties": {
+        "content": "This insight highlights a specific interpretation of the ongoing focus on Donald Trump's connection to Jeffrey Epstein, suggesting it is being weaponized as a political maneuver. This perspective posits that the current emphasis on the drama is driven by strategic political interests, with Democrats aiming to attract independent voters and Republicans using it against Trump, rather than solely a focus on justice or historical accountability. This differs significantly from existing insights that address Trump's personal attempts to dismiss the association, his status as a businessman, or his strategic management of his public image, by introducing the external political motivations of other actors in sustaining the narrative.",
+        "insight_type": "implication",
+        "title": "Trump-Epstein Scrutiny as a Political Ploy",
+        "confidence": 0.7,
+        "investigation_relevance": 1.0,
+        "key_evidence": [
+          "They did nothing when it happened, as did the Republicans. Why now? Democrats seek independent voters, while Republicans dislike Trump. It\u2019s a political ploy, with victims caught in the middle. Neithe"
+        ]
+      },
+      "created_at": "2025-09-10T08:18:42.808819"
+    },
+    "631b81ee-b45b-404d-8f93-73dc47bac4ce": {
+      "id": "631b81ee-b45b-404d-8f93-73dc47bac4ce",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What are the specific details and contents of the \"unsigned memo\" and the \"missing footage\" mentioned in the findings, and how do they directly support the hypothesis that Donald Trump's handling of his association with Jeffrey Epstein is a calculated strategic operation?",
+        "emergence_reason": "Insight 3 introduces these specific pieces of evidence (unsigned memo, missing footage) as indicators of a calculated strategy, but lacks details on their nature, content, or direct link to Trump's actions, creating an unexpected finding that requires explanation."
+      },
+      "created_at": "2025-09-10T08:19:00.190469"
+    },
+    "cf94e425-f941-4fa4-9d78-b0b1de277bbd": {
+      "id": "cf94e425-f941-4fa4-9d78-b0b1de277bbd",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "To what extent did Donald Trump's status as a private businessman during his association with Jeffrey Epstein influence or enable the specific interactions and behaviors now subject to legal scrutiny, particularly concerning the presence of underage females?",
+        "emergence_reason": "Insight 1 highlights specific legal questions about Trump socializing with Epstein in the presence of underage females, while Insight 2 emphasizes Trump's status as a private businessman during that period. A gap exists in understanding how these two contexts intersect and if his businessman status provided unique opportunities or a different framework for these specific alleged interactions."
+      },
+      "created_at": "2025-09-10T08:19:00.190469"
+    },
+    "4f42f57c-663d-4d14-a377-a2260effafd4": {
+      "id": "4f42f57c-663d-4d14-a377-a2260effafd4",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What specific evidence exists to support the claim that the ongoing focus on Donald Trump's connection to Jeffrey Epstein is being weaponized as a political maneuver by Democrats and Republicans, and what are the observed impacts of this alleged weaponization on public discourse and legal proceedings?",
+        "emergence_reason": "Insight 4 introduces a completely new investigation direction by positing that the narrative is being politically weaponized by external actors (Democrats, Republicans). This assertion requires substantiation and further exploration of its mechanisms and effects, representing a significant new area of inquiry beyond Trump's direct actions."
+      },
+      "created_at": "2025-09-10T08:19:00.190469"
+    },
+    "9ea23427-1947-4de9-b8c2-aebca034e6c7": {
+      "id": "9ea23427-1947-4de9-b8c2-aebca034e6c7",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What were the specific characteristics and impact of the \"public backlash\" that Donald Trump's alleged strategic operation was designed to manage or obscure, as mentioned in the findings?",
+        "emergence_reason": "Insight 3 mentions \"public backlash\" as an element that Trump's strategic operations aimed to manage. This is an unexpected finding that requires further explanation to understand the context and drivers of these alleged strategic actions. Understanding the backlash provides crucial context for the \"calculated\" nature of the response."
+      },
+      "created_at": "2025-09-10T08:19:00.190469"
+    },
+    "6c3bba9a-465d-4832-bf32-8777ab415913": {
+      "id": "6c3bba9a-465d-4832-bf32-8777ab415913",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Beyond the mentioned unsigned memo and missing footage, what are the specific mechanisms, resources, and individuals involved in Donald Trump's alleged \"calculated strategic operation\" to manage public perception of his association with Jeffrey Epstein?",
+        "emergence_reason": "Insight 3 suggests Trump's handling is a \"calculated strategic operation.\" While it provides some examples, there's a gap in understanding the full scope, resources, and organizational structure behind such an operation. This opens a new investigation direction into the operational details of this alleged strategy."
+      },
+      "created_at": "2025-09-10T08:19:00.190469"
+    },
+    "a9ae2002-5147-4bb8-bb4b-8c3785af83e1": {
+      "id": "a9ae2002-5147-4bb8-bb4b-8c3785af83e1",
+      "node_type": "Insight",
+      "properties": {
+        "content": "This new insight identifies a distinct 'take' on the Trump-Epstein drama, focusing on the existence of verifiable, direct evidence of a personal connection. Specifically, media reports highlight Donald Trump's unequivocal signature on a letter to Jeffrey Epstein. This finding is crucial because it provides concrete proof of a direct link, moving beyond speculative association or attempts at dismissal. It establishes a factual anchor that differentiates from existing insights which describe Trump's *responses* (dismissal, strategic management), his *context* (businessman status), or *interpretations* of scrutiny (political ploy). The clarity of the signature offers a strong, undeniable piece of evidence in the ongoing investigation.",
+        "insight_type": "connection",
+        "title": "Undeniable Evidence of Trump-Epstein Signature Link",
+        "confidence": 0.9,
+        "investigation_relevance": 1.0,
+        "key_evidence": [
+          "Rachel Maddow points out that Trump\u2019s signature on the letter to Jeffrey Epstein is clearly his: \u201cIf the White House is hinging it\u2019s whole defense against how ferociously creepy and suspicious this al"
+        ]
+      },
+      "created_at": "2025-09-10T08:20:14.122648"
+    },
+    "f020ad41-3a1b-4e51-aaaa-16315e5e3ef3": {
+      "id": "f020ad41-3a1b-4e51-aaaa-16315e5e3ef3",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How does the verifiable direct evidence of Donald Trump's unequivocal signature on a letter to Jeffrey Epstein reconcile with his consistent attempts to dismiss or downplay his association, and the suggestion that his handling is a calculated strategic operation?",
+        "emergence_reason": "This question emerges from a contradiction between Insight 1 (Trump's dismissal/downplaying), Insight 3 (calculated strategic operation), and Insight 5 (concrete evidence of a signed letter). It seeks to understand the truth behind the public facade and the strategic intent given undeniable proof of a direct connection."
+      },
+      "created_at": "2025-09-10T08:20:31.163272"
+    },
+    "6ee50d6f-3e91-4d4b-b581-6bd22db03db1": {
+      "id": "6ee50d6f-3e91-4d4b-b581-6bd22db03db1",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What are the full contents and context of the letter signed by Donald Trump to Jeffrey Epstein, and what specific details does it reveal about the nature, depth, and purpose of their personal and/or business relationship?",
+        "emergence_reason": "Insight 5 introduces a crucial, unexpected finding of verifiable direct evidence\u2014an unequivocal signature on a letter. This question establishes a new, critical investigation direction by demanding a deep dive into this concrete piece of evidence to understand its implications and the factual basis of their connection."
+      },
+      "created_at": "2025-09-10T08:20:31.163272"
+    },
+    "fc449cc0-826b-45f8-8033-eecc0bf3cf7b": {
+      "id": "fc449cc0-826b-45f8-8033-eecc0bf3cf7b",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What are the specific details, origins, and participants involved in the alleged 'calculated strategic operation' to obscure or manage public perception of Donald Trump's association with Jeffrey Epstein, particularly regarding the mentioned 'unsigned memo' and 'missing footage'?",
+        "emergence_reason": "Insight 3 suggests a 'calculated strategic operation' involving specific tactics like an unsigned memo and missing footage. This reveals significant gaps in our current understanding of the methods and scope of this alleged strategy, opening a new investigation direction to uncover the full extent of these actions."
+      },
+      "created_at": "2025-09-10T08:20:31.163272"
+    },
+    "426c24dc-bc5e-4b03-a259-2691c9d43b09": {
+      "id": "426c24dc-bc5e-4b03-a259-2691c9d43b09",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Given Donald Trump's status as a 'private businessman' during the period of alleged abuses (Insight 2), what was the full scope and nature of his interactions with Jeffrey Epstein, especially concerning any business dealings or social events where underage individuals might have been present?",
+        "emergence_reason": "Insight 2 frames Trump's association within his status as a private businessman, which reveals a gap in understanding the specific activities. Combined with Insight 1's mention of socializing in the presence of underage females and Insight 5's direct evidence, this question seeks to clarify the extent and specific nature of their interactions during this critical period."
+      },
+      "created_at": "2025-09-10T08:20:31.163272"
+    },
+    "395072b2-1cd1-43a6-899d-0fb7a0a30ec3": {
+      "id": "395072b2-1cd1-43a6-899d-0fb7a0a30ec3",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "To what extent does the suggested political weaponization of the Trump-Epstein connection (by both Democrats and Republicans, as per Insight 4) potentially distort or obscure the underlying facts of Donald Trump's involvement, and what measures can be taken to mitigate this influence on the investigation and public understanding?",
+        "emergence_reason": "Insight 4 introduces the unexpected finding that the focus on the Trump-Epstein connection may be a political maneuver. This raises questions about the integrity and objectivity of the narrative, revealing a gap in understanding how external political motivations might impact the search for truth and accountability within the investigation."
+      },
+      "created_at": "2025-09-10T08:20:31.163272"
+    },
+    "4604100d-e83f-440d-ab98-e6e3174f74f5": {
+      "id": "4604100d-e83f-440d-ab98-e6e3174f74f5",
+      "node_type": "Insight",
+      "properties": {
+        "content": "This new finding introduces a distinct interpretation of the Trump-Epstein drama, framing it as a reflection of a 'very real battle between classes.' It posits that the scrutiny and controversies surrounding Trump's association with Jeffrey Epstein are not merely about personal conduct or political attacks, but are deeply embedded in a broader socio-economic conflict. Furthermore, it suggests a historical context where Donald Trump allegedly began his political career by openly challenging an 'elite pedophile class,' which adds a layer of complexity and potential contradiction to his current entanglement with the Epstein saga. This take is unique among existing insights as it introduces a structural, class-based analysis and a specific historical narrative about Trump's anti-elite stance.",
+        "insight_type": "connection",
+        "title": "Trump-Epstein Saga as Class Warfare",
+        "confidence": 0.65,
+        "investigation_relevance": 0.85,
+        "key_evidence": [
+          "Buried deep in the bones of the Epstein saga is a very real battle between classes.",
+          "Donald Trump began his political career by calling out the elite pedophile class by name."
+        ]
+      },
+      "created_at": "2025-09-10T08:21:07.304931"
+    },
+    "576f8f13-42a2-4277-b8da-aeb6ca57c549": {
+      "id": "576f8f13-42a2-4277-b8da-aeb6ca57c549",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Given the verifiable evidence of Donald Trump's signature on a letter to Jeffrey Epstein, what is the specific nature and content of this letter, and how does its existence reconcile with his attempts to dismiss or downplay his association?",
+        "emergence_reason": "Insight 1 states that Donald Trump attempts to dismiss or downplay his association, while Insight 5 reveals concrete, undeniable evidence (an unequivocal signature) of a direct personal connection. This contradiction necessitates understanding the content of the letter and how it aligns with or contradicts his public statements and actions."
+      },
+      "created_at": "2025-09-10T08:21:29.404055"
+    },
+    "cfd48c15-2e3a-479f-8c4e-e657cf9266fe": {
+      "id": "cfd48c15-2e3a-479f-8c4e-e657cf9266fe",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How does Donald Trump's alleged historical stance of challenging an 'elite pedophile class' reconcile with his personal association and documented interactions with Jeffrey Epstein, a figure central to an alleged elite pedophile network?",
+        "emergence_reason": "Insight 6 introduces a potential contradiction: Trump allegedly began his political career challenging an 'elite pedophile class,' yet he is entangled with Jeffrey Epstein. This raises questions about the consistency of his stance, his motivations, or the accuracy of the historical narrative, requiring a deeper investigation into his past and present positions."
+      },
+      "created_at": "2025-09-10T08:21:29.404055"
+    },
+    "acaf445f-99e1-45dd-96c5-8260550fc463": {
+      "id": "acaf445f-99e1-45dd-96c5-8260550fc463",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What specific details and evidence exist regarding the 'unsigned memo' and 'missing footage,' and to what extent do these elements confirm a calculated strategic operation by Donald Trump to manage public perception of his association with Jeffrey Epstein?",
+        "emergence_reason": "Insight 3 suggests that Trump's handling of the association is a 'calculated strategic operation' involving specific elements like an 'unsigned memo' and 'missing footage,' moving beyond simple dismissal. This is an unexpected finding that requires detailed investigation into these alleged tools and their strategic deployment to understand the intent and method behind his public response."
+      },
+      "created_at": "2025-09-10T08:21:29.404055"
+    },
+    "8299cb89-f58d-4ee5-9528-b5d0673a0cbc": {
+      "id": "8299cb89-f58d-4ee5-9528-b5d0673a0cbc",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Beyond the documented association, what is the full extent of Donald Trump's knowledge regarding Jeffrey Epstein's alleged abuses, particularly involving underage females, during the period of their interactions?",
+        "emergence_reason": "Existing insights focus on Trump's reactions (dismissal, strategic management) and his status (businessman), but there remains a significant gap in understanding the depth of his direct knowledge or potential awareness of Jeffrey Epstein's criminal activities. This is crucial for a complete understanding of his involvement and accountability."
+      },
+      "created_at": "2025-09-10T08:21:29.404055"
+    },
+    "ccd8b306-b6b7-4c93-aee8-4dbabe03759a": {
+      "id": "ccd8b306-b6b7-4c93-aee8-4dbabe03759a",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What were the precise nature and boundaries of Donald Trump's 'social and business circles' association with Jeffrey Epstein during the period Epstein was conducting alleged abuses, and how did this relationship evolve or manifest?",
+        "emergence_reason": "Insight 2 contextualizes Trump's association as primarily within wealthy 'social and business circles,' but it does not detail the specific dynamics, frequency, or depth of this relationship. Understanding the exact nature and evolution of their interactions is a gap in the current understanding."
+      },
+      "created_at": "2025-09-10T08:21:29.404055"
+    },
+    "14232d5a-c4b2-42ec-8331-ee31363e9b3d": {
+      "id": "14232d5a-c4b2-42ec-8331-ee31363e9b3d",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What specific evidence supports the claim that the ongoing focus on Donald Trump's connection to Jeffrey Epstein is being weaponized as a political maneuver, and how are various political factions (Democrats, Republicans) actively deploying this narrative?",
+        "emergence_reason": "Insight 4 introduces a new investigation direction by suggesting that the narrative around Trump and Epstein is being 'weaponized' for political gain by external actors. This requires an inquiry into the motivations, strategies, and evidence of such political maneuvering by different factions, shifting the focus beyond Trump's individual actions."
+      },
+      "created_at": "2025-09-10T08:21:29.404055"
+    },
+    "133003bf-78a6-40c7-b061-1e0103693ed4": {
+      "id": "133003bf-78a6-40c7-b061-1e0103693ed4",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Beyond the immediate political implications, how does the scrutiny of the Trump-Epstein association serve as a reflection of a 'very real battle between classes,' and what specific socio-economic dynamics are at play in shaping public and media responses?",
+        "emergence_reason": "Insight 6 introduces a broader, structural interpretation of the drama as a 'very real battle between classes,' and a historical context of Trump challenging an 'elite pedophile class.' This suggests a new investigation direction to analyze the socio-economic underpinnings of the controversy and its historical context, rather than solely focusing on individual conduct or political tactics."
+      },
+      "created_at": "2025-09-10T08:21:29.404055"
+    },
+    "5a43a6a0-5e2a-4b41-b396-872c6c9ff35a": {
+      "id": "5a43a6a0-5e2a-4b41-b396-872c6c9ff35a",
+      "node_type": "Insight",
+      "properties": {
+        "content": "This new finding introduces a distinct 'take' on the Trump-Epstein drama, highlighting that despite Donald Trump's attempts to dismiss or distract from his association with Jeffrey Epstein, the scandal remains an unavoidable issue. Crucially, the insight points out that even his core supporters, described as 'real America First voters,' are not letting the issue go. This perspective differs significantly from existing insights focusing on Trump's *actions* of dismissal or strategic management by emphasizing the *failure* or *limited effectiveness* of those attempts in the public sphere and among his base, pointing instead to the scandal's persistent and unshakeable nature. It suggests a deeper and more entrenched scrutiny than previously identified, extending beyond political opponents to a segment of his own electorate.",
+        "insight_type": "implication",
+        "title": "Inescapable Scrutiny of Trump's Epstein Link",
+        "confidence": 0.75,
+        "investigation_relevance": 0.85,
+        "key_evidence": [
+          "Trump Just Can't Escape the Epstein Scandal!",
+          "Despite his attempts to distract them, real America First voters are not letting it go and they shouldn't."
+        ]
+      },
+      "created_at": "2025-09-10T08:22:13.326188"
+    },
+    "2de4a199-692e-4b9e-8313-201df676d3c9": {
+      "id": "2de4a199-692e-4b9e-8313-201df676d3c9",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How does Donald Trump reconcile the existence of verifiable direct evidence, such as his signed letter to Jeffrey Epstein (Insight 5), with his consistent attempts to dismiss or downplay their association (Insight 1)?",
+        "emergence_reason": "This question emerges from a direct contradiction between Trump's stated position/actions (dismissal) and concrete, undeniable evidence (signed letter), highlighting a critical area for investigation into his credibility and the factual basis of his denials."
+      },
+      "created_at": "2025-09-10T08:22:31.105661"
+    },
+    "228747df-2af7-4063-8652-528105d25f01": {
+      "id": "228747df-2af7-4063-8652-528105d25f01",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What was the full content and purpose of Donald Trump's signed letter to Jeffrey Epstein (Insight 5), and what does it reveal about the nature, depth, and duration of their personal connection beyond mere social or business acquaintance?",
+        "emergence_reason": "This question follows up on a crucial piece of direct evidence. The existence of the letter is established, but its specific details are a significant gap. Understanding its content is vital for establishing the precise nature of their relationship."
+      },
+      "created_at": "2025-09-10T08:22:31.105661"
+    },
+    "d3972630-a789-4493-a5f1-d60cfaa4bf12": {
+      "id": "d3972630-a789-4493-a5f1-d60cfaa4bf12",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What are the specific details and implications of the 'unsigned memo' and 'missing footage' mentioned in the context of Donald Trump's calculated strategic operation (Insight 3), and who are the key actors involved in these efforts to manage public perception?",
+        "emergence_reason": "This question addresses significant gaps and introduces new investigative directions related to the methods and extent of Trump's strategic management of the Epstein association. The mention of specific elements like a memo and footage points to concrete avenues for further inquiry."
+      },
+      "created_at": "2025-09-10T08:22:31.105661"
+    },
+    "030ba2c2-1000-48de-89ea-dd331db47d74": {
+      "id": "030ba2c2-1000-48de-89ea-dd331db47d74",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How does Donald Trump's alleged historical stance of challenging an 'elite pedophile class' at the outset of his political career (Insight 6) reconcile with his current entanglement and association with Jeffrey Epstein?",
+        "emergence_reason": "This question addresses a significant potential contradiction in Trump's public narrative and historical positioning. It highlights a need to investigate the veracity of his past claims and how they align or conflict with his current situation, pointing to a new direction for historical context investigation."
+      },
+      "created_at": "2025-09-10T08:22:31.105661"
+    },
+    "6b7a9c77-7f6a-4e2d-95a6-f7331ec80c55": {
+      "id": "6b7a9c77-7f6a-4e2d-95a6-f7331ec80c55",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Given that the Trump-Epstein scandal remains an unavoidable issue even among his 'real America First voters' (Insight 7), what are the specific concerns or factors driving their persistent scrutiny, and how does this challenge the effectiveness of any strategic dismissal or downplaying attempts (Insights 1 & 3)?",
+        "emergence_reason": "This question arises from an unexpected finding and a potential contradiction regarding the efficacy of Trump's public relations strategy. It reveals a gap in understanding why his base is not letting it go, which is crucial for assessing the true impact and persistence of the issue."
+      },
+      "created_at": "2025-09-10T08:22:31.105661"
+    },
+    "75139590-6c0b-48f1-b94f-3d05d81dabc8": {
+      "id": "75139590-6c0b-48f1-b94f-3d05d81dabc8",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "In what specific ways is the focus on Donald Trump's connection to Jeffrey Epstein being 'weaponized as a political maneuver' by both Democrats and Republicans (Insight 4), and what evidence supports these claims of strategic political interests driving the narrative?",
+        "emergence_reason": "This question addresses an external interpretation of the drama, highlighting a new investigation direction into the political dynamics surrounding the issue. It seeks to understand the mechanisms and evidence behind the claim of political weaponization, which could impact how the overall narrative is perceived."
+      },
+      "created_at": "2025-09-10T08:22:31.105661"
+    },
+    "d8a2f6e6-fda8-4646-b224-d9ef17f62f6a": {
+      "id": "d8a2f6e6-fda8-4646-b224-d9ef17f62f6a",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Does Donald Trump's status as a 'private businessman' during Epstein's alleged abuses (Insight 2) diminish or reframe the implications of his association with Epstein, especially in light of the allegations of socializing with Epstein in the presence of underage females (Insight 1)?",
+        "emergence_reason": "This question seeks to clarify a potential gap in understanding the legal and ethical implications of Trump's status during his association with Epstein. While Insight 2 provides context, it doesn't explain how that context influences the severity or interpretation of his alleged involvement."
+      },
+      "created_at": "2025-09-10T08:22:31.105661"
+    },
+    "de361087-b7c6-438f-aa40-d3e483811525": {
+      "id": "de361087-b7c6-438f-aa40-d3e483811525",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "True to form @cnn does a cutaway while Trump calls \u2018Epstein whatever\u2019 and then spews usual projection word salad. His message: I\u2019m protecting myself and rich and powerful who abused children.  #epsteintrumpcoverup #releasethefiles #epsteinvictims https://t.co/2eDr3Z285m",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 8.2,
+          "timestamp": "2025-09-10T08:22:50.950605"
+        }
+      },
+      "created_at": "2025-09-10T08:22:50.950605"
+    },
+    "64144082-5750-4bea-b260-bfc41aec4a2a": {
+      "id": "64144082-5750-4bea-b260-bfc41aec4a2a",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Wed, Sep 3: A bunch of Jeffrey Epstein survivors spoke up on Capitol Hill as part of a bipartisan push in Congress to make the US DOJ release the Epstein files. Trump quickly dismissed their comments when talking to the press. Here's what happened. #epsteinfiles #capitolhill https://t.co/1VQah7iaFW",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 8.2,
+          "timestamp": "2025-09-10T08:22:50.950605"
+        }
+      },
+      "created_at": "2025-09-10T08:22:50.950605"
+    },
+    "29e11d93-5b9e-4622-82ce-c98b06826288": {
+      "id": "29e11d93-5b9e-4622-82ce-c98b06826288",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Epstein pleading amendments that I didn\u2019t even know were possible over whether he \u201cever socialized with Donald Trump in the presence of females under the age of 18\u201d. Trump is cooked lmfao https://t.co/tZrHko1I9l",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 8.2,
+          "timestamp": "2025-09-10T08:22:50.950605"
+        }
+      },
+      "created_at": "2025-09-10T08:22:50.950605"
+    },
+    "5d1bcbba-e323-4925-adc6-93bb79bf65aa": {
+      "id": "5d1bcbba-e323-4925-adc6-93bb79bf65aa",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "@defense_civil25 Release the Epstein Files! https://t.co/GTbOWJ2uBo",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 8.2,
+          "timestamp": "2025-09-10T08:22:50.950605"
+        }
+      },
+      "created_at": "2025-09-10T08:22:50.950605"
+    },
+    "ef880fdd-170e-496d-81bf-f15c836b9e90": {
+      "id": "ef880fdd-170e-496d-81bf-f15c836b9e90",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "As someone who served our nation in uniform for more than 3 decades, I want to be clear: renaming the Department of Defense is just plain stupid.\n\nTrump wants to distract you from his tanking economy, the Epstein cover-up, and countless broken promises. It\u2019s a damn shame. https://t.co/WmkufEtlrZ",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 8.2,
+          "timestamp": "2025-09-10T08:22:50.950605"
+        }
+      },
+      "created_at": "2025-09-10T08:22:50.950605"
+    },
+    "12d8ea8b-6b9c-4e23-87a0-638cd7c622f3": {
+      "id": "12d8ea8b-6b9c-4e23-87a0-638cd7c622f3",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Multiple critical perspectives highlight Trump's dismissive stance towards the Epstein scandal, including his alleged labeling of focusing on the files as \"irrelevant\" and his past comments calling Epstein a \"terrific guy\" who liked \"women on the younger side.\"",
+        "insight_type": "evaluation_derived",
+        "title": "Multiple critical perspectives highlight Trump's dismissive...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.82,
+        "key_evidence": [
+          "Multiple critical perspectives highlight Trump's dismissive stance towards the Epstein scandal, including his alleged labeling of focusing on the files as \"irrelevant\" and his past comments calling Ep"
+        ]
+      },
+      "created_at": "2025-09-10T08:22:50.950605"
+    },
+    "d5a3fb7e-fc3f-46a6-a788-bdd2362836eb": {
+      "id": "d5a3fb7e-fc3f-46a6-a788-bdd2362836eb",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Accusations range from Trump being \"cooked\" due to legal amendments concerning minors, to highly speculative claims like paying Epstein \"hush money,\" and resurfaced controversial comments about dating underage girls.",
+        "insight_type": "evaluation_derived",
+        "title": "Accusations range from Trump being \"cooked\"...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.82,
+        "key_evidence": [
+          "Accusations range from Trump being \"cooked\" due to legal amendments concerning minors, to highly speculative claims like paying Epstein \"hush money,\" and resurfaced controversial comments about dating"
+        ]
+      },
+      "created_at": "2025-09-10T08:22:50.950605"
+    },
+    "0e11624d-74b5-4283-9257-ba7b7ddbeeb8": {
+      "id": "0e11624d-74b5-4283-9257-ba7b7ddbeeb8",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Trump's defense or mitigating factors include his actions of posting statements from Epstein's lawyer denying compromising evidence, and the argument that he was a businessman, not a politician, during the time of some alleged abuses.",
+        "insight_type": "evaluation_derived",
+        "title": "Trump's defense or mitigating factors include...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.82,
+        "key_evidence": [
+          "Trump's defense or mitigating factors include his actions of posting statements from Epstein's lawyer denying compromising evidence, and the argument that he was a businessman, not a politician, durin"
+        ]
+      },
+      "created_at": "2025-09-10T08:22:50.950605"
+    },
+    "00d6796f-fb6a-4935-9642-c6ed1142db62": {
+      "id": "00d6796f-fb6a-4935-9642-c6ed1142db62",
+      "node_type": "Insight",
+      "properties": {
+        "content": "There is strong bipartisan pressure and public demand for the release of Epstein-related files, including specific calls for FBI FD-302 witness statements, suggesting a lack of transparency.",
+        "insight_type": "evaluation_derived",
+        "title": "There is strong bipartisan pressure and...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.82,
+        "key_evidence": [
+          "There is strong bipartisan pressure and public demand for the release of Epstein-related files, including specific calls for FBI FD-302 witness statements, suggesting a lack of transparency."
+        ]
+      },
+      "created_at": "2025-09-10T08:22:50.950605"
+    },
+    "19b64dd4-640d-48eb-b018-36ae8a4b8ade": {
+      "id": "19b64dd4-640d-48eb-b018-36ae8a4b8ade",
+      "node_type": "Insight",
+      "properties": {
+        "content": "The public reaction includes significant backlash on social media (e.g., TikTok) regarding Trump's Epstein ties, and even satirical takes on his potential influence over the files.",
+        "insight_type": "evaluation_derived",
+        "title": "The public reaction includes significant backlash...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.82,
+        "key_evidence": [
+          "The public reaction includes significant backlash on social media (e.g., TikTok) regarding Trump's Epstein ties, and even satirical takes on his potential influence over the files."
+        ]
+      },
+      "created_at": "2025-09-10T08:22:50.951603"
+    },
+    "d4847982-8212-42d5-9ce6-ad3c5acd4ad5": {
+      "id": "d4847982-8212-42d5-9ce6-ad3c5acd4ad5",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: To directly obtain Donald Trump's own statements or reactions concerning Jeffrey Epstein, addressing the 'Missing investigation into Trump's perspective/statements' gap and providing a key 'take' from the primary subject. This is crucial for understanding his direct engagement with the drama and his attempts to dismiss or downplay the association.",
+        "parent_analytic_question": "c8fea866-a4f8-46a4-9ffd-84d9955dd4ff"
+      },
+      "created_at": "2025-09-10T08:23:22.312377"
+    },
+    "13e94384-0d31-4d4f-b677-9db587ebec15": {
+      "id": "13e94384-0d31-4d4f-b677-9db587ebec15",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "from:realDonaldTrump epstein"
+        }
+      },
+      "created_at": "2025-09-10T08:23:22.312377"
+    },
+    "31de64f4-eb60-40c5-91c0-d5ed13968e53": {
+      "id": "31de64f4-eb60-40c5-91c0-d5ed13968e53",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: To uncover perspectives from conservative or Republican circles regarding the Trump-Epstein connection, specifically looking for how this issue is framed as a political maneuver. This addresses the emergent question about political weaponization by specific factions and provides a distinct 'take' on the drama.",
+        "parent_analytic_question": "c8fea866-a4f8-46a4-9ffd-84d9955dd4ff"
+      },
+      "created_at": "2025-09-10T08:23:22.312377"
+    },
+    "7aba659a-0527-4650-bce6-5c9ef9cf1a5c": {
+      "id": "7aba659a-0527-4650-bce6-5c9ef9cf1a5c",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "epstein trump republican OR GOP OR conservative \"political weaponization\""
+        }
+      },
+      "created_at": "2025-09-10T08:23:22.312377"
+    },
+    "91ad5366-3e83-4d01-aed1-47cf77e4b94e": {
+      "id": "91ad5366-3e83-4d01-aed1-47cf77e4b94e",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: To identify new and diverse voices within the network of a commentator known for critical analysis, potentially uncovering unique 'takes' on the Trump-Epstein drama, including discussions around 'calculated strategic operations' or 'battle between classes.' This provides a network-based approach to finding new perspectives and enriching the understanding of 'broader public and media reactions' beyond mainstream sources.",
+        "parent_analytic_question": "c8fea866-a4f8-46a4-9ffd-84d9955dd4ff"
+      },
+      "created_at": "2025-09-10T08:23:22.313377"
+    },
+    "06fdafa0-3a74-42f5-bb1d-e518a5a6546b": {
+      "id": "06fdafa0-3a74-42f5-bb1d-e518a5a6546b",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "followers.php",
+        "parameters": {
+          "screenname": "JasonBermas"
+        }
+      },
+      "created_at": "2025-09-10T08:23:22.313377"
+    }
+  },
+  "edges": [
+    {
+      "id": "87f949e2-dac4-4216-b895-7baef9e84ea0",
+      "source_id": "c8fea866-a4f8-46a4-9ffd-84d9955dd4ff",
+      "target_id": "ef643ca8-ec6d-483c-b686-7312961285c5",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T08:12:43.518350"
+    },
+    {
+      "id": "ac023ae1-8300-4531-8734-0fcfc4c001d4",
+      "source_id": "ef643ca8-ec6d-483c-b686-7312961285c5",
+      "target_id": "d1ea1bd1-ec47-4e9c-81b3-045821344409",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T08:12:43.518350"
+    },
+    {
+      "id": "2ebb8b7f-ccfb-4808-b0cd-ffcb0a23e20d",
+      "source_id": "c8fea866-a4f8-46a4-9ffd-84d9955dd4ff",
+      "target_id": "800f85db-3c02-4ab6-8005-30c8358f98b5",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T08:12:43.518350"
+    },
+    {
+      "id": "a04561b0-8a49-4d8f-8250-e6c24d268cf9",
+      "source_id": "800f85db-3c02-4ab6-8005-30c8358f98b5",
+      "target_id": "7b2ddf49-957c-4230-b89e-d7ff32da6f6b",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T08:12:43.518350"
+    },
+    {
+      "id": "4a37ca30-b364-44bc-8720-3c0a778842e4",
+      "source_id": "c8fea866-a4f8-46a4-9ffd-84d9955dd4ff",
+      "target_id": "715ac5a1-716b-4fc2-adfa-85c862fd0c65",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T08:12:43.518350"
+    },
+    {
+      "id": "5178abd2-8ddd-4720-81f0-859a474179d2",
+      "source_id": "715ac5a1-716b-4fc2-adfa-85c862fd0c65",
+      "target_id": "3fcb6515-6a3d-49a5-8448-f76fcdb44d3e",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T08:12:43.518350"
+    },
+    {
+      "id": "8c44d314-74c5-4d61-bfba-268f7d213176",
+      "source_id": "d1ea1bd1-ec47-4e9c-81b3-045821344409",
+      "target_id": "1c9a9895-da1f-4531-b178-7c3c1a41b215",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.9
+      },
+      "created_at": "2025-09-10T08:13:20.150885"
+    },
+    {
+      "id": "490abe3b-7e45-42d1-bfb2-d7e19948562c",
+      "source_id": "d1ea1bd1-ec47-4e9c-81b3-045821344409",
+      "target_id": "cb28d737-a217-4743-8eec-6e3a82d04027",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.9
+      },
+      "created_at": "2025-09-10T08:13:20.150885"
+    },
+    {
+      "id": "02923a31-3933-48d6-927d-220eb608992d",
+      "source_id": "d1ea1bd1-ec47-4e9c-81b3-045821344409",
+      "target_id": "0f6ebbed-8ac2-482e-9e34-c4b96f9fd797",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 1.0
+      },
+      "created_at": "2025-09-10T08:13:20.150885"
+    },
+    {
+      "id": "190bde53-c4ca-4d42-8b22-5dd1ec47b3d6",
+      "source_id": "d1ea1bd1-ec47-4e9c-81b3-045821344409",
+      "target_id": "bd272cd3-2c9b-4554-a86f-d58ddec634f1",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.8
+      },
+      "created_at": "2025-09-10T08:13:20.150885"
+    },
+    {
+      "id": "f8f0d40f-438e-40fe-bf68-6d5b4950835d",
+      "source_id": "d1ea1bd1-ec47-4e9c-81b3-045821344409",
+      "target_id": "fa6d1009-73aa-4ef8-9265-c3d33ba6723a",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 1.0
+      },
+      "created_at": "2025-09-10T08:13:20.150885"
+    },
+    {
+      "id": "543e52ed-ea55-4f88-ae4a-203cffdda7c0",
+      "source_id": "d1ea1bd1-ec47-4e9c-81b3-045821344409",
+      "target_id": "08c61e54-ba3f-4e69-9320-d75cb310a018",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.9
+      },
+      "created_at": "2025-09-10T08:13:20.150885"
+    },
+    {
+      "id": "da8b348c-0b7c-4a2d-80ed-939995ebd2ba",
+      "source_id": "d1ea1bd1-ec47-4e9c-81b3-045821344409",
+      "target_id": "5756811c-3cd6-423e-91ec-8905d314ee50",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.9
+      },
+      "created_at": "2025-09-10T08:13:20.150885"
+    },
+    {
+      "id": "3751d9bc-9539-4b5e-8e27-d9f560846219",
+      "source_id": "1c9a9895-da1f-4531-b178-7c3c1a41b215",
+      "target_id": "fe6d260e-7631-477d-834e-b6326648e393",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T08:13:41.868315"
+      },
+      "created_at": "2025-09-10T08:13:41.868315"
+    },
+    {
+      "id": "3314fe93-858d-4205-948f-d3d8b613c203",
+      "source_id": "cb28d737-a217-4743-8eec-6e3a82d04027",
+      "target_id": "fe6d260e-7631-477d-834e-b6326648e393",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T08:13:41.868315"
+      },
+      "created_at": "2025-09-10T08:13:41.868315"
+    },
+    {
+      "id": "530a40eb-435f-4366-b6d3-3254a7844e00",
+      "source_id": "0f6ebbed-8ac2-482e-9e34-c4b96f9fd797",
+      "target_id": "fe6d260e-7631-477d-834e-b6326648e393",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T08:13:41.868315"
+      },
+      "created_at": "2025-09-10T08:13:41.868315"
+    },
+    {
+      "id": "ed485e75-2665-40fb-bd29-c99c451c2a05",
+      "source_id": "fe6d260e-7631-477d-834e-b6326648e393",
+      "target_id": "96e4516d-1974-4c8f-9144-8e7cf212bb5f",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The insight mentions 'potential involvement' and 'socializing with Epstein in the presence of underage females' as areas of legal questioning, but does not detail the depth or type of this involvement. This represents a significant gap in current understanding and points directly to a crucial area for further investigation.",
+        "priority": 0.9,
+        "created_at": "2025-09-10T08:13:51.278792"
+      },
+      "created_at": "2025-09-10T08:13:51.278792"
+    },
+    {
+      "id": "8797c1d3-b7e5-491a-be1c-9c2148da17b2",
+      "source_id": "fe6d260e-7631-477d-834e-b6326648e393",
+      "target_id": "5066a6d9-faaa-46fa-8008-3cf52ff7d26d",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The insight highlights a direct contradiction: Trump's attempts to dismiss association 'even as legal proceedings and public testimony directly implicate his potential involvement.' This question seeks to identify the specific sources and nature of this implicating evidence to understand the full scope of the contradiction.",
+        "priority": 0.85,
+        "created_at": "2025-09-10T08:13:51.278792"
+      },
+      "created_at": "2025-09-10T08:13:51.278792"
+    },
+    {
+      "id": "49ff2b5a-d9f8-43c0-8925-2da9e68e975d",
+      "source_id": "fe6d260e-7631-477d-834e-b6326648e393",
+      "target_id": "ae8486c4-68bc-40d0-8dda-88308991e122",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The insight details a consistent pattern of behavior (avoiding direct commentary, dismissing victims' statements) despite direct legal challenges. This pattern raises questions about the underlying strategy or motivations, which requires further explanation beyond simply observing the behavior.",
+        "priority": 0.75,
+        "created_at": "2025-09-10T08:13:51.278792"
+      },
+      "created_at": "2025-09-10T08:13:51.278792"
+    },
+    {
+      "id": "852757fa-19a1-4631-84f1-d6476ab5d6bb",
+      "source_id": "7b2ddf49-957c-4230-b89e-d7ff32da6f6b",
+      "target_id": "62b12230-fe64-4c02-b1d7-afc21445a52a",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.9
+      },
+      "created_at": "2025-09-10T08:15:05.990837"
+    },
+    {
+      "id": "1525ac6c-cd4e-41f1-aae3-7a74762ac32b",
+      "source_id": "7b2ddf49-957c-4230-b89e-d7ff32da6f6b",
+      "target_id": "76278e24-57c7-4f56-83c6-76eebf20e368",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.8
+      },
+      "created_at": "2025-09-10T08:15:05.990837"
+    },
+    {
+      "id": "fb6ad9cd-7adf-4c5f-ae0e-b0fc469f0bcf",
+      "source_id": "7b2ddf49-957c-4230-b89e-d7ff32da6f6b",
+      "target_id": "818a39ca-6e34-4dcc-9693-2ed72cffb41d",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.9
+      },
+      "created_at": "2025-09-10T08:15:05.990837"
+    },
+    {
+      "id": "2ef9dfbc-acbe-42b4-8ff1-2ac3c794ec24",
+      "source_id": "7b2ddf49-957c-4230-b89e-d7ff32da6f6b",
+      "target_id": "52e8244f-0939-419b-84c7-955946673b79",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.7
+      },
+      "created_at": "2025-09-10T08:15:05.990837"
+    },
+    {
+      "id": "cba6c0d8-a485-4c85-94c0-77d07197b264",
+      "source_id": "7b2ddf49-957c-4230-b89e-d7ff32da6f6b",
+      "target_id": "eaae2fec-ef3b-4efb-b81e-3e7386097428",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.8
+      },
+      "created_at": "2025-09-10T08:15:05.990837"
+    },
+    {
+      "id": "05c84972-f6cc-4973-a605-cd727f6c5427",
+      "source_id": "7b2ddf49-957c-4230-b89e-d7ff32da6f6b",
+      "target_id": "f5304a25-99fc-45d7-87f2-782a778e324e",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.9
+      },
+      "created_at": "2025-09-10T08:15:05.990837"
+    },
+    {
+      "id": "13a7c1af-733a-41f5-b6e5-dcb4fb126966",
+      "source_id": "7b2ddf49-957c-4230-b89e-d7ff32da6f6b",
+      "target_id": "2169dcd8-30cf-4f2d-8d20-0769c1cbff6d",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.8
+      },
+      "created_at": "2025-09-10T08:15:05.990837"
+    },
+    {
+      "id": "d70711ff-e4db-45d4-a3bd-8cfa4a494731",
+      "source_id": "7b2ddf49-957c-4230-b89e-d7ff32da6f6b",
+      "target_id": "fa8383bf-4693-47d3-9489-c9eb13d594c8",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.8
+      },
+      "created_at": "2025-09-10T08:15:05.990837"
+    },
+    {
+      "id": "e08bb844-1854-4d8c-9bc4-d76edd63e0fb",
+      "source_id": "5756811c-3cd6-423e-91ec-8905d314ee50",
+      "target_id": "86181329-47b1-4f68-abd5-439c0b80b529",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T08:15:55.319487"
+      },
+      "created_at": "2025-09-10T08:15:55.319487"
+    },
+    {
+      "id": "0485e725-b1b1-45fb-b9f2-eb9b87bcc22d",
+      "source_id": "1c9a9895-da1f-4531-b178-7c3c1a41b215",
+      "target_id": "86181329-47b1-4f68-abd5-439c0b80b529",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T08:15:55.319487"
+      },
+      "created_at": "2025-09-10T08:15:55.319487"
+    },
+    {
+      "id": "af3a0b5d-869b-4a12-b29d-3574b20e8176",
+      "source_id": "86181329-47b1-4f68-abd5-439c0b80b529",
+      "target_id": "044a84d9-1e02-4328-8cad-c9961721a189",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Insight 1 states that 'legal proceedings and public testimony directly implicate his potential involvement' and that he faces 'specific legal questions about socializing with Epstein in the presence of underage females,' but provides no concrete details. This is a critical gap in understanding the foundation of the allegations and the nature of his legal challenges.",
+        "priority": 0.9,
+        "created_at": "2025-09-10T08:16:08.485989"
+      },
+      "created_at": "2025-09-10T08:16:08.485989"
+    },
+    {
+      "id": "2cfc0cd9-8c15-4996-9322-4ee1c752a590",
+      "source_id": "86181329-47b1-4f68-abd5-439c0b80b529",
+      "target_id": "59bd00cd-fdba-4325-a05f-4bb0cd31ca2a",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Insight 2 frames the association in a less politically charged way by highlighting Trump's status as a private businessman at the time. However, Insight 1 describes very strong and defensive reactions (dismissal, downplaying) to current allegations, even under legal scrutiny. This creates a tension between the historical context of their relationship and his current intense efforts to distance himself, raising questions about his true motivations and potential deeper concerns.",
+        "priority": 0.8,
+        "created_at": "2025-09-10T08:16:08.485989"
+      },
+      "created_at": "2025-09-10T08:16:08.485989"
+    },
+    {
+      "id": "7d830dc7-77ab-4665-b0a8-c65781c04ebf",
+      "source_id": "86181329-47b1-4f68-abd5-439c0b80b529",
+      "target_id": "5878f3c3-89de-4ead-ad27-4f1fffbe80ce",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Insight 2 emphasizes his private businessman status as a contextual factor but does not detail *how* this specifically influenced their interactions. This represents a gap in understanding the scope, purpose, and specific activities involved in their relationship beyond general 'socializing,' and offers a new direction for investigating the nuances of their connections.",
+        "priority": 0.7,
+        "created_at": "2025-09-10T08:16:08.485989"
+      },
+      "created_at": "2025-09-10T08:16:08.485989"
+    },
+    {
+      "id": "5a51bf64-9fdb-4c76-ae2d-9d48349abdf0",
+      "source_id": "86181329-47b1-4f68-abd5-439c0b80b529",
+      "target_id": "02ad6085-723f-4aea-ae02-fe5ac6699db8",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Both insights discuss Trump's association with Epstein, and Insight 1 specifically references legal questions about socializing in the presence of underage females. A critical gap in current understanding is the extent of Trump's knowledge regarding Epstein's illicit activities, which is crucial for assessing potential complicity or deliberate ignorance.",
+        "priority": 0.9,
+        "created_at": "2025-09-10T08:16:08.485989"
+      },
+      "created_at": "2025-09-10T08:16:08.485989"
+    },
+    {
+      "id": "2964b6cf-5bcf-4d7b-ab46-50c05f2f1a4d",
+      "source_id": "08c61e54-ba3f-4e69-9320-d75cb310a018",
+      "target_id": "9cab3673-09a4-4ca4-948a-2c5d0c736ff8",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T08:16:52.503941"
+      },
+      "created_at": "2025-09-10T08:16:52.503941"
+    },
+    {
+      "id": "c090296e-08f9-4369-8443-01d1d5b67a1d",
+      "source_id": "5756811c-3cd6-423e-91ec-8905d314ee50",
+      "target_id": "9cab3673-09a4-4ca4-948a-2c5d0c736ff8",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T08:16:52.503941"
+      },
+      "created_at": "2025-09-10T08:16:52.504940"
+    },
+    {
+      "id": "db61b3f9-b622-4c86-a568-a2972dd85ed2",
+      "source_id": "62b12230-fe64-4c02-b1d7-afc21445a52a",
+      "target_id": "9cab3673-09a4-4ca4-948a-2c5d0c736ff8",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T08:16:52.504940"
+      },
+      "created_at": "2025-09-10T08:16:52.504940"
+    },
+    {
+      "id": "b91ce8ff-3c48-4596-9da1-2e88b437994f",
+      "source_id": "9cab3673-09a4-4ca4-948a-2c5d0c736ff8",
+      "target_id": "0b7f8637-8564-48c5-b3b5-9197a1d655a9",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Insight 3 introduces the significant concept of a 'calculated strategic operation' involving specific elements like an unsigned memo and missing footage. This directly reframes previous understandings of Trump's actions as potentially deliberate rather than mere dismissal. Investigating these specific claims is crucial to validate and understand the depth of this strategy, representing a new investigation direction and a gap in current understanding.",
+        "priority": 0.9,
+        "created_at": "2025-09-10T08:17:04.553409"
+      },
+      "created_at": "2025-09-10T08:17:04.553409"
+    },
+    {
+      "id": "ca649c46-7bf3-4c54-b7dc-7fdf794ff01d",
+      "source_id": "9cab3673-09a4-4ca4-948a-2c5d0c736ff8",
+      "target_id": "f2b23b80-dc1c-4789-998f-6f00af1300aa",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Insight 2 provides the context that Trump was a private businessman during the period of alleged abuses, while Insight 3 suggests a 'calculated strategic operation' in managing his association. This question seeks to bridge these two insights, exploring how his private status (e.g., access to resources, lack of immediate political scrutiny) might have facilitated or shaped the alleged strategic efforts, representing a gap in the current integrated understanding and a new investigation direction.",
+        "priority": 0.85,
+        "created_at": "2025-09-10T08:17:04.553409"
+      },
+      "created_at": "2025-09-10T08:17:04.553409"
+    },
+    {
+      "id": "baa80354-085f-4225-a2ef-bb07c18e1f53",
+      "source_id": "9cab3673-09a4-4ca4-948a-2c5d0c736ff8",
+      "target_id": "4b19fbad-00dd-41bd-972f-ab1f7d241c38",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Insight 1 establishes Trump's pattern of dismissing and downplaying, while Insight 3 offers a 'take' that this might be a 'calculated strategic operation' rather than simple incompetence or dismissal. This question addresses the unexpected finding that the *nature* of his response might be far more deliberate, requiring an explanation of how these two perspectives integrate or if the latter completely re-interprets the former, thereby clarifying the intent behind the observed behaviors.",
+        "priority": 0.8,
+        "created_at": "2025-09-10T08:17:04.553409"
+      },
+      "created_at": "2025-09-10T08:17:04.553409"
+    },
+    {
+      "id": "2740e027-735b-4268-ac9c-9a494deed6b1",
+      "source_id": "9cab3673-09a4-4ca4-948a-2c5d0c736ff8",
+      "target_id": "13587f0b-005b-46cc-8feb-9a4541a228b1",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Insight 3 mentions 'public backlash' as an element that was potentially managed within the 'calculated strategic operation.' To fully understand the strategic intent and execution, it's necessary to identify these specific instances of backlash and the methods purportedly used to manage them, representing a gap in the current understanding and a new, detailed investigation direction.",
+        "priority": 0.75,
+        "created_at": "2025-09-10T08:17:04.553409"
+      },
+      "created_at": "2025-09-10T08:17:04.553409"
+    },
+    {
+      "id": "4aef52f9-4e29-4f04-806a-48912c2e660b",
+      "source_id": "eaae2fec-ef3b-4efb-b81e-3e7386097428",
+      "target_id": "ffd0b8d2-8698-4265-a14d-36184a655d1a",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T08:18:42.808819"
+      },
+      "created_at": "2025-09-10T08:18:42.808819"
+    },
+    {
+      "id": "a5f139a3-c8eb-4b5c-a51e-f2c0892aac22",
+      "source_id": "f5304a25-99fc-45d7-87f2-782a778e324e",
+      "target_id": "ffd0b8d2-8698-4265-a14d-36184a655d1a",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T08:18:42.808819"
+      },
+      "created_at": "2025-09-10T08:18:42.808819"
+    },
+    {
+      "id": "33ed6291-8f79-468f-a9d6-25b758a0ec17",
+      "source_id": "2169dcd8-30cf-4f2d-8d20-0769c1cbff6d",
+      "target_id": "ffd0b8d2-8698-4265-a14d-36184a655d1a",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T08:18:42.808819"
+      },
+      "created_at": "2025-09-10T08:18:42.808819"
+    },
+    {
+      "id": "6b4c618c-486b-43d4-9e8a-646602877c48",
+      "source_id": "ffd0b8d2-8698-4265-a14d-36184a655d1a",
+      "target_id": "631b81ee-b45b-404d-8f93-73dc47bac4ce",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Insight 3 introduces these specific pieces of evidence (unsigned memo, missing footage) as indicators of a calculated strategy, but lacks details on their nature, content, or direct link to Trump's actions, creating an unexpected finding that requires explanation.",
+        "priority": 0.9,
+        "created_at": "2025-09-10T08:19:00.190469"
+      },
+      "created_at": "2025-09-10T08:19:00.190469"
+    },
+    {
+      "id": "9d291f89-9db3-420f-b3ce-2de42739999a",
+      "source_id": "ffd0b8d2-8698-4265-a14d-36184a655d1a",
+      "target_id": "cf94e425-f941-4fa4-9d78-b0b1de277bbd",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Insight 1 highlights specific legal questions about Trump socializing with Epstein in the presence of underage females, while Insight 2 emphasizes Trump's status as a private businessman during that period. A gap exists in understanding how these two contexts intersect and if his businessman status provided unique opportunities or a different framework for these specific alleged interactions.",
+        "priority": 0.8,
+        "created_at": "2025-09-10T08:19:00.190469"
+      },
+      "created_at": "2025-09-10T08:19:00.190469"
+    },
+    {
+      "id": "f73b6757-68df-4f85-9cdd-2f8972762085",
+      "source_id": "ffd0b8d2-8698-4265-a14d-36184a655d1a",
+      "target_id": "4f42f57c-663d-4d14-a377-a2260effafd4",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Insight 4 introduces a completely new investigation direction by positing that the narrative is being politically weaponized by external actors (Democrats, Republicans). This assertion requires substantiation and further exploration of its mechanisms and effects, representing a significant new area of inquiry beyond Trump's direct actions.",
+        "priority": 0.9,
+        "created_at": "2025-09-10T08:19:00.190469"
+      },
+      "created_at": "2025-09-10T08:19:00.190469"
+    },
+    {
+      "id": "802ecee6-b46a-4610-9596-0f2d925332c9",
+      "source_id": "ffd0b8d2-8698-4265-a14d-36184a655d1a",
+      "target_id": "9ea23427-1947-4de9-b8c2-aebca034e6c7",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Insight 3 mentions \"public backlash\" as an element that Trump's strategic operations aimed to manage. This is an unexpected finding that requires further explanation to understand the context and drivers of these alleged strategic actions. Understanding the backlash provides crucial context for the \"calculated\" nature of the response.",
+        "priority": 0.7,
+        "created_at": "2025-09-10T08:19:00.190469"
+      },
+      "created_at": "2025-09-10T08:19:00.190469"
+    },
+    {
+      "id": "1bfad1bd-6045-4ee6-b783-001541b11996",
+      "source_id": "ffd0b8d2-8698-4265-a14d-36184a655d1a",
+      "target_id": "6c3bba9a-465d-4832-bf32-8777ab415913",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Insight 3 suggests Trump's handling is a \"calculated strategic operation.\" While it provides some examples, there's a gap in understanding the full scope, resources, and organizational structure behind such an operation. This opens a new investigation direction into the operational details of this alleged strategy.",
+        "priority": 0.8,
+        "created_at": "2025-09-10T08:19:00.190469"
+      },
+      "created_at": "2025-09-10T08:19:00.190469"
+    },
+    {
+      "id": "07bed92d-c762-4eb8-a4c9-c6ee83fb1c26",
+      "source_id": "08c61e54-ba3f-4e69-9320-d75cb310a018",
+      "target_id": "a9ae2002-5147-4bb8-bb4b-8c3785af83e1",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T08:20:14.122648"
+      },
+      "created_at": "2025-09-10T08:20:14.122648"
+    },
+    {
+      "id": "ed1ee4f1-0eeb-4752-8976-e356fd9c9ed0",
+      "source_id": "5756811c-3cd6-423e-91ec-8905d314ee50",
+      "target_id": "a9ae2002-5147-4bb8-bb4b-8c3785af83e1",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T08:20:14.122648"
+      },
+      "created_at": "2025-09-10T08:20:14.122648"
+    },
+    {
+      "id": "d94a9013-6090-4d8e-8c26-65765d475634",
+      "source_id": "62b12230-fe64-4c02-b1d7-afc21445a52a",
+      "target_id": "a9ae2002-5147-4bb8-bb4b-8c3785af83e1",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T08:20:14.122648"
+      },
+      "created_at": "2025-09-10T08:20:14.122648"
+    },
+    {
+      "id": "1bb91379-ab92-441a-877d-68882e193ee9",
+      "source_id": "a9ae2002-5147-4bb8-bb4b-8c3785af83e1",
+      "target_id": "f020ad41-3a1b-4e51-aaaa-16315e5e3ef3",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "This question emerges from a contradiction between Insight 1 (Trump's dismissal/downplaying), Insight 3 (calculated strategic operation), and Insight 5 (concrete evidence of a signed letter). It seeks to understand the truth behind the public facade and the strategic intent given undeniable proof of a direct connection.",
+        "priority": 0.9,
+        "created_at": "2025-09-10T08:20:31.163272"
+      },
+      "created_at": "2025-09-10T08:20:31.163272"
+    },
+    {
+      "id": "6904f151-b320-40f7-9617-873341ebc5e1",
+      "source_id": "a9ae2002-5147-4bb8-bb4b-8c3785af83e1",
+      "target_id": "6ee50d6f-3e91-4d4b-b581-6bd22db03db1",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Insight 5 introduces a crucial, unexpected finding of verifiable direct evidence\u2014an unequivocal signature on a letter. This question establishes a new, critical investigation direction by demanding a deep dive into this concrete piece of evidence to understand its implications and the factual basis of their connection.",
+        "priority": 1.0,
+        "created_at": "2025-09-10T08:20:31.163272"
+      },
+      "created_at": "2025-09-10T08:20:31.163272"
+    },
+    {
+      "id": "db8d83e8-8763-4aaa-b151-fa7dc9bbe846",
+      "source_id": "a9ae2002-5147-4bb8-bb4b-8c3785af83e1",
+      "target_id": "fc449cc0-826b-45f8-8033-eecc0bf3cf7b",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Insight 3 suggests a 'calculated strategic operation' involving specific tactics like an unsigned memo and missing footage. This reveals significant gaps in our current understanding of the methods and scope of this alleged strategy, opening a new investigation direction to uncover the full extent of these actions.",
+        "priority": 0.9,
+        "created_at": "2025-09-10T08:20:31.163272"
+      },
+      "created_at": "2025-09-10T08:20:31.163272"
+    },
+    {
+      "id": "47f6038d-0bbe-4c35-95d1-eda3fdd4236b",
+      "source_id": "a9ae2002-5147-4bb8-bb4b-8c3785af83e1",
+      "target_id": "426c24dc-bc5e-4b03-a259-2691c9d43b09",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Insight 2 frames Trump's association within his status as a private businessman, which reveals a gap in understanding the specific activities. Combined with Insight 1's mention of socializing in the presence of underage females and Insight 5's direct evidence, this question seeks to clarify the extent and specific nature of their interactions during this critical period.",
+        "priority": 0.8,
+        "created_at": "2025-09-10T08:20:31.163272"
+      },
+      "created_at": "2025-09-10T08:20:31.163272"
+    },
+    {
+      "id": "084a19f7-5413-4703-9723-57cae7e3e2c7",
+      "source_id": "a9ae2002-5147-4bb8-bb4b-8c3785af83e1",
+      "target_id": "395072b2-1cd1-43a6-899d-0fb7a0a30ec3",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Insight 4 introduces the unexpected finding that the focus on the Trump-Epstein connection may be a political maneuver. This raises questions about the integrity and objectivity of the narrative, revealing a gap in understanding how external political motivations might impact the search for truth and accountability within the investigation.",
+        "priority": 0.7,
+        "created_at": "2025-09-10T08:20:31.163272"
+      },
+      "created_at": "2025-09-10T08:20:31.163272"
+    },
+    {
+      "id": "39cb34a6-cbd7-469c-b24f-ba66a2440952",
+      "source_id": "76278e24-57c7-4f56-83c6-76eebf20e368",
+      "target_id": "4604100d-e83f-440d-ab98-e6e3174f74f5",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T08:21:07.304931"
+      },
+      "created_at": "2025-09-10T08:21:07.304931"
+    },
+    {
+      "id": "0c65a5ab-289d-4625-a77f-01be2ff11f30",
+      "source_id": "818a39ca-6e34-4dcc-9693-2ed72cffb41d",
+      "target_id": "4604100d-e83f-440d-ab98-e6e3174f74f5",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T08:21:07.304931"
+      },
+      "created_at": "2025-09-10T08:21:07.304931"
+    },
+    {
+      "id": "97ff9acb-ea73-4413-9d1b-2e53add72b33",
+      "source_id": "52e8244f-0939-419b-84c7-955946673b79",
+      "target_id": "4604100d-e83f-440d-ab98-e6e3174f74f5",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T08:21:07.304931"
+      },
+      "created_at": "2025-09-10T08:21:07.304931"
+    },
+    {
+      "id": "78bfba8e-6211-4a32-8f82-208ef3c7b767",
+      "source_id": "4604100d-e83f-440d-ab98-e6e3174f74f5",
+      "target_id": "576f8f13-42a2-4277-b8da-aeb6ca57c549",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Insight 1 states that Donald Trump attempts to dismiss or downplay his association, while Insight 5 reveals concrete, undeniable evidence (an unequivocal signature) of a direct personal connection. This contradiction necessitates understanding the content of the letter and how it aligns with or contradicts his public statements and actions.",
+        "priority": 0.9,
+        "created_at": "2025-09-10T08:21:29.404055"
+      },
+      "created_at": "2025-09-10T08:21:29.404055"
+    },
+    {
+      "id": "cfc5b4b8-a9ce-41e0-a4b6-5686d063a0a7",
+      "source_id": "4604100d-e83f-440d-ab98-e6e3174f74f5",
+      "target_id": "cfd48c15-2e3a-479f-8c4e-e657cf9266fe",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Insight 6 introduces a potential contradiction: Trump allegedly began his political career challenging an 'elite pedophile class,' yet he is entangled with Jeffrey Epstein. This raises questions about the consistency of his stance, his motivations, or the accuracy of the historical narrative, requiring a deeper investigation into his past and present positions.",
+        "priority": 0.95,
+        "created_at": "2025-09-10T08:21:29.404055"
+      },
+      "created_at": "2025-09-10T08:21:29.404055"
+    },
+    {
+      "id": "637bca3d-29aa-4478-88f6-91178f278b4e",
+      "source_id": "4604100d-e83f-440d-ab98-e6e3174f74f5",
+      "target_id": "acaf445f-99e1-45dd-96c5-8260550fc463",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Insight 3 suggests that Trump's handling of the association is a 'calculated strategic operation' involving specific elements like an 'unsigned memo' and 'missing footage,' moving beyond simple dismissal. This is an unexpected finding that requires detailed investigation into these alleged tools and their strategic deployment to understand the intent and method behind his public response.",
+        "priority": 0.85,
+        "created_at": "2025-09-10T08:21:29.404055"
+      },
+      "created_at": "2025-09-10T08:21:29.404055"
+    },
+    {
+      "id": "e14cd444-25dd-4990-aca6-3fd15da7fd31",
+      "source_id": "4604100d-e83f-440d-ab98-e6e3174f74f5",
+      "target_id": "8299cb89-f58d-4ee5-9528-b5d0673a0cbc",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Existing insights focus on Trump's reactions (dismissal, strategic management) and his status (businessman), but there remains a significant gap in understanding the depth of his direct knowledge or potential awareness of Jeffrey Epstein's criminal activities. This is crucial for a complete understanding of his involvement and accountability.",
+        "priority": 0.9,
+        "created_at": "2025-09-10T08:21:29.404055"
+      },
+      "created_at": "2025-09-10T08:21:29.404055"
+    },
+    {
+      "id": "86909ab6-de47-410f-8600-0257c9c49644",
+      "source_id": "4604100d-e83f-440d-ab98-e6e3174f74f5",
+      "target_id": "ccd8b306-b6b7-4c93-aee8-4dbabe03759a",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Insight 2 contextualizes Trump's association as primarily within wealthy 'social and business circles,' but it does not detail the specific dynamics, frequency, or depth of this relationship. Understanding the exact nature and evolution of their interactions is a gap in the current understanding.",
+        "priority": 0.75,
+        "created_at": "2025-09-10T08:21:29.404055"
+      },
+      "created_at": "2025-09-10T08:21:29.404055"
+    },
+    {
+      "id": "0a929ca7-67ae-4a73-b1ba-8fc6831afb6d",
+      "source_id": "4604100d-e83f-440d-ab98-e6e3174f74f5",
+      "target_id": "14232d5a-c4b2-42ec-8331-ee31363e9b3d",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Insight 4 introduces a new investigation direction by suggesting that the narrative around Trump and Epstein is being 'weaponized' for political gain by external actors. This requires an inquiry into the motivations, strategies, and evidence of such political maneuvering by different factions, shifting the focus beyond Trump's individual actions.",
+        "priority": 0.8,
+        "created_at": "2025-09-10T08:21:29.404055"
+      },
+      "created_at": "2025-09-10T08:21:29.404055"
+    },
+    {
+      "id": "07b30290-52b7-4e66-a922-cc66d4c082fe",
+      "source_id": "4604100d-e83f-440d-ab98-e6e3174f74f5",
+      "target_id": "133003bf-78a6-40c7-b061-1e0103693ed4",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Insight 6 introduces a broader, structural interpretation of the drama as a 'very real battle between classes,' and a historical context of Trump challenging an 'elite pedophile class.' This suggests a new investigation direction to analyze the socio-economic underpinnings of the controversy and its historical context, rather than solely focusing on individual conduct or political tactics.",
+        "priority": 0.7,
+        "created_at": "2025-09-10T08:21:29.404055"
+      },
+      "created_at": "2025-09-10T08:21:29.404055"
+    },
+    {
+      "id": "f4237e80-9ee9-40cf-9953-8f2581d25d2c",
+      "source_id": "eaae2fec-ef3b-4efb-b81e-3e7386097428",
+      "target_id": "5a43a6a0-5e2a-4b41-b396-872c6c9ff35a",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T08:22:13.326188"
+      },
+      "created_at": "2025-09-10T08:22:13.326188"
+    },
+    {
+      "id": "a130dc1d-d718-4095-8759-2d81ab37fd06",
+      "source_id": "f5304a25-99fc-45d7-87f2-782a778e324e",
+      "target_id": "5a43a6a0-5e2a-4b41-b396-872c6c9ff35a",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T08:22:13.326188"
+      },
+      "created_at": "2025-09-10T08:22:13.326188"
+    },
+    {
+      "id": "93fa700f-42cd-45fd-b068-194a6723ba61",
+      "source_id": "2169dcd8-30cf-4f2d-8d20-0769c1cbff6d",
+      "target_id": "5a43a6a0-5e2a-4b41-b396-872c6c9ff35a",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T08:22:13.326188"
+      },
+      "created_at": "2025-09-10T08:22:13.326188"
+    },
+    {
+      "id": "bdf6b34e-347f-44e1-b0d1-65cf74704649",
+      "source_id": "5a43a6a0-5e2a-4b41-b396-872c6c9ff35a",
+      "target_id": "2de4a199-692e-4b9e-8313-201df676d3c9",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "This question emerges from a direct contradiction between Trump's stated position/actions (dismissal) and concrete, undeniable evidence (signed letter), highlighting a critical area for investigation into his credibility and the factual basis of his denials.",
+        "priority": 0.9,
+        "created_at": "2025-09-10T08:22:31.105661"
+      },
+      "created_at": "2025-09-10T08:22:31.105661"
+    },
+    {
+      "id": "c5b2b504-2e9a-49f7-8776-15d23ebe473c",
+      "source_id": "5a43a6a0-5e2a-4b41-b396-872c6c9ff35a",
+      "target_id": "228747df-2af7-4063-8652-528105d25f01",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "This question follows up on a crucial piece of direct evidence. The existence of the letter is established, but its specific details are a significant gap. Understanding its content is vital for establishing the precise nature of their relationship.",
+        "priority": 0.95,
+        "created_at": "2025-09-10T08:22:31.105661"
+      },
+      "created_at": "2025-09-10T08:22:31.105661"
+    },
+    {
+      "id": "12a4b3d5-8f8a-4bf0-affd-0d399246754d",
+      "source_id": "5a43a6a0-5e2a-4b41-b396-872c6c9ff35a",
+      "target_id": "d3972630-a789-4493-a5f1-d60cfaa4bf12",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "This question addresses significant gaps and introduces new investigative directions related to the methods and extent of Trump's strategic management of the Epstein association. The mention of specific elements like a memo and footage points to concrete avenues for further inquiry.",
+        "priority": 0.8,
+        "created_at": "2025-09-10T08:22:31.105661"
+      },
+      "created_at": "2025-09-10T08:22:31.105661"
+    },
+    {
+      "id": "46adeb49-8d88-4481-a5c2-6687e91a71f3",
+      "source_id": "5a43a6a0-5e2a-4b41-b396-872c6c9ff35a",
+      "target_id": "030ba2c2-1000-48de-89ea-dd331db47d74",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "This question addresses a significant potential contradiction in Trump's public narrative and historical positioning. It highlights a need to investigate the veracity of his past claims and how they align or conflict with his current situation, pointing to a new direction for historical context investigation.",
+        "priority": 0.8,
+        "created_at": "2025-09-10T08:22:31.105661"
+      },
+      "created_at": "2025-09-10T08:22:31.105661"
+    },
+    {
+      "id": "3e564500-da4b-40c5-9bc5-7ed72b002608",
+      "source_id": "5a43a6a0-5e2a-4b41-b396-872c6c9ff35a",
+      "target_id": "6b7a9c77-7f6a-4e2d-95a6-f7331ec80c55",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "This question arises from an unexpected finding and a potential contradiction regarding the efficacy of Trump's public relations strategy. It reveals a gap in understanding why his base is not letting it go, which is crucial for assessing the true impact and persistence of the issue.",
+        "priority": 0.75,
+        "created_at": "2025-09-10T08:22:31.105661"
+      },
+      "created_at": "2025-09-10T08:22:31.105661"
+    },
+    {
+      "id": "3fa68586-4764-429e-b1c5-ef2662a10925",
+      "source_id": "5a43a6a0-5e2a-4b41-b396-872c6c9ff35a",
+      "target_id": "75139590-6c0b-48f1-b94f-3d05d81dabc8",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "This question addresses an external interpretation of the drama, highlighting a new investigation direction into the political dynamics surrounding the issue. It seeks to understand the mechanisms and evidence behind the claim of political weaponization, which could impact how the overall narrative is perceived.",
+        "priority": 0.7,
+        "created_at": "2025-09-10T08:22:31.105661"
+      },
+      "created_at": "2025-09-10T08:22:31.105661"
+    },
+    {
+      "id": "addb6bf1-074e-4944-a7d9-d017ec229e10",
+      "source_id": "5a43a6a0-5e2a-4b41-b396-872c6c9ff35a",
+      "target_id": "d8a2f6e6-fda8-4646-b224-d9ef17f62f6a",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "This question seeks to clarify a potential gap in understanding the legal and ethical implications of Trump's status during his association with Epstein. While Insight 2 provides context, it doesn't explain how that context influences the severity or interpretation of his alleged involvement.",
+        "priority": 0.6,
+        "created_at": "2025-09-10T08:22:31.105661"
+      },
+      "created_at": "2025-09-10T08:22:31.105661"
+    },
+    {
+      "id": "7e131ded-40f4-49de-b3f9-f15287f42392",
+      "source_id": "3fcb6515-6a3d-49a5-8448-f76fcdb44d3e",
+      "target_id": "de361087-b7c6-438f-aa40-d3e483811525",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 8.2
+      },
+      "created_at": "2025-09-10T08:22:50.950605"
+    },
+    {
+      "id": "83777cf1-ab85-44ce-a671-9a772051bf7f",
+      "source_id": "3fcb6515-6a3d-49a5-8448-f76fcdb44d3e",
+      "target_id": "64144082-5750-4bea-b260-bfc41aec4a2a",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 8.2
+      },
+      "created_at": "2025-09-10T08:22:50.950605"
+    },
+    {
+      "id": "5c8e00d2-f6c9-4fd5-8918-2625c6be7b1c",
+      "source_id": "3fcb6515-6a3d-49a5-8448-f76fcdb44d3e",
+      "target_id": "29e11d93-5b9e-4622-82ce-c98b06826288",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 8.2
+      },
+      "created_at": "2025-09-10T08:22:50.950605"
+    },
+    {
+      "id": "fd376da6-b278-489a-bd47-aed09c4d8771",
+      "source_id": "3fcb6515-6a3d-49a5-8448-f76fcdb44d3e",
+      "target_id": "5d1bcbba-e323-4925-adc6-93bb79bf65aa",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 8.2
+      },
+      "created_at": "2025-09-10T08:22:50.950605"
+    },
+    {
+      "id": "af368971-56d2-48da-9b9d-ae4b68b00dea",
+      "source_id": "3fcb6515-6a3d-49a5-8448-f76fcdb44d3e",
+      "target_id": "ef880fdd-170e-496d-81bf-f15c836b9e90",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 8.2
+      },
+      "created_at": "2025-09-10T08:22:50.950605"
+    },
+    {
+      "id": "c5471f7a-2da0-453a-a684-2f97162a8908",
+      "source_id": "de361087-b7c6-438f-aa40-d3e483811525",
+      "target_id": "12d8ea8b-6b9c-4e23-87a0-638cd7c622f3",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:22:50.950605"
+    },
+    {
+      "id": "0436a9c7-9322-4aeb-b553-d28d5fd2d04f",
+      "source_id": "64144082-5750-4bea-b260-bfc41aec4a2a",
+      "target_id": "12d8ea8b-6b9c-4e23-87a0-638cd7c622f3",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:22:50.950605"
+    },
+    {
+      "id": "d92e464a-d2fe-4fa9-8260-dd60db43a6d9",
+      "source_id": "29e11d93-5b9e-4622-82ce-c98b06826288",
+      "target_id": "12d8ea8b-6b9c-4e23-87a0-638cd7c622f3",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:22:50.950605"
+    },
+    {
+      "id": "7b3a325b-929a-41a1-99db-0135ef153e70",
+      "source_id": "5d1bcbba-e323-4925-adc6-93bb79bf65aa",
+      "target_id": "12d8ea8b-6b9c-4e23-87a0-638cd7c622f3",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:22:50.950605"
+    },
+    {
+      "id": "2983ed03-db9d-438f-a2eb-a2f9cbfe2dc3",
+      "source_id": "ef880fdd-170e-496d-81bf-f15c836b9e90",
+      "target_id": "12d8ea8b-6b9c-4e23-87a0-638cd7c622f3",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:22:50.950605"
+    },
+    {
+      "id": "8d6aecd4-32cb-4770-a812-b1c64463a259",
+      "source_id": "de361087-b7c6-438f-aa40-d3e483811525",
+      "target_id": "d5a3fb7e-fc3f-46a6-a788-bdd2362836eb",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:22:50.950605"
+    },
+    {
+      "id": "d6347f52-ce9a-4d1b-ba59-024eaf3a958c",
+      "source_id": "64144082-5750-4bea-b260-bfc41aec4a2a",
+      "target_id": "d5a3fb7e-fc3f-46a6-a788-bdd2362836eb",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:22:50.950605"
+    },
+    {
+      "id": "ba76e95b-4ece-42bc-9f4b-50d3e687179c",
+      "source_id": "29e11d93-5b9e-4622-82ce-c98b06826288",
+      "target_id": "d5a3fb7e-fc3f-46a6-a788-bdd2362836eb",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:22:50.950605"
+    },
+    {
+      "id": "d3b18a75-441f-4d58-a581-b143ff9ceac0",
+      "source_id": "5d1bcbba-e323-4925-adc6-93bb79bf65aa",
+      "target_id": "d5a3fb7e-fc3f-46a6-a788-bdd2362836eb",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:22:50.950605"
+    },
+    {
+      "id": "fc635fa3-3385-4b5d-8d1f-40b39b8d0ff9",
+      "source_id": "ef880fdd-170e-496d-81bf-f15c836b9e90",
+      "target_id": "d5a3fb7e-fc3f-46a6-a788-bdd2362836eb",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:22:50.950605"
+    },
+    {
+      "id": "6acdbcc4-dfde-493d-9775-c3065f29543b",
+      "source_id": "de361087-b7c6-438f-aa40-d3e483811525",
+      "target_id": "0e11624d-74b5-4283-9257-ba7b7ddbeeb8",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:22:50.950605"
+    },
+    {
+      "id": "0c4f3855-6b56-493b-95e8-e84b843fbe87",
+      "source_id": "64144082-5750-4bea-b260-bfc41aec4a2a",
+      "target_id": "0e11624d-74b5-4283-9257-ba7b7ddbeeb8",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:22:50.950605"
+    },
+    {
+      "id": "ceaf9240-d3b1-4e19-9e8d-0c2adbf7c272",
+      "source_id": "29e11d93-5b9e-4622-82ce-c98b06826288",
+      "target_id": "0e11624d-74b5-4283-9257-ba7b7ddbeeb8",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:22:50.950605"
+    },
+    {
+      "id": "ab79a2f3-5922-4f82-813c-e15f84b6f41d",
+      "source_id": "5d1bcbba-e323-4925-adc6-93bb79bf65aa",
+      "target_id": "0e11624d-74b5-4283-9257-ba7b7ddbeeb8",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:22:50.950605"
+    },
+    {
+      "id": "a2c5c7bf-e387-4e0f-a1da-d1b5c1fe6f90",
+      "source_id": "ef880fdd-170e-496d-81bf-f15c836b9e90",
+      "target_id": "0e11624d-74b5-4283-9257-ba7b7ddbeeb8",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:22:50.950605"
+    },
+    {
+      "id": "92fa3c19-e66d-4b54-a679-05add1c04839",
+      "source_id": "de361087-b7c6-438f-aa40-d3e483811525",
+      "target_id": "00d6796f-fb6a-4935-9642-c6ed1142db62",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:22:50.950605"
+    },
+    {
+      "id": "425c3b12-2475-41cb-842c-ce78ce546ca5",
+      "source_id": "64144082-5750-4bea-b260-bfc41aec4a2a",
+      "target_id": "00d6796f-fb6a-4935-9642-c6ed1142db62",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:22:50.950605"
+    },
+    {
+      "id": "7b960abd-6a7d-449b-b8d1-bf9f599a70e2",
+      "source_id": "29e11d93-5b9e-4622-82ce-c98b06826288",
+      "target_id": "00d6796f-fb6a-4935-9642-c6ed1142db62",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:22:50.950605"
+    },
+    {
+      "id": "c58d1b25-ecfa-4050-9e7a-9e2687e1afb4",
+      "source_id": "5d1bcbba-e323-4925-adc6-93bb79bf65aa",
+      "target_id": "00d6796f-fb6a-4935-9642-c6ed1142db62",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:22:50.950605"
+    },
+    {
+      "id": "23201c31-2b51-4ee1-b48e-35f9e67cbd6d",
+      "source_id": "ef880fdd-170e-496d-81bf-f15c836b9e90",
+      "target_id": "00d6796f-fb6a-4935-9642-c6ed1142db62",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:22:50.951603"
+    },
+    {
+      "id": "7d6774a1-8aff-4545-a5ef-d4f1f542512c",
+      "source_id": "de361087-b7c6-438f-aa40-d3e483811525",
+      "target_id": "19b64dd4-640d-48eb-b018-36ae8a4b8ade",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:22:50.951603"
+    },
+    {
+      "id": "76ff6bad-99f9-4d86-acfe-21cd839c6ff8",
+      "source_id": "64144082-5750-4bea-b260-bfc41aec4a2a",
+      "target_id": "19b64dd4-640d-48eb-b018-36ae8a4b8ade",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:22:50.951603"
+    },
+    {
+      "id": "0254a86b-175a-4330-8ea0-466887bf972d",
+      "source_id": "29e11d93-5b9e-4622-82ce-c98b06826288",
+      "target_id": "19b64dd4-640d-48eb-b018-36ae8a4b8ade",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:22:50.951603"
+    },
+    {
+      "id": "c0e7be4e-d39f-4c7e-8e3e-a93877cff1a5",
+      "source_id": "5d1bcbba-e323-4925-adc6-93bb79bf65aa",
+      "target_id": "19b64dd4-640d-48eb-b018-36ae8a4b8ade",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:22:50.951603"
+    },
+    {
+      "id": "eee3bea6-5a38-4922-8135-15388276b590",
+      "source_id": "ef880fdd-170e-496d-81bf-f15c836b9e90",
+      "target_id": "19b64dd4-640d-48eb-b018-36ae8a4b8ade",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:22:50.951603"
+    },
+    {
+      "id": "cd31f649-9e24-46f1-81e1-8aff362d495b",
+      "source_id": "c8fea866-a4f8-46a4-9ffd-84d9955dd4ff",
+      "target_id": "d4847982-8212-42d5-9ce6-ad3c5acd4ad5",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T08:23:22.312377"
+    },
+    {
+      "id": "37f2ffbf-ceab-4e5d-8579-ea190d57ed73",
+      "source_id": "d4847982-8212-42d5-9ce6-ad3c5acd4ad5",
+      "target_id": "13e94384-0d31-4d4f-b677-9db587ebec15",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T08:23:22.312377"
+    },
+    {
+      "id": "da730119-5bcc-43ed-934f-e09de044b005",
+      "source_id": "c8fea866-a4f8-46a4-9ffd-84d9955dd4ff",
+      "target_id": "31de64f4-eb60-40c5-91c0-d5ed13968e53",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T08:23:22.312377"
+    },
+    {
+      "id": "0adc1a7a-e0b6-4e64-bb24-4d2388331886",
+      "source_id": "31de64f4-eb60-40c5-91c0-d5ed13968e53",
+      "target_id": "7aba659a-0527-4650-bce6-5c9ef9cf1a5c",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T08:23:22.312377"
+    },
+    {
+      "id": "2ffbebe5-45e1-4217-a78f-05e55cdbffb3",
+      "source_id": "c8fea866-a4f8-46a4-9ffd-84d9955dd4ff",
+      "target_id": "91ad5366-3e83-4d01-aed1-47cf77e4b94e",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T08:23:22.313377"
+    },
+    {
+      "id": "38c0f452-771c-4e42-b0af-5e540c468561",
+      "source_id": "91ad5366-3e83-4d01-aed1-47cf77e4b94e",
+      "target_id": "06fdafa0-3a74-42f5-bb1d-e518a5a6546b",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T08:23:22.313377"
+    }
+  ],
+  "analytic_question": "c8fea866-a4f8-46a4-9ffd-84d9955dd4ff",
+  "created_at": "2025-09-10T08:23:51.767879"
+}

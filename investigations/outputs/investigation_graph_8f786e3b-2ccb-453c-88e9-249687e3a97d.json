@@ -1,0 +1,139 @@
+{
+  "nodes": {
+    "ad6413ec-857d-4c5e-9389-169ef8b0c571": {
+      "id": "ad6413ec-857d-4c5e-9389-169ef8b0c571",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "test investigation",
+        "is_root": true,
+        "investigation_goal": "test investigation"
+      },
+      "created_at": "2025-09-10T07:17:30.529417"
+    },
+    "e9b449d1-61d4-4447-8d61-d0287a5be09e": {
+      "id": "e9b449d1-61d4-4447-8d61-d0287a5be09e",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Searching for the latest tweets regarding 'test investigation' will yield the most current discussions related to the investigation goal and help identify emerging trends or narratives.",
+        "parent_analytic_question": "ad6413ec-857d-4c5e-9389-169ef8b0c571"
+      },
+      "created_at": "2025-09-10T07:17:40.860372"
+    },
+    "4b5e9427-1897-4105-a205-87e5a9a72ba2": {
+      "id": "4b5e9427-1897-4105-a205-87e5a9a72ba2",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "test investigation",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-10T07:17:40.860372"
+    },
+    "1f60c70b-cdc3-40fc-82e9-44f738d4712d": {
+      "id": "1f60c70b-cdc3-40fc-82e9-44f738d4712d",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Elon Musk is a prominent figure who may discuss topics related to innovation, technology testing, and investigations in his tweets. Reviewing his recent posts could provide insights into influential thoughts and discussions surrounding the investigation theme and connect to relevant stakeholders.",
+        "parent_analytic_question": "ad6413ec-857d-4c5e-9389-169ef8b0c571"
+      },
+      "created_at": "2025-09-10T07:17:40.860372"
+    },
+    "474a7f08-2886-4ee7-a702-a95f955c0f96": {
+      "id": "474a7f08-2886-4ee7-a702-a95f955c0f96",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "elonmusk"
+        }
+      },
+      "created_at": "2025-09-10T07:17:40.860372"
+    },
+    "ad70eec1-759d-4a81-87e8-9ea36e301a4f": {
+      "id": "ad70eec1-759d-4a81-87e8-9ea36e301a4f",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: NASA's media could include test investigations related to space exploration and technology. Gathering visual content from NASA could provide contextual understanding and evidence of related discussions.",
+        "parent_analytic_question": "ad6413ec-857d-4c5e-9389-169ef8b0c571"
+      },
+      "created_at": "2025-09-10T07:17:40.860372"
+    },
+    "9dfc10c5-9dd0-4aa2-af6e-b53e88a232cf": {
+      "id": "9dfc10c5-9dd0-4aa2-af6e-b53e88a232cf",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "usermedia.php",
+        "parameters": {
+          "screenname": "nasa"
+        }
+      },
+      "created_at": "2025-09-10T07:17:40.860372"
+    }
+  },
+  "edges": [
+    {
+      "id": "85641866-597f-4132-9d85-ff6de2dc7e0d",
+      "source_id": "ad6413ec-857d-4c5e-9389-169ef8b0c571",
+      "target_id": "e9b449d1-61d4-4447-8d61-d0287a5be09e",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T07:17:40.860372"
+    },
+    {
+      "id": "12a9b38a-5a52-4d3e-9876-800c1b06e4a2",
+      "source_id": "e9b449d1-61d4-4447-8d61-d0287a5be09e",
+      "target_id": "4b5e9427-1897-4105-a205-87e5a9a72ba2",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T07:17:40.860372"
+    },
+    {
+      "id": "2ff12d81-617b-48b6-b2d4-b7b9abbff408",
+      "source_id": "ad6413ec-857d-4c5e-9389-169ef8b0c571",
+      "target_id": "1f60c70b-cdc3-40fc-82e9-44f738d4712d",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T07:17:40.860372"
+    },
+    {
+      "id": "b81bf70d-01d7-413c-844e-b61d3db8ea35",
+      "source_id": "1f60c70b-cdc3-40fc-82e9-44f738d4712d",
+      "target_id": "474a7f08-2886-4ee7-a702-a95f955c0f96",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T07:17:40.860372"
+    },
+    {
+      "id": "33190ab2-148e-41df-b4f0-d8f30324f2bb",
+      "source_id": "ad6413ec-857d-4c5e-9389-169ef8b0c571",
+      "target_id": "ad70eec1-759d-4a81-87e8-9ea36e301a4f",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T07:17:40.860372"
+    },
+    {
+      "id": "ae08daea-b31c-41e5-a210-f2e317f3a07b",
+      "source_id": "ad70eec1-759d-4a81-87e8-9ea36e301a4f",
+      "target_id": "9dfc10c5-9dd0-4aa2-af6e-b53e88a232cf",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T07:17:40.860372"
+    }
+  ],
+  "analytic_question": "ad6413ec-857d-4c5e-9389-169ef8b0c571",
+  "created_at": "2025-09-10T07:17:40.861372"
+}

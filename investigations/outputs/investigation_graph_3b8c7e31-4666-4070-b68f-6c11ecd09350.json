@@ -1,0 +1,1475 @@
+{
+  "nodes": {
+    "3ea3ff40-b278-43d5-a905-463a6a02ae4e": {
+      "id": "3ea3ff40-b278-43d5-a905-463a6a02ae4e",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "perspectives on the new UFO congress hearings",
+        "is_root": true,
+        "investigation_goal": "perspectives on the new UFO congress hearings"
+      },
+      "created_at": "2025-09-10T05:06:26.138021"
+    },
+    "86df0857-d401-40d7-a135-e22627073687": {
+      "id": "86df0857-d401-40d7-a135-e22627073687",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: This search will help us discover the most recent discussions and perspectives regarding UFO congress hearings, providing insight into current public sentiment and opinions.",
+        "parent_analytic_question": "3ea3ff40-b278-43d5-a905-463a6a02ae4e"
+      },
+      "created_at": "2025-09-10T05:06:33.075126"
+    },
+    "ccdf1fa8-09f6-41bd-837e-3e48fab190d7": {
+      "id": "ccdf1fa8-09f6-41bd-837e-3e48fab190d7",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "UFO congress hearings",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-10T05:06:33.076126"
+    },
+    "16924628-ca8c-456c-b846-3380c030ce99": {
+      "id": "16924628-ca8c-456c-b846-3380c030ce99",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: By checking trending topics in the United States, we can gauge broader societal interests and any emerging narratives surrounding the UFO congress hearings, potentially uncovering related discussions that are gaining traction.",
+        "parent_analytic_question": "3ea3ff40-b278-43d5-a905-463a6a02ae4e"
+      },
+      "created_at": "2025-09-10T05:06:33.076126"
+    },
+    "db1a2e9f-6804-4068-af04-ff2aa6f8e57e": {
+      "id": "db1a2e9f-6804-4068-af04-ff2aa6f8e57e",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "trends.php",
+        "parameters": {
+          "country": "UnitedStates"
+        }
+      },
+      "created_at": "2025-09-10T05:06:33.076126"
+    },
+    "6c35fe34-f99d-4b98-840b-1089b8d36904": {
+      "id": "6c35fe34-f99d-4b98-840b-1089b8d36904",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "@SamAltcoin_eth High market cap , yes...laughable? No...they have open UFO hearings in congress today..senators saying aliens exist \ud83e\udd14 \ud83d\ude00.  We live in crazy crazy time.  Anything can and will happen",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T05:06:54.336653",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.6,
+          "goal_relevance_score": 0.75
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T05:06:54.336653"
+      },
+      "created_at": "2025-09-10T05:06:54.336653"
+    },
+    "d6c53828-6e7b-4fb0-b9a3-1b0e102a1917": {
+      "id": "d6c53828-6e7b-4fb0-b9a3-1b0e102a1917",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Dreaming of space is awesome! On UFO/UAP files: Recent Pentagon reports (up to 2025) detail unexplained sightings, but no confirmed alien tech. Congress pushed for more transparency in 2024 hearings. Check NASA's UAP study or AARO's site for declassified info. What's your favorite space mystery? \ud83d\ude80",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T05:06:54.336653",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.7,
+          "goal_relevance_score": 0.75
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T05:06:54.336653"
+      },
+      "created_at": "2025-09-10T05:06:54.336653"
+    },
+    "599b1794-4b28-4bb6-ba98-66b108d88725": {
+      "id": "599b1794-4b28-4bb6-ba98-66b108d88725",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Spicy UFO footage dropped at the hearings today, and it\u2019s an absolute banger #aliens #uap #viral #congress https://t.co/M6lQXrpRUz",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T05:06:54.336653",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.5,
+          "goal_relevance_score": 0.75
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T05:06:54.336653"
+      },
+      "created_at": "2025-09-10T05:06:54.336653"
+    },
+    "e88ea965-c784-45dc-a471-e161baefa7cd": {
+      "id": "e88ea965-c784-45dc-a471-e161baefa7cd",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "When a Navy pilot says, \u2018You won\u2019t believe what I just saw\u2019... In the spirit of today's hearings on Cap Hill, we present what the pilot saw from the cockpit of his fighter jet in an undisclosed location. He gave the full vid to Congress in 2022. \u26a1 #UAP #UFO https://t.co/3TEin2nqer",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T05:06:54.336653",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.8,
+          "goal_relevance_score": 0.75
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T05:06:54.336653"
+      },
+      "created_at": "2025-09-10T05:06:54.336653"
+    },
+    "67eed76f-274d-48ce-8537-1654cb03e07c": {
+      "id": "67eed76f-274d-48ce-8537-1654cb03e07c",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "@ranjodh2512 @BGatesIsaPyscho No, there are no confirmed reports of any alien landings around the White House. Recent UFO hearings in Congress discuss sightings, like this drone video, but nothing about actual landings or extraterrestrial visits there.",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T05:06:54.336653",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.6,
+          "goal_relevance_score": 0.75
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T05:06:54.336653"
+      },
+      "created_at": "2025-09-10T05:06:54.336653"
+    },
+    "09a3da22-3c85-4199-9d0d-0c8b8f5de343": {
+      "id": "09a3da22-3c85-4199-9d0d-0c8b8f5de343",
+      "node_type": "Insight",
+      "properties": {
+        "content": "The recent UFO congress hearings have not only brought official acknowledgment of potentially extraterrestrial phenomena but also sparked significant public interest and engagement. Evidence from social media indicates that people are both amused and intrigued by the implications of these hearings, suggesting a shift in public perception regarding UFOs. As sensational footage is shared widely, it indicates a growing appetite for transparency and information about unidentified aerial phenomena, which may encourage further governmental inquiry and public discourse. This significant cultural moment showcases a merging interest between entertainment and serious discourse about extraterrestrial life, shaping future hearings and investigations.",
+        "insight_type": "trend",
+        "title": "Public Fascination with UFO Hearings is Rising",
+        "confidence": 0.85,
+        "investigation_relevance": 0.9,
+        "key_evidence": [
+          "@SamAltcoin_eth High market cap , yes...laughable? No...they have open UFO hearings in congress today..senators saying aliens exist \ud83e\udd14 \ud83d\ude00.",
+          "Spicy UFO footage dropped at the hearings today, and it\u2019s an absolute banger #aliens #uap #viral #congress"
+        ]
+      },
+      "created_at": "2025-09-10T05:07:07.601361"
+    },
+    "136cc5c3-fcc4-42f7-a9c5-180181e61116": {
+      "id": "136cc5c3-fcc4-42f7-a9c5-180181e61116",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How will the blending of entertainment and legitimate discourse about UFOs affect public trust in governmental inquiries about extraterrestrial phenomena?",
+        "emergence_reason": "This question emerges due to the noted shift in public perception where entertainment aspects may overshadow serious investigation, potentially leading to skepticism about the true motives behind government transparency efforts."
+      },
+      "created_at": "2025-09-10T05:07:12.101849"
+    },
+    "142e3b94-ee04-4447-a254-faefd45eca3f": {
+      "id": "142e3b94-ee04-4447-a254-faefd45eca3f",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What factors contribute to the contrasting reactions\u2014amusement versus intrigue\u2014among the public in response to the UFO hearings?",
+        "emergence_reason": "This question arises from the unexpected public engagement described in the insights, highlighting that there are diverse emotional responses that need further exploration to understand their roots."
+      },
+      "created_at": "2025-09-10T05:07:12.101849"
+    },
+    "b159f4f7-e41b-4586-9a55-f1013a761a24": {
+      "id": "b159f4f7-e41b-4586-9a55-f1013a761a24",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What specific elements of the recent UFO congress hearings have led to this heightened public interest and what demographic trends can we see in engagement?",
+        "emergence_reason": "This question highlights a gap in understanding which factors genuinely drive engagement and interest in the hearings, as well as which demographics are most affected."
+      },
+      "created_at": "2025-09-10T05:07:12.101849"
+    },
+    "43c94e77-317b-47cb-b0ac-54a851ad483d": {
+      "id": "43c94e77-317b-47cb-b0ac-54a851ad483d",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What role do social media platforms play in shaping public discourse about UFOs and how might this influence future governmental investigations?",
+        "emergence_reason": "This question is prompted by the mention of social media's impact on public interest, suggesting that understanding its role could provide insights into shaping future inquiries and communication strategies."
+      },
+      "created_at": "2025-09-10T05:07:12.101849"
+    },
+    "36b4b68f-7a9b-4746-9201-20b85ac0ce91": {
+      "id": "36b4b68f-7a9b-4746-9201-20b85ac0ce91",
+      "node_type": "Insight",
+      "properties": {
+        "content": "The recent UFO hearings hosted by Congress highlight a significant surge in public interest and engagement with unidentified aerial phenomena (UAP). Notably, the release of compelling video footage during these hearings has captivated audiences, leading to a trending social media phenomenon with hashtags like #aliens and #uap. This indicates that while there is a call for transparency regarding UAP investigations\u2014evidenced by ongoing Pentagon reports detailing unexplained sightings\u2014there remains a lack of concrete evidence confirming extraterrestrial technology. The hearings symbolize a push towards demystifying UFOs but also reflect a tension between scientific skepticism and public enthusiasm for the subject. Thus, these events are reshaping public discourse and expectations surrounding governmental transparency on UFO matters, fostering a communal intrigue that transcends the mere investigation of sightings.",
+        "insight_type": "trend",
+        "title": "Public Fascination with UFO Hearings Grows",
+        "confidence": 0.9,
+        "investigation_relevance": 0.95,
+        "key_evidence": [
+          "Recent Pentagon reports detail unexplained sightings, calling for more transparency.",
+          "Spicy UFO footage dropped at the hearings today, trending on social media with significant engagement.",
+          "Congress's proactive stance emphasizes a push for clarity regarding UFO sightings amidst public fascination."
+        ]
+      },
+      "created_at": "2025-09-10T05:07:20.681144"
+    },
+    "56ab3bdd-3dd2-45b7-981a-4bde18f28c23": {
+      "id": "56ab3bdd-3dd2-45b7-981a-4bde18f28c23",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What is the nature of the tension between scientific skepticism and public enthusiasm regarding UAPs, and how does it influence future investigations?",
+        "emergence_reason": "This question emerged because insights highlight a growing interest and demand for transparency on one side, yet identify skepticism about the evidence on the other. Understanding this tension could help navigate public discourse more effectively and shape actions by authorities involved in investigating UAPs."
+      },
+      "created_at": "2025-09-10T05:07:27.612515"
+    },
+    "9d01477a-93fa-4159-bf4a-ea168cc4b355": {
+      "id": "9d01477a-93fa-4159-bf4a-ea168cc4b355",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How can government transparency about UAPs be increased in a way that satisfies public curiosity while maintaining scientific integrity?",
+        "emergence_reason": "This question arises from the insight that there is a public push for transparency amidst a backdrop of skepticism regarding the evidence. Addressing how to balance these demands may inform future congressional hearings and UAP investigations."
+      },
+      "created_at": "2025-09-10T05:07:27.612515"
+    },
+    "3d444e61-265d-42f9-9e62-b839e2b5b176": {
+      "id": "3d444e61-265d-42f9-9e62-b839e2b5b176",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What specific factors contribute to the surge in public interest and engagement with UFO phenomena following recent congressional hearings?",
+        "emergence_reason": "The insights indicate a notable rise in public interest and engagement tied to the hearings. Clarifying the specific factors that influence this rising interest, such as social media dynamics or generational shifts, could enhance understanding of public perceptions of extraterrestrial life."
+      },
+      "created_at": "2025-09-10T05:07:27.612515"
+    },
+    "48d746ec-97c0-4d73-af33-ac75d09cd3f2": {
+      "id": "48d746ec-97c0-4d73-af33-ac75d09cd3f2",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What additional evidence is required to confirm or deny the presence of extraterrestrial technology among reported UAP sightings?",
+        "emergence_reason": "The insights mention a lack of concrete evidence confirming extraterrestrial technology despite heightened interest. This question highlights a significant gap in understanding and requires further investigation into existing data and how it could be interpreted."
+      },
+      "created_at": "2025-09-10T05:07:27.612515"
+    },
+    "797b0f64-6654-4baf-9c80-c6bae36abf17": {
+      "id": "797b0f64-6654-4baf-9c80-c6bae36abf17",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How does societal perception of UFOs fit into the broader context of trust in government and scientific institutions?",
+        "emergence_reason": "Given that the hearings represent a mix of entertainment and serious discourse, understanding this interplay may reveal deeper societal attitudes toward government transparency and contribute to the broader conversation of trust in institutions."
+      },
+      "created_at": "2025-09-10T05:07:27.613514"
+    },
+    "4cf9617a-8c21-475b-9f5b-fd153ce07cd8": {
+      "id": "4cf9617a-8c21-475b-9f5b-fd153ce07cd8",
+      "node_type": "Insight",
+      "properties": {
+        "content": "The recent UFO hearings in Congress signify a shift in how both lawmakers and the public are approaching the belief in extraterrestrial life and unidentified flying objects. This change is notably highlighted by the reactions from various voices\u2014such as Navy pilots sharing firsthand experiences of UFO sightings, contrasting with the skepticism voiced on social media about the existence of aliens. Such dynamics demonstrate that as official platforms discuss the validity of UFO encounters, public opinion is becoming more open, yet still divided. This insight signifies a growing trend toward the normalization of UFO discussions, even amidst doubts about their implications or confirmation of alien existence. This could potentially impact future policies and the approach to related investigatory efforts, as increased acceptance may lead to more funding and open discussions on the subject.",
+        "insight_type": "trend",
+        "title": "Evolving Public Sentiment on UFO Disclosures",
+        "confidence": 0.8,
+        "investigation_relevance": 0.9,
+        "key_evidence": [
+          "Navy pilot narratives contributing to legitimacy of UFO sightings.",
+          "Public skepticism remains despite congressional discussions on UFOs.",
+          "Open discussions among senators about the existence of aliens signifies a shift in governmental and public engagement."
+        ]
+      },
+      "created_at": "2025-09-10T05:07:44.460910"
+    },
+    "bcbac093-22ce-498a-8bc8-e9ecc891e2d9": {
+      "id": "bcbac093-22ce-498a-8bc8-e9ecc891e2d9",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How do public reactions to the UFO hearings differ between those who are intrigued and those who remain skeptical about extraterrestrial existence?",
+        "emergence_reason": "This question arises from the contrasting observations of increased public interest and the significant skepticism voiced on social media, pointing to a divided public opinion that warrants further exploration to understand its implications for future discourse and policymaking around UFOs."
+      },
+      "created_at": "2025-09-10T05:07:50.825778"
+    },
+    "3c76dd25-caa9-4daa-a685-928513938f1d": {
+      "id": "3c76dd25-caa9-4daa-a685-928513938f1d",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What specific factors contribute to the growing cultural normalization of UFO discussions despite ongoing skepticism about evidence for extraterrestrial life?",
+        "emergence_reason": "The insights suggest that there is a rising interest in UFOs alongside skepticism. Investigating the underlying factors that lead to this cultural shift could help clarify the motivations behind public engagement with the topic."
+      },
+      "created_at": "2025-09-10T05:07:50.825778"
+    },
+    "d68c30be-06cd-4410-a8c0-4d675c4b2ee2": {
+      "id": "d68c30be-06cd-4410-a8c0-4d675c4b2ee2",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What is the role of social media in shaping both enthusiasm and skepticism regarding UFO phenomena after the recent congressional hearings?",
+        "emergence_reason": "The insights mention a trending social media phenomenon yet indicate skepticism among users. This shows a significant influence of social media, which is worth examining to understand its effect on public perceptions of UFOs."
+      },
+      "created_at": "2025-09-10T05:07:50.825778"
+    },
+    "cf9bff7a-d2e6-4499-b3b0-a10c40af0188": {
+      "id": "cf9bff7a-d2e6-4499-b3b0-a10c40af0188",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What kinds of evidence and data are necessary to transform public skepticism into widespread acceptance of extraterrestrial phenomena?",
+        "emergence_reason": "The insights indicate a lack of concrete evidence, which presents a gap in knowledge regarding what might be needed to sway public opinion towards acceptance rather than skepticism."
+      },
+      "created_at": "2025-09-10T05:07:50.825778"
+    },
+    "fbf4a68c-f321-4c04-9476-047bde79570e": {
+      "id": "fbf4a68c-f321-4c04-9476-047bde79570e",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How can governmental transparency on UAP investigations be maintained while addressing the public's appetite for compelling evidence?",
+        "emergence_reason": "Given the insights on calls for transparency and the current lack of conclusive evidence, this question arises about how to balance governmental accountability with public expectations, suggesting a need for policy frameworks."
+      },
+      "created_at": "2025-09-10T05:07:50.825778"
+    },
+    "06d0fce5-afbc-46c9-9683-bacf2fc72084": {
+      "id": "06d0fce5-afbc-46c9-9683-bacf2fc72084",
+      "node_type": "Insight",
+      "properties": {
+        "content": "The recent congressional hearings on UFOs (UAPs) are generating significant public and media interest, marked by vivid testimonies and new footage showcased during the sessions. These developments reflect a growing trend towards transparency regarding unidentified aerial phenomena and a collective curiosity fueled by military eyewitness accounts. Notably, the hearings' emphasis on previously classified or ambiguous sightings conveys a shift from skepticism to a more open discourse about the potential for extraterrestrial technologies, despite no conclusive evidence currently available. This signifies a pivotal moment in how UFOs are discussed in the public domain, potentially altering perceptions and encouraging further investigation into aerial anomalies.",
+        "insight_type": "trend",
+        "title": "Congressional Hearings Spark Renewed Interest in UFOs",
+        "confidence": 0.85,
+        "investigation_relevance": 0.9,
+        "key_evidence": [
+          "Congress pushed for more transparency in 2024 hearings.",
+          "Spicy UFO footage dropped at the hearings today, and it\u2019s an absolute banger.",
+          "When a Navy pilot says, \u2018You won\u2019t believe what I just saw\u2019..."
+        ]
+      },
+      "created_at": "2025-09-10T05:08:00.801073"
+    },
+    "79eeea2a-cf1c-485f-8a87-aafc9dd521cd": {
+      "id": "79eeea2a-cf1c-485f-8a87-aafc9dd521cd",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What specific evidence is lacking to bridge the gap between public intrigue and scientific skepticism regarding UFOs?",
+        "emergence_reason": "This question emerged because while there is significant public interest and calls for transparency, there remains a notable lack of concrete evidence confirming extraterrestrial technology, indicating a divide between enthusiasm and skepticism around UFOs."
+      },
+      "created_at": "2025-09-10T05:08:06.130130"
+    },
+    "ba0af73a-9790-442f-b8c0-b6c5f904491b": {
+      "id": "ba0af73a-9790-442f-b8c0-b6c5f904491b",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How do the reactions of Navy pilots and eyewitnesses compare with public skepticism on social media about UFO encounters?",
+        "emergence_reason": "This question arose from the contrasting perspectives presented in the insights, highlighting a tension where personal testimonies from credible sources are met with skepticism from the broader public, suggesting a deeper inquiry into perceptions of credibility."
+      },
+      "created_at": "2025-09-10T05:08:06.130130"
+    },
+    "39ed643c-207a-4731-88bf-9f852a4a57ff": {
+      "id": "39ed643c-207a-4731-88bf-9f852a4a57ff",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What factors contribute to the shifting public perception of UFOs from skepticism to acceptance?",
+        "emergence_reason": "Emerging from the insights, this question seeks to understand the dynamics that have led to a cultural shift in UFO discussions, especially in terms of the election-time hearings and publicized military accounts, which may influence policy-making."
+      },
+      "created_at": "2025-09-10T05:08:06.130130"
+    },
+    "7d251411-4e29-48e4-8a90-628efea4a566": {
+      "id": "7d251411-4e29-48e4-8a90-628efea4a566",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What are the potential implications for future legislation or funding for UFO-related investigations based on current public interest?",
+        "emergence_reason": "This question stems from the insights indicating a growing acceptance of UFO discussions and how this may impact governmental policies and funding, suggesting a need to explore the possible changes in legislative focus."
+      },
+      "created_at": "2025-09-10T05:08:06.130130"
+    },
+    "20f45535-c73e-4fe3-adcc-1711568e1222": {
+      "id": "20f45535-c73e-4fe3-adcc-1711568e1222",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Congress to Revisit UFO Hearings: More Noise, No Evidence\n\nOnce again, lawmakers are preparing for yet another round of congressional hearings into Unidentified Aerial Phenomena (UAPs), more commonly known as UFOs. The move comes after a string of previous hearings that promised revelations but delivered little more than speculation and recycled conspiracy theories.\n\nHistory Repeating Itself\n\nSince the much-mythologized Roswell incident of 1947, UFO enthusiasts have claimed that the U.S. governm",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 8.0,
+          "timestamp": "2025-09-10T05:08:10.095636"
+        }
+      },
+      "created_at": "2025-09-10T05:08:10.095636"
+    },
+    "14ac95a0-8b74-4981-bc66-caccfefa1185": {
+      "id": "14ac95a0-8b74-4981-bc66-caccfefa1185",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "People always ask why these hearings matter, the UFO community perpetually believes \"they know it all\" and this stuff is pointless. When regular people go home and turn on their cable news, or see it in the doctor's office, or airport they will see Congress grappling with this issue in a serious way, then and only then will change be possible.",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 8.0,
+          "timestamp": "2025-09-10T05:08:10.096635"
+        }
+      },
+      "created_at": "2025-09-10T05:08:10.096635"
+    },
+    "0c941681-3274-4a6e-a817-ac072e517b2b": {
+      "id": "0c941681-3274-4a6e-a817-ac072e517b2b",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "@SamAltcoin_eth High market cap , yes...laughable? No...they have open UFO hearings in congress today..senators saying aliens exist \ud83e\udd14 \ud83d\ude00.  We live in crazy crazy time.  Anything can and will happen",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 8.0,
+          "timestamp": "2025-09-10T05:08:10.096635"
+        }
+      },
+      "created_at": "2025-09-10T05:08:10.096635"
+    },
+    "e87d0c88-227a-4cde-9319-1790567920fa": {
+      "id": "e87d0c88-227a-4cde-9319-1790567920fa",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Dreaming of space is awesome! On UFO/UAP files: Recent Pentagon reports (up to 2025) detail unexplained sightings, but no confirmed alien tech. Congress pushed for more transparency in 2024 hearings. Check NASA's UAP study or AARO's site for declassified info. What's your favorite space mystery? \ud83d\ude80",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 8.0,
+          "timestamp": "2025-09-10T05:08:10.096635"
+        }
+      },
+      "created_at": "2025-09-10T05:08:10.096635"
+    },
+    "91f1b3b0-d654-48da-88a0-35dd4a0c6589": {
+      "id": "91f1b3b0-d654-48da-88a0-35dd4a0c6589",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Spicy UFO footage dropped at the hearings today, and it\u2019s an absolute banger #aliens #uap #viral #congress https://t.co/M6lQXrpRUz",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 8.0,
+          "timestamp": "2025-09-10T05:08:10.096635"
+        }
+      },
+      "created_at": "2025-09-10T05:08:10.096635"
+    },
+    "e83ac8d6-83d0-4b5a-9fc2-229b80ad7a51": {
+      "id": "e83ac8d6-83d0-4b5a-9fc2-229b80ad7a51",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Congress is actively revisiting UFO hearings, signaling a renewed interest in UAPs.",
+        "insight_type": "evaluation_derived",
+        "title": "Congress is actively revisiting UFO hearings,...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.8,
+        "key_evidence": [
+          "Congress is actively revisiting UFO hearings, signaling a renewed interest in UAPs."
+        ]
+      },
+      "created_at": "2025-09-10T05:08:10.096635"
+    },
+    "b39e17bd-ea3d-46c0-9e50-efcbe110cfb9": {
+      "id": "b39e17bd-ea3d-46c0-9e50-efcbe110cfb9",
+      "node_type": "Insight",
+      "properties": {
+        "content": "The perception of these hearings is mixed, with criticisms of lack of hard evidence and substantive outcomes.",
+        "insight_type": "evaluation_derived",
+        "title": "The perception of these hearings is...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.8,
+        "key_evidence": [
+          "The perception of these hearings is mixed, with criticisms of lack of hard evidence and substantive outcomes."
+        ]
+      },
+      "created_at": "2025-09-10T05:08:10.096635"
+    },
+    "98844b48-d8ee-4792-8e5f-122adca47ab7": {
+      "id": "98844b48-d8ee-4792-8e5f-122adca47ab7",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Social media reactions highlight a blend of skepticism and curiosity surrounding the hearings and related testimonies.",
+        "insight_type": "evaluation_derived",
+        "title": "Social media reactions highlight a blend...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.8,
+        "key_evidence": [
+          "Social media reactions highlight a blend of skepticism and curiosity surrounding the hearings and related testimonies."
+        ]
+      },
+      "created_at": "2025-09-10T05:08:10.096635"
+    },
+    "86fc8956-c912-41aa-8514-8ca9145e7783": {
+      "id": "86fc8956-c912-41aa-8514-8ca9145e7783",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: This search targets the most recent tweets discussing public sentiment and perspectives related to the UFO congress hearings, aiming to fill the identified gaps by capturing current discourse and sentiments.",
+        "parent_analytic_question": "3ea3ff40-b278-43d5-a905-463a6a02ae4e"
+      },
+      "created_at": "2025-09-10T05:08:17.300778"
+    },
+    "d7cec950-7a11-4506-952d-0b509050663c": {
+      "id": "d7cec950-7a11-4506-952d-0b509050663c",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "UFO congress hearings perspectives public sentiment",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-10T05:08:17.300778"
+    },
+    "d171094d-5919-4113-acca-db46d15ba288": {
+      "id": "d171094d-5919-4113-acca-db46d15ba288",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: The Hill is a well-respected source of political reporting and analysis. By reviewing their timeline, we can extract insights and articles that may highlight reactions and discussions surrounding the UFO hearings, enabling us to contextualize public sentiment more effectively.",
+        "parent_analytic_question": "3ea3ff40-b278-43d5-a905-463a6a02ae4e"
+      },
+      "created_at": "2025-09-10T05:08:17.300778"
+    },
+    "44dd7d87-27c6-4312-b565-1c46e21d5b02": {
+      "id": "44dd7d87-27c6-4312-b565-1c46e21d5b02",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "query": "thehill",
+          "screenname": "thehill"
+        }
+      },
+      "created_at": "2025-09-10T05:08:17.300778"
+    },
+    "79c8e4df-807f-4f86-b4cf-be810c7d89b0": {
+      "id": "79c8e4df-807f-4f86-b4cf-be810c7d89b0",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: This search targets the most recent tweets discussing various perspectives and sentiments related to the UFO congress hearings. It aims to capture current discourse and sentiments that may address the public's engagement with the hearings.",
+        "parent_analytic_question": "3ea3ff40-b278-43d5-a905-463a6a02ae4e"
+      },
+      "created_at": "2025-09-10T05:08:45.474355"
+    },
+    "cb250c41-aa45-4d81-84a8-1067c55f7c35": {
+      "id": "cb250c41-aa45-4d81-84a8-1067c55f7c35",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "UFO congress hearings perspectives",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-10T05:08:45.474355"
+    },
+    "a23fb05e-1291-45b5-ba0e-0a59541a7936": {
+      "id": "a23fb05e-1291-45b5-ba0e-0a59541a7936",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: NASA is a credible source deeply engaged in scientific discourse regarding unidentified aerial phenomena. Analyzing their recent activity can provide a clear understanding of the scientific perspective on the UFO hearings and enhance the overall context of public sentiment.",
+        "parent_analytic_question": "3ea3ff40-b278-43d5-a905-463a6a02ae4e"
+      },
+      "created_at": "2025-09-10T05:08:45.474355"
+    },
+    "d35ee39a-4780-44f4-8275-4728bc93626a": {
+      "id": "d35ee39a-4780-44f4-8275-4728bc93626a",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "nasa"
+        }
+      },
+      "created_at": "2025-09-10T05:08:45.474355"
+    },
+    "4b4498d0-6dfe-41a8-b385-052c96351fb3": {
+      "id": "4b4498d0-6dfe-41a8-b385-052c96351fb3",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: The Hill is known for political reporting and analysis. By reviewing their timeline, we can extract insights on reactions and discussions about the UFO hearings that may highlight public and political sentiments effectively.",
+        "parent_analytic_question": "3ea3ff40-b278-43d5-a905-463a6a02ae4e"
+      },
+      "created_at": "2025-09-10T05:08:45.474865"
+    },
+    "835916fa-7a25-43a4-87dc-370bffd3f85f": {
+      "id": "835916fa-7a25-43a4-87dc-370bffd3f85f",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "TheHill"
+        }
+      },
+      "created_at": "2025-09-10T05:08:45.474865"
+    },
+    "2e2767c9-cbf8-4cd0-ab0e-ad80913f2ac2": {
+      "id": "2e2767c9-cbf8-4cd0-ab0e-ad80913f2ac2",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: This search targets the latest tweets discussing perspectives on UFO congress hearings specifically from NASA, a credible source in the field. It should help capture current discourse and public sentiment.",
+        "parent_analytic_question": "3ea3ff40-b278-43d5-a905-463a6a02ae4e"
+      },
+      "created_at": "2025-09-10T05:09:30.106315"
+    },
+    "4df79741-2b24-4973-89a4-7da873af60be": {
+      "id": "4df79741-2b24-4973-89a4-7da873af60be",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "UFO congress hearings perspectives",
+          "screenname": "nasa",
+          "country": "UnitedStates",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-10T05:09:30.106315"
+    },
+    "ef04ecaa-bd55-4e99-8df8-0a11ff92a82a": {
+      "id": "ef04ecaa-bd55-4e99-8df8-0a11ff92a82a",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Reviewing the timeline of 'The Hill' will provide credible articles and reports that highlight reactions and discussions surrounding UFO hearings, allowing for enriching contextual insights on public sentiment.",
+        "parent_analytic_question": "3ea3ff40-b278-43d5-a905-463a6a02ae4e"
+      },
+      "created_at": "2025-09-10T05:09:30.106315"
+    },
+    "a032fa05-ad5c-4581-be6a-3babdf0c8d93": {
+      "id": "a032fa05-ad5c-4581-be6a-3babdf0c8d93",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "query": "TheHill",
+          "screenname": "thehill"
+        }
+      },
+      "created_at": "2025-09-10T05:09:30.106315"
+    },
+    "a1354785-d919-4af1-84ef-6406692e60af": {
+      "id": "a1354785-d919-4af1-84ef-6406692e60af",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: This search aims to find popular discussions around public opinion regarding the UFO hearings, capturing broader sentiments and interests that might not be tied to specific users.",
+        "parent_analytic_question": "3ea3ff40-b278-43d5-a905-463a6a02ae4e"
+      },
+      "created_at": "2025-09-10T05:09:30.106315"
+    },
+    "7b3865a5-b7be-4431-adb9-3e397f3c4f23": {
+      "id": "7b3865a5-b7be-4431-adb9-3e397f3c4f23",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "UFO hearings public opinion",
+          "country": "UnitedStates",
+          "search_type": "Top"
+        }
+      },
+      "created_at": "2025-09-10T05:09:30.106315"
+    },
+    "578fd0b4-82fc-43c2-8163-91e90cb4d397": {
+      "id": "578fd0b4-82fc-43c2-8163-91e90cb4d397",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Searching for the latest tweets mentioning UFO congress hearings will provide real-time insights into the ongoing discourse and perspectives from the general public.",
+        "parent_analytic_question": "3ea3ff40-b278-43d5-a905-463a6a02ae4e"
+      },
+      "created_at": "2025-09-10T05:09:30.106315"
+    },
+    "1721379f-85fd-45ea-b78c-4260129f071f": {
+      "id": "1721379f-85fd-45ea-b78c-4260129f071f",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "UFO congress hearings tweets",
+          "country": "UnitedStates",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-10T05:09:30.106315"
+    }
+  },
+  "edges": [
+    {
+      "id": "4baf976e-51d9-486e-a7fb-197ddd3a40d0",
+      "source_id": "3ea3ff40-b278-43d5-a905-463a6a02ae4e",
+      "target_id": "86df0857-d401-40d7-a135-e22627073687",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:06:33.075126"
+    },
+    {
+      "id": "feef86b4-9a87-4a6f-82fc-cb9b7d3edd0e",
+      "source_id": "86df0857-d401-40d7-a135-e22627073687",
+      "target_id": "ccdf1fa8-09f6-41bd-837e-3e48fab190d7",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:06:33.076126"
+    },
+    {
+      "id": "41c1966d-98dc-4411-be42-85c97834529a",
+      "source_id": "3ea3ff40-b278-43d5-a905-463a6a02ae4e",
+      "target_id": "16924628-ca8c-456c-b846-3380c030ce99",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:06:33.076126"
+    },
+    {
+      "id": "5a5118f4-823c-46cd-a2a7-a677eca6f1f6",
+      "source_id": "16924628-ca8c-456c-b846-3380c030ce99",
+      "target_id": "db1a2e9f-6804-4068-af04-ff2aa6f8e57e",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:06:33.076126"
+    },
+    {
+      "id": "bf4b6432-c4eb-4103-aa25-c326f500dc14",
+      "source_id": "ccdf1fa8-09f6-41bd-837e-3e48fab190d7",
+      "target_id": "6c35fe34-f99d-4b98-840b-1089b8d36904",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.6
+      },
+      "created_at": "2025-09-10T05:06:54.336653"
+    },
+    {
+      "id": "0f14f213-4d4b-4b17-b2dc-083d8a355788",
+      "source_id": "ccdf1fa8-09f6-41bd-837e-3e48fab190d7",
+      "target_id": "d6c53828-6e7b-4fb0-b9a3-1b0e102a1917",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.7
+      },
+      "created_at": "2025-09-10T05:06:54.336653"
+    },
+    {
+      "id": "7fac1b3c-4476-470b-a95e-2a81bd8c4a6d",
+      "source_id": "ccdf1fa8-09f6-41bd-837e-3e48fab190d7",
+      "target_id": "599b1794-4b28-4bb6-ba98-66b108d88725",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.5
+      },
+      "created_at": "2025-09-10T05:06:54.336653"
+    },
+    {
+      "id": "50be06b8-4470-4239-bff4-b6036ab300cb",
+      "source_id": "ccdf1fa8-09f6-41bd-837e-3e48fab190d7",
+      "target_id": "e88ea965-c784-45dc-a471-e161baefa7cd",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.8
+      },
+      "created_at": "2025-09-10T05:06:54.336653"
+    },
+    {
+      "id": "a6c583ee-cfec-49d5-afcb-887c4d7fc35e",
+      "source_id": "ccdf1fa8-09f6-41bd-837e-3e48fab190d7",
+      "target_id": "67eed76f-274d-48ce-8537-1654cb03e07c",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.6
+      },
+      "created_at": "2025-09-10T05:06:54.336653"
+    },
+    {
+      "id": "fcfbc2b4-c148-4449-a44b-ecad1bfdafd7",
+      "source_id": "6c35fe34-f99d-4b98-840b-1089b8d36904",
+      "target_id": "09a3da22-3c85-4199-9d0d-0c8b8f5de343",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T05:07:07.601361"
+      },
+      "created_at": "2025-09-10T05:07:07.601361"
+    },
+    {
+      "id": "ff172365-edeb-4656-b772-2eb937544b45",
+      "source_id": "599b1794-4b28-4bb6-ba98-66b108d88725",
+      "target_id": "09a3da22-3c85-4199-9d0d-0c8b8f5de343",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T05:07:07.601361"
+      },
+      "created_at": "2025-09-10T05:07:07.601361"
+    },
+    {
+      "id": "0bfa8502-ee4b-4062-9a9d-be8d3dad803e",
+      "source_id": "09a3da22-3c85-4199-9d0d-0c8b8f5de343",
+      "target_id": "136cc5c3-fcc4-42f7-a9c5-180181e61116",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "This question emerges due to the noted shift in public perception where entertainment aspects may overshadow serious investigation, potentially leading to skepticism about the true motives behind government transparency efforts.",
+        "priority": 0.8,
+        "created_at": "2025-09-10T05:07:12.101849"
+      },
+      "created_at": "2025-09-10T05:07:12.101849"
+    },
+    {
+      "id": "83eebe32-7ab7-48cc-b5ef-d60caebd377c",
+      "source_id": "09a3da22-3c85-4199-9d0d-0c8b8f5de343",
+      "target_id": "142e3b94-ee04-4447-a254-faefd45eca3f",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "This question arises from the unexpected public engagement described in the insights, highlighting that there are diverse emotional responses that need further exploration to understand their roots.",
+        "priority": 0.7,
+        "created_at": "2025-09-10T05:07:12.101849"
+      },
+      "created_at": "2025-09-10T05:07:12.101849"
+    },
+    {
+      "id": "b7e841b0-bb86-40e9-9001-042fd7a4a470",
+      "source_id": "09a3da22-3c85-4199-9d0d-0c8b8f5de343",
+      "target_id": "b159f4f7-e41b-4586-9a55-f1013a761a24",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "This question highlights a gap in understanding which factors genuinely drive engagement and interest in the hearings, as well as which demographics are most affected.",
+        "priority": 0.9,
+        "created_at": "2025-09-10T05:07:12.101849"
+      },
+      "created_at": "2025-09-10T05:07:12.101849"
+    },
+    {
+      "id": "4c0673db-3dfe-4ddf-bd6e-024239fefdb6",
+      "source_id": "09a3da22-3c85-4199-9d0d-0c8b8f5de343",
+      "target_id": "43c94e77-317b-47cb-b0ac-54a851ad483d",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "This question is prompted by the mention of social media's impact on public interest, suggesting that understanding its role could provide insights into shaping future inquiries and communication strategies.",
+        "priority": 0.85,
+        "created_at": "2025-09-10T05:07:12.101849"
+      },
+      "created_at": "2025-09-10T05:07:12.101849"
+    },
+    {
+      "id": "5759b5b3-58fe-48df-9c46-a491d5409b0b",
+      "source_id": "d6c53828-6e7b-4fb0-b9a3-1b0e102a1917",
+      "target_id": "36b4b68f-7a9b-4746-9201-20b85ac0ce91",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T05:07:20.681144"
+      },
+      "created_at": "2025-09-10T05:07:20.681144"
+    },
+    {
+      "id": "14d31f78-ba1d-462c-bae4-d7a1fbdb097a",
+      "source_id": "599b1794-4b28-4bb6-ba98-66b108d88725",
+      "target_id": "36b4b68f-7a9b-4746-9201-20b85ac0ce91",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T05:07:20.681144"
+      },
+      "created_at": "2025-09-10T05:07:20.681144"
+    },
+    {
+      "id": "c87d9323-fcf4-4094-b09a-761f88929f5f",
+      "source_id": "36b4b68f-7a9b-4746-9201-20b85ac0ce91",
+      "target_id": "56ab3bdd-3dd2-45b7-981a-4bde18f28c23",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "This question emerged because insights highlight a growing interest and demand for transparency on one side, yet identify skepticism about the evidence on the other. Understanding this tension could help navigate public discourse more effectively and shape actions by authorities involved in investigating UAPs.",
+        "priority": 0.9,
+        "created_at": "2025-09-10T05:07:27.613514"
+      },
+      "created_at": "2025-09-10T05:07:27.613514"
+    },
+    {
+      "id": "7b199902-196d-4369-a734-2f48162478d3",
+      "source_id": "36b4b68f-7a9b-4746-9201-20b85ac0ce91",
+      "target_id": "9d01477a-93fa-4159-bf4a-ea168cc4b355",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "This question arises from the insight that there is a public push for transparency amidst a backdrop of skepticism regarding the evidence. Addressing how to balance these demands may inform future congressional hearings and UAP investigations.",
+        "priority": 0.8,
+        "created_at": "2025-09-10T05:07:27.613514"
+      },
+      "created_at": "2025-09-10T05:07:27.613514"
+    },
+    {
+      "id": "b5191931-cc9c-45d4-b1bb-a50bfc9ecd20",
+      "source_id": "36b4b68f-7a9b-4746-9201-20b85ac0ce91",
+      "target_id": "3d444e61-265d-42f9-9e62-b839e2b5b176",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The insights indicate a notable rise in public interest and engagement tied to the hearings. Clarifying the specific factors that influence this rising interest, such as social media dynamics or generational shifts, could enhance understanding of public perceptions of extraterrestrial life.",
+        "priority": 0.7,
+        "created_at": "2025-09-10T05:07:27.613514"
+      },
+      "created_at": "2025-09-10T05:07:27.613514"
+    },
+    {
+      "id": "23e1bc00-8e03-4742-92bc-ab59d3bae4a3",
+      "source_id": "36b4b68f-7a9b-4746-9201-20b85ac0ce91",
+      "target_id": "48d746ec-97c0-4d73-af33-ac75d09cd3f2",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The insights mention a lack of concrete evidence confirming extraterrestrial technology despite heightened interest. This question highlights a significant gap in understanding and requires further investigation into existing data and how it could be interpreted.",
+        "priority": 0.95,
+        "created_at": "2025-09-10T05:07:27.613514"
+      },
+      "created_at": "2025-09-10T05:07:27.613514"
+    },
+    {
+      "id": "e90028ad-8d90-424e-853b-abeb8203f788",
+      "source_id": "36b4b68f-7a9b-4746-9201-20b85ac0ce91",
+      "target_id": "797b0f64-6654-4baf-9c80-c6bae36abf17",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Given that the hearings represent a mix of entertainment and serious discourse, understanding this interplay may reveal deeper societal attitudes toward government transparency and contribute to the broader conversation of trust in institutions.",
+        "priority": 0.6,
+        "created_at": "2025-09-10T05:07:27.613514"
+      },
+      "created_at": "2025-09-10T05:07:27.613514"
+    },
+    {
+      "id": "c8c94d87-9783-4389-a9b2-20eb26c759db",
+      "source_id": "e88ea965-c784-45dc-a471-e161baefa7cd",
+      "target_id": "4cf9617a-8c21-475b-9f5b-fd153ce07cd8",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T05:07:44.460910"
+      },
+      "created_at": "2025-09-10T05:07:44.460910"
+    },
+    {
+      "id": "c73c1015-8083-4102-8981-8dc98de67240",
+      "source_id": "67eed76f-274d-48ce-8537-1654cb03e07c",
+      "target_id": "4cf9617a-8c21-475b-9f5b-fd153ce07cd8",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T05:07:44.460910"
+      },
+      "created_at": "2025-09-10T05:07:44.460910"
+    },
+    {
+      "id": "514b3e87-8e39-471f-9be4-bc39f1395dcf",
+      "source_id": "6c35fe34-f99d-4b98-840b-1089b8d36904",
+      "target_id": "4cf9617a-8c21-475b-9f5b-fd153ce07cd8",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T05:07:44.460910"
+      },
+      "created_at": "2025-09-10T05:07:44.460910"
+    },
+    {
+      "id": "8aa90b1c-7a9a-41aa-acd0-0e20b09013e9",
+      "source_id": "4cf9617a-8c21-475b-9f5b-fd153ce07cd8",
+      "target_id": "bcbac093-22ce-498a-8bc8-e9ecc891e2d9",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "This question arises from the contrasting observations of increased public interest and the significant skepticism voiced on social media, pointing to a divided public opinion that warrants further exploration to understand its implications for future discourse and policymaking around UFOs.",
+        "priority": 0.8,
+        "created_at": "2025-09-10T05:07:50.826291"
+      },
+      "created_at": "2025-09-10T05:07:50.826291"
+    },
+    {
+      "id": "6991ec11-4f51-4267-8319-707e256490cf",
+      "source_id": "4cf9617a-8c21-475b-9f5b-fd153ce07cd8",
+      "target_id": "3c76dd25-caa9-4daa-a685-928513938f1d",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The insights suggest that there is a rising interest in UFOs alongside skepticism. Investigating the underlying factors that lead to this cultural shift could help clarify the motivations behind public engagement with the topic.",
+        "priority": 0.7,
+        "created_at": "2025-09-10T05:07:50.826291"
+      },
+      "created_at": "2025-09-10T05:07:50.826291"
+    },
+    {
+      "id": "3b18f4c3-e55f-4f8f-be5c-90a9afcb56b4",
+      "source_id": "4cf9617a-8c21-475b-9f5b-fd153ce07cd8",
+      "target_id": "d68c30be-06cd-4410-a8c0-4d675c4b2ee2",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The insights mention a trending social media phenomenon yet indicate skepticism among users. This shows a significant influence of social media, which is worth examining to understand its effect on public perceptions of UFOs.",
+        "priority": 0.6,
+        "created_at": "2025-09-10T05:07:50.826291"
+      },
+      "created_at": "2025-09-10T05:07:50.826291"
+    },
+    {
+      "id": "dd9f2156-2679-4d87-bb65-60a0ce8446af",
+      "source_id": "4cf9617a-8c21-475b-9f5b-fd153ce07cd8",
+      "target_id": "cf9bff7a-d2e6-4499-b3b0-a10c40af0188",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The insights indicate a lack of concrete evidence, which presents a gap in knowledge regarding what might be needed to sway public opinion towards acceptance rather than skepticism.",
+        "priority": 0.9,
+        "created_at": "2025-09-10T05:07:50.826291"
+      },
+      "created_at": "2025-09-10T05:07:50.826291"
+    },
+    {
+      "id": "37fb9a64-a37c-48f9-9f1c-6bef354e6180",
+      "source_id": "4cf9617a-8c21-475b-9f5b-fd153ce07cd8",
+      "target_id": "fbf4a68c-f321-4c04-9476-047bde79570e",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Given the insights on calls for transparency and the current lack of conclusive evidence, this question arises about how to balance governmental accountability with public expectations, suggesting a need for policy frameworks.",
+        "priority": 0.85,
+        "created_at": "2025-09-10T05:07:50.826291"
+      },
+      "created_at": "2025-09-10T05:07:50.826291"
+    },
+    {
+      "id": "c22d2fb1-a207-437d-9231-89e95bfd3572",
+      "source_id": "d6c53828-6e7b-4fb0-b9a3-1b0e102a1917",
+      "target_id": "06d0fce5-afbc-46c9-9683-bacf2fc72084",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T05:08:00.801073"
+      },
+      "created_at": "2025-09-10T05:08:00.801073"
+    },
+    {
+      "id": "f3412bc4-d025-4245-8ca4-c4fd6edd4fb1",
+      "source_id": "599b1794-4b28-4bb6-ba98-66b108d88725",
+      "target_id": "06d0fce5-afbc-46c9-9683-bacf2fc72084",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T05:08:00.801073"
+      },
+      "created_at": "2025-09-10T05:08:00.801073"
+    },
+    {
+      "id": "bc46b53e-e2a2-4c93-aecd-95d8202e6321",
+      "source_id": "e88ea965-c784-45dc-a471-e161baefa7cd",
+      "target_id": "06d0fce5-afbc-46c9-9683-bacf2fc72084",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T05:08:00.801073"
+      },
+      "created_at": "2025-09-10T05:08:00.801073"
+    },
+    {
+      "id": "0ed39865-0170-4365-a709-045c7a37ae74",
+      "source_id": "06d0fce5-afbc-46c9-9683-bacf2fc72084",
+      "target_id": "79eeea2a-cf1c-485f-8a87-aafc9dd521cd",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "This question emerged because while there is significant public interest and calls for transparency, there remains a notable lack of concrete evidence confirming extraterrestrial technology, indicating a divide between enthusiasm and skepticism around UFOs.",
+        "priority": 0.9,
+        "created_at": "2025-09-10T05:08:06.130130"
+      },
+      "created_at": "2025-09-10T05:08:06.130130"
+    },
+    {
+      "id": "ecf53e71-1d57-425c-92e7-3ad075d190ec",
+      "source_id": "06d0fce5-afbc-46c9-9683-bacf2fc72084",
+      "target_id": "ba0af73a-9790-442f-b8c0-b6c5f904491b",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "This question arose from the contrasting perspectives presented in the insights, highlighting a tension where personal testimonies from credible sources are met with skepticism from the broader public, suggesting a deeper inquiry into perceptions of credibility.",
+        "priority": 0.8,
+        "created_at": "2025-09-10T05:08:06.130130"
+      },
+      "created_at": "2025-09-10T05:08:06.130130"
+    },
+    {
+      "id": "cf034522-dea6-43dc-980a-8c633e5aec42",
+      "source_id": "06d0fce5-afbc-46c9-9683-bacf2fc72084",
+      "target_id": "39ed643c-207a-4731-88bf-9f852a4a57ff",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Emerging from the insights, this question seeks to understand the dynamics that have led to a cultural shift in UFO discussions, especially in terms of the election-time hearings and publicized military accounts, which may influence policy-making.",
+        "priority": 0.85,
+        "created_at": "2025-09-10T05:08:06.130130"
+      },
+      "created_at": "2025-09-10T05:08:06.130130"
+    },
+    {
+      "id": "388a808a-6bfd-4f2e-8172-8455ad47e6c5",
+      "source_id": "06d0fce5-afbc-46c9-9683-bacf2fc72084",
+      "target_id": "7d251411-4e29-48e4-8a90-628efea4a566",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "This question stems from the insights indicating a growing acceptance of UFO discussions and how this may impact governmental policies and funding, suggesting a need to explore the possible changes in legislative focus.",
+        "priority": 0.75,
+        "created_at": "2025-09-10T05:08:06.130130"
+      },
+      "created_at": "2025-09-10T05:08:06.130130"
+    },
+    {
+      "id": "5ed4ceda-9521-4d90-9470-53f8a8d8cfb9",
+      "source_id": "db1a2e9f-6804-4068-af04-ff2aa6f8e57e",
+      "target_id": "20f45535-c73e-4fe3-adcc-1711568e1222",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 8.0
+      },
+      "created_at": "2025-09-10T05:08:10.096635"
+    },
+    {
+      "id": "fd763d8a-bc56-452e-87e2-74f3fd4d9e87",
+      "source_id": "db1a2e9f-6804-4068-af04-ff2aa6f8e57e",
+      "target_id": "14ac95a0-8b74-4981-bc66-caccfefa1185",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 8.0
+      },
+      "created_at": "2025-09-10T05:08:10.096635"
+    },
+    {
+      "id": "a42ba1e0-aede-4325-a333-6500a63cfa9e",
+      "source_id": "db1a2e9f-6804-4068-af04-ff2aa6f8e57e",
+      "target_id": "0c941681-3274-4a6e-a817-ac072e517b2b",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 8.0
+      },
+      "created_at": "2025-09-10T05:08:10.096635"
+    },
+    {
+      "id": "03d55723-9c33-46d2-8071-5e2c48d8983f",
+      "source_id": "db1a2e9f-6804-4068-af04-ff2aa6f8e57e",
+      "target_id": "e87d0c88-227a-4cde-9319-1790567920fa",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 8.0
+      },
+      "created_at": "2025-09-10T05:08:10.096635"
+    },
+    {
+      "id": "a7294e06-808a-479e-bd8e-c5c121571763",
+      "source_id": "db1a2e9f-6804-4068-af04-ff2aa6f8e57e",
+      "target_id": "91f1b3b0-d654-48da-88a0-35dd4a0c6589",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 8.0
+      },
+      "created_at": "2025-09-10T05:08:10.096635"
+    },
+    {
+      "id": "9098bf11-0154-44d8-9b9e-30f1918cb421",
+      "source_id": "20f45535-c73e-4fe3-adcc-1711568e1222",
+      "target_id": "e83ac8d6-83d0-4b5a-9fc2-229b80ad7a51",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:08:10.096635"
+    },
+    {
+      "id": "c19f58a3-084f-4864-8f5f-f8f2b661c1dc",
+      "source_id": "14ac95a0-8b74-4981-bc66-caccfefa1185",
+      "target_id": "e83ac8d6-83d0-4b5a-9fc2-229b80ad7a51",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:08:10.096635"
+    },
+    {
+      "id": "084936f2-5381-4fde-b926-4f39d0e9db65",
+      "source_id": "0c941681-3274-4a6e-a817-ac072e517b2b",
+      "target_id": "e83ac8d6-83d0-4b5a-9fc2-229b80ad7a51",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:08:10.096635"
+    },
+    {
+      "id": "c9a377df-3e5d-4d34-9e5b-3aba1e267ae3",
+      "source_id": "e87d0c88-227a-4cde-9319-1790567920fa",
+      "target_id": "e83ac8d6-83d0-4b5a-9fc2-229b80ad7a51",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:08:10.096635"
+    },
+    {
+      "id": "d5552381-35dd-4fe1-ada6-96cf312eee94",
+      "source_id": "91f1b3b0-d654-48da-88a0-35dd4a0c6589",
+      "target_id": "e83ac8d6-83d0-4b5a-9fc2-229b80ad7a51",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:08:10.096635"
+    },
+    {
+      "id": "a46bd733-f0d2-49b3-ac79-ec72ce561c73",
+      "source_id": "20f45535-c73e-4fe3-adcc-1711568e1222",
+      "target_id": "b39e17bd-ea3d-46c0-9e50-efcbe110cfb9",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:08:10.096635"
+    },
+    {
+      "id": "94d29ae8-5168-41d3-ae62-ff09c0a0e65c",
+      "source_id": "14ac95a0-8b74-4981-bc66-caccfefa1185",
+      "target_id": "b39e17bd-ea3d-46c0-9e50-efcbe110cfb9",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:08:10.096635"
+    },
+    {
+      "id": "80a6e84f-c320-4d2c-8d0f-05c087c82f18",
+      "source_id": "0c941681-3274-4a6e-a817-ac072e517b2b",
+      "target_id": "b39e17bd-ea3d-46c0-9e50-efcbe110cfb9",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:08:10.096635"
+    },
+    {
+      "id": "b18c6f61-dd12-455e-840f-edc888840469",
+      "source_id": "e87d0c88-227a-4cde-9319-1790567920fa",
+      "target_id": "b39e17bd-ea3d-46c0-9e50-efcbe110cfb9",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:08:10.096635"
+    },
+    {
+      "id": "6b10940e-a48a-45e3-9978-7370e2a2acf5",
+      "source_id": "91f1b3b0-d654-48da-88a0-35dd4a0c6589",
+      "target_id": "b39e17bd-ea3d-46c0-9e50-efcbe110cfb9",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:08:10.096635"
+    },
+    {
+      "id": "d6bf5a11-d575-4af0-b85a-65f11785fd07",
+      "source_id": "20f45535-c73e-4fe3-adcc-1711568e1222",
+      "target_id": "98844b48-d8ee-4792-8e5f-122adca47ab7",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:08:10.096635"
+    },
+    {
+      "id": "c16f3f1b-a9dd-4d3e-8381-8b57f0ec3f55",
+      "source_id": "14ac95a0-8b74-4981-bc66-caccfefa1185",
+      "target_id": "98844b48-d8ee-4792-8e5f-122adca47ab7",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:08:10.096635"
+    },
+    {
+      "id": "46ba56a5-378c-46bf-a707-a26dc81981da",
+      "source_id": "0c941681-3274-4a6e-a817-ac072e517b2b",
+      "target_id": "98844b48-d8ee-4792-8e5f-122adca47ab7",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:08:10.096635"
+    },
+    {
+      "id": "7c4b1be8-44df-4a94-b503-ac11d594f644",
+      "source_id": "e87d0c88-227a-4cde-9319-1790567920fa",
+      "target_id": "98844b48-d8ee-4792-8e5f-122adca47ab7",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:08:10.096635"
+    },
+    {
+      "id": "09e2b606-e13b-4963-8d6a-454a4d557c57",
+      "source_id": "91f1b3b0-d654-48da-88a0-35dd4a0c6589",
+      "target_id": "98844b48-d8ee-4792-8e5f-122adca47ab7",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:08:10.096635"
+    },
+    {
+      "id": "f1aece62-1409-4985-bd9e-4ef790b0fb2a",
+      "source_id": "3ea3ff40-b278-43d5-a905-463a6a02ae4e",
+      "target_id": "86fc8956-c912-41aa-8514-8ca9145e7783",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:08:17.300778"
+    },
+    {
+      "id": "e6ba89bb-fd33-4735-a651-02dcd26651ee",
+      "source_id": "86fc8956-c912-41aa-8514-8ca9145e7783",
+      "target_id": "d7cec950-7a11-4506-952d-0b509050663c",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:08:17.300778"
+    },
+    {
+      "id": "162f281f-50c4-4dc6-bbdb-cbf227a891db",
+      "source_id": "3ea3ff40-b278-43d5-a905-463a6a02ae4e",
+      "target_id": "d171094d-5919-4113-acca-db46d15ba288",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:08:17.300778"
+    },
+    {
+      "id": "69a12ed2-4780-4a3f-8795-5ff73c99a0f2",
+      "source_id": "d171094d-5919-4113-acca-db46d15ba288",
+      "target_id": "44dd7d87-27c6-4312-b565-1c46e21d5b02",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:08:17.300778"
+    },
+    {
+      "id": "5cbd502d-0d60-4244-b3a6-266b07ad5b3e",
+      "source_id": "3ea3ff40-b278-43d5-a905-463a6a02ae4e",
+      "target_id": "79c8e4df-807f-4f86-b4cf-be810c7d89b0",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:08:45.474355"
+    },
+    {
+      "id": "19e8f2c7-09b7-4c31-aa54-ac134a3d4eba",
+      "source_id": "79c8e4df-807f-4f86-b4cf-be810c7d89b0",
+      "target_id": "cb250c41-aa45-4d81-84a8-1067c55f7c35",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:08:45.474355"
+    },
+    {
+      "id": "4b3d8c62-14e9-40bb-87dd-61c037640edb",
+      "source_id": "3ea3ff40-b278-43d5-a905-463a6a02ae4e",
+      "target_id": "a23fb05e-1291-45b5-ba0e-0a59541a7936",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:08:45.474355"
+    },
+    {
+      "id": "e379c3c5-c5a2-48e1-a93c-04e315c9fe7f",
+      "source_id": "a23fb05e-1291-45b5-ba0e-0a59541a7936",
+      "target_id": "d35ee39a-4780-44f4-8275-4728bc93626a",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:08:45.474355"
+    },
+    {
+      "id": "09f65dd6-938b-4abe-b675-dbe39075701b",
+      "source_id": "3ea3ff40-b278-43d5-a905-463a6a02ae4e",
+      "target_id": "4b4498d0-6dfe-41a8-b385-052c96351fb3",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:08:45.474865"
+    },
+    {
+      "id": "0f783813-2dd8-4a3d-8fc6-ee73e89fc018",
+      "source_id": "4b4498d0-6dfe-41a8-b385-052c96351fb3",
+      "target_id": "835916fa-7a25-43a4-87dc-370bffd3f85f",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:08:45.474865"
+    },
+    {
+      "id": "b03caa80-e22f-422f-bb4b-c508cae97bb6",
+      "source_id": "3ea3ff40-b278-43d5-a905-463a6a02ae4e",
+      "target_id": "2e2767c9-cbf8-4cd0-ab0e-ad80913f2ac2",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:09:30.106315"
+    },
+    {
+      "id": "292ad9b8-2712-4424-9d16-829b897d6dad",
+      "source_id": "2e2767c9-cbf8-4cd0-ab0e-ad80913f2ac2",
+      "target_id": "4df79741-2b24-4973-89a4-7da873af60be",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:09:30.106315"
+    },
+    {
+      "id": "9e96e176-3ea9-43a2-bb75-1dad4a5fc6b5",
+      "source_id": "3ea3ff40-b278-43d5-a905-463a6a02ae4e",
+      "target_id": "ef04ecaa-bd55-4e99-8df8-0a11ff92a82a",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:09:30.106315"
+    },
+    {
+      "id": "fb1f260b-bd1c-4e03-9fa1-66673b5b299d",
+      "source_id": "ef04ecaa-bd55-4e99-8df8-0a11ff92a82a",
+      "target_id": "a032fa05-ad5c-4581-be6a-3babdf0c8d93",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:09:30.106315"
+    },
+    {
+      "id": "7b82381e-f96f-400f-8308-32048535c574",
+      "source_id": "3ea3ff40-b278-43d5-a905-463a6a02ae4e",
+      "target_id": "a1354785-d919-4af1-84ef-6406692e60af",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:09:30.106315"
+    },
+    {
+      "id": "62af9c30-1313-4667-8fb3-778aa464655e",
+      "source_id": "a1354785-d919-4af1-84ef-6406692e60af",
+      "target_id": "7b3865a5-b7be-4431-adb9-3e397f3c4f23",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:09:30.106315"
+    },
+    {
+      "id": "a7274f3e-75d5-44e4-93c7-175a31acaa9c",
+      "source_id": "3ea3ff40-b278-43d5-a905-463a6a02ae4e",
+      "target_id": "578fd0b4-82fc-43c2-8163-91e90cb4d397",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:09:30.106315"
+    },
+    {
+      "id": "eaf23f3e-035f-4352-979a-1a639cbc66b5",
+      "source_id": "578fd0b4-82fc-43c2-8163-91e90cb4d397",
+      "target_id": "1721379f-85fd-45ea-b78c-4260129f071f",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:09:30.106315"
+    }
+  ],
+  "analytic_question": "3ea3ff40-b278-43d5-a905-463a6a02ae4e",
+  "created_at": "2025-09-10T05:09:35.089461"
+}

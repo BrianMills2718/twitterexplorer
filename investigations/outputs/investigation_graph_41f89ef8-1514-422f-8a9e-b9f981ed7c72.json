@@ -1,0 +1,212 @@
+{
+  "nodes": {
+    "6a3f7284-9133-4d1c-8455-a83a8547356c": {
+      "id": "6a3f7284-9133-4d1c-8455-a83a8547356c",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "bitcoin price trends 2024",
+        "is_root": true,
+        "investigation_goal": "bitcoin price trends 2024"
+      },
+      "created_at": "2025-09-09T07:45:37.758286"
+    },
+    "be94f746-c223-4134-875f-efe07405bfec": {
+      "id": "be94f746-c223-4134-875f-efe07405bfec",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: This search directly targets real-time discussions, forecasts, and analyses from the general public and various commentators regarding Bitcoin's price trajectory in 2024. Focusing on 'Latest' ensures the most current sentiment and news are captured.",
+        "parent_analytic_question": "6a3f7284-9133-4d1c-8455-a83a8547356c"
+      },
+      "created_at": "2025-09-09T07:45:46.475919"
+    },
+    "f5e1343e-6cea-4f23-85eb-c730f3b55de0": {
+      "id": "f5e1343e-6cea-4f23-85eb-c730f3b55de0",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "bitcoin price trend 2024 OR BTC prediction 2024 OR crypto market outlook 2024",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-09T07:45:46.476918"
+    },
+    "56f00006-2ef5-44de-88ea-bed17dcdd70d": {
+      "id": "56f00006-2ef5-44de-88ea-bed17dcdd70d",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: WatcherGuru is a prominent and active news source focusing on cryptocurrency. Reviewing their recent timeline will provide expert-curated news, market updates, and potentially significant events or analyses that could influence Bitcoin's price trends in 2024, offering a more informed perspective than general search results alone.",
+        "parent_analytic_question": "6a3f7284-9133-4d1c-8455-a83a8547356c"
+      },
+      "created_at": "2025-09-09T07:45:46.476918"
+    },
+    "3f20ed7c-ea2c-451a-98b5-55988c2b0084": {
+      "id": "3f20ed7c-ea2c-451a-98b5-55988c2b0084",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "WatcherGuru"
+        }
+      },
+      "created_at": "2025-09-09T07:45:46.476918"
+    },
+    "797be7c0-5dac-4b70-aef4-5eb0b125ac35": {
+      "id": "797be7c0-5dac-4b70-aef4-5eb0b125ac35",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Checking trends in a major financial market like the United States can indicate if 'Bitcoin' or related financial terms are currently popular. A high trending status could signify significant market movement, news, or public interest that directly impacts price trends, providing a macro-level sentiment indicator.",
+        "parent_analytic_question": "6a3f7284-9133-4d1c-8455-a83a8547356c"
+      },
+      "created_at": "2025-09-09T07:45:46.476918"
+    },
+    "a94a9ffa-c269-4efa-ae84-567fda697ad5": {
+      "id": "a94a9ffa-c269-4efa-ae84-567fda697ad5",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "trends.php",
+        "parameters": {
+          "country": "UnitedStates"
+        }
+      },
+      "created_at": "2025-09-09T07:45:46.476918"
+    },
+    "314025fe-bd51-4071-8136-d29e233ff5b6": {
+      "id": "314025fe-bd51-4071-8136-d29e233ff5b6",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "JUST IN: Cboe to launch continuous Bitcoin and Ethereum futures trading.",
+        "source_info": {
+          "source": "timeline.php",
+          "timestamp": "2025-09-09T07:46:17.174160",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.9,
+          "goal_relevance_score": 0.3333333333333333
+        },
+        "source": "timeline.php",
+        "timestamp": "2025-09-09T07:46:17.174160"
+      },
+      "created_at": "2025-09-09T07:46:17.174160"
+    },
+    "e91a67c9-6193-4461-b927-6ca34c5ba09f": {
+      "id": "e91a67c9-6193-4461-b927-6ca34c5ba09f",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Cboe is set to launch continuous Bitcoin and Ethereum futures trading, which could enhance market liquidity and institutional participation.",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-09T07:46:43.067988"
+    },
+    "7ee95b84-b207-4326-816a-e3d64d333324": {
+      "id": "7ee95b84-b207-4326-816a-e3d64d333324",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Ongoing regulatory movements in the US include an upcoming SEC public crypto roundtable and calls for a crypto 'Clarity Act', indicating potential for clearer market rules.",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-09T07:46:43.067988"
+    },
+    "0b8cd361-2067-4a7c-98fe-741e39575c32": {
+      "id": "0b8cd361-2067-4a7c-98fe-741e39575c32",
+      "node_type": "Insight",
+      "properties": {
+        "content": "A warning from Ledger's CTO about a large-scale crypto hack in the JavaScript ecosystem highlights significant security concerns that could affect market sentiment.",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-09T07:46:43.067988"
+    },
+    "291e03ca-1e8e-423d-bda4-b24b5c5d4c51": {
+      "id": "291e03ca-1e8e-423d-bda4-b24b5c5d4c51",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Michael Saylor's 'Strategy' continues to make substantial Bitcoin purchases ($219 million for 1,955 BTC) and he has hinted at further acquisitions, signaling strong institutional demand.",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-09T07:46:43.067988"
+    },
+    "e8fa93e6-6732-47d3-803c-9f65231cea89": {
+      "id": "e8fa93e6-6732-47d3-803c-9f65231cea89",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Tether clarified it did not sell Bitcoin for Gold, confirming its continued holding of both assets and providing transparency to the market.",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-09T07:46:43.067988"
+    }
+  },
+  "edges": [
+    {
+      "id": "0eff86b0-d758-4dfd-ab0e-b293b6871b7b",
+      "source_id": "6a3f7284-9133-4d1c-8455-a83a8547356c",
+      "target_id": "be94f746-c223-4134-875f-efe07405bfec",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T07:45:46.475919"
+    },
+    {
+      "id": "5bcf76f1-538a-480f-9893-fcb374180c73",
+      "source_id": "be94f746-c223-4134-875f-efe07405bfec",
+      "target_id": "f5e1343e-6cea-4f23-85eb-c730f3b55de0",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T07:45:46.476918"
+    },
+    {
+      "id": "4bf00a71-9656-41bd-adc2-f1ec7e521660",
+      "source_id": "6a3f7284-9133-4d1c-8455-a83a8547356c",
+      "target_id": "56f00006-2ef5-44de-88ea-bed17dcdd70d",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T07:45:46.476918"
+    },
+    {
+      "id": "d6d927a3-9039-49cf-b4a6-773722a3f552",
+      "source_id": "56f00006-2ef5-44de-88ea-bed17dcdd70d",
+      "target_id": "3f20ed7c-ea2c-451a-98b5-55988c2b0084",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T07:45:46.476918"
+    },
+    {
+      "id": "db30f3b6-3068-4c11-8a87-2a8ffdd098e1",
+      "source_id": "6a3f7284-9133-4d1c-8455-a83a8547356c",
+      "target_id": "797be7c0-5dac-4b70-aef4-5eb0b125ac35",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T07:45:46.476918"
+    },
+    {
+      "id": "1081136b-0640-4cd3-86ad-dfb133d0af4e",
+      "source_id": "797be7c0-5dac-4b70-aef4-5eb0b125ac35",
+      "target_id": "a94a9ffa-c269-4efa-ae84-567fda697ad5",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T07:45:46.476918"
+    },
+    {
+      "id": "3a287f64-21b0-41fa-b4d5-1a9df1dcb3b9",
+      "source_id": "3f20ed7c-ea2c-451a-98b5-55988c2b0084",
+      "target_id": "314025fe-bd51-4071-8136-d29e233ff5b6",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.9
+      },
+      "created_at": "2025-09-09T07:46:17.174160"
+    }
+  ],
+  "analytic_question": "6a3f7284-9133-4d1c-8455-a83a8547356c",
+  "created_at": "2025-09-09T07:46:43.072736"
+}

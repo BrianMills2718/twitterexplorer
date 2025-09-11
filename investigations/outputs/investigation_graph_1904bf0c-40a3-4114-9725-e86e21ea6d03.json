@@ -1,0 +1,17 @@
+{
+  "nodes": {
+    "1e5ba9bb-71b5-4629-bf73-36dc8604ca52": {
+      "id": "1e5ba9bb-71b5-4629-bf73-36dc8604ca52",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "AI trends",
+        "is_root": true,
+        "investigation_goal": "AI trends"
+      },
+      "created_at": "2025-09-10T06:53:28.609950"
+    }
+  },
+  "edges": [],
+  "analytic_question": "1e5ba9bb-71b5-4629-bf73-36dc8604ca52",
+  "created_at": "2025-09-10T06:53:42.324738"
+}

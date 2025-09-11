@@ -1,0 +1,17 @@
+{
+  "nodes": {
+    "3657ba10-c475-492f-8269-35e6834231d4": {
+      "id": "3657ba10-c475-492f-8269-35e6834231d4",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "Trump Epstein connections investigation",
+        "is_root": true,
+        "investigation_goal": "Trump Epstein connections investigation"
+      },
+      "created_at": "2025-09-10T07:09:40.961936"
+    }
+  },
+  "edges": [],
+  "analytic_question": "3657ba10-c475-492f-8269-35e6834231d4",
+  "created_at": "2025-09-10T07:09:48.896376"
+}

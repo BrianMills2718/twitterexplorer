@@ -47,6 +47,14 @@ class InsightSynthesis(BaseModel):
     key_evidence: List[str] = Field(description="Supporting evidence snippets")
     investigation_relevance: float = Field(description="0-1 relevance to investigation goal")
 
+class SynthesisDecisionV2(BaseModel):
+    """Enhanced synthesis decision with context awareness"""
+    decision_type: str = Field(description="Decision: CREATE, STRENGTHEN, MERGE, or SKIP")
+    reasoning: str = Field(description="Explanation for the decision")
+    target_insight_id: str = Field(description="ID of existing insight to strengthen/merge (empty string if not applicable)")
+    confidence_adjustment: float = Field(description="New confidence for STRENGTHEN decisions (0.0 if not applicable)")
+    insight: Optional[InsightSynthesis] = Field(description="New insight data (for CREATE decisions)", default=None)
+
 
 class RelevanceAssessment(BaseModel):
     """Goal relevance assessment"""
@@ -227,9 +235,11 @@ class RealTimeInsightSynthesizer:
                 response_format=SynthesisDecision
             )
             
-            self.synthesis_logger.log_llm_call("synthesis_decision", True, response.choices[0].message.parsed)
+            # Check if parsed attribute exists before accessing it
+            parsed_response = getattr(response.choices[0].message, 'parsed', None)
+            self.synthesis_logger.log_llm_call("synthesis_decision", True, parsed_response)
             
-            decision = response.choices[0].message.parsed
+            decision = parsed_response
             return decision.should_synthesize and decision.synthesis_potential > 0.6
             
         except Exception as e:
@@ -324,8 +334,10 @@ class RealTimeInsightSynthesizer:
                 response_format=SemanticGrouping
             )
             
-            self.synthesis_logger.log_llm_call("semantic_grouping", True, response.choices[0].message.parsed)
-            return response.choices[0].message.parsed
+            # Check if parsed attribute exists before accessing it
+            parsed_response = getattr(response.choices[0].message, 'parsed', None)
+            self.synthesis_logger.log_llm_call("semantic_grouping", True, parsed_response)
+            return parsed_response
             
         except Exception as e:
             self.synthesis_logger.log_llm_call("semantic_grouping", False, error=str(e))
@@ -342,8 +354,41 @@ class RealTimeInsightSynthesizer:
                 rationale="Fallback grouping due to LLM error"
             )
         
+    def _build_comprehensive_context(self) -> str:
+        """Build complete investigation context for synthesis decisions"""
+        
+        context_parts = []
+        
+        # Get existing insights with summaries
+        existing_insights = self.graph.get_nodes_by_type("Insight")
+        if existing_insights:
+            context_parts.append("EXISTING INSIGHTS:")
+            for insight in existing_insights[:10]:  # Limit for token management
+                title = insight.properties.get('title', 'Untitled')
+                confidence = insight.properties.get('confidence', 'N/A')
+                content_summary = insight.properties.get('content', '')[:150] + "..."
+                context_parts.append(f"- {title} (confidence: {confidence})")
+                context_parts.append(f"  Summary: {content_summary}")
+        
+        # Get active emergent questions
+        emergent_questions = self.graph.get_nodes_by_type("EmergentQuestion")
+        if emergent_questions:
+            context_parts.append("\nACTIVE EMERGENT QUESTIONS:")
+            for eq in emergent_questions[:8]:  # Limit for tokens
+                question_text = eq.properties.get('text', '')[:100] + "..."
+                context_parts.append(f"- {question_text}")
+        
+        # Investigation progress
+        all_datapoints = self.graph.get_nodes_by_type("DataPoint")
+        context_parts.append(f"\nINVESTIGATION PROGRESS:")
+        context_parts.append(f"- DataPoints collected: {len(all_datapoints)}")
+        context_parts.append(f"- Insights created: {len(existing_insights)}")
+        context_parts.append(f"- Questions emerged: {len(emergent_questions)}")
+        
+        return "\n".join(context_parts)
+
     def _synthesize_group_insight(self, group: List[Node]) -> Optional[InsightSynthesis]:
-        """Generate insight using proper LiteLLM structured output"""
+        """Generate insight using proper LiteLLM structured output with context awareness"""
         
         # Prepare content for LLM
         content_items = []
@@ -355,21 +400,44 @@ class RealTimeInsightSynthesizer:
         if len(content_items) < 2:
             return None
         
+        # Build comprehensive context
+        investigation_context = self._build_comprehensive_context()
+        
         prompt = f"""
         INVESTIGATION: {self.context.analytic_question}
         
-        RELATED FINDINGS:
+        {investigation_context}
+        
+        NEW FINDINGS TO ANALYZE:
         {chr(10).join(f"- {content}" for content in content_items)}
         
-        TASK: Synthesize ONE key insight connecting these findings.
+        DECISION REQUIRED: Choose one action for these new findings:
         
-        Focus on:
-        - Patterns advancing understanding of: "{self.context.analytic_question}"
-        - Contradictions or conflicts between sources
-        - Significant implications for investigation goal
-        - Emerging themes relevant to investigation
+        1. CREATE - Generate completely new insight (different from existing ones)
+        2. STRENGTHEN - Add evidence to strengthen existing similar insight  
+        3. MERGE - Combine with existing insights into broader understanding
+        4. SKIP - Findings don't add significant new understanding
         
-        IGNORE: Content unrelated to "{self.context.analytic_question}"
+        DECISION CRITERIA:
+        - CREATE: New findings reveal genuinely different pattern/theme from existing insights
+        - STRENGTHEN: New findings support/enhance existing insight with additional evidence
+        - MERGE: New findings connect separate existing insights into unified understanding
+        - SKIP: New findings duplicate existing insights or lack investigation relevance
+        
+        FOR CREATE DECISIONS:
+        - title: Descriptive title different from existing insights (5-10 words)  
+        - content: Detailed explanation showing how this differs from existing insights
+        - confidence_level: Rate 0.0-1.0 based on evidence strength
+        - pattern_type: "contradiction", "trend", "connection", "implication"
+        - key_evidence: 2-3 supporting evidence snippets
+        - investigation_relevance: Rate 0.0-1.0 relevance to investigation goal
+        
+        FOR STRENGTHEN DECISIONS:
+        - target_insight_id: ID of existing insight to strengthen
+        - confidence_adjustment: New confidence level 0.0-1.0
+        - reasoning: How new evidence strengthens the existing insight
+        
+        CRITICAL: Avoid creating duplicate insights. If findings are similar to existing insights, use STRENGTHEN or MERGE instead of CREATE.
         """
         
         try:
@@ -377,20 +445,18 @@ class RealTimeInsightSynthesizer:
             response = self.llm.completion(
                 model=model,
                 messages=[{"role": "user", "content": prompt}],
-                response_format=InsightSynthesis  # Structured output
+                response_format=InsightSynthesis  # Temporarily back to working schema
             )
             
-            self.synthesis_logger.log_llm_call("insight_synthesis", True, response.choices[0].message.parsed)
+            # Check if parsed attribute exists before accessing it
+            parsed_response = getattr(response.choices[0].message, 'parsed', None)
+            self.synthesis_logger.log_llm_call("insight_synthesis", True, parsed_response)
             
-            if response.choices[0].message.parsed:
-                insight = response.choices[0].message.parsed
-                
+            if parsed_response:
+                insight = parsed_response
                 # Quality validation
-                if insight.confidence_level < 0.3:
+                if insight.confidence_level < 0.3 or insight.investigation_relevance < 0.5:
                     return None
-                if insight.investigation_relevance < 0.5:
-                    return None
-                    
                 return insight
             else:
                 raise ValueError("LLM structured output parsing failed")
@@ -400,18 +466,69 @@ class RealTimeInsightSynthesizer:
             # Surface errors for debugging (no silent suppression)
             print(f"ERROR in insight synthesis: {e}")
             raise e
+    
+    def _process_synthesis_decision(self, decision: SynthesisDecisionV2, group: List[Node]) -> Optional[InsightSynthesis]:
+        """Process synthesis decision based on context-aware choice"""
+        
+        if decision.decision_type == "CREATE":
+            # Create new insight - validate quality first
+            if decision.insight and decision.insight.confidence_level >= 0.3 and decision.insight.investigation_relevance >= 0.5:
+                return decision.insight
+            else:
+                print(f"CREATE decision rejected - low quality: confidence={decision.insight.confidence_level if decision.insight else 'None'}")
+                return None
+                
+        elif decision.decision_type == "STRENGTHEN":
+            # Strengthen existing insight
+            if decision.target_insight_id and decision.target_insight_id != "" and decision.confidence_adjustment > 0.0:
+                existing_insights = self.graph.get_nodes_by_type("Insight")
+                target_insight = None
+                for insight in existing_insights:
+                    if insight.id == decision.target_insight_id:
+                        target_insight = insight
+                        break
+                
+                if target_insight:
+                    # Update existing insight properties
+                    target_insight.properties['confidence'] = decision.confidence_adjustment
+                    # Add new evidence from group
+                    new_evidence = [dp.properties.get('content', '')[:100] for dp in group]
+                    existing_evidence = target_insight.properties.get('key_evidence', [])
+                    target_insight.properties['key_evidence'] = existing_evidence + new_evidence
+                    
+                    print(f"STRENGTHEN: Enhanced insight {decision.target_insight_id} to confidence {decision.confidence_adjustment}")
+                    return None  # No new insight created, existing one updated
+                else:
+                    print(f"STRENGTHEN decision failed - target insight {decision.target_insight_id} not found")
+                    return None
+                    
+        elif decision.decision_type == "MERGE":
+            print(f"MERGE decision noted but not implemented - reasoning: {decision.reasoning}")
+            # MERGE logic would be complex - for now, log and skip
+            return None
+            
+        elif decision.decision_type == "SKIP":
+            print(f"SKIP decision - reasoning: {decision.reasoning}")
+            return None
+            
+        else:
+            print(f"Unknown decision type: {decision.decision_type}")
+            return None
             
     def _create_insight_node(self, insight: InsightSynthesis, supporting_datapoints: List[Node]) -> Node:
         """Create Insight node in graph with SUPPORTS edges and trigger bridge integration"""
         
+        # Create base insight node (only accepts content and insight_type)
         insight_node = self.graph.create_insight_node(
             content=insight.content,
             insight_type=insight.pattern_type
         )
         
-        # Add additional properties
-        insight_node.properties['confidence'] = insight.confidence_level
+        # Add additional properties to the node after creation
         insight_node.properties['title'] = insight.title
+        insight_node.properties['confidence'] = insight.confidence_level
+        insight_node.properties['investigation_relevance'] = insight.investigation_relevance
+        insight_node.properties['key_evidence'] = insight.key_evidence
         
         # Create SUPPORTS edges from DataPoints to Insight
         for dp in supporting_datapoints:

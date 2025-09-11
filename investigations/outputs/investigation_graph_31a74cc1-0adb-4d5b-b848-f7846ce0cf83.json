@@ -1,0 +1,17 @@
+{
+  "nodes": {
+    "10350686-9df0-43e2-9890-2cc576992cb6": {
+      "id": "10350686-9df0-43e2-9890-2cc576992cb6",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "AI safety controversy",
+        "is_root": true,
+        "investigation_goal": "AI safety controversy"
+      },
+      "created_at": "2025-09-10T07:03:12.623595"
+    }
+  },
+  "edges": [],
+  "analytic_question": "10350686-9df0-43e2-9890-2cc576992cb6",
+  "created_at": "2025-09-10T07:03:14.321209"
+}

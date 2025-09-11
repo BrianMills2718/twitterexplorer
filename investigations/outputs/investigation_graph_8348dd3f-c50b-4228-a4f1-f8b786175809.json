@@ -1,0 +1,1361 @@
+{
+  "nodes": {
+    "dddf5f4c-eb58-4c84-bb4e-a9418e3bf537": {
+      "id": "dddf5f4c-eb58-4c84-bb4e-a9418e3bf537",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "testing enhanced synthesis context awareness system",
+        "is_root": true,
+        "investigation_goal": "testing enhanced synthesis context awareness system"
+      },
+      "created_at": "2025-09-10T05:45:02.945948"
+    },
+    "4c19424e-4955-4100-831d-7b2426653459": {
+      "id": "4c19424e-4955-4100-831d-7b2426653459",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: This search will provide insights into the latest discussions and tweets specifically about the target system, allowing for identification of influential voices or relevant discourse.",
+        "parent_analytic_question": "dddf5f4c-eb58-4c84-bb4e-a9418e3bf537"
+      },
+      "created_at": "2025-09-10T05:45:12.842459"
+    },
+    "600df76c-6da2-4dea-8e20-3b3ee65ceead": {
+      "id": "600df76c-6da2-4dea-8e20-3b3ee65ceead",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "testing enhanced synthesis context awareness system",
+          "search_type": "Top"
+        }
+      },
+      "created_at": "2025-09-10T05:45:12.844025"
+    },
+    "6e1e532a-c1a1-4dbc-bf77-f7186fa10e63": {
+      "id": "6e1e532a-c1a1-4dbc-bf77-f7186fa10e63",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Reviewing Elon Musk's tweets may reveal his stance or insights related to technological advancements and testing around context awareness systems, given his influence in tech-related discussions.",
+        "parent_analytic_question": "dddf5f4c-eb58-4c84-bb4e-a9418e3bf537"
+      },
+      "created_at": "2025-09-10T05:45:12.844025"
+    },
+    "f11802ea-2ff8-4eb2-8eb8-a738f700d779": {
+      "id": "f11802ea-2ff8-4eb2-8eb8-a738f700d779",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "elonmusk"
+        }
+      },
+      "created_at": "2025-09-10T05:45:12.844025"
+    },
+    "5286be22-41f3-400e-86c9-c0bee5f86d41": {
+      "id": "5286be22-41f3-400e-86c9-c0bee5f86d41",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: The trends in the United States may highlight current conversations and topics related to technology and awareness systems, enabling us to contextualize our investigation within the broader societal discussions.",
+        "parent_analytic_question": "dddf5f4c-eb58-4c84-bb4e-a9418e3bf537"
+      },
+      "created_at": "2025-09-10T05:45:12.844025"
+    },
+    "759325ba-1869-470a-a737-f55d21bf1052": {
+      "id": "759325ba-1869-470a-a737-f55d21bf1052",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "trends.php",
+        "parameters": {
+          "country": "UnitedStates"
+        }
+      },
+      "created_at": "2025-09-10T05:45:12.844025"
+    },
+    "bb63e0f5-1022-4e2b-b9b3-dd13b08622d5": {
+      "id": "bb63e0f5-1022-4e2b-b9b3-dd13b08622d5",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Most people are having conversations with AI when they should be engineering experiences with it.\n\nAfter years building, I've discovered the fundamental difference between effective and frustrated AI users: it's not about what you ask, it's about everything else the AI sees.\n\nThis is context engineering, and it's transforming how we collaborate with artificial intelligence.\n\nContext Engineering vs Prompt Engineering:\n- Prompt = \"What you say\" (single instruction)\n- Context = \"Everything else the model sees\" (examples, memory, tools, state, control flow)\n\nThink of it like preparing a workspace for a brilliant colleague. You wouldn't just give them a task, you'd provide tools, background info, examples, and clear success criteria.\n\nThe Four Strategic Elements:\n\n- Instruction Architecture: Precisely structured directives\n- Contextual Scaffolding: Background knowledge that guides responses\n- Input Orchestration: Strategic presentation of information\n\nReal Impact in My Work: I've built \"armies of AI coding agents\" using sophisticated context frameworks. This transformed my development process. I can now explore concepts and validate approaches before involving human expertise.\n\nWhere I once had to carefully ration developer requests, I can now rapidly test ideas and iterate on solutions. My team focuses on complex, creative work that truly requires human insight.\n\nThe Democratization: English has literally become the new programming language. Domain experts can now directly interface with sophisticated AI systems without technical intermediaries.\n\nAdvanced Concepts Emerging:\n- Neural field orchestration (coordinating multiple info sources)\n- Symbolic residue tracking (maintaining interaction awareness)\n- Recursive context patterns (self-improving systems)\n- Resonance optimization (harmonic context tuning)\n\nThe Competitive Reality: Organizations mastering context engineering become active orchestrators of AI toward strategic objectives, rather than passive consumers of AI capabilities.\n\nModern LLMs operate at ~80% accuracy under optimal conditions. Context engineering pushes that higher by providing precise informational frameworks.\n\nKey Insight: The future belongs to those who can engineer context with precision and guide AI toward outcomes that serve human flourishing.\n\nMy latest \"From Lab to Life\" article breaks down proven patterns and strategic frameworks developed through extensive experimentation.\n\nThese aren't theoretical concepts, they're practical methodologies delivering measurable results.\n\nThe fundamental principle: context is king.\n\nThe more thoughtfully we engineer the informational environment around AI interactions, the more precise and transformative the results become.\n\nRead my latest article: https://t.co/IlbyET6Dgl\n\n#ContextEngineering #AI #FromLabToLife #TechStrategy",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T05:45:46.264348",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.7,
+          "goal_relevance_score": 0.4
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T05:45:46.264348"
+      },
+      "created_at": "2025-09-10T05:45:46.264348"
+    },
+    "19c8bd7a-3c96-4e32-92af-ad8d7cef831f": {
+      "id": "19c8bd7a-3c96-4e32-92af-ad8d7cef831f",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Prompt engineering is slowly dying\n\nEnter \ud835\uddd6\ud835\uddfc\ud835\uddfb\ud835\ude01\ud835\uddf2\ud835\ude05\ud835\ude01 \ud835\uddd8\ud835\uddfb\ud835\uddf4\ud835\uddf6\ud835\uddfb\ud835\uddf2\ud835\uddf2\ud835\uddff\ud835\uddf6\ud835\uddfb\ud835\uddf4 \n\n(Maybe not quite dead \u2014 but evolving into something far more powerful)\n\nAs AI grows from simple chatbots to \ud835\uddee\ud835\ude02\ud835\ude01\ud835\uddfc\ud835\uddfb\ud835\uddfc\ud835\uddfa\ud835\uddfc\ud835\ude02\ud835\ude00 \ud835\uddee\ud835\uddf4\ud835\uddf2\ud835\uddfb\ud835\ude01\ud835\ude00, clever prompts alone will not be enough. The real challenge is orchestrating an entire ecosystem of information and tools so the model can actually get things done.\n\nSo, what does context engineering look like in practice?\n\n\ud835\uddd6\ud835\uddfc\ud835\uddff\ud835\uddf2 \ud835\uddf0\ud835\uddfc\ud835\uddfa\ud835\uddfd\ud835\uddfc\ud835\uddfb\ud835\uddf2\ud835\uddfb\ud835\ude01\ud835\ude00:\n\ud83d\udc64 User information: Preferences, history, and personalization data\n\u2692",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 8.0,
+          "timestamp": "2025-09-10T05:46:04.857883"
+        }
+      },
+      "created_at": "2025-09-10T05:46:04.857883"
+    },
+    "ceae0bac-804f-489d-beb5-027e471c9724": {
+      "id": "ceae0bac-804f-489d-beb5-027e471c9724",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "If it\u2019s not in the context, don\u2019t expect it in the answer.\n\nLLMs don\u2019t read your mind; they answer what you show them. Most \u201challucinations\u201d come from missing or messy context.\n\n1-minute context checklist \n\u25feTask + success criteria \n\u25feSchemas + definitions \n\u25feCanonical examples (incl. edge cases) \n\u25feRetrieved facts with sources \n\u25feTool outputs + relevant state\n\nRaise quality fast \n\u25feIndex before you ask: fix chunking, metadata, filters \n\u25fePrefer structure over prose: schemas beat paragraphs \n\u25feDeduplica",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 8.0,
+          "timestamp": "2025-09-10T05:46:04.857883"
+        }
+      },
+      "created_at": "2025-09-10T05:46:04.857883"
+    },
+    "6627888e-c5aa-48ca-a1db-24cf6b47c24f": {
+      "id": "6627888e-c5aa-48ca-a1db-24cf6b47c24f",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Most people are having conversations with AI when they should be engineering experiences with it.\n\nAfter years building, I've discovered the fundamental difference between effective and frustrated AI users: it's not about what you ask, it's about everything else the AI sees.\n\nThis is context engineering, and it's transforming how we collaborate with artificial intelligence.\n\nContext Engineering vs Prompt Engineering:\n- Prompt = \"What you say\" (single instruction)\n- Context = \"Everything else the",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 8.0,
+          "timestamp": "2025-09-10T05:46:04.857883"
+        }
+      },
+      "created_at": "2025-09-10T05:46:04.857883"
+    },
+    "d7ac2e4f-32e2-4734-91f0-9ca479a599ab": {
+      "id": "d7ac2e4f-32e2-4734-91f0-9ca479a599ab",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Prompt engineering is dead. Long live \ud835\uddd6\ud835\uddfc\ud835\uddfb\ud835\ude01\ud835\uddf2\ud835\ude05\ud835\ude01 \ud835\uddd8\ud835\uddfb\ud835\uddf4\ud835\uddf6\ud835\uddfb\ud835\uddf2\ud835\uddf2\ud835\uddff\ud835\uddf6\ud835\uddfb\ud835\uddf4\n\n(Well, not quite dead - but it's definitely evolving into something way more powerful)\n\nMeet \ud835\uddd6\ud835\uddfc\ud835\uddfb\ud835\ude01\ud835\uddf2\ud835\ude05\ud835\ude01 \ud835\uddd8\ud835\uddfb\ud835\uddf4\ud835\uddf6\ud835\uddfb\ud835\uddf2\ud835\uddf2\ud835\uddff\ud835\uddf6\ud835\uddfb\ud835\uddf4 - the art of building dynamic systems that give LLMs exactly what they need to succeed.\n\nAs we move from simple chatbots to complex AI agents, we're realizing that clever prompts aren't enough. What matters is orchestrating an entire ecosystem of information that flows into your LLM.\n\nSo what exactly does that mean?\n\nIt's abou",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 8.0,
+          "timestamp": "2025-09-10T05:46:04.857883"
+        }
+      },
+      "created_at": "2025-09-10T05:46:04.857883"
+    },
+    "a30c4d39-ab04-4a96-b09d-995ddc4f0303": {
+      "id": "a30c4d39-ab04-4a96-b09d-995ddc4f0303",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "A new scoring system for Context7! \ud83c\udf89  \n\n\u25c6 Scores code quality before feeding to LLMs \n\u25c6 Filters out low-quality snippets \n\u25c6 Better context for Cursor, Claude, etc.  \n\nQuick demo \ud83d\udc47 https://t.co/E6LeehGzHJ",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 8.0,
+          "timestamp": "2025-09-10T05:46:04.857883"
+        }
+      },
+      "created_at": "2025-09-10T05:46:04.857883"
+    },
+    "96dc20df-bc34-4e6f-b0b8-684f3520fb55": {
+      "id": "96dc20df-bc34-4e6f-b0b8-684f3520fb55",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Context engineering is evolving and becoming more important than prompt engineering in AI systems.",
+        "insight_type": "evaluation_derived",
+        "title": "Context engineering is evolving and becoming...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.8,
+        "key_evidence": [
+          "Context engineering is evolving and becoming more important than prompt engineering in AI systems."
+        ]
+      },
+      "created_at": "2025-09-10T05:46:04.857883"
+    },
+    "1c7b0b90-3963-444c-a7c7-2805a253c217": {
+      "id": "1c7b0b90-3963-444c-a7c7-2805a253c217",
+      "node_type": "Insight",
+      "properties": {
+        "content": "The quality of responses from AI significantly depends on the provided context, with many errors arising from missing or messy context.",
+        "insight_type": "evaluation_derived",
+        "title": "The quality of responses from AI...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.8,
+        "key_evidence": [
+          "The quality of responses from AI significantly depends on the provided context, with many errors arising from missing or messy context."
+        ]
+      },
+      "created_at": "2025-09-10T05:46:04.857883"
+    },
+    "173590f1-84a2-49b5-81b7-5bfe9537324b": {
+      "id": "173590f1-84a2-49b5-81b7-5bfe9537324b",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Dynamic context engineering can improve the performance of autonomous agents and multi-agent systems.",
+        "insight_type": "evaluation_derived",
+        "title": "Dynamic context engineering can improve the...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.8,
+        "key_evidence": [
+          "Dynamic context engineering can improve the performance of autonomous agents and multi-agent systems."
+        ]
+      },
+      "created_at": "2025-09-10T05:46:04.857883"
+    },
+    "bda7012b-fa57-41a3-8c52-65835d92864c": {
+      "id": "bda7012b-fa57-41a3-8c52-65835d92864c",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: This search targets tweets specifically discussing testing around context awareness systems. Using 'Latest' will help capture real-time discussions that may not have been previously highlighted.",
+        "parent_analytic_question": "dddf5f4c-eb58-4c84-bb4e-a9418e3bf537"
+      },
+      "created_at": "2025-09-10T05:46:13.557269"
+    },
+    "00e70731-67e3-4a7f-aa50-172c9d017fdd": {
+      "id": "00e70731-67e3-4a7f-aa50-172c9d017fdd",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "testing context awareness systems",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-10T05:46:13.557269"
+    },
+    "62ff559e-9d32-4767-a59a-ae1242233a41": {
+      "id": "62ff559e-9d32-4767-a59a-ae1242233a41",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Reviewing Elon Musk's timeline will provide insights into his most recent thoughts and discussions related to technological advancements. Given his influence, any relevant tweets might also hint at the broader dialogue surrounding context awareness systems.",
+        "parent_analytic_question": "dddf5f4c-eb58-4c84-bb4e-a9418e3bf537"
+      },
+      "created_at": "2025-09-10T05:46:13.557269"
+    },
+    "1e0a9393-f327-4891-8b65-1198d5696bd8": {
+      "id": "1e0a9393-f327-4891-8b65-1198d5696bd8",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "elonmusk"
+        }
+      },
+      "created_at": "2025-09-10T05:46:13.557269"
+    },
+    "648524d1-032a-4f10-9b3a-3856dac8f51b": {
+      "id": "648524d1-032a-4f10-9b3a-3856dac8f51b",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "We're thrilled to have Itamar Friedman (@itamar_mar), CEO and Co-founder for @QodoAI, presenting \"Improving Generative AI for Code: Techniques for Context Awareness, Testing, and Multi-Agent Systems\" at #AllThingsOpen! https://t.co/ZePP4v01TF https://t.co/9fPnLtbRFt",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T05:46:32.966947",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.9,
+          "goal_relevance_score": 0.6
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T05:46:32.966947"
+      },
+      "created_at": "2025-09-10T05:46:32.966947"
+    },
+    "c9c7f1ee-ae15-4c93-a4db-0f9a0e518100": {
+      "id": "c9c7f1ee-ae15-4c93-a4db-0f9a0e518100",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "@LangChainAI Grok 3 in LangChain is huge for rapid AI agent dev in Web3. Been testing its integration for DeFi systems - response handling and context awareness are noticeably improved. Curious about memory patterns.",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T05:46:32.966947",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.8,
+          "goal_relevance_score": 0.6
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T05:46:32.966947"
+      },
+      "created_at": "2025-09-10T05:46:32.967947"
+    },
+    "2e9dde82-eb67-482d-8d6a-0e00ed257bf0": {
+      "id": "2e9dde82-eb67-482d-8d6a-0e00ed257bf0",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Using DeepSeek-r1's reasoning with Tavily search in recursive RAG is game-changing. The combo gives you way better context awareness than basic RAG implementations. Found this while testing production systems",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T05:46:32.967947",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.85,
+          "goal_relevance_score": 0.6
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T05:46:32.967947"
+      },
+      "created_at": "2025-09-10T05:46:32.967947"
+    },
+    "431b66d9-1d8a-4f61-8721-b85e25c9f683": {
+      "id": "431b66d9-1d8a-4f61-8721-b85e25c9f683",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "We're thrilled to have Itamar Friedman (@itamar_mar), CEO and Co-founder for @QodoAI, presenting \"Improving Generative AI for Code: Techniques for Context Awareness, Testing, and Multi-Agent Systems\" at #AllThingsOpen! https://t.co/ZePP4v01TF https://t.co/9fPnLtbRFt",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 6.0,
+          "timestamp": "2025-09-10T05:46:57.594437"
+        }
+      },
+      "created_at": "2025-09-10T05:46:57.594437"
+    },
+    "5e89b0a7-73ec-4876-879f-8e1bc162dcdc": {
+      "id": "5e89b0a7-73ec-4876-879f-8e1bc162dcdc",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "@LangChainAI Grok 3 in LangChain is huge for rapid AI agent dev in Web3. Been testing its integration for DeFi systems - response handling and context awareness are noticeably improved. Curious about memory patterns.",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 6.0,
+          "timestamp": "2025-09-10T05:46:57.594437"
+        }
+      },
+      "created_at": "2025-09-10T05:46:57.594437"
+    },
+    "271756f6-5386-4703-8b66-748ef5d69b47": {
+      "id": "271756f6-5386-4703-8b66-748ef5d69b47",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Using DeepSeek-r1's reasoning with Tavily search in recursive RAG is game-changing. The combo gives you way better context awareness than basic RAG implementations. Found this while testing production systems",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 6.0,
+          "timestamp": "2025-09-10T05:46:57.594437"
+        }
+      },
+      "created_at": "2025-09-10T05:46:57.594437"
+    },
+    "cbd11560-b007-421e-a0e2-aa3c50721b52": {
+      "id": "cbd11560-b007-421e-a0e2-aa3c50721b52",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "RT @jawwwn_: Palantir CEO Alex Karp:\n\n\u201cIf we don\u2019t want this country to be what Europe is now\u2026 you have to close the border\u2026\n\n\u201cBoth sides h\u2026",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 6.0,
+          "timestamp": "2025-09-10T05:46:57.594437"
+        }
+      },
+      "created_at": "2025-09-10T05:46:57.594437"
+    },
+    "09e877b4-c6fd-44b1-899f-4efd78e6e2b9": {
+      "id": "09e877b4-c6fd-44b1-899f-4efd78e6e2b9",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "RT @Philosophi_Cat: I\u2019m now seeing boomers on Facebook sharing the Iryna Zarutska story. That\u2019s how you know it\u2019s broken containment.",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 6.0,
+          "timestamp": "2025-09-10T05:46:57.594437"
+        }
+      },
+      "created_at": "2025-09-10T05:46:57.594437"
+    },
+    "11b300ac-053c-420f-9af4-35ac493192d7": {
+      "id": "11b300ac-053c-420f-9af4-35ac493192d7",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Itamar Friedman discusses techniques for improving context awareness in generative AI for code, which could relate to enhanced synthesis systems.",
+        "insight_type": "evaluation_derived",
+        "title": "Itamar Friedman discusses techniques for improving...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.6,
+        "key_evidence": [
+          "Itamar Friedman discusses techniques for improving context awareness in generative AI for code, which could relate to enhanced synthesis systems."
+        ]
+      },
+      "created_at": "2025-09-10T05:46:57.594437"
+    },
+    "a46599fc-2be9-4972-8d6e-3b51a489a8cd": {
+      "id": "a46599fc-2be9-4972-8d6e-3b51a489a8cd",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Grok 3 from LangChain AI shows improvements in response handling and context awareness, relevant for AI agent development.",
+        "insight_type": "evaluation_derived",
+        "title": "Grok 3 from LangChain AI shows...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.6,
+        "key_evidence": [
+          "Grok 3 from LangChain AI shows improvements in response handling and context awareness, relevant for AI agent development."
+        ]
+      },
+      "created_at": "2025-09-10T05:46:57.594437"
+    },
+    "3d6a2ffd-40c3-4775-aa9c-08f3b39281f4": {
+      "id": "3d6a2ffd-40c3-4775-aa9c-08f3b39281f4",
+      "node_type": "Insight",
+      "properties": {
+        "content": "DeepSeek-r1 combined with Tavily search offers enhanced context awareness, valuable for synthesis systems.",
+        "insight_type": "evaluation_derived",
+        "title": "DeepSeek-r1 combined with Tavily search offers...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.6,
+        "key_evidence": [
+          "DeepSeek-r1 combined with Tavily search offers enhanced context awareness, valuable for synthesis systems."
+        ]
+      },
+      "created_at": "2025-09-10T05:46:57.595455"
+    },
+    "ca64a892-b0e8-4134-8ea9-9030d585731c": {
+      "id": "ca64a892-b0e8-4134-8ea9-9030d585731c",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: This search will specifically target the latest discussions around the testing of context awareness systems, helping to uncover relevant tweets that may not have been previously highlighted.",
+        "parent_analytic_question": "dddf5f4c-eb58-4c84-bb4e-a9418e3bf537"
+      },
+      "created_at": "2025-09-10T05:47:08.086042"
+    },
+    "afffb9c5-db94-458e-8a36-542093e6ecd4": {
+      "id": "afffb9c5-db94-458e-8a36-542093e6ecd4",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "testing context awareness systems",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-10T05:47:08.086042"
+    },
+    "8c25d609-ed3d-439c-aed7-c66cfc5de052": {
+      "id": "8c25d609-ed3d-439c-aed7-c66cfc5de052",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: LangChainAI is relevant for its focus on AI advancements and may provide insights or discussions related to enhanced synthesis and context awareness systems, offering a unique perspective to the investigation.",
+        "parent_analytic_question": "dddf5f4c-eb58-4c84-bb4e-a9418e3bf537"
+      },
+      "created_at": "2025-09-10T05:47:08.086042"
+    },
+    "91b43b8c-7539-49e4-afed-b956571bc52f": {
+      "id": "91b43b8c-7539-49e4-afed-b956571bc52f",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "screenname.php",
+        "parameters": {
+          "screenname": "LangChainAI"
+        }
+      },
+      "created_at": "2025-09-10T05:47:08.086042"
+    },
+    "7634f468-866d-46c3-ade9-721d1af1a85a": {
+      "id": "7634f468-866d-46c3-ade9-721d1af1a85a",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Itamar Mar is known for his discussions around technology and AI. Analyzing his timeline may reveal relevant insights into the testing of context awareness systems or related tech advancements.",
+        "parent_analytic_question": "dddf5f4c-eb58-4c84-bb4e-a9418e3bf537"
+      },
+      "created_at": "2025-09-10T05:47:08.086042"
+    },
+    "121d2a7f-c115-4641-a25c-18ebf484c3d4": {
+      "id": "121d2a7f-c115-4641-a25c-18ebf484c3d4",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "itamar_mar"
+        }
+      },
+      "created_at": "2025-09-10T05:47:08.086042"
+    },
+    "92e29d26-6417-44e3-b231-034328525ac5": {
+      "id": "92e29d26-6417-44e3-b231-034328525ac5",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "We're thrilled to have Itamar Friedman (@itamar_mar), CEO and Co-founder for @QodoAI, presenting \"Improving Generative AI for Code: Techniques for Context Awareness, Testing, and Multi-Agent Systems\" at #AllThingsOpen! https://t.co/ZePP4v01TF https://t.co/9fPnLtbRFt",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T05:47:15.641561",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.9,
+          "goal_relevance_score": 0.6
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T05:47:15.641561"
+      },
+      "created_at": "2025-09-10T05:47:15.641561"
+    },
+    "b63cdbee-251f-46fd-b090-b5a10b499c9c": {
+      "id": "b63cdbee-251f-46fd-b090-b5a10b499c9c",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "@LangChainAI Grok 3 in LangChain is huge for rapid AI agent dev in Web3. Been testing its integration for DeFi systems - response handling and context awareness are noticeably improved. Curious about memory patterns.",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T05:47:15.641561",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.85,
+          "goal_relevance_score": 0.6
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T05:47:15.641561"
+      },
+      "created_at": "2025-09-10T05:47:15.641561"
+    },
+    "74e74479-17f9-4aea-9730-8a1e9a5df6e0": {
+      "id": "74e74479-17f9-4aea-9730-8a1e9a5df6e0",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Using DeepSeek-r1's reasoning with Tavily search in recursive RAG is game-changing. The combo gives you way better context awareness than basic RAG implementations. Found this while testing production systems",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T05:47:15.641561",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.95,
+          "goal_relevance_score": 0.6
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T05:47:15.641561"
+      },
+      "created_at": "2025-09-10T05:47:15.641561"
+    },
+    "9d720756-5ce9-45bb-ae59-98193040f696": {
+      "id": "9d720756-5ce9-45bb-ae59-98193040f696",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "We're thrilled to have Itamar Friedman (@itamar_mar), CEO and Co-founder for @QodoAI, presenting \"Improving Generative AI for Code: Techniques for Context Awareness, Testing, and Multi-Agent Systems\" at #AllThingsOpen! https://t.co/ZePP4v01TF https://t.co/9fPnLtbRFt",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 8.0,
+          "timestamp": "2025-09-10T05:47:24.948022"
+        }
+      },
+      "created_at": "2025-09-10T05:47:24.948022"
+    },
+    "9dac1466-9539-4d48-b01a-fd74a3f56ae1": {
+      "id": "9dac1466-9539-4d48-b01a-fd74a3f56ae1",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "@LangChainAI Grok 3 in LangChain is huge for rapid AI agent dev in Web3. Been testing its integration for DeFi systems - response handling and context awareness are noticeably improved. Curious about memory patterns.",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 8.0,
+          "timestamp": "2025-09-10T05:47:24.948022"
+        }
+      },
+      "created_at": "2025-09-10T05:47:24.948022"
+    },
+    "760ee04e-0030-4215-9fd9-a0e02e28eda3": {
+      "id": "760ee04e-0030-4215-9fd9-a0e02e28eda3",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Using DeepSeek-r1's reasoning with Tavily search in recursive RAG is game-changing. The combo gives you way better context awareness than basic RAG implementations. Found this while testing production systems",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 8.0,
+          "timestamp": "2025-09-10T05:47:24.948022"
+        }
+      },
+      "created_at": "2025-09-10T05:47:24.948022"
+    },
+    "28cac0a1-f22e-4a32-963f-cf0c4c7d6b96": {
+      "id": "28cac0a1-f22e-4a32-963f-cf0c4c7d6b96",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Improvements in generative AI for code may enhance context awareness in systems, potentially relevant to the synthesis context awareness.",
+        "insight_type": "evaluation_derived",
+        "title": "Improvements in generative AI for code...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.8,
+        "key_evidence": [
+          "Improvements in generative AI for code may enhance context awareness in systems, potentially relevant to the synthesis context awareness."
+        ]
+      },
+      "created_at": "2025-09-10T05:47:24.948022"
+    },
+    "0b2a1eb6-9f22-4436-8bf0-2d9b3628a558": {
+      "id": "0b2a1eb6-9f22-4436-8bf0-2d9b3628a558",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Testing and integration of context-aware systems in DeFi shows marked improvements based on user experiences, suggesting practical applications.",
+        "insight_type": "evaluation_derived",
+        "title": "Testing and integration of context-aware systems...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.8,
+        "key_evidence": [
+          "Testing and integration of context-aware systems in DeFi shows marked improvements based on user experiences, suggesting practical applications."
+        ]
+      },
+      "created_at": "2025-09-10T05:47:24.948022"
+    },
+    "7b6e36ca-82fd-4446-88e7-e15c6cc910e5": {
+      "id": "7b6e36ca-82fd-4446-88e7-e15c6cc910e5",
+      "node_type": "Insight",
+      "properties": {
+        "content": "DeepSeek-r1's combination with Tavily search indicates a step forward in context awareness capabilities, especially compared to basic methods.",
+        "insight_type": "evaluation_derived",
+        "title": "DeepSeek-r1's combination with Tavily search indicates...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.8,
+        "key_evidence": [
+          "DeepSeek-r1's combination with Tavily search indicates a step forward in context awareness capabilities, especially compared to basic methods."
+        ]
+      },
+      "created_at": "2025-09-10T05:47:24.948022"
+    }
+  },
+  "edges": [
+    {
+      "id": "e6b175de-960a-4ade-ae00-ba3e875b1cde",
+      "source_id": "dddf5f4c-eb58-4c84-bb4e-a9418e3bf537",
+      "target_id": "4c19424e-4955-4100-831d-7b2426653459",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:45:12.842459"
+    },
+    {
+      "id": "4f5f373c-690a-47dc-85a4-52ce2ff5014a",
+      "source_id": "4c19424e-4955-4100-831d-7b2426653459",
+      "target_id": "600df76c-6da2-4dea-8e20-3b3ee65ceead",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:45:12.844025"
+    },
+    {
+      "id": "81bdf1fe-626c-4367-8ac1-d3e568c4d3ae",
+      "source_id": "dddf5f4c-eb58-4c84-bb4e-a9418e3bf537",
+      "target_id": "6e1e532a-c1a1-4dbc-bf77-f7186fa10e63",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:45:12.844025"
+    },
+    {
+      "id": "747ffbc3-ec0f-4e6a-8622-f3d47c74ef2b",
+      "source_id": "6e1e532a-c1a1-4dbc-bf77-f7186fa10e63",
+      "target_id": "f11802ea-2ff8-4eb2-8eb8-a738f700d779",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:45:12.844025"
+    },
+    {
+      "id": "a7085dcb-6c01-45b3-98a5-fa5582741be4",
+      "source_id": "dddf5f4c-eb58-4c84-bb4e-a9418e3bf537",
+      "target_id": "5286be22-41f3-400e-86c9-c0bee5f86d41",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:45:12.844025"
+    },
+    {
+      "id": "cc1cdd8c-1292-4df6-a954-0a6a13e5d5d1",
+      "source_id": "5286be22-41f3-400e-86c9-c0bee5f86d41",
+      "target_id": "759325ba-1869-470a-a737-f55d21bf1052",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:45:12.844025"
+    },
+    {
+      "id": "979c744b-af16-4085-9528-91eb85938014",
+      "source_id": "600df76c-6da2-4dea-8e20-3b3ee65ceead",
+      "target_id": "bb63e0f5-1022-4e2b-b9b3-dd13b08622d5",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.7
+      },
+      "created_at": "2025-09-10T05:45:46.264348"
+    },
+    {
+      "id": "a5ebae9b-45b1-4cbd-bf76-de3d2ad3de7a",
+      "source_id": "759325ba-1869-470a-a737-f55d21bf1052",
+      "target_id": "19c8bd7a-3c96-4e32-92af-ad8d7cef831f",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 8.0
+      },
+      "created_at": "2025-09-10T05:46:04.857883"
+    },
+    {
+      "id": "37281c75-577d-43d4-b417-85cce07b90a3",
+      "source_id": "759325ba-1869-470a-a737-f55d21bf1052",
+      "target_id": "ceae0bac-804f-489d-beb5-027e471c9724",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 8.0
+      },
+      "created_at": "2025-09-10T05:46:04.857883"
+    },
+    {
+      "id": "94b1e655-df27-44ba-81d4-304f292887cc",
+      "source_id": "759325ba-1869-470a-a737-f55d21bf1052",
+      "target_id": "6627888e-c5aa-48ca-a1db-24cf6b47c24f",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 8.0
+      },
+      "created_at": "2025-09-10T05:46:04.857883"
+    },
+    {
+      "id": "55e2489a-3800-4014-b3a9-91fb1274fadf",
+      "source_id": "759325ba-1869-470a-a737-f55d21bf1052",
+      "target_id": "d7ac2e4f-32e2-4734-91f0-9ca479a599ab",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 8.0
+      },
+      "created_at": "2025-09-10T05:46:04.857883"
+    },
+    {
+      "id": "555e3ff2-7316-467a-938e-ab6e23ac6e3d",
+      "source_id": "759325ba-1869-470a-a737-f55d21bf1052",
+      "target_id": "a30c4d39-ab04-4a96-b09d-995ddc4f0303",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 8.0
+      },
+      "created_at": "2025-09-10T05:46:04.857883"
+    },
+    {
+      "id": "ffca7903-bebf-45f5-b7b2-d76817cf01ac",
+      "source_id": "19c8bd7a-3c96-4e32-92af-ad8d7cef831f",
+      "target_id": "96dc20df-bc34-4e6f-b0b8-684f3520fb55",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:46:04.857883"
+    },
+    {
+      "id": "5054f497-7115-4e8f-9bad-608a2e111afa",
+      "source_id": "ceae0bac-804f-489d-beb5-027e471c9724",
+      "target_id": "96dc20df-bc34-4e6f-b0b8-684f3520fb55",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:46:04.857883"
+    },
+    {
+      "id": "1e4564cd-8847-4ddd-aeed-424e9ef125e9",
+      "source_id": "6627888e-c5aa-48ca-a1db-24cf6b47c24f",
+      "target_id": "96dc20df-bc34-4e6f-b0b8-684f3520fb55",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:46:04.857883"
+    },
+    {
+      "id": "6c96e573-56be-4a14-8c2a-08c02492b14f",
+      "source_id": "d7ac2e4f-32e2-4734-91f0-9ca479a599ab",
+      "target_id": "96dc20df-bc34-4e6f-b0b8-684f3520fb55",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:46:04.857883"
+    },
+    {
+      "id": "a1de8d9a-b9ca-4e6f-9a8a-7903f312dce2",
+      "source_id": "a30c4d39-ab04-4a96-b09d-995ddc4f0303",
+      "target_id": "96dc20df-bc34-4e6f-b0b8-684f3520fb55",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:46:04.857883"
+    },
+    {
+      "id": "7c677284-12b2-41c7-a59f-43d1f04c3230",
+      "source_id": "19c8bd7a-3c96-4e32-92af-ad8d7cef831f",
+      "target_id": "1c7b0b90-3963-444c-a7c7-2805a253c217",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:46:04.857883"
+    },
+    {
+      "id": "3da10212-b02e-4c48-95bb-2a509f3f7a68",
+      "source_id": "ceae0bac-804f-489d-beb5-027e471c9724",
+      "target_id": "1c7b0b90-3963-444c-a7c7-2805a253c217",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:46:04.857883"
+    },
+    {
+      "id": "6a28848a-576a-4890-8b25-12a20ac0c957",
+      "source_id": "6627888e-c5aa-48ca-a1db-24cf6b47c24f",
+      "target_id": "1c7b0b90-3963-444c-a7c7-2805a253c217",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:46:04.857883"
+    },
+    {
+      "id": "439698cf-48c1-4cc1-b686-76d96a813d19",
+      "source_id": "d7ac2e4f-32e2-4734-91f0-9ca479a599ab",
+      "target_id": "1c7b0b90-3963-444c-a7c7-2805a253c217",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:46:04.857883"
+    },
+    {
+      "id": "aa4b53a4-ed47-455b-91b7-c3036237f4a1",
+      "source_id": "a30c4d39-ab04-4a96-b09d-995ddc4f0303",
+      "target_id": "1c7b0b90-3963-444c-a7c7-2805a253c217",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:46:04.857883"
+    },
+    {
+      "id": "6ae9f0f9-8627-438f-aa98-4871f1cb4db4",
+      "source_id": "19c8bd7a-3c96-4e32-92af-ad8d7cef831f",
+      "target_id": "173590f1-84a2-49b5-81b7-5bfe9537324b",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:46:04.857883"
+    },
+    {
+      "id": "30b5d67b-52ba-4868-8123-60d30f6071cd",
+      "source_id": "ceae0bac-804f-489d-beb5-027e471c9724",
+      "target_id": "173590f1-84a2-49b5-81b7-5bfe9537324b",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:46:04.857883"
+    },
+    {
+      "id": "d851b9a8-3b25-4ea2-b761-b9bc1a945d54",
+      "source_id": "6627888e-c5aa-48ca-a1db-24cf6b47c24f",
+      "target_id": "173590f1-84a2-49b5-81b7-5bfe9537324b",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:46:04.857883"
+    },
+    {
+      "id": "411bfcd8-3225-4da9-8b80-d52dd81b0ca9",
+      "source_id": "d7ac2e4f-32e2-4734-91f0-9ca479a599ab",
+      "target_id": "173590f1-84a2-49b5-81b7-5bfe9537324b",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:46:04.857883"
+    },
+    {
+      "id": "3dd97c4f-98b2-4e6c-a1a6-ec43a79d2607",
+      "source_id": "a30c4d39-ab04-4a96-b09d-995ddc4f0303",
+      "target_id": "173590f1-84a2-49b5-81b7-5bfe9537324b",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:46:04.857883"
+    },
+    {
+      "id": "61220325-0c7a-45c9-8e87-3eca6c3bb7fc",
+      "source_id": "dddf5f4c-eb58-4c84-bb4e-a9418e3bf537",
+      "target_id": "bda7012b-fa57-41a3-8c52-65835d92864c",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:46:13.557269"
+    },
+    {
+      "id": "68382a7d-3b2e-431d-a071-65f2d2d5c43f",
+      "source_id": "bda7012b-fa57-41a3-8c52-65835d92864c",
+      "target_id": "00e70731-67e3-4a7f-aa50-172c9d017fdd",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:46:13.557269"
+    },
+    {
+      "id": "b5731640-7cc2-4f7a-9cc0-2bee31cb117a",
+      "source_id": "dddf5f4c-eb58-4c84-bb4e-a9418e3bf537",
+      "target_id": "62ff559e-9d32-4767-a59a-ae1242233a41",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:46:13.557269"
+    },
+    {
+      "id": "0ff920fb-6adc-4a36-b2b6-0bc5e9c9d710",
+      "source_id": "62ff559e-9d32-4767-a59a-ae1242233a41",
+      "target_id": "1e0a9393-f327-4891-8b65-1198d5696bd8",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:46:13.557269"
+    },
+    {
+      "id": "55b9ae64-f767-4d67-9018-e610c5310077",
+      "source_id": "00e70731-67e3-4a7f-aa50-172c9d017fdd",
+      "target_id": "648524d1-032a-4f10-9b3a-3856dac8f51b",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.9
+      },
+      "created_at": "2025-09-10T05:46:32.966947"
+    },
+    {
+      "id": "3c93a8d5-34d2-4c32-a782-f6fb4ca9beca",
+      "source_id": "00e70731-67e3-4a7f-aa50-172c9d017fdd",
+      "target_id": "c9c7f1ee-ae15-4c93-a4db-0f9a0e518100",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.8
+      },
+      "created_at": "2025-09-10T05:46:32.967947"
+    },
+    {
+      "id": "8fc5f120-257a-4905-86e0-a0997de16170",
+      "source_id": "00e70731-67e3-4a7f-aa50-172c9d017fdd",
+      "target_id": "2e9dde82-eb67-482d-8d6a-0e00ed257bf0",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.85
+      },
+      "created_at": "2025-09-10T05:46:32.967947"
+    },
+    {
+      "id": "abeaa269-abf1-494d-988e-57ae9876ca97",
+      "source_id": "1e0a9393-f327-4891-8b65-1198d5696bd8",
+      "target_id": "431b66d9-1d8a-4f61-8721-b85e25c9f683",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 6.0
+      },
+      "created_at": "2025-09-10T05:46:57.594437"
+    },
+    {
+      "id": "7067b643-0fcd-4add-bdb6-83e13d58e6f4",
+      "source_id": "1e0a9393-f327-4891-8b65-1198d5696bd8",
+      "target_id": "5e89b0a7-73ec-4876-879f-8e1bc162dcdc",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 6.0
+      },
+      "created_at": "2025-09-10T05:46:57.594437"
+    },
+    {
+      "id": "0805a4d5-5b47-4dcc-80e3-7e026b6f118a",
+      "source_id": "1e0a9393-f327-4891-8b65-1198d5696bd8",
+      "target_id": "271756f6-5386-4703-8b66-748ef5d69b47",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 6.0
+      },
+      "created_at": "2025-09-10T05:46:57.594437"
+    },
+    {
+      "id": "85b0bf9a-0a1d-47e6-b6f3-36ad2bc7c829",
+      "source_id": "1e0a9393-f327-4891-8b65-1198d5696bd8",
+      "target_id": "cbd11560-b007-421e-a0e2-aa3c50721b52",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 6.0
+      },
+      "created_at": "2025-09-10T05:46:57.594437"
+    },
+    {
+      "id": "8e303bf3-888f-4aaa-b8f4-77450ffd8481",
+      "source_id": "1e0a9393-f327-4891-8b65-1198d5696bd8",
+      "target_id": "09e877b4-c6fd-44b1-899f-4efd78e6e2b9",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 6.0
+      },
+      "created_at": "2025-09-10T05:46:57.594437"
+    },
+    {
+      "id": "4d248562-3d12-467e-a629-a4608a3d3edf",
+      "source_id": "431b66d9-1d8a-4f61-8721-b85e25c9f683",
+      "target_id": "11b300ac-053c-420f-9af4-35ac493192d7",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:46:57.594437"
+    },
+    {
+      "id": "a815cd1c-38d3-400e-a1fb-67db18706912",
+      "source_id": "5e89b0a7-73ec-4876-879f-8e1bc162dcdc",
+      "target_id": "11b300ac-053c-420f-9af4-35ac493192d7",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:46:57.594437"
+    },
+    {
+      "id": "d6c40dbf-6967-4dcc-81af-1b82eac205fb",
+      "source_id": "271756f6-5386-4703-8b66-748ef5d69b47",
+      "target_id": "11b300ac-053c-420f-9af4-35ac493192d7",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:46:57.594437"
+    },
+    {
+      "id": "dd6b714e-d233-4057-a82d-7a0dab0830cb",
+      "source_id": "cbd11560-b007-421e-a0e2-aa3c50721b52",
+      "target_id": "11b300ac-053c-420f-9af4-35ac493192d7",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:46:57.594437"
+    },
+    {
+      "id": "eca920dd-b722-4b03-9ba2-a0044e9826ee",
+      "source_id": "09e877b4-c6fd-44b1-899f-4efd78e6e2b9",
+      "target_id": "11b300ac-053c-420f-9af4-35ac493192d7",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:46:57.594437"
+    },
+    {
+      "id": "f2c51e58-f96c-4c09-802e-1c46f746e8e5",
+      "source_id": "431b66d9-1d8a-4f61-8721-b85e25c9f683",
+      "target_id": "a46599fc-2be9-4972-8d6e-3b51a489a8cd",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:46:57.594437"
+    },
+    {
+      "id": "b99b90be-1efd-4292-b7c7-c92b1030d40a",
+      "source_id": "5e89b0a7-73ec-4876-879f-8e1bc162dcdc",
+      "target_id": "a46599fc-2be9-4972-8d6e-3b51a489a8cd",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:46:57.594437"
+    },
+    {
+      "id": "97a1dfd5-15ea-4a88-a23c-702403fb3fd7",
+      "source_id": "271756f6-5386-4703-8b66-748ef5d69b47",
+      "target_id": "a46599fc-2be9-4972-8d6e-3b51a489a8cd",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:46:57.594437"
+    },
+    {
+      "id": "77291dd2-84ed-4388-84e7-0aa0486b32f0",
+      "source_id": "cbd11560-b007-421e-a0e2-aa3c50721b52",
+      "target_id": "a46599fc-2be9-4972-8d6e-3b51a489a8cd",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:46:57.594437"
+    },
+    {
+      "id": "0b794a3d-dbd0-4c37-a9a8-8110f5d83328",
+      "source_id": "09e877b4-c6fd-44b1-899f-4efd78e6e2b9",
+      "target_id": "a46599fc-2be9-4972-8d6e-3b51a489a8cd",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:46:57.594437"
+    },
+    {
+      "id": "064fae29-ee73-4886-b5aa-6aa67cbe5e0c",
+      "source_id": "431b66d9-1d8a-4f61-8721-b85e25c9f683",
+      "target_id": "3d6a2ffd-40c3-4775-aa9c-08f3b39281f4",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:46:57.595455"
+    },
+    {
+      "id": "cf177181-31ba-407d-8a32-e5fe3afc5cde",
+      "source_id": "5e89b0a7-73ec-4876-879f-8e1bc162dcdc",
+      "target_id": "3d6a2ffd-40c3-4775-aa9c-08f3b39281f4",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:46:57.595455"
+    },
+    {
+      "id": "1b0c0c39-5a17-45b8-8169-3277f5ade9e9",
+      "source_id": "271756f6-5386-4703-8b66-748ef5d69b47",
+      "target_id": "3d6a2ffd-40c3-4775-aa9c-08f3b39281f4",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:46:57.595455"
+    },
+    {
+      "id": "b284523c-63e3-4f08-87b2-1e6faaa88c2c",
+      "source_id": "cbd11560-b007-421e-a0e2-aa3c50721b52",
+      "target_id": "3d6a2ffd-40c3-4775-aa9c-08f3b39281f4",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:46:57.595455"
+    },
+    {
+      "id": "e586028b-588b-41b5-b647-05977074a1a2",
+      "source_id": "09e877b4-c6fd-44b1-899f-4efd78e6e2b9",
+      "target_id": "3d6a2ffd-40c3-4775-aa9c-08f3b39281f4",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:46:57.595455"
+    },
+    {
+      "id": "9e396b2e-90c9-4a0f-b1cc-8a180f6ac83e",
+      "source_id": "dddf5f4c-eb58-4c84-bb4e-a9418e3bf537",
+      "target_id": "ca64a892-b0e8-4134-8ea9-9030d585731c",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:47:08.086042"
+    },
+    {
+      "id": "29755b51-5287-4ec9-94fc-be856d3fc9ff",
+      "source_id": "ca64a892-b0e8-4134-8ea9-9030d585731c",
+      "target_id": "afffb9c5-db94-458e-8a36-542093e6ecd4",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:47:08.086042"
+    },
+    {
+      "id": "494d9771-226f-4971-bdb3-cbf7c8e81a55",
+      "source_id": "dddf5f4c-eb58-4c84-bb4e-a9418e3bf537",
+      "target_id": "8c25d609-ed3d-439c-aed7-c66cfc5de052",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:47:08.086042"
+    },
+    {
+      "id": "917e48f6-84ba-4239-8207-ddf8425e37b3",
+      "source_id": "8c25d609-ed3d-439c-aed7-c66cfc5de052",
+      "target_id": "91b43b8c-7539-49e4-afed-b956571bc52f",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:47:08.086042"
+    },
+    {
+      "id": "d0b0f8cd-1479-4847-af6c-ea687b63c26d",
+      "source_id": "dddf5f4c-eb58-4c84-bb4e-a9418e3bf537",
+      "target_id": "7634f468-866d-46c3-ade9-721d1af1a85a",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:47:08.086042"
+    },
+    {
+      "id": "7764184a-e641-4023-b88e-6c0196d78d8b",
+      "source_id": "7634f468-866d-46c3-ade9-721d1af1a85a",
+      "target_id": "121d2a7f-c115-4641-a25c-18ebf484c3d4",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:47:08.086042"
+    },
+    {
+      "id": "30930b8f-5b7f-4d2d-8ac8-45796f06494f",
+      "source_id": "00e70731-67e3-4a7f-aa50-172c9d017fdd",
+      "target_id": "92e29d26-6417-44e3-b231-034328525ac5",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.9
+      },
+      "created_at": "2025-09-10T05:47:15.641561"
+    },
+    {
+      "id": "c9398a6f-6e63-4eb8-933f-8d9ecbd4c61a",
+      "source_id": "00e70731-67e3-4a7f-aa50-172c9d017fdd",
+      "target_id": "b63cdbee-251f-46fd-b090-b5a10b499c9c",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.85
+      },
+      "created_at": "2025-09-10T05:47:15.641561"
+    },
+    {
+      "id": "5ceefda3-d4fe-413d-b01b-8f4ab72458f7",
+      "source_id": "00e70731-67e3-4a7f-aa50-172c9d017fdd",
+      "target_id": "74e74479-17f9-4aea-9730-8a1e9a5df6e0",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.95
+      },
+      "created_at": "2025-09-10T05:47:15.641561"
+    },
+    {
+      "id": "47f5d5c6-9c6a-4ad7-82bb-e1115b72a980",
+      "source_id": "121d2a7f-c115-4641-a25c-18ebf484c3d4",
+      "target_id": "9d720756-5ce9-45bb-ae59-98193040f696",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 8.0
+      },
+      "created_at": "2025-09-10T05:47:24.948022"
+    },
+    {
+      "id": "7efc7428-c9eb-4fc7-9d7c-15627a91b797",
+      "source_id": "121d2a7f-c115-4641-a25c-18ebf484c3d4",
+      "target_id": "9dac1466-9539-4d48-b01a-fd74a3f56ae1",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 8.0
+      },
+      "created_at": "2025-09-10T05:47:24.948022"
+    },
+    {
+      "id": "789f9afc-d67e-485e-b2de-7ebc7daccc25",
+      "source_id": "121d2a7f-c115-4641-a25c-18ebf484c3d4",
+      "target_id": "760ee04e-0030-4215-9fd9-a0e02e28eda3",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 8.0
+      },
+      "created_at": "2025-09-10T05:47:24.948022"
+    },
+    {
+      "id": "6ead5267-8263-4a29-b2ce-c3b6e26f90b2",
+      "source_id": "9d720756-5ce9-45bb-ae59-98193040f696",
+      "target_id": "28cac0a1-f22e-4a32-963f-cf0c4c7d6b96",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:47:24.948022"
+    },
+    {
+      "id": "99259a96-5cdc-4c82-a499-5f84eda2f540",
+      "source_id": "9dac1466-9539-4d48-b01a-fd74a3f56ae1",
+      "target_id": "28cac0a1-f22e-4a32-963f-cf0c4c7d6b96",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:47:24.948022"
+    },
+    {
+      "id": "651308ae-0642-4391-afd9-9dc32ed00092",
+      "source_id": "760ee04e-0030-4215-9fd9-a0e02e28eda3",
+      "target_id": "28cac0a1-f22e-4a32-963f-cf0c4c7d6b96",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:47:24.948022"
+    },
+    {
+      "id": "ee074f2a-6d89-431d-91f1-fdb9ef58ad7e",
+      "source_id": "9d720756-5ce9-45bb-ae59-98193040f696",
+      "target_id": "0b2a1eb6-9f22-4436-8bf0-2d9b3628a558",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:47:24.948022"
+    },
+    {
+      "id": "07b42a5a-81fe-4fb4-917f-16c3c2e1f53a",
+      "source_id": "9dac1466-9539-4d48-b01a-fd74a3f56ae1",
+      "target_id": "0b2a1eb6-9f22-4436-8bf0-2d9b3628a558",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:47:24.948022"
+    },
+    {
+      "id": "921cea7a-1c94-4026-a21e-8a2487ffa923",
+      "source_id": "760ee04e-0030-4215-9fd9-a0e02e28eda3",
+      "target_id": "0b2a1eb6-9f22-4436-8bf0-2d9b3628a558",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:47:24.948022"
+    },
+    {
+      "id": "a66b2e18-e860-4555-8cb6-1719f93c1c9f",
+      "source_id": "9d720756-5ce9-45bb-ae59-98193040f696",
+      "target_id": "7b6e36ca-82fd-4446-88e7-e15c6cc910e5",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:47:24.948022"
+    },
+    {
+      "id": "4b43f44d-cd6a-4912-ae09-55abae691721",
+      "source_id": "9dac1466-9539-4d48-b01a-fd74a3f56ae1",
+      "target_id": "7b6e36ca-82fd-4446-88e7-e15c6cc910e5",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:47:24.948022"
+    },
+    {
+      "id": "ae200324-4604-4d19-9130-a610999df52a",
+      "source_id": "760ee04e-0030-4215-9fd9-a0e02e28eda3",
+      "target_id": "7b6e36ca-82fd-4446-88e7-e15c6cc910e5",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:47:24.948022"
+    }
+  ],
+  "analytic_question": "dddf5f4c-eb58-4c84-bb4e-a9418e3bf537",
+  "created_at": "2025-09-10T05:47:24.960165"
+}

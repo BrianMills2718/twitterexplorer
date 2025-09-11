@@ -1,0 +1,89 @@
+{
+  "session_metadata": {
+    "session_id": "03df12a3-ce57-495a-80a3-26d6f967343a",
+    "start_time": "2025-09-10T15:48:58.372165+00:00",
+    "end_time": "2025-09-10T15:58:43.712332+00:00",
+    "duration_seconds": 585.339655,
+    "user_query": "test error handling and retry logic"
+  },
+  "configuration": {
+    "max_searches": 2,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.6,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "model_provider": "openai",
+    "pages_per_search": 3,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true,
+    "enforce_endpoint_diversity": false,
+    "max_endpoint_repeats": 5,
+    "diversity_threshold": 0.3
+  },
+  "performance_metrics": {
+    "total_searches": 2,
+    "total_rounds": 1,
+    "total_results_found": 120,
+    "satisfaction_score": 0.37088235294117644,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.4,
+      "source_diversity": 0.2,
+      "evidence_quality": 0.7470588235294116,
+      "claim_specificity": 0.29411764705882354,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Reached maximum search limit (2)"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [],
+      "moderately_effective": [
+        {
+          "search_id": 1,
+          "query": "error handling retry logic",
+          "results": 60,
+          "effectiveness": 7.0
+        },
+        {
+          "search_id": 2,
+          "query": "exponential backoff",
+          "results": 60,
+          "effectiveness": 7.0
+        }
+      ],
+      "low_effectiveness": [],
+      "ineffective": []
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "Graph Strategy: We currently have no data on how error-handling and retry discussions appear on Twitter, who the authoritative sources are, or what developer communities are saying. The next round should (1) discover recent and high-quality tweets that explicitly discuss \"error handling\" and \"retry\" patterns (to test real-world examples and edge cases), (2) surface authoritative corporate/dev accounts that publish guidance or tooling (to evaluate recommended retry strategies), and (3) map the developer network around those accounts to find additional signals, test cases, and reproducible examples. Using multiple endpoints (search + timeline + profile + followers) ensures complementary views: content discovery, source credibility, and network seeding for deeper exploration.",
+        "avg_effectiveness": 7.0
+      }
+    ],
+    "dead_ends": [],
+    "promising_leads": [
+      "error handling retry logic",
+      "exponential backoff"
+    ]
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Graph Strategy: We currently have no data on how error-handling and retry discussions appear on Twitter, who the authoritative sources are, or what developer communities are saying. The next round should (1) discover recent and high-quality tweets that explicitly discuss \"error handling\" and \"retry\" patterns (to test real-world examples and edge cases), (2) surface authoritative corporate/dev accounts that publish guidance or tooling (to evaluate recommended retry strategies), and (3) map the developer network around those accounts to find additional signals, test cases, and reproducible examples. Using multiple endpoints (search + timeline + profile + followers) ensures complementary views: content discovery, source credibility, and network seeding for deeper exploration.",
+      "searches_count": 2,
+      "total_results": 120,
+      "effectiveness": 7.0,
+      "insights": [
+        "Multiple results explicitly mention retry logic and error handling patterns (exponential backoff, retry counts, retryDelay) — e.g. a code snippet showing built-in exponential backoff with retries and delay.",
+        "Centralization is a common recommendation: use interceptors/middleware to implement global retry, token-refresh, logging, and headers rather than ad-hoc per-call logic.",
+        "Operational patterns appear across results: dead letter queues, admin alerts, idempotency, and retry/fallback strategies for failed jobs or webhooks."
+      ]
+    }
+  ]
+}

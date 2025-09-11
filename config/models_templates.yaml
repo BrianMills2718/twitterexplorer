@@ -15,13 +15,13 @@ cost_optimized:
 speed_optimized:
   default_provider: "openai"
   models:
-    strategic_coordinator: "gpt-4o-mini"
-    finding_evaluator: "gpt-4o-mini"
-    insight_synthesizer: "gpt-4o-mini"
-    emergent_questions: "gpt-4o-mini"
-    cross_reference: "gpt-4o-mini"
-    temporal_analysis: "gpt-4o-mini"
-    fallback_primary: "gpt-3.5-turbo"
+    strategic_coordinator: "gpt-5-mini"
+    finding_evaluator: "gpt-5-mini"
+    insight_synthesizer: "gpt-5-mini"
+    emergent_questions: "gpt-5-mini"
+    cross_reference: "gpt-5-mini"
+    temporal_analysis: "gpt-5-mini"
+    fallback_primary: "gpt-5-mini"
     fallback_secondary: "gpt-3.5-turbo"
 
 quality_optimized:
@@ -33,7 +33,7 @@ quality_optimized:
     emergent_questions: "gemini/gemini-2.5-flash"
     cross_reference: "gpt-4"
     temporal_analysis: "gpt-4"
-    fallback_primary: "gpt-4o-mini"
+    fallback_primary: "gpt-5-mini"
     fallback_secondary: "gpt-3.5-turbo"
 
 balanced:
@@ -43,7 +43,7 @@ balanced:
     finding_evaluator: "gemini/gemini-2.5-flash"
     insight_synthesizer: "gemini/gemini-2.5-flash"
     emergent_questions: "gemini/gemini-2.5-flash"
-    cross_reference: "gpt-4o-mini"
-    temporal_analysis: "gpt-4o-mini"
-    fallback_primary: "gpt-4o-mini"
+    cross_reference: "gpt-5-mini"
+    temporal_analysis: "gpt-5-mini"
+    fallback_primary: "gpt-5-mini"
     fallback_secondary: "gpt-3.5-turbo"

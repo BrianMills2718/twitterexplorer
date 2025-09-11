@@ -1,0 +1,80 @@
+{
+  "session_metadata": {
+    "session_id": "9da72899-4263-4dbd-ba68-ce8c924f698e",
+    "start_time": "2025-09-10T08:27:41.016416+00:00",
+    "end_time": "2025-09-10T08:28:36.064845+00:00",
+    "duration_seconds": 55.048429,
+    "user_query": "verification test"
+  },
+  "configuration": {
+    "max_searches": 1,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.6,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "model_provider": "gemini",
+    "pages_per_search": 3,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true,
+    "enforce_endpoint_diversity": false,
+    "max_endpoint_repeats": 5,
+    "diversity_threshold": 0.3
+  },
+  "performance_metrics": {
+    "total_searches": 1,
+    "total_rounds": 1,
+    "total_results_found": 60,
+    "satisfaction_score": 0.0,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.0,
+      "source_diversity": 0.0,
+      "evidence_quality": 0.0,
+      "claim_specificity": 0.0,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Reached maximum search limit (1)"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [],
+      "moderately_effective": [
+        {
+          "search_id": 1,
+          "query": "\"fact-check verification\" OR \"information testing\" OR \"proof of concept\" OR \"validation process\"",
+          "results": 60,
+          "effectiveness": 5.0
+        }
+      ],
+      "low_effectiveness": [],
+      "ineffective": []
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "Graph Strategy: The investigation is in its initial stages, and the goal 'verification test' is broad. This strategy aims to fill foundational information gaps by exploring how 'verification' and 'testing' are discussed on Twitter, identifying key organizations involved in such processes, and discovering prominent individuals or entities associated with these concepts. This multi-faceted approach ensures a comprehensive initial understanding.",
+        "avg_effectiveness": 5.0
+      }
+    ],
+    "dead_ends": [],
+    "promising_leads": []
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Graph Strategy: The investigation is in its initial stages, and the goal 'verification test' is broad. This strategy aims to fill foundational information gaps by exploring how 'verification' and 'testing' are discussed on Twitter, identifying key organizations involved in such processes, and discovering prominent individuals or entities associated with these concepts. This multi-faceted approach ensures a comprehensive initial understanding.",
+      "searches_count": 1,
+      "total_results": 60,
+      "effectiveness": 5.0,
+      "insights": [
+        "Most results discuss 'Proof of Concept' (PoC), which is an initial verification of an idea's feasibility, often preceding more formal testing or development.",
+        "A PoC can be a live demonstration of a concept's viability, such as for agent-native businesses, AR technology, or digital banking infrastructure.",
+        "The term 'validation process' is directly mentioned in relation to verification, and AI is noted for its potential to optimize such processes."
+      ]
+    }
+  ]
+}

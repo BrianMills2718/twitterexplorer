@@ -1,0 +1,911 @@
+{
+  "nodes": {
+    "443f22c3-1b5f-448e-ad23-b823194dc496": {
+      "id": "443f22c3-1b5f-448e-ad23-b823194dc496",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "artificial intelligence development trends 2024",
+        "is_root": true,
+        "investigation_goal": "artificial intelligence development trends 2024"
+      },
+      "created_at": "2025-09-10T05:49:14.754027"
+    },
+    "6f0312ba-3cce-4b44-9590-bfdd496a7a0c": {
+      "id": "6f0312ba-3cce-4b44-9590-bfdd496a7a0c",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: This search targets the latest top tweets regarding artificial intelligence trends for 2024, allowing us to identify popular and influential discussions on the topic.",
+        "parent_analytic_question": "443f22c3-1b5f-448e-ad23-b823194dc496"
+      },
+      "created_at": "2025-09-10T05:49:26.181649"
+    },
+    "e55aadba-9b5b-4426-8718-0609be95cab5": {
+      "id": "e55aadba-9b5b-4426-8718-0609be95cab5",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "artificial intelligence trends 2024",
+          "search_type": "Top"
+        }
+      },
+      "created_at": "2025-09-10T05:49:26.182650"
+    },
+    "db922d77-9f25-43c8-b68e-0c266720d9a8": {
+      "id": "db922d77-9f25-43c8-b68e-0c266720d9a8",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: By analyzing trending topics related to artificial intelligence in the United States, we can uncover broader conversations and issues currently capturing public and media attention, which is crucial for understanding the direction of AI development.",
+        "parent_analytic_question": "443f22c3-1b5f-448e-ad23-b823194dc496"
+      },
+      "created_at": "2025-09-10T05:49:26.182650"
+    },
+    "d0e1b071-f627-4260-bd1c-5298c64bfb74": {
+      "id": "d0e1b071-f627-4260-bd1c-5298c64bfb74",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "trends.php",
+        "parameters": {
+          "country": "UnitedStates"
+        }
+      },
+      "created_at": "2025-09-10T05:49:26.182650"
+    },
+    "940f2128-a6b6-4f30-8327-68194fb47ba8": {
+      "id": "940f2128-a6b6-4f30-8327-68194fb47ba8",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Elon Musk is a prominent figure in AI discussions. By gathering insights from his recent posts, we can gain detailed perspectives on his thoughts regarding AI developments that may shape trends in 2024.",
+        "parent_analytic_question": "443f22c3-1b5f-448e-ad23-b823194dc496"
+      },
+      "created_at": "2025-09-10T05:49:26.182650"
+    },
+    "5967376b-aa3f-4d5a-aa30-714c5555b994": {
+      "id": "5967376b-aa3f-4d5a-aa30-714c5555b994",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "screenname.php",
+        "parameters": {
+          "screenname": "elonmusk"
+        }
+      },
+      "created_at": "2025-09-10T05:49:26.182650"
+    },
+    "d0c3aad8-c446-413a-b8c8-d61ddc7f1d33": {
+      "id": "d0c3aad8-c446-413a-b8c8-d61ddc7f1d33",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Beyond the Hype: Why Generative AI Is Only One Leaf on the AI Tree \n\nMost organisations are pouring resources into Generative AI, but the AI revolution is far broader, and many are overlooking other powerful technologies already shaping the future.\n\nIn 2025, here\u2019s the bigger picture:\n\nRule-based / Expert Systems / Knowledge-based AI \u2013 Hardcoded, deterministic logic. Status: Long-standing, not new.\n\nAnalytical / Predictive / Descriptive / Prescriptive AI \u2013 Forecasting, analytics, and action recommendations. Status: Widespread, works alongside generative.\n\nGenerative AI / Creative AI / Content AI \u2013 Creates text, images, video, and more. Example: ChatGPT, DALL\u00b7E. Status: Widespread.\n\nNeuro-symbolic AI / Hybrid AI / Reasoning AI \u2013 Combines reasoning, logic, and learning. Example: Legal/scientific AI. Status: Emerging, partially post-generative.\n\nAdaptive AI / Continual Learning AI / Self-Optimising AI \u2013 Continuously self-learns in real time. Example: Process control. Status: Emerging, next wave.\n\nAgentic AI / Autonomous AI / Goal-driven AI / AI Agents \u2013 Autonomous, goal-driven agents. Example: AI nurse, AI customer service. Status: Rapidly emerging, next wave.\n\nMulti-modal AI / Foundation Models / General-purpose AI \u2013 Cross-media AI (text, audio, image, video). Example: All-in-one assistants. Status: Post-generative, growth phase.\n\nFederated AI / Edge AI / Privacy-preserving AI \u2013 Privacy-focused, decentralised learning. Status: Expanding alongside current models.\n\nCausal AI / Cause-and-effect AI / Explainable Causal Modelling \u2013 Understands cause-effect relationships. Status: Advanced prototypes, research stage.\n\nNeuromorphic AI / Brain-inspired AI / Quantum AI \u2013 Brain-inspired or quantum-powered AI. Status: Experimental.\n\nSpeculative AI / Artificial General Intelligence (AGI) / Theory-of-Mind AI / Self-aware AI \u2013 Hypothetical future forms. Status: Still conceptual.\n\nIf your AI roadmap stops at Generative AI, you\u2019re optimising for yesterday\u2019s disruption, not tomorrow\u2019s. The organisations that thrive will be the ones preparing for the full AI spectrum now.\n\n#AI #Innovation #FutureOfWork #ArtificialIntelligence #BusinessStrategy #BeyondGenerativeAI #SukhSandhu",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T05:49:50.958560",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.8,
+          "goal_relevance_score": 0.5
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T05:49:50.958560"
+      },
+      "created_at": "2025-09-10T05:49:50.958560"
+    },
+    "a01691a4-531d-4174-8764-92d4edf5cecf": {
+      "id": "a01691a4-531d-4174-8764-92d4edf5cecf",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "It's been an insane year for AI.\n\n2024 will go down as one of the most revolutionary years in history.\n\n10 massive changes happening around AI already this year:\n\n1. Elon Musk says we may have Artificial General Intelligence by next year and by 2030.\nhttps://t.co/nSf79qEP5y",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T05:49:50.958560",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.5,
+          "goal_relevance_score": 0.5
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T05:49:50.958560"
+      },
+      "created_at": "2025-09-10T05:49:50.958560"
+    },
+    "56d4b961-2cd0-4d78-9f74-6c194506a621": {
+      "id": "56d4b961-2cd0-4d78-9f74-6c194506a621",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Model demand change 2024 to 2025: Google (+49pts), DeepSeek (+53pts) and xAI (+31pts) have achieved massive gains in demand share over the past year\n\n@Google has transitioned from being an AI laggard to an AI leader with a ~2.5x increase in proportion of respondents using or considering the Gemini model series. A key driver of this has been Google making significant gains in intelligence: Gemini 2.5 Pro now sits at #3 in our Artificial Analysis Intelligence Index, compared to significantly lagging behind OpenAI and Anthropic in early 2024.\n\n@deepseek_ai in H1 2024 had only released DeepSeek 67B, a model that saw limited adoption and underperformed Llama 3 70B. DeepSeek first saw some uptake in late 2024 with the releases of their V2 model, and then saw rapid adoption in early 2025 with their V3 and R1 models that have taken them to leadership among open weights models.\n\n@xai released its first model Grok-1 in mid-H1 2024 and has since rapidly climbed to intelligence leadership across all models with successive releases, culminating in last week's launch of Grok 4.\n\nSource: Artificial Analysis AI Adoption Survey H1 2025 (report available on the Artificial Analysis website)",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T05:49:50.958560",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.9,
+          "goal_relevance_score": 0.5
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T05:49:50.958560"
+      },
+      "created_at": "2025-09-10T05:49:50.958560"
+    },
+    "e9a64b16-d3a2-40cb-9ded-563530040569": {
+      "id": "e9a64b16-d3a2-40cb-9ded-563530040569",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "According to PwC's AI Jobs Barometer 2024, jobs that require artificial intelligence skills offer, on average, 25% more remuneration than those that do not. This trend is observed globally and also in Argentina. https://t.co/oNKRrNvAJN",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T05:49:50.958560",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.7,
+          "goal_relevance_score": 0.5
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T05:49:50.958560"
+      },
+      "created_at": "2025-09-10T05:49:50.958560"
+    },
+    "9ca783c5-43ac-4028-baac-82cf44a25c94": {
+      "id": "9ca783c5-43ac-4028-baac-82cf44a25c94",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Beyond the Hype: Why Generative AI Is Only One Leaf on the AI Tree \n\nMost organisations are pouring resources into Generative AI, but the AI revolution is far broader, and many are overlooking other powerful technologies already shaping the future.\n\nIn 2025, here\u2019s the bigger picture:\n\nRule-based / Expert Systems / Knowledge-based AI \u2013 Hardcoded, deterministic logic. Status: Long-standing, not new.\n\nAnalytical / Predictive / Descriptive / Prescriptive AI \u2013 Forecasting, analytics, and action reco",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 8.0,
+          "timestamp": "2025-09-10T05:50:42.985990"
+        }
+      },
+      "created_at": "2025-09-10T05:50:42.985990"
+    },
+    "010d2bc0-e788-4ccd-a96c-d3b982c29fda": {
+      "id": "010d2bc0-e788-4ccd-a96c-d3b982c29fda",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Top five technology predictions of 2024 ...\n\n1\ufe0f\u20e3 #GenerativeAI\n2\ufe0f\u20e3 #NextGenerationAI\n3\ufe0f\u20e3 #Cybersecurity\n4\ufe0f\u20e3 #Misinformation\n5\ufe0f\u20e3 #RemoteHealthcare / #MonitoringSensors\n\n... were tested in 2025\n\nSee which predictions were a hit or a miss: https://t.co/UJ3dKlSgTV https://t.co/ARjgYKwIde",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 8.0,
+          "timestamp": "2025-09-10T05:50:42.985990"
+        }
+      },
+      "created_at": "2025-09-10T05:50:42.985990"
+    },
+    "767c373e-1a88-49fa-a092-5c4aec3f5c31": {
+      "id": "767c373e-1a88-49fa-a092-5c4aec3f5c31",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "How do we know when it\u2019s AGI?\n\nOpenAI Ex-Researcher Daniel Kokotajlo says,\n\n\u00bb by 2025\u20132028, AI systems at OpenAI, Anthropic, or DeepMind will autonomously handle research\n\n\u00bb these systems could outperform human researchers, speeding up the creation of more efficient, capable, and safer AI systems, without direct human involvement",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 8.0,
+          "timestamp": "2025-09-10T05:50:42.985990"
+        }
+      },
+      "created_at": "2025-09-10T05:50:42.985990"
+    },
+    "0a4b2c56-e12a-4a3b-82f8-39dd75683b65": {
+      "id": "0a4b2c56-e12a-4a3b-82f8-39dd75683b65",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "It's been an insane year for AI.\n\n2024 will go down as one of the most revolutionary years in history.\n\n10 massive changes happening around AI already this year:\n\n1. Elon Musk says we may have Artificial General Intelligence by next year and by 2030.\nhttps://t.co/nSf79qEP5y",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 8.0,
+          "timestamp": "2025-09-10T05:50:42.985990"
+        }
+      },
+      "created_at": "2025-09-10T05:50:42.985990"
+    },
+    "7c869f36-4fc9-4338-954a-32757b489cf1": {
+      "id": "7c869f36-4fc9-4338-954a-32757b489cf1",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Model demand change 2024 to 2025: Google (+49pts), DeepSeek (+53pts) and xAI (+31pts) have achieved massive gains in demand share over the past year\n\n@Google has transitioned from being an AI laggard to an AI leader with a ~2.5x increase in proportion of respondents using or considering the Gemini model series. A key driver of this has been Google making significant gains in intelligence: Gemini 2.5 Pro now sits at #3 in our Artificial Analysis Intelligence Index, compared to significantly laggi",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 8.0,
+          "timestamp": "2025-09-10T05:50:42.985990"
+        }
+      },
+      "created_at": "2025-09-10T05:50:42.985990"
+    },
+    "ce52acc4-5d7d-4d22-b84d-f2cdae0e4dc6": {
+      "id": "ce52acc4-5d7d-4d22-b84d-f2cdae0e4dc6",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Generative AI is currently a major focus but there are broader developments in AI that require attention.",
+        "insight_type": "evaluation_derived",
+        "title": "Generative AI is currently a major...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.8,
+        "key_evidence": [
+          "Generative AI is currently a major focus but there are broader developments in AI that require attention."
+        ]
+      },
+      "created_at": "2025-09-10T05:50:42.985990"
+    },
+    "599beaad-d5ce-46fa-a8d2-f3f6a4b13781": {
+      "id": "599beaad-d5ce-46fa-a8d2-f3f6a4b13781",
+      "node_type": "Insight",
+      "properties": {
+        "content": "The growth in AI companion technologies is notable, indicating a shift towards more personalized AI applications.",
+        "insight_type": "evaluation_derived",
+        "title": "The growth in AI companion technologies...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.8,
+        "key_evidence": [
+          "The growth in AI companion technologies is notable, indicating a shift towards more personalized AI applications."
+        ]
+      },
+      "created_at": "2025-09-10T05:50:42.986992"
+    },
+    "330e6143-b7c9-4919-8301-30bee66458d7": {
+      "id": "330e6143-b7c9-4919-8301-30bee66458d7",
+      "node_type": "Insight",
+      "properties": {
+        "content": "AI skills are increasingly valuable in the job market, offering higher remuneration, which suggests a growing need for AI expertise in various fields.",
+        "insight_type": "evaluation_derived",
+        "title": "AI skills are increasingly valuable in...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.8,
+        "key_evidence": [
+          "AI skills are increasingly valuable in the job market, offering higher remuneration, which suggests a growing need for AI expertise in various fields."
+        ]
+      },
+      "created_at": "2025-09-10T05:50:42.986992"
+    },
+    "7e3a0d56-09b3-4b0a-8dee-a7995e6953e7": {
+      "id": "7e3a0d56-09b3-4b0a-8dee-a7995e6953e7",
+      "node_type": "Insight",
+      "properties": {
+        "content": "AI technologies are expected to incorporate advanced concepts like self-organization, hinting at future capabilities of AI systems.",
+        "insight_type": "evaluation_derived",
+        "title": "AI technologies are expected to incorporate...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.8,
+        "key_evidence": [
+          "AI technologies are expected to incorporate advanced concepts like self-organization, hinting at future capabilities of AI systems."
+        ]
+      },
+      "created_at": "2025-09-10T05:50:42.986992"
+    },
+    "c1a66d9b-1edf-47f6-a662-a7408030089d": {
+      "id": "c1a66d9b-1edf-47f6-a662-a7408030089d",
+      "node_type": "Insight",
+      "properties": {
+        "content": "The diverse range of AI tools emerging in 2024 reflects a trend towards specialization and productivity enhancement in AI applications.",
+        "insight_type": "evaluation_derived",
+        "title": "The diverse range of AI tools...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.8,
+        "key_evidence": [
+          "The diverse range of AI tools emerging in 2024 reflects a trend towards specialization and productivity enhancement in AI applications."
+        ]
+      },
+      "created_at": "2025-09-10T05:50:42.986992"
+    },
+    "d9b1c8b8-6cf2-4445-8b95-700194896502": {
+      "id": "d9b1c8b8-6cf2-4445-8b95-700194896502",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: This search will capture trending AI topics in the United States, allowing us to identify prevalent themes in public discourse about AI development for 2024, which is essential for understanding industry direction.",
+        "parent_analytic_question": "443f22c3-1b5f-448e-ad23-b823194dc496"
+      },
+      "created_at": "2025-09-10T05:50:51.501114"
+    },
+    "7dc55c97-3eaa-463d-83a5-e93015fc9e2c": {
+      "id": "7dc55c97-3eaa-463d-83a5-e93015fc9e2c",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "trends.php",
+        "parameters": {
+          "query": "UnitedStates",
+          "screenname": "xai",
+          "country": "UnitedStates",
+          "rest_id": "null",
+          "rest_ids": "null",
+          "cursor": "null",
+          "search_type": "Vital",
+          "id": "null",
+          "tweet_id": "null",
+          "user": "null",
+          "follows": "null",
+          "list_id": "null"
+        }
+      },
+      "created_at": "2025-09-10T05:50:51.501114"
+    },
+    "a1132442-5fc8-4d18-8827-5810384ed10f": {
+      "id": "a1132442-5fc8-4d18-8827-5810384ed10f",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Reviewing Google\u2019s recent activity will shed light on their latest views and announcements concerning artificial intelligence trends. As a leader in the tech space, their insights can shape public understanding and industry trends.",
+        "parent_analytic_question": "443f22c3-1b5f-448e-ad23-b823194dc496"
+      },
+      "created_at": "2025-09-10T05:50:51.501114"
+    },
+    "06b57fbb-3999-4dac-9d13-711fad656554": {
+      "id": "06b57fbb-3999-4dac-9d13-711fad656554",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "query": "User",
+          "screenname": "Google",
+          "country": "null",
+          "rest_id": "null",
+          "rest_ids": "null",
+          "cursor": "null",
+          "search_type": "null",
+          "id": "null",
+          "tweet_id": "null",
+          "user": "null",
+          "follows": "null",
+          "list_id": "null"
+        }
+      },
+      "created_at": "2025-09-10T05:50:51.501114"
+    },
+    "21d6ef78-f42f-496c-8f56-653f7b0fff71": {
+      "id": "21d6ef78-f42f-496c-8f56-653f7b0fff71",
+      "node_type": "Insight",
+      "properties": {
+        "content": "The posts seem to contain a high volume of data but lack specific insights or articles related to actual trends in AI for 2024.",
+        "insight_type": "evaluation_derived",
+        "title": "The posts seem to contain a...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.2,
+        "key_evidence": [
+          "The posts seem to contain a high volume of data but lack specific insights or articles related to actual trends in AI for 2024."
+        ]
+      },
+      "created_at": "2025-09-10T05:51:23.026516"
+    },
+    "27070d9b-e63e-42cd-8a47-c7a622a28d4d": {
+      "id": "27070d9b-e63e-42cd-8a47-c7a622a28d4d",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Many posts may include advertisements, promotions, or tangential information not directly related to AI development trends.",
+        "insight_type": "evaluation_derived",
+        "title": "Many posts may include advertisements, promotions,...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.2,
+        "key_evidence": [
+          "Many posts may include advertisements, promotions, or tangential information not directly related to AI development trends."
+        ]
+      },
+      "created_at": "2025-09-10T05:51:23.026516"
+    },
+    "9de7261a-b586-4b3f-8c84-3e6bcc2590fe": {
+      "id": "9de7261a-b586-4b3f-8c84-3e6bcc2590fe",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: This search will identify trending topics specifically related to artificial intelligence in the United States, providing insights into popular discussions and guiding future inquiries.",
+        "parent_analytic_question": "443f22c3-1b5f-448e-ad23-b823194dc496"
+      },
+      "created_at": "2025-09-10T05:51:29.038060"
+    },
+    "929556c1-e16d-4ae5-adee-4ac519bf9e19": {
+      "id": "929556c1-e16d-4ae5-adee-4ac519bf9e19",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "trends.php",
+        "parameters": {
+          "query": "UnitedStates",
+          "screenname": "elonmusk",
+          "country": "UnitedStates",
+          "rest_id": "elonmusk",
+          "rest_ids": "elonmusk,google,deepseek_ai"
+        }
+      },
+      "created_at": "2025-09-10T05:51:29.038060"
+    },
+    "e181e3f7-d6bc-4bc1-bdf1-a3746b18e536": {
+      "id": "e181e3f7-d6bc-4bc1-bdf1-a3746b18e536",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Examining the recent posts of @Google will provide critical insights into their latest announcements regarding AI trends and their positioning within the industry.",
+        "parent_analytic_question": "443f22c3-1b5f-448e-ad23-b823194dc496"
+      },
+      "created_at": "2025-09-10T05:51:29.038060"
+    },
+    "ee98e3b0-9e9a-49a2-a2f2-5ca2a2263e4a": {
+      "id": "ee98e3b0-9e9a-49a2-a2f2-5ca2a2263e4a",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "query": "google",
+          "screenname": "DeepseekAI",
+          "country": "UnitedStates",
+          "rest_id": "DeepseekAI",
+          "rest_ids": "google,elonmusk,deepseek_ai"
+        }
+      },
+      "created_at": "2025-09-10T05:51:29.038060"
+    }
+  },
+  "edges": [
+    {
+      "id": "5a85cda6-bcb0-4875-9788-20da2e8c02b6",
+      "source_id": "443f22c3-1b5f-448e-ad23-b823194dc496",
+      "target_id": "6f0312ba-3cce-4b44-9590-bfdd496a7a0c",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:49:26.181649"
+    },
+    {
+      "id": "146edc4f-24c6-4327-91ed-3bffc1709555",
+      "source_id": "6f0312ba-3cce-4b44-9590-bfdd496a7a0c",
+      "target_id": "e55aadba-9b5b-4426-8718-0609be95cab5",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:49:26.182650"
+    },
+    {
+      "id": "73ee5fa7-dcca-486a-a54b-94728595dcac",
+      "source_id": "443f22c3-1b5f-448e-ad23-b823194dc496",
+      "target_id": "db922d77-9f25-43c8-b68e-0c266720d9a8",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:49:26.182650"
+    },
+    {
+      "id": "3c8a1d93-aa88-43a3-8072-6465bb7002cf",
+      "source_id": "db922d77-9f25-43c8-b68e-0c266720d9a8",
+      "target_id": "d0e1b071-f627-4260-bd1c-5298c64bfb74",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:49:26.182650"
+    },
+    {
+      "id": "3596c2b4-cb3f-46a8-863a-a89a372adde0",
+      "source_id": "443f22c3-1b5f-448e-ad23-b823194dc496",
+      "target_id": "940f2128-a6b6-4f30-8327-68194fb47ba8",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:49:26.182650"
+    },
+    {
+      "id": "5b524763-bc3d-47ef-8434-deda129191fc",
+      "source_id": "940f2128-a6b6-4f30-8327-68194fb47ba8",
+      "target_id": "5967376b-aa3f-4d5a-aa30-714c5555b994",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:49:26.182650"
+    },
+    {
+      "id": "0d0cf8f4-e7f5-426f-af4a-e1f141adc28d",
+      "source_id": "e55aadba-9b5b-4426-8718-0609be95cab5",
+      "target_id": "d0c3aad8-c446-413a-b8c8-d61ddc7f1d33",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.8
+      },
+      "created_at": "2025-09-10T05:49:50.958560"
+    },
+    {
+      "id": "64eaa1ed-54cc-425c-89b5-485f321c3e1b",
+      "source_id": "e55aadba-9b5b-4426-8718-0609be95cab5",
+      "target_id": "a01691a4-531d-4174-8764-92d4edf5cecf",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.5
+      },
+      "created_at": "2025-09-10T05:49:50.958560"
+    },
+    {
+      "id": "6a86eec1-0d1c-4ecf-b5b5-60c56c7bbe0f",
+      "source_id": "e55aadba-9b5b-4426-8718-0609be95cab5",
+      "target_id": "56d4b961-2cd0-4d78-9f74-6c194506a621",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.9
+      },
+      "created_at": "2025-09-10T05:49:50.958560"
+    },
+    {
+      "id": "bad062c1-7d7b-427b-bbad-cb03e67fd522",
+      "source_id": "e55aadba-9b5b-4426-8718-0609be95cab5",
+      "target_id": "e9a64b16-d3a2-40cb-9ded-563530040569",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.7
+      },
+      "created_at": "2025-09-10T05:49:50.958560"
+    },
+    {
+      "id": "c6872d99-3fb7-4578-b5ec-22262b6002ff",
+      "source_id": "5967376b-aa3f-4d5a-aa30-714c5555b994",
+      "target_id": "9ca783c5-43ac-4028-baac-82cf44a25c94",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 8.0
+      },
+      "created_at": "2025-09-10T05:50:42.985990"
+    },
+    {
+      "id": "867ee3ec-245e-48b2-8121-b93892f5c30c",
+      "source_id": "5967376b-aa3f-4d5a-aa30-714c5555b994",
+      "target_id": "010d2bc0-e788-4ccd-a96c-d3b982c29fda",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 8.0
+      },
+      "created_at": "2025-09-10T05:50:42.985990"
+    },
+    {
+      "id": "592c815d-b735-4d29-9319-c4866c5a3dac",
+      "source_id": "5967376b-aa3f-4d5a-aa30-714c5555b994",
+      "target_id": "767c373e-1a88-49fa-a092-5c4aec3f5c31",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 8.0
+      },
+      "created_at": "2025-09-10T05:50:42.985990"
+    },
+    {
+      "id": "466c5e95-0f0f-4037-9831-48cf025c8ecc",
+      "source_id": "5967376b-aa3f-4d5a-aa30-714c5555b994",
+      "target_id": "0a4b2c56-e12a-4a3b-82f8-39dd75683b65",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 8.0
+      },
+      "created_at": "2025-09-10T05:50:42.985990"
+    },
+    {
+      "id": "f73fdc2c-8336-45bd-959f-9e6a1232087a",
+      "source_id": "5967376b-aa3f-4d5a-aa30-714c5555b994",
+      "target_id": "7c869f36-4fc9-4338-954a-32757b489cf1",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 8.0
+      },
+      "created_at": "2025-09-10T05:50:42.985990"
+    },
+    {
+      "id": "c67cad25-8664-4bc2-9172-da1b87768e2f",
+      "source_id": "9ca783c5-43ac-4028-baac-82cf44a25c94",
+      "target_id": "ce52acc4-5d7d-4d22-b84d-f2cdae0e4dc6",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:50:42.986992"
+    },
+    {
+      "id": "485fffe4-76f7-4753-94a7-266e22e55aa0",
+      "source_id": "010d2bc0-e788-4ccd-a96c-d3b982c29fda",
+      "target_id": "ce52acc4-5d7d-4d22-b84d-f2cdae0e4dc6",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:50:42.986992"
+    },
+    {
+      "id": "4b6d479f-2ae3-458e-8ce1-1952591c16d4",
+      "source_id": "767c373e-1a88-49fa-a092-5c4aec3f5c31",
+      "target_id": "ce52acc4-5d7d-4d22-b84d-f2cdae0e4dc6",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:50:42.986992"
+    },
+    {
+      "id": "2e2ed249-3180-4479-ab78-bdaadbf60446",
+      "source_id": "0a4b2c56-e12a-4a3b-82f8-39dd75683b65",
+      "target_id": "ce52acc4-5d7d-4d22-b84d-f2cdae0e4dc6",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:50:42.986992"
+    },
+    {
+      "id": "3477cde1-b8c2-4f7c-ab76-e8d4c73aaabb",
+      "source_id": "7c869f36-4fc9-4338-954a-32757b489cf1",
+      "target_id": "ce52acc4-5d7d-4d22-b84d-f2cdae0e4dc6",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:50:42.986992"
+    },
+    {
+      "id": "2063671d-3789-403e-8d18-d028fe2647ce",
+      "source_id": "9ca783c5-43ac-4028-baac-82cf44a25c94",
+      "target_id": "599beaad-d5ce-46fa-a8d2-f3f6a4b13781",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:50:42.986992"
+    },
+    {
+      "id": "aeb4f73e-1d76-49bf-b9fe-a70ed280f729",
+      "source_id": "010d2bc0-e788-4ccd-a96c-d3b982c29fda",
+      "target_id": "599beaad-d5ce-46fa-a8d2-f3f6a4b13781",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:50:42.986992"
+    },
+    {
+      "id": "1f5e240b-c934-48b7-843c-ed4effa88dd8",
+      "source_id": "767c373e-1a88-49fa-a092-5c4aec3f5c31",
+      "target_id": "599beaad-d5ce-46fa-a8d2-f3f6a4b13781",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:50:42.986992"
+    },
+    {
+      "id": "3c7812e5-c403-40a1-9e6d-4ac780c5e3d5",
+      "source_id": "0a4b2c56-e12a-4a3b-82f8-39dd75683b65",
+      "target_id": "599beaad-d5ce-46fa-a8d2-f3f6a4b13781",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:50:42.986992"
+    },
+    {
+      "id": "4595b412-e65a-421e-b69d-31e5b328d100",
+      "source_id": "7c869f36-4fc9-4338-954a-32757b489cf1",
+      "target_id": "599beaad-d5ce-46fa-a8d2-f3f6a4b13781",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:50:42.986992"
+    },
+    {
+      "id": "65482394-5a5f-4da6-995b-2f36b52b4673",
+      "source_id": "9ca783c5-43ac-4028-baac-82cf44a25c94",
+      "target_id": "330e6143-b7c9-4919-8301-30bee66458d7",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:50:42.986992"
+    },
+    {
+      "id": "656cb8db-2fd4-4006-b3fb-8001eca10579",
+      "source_id": "010d2bc0-e788-4ccd-a96c-d3b982c29fda",
+      "target_id": "330e6143-b7c9-4919-8301-30bee66458d7",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:50:42.986992"
+    },
+    {
+      "id": "f0808155-b0e7-457d-914e-fd1ef4098d32",
+      "source_id": "767c373e-1a88-49fa-a092-5c4aec3f5c31",
+      "target_id": "330e6143-b7c9-4919-8301-30bee66458d7",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:50:42.986992"
+    },
+    {
+      "id": "19952c06-e9d3-485a-b35c-5785d1448c68",
+      "source_id": "0a4b2c56-e12a-4a3b-82f8-39dd75683b65",
+      "target_id": "330e6143-b7c9-4919-8301-30bee66458d7",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:50:42.986992"
+    },
+    {
+      "id": "c914af48-a21f-4198-80b4-f9dc0bb2bd30",
+      "source_id": "7c869f36-4fc9-4338-954a-32757b489cf1",
+      "target_id": "330e6143-b7c9-4919-8301-30bee66458d7",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:50:42.986992"
+    },
+    {
+      "id": "85d222c0-01df-462d-96b1-21e205270b71",
+      "source_id": "9ca783c5-43ac-4028-baac-82cf44a25c94",
+      "target_id": "7e3a0d56-09b3-4b0a-8dee-a7995e6953e7",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:50:42.986992"
+    },
+    {
+      "id": "1f797048-af27-4504-b421-384b504aaa90",
+      "source_id": "010d2bc0-e788-4ccd-a96c-d3b982c29fda",
+      "target_id": "7e3a0d56-09b3-4b0a-8dee-a7995e6953e7",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:50:42.986992"
+    },
+    {
+      "id": "9eac3064-2d60-42ec-bb6e-446702d9e5e1",
+      "source_id": "767c373e-1a88-49fa-a092-5c4aec3f5c31",
+      "target_id": "7e3a0d56-09b3-4b0a-8dee-a7995e6953e7",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:50:42.986992"
+    },
+    {
+      "id": "9c959bff-4260-4184-8063-a9374a48f13a",
+      "source_id": "0a4b2c56-e12a-4a3b-82f8-39dd75683b65",
+      "target_id": "7e3a0d56-09b3-4b0a-8dee-a7995e6953e7",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:50:42.986992"
+    },
+    {
+      "id": "45108057-d9d2-4495-b3af-959ed88114e0",
+      "source_id": "7c869f36-4fc9-4338-954a-32757b489cf1",
+      "target_id": "7e3a0d56-09b3-4b0a-8dee-a7995e6953e7",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:50:42.986992"
+    },
+    {
+      "id": "a1ab3d88-50d5-46ea-a5a6-e2ceb1b5206e",
+      "source_id": "9ca783c5-43ac-4028-baac-82cf44a25c94",
+      "target_id": "c1a66d9b-1edf-47f6-a662-a7408030089d",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:50:42.986992"
+    },
+    {
+      "id": "2d385250-a09d-450c-b27a-b3b334258867",
+      "source_id": "010d2bc0-e788-4ccd-a96c-d3b982c29fda",
+      "target_id": "c1a66d9b-1edf-47f6-a662-a7408030089d",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:50:42.986992"
+    },
+    {
+      "id": "f3307aed-001d-41d9-ad69-32944d0dfd44",
+      "source_id": "767c373e-1a88-49fa-a092-5c4aec3f5c31",
+      "target_id": "c1a66d9b-1edf-47f6-a662-a7408030089d",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:50:42.986992"
+    },
+    {
+      "id": "82d39597-61f7-47bd-a3b0-f6ecdf54a014",
+      "source_id": "0a4b2c56-e12a-4a3b-82f8-39dd75683b65",
+      "target_id": "c1a66d9b-1edf-47f6-a662-a7408030089d",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:50:42.986992"
+    },
+    {
+      "id": "4c106514-058a-4352-a3a0-c5ca5b372f64",
+      "source_id": "7c869f36-4fc9-4338-954a-32757b489cf1",
+      "target_id": "c1a66d9b-1edf-47f6-a662-a7408030089d",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T05:50:42.986992"
+    },
+    {
+      "id": "a633547d-981c-4803-918f-62872824f973",
+      "source_id": "443f22c3-1b5f-448e-ad23-b823194dc496",
+      "target_id": "d9b1c8b8-6cf2-4445-8b95-700194896502",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:50:51.501114"
+    },
+    {
+      "id": "c28e97b6-f2cd-4693-9c3f-2fe0e984fbaf",
+      "source_id": "d9b1c8b8-6cf2-4445-8b95-700194896502",
+      "target_id": "7dc55c97-3eaa-463d-83a5-e93015fc9e2c",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:50:51.501114"
+    },
+    {
+      "id": "f5c89f4e-a130-4bdd-a03c-85eb321c801f",
+      "source_id": "443f22c3-1b5f-448e-ad23-b823194dc496",
+      "target_id": "a1132442-5fc8-4d18-8827-5810384ed10f",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:50:51.501114"
+    },
+    {
+      "id": "7401c36f-c18e-4eae-addc-ef616d85347c",
+      "source_id": "a1132442-5fc8-4d18-8827-5810384ed10f",
+      "target_id": "06b57fbb-3999-4dac-9d13-711fad656554",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:50:51.501114"
+    },
+    {
+      "id": "d59c2294-cc58-4e09-a914-d419218ad977",
+      "source_id": "443f22c3-1b5f-448e-ad23-b823194dc496",
+      "target_id": "9de7261a-b586-4b3f-8c84-3e6bcc2590fe",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:51:29.038060"
+    },
+    {
+      "id": "12e0318f-edc7-45a1-bd5b-03e65804af57",
+      "source_id": "9de7261a-b586-4b3f-8c84-3e6bcc2590fe",
+      "target_id": "929556c1-e16d-4ae5-adee-4ac519bf9e19",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:51:29.038060"
+    },
+    {
+      "id": "13a63e3c-fd6c-4d7a-9806-f57ad31c0d76",
+      "source_id": "443f22c3-1b5f-448e-ad23-b823194dc496",
+      "target_id": "e181e3f7-d6bc-4bc1-bdf1-a3746b18e536",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:51:29.038060"
+    },
+    {
+      "id": "3511d03e-e7f0-4160-9934-5c861232c681",
+      "source_id": "e181e3f7-d6bc-4bc1-bdf1-a3746b18e536",
+      "target_id": "ee98e3b0-9e9a-49a2-a2f2-5ca2a2263e4a",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:51:29.038060"
+    }
+  ],
+  "analytic_question": "443f22c3-1b5f-448e-ad23-b823194dc496",
+  "created_at": "2025-09-10T05:51:41.464703"
+}

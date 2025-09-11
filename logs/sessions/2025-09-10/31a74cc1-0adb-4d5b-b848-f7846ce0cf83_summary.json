@@ -1,0 +1,55 @@
+{
+  "session_metadata": {
+    "session_id": "31a74cc1-0adb-4d5b-b848-f7846ce0cf83",
+    "start_time": "2025-09-10T14:03:12.623595+00:00",
+    "end_time": "2025-09-10T14:03:14.321209+00:00",
+    "duration_seconds": 1.696613,
+    "user_query": "AI safety controversy"
+  },
+  "configuration": {
+    "max_searches": 10,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.6,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "model_provider": "gemini",
+    "pages_per_search": 3,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true,
+    "enforce_endpoint_diversity": false,
+    "max_endpoint_repeats": 5,
+    "diversity_threshold": 0.3
+  },
+  "performance_metrics": {
+    "total_searches": 0,
+    "total_rounds": 0,
+    "total_results_found": 0,
+    "satisfaction_score": 0.0,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.0,
+      "source_diversity": 0.0,
+      "evidence_quality": 0.0,
+      "claim_specificity": 0.0,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Investigation failed: LLM strategic decision failed: LiteLLM completion failed: litellm.InternalServerError: litellm.InternalServerError: VertexAIException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"The model is overloaded. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [],
+      "moderately_effective": [],
+      "low_effectiveness": [],
+      "ineffective": []
+    },
+    "most_effective_strategies": [],
+    "dead_ends": [],
+    "promising_leads": []
+  },
+  "rounds_summary": []
+}

@@ -40,9 +40,9 @@ class LLMModelManager:
                 "finding_evaluator": "gemini/gemini-2.5-flash",
                 "insight_synthesizer": "gemini/gemini-2.5-flash", 
                 "emergent_questions": "gemini/gemini-2.5-flash",
-                "cross_reference": "gpt-4o-mini",
-                "temporal_analysis": "gpt-4o-mini",
-                "fallback_primary": "gpt-4o-mini",
+                "cross_reference": "gpt-5-mini",
+                "temporal_analysis": "gpt-5-mini",
+                "fallback_primary": "gpt-5-mini",
                 "fallback_secondary": "gpt-3.5-turbo"
             },
             "provider_settings": {

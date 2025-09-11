@@ -1,0 +1,92 @@
+{
+  "session_metadata": {
+    "session_id": "62bdd253-3002-47a6-a30f-9fa5f4a2dc5c",
+    "start_time": "2025-09-10T11:07:27.057018+00:00",
+    "end_time": "2025-09-10T11:08:54.980381+00:00",
+    "duration_seconds": 87.92285,
+    "user_query": "test placeholder parameter resolution fix"
+  },
+  "configuration": {
+    "max_searches": 3,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.6,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "model_provider": "openai",
+    "pages_per_search": 3,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true,
+    "enforce_endpoint_diversity": false,
+    "max_endpoint_repeats": 5,
+    "diversity_threshold": 0.3
+  },
+  "performance_metrics": {
+    "total_searches": 3,
+    "total_rounds": 1,
+    "total_results_found": 179,
+    "satisfaction_score": 0.42000000000000004,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.2,
+      "source_diversity": 0.1,
+      "evidence_quality": 0.8,
+      "claim_specificity": 1.0,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Reached maximum search limit (3)"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [],
+      "moderately_effective": [
+        {
+          "search_id": 1,
+          "query": "test placeholder parameter resolution fix",
+          "results": 60,
+          "effectiveness": 5.0
+        },
+        {
+          "search_id": 2,
+          "query": "",
+          "results": 60,
+          "effectiveness": 5.0
+        },
+        {
+          "search_id": 3,
+          "query": "AI safety",
+          "results": 59,
+          "effectiveness": 5.0
+        }
+      ],
+      "low_effectiveness": [],
+      "ineffective": []
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "Graph Strategy: The decision to conduct searches using diverse endpoints targets key issues in understanding how placeholder parameters can be resolved in contexts such as Twitter. By utilizing both content discovery and user analysis methods, we can gather comprehensive data related to the testing of the placeholder fix and identify relevant dynamics around it. This will fill the current information gaps, build a holistic view of the subject matter, and avoid reliance solely on search.php.",
+        "avg_effectiveness": 5.0
+      }
+    ],
+    "dead_ends": [],
+    "promising_leads": []
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Graph Strategy: The decision to conduct searches using diverse endpoints targets key issues in understanding how placeholder parameters can be resolved in contexts such as Twitter. By utilizing both content discovery and user analysis methods, we can gather comprehensive data related to the testing of the placeholder fix and identify relevant dynamics around it. This will fill the current information gaps, build a holistic view of the subject matter, and avoid reliance solely on search.php.",
+      "searches_count": 3,
+      "total_results": 179,
+      "effectiveness": 5.0,
+      "insights": [
+        "Changing screen resolution from 1280x720 to 2560x1440 resolved an issue for one user.",
+        "Testing fixes can involve reverting changes and confirming the resolution issue is fixed through test prompts.",
+        "Using Screen.SetResolution method in Unity can help create resolution dialogues effectively."
+      ]
+    }
+  ]
+}

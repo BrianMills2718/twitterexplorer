@@ -1,0 +1,94 @@
+{
+  "session_metadata": {
+    "session_id": "3f4317ca-ffad-4b40-b501-68e739f2847a",
+    "start_time": "2025-09-09T11:28:11.885194+00:00",
+    "end_time": "2025-09-09T11:37:07.495298+00:00",
+    "duration_seconds": 535.610104,
+    "user_query": "what is happening with bitcoin today"
+  },
+  "configuration": {
+    "max_searches": 3,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.6,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "pages_per_search": 3,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true,
+    "enforce_endpoint_diversity": false,
+    "max_endpoint_repeats": 5,
+    "diversity_threshold": 0.3
+  },
+  "performance_metrics": {
+    "total_searches": 3,
+    "total_rounds": 1,
+    "total_results_found": 143,
+    "satisfaction_score": 0.36592105263157887,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.4,
+      "source_diversity": 0.3,
+      "evidence_quality": 0.7289473684210523,
+      "claim_specificity": 0.15789473684210525,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Reached maximum search limit (3)"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [],
+      "moderately_effective": [
+        {
+          "search_id": 1,
+          "query": "bitcoin (today OR BTC OR #Bitcoin OR price OR rally OR crash OR halving) -filter:replies",
+          "results": 35,
+          "effectiveness": 6.0
+        },
+        {
+          "search_id": 2,
+          "query": "",
+          "results": 50,
+          "effectiveness": 6.0
+        },
+        {
+          "search_id": 3,
+          "query": "",
+          "results": 58,
+          "effectiveness": 6.0
+        }
+      ],
+      "low_effectiveness": [],
+      "ineffective": []
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "Graph Strategy: We currently have no data about what is happening with bitcoin today. The highest-priority gaps are: (1) whether there is breaking news or price-moving events right now, (2) whether bitcoin is trending on Twitter and in which countries, (3) what authoritative crypto media and influencers are saying, and (4) how the conversation is spreading (who amplifies it). The next round must therefore (A) capture real-time tweet signals, (B) check trending topics, (C) inspect timelines of top crypto publishers/CEOs for announcements, and (D) map follower/ network amplification. To satisfy the CRITICAL REQUIREMENTS we use diverse endpoints (search.php, trends.php, timeline.php, followers.php). These complementary searches will quickly surface breaking items, high-engagement tweets, context from credible sources, and the network that is amplifying bitcoin today.",
+        "avg_effectiveness": 6.0
+      }
+    ],
+    "dead_ends": [],
+    "promising_leads": [
+      "bitcoin (today OR BTC OR #Bitcoin OR price OR rally OR crash OR halving) -filter:replies",
+      ""
+    ]
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Graph Strategy: We currently have no data about what is happening with bitcoin today. The highest-priority gaps are: (1) whether there is breaking news or price-moving events right now, (2) whether bitcoin is trending on Twitter and in which countries, (3) what authoritative crypto media and influencers are saying, and (4) how the conversation is spreading (who amplifies it). The next round must therefore (A) capture real-time tweet signals, (B) check trending topics, (C) inspect timelines of top crypto publishers/CEOs for announcements, and (D) map follower/ network amplification. To satisfy the CRITICAL REQUIREMENTS we use diverse endpoints (search.php, trends.php, timeline.php, followers.php). These complementary searches will quickly surface breaking items, high-engagement tweets, context from credible sources, and the network that is amplifying bitcoin today.",
+      "searches_count": 3,
+      "total_results": 143,
+      "effectiveness": 6.0,
+      "insights": [
+        "US Senate Democrats have publicly unveiled a new framework for Bitcoin/crypto market-structure legislation — signals growing bipartisan political attention (items 1 and 18).",
+        "A high-profile private actor (EasyJet founder Stelios Haji-Ioannou) is reportedly launching a Bitcoin exchange — potential incremental retail/investor infrastructure expansion (item 3).",
+        "Tether reportedly added ~27,700 BTC in one year, indicating large stablecoin-related BTC accumulation and meaningful on‑chain flows compared with ETF flows (item 5)."
+      ]
+    }
+  ]
+}

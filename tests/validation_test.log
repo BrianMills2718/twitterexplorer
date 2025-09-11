@@ -1,0 +1,48 @@
+2025-09-10 07:56:06,297 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-10 07:56:07,969 - INFO - Loaded configuration from C:\Users\Brian\AppData\Local\Temp\tmpqe1xdl4f.yaml
+2025-09-10 07:56:07,969 - INFO - Configuration validation passed
+2025-09-10 07:56:07,969 - INFO - Model manager initialized with config: C:\Users\Brian\AppData\Local\Temp\tmpqe1xdl4f.yaml
+2025-09-10 07:56:08,221 - INFO - ConcreteInvestigationBridge initialized - architectural integration active
+2025-09-10 07:56:08,223 - INFO - Started investigation session 44852389-2779-4e21-8a96-c31aaa2e25ba for query: test search execution validation...
+2025-09-10 07:56:08,223 - INFO - DIAGNOSTIC: Prompt size: 8003 chars, 953 words
+2025-09-10 07:56:08,223 - INFO - DIAGNOSTIC: Prompt lines: 208 lines
+[92m07:56:08 - LiteLLM:INFO[0m: utils.py:3230 - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-09-10 07:56:08,231 - INFO - 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-09-10 07:56:27,393 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+[92m07:56:27 - LiteLLM:INFO[0m: utils.py:1239 - Wrapper: Completed Call, calling success_handler
+2025-09-10 07:56:27,448 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-10 07:56:27,450 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-09-10 07:56:27,450 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-09-10 07:56:27,450 - INFO - DIAGNOSTIC: Searches count: 3
+2025-09-10 07:56:27,450 - INFO - DIAGNOSTIC: Reasoning length: 528 chars
+2025-09-10 07:56:27,450 - INFO - DIAGNOSTIC: Search 1 - Endpoint: search.php
+2025-09-10 07:56:27,450 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': 'API testing validation', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Top', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-10 07:56:27,450 - INFO - DIAGNOSTIC: Search 1 - Reasoning: This search directly tests the fundamental search execution capability with a relevant keyword ('API...
+2025-09-10 07:56:27,451 - INFO - DIAGNOSTIC: Search 2 - Endpoint: timeline.php
+2025-09-10 07:56:27,451 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': None, 'screenname': 'TwitterDev', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-10 07:56:27,451 - INFO - DIAGNOSTIC: Search 2 - Reasoning: This search explores the chronological posts of a highly relevant user ('TwitterDev', the official d...
+2025-09-10 07:56:27,451 - INFO - DIAGNOSTIC: Search 3 - Endpoint: following.php
+2025-09-10 07:56:27,451 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': None, 'screenname': 'TwitterDev', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-10 07:56:27,451 - INFO - DIAGNOSTIC: Search 3 - Reasoning: This search identifies accounts that 'TwitterDev' follows. This can reveal related organizations, ex...
+2025-09-10 07:56:27,451 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
+2025-09-10 07:56:27,451 - INFO - DIAGNOSTIC: Endpoints used: ['search.php', 'timeline.php', 'following.php']
+2025-09-10 07:56:27,454 - INFO - Completed investigation session 44852389-2779-4e21-8a96-c31aaa2e25ba - 0 searches, 0 results
+Initializing TwitterExplorer Investigation Engine (using gemini)...
+LiteLLM: Loaded 2 API keys: ['OPENAI_API_KEY', 'GEMINI_API_KEY']
+Starting CLI investigation: test search execution validation
+============================================================
+Graph exported: investigation_graph_44852389-2779-4e21-8a96-c31aaa2e25ba.json and investigation_graph_44852389-2779-4e21-8a96-c31aaa2e25ba.html
+
+Investigation Complete!
+Searches performed: 0
+Findings discovered: 0
+Final satisfaction: 0.00
+
+Graph State:
+  DataPoints: 0
+  Insights: 0
+  Emergent Questions: 0
+
+CLI investigation completed - Bridge integration and emergent questions working!

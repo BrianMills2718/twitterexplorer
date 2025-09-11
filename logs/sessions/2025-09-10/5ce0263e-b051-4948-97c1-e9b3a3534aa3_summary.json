@@ -1,0 +1,94 @@
+{
+  "session_metadata": {
+    "session_id": "5ce0263e-b051-4948-97c1-e9b3a3534aa3",
+    "start_time": "2025-09-10T11:24:11.078778+00:00",
+    "end_time": "2025-09-10T11:25:03.516612+00:00",
+    "duration_seconds": 52.436834,
+    "user_query": "test insight title fix validation"
+  },
+  "configuration": {
+    "max_searches": 3,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.6,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "model_provider": "openai",
+    "pages_per_search": 3,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true,
+    "enforce_endpoint_diversity": false,
+    "max_endpoint_repeats": 5,
+    "diversity_threshold": 0.3
+  },
+  "performance_metrics": {
+    "total_searches": 3,
+    "total_rounds": 1,
+    "total_results_found": 98,
+    "satisfaction_score": 0.0,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.0,
+      "source_diversity": 0.0,
+      "evidence_quality": 0.0,
+      "claim_specificity": 0.0,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Reached maximum search limit (3)"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [],
+      "moderately_effective": [],
+      "low_effectiveness": [
+        {
+          "search_id": 2,
+          "query": "",
+          "results": 60,
+          "effectiveness": 3.0
+        },
+        {
+          "search_id": 3,
+          "query": "",
+          "results": 38,
+          "effectiveness": 3.0
+        }
+      ],
+      "ineffective": [
+        {
+          "search_id": 1,
+          "query": "insight title fix validation",
+          "results": 0,
+          "effectiveness": 0.0
+        }
+      ]
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "Graph Strategy: The goal is to gain insights regarding issues related to 'insight title fixes' on Twitter, especially focusing on discussions and relevant user activity around this topic. Conducting targeted searches and examining user timelines will help address existing information gaps.",
+        "avg_effectiveness": 2.0
+      }
+    ],
+    "dead_ends": [
+      "insight title fix validation"
+    ],
+    "promising_leads": []
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Graph Strategy: The goal is to gain insights regarding issues related to 'insight title fixes' on Twitter, especially focusing on discussions and relevant user activity around this topic. Conducting targeted searches and examining user timelines will help address existing information gaps.",
+      "searches_count": 3,
+      "total_results": 98,
+      "effectiveness": 2.0,
+      "insights": [
+        "Many tweets discuss violence and crime, specifically focusing on the Iryna Zarutska case, which may indicate a significant public interest or sentiment regarding crime and safety.",
+        "There is a recurring theme around the societal and political implications of crime, with various figures commenting on the state of violence and its causes."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "nodes": {
+    "21662cd1-a953-4cda-bf30-95d16a2d2899": {
+      "id": "21662cd1-a953-4cda-bf30-95d16a2d2899",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "short test to verify insight titles",
+        "is_root": true,
+        "investigation_goal": "short test to verify insight titles"
+      },
+      "created_at": "2025-09-09T07:45:01.527536"
+    },
+    "b36b50f0-e4d1-4237-a7db-c68a1d3a99fe": {
+      "id": "b36b50f0-e4d1-4237-a7db-c68a1d3a99fe",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: This search directly targets the core concept of the investigation \u2013 discussions around the verification, testing, or overall quality of 'insight titles' on Twitter. It aims to identify relevant conversations, opinions, and potentially methodologies from the broader public or experts.",
+        "parent_analytic_question": "21662cd1-a953-4cda-bf30-95d16a2d2899"
+      },
+      "created_at": "2025-09-09T07:45:19.333186"
+    },
+    "f497ef51-d893-45a8-b798-4a5a6febe383": {
+      "id": "f497ef51-d893-45a8-b798-4a5a6febe383",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "\"insight titles\" (verify OR verification OR test OR testing OR quality)"
+        }
+      },
+      "created_at": "2025-09-09T07:45:19.334186"
+    },
+    "7acbe8a8-38db-48b1-9c1a-ac388181701f": {
+      "id": "7acbe8a8-38db-48b1-9c1a-ac388181701f",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: This search broadens the scope to related concepts like general headline or title validation and effectiveness, specifically within the context of 'social media.' This might reveal broader industry practices or public discourse around how titles are perceived and evaluated, which is crucial for understanding how to 'test' them.",
+        "parent_analytic_question": "21662cd1-a953-4cda-bf30-95d16a2d2899"
+      },
+      "created_at": "2025-09-09T07:45:19.334186"
+    },
+    "01fb9145-e445-4246-bcd3-d8b0e8583d2d": {
+      "id": "01fb9145-e445-4246-bcd3-d8b0e8583d2d",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "\"headline validation\" OR \"title effectiveness\" \"social media\""
+        }
+      },
+      "created_at": "2025-09-09T07:45:19.334186"
+    },
+    "e78d25e4-036f-483d-9828-cccfc8fde2bb": {
+      "id": "e78d25e4-036f-483d-9828-cccfc8fde2bb",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Pew Research Center is known for publishing data-driven insights and reports. Examining their recent timeline can provide concrete examples of 'insight titles' in a professional context and potentially reveal how they frame their research for public consumption, or if they engage in discussions about the accuracy or impact of their titles. This provides a real-world, high-quality data source for understanding 'insight titles.'",
+        "parent_analytic_question": "21662cd1-a953-4cda-bf30-95d16a2d2899"
+      },
+      "created_at": "2025-09-09T07:45:19.334186"
+    },
+    "a588bf71-73cf-419a-80bc-c8a5fa1516bf": {
+      "id": "a588bf71-73cf-419a-80bc-c8a5fa1516bf",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "PewResearch"
+        }
+      },
+      "created_at": "2025-09-09T07:45:19.334186"
+    }
+  },
+  "edges": [
+    {
+      "id": "5c520b1f-5411-4176-97a2-54beffffbf8e",
+      "source_id": "21662cd1-a953-4cda-bf30-95d16a2d2899",
+      "target_id": "b36b50f0-e4d1-4237-a7db-c68a1d3a99fe",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T07:45:19.333186"
+    },
+    {
+      "id": "7887d820-796e-4382-bb9f-3add6c00f8bb",
+      "source_id": "b36b50f0-e4d1-4237-a7db-c68a1d3a99fe",
+      "target_id": "f497ef51-d893-45a8-b798-4a5a6febe383",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T07:45:19.334186"
+    },
+    {
+      "id": "75cdda4e-b1b0-4a69-bcfe-b255a9645fce",
+      "source_id": "21662cd1-a953-4cda-bf30-95d16a2d2899",
+      "target_id": "7acbe8a8-38db-48b1-9c1a-ac388181701f",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T07:45:19.334186"
+    },
+    {
+      "id": "aa5b266e-218e-4ef9-96f7-104fcfcabd14",
+      "source_id": "7acbe8a8-38db-48b1-9c1a-ac388181701f",
+      "target_id": "01fb9145-e445-4246-bcd3-d8b0e8583d2d",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T07:45:19.334186"
+    },
+    {
+      "id": "25c3a599-795e-492d-a23d-51e11ce6d7b3",
+      "source_id": "21662cd1-a953-4cda-bf30-95d16a2d2899",
+      "target_id": "e78d25e4-036f-483d-9828-cccfc8fde2bb",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T07:45:19.334186"
+    },
+    {
+      "id": "ef31fd38-146e-44da-ace6-237b5947ce0a",
+      "source_id": "e78d25e4-036f-483d-9828-cccfc8fde2bb",
+      "target_id": "a588bf71-73cf-419a-80bc-c8a5fa1516bf",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T07:45:19.334186"
+    }
+  ],
+  "analytic_question": "21662cd1-a953-4cda-bf30-95d16a2d2899",
+  "created_at": "2025-09-09T07:45:25.104022"
+}

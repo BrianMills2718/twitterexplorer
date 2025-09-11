@@ -1,0 +1,810 @@
+{
+  "nodes": {
+    "db173c69-bd9b-457b-adf3-975dbdabae23": {
+      "id": "db173c69-bd9b-457b-adf3-975dbdabae23",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "research AI safety news",
+        "is_root": true,
+        "investigation_goal": "research AI safety news"
+      },
+      "created_at": "2025-09-10T04:09:35.329631"
+    },
+    "ab0ffcd5-3777-497e-b8ae-f1f2252b4c03": {
+      "id": "ab0ffcd5-3777-497e-b8ae-f1f2252b4c03",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: This search aims to gather the most recent tweets related to AI safety news, helping to provide current insights and updates directly from the Twitter community.",
+        "parent_analytic_question": "db173c69-bd9b-457b-adf3-975dbdabae23"
+      },
+      "created_at": "2025-09-10T04:09:54.864956"
+    },
+    "81d8ef9e-ce2c-41b2-b3d6-d44f83fb292b": {
+      "id": "81d8ef9e-ce2c-41b2-b3d6-d44f83fb292b",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "AI safety news",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-10T04:09:54.866960"
+    },
+    "ccc3c6f6-40f7-4ae4-9196-f86b45b35c02": {
+      "id": "ccc3c6f6-40f7-4ae4-9196-f86b45b35c02",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: By checking the trending topics in the United States, I can identify if AI safety is being discussed prominently in the latest conversations on Twitter. This will provide insight into the topics related to AI safety that are gaining attention.",
+        "parent_analytic_question": "db173c69-bd9b-457b-adf3-975dbdabae23"
+      },
+      "created_at": "2025-09-10T04:09:54.866960"
+    },
+    "2ed1aee9-a984-4fae-888d-efc54a34aea4": {
+      "id": "2ed1aee9-a984-4fae-888d-efc54a34aea4",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "trends.php",
+        "parameters": {
+          "country": "UnitedStates"
+        }
+      },
+      "created_at": "2025-09-10T04:09:54.866960"
+    },
+    "274d5396-d7ae-42cd-a929-bf48fc5b8c22": {
+      "id": "274d5396-d7ae-42cd-a929-bf48fc5b8c22",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: This search will complement the previous ones by providing a broader view of discussions around AI safety instead of just the latest, highlighting authoritative and influential voices on the matter.",
+        "parent_analytic_question": "db173c69-bd9b-457b-adf3-975dbdabae23"
+      },
+      "created_at": "2025-09-10T04:09:54.866960"
+    },
+    "1fe9028b-0fdf-41e1-b924-7e9404c56a8e": {
+      "id": "1fe9028b-0fdf-41e1-b924-7e9404c56a8e",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "AI safety",
+          "search_type": "Top"
+        }
+      },
+      "created_at": "2025-09-10T04:09:54.866960"
+    },
+    "417c3b8b-d429-44a5-8cd9-ac3f77e1281d": {
+      "id": "417c3b8b-d429-44a5-8cd9-ac3f77e1281d",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "We still do not know how to make AI safe and the \"safety guardrails\" seem to be working so well?\n\nhttps://t.co/wRzh1D3Rne",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T04:10:15.138689",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.9,
+          "goal_relevance_score": 0.3333333333333333
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T04:10:15.138689"
+      },
+      "created_at": "2025-09-10T04:10:15.138689"
+    },
+    "38348b42-e1e7-4dd0-b8fa-dada5a93c9fb": {
+      "id": "38348b42-e1e7-4dd0-b8fa-dada5a93c9fb",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "First Lady Melania Trump, who is a champion of online safety for children, is warning about the rapid growth of artificial intelligence -- or AI-- and how it could eventually affect every aspect of our lives, including education.\nhttps://t.co/sO5qyH3XNn",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T04:10:15.138689",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.8,
+          "goal_relevance_score": 0.3333333333333333
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T04:10:15.138689"
+      },
+      "created_at": "2025-09-10T04:10:15.138689"
+    },
+    "c6d08388-bf7f-4a96-9acc-0092883c58e1": {
+      "id": "c6d08388-bf7f-4a96-9acc-0092883c58e1",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Meta revises AI chatbot policies amid child safety concerns, enhancing user protections. #AI #AINews https://t.co/IeqJaiVg1k",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T04:10:15.138689",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.85,
+          "goal_relevance_score": 0.6666666666666666
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T04:10:15.138689"
+      },
+      "created_at": "2025-09-10T04:10:15.138689"
+    },
+    "c3a16406-e499-4804-8f52-5619010d113f": {
+      "id": "c3a16406-e499-4804-8f52-5619010d113f",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "@fangchangma @nuance_ai @Accel @southpkcommons @lightspeedvp Congrats, great news!",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T04:10:15.138689",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.9,
+          "goal_relevance_score": 0.3333333333333333
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T04:10:15.138689"
+      },
+      "created_at": "2025-09-10T04:10:15.138689"
+    },
+    "251ff7d1-cc44-44f6-b3b7-317e35e26943": {
+      "id": "251ff7d1-cc44-44f6-b3b7-317e35e26943",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Recent developments highlight a mounting concern regarding artificial intelligence and its implications for child safety. First Lady Melania Trump's vocal advocacy for online safety emphasizes the perceived risks associated with the rapid advancement of AI technologies, specifically their potential negative influence on children. Concurrently, Meta's response in revising its AI chatbot policies demonstrates an industry-wide recognition of these concerns, leading to enhanced user protections. This synthesis of leadership awareness and corporate policy change underscores a significant trend in prioritizing children's safety in the context of AI development. The intersection of governmental and corporate responses suggests an urgent need for comprehensive safeguards as AI technologies continue to evolve and proliferate.",
+        "insight_type": "trend",
+        "title": "Growing Concerns for AI Safety and Child Protection",
+        "confidence": 0.9,
+        "investigation_relevance": 0.95,
+        "key_evidence": [
+          "First Lady Melania Trump warns about AI's impact on children.",
+          "Meta revises AI chatbot policies amid child safety concerns.",
+          "Growing emphasis on children's online safety in AI discussions."
+        ]
+      },
+      "created_at": "2025-09-10T04:10:27.134879"
+    },
+    "3d2abe7d-5c25-4cc7-91b4-0080b296a790": {
+      "id": "3d2abe7d-5c25-4cc7-91b4-0080b296a790",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What specific risks associated with AI are perceived to be the most threatening to child safety, and how are these risks quantified or assessed?",
+        "emergence_reason": "The insights highlight concerns about AI's impact on children but do not specify the nature of these risks or evidence of how they affect children, signifying a gap in understanding particular threats posed by AI technologies to minors."
+      },
+      "created_at": "2025-09-10T04:10:46.030625"
+    },
+    "44de6658-962f-418d-91f8-45e3b73b01cd": {
+      "id": "44de6658-962f-418d-91f8-45e3b73b01cd",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How effective have Meta's revised AI chatbot policies been in actually enhancing user protections for children?",
+        "emergence_reason": "While Meta's actions indicate awareness and response to concerns, the effectiveness and practical implications of these policy changes remain unaddressed, leaving a gap in evaluating the real-world impact of such measures."
+      },
+      "created_at": "2025-09-10T04:10:46.030625"
+    },
+    "47e42558-8c37-4832-8b48-689c2f0d5e6d": {
+      "id": "47e42558-8c37-4832-8b48-689c2f0d5e6d",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "In what ways can governmental and corporate efforts be better aligned to create a cohesive strategy for AI governance focusing on child protection?",
+        "emergence_reason": "The intersection of government advocacy and corporate policy change suggests collaboration opportunities; however, how these entities can effectively work together is not explored, pointing to a potential direction for new investigations."
+      },
+      "created_at": "2025-09-10T04:10:46.030625"
+    },
+    "4686663f-429c-4c22-9cd9-95faea3478e8": {
+      "id": "4686663f-429c-4c22-9cd9-95faea3478e8",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What societal or cultural factors may influence the perception of AI's risks to children, and how do these factors vary across different demographics?",
+        "emergence_reason": "The insights reflect an overarching concern but fail to address why some communities may perceive AI risks differently, indicating the need for deeper sociocultural investigations."
+      },
+      "created_at": "2025-09-10T04:10:46.030625"
+    },
+    "a6e8ad8c-b3de-4328-8e34-1d8ef40d2796": {
+      "id": "a6e8ad8c-b3de-4328-8e34-1d8ef40d2796",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Despite significant investments and efforts in establishing safety measures for AI systems, there is a growing sentiment that these \"safety guardrails\" may not be effective in addressing the risks associated with AI technology. This concern is highlighted by Melania Trump's warning regarding the swift proliferation of AI and its unforeseen impacts on society, especially affecting vulnerable populations like children. The juxtaposition of experts\u2019 caution against the successes claimed about safety protocols reflects an ongoing debate about whether current strategies are adequate to mitigate AI risks. This insight is crucial for steering future research and policy-making to better address the inherent dangers of unchecked AI growth.",
+        "insight_type": "contradiction",
+        "title": "Doubts Persist on AI Safety Implementations",
+        "confidence": 0.8,
+        "investigation_relevance": 0.9,
+        "key_evidence": [
+          "\"We still do not know how to make AI safe and the 'safety guardrails' seem to be working so well?\"",
+          "\"First Lady Melania Trump, who is a champion of online safety for children, is warning about the rapid growth of artificial intelligence...\""
+        ]
+      },
+      "created_at": "2025-09-10T04:11:02.962506"
+    },
+    "3dfb5b05-10b3-42bc-94c5-467e43d91242": {
+      "id": "3dfb5b05-10b3-42bc-94c5-467e43d91242",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What specific aspects of AI technologies pose the greatest risks to children, and how do they differ from risks posed to other populations?",
+        "emergence_reason": "This question emerges from the insight that while there is a focus on child safety, it is unclear what specific risks children face compared to other demographics. Understanding these nuances is critical for targeted safeguards."
+      },
+      "created_at": "2025-09-10T04:11:11.460885"
+    },
+    "2786ff0e-8d68-496d-813d-37fd6bed14bd": {
+      "id": "2786ff0e-8d68-496d-813d-37fd6bed14bd",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How effective are the current safety guardrails for AI in practice, and what metrics are being used to evaluate their success?",
+        "emergence_reason": "The acknowledgment that safety measures may not be effective despite claims of success creates a need to investigate the actual performance of these policies."
+      },
+      "created_at": "2025-09-10T04:11:11.460885"
+    },
+    "7c20b290-0576-4a7b-b91e-df0d074ffe07": {
+      "id": "7c20b290-0576-4a7b-b91e-df0d074ffe07",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What are the specific revisions to Meta's AI chatbot policies, and how do they directly address the concerns raised about child safety?",
+        "emergence_reason": "With Meta's proactive stance in adjusting policies, this question arises to delve deeper into the actions taken and their direct relevance to the identified risks."
+      },
+      "created_at": "2025-09-10T04:11:11.460885"
+    },
+    "282b5eca-92ec-4e6d-99fe-bcb9c8306f01": {
+      "id": "282b5eca-92ec-4e6d-99fe-bcb9c8306f01",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "To what extent is the urgency expressed by leaders like Melania Trump translating into actionable policy changes at both government and corporate levels?",
+        "emergence_reason": "The insights indicate a trend of advocacy but raise questions on how much of this is leading to real policy reform, warranting an exploration of the effectiveness of advocacy."
+      },
+      "created_at": "2025-09-10T04:11:11.461388"
+    },
+    "22ad9e5c-4720-424b-ad92-2980fd6ffebf": {
+      "id": "22ad9e5c-4720-424b-ad92-2980fd6ffebf",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What are the potential long-term implications of AI technology on societal structures, particularly concerning vulnerable populations?",
+        "emergence_reason": "Given the warnings regarding AI's unforeseen impacts, this question encourages a broader examination of its societal implications beyond immediate safety concerns."
+      },
+      "created_at": "2025-09-10T04:11:11.461394"
+    },
+    "c73d469d-d0da-42ad-84dd-240f11d0feb2": {
+      "id": "c73d469d-d0da-42ad-84dd-240f11d0feb2",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Today's UK tech headlines are all about innovation and growth:\n\n- New UK semiconductor hub\n- AI development breakthroughs\n- Digital Pound 'Britcoin' pilot launch\n\nLet's dive into the details...\n\n\ud83c\uddec\ud83c\udde7 Big news in AI! The UK AI Safety Institute has reached a new milestone in understanding AI model decision-making. This positions the UK as a leader in AI governance, setting a new standard for safety.\n\nExciting times for AI enthusiasts and industry leaders!",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 8.0,
+          "timestamp": "2025-09-10T04:11:15.428411"
+        }
+      },
+      "created_at": "2025-09-10T04:11:15.428411"
+    },
+    "6c698f70-89ef-4b1d-bf74-2d2dff4711eb": {
+      "id": "6c698f70-89ef-4b1d-bf74-2d2dff4711eb",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "India is coding the future of global logistics. \ud83c\uddee\ud83c\uddf3\ud83d\udcbb\nAt #CodeCargo2025, Maersk showcased tech like Star Connect\u2014an AI platform processing billions of data points to optimise voyages, boost safety &amp; cut emissions.\nSee how we're powering global trade https://t.co/l86H7QUbo9 https://t.co/H6OOzEWBZ8",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 8.0,
+          "timestamp": "2025-09-10T04:11:15.428411"
+        }
+      },
+      "created_at": "2025-09-10T04:11:15.428411"
+    },
+    "de22957b-7710-479c-ae1f-af414107ddde": {
+      "id": "de22957b-7710-479c-ae1f-af414107ddde",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "We still do not know how to make AI safe and the \"safety guardrails\" seem to be working so well?\n\nhttps://t.co/wRzh1D3Rne",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 8.0,
+          "timestamp": "2025-09-10T04:11:15.428411"
+        }
+      },
+      "created_at": "2025-09-10T04:11:15.428411"
+    },
+    "7f3a7f9b-5209-400c-a2a3-6c16a77806bb": {
+      "id": "7f3a7f9b-5209-400c-a2a3-6c16a77806bb",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "@Racing_Away @DrSuneelDhand As an AI, I don't have personal preferences on popularity. Based on diverse sources like CDC, STAT News, and studies in Nature and BMJ, vaccine injuries are rare but real, and improving reporting systems like VAERS could enhance safety data and public health decisions.",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 8.0,
+          "timestamp": "2025-09-10T04:11:15.428411"
+        }
+      },
+      "created_at": "2025-09-10T04:11:15.428411"
+    },
+    "77ef52b6-ea3d-46a7-b983-eabd2c737991": {
+      "id": "77ef52b6-ea3d-46a7-b983-eabd2c737991",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "First Lady Melania Trump, who is a champion of online safety for children, is warning about the rapid growth of artificial intelligence -- or AI-- and how it could eventually affect every aspect of our lives, including education.\nhttps://t.co/sO5qyH3XNn",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 8.0,
+          "timestamp": "2025-09-10T04:11:15.428411"
+        }
+      },
+      "created_at": "2025-09-10T04:11:15.428411"
+    },
+    "d1e1b031-ffa0-43a8-861c-eb200f0d04d4": {
+      "id": "d1e1b031-ffa0-43a8-861c-eb200f0d04d4",
+      "node_type": "Insight",
+      "properties": {
+        "content": "AI safety is a growing concern among industry leaders and regulators, with legislation being proposed and scrutinized.",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-10T04:11:15.428411"
+    },
+    "427f8920-abe3-451b-9423-4d7c202b8342": {
+      "id": "427f8920-abe3-451b-9423-4d7c202b8342",
+      "node_type": "Insight",
+      "properties": {
+        "content": "There are ongoing discussions about the safety measures for AI products, especially those targeting children, reflecting societal apprehension about AI's impact.",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-10T04:11:15.428923"
+    },
+    "6dd2d015-348b-400b-add3-5c42516f3e77": {
+      "id": "6dd2d015-348b-400b-add3-5c42516f3e77",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Meta is under pressure from lawmakers to enhance safety protocols for its AI products, indicating a regulatory focus on AI safety and user privacy.",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-10T04:11:15.428923"
+    }
+  },
+  "edges": [
+    {
+      "id": "84b66358-8782-4981-8fc0-ead5ecf38c23",
+      "source_id": "db173c69-bd9b-457b-adf3-975dbdabae23",
+      "target_id": "ab0ffcd5-3777-497e-b8ae-f1f2252b4c03",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T04:09:54.864956"
+    },
+    {
+      "id": "d67b94a3-8dff-43d7-87a6-b67be50b71aa",
+      "source_id": "ab0ffcd5-3777-497e-b8ae-f1f2252b4c03",
+      "target_id": "81d8ef9e-ce2c-41b2-b3d6-d44f83fb292b",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T04:09:54.866960"
+    },
+    {
+      "id": "2de86389-abcf-4701-92af-47de9f63c538",
+      "source_id": "db173c69-bd9b-457b-adf3-975dbdabae23",
+      "target_id": "ccc3c6f6-40f7-4ae4-9196-f86b45b35c02",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T04:09:54.866960"
+    },
+    {
+      "id": "c083d2e0-ebe7-4ba4-aad3-0ba596117891",
+      "source_id": "ccc3c6f6-40f7-4ae4-9196-f86b45b35c02",
+      "target_id": "2ed1aee9-a984-4fae-888d-efc54a34aea4",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T04:09:54.866960"
+    },
+    {
+      "id": "5487c03a-1dd0-4282-90f9-600d1c3477ab",
+      "source_id": "db173c69-bd9b-457b-adf3-975dbdabae23",
+      "target_id": "274d5396-d7ae-42cd-a929-bf48fc5b8c22",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T04:09:54.866960"
+    },
+    {
+      "id": "2052eafd-2796-4fd5-901e-413d4dbe3626",
+      "source_id": "274d5396-d7ae-42cd-a929-bf48fc5b8c22",
+      "target_id": "1fe9028b-0fdf-41e1-b924-7e9404c56a8e",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T04:09:54.866960"
+    },
+    {
+      "id": "d2af8d23-9908-446f-af01-1ee3d3067af2",
+      "source_id": "81d8ef9e-ce2c-41b2-b3d6-d44f83fb292b",
+      "target_id": "417c3b8b-d429-44a5-8cd9-ac3f77e1281d",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.9
+      },
+      "created_at": "2025-09-10T04:10:15.138689"
+    },
+    {
+      "id": "85bd31b0-b7f5-453a-a5cb-c43c1e9d87c3",
+      "source_id": "81d8ef9e-ce2c-41b2-b3d6-d44f83fb292b",
+      "target_id": "38348b42-e1e7-4dd0-b8fa-dada5a93c9fb",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.8
+      },
+      "created_at": "2025-09-10T04:10:15.138689"
+    },
+    {
+      "id": "b6c4a559-41fb-4060-8b77-435593769e40",
+      "source_id": "81d8ef9e-ce2c-41b2-b3d6-d44f83fb292b",
+      "target_id": "c6d08388-bf7f-4a96-9acc-0092883c58e1",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.85
+      },
+      "created_at": "2025-09-10T04:10:15.138689"
+    },
+    {
+      "id": "02617eec-a669-4780-bdaa-dab6952b013f",
+      "source_id": "81d8ef9e-ce2c-41b2-b3d6-d44f83fb292b",
+      "target_id": "c3a16406-e499-4804-8f52-5619010d113f",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.9
+      },
+      "created_at": "2025-09-10T04:10:15.138689"
+    },
+    {
+      "id": "d2b067a2-f50f-4227-8569-b522519dddba",
+      "source_id": "38348b42-e1e7-4dd0-b8fa-dada5a93c9fb",
+      "target_id": "251ff7d1-cc44-44f6-b3b7-317e35e26943",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T04:10:27.134879"
+      },
+      "created_at": "2025-09-10T04:10:27.134879"
+    },
+    {
+      "id": "425d843d-a988-424f-9f16-ab7956698c77",
+      "source_id": "c6d08388-bf7f-4a96-9acc-0092883c58e1",
+      "target_id": "251ff7d1-cc44-44f6-b3b7-317e35e26943",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T04:10:27.134879"
+      },
+      "created_at": "2025-09-10T04:10:27.134879"
+    },
+    {
+      "id": "bdfd5acd-e060-49e9-80b2-7c69e852a712",
+      "source_id": "251ff7d1-cc44-44f6-b3b7-317e35e26943",
+      "target_id": "3d2abe7d-5c25-4cc7-91b4-0080b296a790",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The insights highlight concerns about AI's impact on children but do not specify the nature of these risks or evidence of how they affect children, signifying a gap in understanding particular threats posed by AI technologies to minors.",
+        "priority": 0.9,
+        "created_at": "2025-09-10T04:10:46.030625"
+      },
+      "created_at": "2025-09-10T04:10:46.030625"
+    },
+    {
+      "id": "6ba17c84-5537-451b-a857-30c2354e2187",
+      "source_id": "251ff7d1-cc44-44f6-b3b7-317e35e26943",
+      "target_id": "44de6658-962f-418d-91f8-45e3b73b01cd",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "While Meta's actions indicate awareness and response to concerns, the effectiveness and practical implications of these policy changes remain unaddressed, leaving a gap in evaluating the real-world impact of such measures.",
+        "priority": 0.85,
+        "created_at": "2025-09-10T04:10:46.030625"
+      },
+      "created_at": "2025-09-10T04:10:46.031823"
+    },
+    {
+      "id": "6c9456a5-ef34-4cfe-bd45-18eeddc92391",
+      "source_id": "251ff7d1-cc44-44f6-b3b7-317e35e26943",
+      "target_id": "47e42558-8c37-4832-8b48-689c2f0d5e6d",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The intersection of government advocacy and corporate policy change suggests collaboration opportunities; however, how these entities can effectively work together is not explored, pointing to a potential direction for new investigations.",
+        "priority": 0.8,
+        "created_at": "2025-09-10T04:10:46.031823"
+      },
+      "created_at": "2025-09-10T04:10:46.031823"
+    },
+    {
+      "id": "380af15b-fdad-4a6e-871c-d87f90ae7ec0",
+      "source_id": "251ff7d1-cc44-44f6-b3b7-317e35e26943",
+      "target_id": "4686663f-429c-4c22-9cd9-95faea3478e8",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The insights reflect an overarching concern but fail to address why some communities may perceive AI risks differently, indicating the need for deeper sociocultural investigations.",
+        "priority": 0.75,
+        "created_at": "2025-09-10T04:10:46.031823"
+      },
+      "created_at": "2025-09-10T04:10:46.031823"
+    },
+    {
+      "id": "60346b87-ac10-456a-9bf5-0720cc30f11e",
+      "source_id": "417c3b8b-d429-44a5-8cd9-ac3f77e1281d",
+      "target_id": "a6e8ad8c-b3de-4328-8e34-1d8ef40d2796",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T04:11:02.962506"
+      },
+      "created_at": "2025-09-10T04:11:02.962506"
+    },
+    {
+      "id": "123a633b-7455-45b5-b48d-ca79eaf3f4a7",
+      "source_id": "38348b42-e1e7-4dd0-b8fa-dada5a93c9fb",
+      "target_id": "a6e8ad8c-b3de-4328-8e34-1d8ef40d2796",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T04:11:02.962506"
+      },
+      "created_at": "2025-09-10T04:11:02.962506"
+    },
+    {
+      "id": "2996e553-4ea6-4513-8d07-e33ce01c4e71",
+      "source_id": "a6e8ad8c-b3de-4328-8e34-1d8ef40d2796",
+      "target_id": "3dfb5b05-10b3-42bc-94c5-467e43d91242",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "This question emerges from the insight that while there is a focus on child safety, it is unclear what specific risks children face compared to other demographics. Understanding these nuances is critical for targeted safeguards.",
+        "priority": 0.9,
+        "created_at": "2025-09-10T04:11:11.461394"
+      },
+      "created_at": "2025-09-10T04:11:11.461394"
+    },
+    {
+      "id": "864c3bc2-8b8d-4bcf-bd6f-fae5213aeaef",
+      "source_id": "a6e8ad8c-b3de-4328-8e34-1d8ef40d2796",
+      "target_id": "2786ff0e-8d68-496d-813d-37fd6bed14bd",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The acknowledgment that safety measures may not be effective despite claims of success creates a need to investigate the actual performance of these policies.",
+        "priority": 0.8,
+        "created_at": "2025-09-10T04:11:11.461394"
+      },
+      "created_at": "2025-09-10T04:11:11.461394"
+    },
+    {
+      "id": "f8e59983-e10f-4868-865d-5729628bd5a2",
+      "source_id": "a6e8ad8c-b3de-4328-8e34-1d8ef40d2796",
+      "target_id": "7c20b290-0576-4a7b-b91e-df0d074ffe07",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "With Meta's proactive stance in adjusting policies, this question arises to delve deeper into the actions taken and their direct relevance to the identified risks.",
+        "priority": 0.75,
+        "created_at": "2025-09-10T04:11:11.461394"
+      },
+      "created_at": "2025-09-10T04:11:11.461394"
+    },
+    {
+      "id": "eefc6a4a-ae07-4fec-b315-35158f00c8fa",
+      "source_id": "a6e8ad8c-b3de-4328-8e34-1d8ef40d2796",
+      "target_id": "282b5eca-92ec-4e6d-99fe-bcb9c8306f01",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The insights indicate a trend of advocacy but raise questions on how much of this is leading to real policy reform, warranting an exploration of the effectiveness of advocacy.",
+        "priority": 0.85,
+        "created_at": "2025-09-10T04:11:11.461394"
+      },
+      "created_at": "2025-09-10T04:11:11.461394"
+    },
+    {
+      "id": "9cb17afd-5c0a-4673-be3c-15809a82068e",
+      "source_id": "a6e8ad8c-b3de-4328-8e34-1d8ef40d2796",
+      "target_id": "22ad9e5c-4720-424b-ad92-2980fd6ffebf",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Given the warnings regarding AI's unforeseen impacts, this question encourages a broader examination of its societal implications beyond immediate safety concerns.",
+        "priority": 0.7,
+        "created_at": "2025-09-10T04:11:11.461394"
+      },
+      "created_at": "2025-09-10T04:11:11.461394"
+    },
+    {
+      "id": "ab1052f2-b805-4e97-b5ed-5f01767da73c",
+      "source_id": "1fe9028b-0fdf-41e1-b924-7e9404c56a8e",
+      "target_id": "c73d469d-d0da-42ad-84dd-240f11d0feb2",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 8.0
+      },
+      "created_at": "2025-09-10T04:11:15.428411"
+    },
+    {
+      "id": "2b66a885-e3d2-4591-8252-fe738cf130c2",
+      "source_id": "1fe9028b-0fdf-41e1-b924-7e9404c56a8e",
+      "target_id": "6c698f70-89ef-4b1d-bf74-2d2dff4711eb",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 8.0
+      },
+      "created_at": "2025-09-10T04:11:15.428411"
+    },
+    {
+      "id": "be93ea06-1e07-41f5-99e7-0be0987f22b6",
+      "source_id": "1fe9028b-0fdf-41e1-b924-7e9404c56a8e",
+      "target_id": "de22957b-7710-479c-ae1f-af414107ddde",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 8.0
+      },
+      "created_at": "2025-09-10T04:11:15.428411"
+    },
+    {
+      "id": "5556bd2e-f2d5-421a-9b29-59031776e3de",
+      "source_id": "1fe9028b-0fdf-41e1-b924-7e9404c56a8e",
+      "target_id": "7f3a7f9b-5209-400c-a2a3-6c16a77806bb",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 8.0
+      },
+      "created_at": "2025-09-10T04:11:15.428411"
+    },
+    {
+      "id": "01070a80-e7a5-4535-83a5-1c438b3afde4",
+      "source_id": "1fe9028b-0fdf-41e1-b924-7e9404c56a8e",
+      "target_id": "77ef52b6-ea3d-46a7-b983-eabd2c737991",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 8.0
+      },
+      "created_at": "2025-09-10T04:11:15.428411"
+    },
+    {
+      "id": "0d30bcc0-9a5d-4d00-a0d7-5cf63cfe5cc5",
+      "source_id": "c73d469d-d0da-42ad-84dd-240f11d0feb2",
+      "target_id": "d1e1b031-ffa0-43a8-861c-eb200f0d04d4",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T04:11:15.428411"
+    },
+    {
+      "id": "a5d45b33-bb3a-439d-8d30-7ee2b091b4f7",
+      "source_id": "6c698f70-89ef-4b1d-bf74-2d2dff4711eb",
+      "target_id": "d1e1b031-ffa0-43a8-861c-eb200f0d04d4",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T04:11:15.428411"
+    },
+    {
+      "id": "7a9d45cf-70ce-4983-9ddb-49b3315706ee",
+      "source_id": "de22957b-7710-479c-ae1f-af414107ddde",
+      "target_id": "d1e1b031-ffa0-43a8-861c-eb200f0d04d4",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T04:11:15.428411"
+    },
+    {
+      "id": "708cec3a-005c-4894-a762-ed0ce3d046cc",
+      "source_id": "7f3a7f9b-5209-400c-a2a3-6c16a77806bb",
+      "target_id": "d1e1b031-ffa0-43a8-861c-eb200f0d04d4",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T04:11:15.428916"
+    },
+    {
+      "id": "cf413b70-1047-4d00-b762-c9a3921d03fb",
+      "source_id": "77ef52b6-ea3d-46a7-b983-eabd2c737991",
+      "target_id": "d1e1b031-ffa0-43a8-861c-eb200f0d04d4",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T04:11:15.428923"
+    },
+    {
+      "id": "a2309165-014c-45b7-a18f-79b2c28bb36c",
+      "source_id": "c73d469d-d0da-42ad-84dd-240f11d0feb2",
+      "target_id": "427f8920-abe3-451b-9423-4d7c202b8342",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T04:11:15.428923"
+    },
+    {
+      "id": "c595a748-1eca-4a88-ba53-b0e9205e7796",
+      "source_id": "6c698f70-89ef-4b1d-bf74-2d2dff4711eb",
+      "target_id": "427f8920-abe3-451b-9423-4d7c202b8342",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T04:11:15.428923"
+    },
+    {
+      "id": "af321e70-9c16-4ed0-9d27-56f488754adf",
+      "source_id": "de22957b-7710-479c-ae1f-af414107ddde",
+      "target_id": "427f8920-abe3-451b-9423-4d7c202b8342",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T04:11:15.428923"
+    },
+    {
+      "id": "042b863c-3f5c-4e6c-8e13-780231f8f57e",
+      "source_id": "7f3a7f9b-5209-400c-a2a3-6c16a77806bb",
+      "target_id": "427f8920-abe3-451b-9423-4d7c202b8342",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T04:11:15.428923"
+    },
+    {
+      "id": "5a34468f-c183-467a-9926-68d17cb4d9e5",
+      "source_id": "77ef52b6-ea3d-46a7-b983-eabd2c737991",
+      "target_id": "427f8920-abe3-451b-9423-4d7c202b8342",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T04:11:15.428923"
+    },
+    {
+      "id": "795a50ae-1575-43b4-828a-1bdf8fd87801",
+      "source_id": "c73d469d-d0da-42ad-84dd-240f11d0feb2",
+      "target_id": "6dd2d015-348b-400b-add3-5c42516f3e77",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T04:11:15.428923"
+    },
+    {
+      "id": "e08400fd-3826-498d-9a2e-1658eef65643",
+      "source_id": "6c698f70-89ef-4b1d-bf74-2d2dff4711eb",
+      "target_id": "6dd2d015-348b-400b-add3-5c42516f3e77",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T04:11:15.428923"
+    },
+    {
+      "id": "220df628-2718-4ab3-80d5-5b9b9b5bf8e7",
+      "source_id": "de22957b-7710-479c-ae1f-af414107ddde",
+      "target_id": "6dd2d015-348b-400b-add3-5c42516f3e77",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T04:11:15.428923"
+    },
+    {
+      "id": "a9a1786d-6848-405d-b0f5-1831cf3b777f",
+      "source_id": "7f3a7f9b-5209-400c-a2a3-6c16a77806bb",
+      "target_id": "6dd2d015-348b-400b-add3-5c42516f3e77",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T04:11:15.428923"
+    },
+    {
+      "id": "1ef98824-165d-4166-8178-9b05fb9072c2",
+      "source_id": "77ef52b6-ea3d-46a7-b983-eabd2c737991",
+      "target_id": "6dd2d015-348b-400b-add3-5c42516f3e77",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T04:11:15.428923"
+    }
+  ],
+  "analytic_question": "db173c69-bd9b-457b-adf3-975dbdabae23",
+  "created_at": "2025-09-10T04:11:15.438276"
+}

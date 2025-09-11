@@ -1,0 +1,89 @@
+{
+  "session_metadata": {
+    "session_id": "fbe99357-d041-4601-8e82-28a23ab12a44",
+    "start_time": "2025-09-10T11:09:35.330632+00:00",
+    "end_time": "2025-09-10T11:11:15.436722+00:00",
+    "duration_seconds": 100.10557,
+    "user_query": "research AI safety news"
+  },
+  "configuration": {
+    "max_searches": 2,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.6,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "model_provider": "openai",
+    "pages_per_search": 3,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true,
+    "enforce_endpoint_diversity": false,
+    "max_endpoint_repeats": 5,
+    "diversity_threshold": 0.3
+  },
+  "performance_metrics": {
+    "total_searches": 2,
+    "total_rounds": 1,
+    "total_results_found": 110,
+    "satisfaction_score": 0.36946428571428575,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.4,
+      "source_diversity": 0.2,
+      "evidence_quality": 0.7464285714285713,
+      "claim_specificity": 0.2857142857142857,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Reached maximum search limit (2)"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [
+        {
+          "search_id": 1,
+          "query": "AI safety news",
+          "results": 60,
+          "effectiveness": 8.0
+        },
+        {
+          "search_id": 2,
+          "query": "",
+          "results": 50,
+          "effectiveness": 8.0
+        }
+      ],
+      "moderately_effective": [],
+      "low_effectiveness": [],
+      "ineffective": []
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "Graph Strategy: To effectively cover the critical information gaps in understanding AI safety news, I will initiate searches that specifically focus on the latest updates within this domain. By utilizing diverse endpoints, I am ensuring a comprehensive investigation while adhering to the requirement for systematic exploration.",
+        "avg_effectiveness": 8.0
+      }
+    ],
+    "dead_ends": [],
+    "promising_leads": [
+      "AI safety news",
+      ""
+    ]
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Graph Strategy: To effectively cover the critical information gaps in understanding AI safety news, I will initiate searches that specifically focus on the latest updates within this domain. By utilizing diverse endpoints, I am ensuring a comprehensive investigation while adhering to the requirement for systematic exploration.",
+      "searches_count": 2,
+      "total_results": 110,
+      "effectiveness": 8.0,
+      "insights": [
+        "AI safety is a growing concern among industry leaders and regulators, with legislation being proposed and scrutinized.",
+        "There are ongoing discussions about the safety measures for AI products, especially those targeting children, reflecting societal apprehension about AI's impact.",
+        "Meta is under pressure from lawmakers to enhance safety protocols for its AI products, indicating a regulatory focus on AI safety and user privacy."
+      ]
+    }
+  ]
+}

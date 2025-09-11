@@ -1,0 +1,64 @@
+{
+  "session_metadata": {
+    "session_id": "8f786e3b-2ccb-453c-88e9-249687e3a97d",
+    "start_time": "2025-09-10T14:17:30.529417+00:00",
+    "end_time": "2025-09-10T14:17:40.861372+00:00",
+    "duration_seconds": 10.330955,
+    "user_query": "test investigation"
+  },
+  "configuration": {
+    "max_searches": 3,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.6,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "model_provider": "openai",
+    "pages_per_search": 3,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true,
+    "enforce_endpoint_diversity": false,
+    "max_endpoint_repeats": 5,
+    "diversity_threshold": 0.3
+  },
+  "performance_metrics": {
+    "total_searches": 0,
+    "total_rounds": 1,
+    "total_results_found": 0,
+    "satisfaction_score": 0.0,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.0,
+      "source_diversity": 0.0,
+      "evidence_quality": 0.0,
+      "claim_specificity": 0.0,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Investigation failed: 'NoneType' object does not support the context manager protocol"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [],
+      "moderately_effective": [],
+      "low_effectiveness": [],
+      "ineffective": []
+    },
+    "most_effective_strategies": [],
+    "dead_ends": [],
+    "promising_leads": []
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Graph Strategy: To effectively address the information gaps related to the test investigation, it is important to conduct targeted searches that will provide insights into recent discussions and explore the profiles of users who are contributing to the topic. Utilizing diverse endpoints will ensure a comprehensive coverage of the investigation scope without over-relying on any single endpoint. Furthermore, these searches will help build a foundational understanding of ongoing conversations and relevant user networks within the context of the test investigation.",
+      "searches_count": 0,
+      "total_results": 0,
+      "effectiveness": 0.0,
+      "insights": []
+    }
+  ]
+}

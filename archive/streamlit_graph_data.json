@@ -1,0 +1,326 @@
+{
+  "nodes": [
+    {
+      "id": "7a05bd8f-bbc7-46de-9a56-5f81a9e1463a",
+      "label": "test brief: popular tv shows",
+      "type": "AnalyticQuestion",
+      "importance": 1.0,
+      "description": "test brief: popular tv shows",
+      "properties": {
+        "text": "test brief: popular tv shows",
+        "is_root": true,
+        "investigation_goal": "test brief: popular tv shows"
+      }
+    },
+    {
+      "id": "3d0b45bf-5e40-482c-9dc1-8e72c41ebcfd",
+      "label": "Strategic question: This search will provide us with the most relevant and engaging tweets about popular TV shows, helping to understand public sentiment and current discussions.",
+      "type": "InvestigationQuestion",
+      "importance": 0.8,
+      "description": "Strategic question: This search will provide us with the most relevant and engaging tweets about popular TV shows, helping to understand public sentiment and current discussions.",
+      "properties": {
+        "text": "Strategic question: This search will provide us with the most relevant and engaging tweets about popular TV shows, helping to understand public sentiment and current discussions.",
+        "parent_analytic_question": "7a05bd8f-bbc7-46de-9a56-5f81a9e1463a"
+      }
+    },
+    {
+      "id": "4c626b7c-4c5e-43fd-971a-e6cc2201e94b",
+      "label": "4c626b7c",
+      "type": "SearchQuery",
+      "importance": 0.8,
+      "description": "",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "popular TV shows",
+          "search_type": "Top"
+        }
+      }
+    },
+    {
+      "id": "1eaaffba-78e0-4a95-93ca-6b6d9374aa80",
+      "label": "Strategic question: Identifying trending topics related to popular TV shows in the United States will give us insights into what specific shows are currently capturing audience attention.",
+      "type": "InvestigationQuestion",
+      "importance": 0.8,
+      "description": "Strategic question: Identifying trending topics related to popular TV shows in the United States will give us insights into what specific shows are currently capturing audience attention.",
+      "properties": {
+        "text": "Strategic question: Identifying trending topics related to popular TV shows in the United States will give us insights into what specific shows are currently capturing audience attention.",
+        "parent_analytic_question": "7a05bd8f-bbc7-46de-9a56-5f81a9e1463a"
+      }
+    },
+    {
+      "id": "fb01368d-f467-4906-9a55-c7336947e65f",
+      "label": "fb01368d",
+      "type": "SearchQuery",
+      "importance": 0.8,
+      "description": "",
+      "properties": {
+        "endpoint": "trends.php",
+        "parameters": {
+          "country": "UnitedStates"
+        }
+      }
+    },
+    {
+      "id": "8b41e09d-ffe4-4909-a84d-0fa51e2ad7ba",
+      "label": "Strategic question: Analyzing the timeline of Variety, a major media outlet covering entertainment, will provide insights into their recent posts and discussions about popular TV shows.",
+      "type": "InvestigationQuestion",
+      "importance": 0.8,
+      "description": "Strategic question: Analyzing the timeline of Variety, a major media outlet covering entertainment, will provide insights into their recent posts and discussions about popular TV shows.",
+      "properties": {
+        "text": "Strategic question: Analyzing the timeline of Variety, a major media outlet covering entertainment, will provide insights into their recent posts and discussions about popular TV shows.",
+        "parent_analytic_question": "7a05bd8f-bbc7-46de-9a56-5f81a9e1463a"
+      }
+    },
+    {
+      "id": "bbc0b4a3-65fa-4436-94ab-e538084e229b",
+      "label": "bbc0b4a3",
+      "type": "SearchQuery",
+      "importance": 0.8,
+      "description": "",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "variety"
+        }
+      }
+    },
+    {
+      "id": "d10cb586-fd06-44ab-82e8-938deb61225f",
+      "label": "d10cb586",
+      "type": "DataPoint",
+      "importance": 0.8,
+      "description": "",
+      "properties": {
+        "content": "Top 10 most popular TV shows online yesterday\n\nLink in bio!\n\n1 #WhiteLotus\n2 #Adolescence\n3 #Severance\n4 #1923\n5 #MobLand\n6 #DevilMayCry\n7 #Pulse\n8 #GoodAmericanFamily\n9 #DyingforSex\n10 #TheResidence https://t.co/bSAFK602mI",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-08T07:04:18.992309",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.8,
+          "goal_relevance_score": 0.5
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-08T07:04:18.992309"
+      }
+    },
+    {
+      "id": "abeecd7a-25d9-4959-ba29-a48dda04c89b",
+      "label": "abeecd7a",
+      "type": "DataPoint",
+      "importance": 0.8,
+      "description": "",
+      "properties": {
+        "content": "TIL New Zealand became a popular filming destination thanks to the TV shows \"Hercules\" and \"Xena: Warrior Princess\". https://t.co/haYGRZvHwr",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-08T07:04:18.992309",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.9,
+          "goal_relevance_score": 0.5
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-08T07:04:18.992309"
+      }
+    },
+    {
+      "id": "fa2d54e0-1cc4-48eb-8d24-ec16399b0991",
+      "label": "fa2d54e0",
+      "type": "DataPoint",
+      "importance": 0.8,
+      "description": "",
+      "properties": {
+        "content": "Top 10 most popular TV shows online yesterday\n\nLink in bio!\n\n1 #WhiteLotus\n2 #Adolescence\n3 #Severance\n4 #MobLand\n5 #GoodAmericanFamily\n6 #1923\n7 #Reacher\n8 #TheResidence\n9 #DaredevilBornAgain\n10 #INVINCIBLE https://t.co/6xVji7LJi5",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-08T07:04:18.992309",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.8,
+          "goal_relevance_score": 0.5
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-08T07:04:18.992309"
+      }
+    },
+    {
+      "id": "4072d6e2-86f4-4ece-8938-7dabf8cb2884",
+      "label": "4072d6e2",
+      "type": "Insight",
+      "importance": 0.8,
+      "description": "",
+      "properties": {
+        "content": "The analyzed lists of the most popular TV shows reveal both consistency and variability in viewer preferences. The show '#WhiteLotus' appears prominently in both findings, indicating a strong audience retention or growing popularity. Other shows such as '#Adolescence', '#Severance', and '#TheResidence' demonstrate presence in multiple lists, suggesting a trend where certain genres or themes resonate substantially with viewers. However, discrepancies exist, as shows like '#MobLand' appear in one list but not the other, while '#1923' shows varied rankings. These contradictions could indicate regional differences in viewer interests or the impact of marketing campaigns surrounding certain shows. This pattern reveals important insights into audience engagement, the effectiveness of storytelling, and shifts in viewer interests that can inform future content strategies or marketing initiatives.",
+        "insight_type": "trend",
+        "confidence": 0.85,
+        "title": "Consistency in Popularity of TV Shows"
+      }
+    },
+    {
+      "id": "90dd1f9f-4302-44f9-b5e5-c8957cd49677",
+      "label": "What factors contribute to the inconsistencies in popularity between '#MobLand' and other similarly ranked shows?",
+      "type": "EmergentQuestion",
+      "importance": 0.8,
+      "description": "What factors contribute to the inconsistencies in popularity between '#MobLand' and other similarly ranked shows?",
+      "properties": {
+        "text": "What factors contribute to the inconsistencies in popularity between '#MobLand' and other similarly ranked shows?",
+        "emergence_reason": "The presence of '#MobLand' in one list but not the other suggests regional differences or unique viewer segments. Understanding these factors can shed light on audience diversity and marketing effectiveness."
+      }
+    },
+    {
+      "id": "cb58ef90-c7e2-451d-8d31-1b2a17eefa0a",
+      "label": "What marketing strategies have been employed for shows like '#WhiteLotus' and how have they influenced viewer engagement?",
+      "type": "EmergentQuestion",
+      "importance": 0.8,
+      "description": "What marketing strategies have been employed for shows like '#WhiteLotus' and how have they influenced viewer engagement?",
+      "properties": {
+        "text": "What marketing strategies have been employed for shows like '#WhiteLotus' and how have they influenced viewer engagement?",
+        "emergence_reason": "The strong presence of '#WhiteLotus' indicates potentially effective marketing. Analyzing these strategies could uncover best practices that may apply to other shows."
+      }
+    },
+    {
+      "id": "0206fb3d-1bdf-4961-bf69-eb3fafe2e523",
+      "label": "Why do certain shows like '#1923' exhibit varied rankings across different lists?",
+      "type": "EmergentQuestion",
+      "importance": 0.8,
+      "description": "Why do certain shows like '#1923' exhibit varied rankings across different lists?",
+      "properties": {
+        "text": "Why do certain shows like '#1923' exhibit varied rankings across different lists?",
+        "emergence_reason": "The fluctuating ranking of '#1923' could indicate differing audience reception or external factors affecting its visibility. Understanding this variability is crucial for targeted marketing."
+      }
+    },
+    {
+      "id": "332c0323-176c-4284-b381-3364775fac81",
+      "label": "What specific themes or genres resonate with viewers as indicated by the presence of shows like '#Adolescence' and '#Severance'?",
+      "type": "EmergentQuestion",
+      "importance": 0.8,
+      "description": "What specific themes or genres resonate with viewers as indicated by the presence of shows like '#Adolescence' and '#Severance'?",
+      "properties": {
+        "text": "What specific themes or genres resonate with viewers as indicated by the presence of shows like '#Adolescence' and '#Severance'?",
+        "emergence_reason": "Identifying the themes or genres that resonate can guide content creation strategies and allow for better audience targeting."
+      }
+    },
+    {
+      "id": "437a2be4-db2a-45ce-b043-8119acbf6935",
+      "label": "Are there emerging trends in viewer preferences that are not yet fully captured by current analysis?",
+      "type": "EmergentQuestion",
+      "importance": 0.8,
+      "description": "Are there emerging trends in viewer preferences that are not yet fully captured by current analysis?",
+      "properties": {
+        "text": "Are there emerging trends in viewer preferences that are not yet fully captured by current analysis?",
+        "emergence_reason": "To stay ahead of changing viewer habits, it\u2019s essential to explore emerging trends that current insights might overlook, thus enabling more proactive content development."
+      }
+    },
+    {
+      "id": "bea07337-68f6-4471-8210-b42d969fbca7",
+      "label": "bea07337",
+      "type": "DataPoint",
+      "importance": 0.8,
+      "description": "",
+      "properties": {
+        "content": "@Rainmaker1973 1. Seinfeld \n2. The Sopranos\n3. The Office \n4. MASH\n5. Cheers\n6. Lost\n7. X Files\n8. Frazier\n9. South Park \n10. Game of Thrones\n11. Breaking Bad\n12. Better Call Saul",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 8.0,
+          "timestamp": "2025-09-08T07:04:51.156056"
+        }
+      }
+    },
+    {
+      "id": "c94d5bc7-2e58-4878-8e99-23347904e6df",
+      "label": "c94d5bc7",
+      "type": "DataPoint",
+      "importance": 0.8,
+      "description": "",
+      "properties": {
+        "content": "@DelusionPosting Spongebob\nSmiling Friends\nThe Office\nBreaking Bad\nCriminal Minds\nMAD\nThe Simpsons\nBob\u2019s Burgers\nThe Wire\nSanjay and Craig\nAqua Teen Hunger Force\nThe Mandalorian\nOuter Range\nThe Boys\nDog with a Blog\nSopranos\nPlanet Earth\nYellowstone\nSouthpark\nAlways Sunny in Philadelphia",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 8.0,
+          "timestamp": "2025-09-08T07:04:51.156083"
+        }
+      }
+    },
+    {
+      "id": "049bdbbe-0005-48b4-a46d-c320cd399f63",
+      "label": "049bdbbe",
+      "type": "DataPoint",
+      "importance": 0.8,
+      "description": "",
+      "properties": {
+        "content": "The Moment I Become A Fan Of Period Romance Or Historical Romance Movie Or TV Series Because Of The Classic \" 1985 Anne Of Green Gables\". Kaya I Become A Fan Of MCAI\nWhile I Was In The Philippines During The Airing Of That Popular TV Show From GMA.\n\n#BARDA https://t.co/DXMKCl1tAD",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 8.0,
+          "timestamp": "2025-09-08T07:04:51.156083"
+        }
+      }
+    },
+    {
+      "id": "c1c67a69-1818-405c-97cb-6dd7c72941a4",
+      "label": "c1c67a69",
+      "type": "DataPoint",
+      "importance": 0.8,
+      "description": "",
+      "properties": {
+        "content": "@aliyahInterlude greys anatomy, the bear, scandal, bridgerton, the office, seinfeld, love island, dr. who, wandavision, stranger things, severance, squid game, iron heart, rick and morty, supernatural, the vampire diaries, pretty little liars, the boys, ginny and georgia.. just to name a few https://t.co/s9S26nHjyK",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 8.0,
+          "timestamp": "2025-09-08T07:04:51.156083"
+        }
+      }
+    },
+    {
+      "id": "591c338d-15bd-4698-b76e-14a67aabdab6",
+      "label": "591c338d",
+      "type": "DataPoint",
+      "importance": 0.8,
+      "description": "",
+      "properties": {
+        "content": "Top 10 most popular TV shows online yesterday\n\nLink in bio!\n\n1 #WhiteLotus\n2 #Adolescence\n3 #Severance\n4 #1923\n5 #MobLand\n6 #DevilMayCry\n7 #Pulse\n8 #GoodAmericanFamily\n9 #DyingforSex\n10 #TheResidence https://t.co/bSAFK602mI",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 8.0,
+          "timestamp": "2025-09-08T07:04:51.156083"
+        }
+      }
+    },
+    {
+      "id": "72d10803-0a91-4d2e-a7e5-7fa8dfb7b86d",
+      "label": "72d10803",
+      "type": "Insight",
+      "importance": 0.8,
+      "description": "",
+      "properties": {
+        "content": "A wide variety of popular TV shows from different decades and genres are referenced, indicating trends over time.",
+        "insight_type": "evaluation_derived"
+      }
+    },
+    {
+      "id": "9d40cc18-c343-4fa3-8681-99d5203799a9",
+      "label": "9d40cc18",
+      "type": "Insight",
+      "importance": 0.8,
+      "description": "",
+      "properties": {
+        "content": "Shows like 'Breaking Bad', 'Game of Thrones', and 'The Office' appear frequently, suggesting their high status in popular culture.",
+        "insight_type": "evaluation_derived"
+      }
+    },
+    {
+      "id": "213180ee-b802-4b00-a654-3c8bef4fbdf3",
+      "label": "213180ee",
+      "type": "Insight",
+      "importance": 0.8,
+      "description": "",
+      "properties": {
+        "content": "Emerging shows like 'The Bear' and 'White Lotus' indicate contemporary preferences and evolving tastes among viewers.",
+        "insight_type": "evaluation_derived"
+      }
+    }
+  ],
+  "links": []
+}

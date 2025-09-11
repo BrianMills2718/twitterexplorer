@@ -1,0 +1,17 @@
+{
+  "nodes": {
+    "dcb5a952-9268-4a20-9ede-3f390aab2b31": {
+      "id": "dcb5a952-9268-4a20-9ede-3f390aab2b31",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "AI breakthrough",
+        "is_root": true,
+        "investigation_goal": "AI breakthrough"
+      },
+      "created_at": "2025-09-10T06:59:35.942462"
+    }
+  },
+  "edges": [],
+  "analytic_question": "dcb5a952-9268-4a20-9ede-3f390aab2b31",
+  "created_at": "2025-09-10T06:59:45.993019"
+}

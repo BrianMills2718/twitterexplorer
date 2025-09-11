@@ -1,0 +1,246 @@
+{
+  "session_metadata": {
+    "session_id": "ac5b01f8-bf47-4472-8f94-11c6f2365819",
+    "start_time": "2025-09-09T09:25:50.556124+00:00",
+    "end_time": "2025-09-09T10:01:42.700708+00:00",
+    "duration_seconds": 2152.143584,
+    "user_query": "find information debunking bob lazar"
+  },
+  "configuration": {
+    "max_searches": 20,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.8,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "pages_per_search": 3,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true,
+    "enforce_endpoint_diversity": false,
+    "max_endpoint_repeats": 5,
+    "diversity_threshold": 0.3
+  },
+  "performance_metrics": {
+    "total_searches": 20,
+    "total_rounds": 4,
+    "total_results_found": 1368,
+    "satisfaction_score": 0.30068181818181816,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.2,
+      "source_diversity": 0.1,
+      "evidence_quality": 0.6499999999999999,
+      "claim_specificity": 0.45454545454545453,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Reached maximum search limit (20)"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [],
+      "moderately_effective": [
+        {
+          "search_id": 1,
+          "query": "\"Bob Lazar\" (debunk OR hoax OR \"no record\" OR \"not employed\" OR \"not at MIT\" OR \"not at Los Alamos\")",
+          "results": 44,
+          "effectiveness": 5.0
+        },
+        {
+          "search_id": 3,
+          "query": "",
+          "results": 56,
+          "effectiveness": 5.0
+        },
+        {
+          "search_id": 5,
+          "query": "",
+          "results": 155,
+          "effectiveness": 5.0
+        }
+      ],
+      "low_effectiveness": [
+        {
+          "search_id": 2,
+          "query": "\"Bob Lazar\" \"element 115\" (physics OR isotope OR stability OR \"element 115\" debunk OR explanation)",
+          "results": 13,
+          "effectiveness": 3.25
+        },
+        {
+          "search_id": 6,
+          "query": "\"Bob Lazar\" (debunk OR hoax OR \"not real\" OR fraud OR \"false claims\")",
+          "results": 60,
+          "effectiveness": 4.0
+        },
+        {
+          "search_id": 8,
+          "query": "",
+          "results": 56,
+          "effectiveness": 4.0
+        },
+        {
+          "search_id": 9,
+          "query": "",
+          "results": 155,
+          "effectiveness": 4.0
+        },
+        {
+          "search_id": 11,
+          "query": "\"Bob Lazar\" (hoax OR debunk OR debunked OR \"element 115\" OR fabricated OR \"MIT\" OR \"Los Alamos\" OR credentials) -filter:media",
+          "results": 60,
+          "effectiveness": 4.0
+        },
+        {
+          "search_id": 12,
+          "query": "",
+          "results": 56,
+          "effectiveness": 4.0
+        },
+        {
+          "search_id": 13,
+          "query": "",
+          "results": 60,
+          "effectiveness": 4.0
+        },
+        {
+          "search_id": 14,
+          "query": "",
+          "results": 155,
+          "effectiveness": 4.0
+        },
+        {
+          "search_id": 15,
+          "query": "",
+          "results": 66,
+          "effectiveness": 4.0
+        },
+        {
+          "search_id": 16,
+          "query": "",
+          "results": 50,
+          "effectiveness": 4.0
+        },
+        {
+          "search_id": 17,
+          "query": "\"Bob Lazar\" (debunk OR debunked OR hoax OR \"element 115\" OR \"Element 115\" OR \"S-4\" OR \"S4\" OR \"Area 51\")",
+          "results": 59,
+          "effectiveness": 3.0
+        },
+        {
+          "search_id": 19,
+          "query": "",
+          "results": 155,
+          "effectiveness": 3.0
+        },
+        {
+          "search_id": 20,
+          "query": "",
+          "results": 165,
+          "effectiveness": 3.0
+        }
+      ],
+      "ineffective": [
+        {
+          "search_id": 4,
+          "query": "",
+          "results": 1,
+          "effectiveness": 0.25
+        },
+        {
+          "search_id": 7,
+          "query": "\"Bob Lazar\" (\"element 115\" OR moscovium OR ununpentium) (debunk OR incorrect OR implausible OR \"not possible\")",
+          "results": 0,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 10,
+          "query": "",
+          "results": 1,
+          "effectiveness": 0.2
+        },
+        {
+          "search_id": 18,
+          "query": "",
+          "results": 1,
+          "effectiveness": 0.15000000000000002
+        }
+      ]
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "Graph Strategy: Previous rounds failed to surface authoritative debunks because searches were narrow or over-relied on search.php. The highest-priority gaps are (1) identifying high-engagement tweets/threads that explicitly debunk Bob Lazar, (2) locating posts from known skeptical analysts (Mick West, Ben Radford) and (3) mapping skeptic networks to find additional experts and long-form analyses. To respect the Diversity Rule and the endpoint usage tracker, this plan uses multiple different endpoints (only one search.php) to both discover content and map network signals that point to deeper debunks. The sequence: a targeted Top search to seed candidate tweets and links; timelines of known skeptics to find any posts or threads they authored; following/followers to discover other credible debunkers; and trends to check if there are recent high-visibility discussions to prioritize.",
+        "avg_effectiveness": 4.0
+      },
+      {
+        "strategy": "Graph Strategy: We currently have no collected data. The highest-priority gaps are: (1) locating authoritative debunks (journalistic investigations, archival records) that directly contradict Lazar's employment/education claims; (2) scientific rebuttals of his ‘element 115’/physics claims; and (3) mapping the skeptical community and prominent debunking threads/conversations on Twitter to gather links, threads, and expert commentary. To fill these gaps efficiently and coherently, we should run targeted content searches for explicit debunk language, pull timelines from known skeptics for curated commentary, and perform a small network check to surface other credible debunkers and sources. The plan uses multiple endpoints (search.php, timeline.php, screenname.php, following.php) as required, and the searches complement one another (broad discovery → expert timeline → network mapping → profile verification).",
+        "avg_effectiveness": 3.7
+      },
+      {
+        "strategy": "Graph Strategy: Previous rounds returned few or irrelevant results because searches were either too generic or not targeted to known skeptical voices and technical rebuttals. To fill the most important gaps (explicit debunking language, technical/physics rebuttals about element 115, and skeptic network mapping) we should: 1) run refined Top searches with explicit Boolean operators and phrase matching to surface high-engagement debunking tweets and links to long-form rebuttals; 2) directly query prominent skeptics' timelines (Mick West) for any threads/tweetstorms about Lazar; 3) extract Mick West's follow network to discover other credible debunkers, scientists, and journalists; and 4) pull a skeptic journalist's profile (Ben Radford) to locate any debunking content or links. This plan uses multiple endpoints (search.php, timeline.php, following.php, screenname.php) to satisfy the diversity rule, addresses the listed gaps first, and provides complementary angles (content discovery + network mapping + profile verification) to build a coherent corpus of debunking evidence.",
+        "avg_effectiveness": 2.44
+      },
+      {
+        "strategy": "Graph Strategy: Previous attempts over-relied on timeline/search endpoints and returned irrelevant results. The highest-priority gaps are (1) locating explicit debunking posts/articles that challenge Lazar's education/employment/element-115 claims and (2) finding credible skeptical accounts (Mick West, James Oberg, Ben Radford, Robert Sheaffer, etc.) who have posted thread-long analyses or links. To correct course I will (A) run a focused Top search that targets explicit debunking language and technical rebuttals, and (B) pivot to network/profile endpoints (screenname, following, followers) for a known skeptic (MickWest) to discover other credible debunkers and the tweets/accounts that amplify debunking content. This combination fills the content gap (debunking posts) and the network gap (who to follow next), and uses diverse endpoints per the instructions.",
+        "avg_effectiveness": 2.2875
+      }
+    ],
+    "dead_ends": [
+      "",
+      "\"Bob Lazar\" (\"element 115\" OR moscovium OR ununpentium) (debunk OR incorrect OR implausible OR \"not possible\")"
+    ],
+    "promising_leads": []
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Graph Strategy: We currently have no collected data. The highest-priority gaps are: (1) locating authoritative debunks (journalistic investigations, archival records) that directly contradict Lazar's employment/education claims; (2) scientific rebuttals of his ‘element 115’/physics claims; and (3) mapping the skeptical community and prominent debunking threads/conversations on Twitter to gather links, threads, and expert commentary. To fill these gaps efficiently and coherently, we should run targeted content searches for explicit debunk language, pull timelines from known skeptics for curated commentary, and perform a small network check to surface other credible debunkers and sources. The plan uses multiple endpoints (search.php, timeline.php, screenname.php, following.php) as required, and the searches complement one another (broad discovery → expert timeline → network mapping → profile verification).",
+      "searches_count": 5,
+      "total_results": 269,
+      "effectiveness": 3.7,
+      "insights": [
+        "The result set is almost entirely social-media posts and commentary rather than authoritative investigative material — lots of opinion, few primary sources or reliable analyses.",
+        "Common recurring themes useful to a debunking investigation: claims that Lazar’s academic credentials (MIT/Caltech) are unverified; references to Element 115 (Moscovium) as a purported validation point; calls from skeptics for a formal debunk and offers from long-term researchers to help.",
+        "Some items point to potentially useful leads: mentions of a researcher with 20 years of study who has interviewed many participants (item 10), existence of rare interviews with Lazar (item 8), and references to claims about provenance/timeline of Element 115 (item 11 and 15)."
+      ]
+    },
+    {
+      "round_number": 2,
+      "strategy": "Graph Strategy: Previous rounds returned few or irrelevant results because searches were either too generic or not targeted to known skeptical voices and technical rebuttals. To fill the most important gaps (explicit debunking language, technical/physics rebuttals about element 115, and skeptic network mapping) we should: 1) run refined Top searches with explicit Boolean operators and phrase matching to surface high-engagement debunking tweets and links to long-form rebuttals; 2) directly query prominent skeptics' timelines (Mick West) for any threads/tweetstorms about Lazar; 3) extract Mick West's follow network to discover other credible debunkers, scientists, and journalists; and 4) pull a skeptic journalist's profile (Ben Radford) to locate any debunking content or links. This plan uses multiple endpoints (search.php, timeline.php, following.php, screenname.php) to satisfy the diversity rule, addresses the listed gaps first, and provides complementary angles (content discovery + network mapping + profile verification) to build a coherent corpus of debunking evidence.",
+      "searches_count": 5,
+      "total_results": 272,
+      "effectiveness": 2.44,
+      "insights": [
+        "The result set is dominated by short social-media posts: many assert 'Bob Lazar is a fraud' or 'Bob Lazar is telling the truth' but provide little verifiable evidence or citation to primary sources.",
+        "There are a few candidate leads for debunking material: result 13 references a specific debunk video (DeceptionDet), result 12 flags a concrete documentary inconsistency (the 'Department of Naval Intelligence' W‑2 claim), and result 17 mentions an attempt to fact-check Lazar with AI and calls out timeline and association issues — these are actionable starting points.",
+        "Several items are low-quality or off-topic (multiple ZeroHedge links, general political rants) and add noise rather than evidence relevant to debunking Lazar."
+      ]
+    },
+    {
+      "round_number": 3,
+      "strategy": "Graph Strategy: Previous rounds failed to surface authoritative debunks because searches were narrow or over-relied on search.php. The highest-priority gaps are (1) identifying high-engagement tweets/threads that explicitly debunk Bob Lazar, (2) locating posts from known skeptical analysts (Mick West, Ben Radford) and (3) mapping skeptic networks to find additional experts and long-form analyses. To respect the Diversity Rule and the endpoint usage tracker, this plan uses multiple different endpoints (only one search.php) to both discover content and map network signals that point to deeper debunks. The sequence: a targeted Top search to seed candidate tweets and links; timelines of known skeptics to find any posts or threads they authored; following/followers to discover other credible debunkers; and trends to check if there are recent high-visibility discussions to prioritize.",
+      "searches_count": 6,
+      "total_results": 447,
+      "effectiveness": 4.0,
+      "insights": [
+        "The results are overwhelmingly social-media posts and commentary rather than substantive investigative material — many are tweets urging George Knapp to 'produce' an element 115 or mocking Bob Lazar.",
+        "A recurring theme is skepticism toward Lazar (calls of 'full of crap', requests for proof/location of element 115), indicating public doubt rather than documentary debunking.",
+        "Several items reference related actors (George Knapp, Robert Bigelow, AAWSAP, Dan Burisch) which could point to lines of inquiry about corroborating witnesses and programs, but the results do not provide primary-source evidence."
+      ]
+    },
+    {
+      "round_number": 4,
+      "strategy": "Graph Strategy: Previous attempts over-relied on timeline/search endpoints and returned irrelevant results. The highest-priority gaps are (1) locating explicit debunking posts/articles that challenge Lazar's education/employment/element-115 claims and (2) finding credible skeptical accounts (Mick West, James Oberg, Ben Radford, Robert Sheaffer, etc.) who have posted thread-long analyses or links. To correct course I will (A) run a focused Top search that targets explicit debunking language and technical rebuttals, and (B) pivot to network/profile endpoints (screenname, following, followers) for a known skeptic (MickWest) to discover other credible debunkers and the tweets/accounts that amplify debunking content. This combination fills the content gap (debunking posts) and the network gap (who to follow next), and uses diverse endpoints per the instructions.",
+      "searches_count": 4,
+      "total_results": 380,
+      "effectiveness": 2.2875,
+      "insights": [
+        "The results are overwhelmingly social posts and reposts (Twitter/X-style) rather than primary documentation or investigative reporting — low-quality source mix for a debunking investigation.",
+        "Many items repeat the same claims/themes (Element 115, religious files at S4, George Knapp’s reporting, alleged corroborating witnesses) rather than presenting new evidence that would disprove Lazar’s claims.",
+        "Several results appear to support or amplify Lazar’s narrative (interviews, George Knapp references, witness lists) — these are more likely to reinforce Lazar’s claims than debunk them unless accompanied by critical analysis or primary-source checks."
+      ]
+    }
+  ]
+}

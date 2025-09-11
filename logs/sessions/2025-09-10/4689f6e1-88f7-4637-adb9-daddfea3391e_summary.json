@@ -1,0 +1,91 @@
+{
+  "session_metadata": {
+    "session_id": "4689f6e1-88f7-4637-adb9-daddfea3391e",
+    "start_time": "2025-09-10T15:35:40.425393+00:00",
+    "end_time": "2025-09-10T15:42:03.843415+00:00",
+    "duration_seconds": 383.417017,
+    "user_query": "test gpt-5-mini functionality"
+  },
+  "configuration": {
+    "max_searches": 2,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.6,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "model_provider": "openai",
+    "pages_per_search": 3,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true,
+    "enforce_endpoint_diversity": false,
+    "max_endpoint_repeats": 5,
+    "diversity_threshold": 0.3
+  },
+  "performance_metrics": {
+    "total_searches": 2,
+    "total_rounds": 1,
+    "total_results_found": 60,
+    "satisfaction_score": 0.36875,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.4,
+      "source_diversity": 0.2,
+      "evidence_quality": 0.7350000000000001,
+      "claim_specificity": 0.3,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Reached maximum search limit (2)"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [],
+      "moderately_effective": [
+        {
+          "search_id": 1,
+          "query": "gpt-5-mini OR \"gpt 5 mini\" OR gpt5-mini",
+          "results": 60,
+          "effectiveness": 6.0
+        }
+      ],
+      "low_effectiveness": [],
+      "ineffective": [
+        {
+          "search_id": 2,
+          "query": "from:openai \"gpt-5-mini\" OR \"gpt 5 mini\"",
+          "results": 0,
+          "effectiveness": 0.0
+        }
+      ]
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "Graph Strategy: We currently have no data about any Twitter discussion or official signals about \"gpt-5-mini.\" The highest-priority gaps are (1) whether the term is being discussed on Twitter, (2) whether OpenAI or other authoritative accounts have posted about it, and (3) whether the topic is trending or attracting conversation from influential users. To close these gaps efficiently and systematically, run complementary queries that (a) capture broad, real-time mentions across Twitter, (b) check the official OpenAI timeline/profile for any authoritative posts, and (c) measure whether the topic appears in trends (signal strength). This mix uses multiple endpoint types (search, timeline, screenname, trends) as required to get conversation discovery, source verification, and trend context in the next round.",
+        "avg_effectiveness": 3.0
+      }
+    ],
+    "dead_ends": [
+      "from:openai \"gpt-5-mini\" OR \"gpt 5 mini\""
+    ],
+    "promising_leads": [
+      "gpt-5-mini OR \"gpt 5 mini\" OR gpt5-mini"
+    ]
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Graph Strategy: We currently have no data about any Twitter discussion or official signals about \"gpt-5-mini.\" The highest-priority gaps are (1) whether the term is being discussed on Twitter, (2) whether OpenAI or other authoritative accounts have posted about it, and (3) whether the topic is trending or attracting conversation from influential users. To close these gaps efficiently and systematically, run complementary queries that (a) capture broad, real-time mentions across Twitter, (b) check the official OpenAI timeline/profile for any authoritative posts, and (c) measure whether the topic appears in trends (signal strength). This mix uses multiple endpoint types (search, timeline, screenname, trends) as required to get conversation discovery, source verification, and trend context in the next round.",
+      "searches_count": 2,
+      "total_results": 60,
+      "effectiveness": 3.0,
+      "insights": [
+        "Multiple informal user reports/tweets indicate gpt-5-mini is being used and in some cases preferred to larger/fuller models (results 1,5,14,18,20).",
+        "gpt-5-mini is being used across domains (coding, trading signals, general chat) — several tweets show trading strategy outputs labeled with gpt-5-mini (results 3,4,15,16,17).",
+        "There is at least one product-level mention: GitHub Copilot changelog notes availability of OpenAI GPT-5 and GPT-5 mini in Copilot (result 6) — this is the most authoritative-looking item in the set."
+      ]
+    }
+  ]
+}

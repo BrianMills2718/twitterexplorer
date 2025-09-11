@@ -1,0 +1,139 @@
+{
+  "nodes": {
+    "7b3a225a-4c9b-4692-8557-5a975b7ed7ec": {
+      "id": "7b3a225a-4c9b-4692-8557-5a975b7ed7ec",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "test search execution validation",
+        "is_root": true,
+        "investigation_goal": "test search execution validation"
+      },
+      "created_at": "2025-09-10T08:11:17.568828"
+    },
+    "2aad380e-cd44-46cc-84f4-bd9d98b38d68": {
+      "id": "2aad380e-cd44-46cc-84f4-bd9d98b38d68",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: This search directly targets the core terms of the investigation across recent tweets, aiming to capture current discussions, technical issues, or best practices related to validating Twitter's search API execution. Using 'Latest' ensures we get the most up-to-date information.",
+        "parent_analytic_question": "7b3a225a-4c9b-4692-8557-5a975b7ed7ec"
+      },
+      "created_at": "2025-09-10T08:11:30.329151"
+    },
+    "162a6231-f4d3-4ba1-a7d3-4791527886d7": {
+      "id": "162a6231-f4d3-4ba1-a7d3-4791527886d7",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "twitter search API validation OR tweet execution testing",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-10T08:11:30.329151"
+    },
+    "83c5b702-d4c9-4a05-b983-b39fddef92de": {
+      "id": "83c5b702-d4c9-4a05-b983-b39fddef92de",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Inspecting the timeline of the official 'twitterdev' account will provide direct insights into any announcements, updates, or discussions they have regarding the Twitter API, its functionality, testing, or validation processes. This serves as a primary source of official information.",
+        "parent_analytic_question": "7b3a225a-4c9b-4692-8557-5a975b7ed7ec"
+      },
+      "created_at": "2025-09-10T08:11:30.329151"
+    },
+    "30db3878-aad1-47ca-8130-74e6121f2b62": {
+      "id": "30db3878-aad1-47ca-8130-74e6121f2b62",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "twitterdev"
+        }
+      },
+      "created_at": "2025-09-10T08:11:30.329151"
+    },
+    "776021fb-ae22-4cb7-84b8-1f4ed084ea13": {
+      "id": "776021fb-ae22-4cb7-84b8-1f4ed084ea13",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: By examining who 'twitterdev' follows, we can identify other key accounts, organizations, or individuals that are relevant to Twitter's developer ecosystem, API development, or validation. This helps expand our understanding of the community and potential sources of expertise or related discussions.",
+        "parent_analytic_question": "7b3a225a-4c9b-4692-8557-5a975b7ed7ec"
+      },
+      "created_at": "2025-09-10T08:11:30.329151"
+    },
+    "a86dc08e-8653-4c82-94b0-8853f43ad350": {
+      "id": "a86dc08e-8653-4c82-94b0-8853f43ad350",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "following.php",
+        "parameters": {
+          "screenname": "twitterdev"
+        }
+      },
+      "created_at": "2025-09-10T08:11:30.329151"
+    }
+  },
+  "edges": [
+    {
+      "id": "c9a63c5a-f5b3-4089-a8c4-5ba82d12d5ff",
+      "source_id": "7b3a225a-4c9b-4692-8557-5a975b7ed7ec",
+      "target_id": "2aad380e-cd44-46cc-84f4-bd9d98b38d68",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T08:11:30.329151"
+    },
+    {
+      "id": "383a9dee-3ef7-4361-8ac6-f6b1999d759e",
+      "source_id": "2aad380e-cd44-46cc-84f4-bd9d98b38d68",
+      "target_id": "162a6231-f4d3-4ba1-a7d3-4791527886d7",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T08:11:30.329151"
+    },
+    {
+      "id": "b11569b7-4110-43cf-ba06-886786709d3d",
+      "source_id": "7b3a225a-4c9b-4692-8557-5a975b7ed7ec",
+      "target_id": "83c5b702-d4c9-4a05-b983-b39fddef92de",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T08:11:30.329151"
+    },
+    {
+      "id": "ae4102c7-982e-433b-90b4-7858b5af0770",
+      "source_id": "83c5b702-d4c9-4a05-b983-b39fddef92de",
+      "target_id": "30db3878-aad1-47ca-8130-74e6121f2b62",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T08:11:30.329151"
+    },
+    {
+      "id": "9b639260-8a2f-4964-aba4-56dd0db08b00",
+      "source_id": "7b3a225a-4c9b-4692-8557-5a975b7ed7ec",
+      "target_id": "776021fb-ae22-4cb7-84b8-1f4ed084ea13",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T08:11:30.329151"
+    },
+    {
+      "id": "0d3a3a7d-3234-41dc-8f36-efb4121847d0",
+      "source_id": "776021fb-ae22-4cb7-84b8-1f4ed084ea13",
+      "target_id": "a86dc08e-8653-4c82-94b0-8853f43ad350",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T08:11:30.329151"
+    }
+  ],
+  "analytic_question": "7b3a225a-4c9b-4692-8557-5a975b7ed7ec",
+  "created_at": "2025-09-10T08:11:46.462066"
+}

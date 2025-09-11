@@ -1,0 +1,1878 @@
+{
+  "nodes": {
+    "ea379dcc-e416-4f9d-b391-74fac7adc0d2": {
+      "id": "ea379dcc-e416-4f9d-b391-74fac7adc0d2",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "test gpt-5-mini functionality",
+        "is_root": true,
+        "investigation_goal": "test gpt-5-mini functionality"
+      },
+      "created_at": "2025-09-10T08:35:40.425393"
+    },
+    "111af712-f270-4ea2-acd5-fbefd62f6ace": {
+      "id": "111af712-f270-4ea2-acd5-fbefd62f6ace",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: A broad, latest-first search to capture all real-time mentions and user reports referencing variations of the term. This fills the primary gap: whether Twitter conversation about gpt-5-mini exists and what the immediate volume/tones are.",
+        "parent_analytic_question": "ea379dcc-e416-4f9d-b391-74fac7adc0d2"
+      },
+      "created_at": "2025-09-10T08:36:09.372685"
+    },
+    "aee3a39e-4cb9-4336-b684-b355b9295a23": {
+      "id": "aee3a39e-4cb9-4336-b684-b355b9295a23",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "gpt-5-mini OR \"gpt 5 mini\" OR gpt5-mini",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-10T08:36:09.372685"
+    },
+    "9385f113-8f69-494d-9db7-10508406ab0e": {
+      "id": "9385f113-8f69-494d-9db7-10508406ab0e",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Targeted search for official posts from OpenAI mentioning gpt-5-mini. If OpenAI announced or referenced it, this finds the authoritative source and any linked assets (blog, demo). Using 'Top' surfaces the most significant posts from that account.",
+        "parent_analytic_question": "ea379dcc-e416-4f9d-b391-74fac7adc0d2"
+      },
+      "created_at": "2025-09-10T08:36:09.373189"
+    },
+    "b8be763b-685e-4a05-a74e-884cc6adfa98": {
+      "id": "b8be763b-685e-4a05-a74e-884cc6adfa98",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "from:openai \"gpt-5-mini\" OR \"gpt 5 mini\"",
+          "search_type": "Top"
+        }
+      },
+      "created_at": "2025-09-10T08:36:09.373202"
+    },
+    "57f36040-657c-4515-98e5-19e88427899f": {
+      "id": "57f36040-657c-4515-98e5-19e88427899f",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Pull OpenAI's recent timeline to verify context around any mention found in searches, capture follow-up threads, replies, or pinned posts that might reference a gpt-5-mini test, demo, or release notes.",
+        "parent_analytic_question": "ea379dcc-e416-4f9d-b391-74fac7adc0d2"
+      },
+      "created_at": "2025-09-10T08:36:09.373202"
+    },
+    "be40469b-32fa-4b45-964f-c30f084e1f30": {
+      "id": "be40469b-32fa-4b45-964f-c30f084e1f30",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "openai"
+        }
+      },
+      "created_at": "2025-09-10T08:36:09.373202"
+    },
+    "bb09ee56-ee03-4fa7-b96e-9f5c98ec8719": {
+      "id": "bb09ee56-ee03-4fa7-b96e-9f5c98ec8719",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Retrieve OpenAI's profile metadata (bio, verification, follower counts, pinned tweet id). This helps assess credibility of any claim and provides a pin/tweet id to deep-dive into conversations if needed.",
+        "parent_analytic_question": "ea379dcc-e416-4f9d-b391-74fac7adc0d2"
+      },
+      "created_at": "2025-09-10T08:36:09.373202"
+    },
+    "51a35773-7521-4df9-898e-74986f629047": {
+      "id": "51a35773-7521-4df9-898e-74986f629047",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "screenname.php",
+        "parameters": {
+          "screenname": "openai"
+        }
+      },
+      "created_at": "2025-09-10T08:36:09.373202"
+    },
+    "ad5b89ac-45be-4f81-810f-70ba9bc31d81": {
+      "id": "ad5b89ac-45be-4f81-810f-70ba9bc31d81",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Check whether mentions of gpt-5-mini (or related AI terms) are appearing in country-level trends in the United States \u2014 useful for assessing broader attention and prioritizing deeper monitoring or influencer mapping.",
+        "parent_analytic_question": "ea379dcc-e416-4f9d-b391-74fac7adc0d2"
+      },
+      "created_at": "2025-09-10T08:36:09.373202"
+    },
+    "bd3dc9be-957d-4e50-8cdb-e5485863a266": {
+      "id": "bd3dc9be-957d-4e50-8cdb-e5485863a266",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "trends.php",
+        "parameters": {
+          "country": "UnitedStates"
+        }
+      },
+      "created_at": "2025-09-10T08:36:09.373202"
+    },
+    "e8ab12e8-588f-4643-90ef-012efda8bec0": {
+      "id": "e8ab12e8-588f-4643-90ef-012efda8bec0",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Changed from GPT5 mini to the regular one and now Cline is really smart and way more effective",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T08:36:47.536894",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.6,
+          "goal_relevance_score": 0.5
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T08:36:47.536894"
+      },
+      "created_at": "2025-09-10T08:36:47.536894"
+    },
+    "15423c28-ea64-46d8-947e-f7f6d6d654fb": {
+      "id": "15423c28-ea64-46d8-947e-f7f6d6d654fb",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "gpt-5-mini-2025-08-07- strategy \ud83d\udcc8 | Short TP:146.308 SL:147.585\nStrong_Downtrend, targeting H1 support 146.308, SL above resistance 147.579, RR=3.4, spread OK\n#USDJPY https://t.co/Vlh2rEf3HK",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T08:36:47.536894",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.85,
+          "goal_relevance_score": 0.5
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T08:36:47.536894"
+      },
+      "created_at": "2025-09-10T08:36:47.536894"
+    },
+    "60825651-f0b4-4251-81f4-1b6c866b07ac": {
+      "id": "60825651-f0b4-4251-81f4-1b6c866b07ac",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "gpt-5-mini-2025-08-07- strategy \ud83d\udcc8 | Long TP:1.17985 SL:1.1689\nStrong_Uptrend, bounce above pivot/support, SL below 1.16911, RR=2.0, volume Very_Low, spread OK. L73/S36.5\n#EURUSD https://t.co/1CURKV7BuT",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T08:36:47.537372",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.85,
+          "goal_relevance_score": 0.5
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T08:36:47.537372"
+      },
+      "created_at": "2025-09-10T08:36:47.537372"
+    },
+    "eaf72356-5bb9-4e9b-9cf4-b8c4263fe866": {
+      "id": "eaf72356-5bb9-4e9b-9cf4-b8c4263fe866",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "OpenAI GPT-5 and GPT-5 mini are now generally available in GitHub Copilot - GitHub Changelog\nhttps://t.co/g6Dr3UiNGy",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T08:36:47.537372",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.95,
+          "goal_relevance_score": 0.5
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T08:36:47.537372"
+      },
+      "created_at": "2025-09-10T08:36:47.537372"
+    },
+    "79011f0f-7e71-4a4d-b531-0dd679508002": {
+      "id": "79011f0f-7e71-4a4d-b531-0dd679508002",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "o4-mini  \n- GPT-4.1 \n- Flux Kontext \n- GPT Image 1 (4o image gen) \n- Claude 4 \n- Llama 4 \n- Codex \n- Veo 3 \n- Gemini 2.5 Pro \n- Gemini 2.5 Flash\n- GPT-5 \n- GPT-5 mini \n- GPT-5 nano \n- GPT-OSS-120b \n- GPT-OSS-20b \n- Claude Opus 4.1 \n- Genie 3 \n- ChatGPT Agent \n- Grok-4",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T08:36:47.537372",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.6,
+          "goal_relevance_score": 0.5
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T08:36:47.537372"
+      },
+      "created_at": "2025-09-10T08:36:47.537372"
+    },
+    "bb5735b7-96fa-4284-861a-d4c44aaf7250": {
+      "id": "bb5735b7-96fa-4284-861a-d4c44aaf7250",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Both new strategy signals point toward USD weakness across different crosses: USDJPY shows a short setup targeting H1 support at 146.308 (SL above resistance 147.579, RR=3.4), while EURUSD shows a long setup (TP 1.17985, SL 1.1689, RR=2.0) after a bounce above pivot/support. Together these indicate a cross-pair directional bias (USD weakening) rather than isolated pair noise. Caveats: EURUSD volume is Very_Low which reduces conviction and timeframes/context may differ; manage risk with the supplied SLs and monitor volume/spread. This insight differs from single-pair signals by synthesizing a multi-pair USD directional bias useful for portfolio-level decisions and correlation-aware sizing.",
+        "insight_type": "connection",
+        "title": "Consistent USD weakness across major pairs",
+        "confidence": 0.8,
+        "investigation_relevance": 0.85,
+        "key_evidence": [
+          "gpt-5-mini-2025-08-07- strategy | Short TP:146.308 SL:147.585 Strong_Downtrend, targeting H1 support 146.308, RR=3.4 #USDJPY",
+          "gpt-5-mini-2025-08-07- strategy | Long TP:1.17985 SL:1.1689 Strong_Uptrend, bounce above pivot/support, volume Very_Low, RR=2.0 #EURUSD"
+        ]
+      },
+      "created_at": "2025-09-10T08:37:48.844432"
+    },
+    "6674b0ca-0263-4d74-af35-9fbc2d471594": {
+      "id": "6674b0ca-0263-4d74-af35-9fbc2d471594",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Are the two signals generated on the same timeframe and trading horizon (e.g., H1 vs intraday vs swing), and if not, how does the timeframe mismatch affect the validity of a unified USD-weakness view?",
+        "emergence_reason": "The insight notes potentially different timeframes/contexts. Combining signals from different horizons can create false confidence if one is short-term noise and the other is a longer-term setup."
+      },
+      "created_at": "2025-09-10T08:38:15.857885"
+    },
+    "23eafe00-047e-4899-96dd-de39430fa0d1": {
+      "id": "23eafe00-047e-4899-96dd-de39430fa0d1",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How stable and strong is the historical correlation between USDJPY and EURUSD over the relevant target horizons (H1 and the expected trade duration)?",
+        "emergence_reason": "The cross-pair directional bias assumes USD is the common driver. Correlation can be regime-dependent; confirming stability reduces the risk of treating independent moves as a unified USD signal."
+      },
+      "created_at": "2025-09-10T08:38:15.857885"
+    },
+    "85f42c8c-4002-4409-9ef6-98ae7c56bca6": {
+      "id": "85f42c8c-4002-4409-9ef6-98ae7c56bca6",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What is the current liquidity/spread profile and typical trade execution slippage for EURUSD and USDJPY at the planned entry times, and could execution differences invalidate the expected RRs?",
+        "emergence_reason": "EURUSD volume is reported Very_Low, and different currency pairs have differing spreads and slippage profiles which affect realised risk/reward and position sizing."
+      },
+      "created_at": "2025-09-10T08:38:15.857885"
+    },
+    "c47e988b-0512-4448-8155-6c7af83bf6a1": {
+      "id": "c47e988b-0512-4448-8155-6c7af83bf6a1",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Are there upcoming macro events, central bank communications, or scheduled liquidity windows (e.g., NY open, BoJ/ECB announcements, US data) that could differentially affect EURUSD and USDJPY?",
+        "emergence_reason": "News can sharply move one cross without affecting the other or can trigger correlated flows; identifying such events can change trade conviction or require adjusting SL/TP."
+      },
+      "created_at": "2025-09-10T08:38:15.857885"
+    },
+    "bcf54a7f-3400-4c64-a8bd-51daf60bffaf": {
+      "id": "bcf54a7f-3400-4c64-a8bd-51daf60bffaf",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Are the drivers implied by each signal (e.g., US data/Fed expectations, risk-on/risk-off, BoJ policy/JPY flows, EUR-specific factors) consistent with a common USD-weakness narrative, or do pair-specific fundamentals point to divergent causes?",
+        "emergence_reason": "USD weakness could arise from different causes across pairs. If drivers differ, the apparent agreement may be coincidental and less robust to shocks."
+      },
+      "created_at": "2025-09-10T08:38:15.857885"
+    },
+    "3ddbaacb-a731-4379-9227-f0b68622354b": {
+      "id": "3ddbaacb-a731-4379-9227-f0b68622354b",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Given differing reward-to-risk ratios and confidence levels (RR=3.4 and RR=2.0; EURUSD volume Very_Low), how should portfolio-level position sizing be adjusted to manage correlated exposure to USD?",
+        "emergence_reason": "Taking both trades without portfolio-aware sizing could overweight USD exposure or overcommit capital based on signals with unequal conviction."
+      },
+      "created_at": "2025-09-10T08:38:15.857885"
+    },
+    "e823c962-389f-407b-900e-ebca78798809": {
+      "id": "e823c962-389f-407b-900e-ebca78798809",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Is there confirmation (or contradiction) from other USD crosses and synthetic USD indices (e.g., USDCHF, USDCAD, DXY) and from order flow/volume metrics that support broad USD weakness?",
+        "emergence_reason": "Triangulating with additional pairs or a USD index reduces the risk that two pairs are coincidentally aligned; lack of broader confirmation is a gap."
+      },
+      "created_at": "2025-09-10T08:38:15.857885"
+    },
+    "5cb01a1b-4e46-4c72-9ff5-f689149be0cc": {
+      "id": "5cb01a1b-4e46-4c72-9ff5-f689149be0cc",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Could JPY-specific market behaviors (safe-haven flows, potential BoJ intervention, yen funding dynamics) cause USDJPY to behave differently than EURUSD despite a common USD theme?",
+        "emergence_reason": "JPY often reacts to global risk and BoJ policy idiosyncratically, introducing a plausible divergence risk that undermines a simple USD-weakness aggregation."
+      },
+      "created_at": "2025-09-10T08:38:15.857885"
+    },
+    "9b708066-e4b2-4310-ac59-ff54b26be776": {
+      "id": "9b708066-e4b2-4310-ac59-ff54b26be776",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Does the low EURUSD volume reflect market session timing or an instrument/venue artifact, and can volume-normalised or spread-adjusted signals improve confidence?",
+        "emergence_reason": "Labelled 'Very_Low' volume needs context\u2014if it's time-of-day or data feed-specific, the signal may be salvageable with simple adjustments; if systemic, conviction should be reduced."
+      },
+      "created_at": "2025-09-10T08:38:15.857885"
+    },
+    "667798bc-ddc9-4918-ac27-39568f16b803": {
+      "id": "667798bc-ddc9-4918-ac27-39568f16b803",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Would backtesting multi-pair strategies that only enter trades when two or more USD-cross signals align produce better risk-adjusted outcomes than treating each signal independently?",
+        "emergence_reason": "The insight suggests a portfolio-level approach; empirical testing is needed to validate whether correlation-aware entry rules improve performance versus single-pair trades."
+      },
+      "created_at": "2025-09-10T08:38:15.857885"
+    },
+    "357fb903-4aed-425c-a6e3-3259f7a930d2": {
+      "id": "357fb903-4aed-425c-a6e3-3259f7a930d2",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Added evidence: the new gpt-5-mini (now switched to regular) generated USDJPY short setup targeting H1 support 146.308 with SL ~147.58 and RR=3.4, spread OK. This directly reinforces the existing pattern of USD weakness signaled across crosses, especially as the trade is H1/time-horizon aligned and shows acceptable execution conditions (spread). It increases the weight of USD-sell signals vs USD-buy in the current dataset, while not resolving outstanding questions about inter-pair correlation strength, macro drivers, or JPY-specific risks.",
+        "insight_type": "trend",
+        "title": "Consistent USD weakness across major pairs",
+        "confidence": 0.86,
+        "investigation_relevance": 0.9,
+        "key_evidence": [
+          "gpt-5-mini strategy short USDJPY \u2014 TP:146.308 SL:147.585 RR=3.4, spread OK",
+          "Existing summary: both new strategy signals point toward USD weakness across different crosses; USDJPY short setup targeting H1 support 146.308"
+        ]
+      },
+      "created_at": "2025-09-10T08:38:40.100650"
+    },
+    "39026582-553e-4eff-9186-dc55885b5226": {
+      "id": "39026582-553e-4eff-9186-dc55885b5226",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How strong and stable is the correlation between EURUSD and USDJPY (and other USD crosses) right now?",
+        "emergence_reason": "The insight synthesizes a USD directional bias from two pairs. That inference depends on a meaningful cross-pair correlation; if correlations are weak or transient, the multi-pair bias may be invalid."
+      },
+      "created_at": "2025-09-10T08:39:05.023015"
+    },
+    "9118bed3-349a-4d8b-9f62-950980d28fe6": {
+      "id": "9118bed3-349a-4d8b-9f62-950980d28fe6",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Are the two setups time- and horizon-aligned (same timeframe and expected trade duration)?",
+        "emergence_reason": "The note flags possible difference in timeframes/context. If the signals operate on different horizons, aggregating them into one portfolio decision could be misleading."
+      },
+      "created_at": "2025-09-10T08:39:05.023015"
+    },
+    "7c0dfba8-d3ec-4318-89d5-1d1ccec6609e": {
+      "id": "7c0dfba8-d3ec-4318-89d5-1d1ccec6609e",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What macro/economic drivers are currently supporting USD weakness, and are they likely to persist over the trades' horizons?",
+        "emergence_reason": "Without identifying macro drivers (rates, data, risk sentiment, central bank communication), it's unclear whether the USD weakening is structural or a short-lived technical move."
+      },
+      "created_at": "2025-09-10T08:39:05.023015"
+    },
+    "bb1a9f60-1e70-41e4-83f5-20b5019ec8f3": {
+      "id": "bb1a9f60-1e70-41e4-83f5-20b5019ec8f3",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How material is the 'Very_Low' volume on EURUSD for signal reliability, and does it vary by session or venue?",
+        "emergence_reason": "Low volume reduces conviction per the insight. Quantifying when/where volume is low will determine whether the EURUSD setup should be trusted or downweighted."
+      },
+      "created_at": "2025-09-10T08:39:05.023015"
+    },
+    "1cf81e5f-babe-46dd-8adf-538eb1ea34a0": {
+      "id": "1cf81e5f-babe-46dd-8adf-538eb1ea34a0",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Are there JPY-specific risks (BoJ intervention, safe-haven flows, Japanese data/policy shifts) that could decouple USDJPY from a broader USD bias?",
+        "emergence_reason": "JPY often moves for idiosyncratic reasons. The USDJPY short could be invalidated by JPY drivers even if EURUSD points to USD weakness."
+      },
+      "created_at": "2025-09-10T08:39:05.023015"
+    },
+    "a4171773-92c5-4120-aedd-f6abcf9463d2": {
+      "id": "a4171773-92c5-4120-aedd-f6abcf9463d2",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Do the supplied stop-loss levels account for recent intraday volatility and realistic slippage/spread under stressed conditions?",
+        "emergence_reason": "The risk/reward and SLs are given, but their robustness depends on current volatility and execution; inadequate SLs could produce worse-than-expected outcomes."
+      },
+      "created_at": "2025-09-10T08:39:05.023015"
+    },
+    "2819f424-849c-432a-b90a-23a01156c8ac": {
+      "id": "2819f424-849c-432a-b90a-23a01156c8ac",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Do other USD crosses (GBPUSD, AUDUSD, USDCAD, NZDUSD) show confirmation of USD weakness or are they mixed?",
+        "emergence_reason": "Looking across more crosses would test whether the observed USD weakness is pervasive or confined to select pairs."
+      },
+      "created_at": "2025-09-10T08:39:05.023015"
+    },
+    "1d376742-bfdf-49c2-a150-6f2d99250426": {
+      "id": "1d376742-bfdf-49c2-a150-6f2d99250426",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How consistent are execution conditions (spreads, fills) across brokers/venues for these setups?",
+        "emergence_reason": "USDJPY spread was noted as OK for one source; different execution environments could materially change trade viability and realized RR."
+      },
+      "created_at": "2025-09-10T08:39:05.023015"
+    },
+    "de105fdb-6356-4451-91ae-75ff64f9957b": {
+      "id": "de105fdb-6356-4451-91ae-75ff64f9957b",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Is the USD weakness signal persistent in recent historical data (backtest) or is it an isolated cluster of signals?",
+        "emergence_reason": "Determining whether similar multi-pair USD-sell signals have worked historically will inform confidence and sizing decisions."
+      },
+      "created_at": "2025-09-10T08:39:05.023015"
+    },
+    "ef72245c-8f4f-4126-aae1-8e8fb677d21f": {
+      "id": "ef72245c-8f4f-4126-aae1-8e8fb677d21f",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Does the economic calendar or scheduled news events overlap with the trades' expected duration and could they materially affect the setups?",
+        "emergence_reason": "High-impact releases can rapidly change correlations, liquidity, and price action; the trades' timing relative to news matters for risk management."
+      },
+      "created_at": "2025-09-10T08:39:05.023015"
+    },
+    "e4bb6004-85c9-4826-9106-4e71f2535c58": {
+      "id": "e4bb6004-85c9-4826-9106-4e71f2535c58",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Given correlated USD exposure, what portfolio-level sizing or hedging adjustments should be applied to avoid concentration risk?",
+        "emergence_reason": "Synthesis into a USD directional bias implies concentrated exposure; without sizing rules or hedges, portfolio risk may be mis-specified."
+      },
+      "created_at": "2025-09-10T08:39:05.023015"
+    },
+    "d8cb9e50-fcca-47c9-b30f-c6fa1296d773": {
+      "id": "d8cb9e50-fcca-47c9-b30f-c6fa1296d773",
+      "node_type": "Insight",
+      "properties": {
+        "content": "target_insight_id: Consistent USD weakness across major pairs (confidence: 0.86)\nconfidence_adjustment: 0.90\nreasoning: Two new independent model-generated signals on different USD crosses reinforce the existing theme of USD weakness. The USDJPY short (TP 146.308, SL 147.585, RR=3.4, spread OK) is a relatively high-RR H1-leaning setup pointing to JPY strength / USD softness. The EURUSD long (TP 1.17985, SL 1.1689, RR=2.0, volume Very_Low, spread OK) aligns directionally\u2014EUR up vs USD\u2014but has very low volume which reduces its standalone reliability. Taken together, these findings increase the weight of evidence for cross-pair USD weakness while noting a caveat on EURUSD liquidity. Also flag timeframe clarity as a remaining open question (H1 for USDJPY, EURUSD timeframe unspecified), which limits full conviction. Overall net effect: raise confidence modestly.",
+        "insight_type": "trend",
+        "title": "STRENGTHEN: Consistent USD weakness across major pairs (0.86)",
+        "confidence": 0.9,
+        "investigation_relevance": 0.93,
+        "key_evidence": [
+          "gpt-5-mini USDJPY short: TP 146.308, SL 147.585, RR=3.4, targeting H1 support",
+          "gpt-5-mini EURUSD long: TP 1.17985, SL 1.1689, RR=2.0, volume Very_Low, spread OK"
+        ]
+      },
+      "created_at": "2025-09-10T08:40:42.301529"
+    },
+    "0d98d049-0668-420f-a501-955aa74542ae": {
+      "id": "0d98d049-0668-420f-a501-955aa74542ae",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Are the timeframes for the EURUSD and USDJPY signals aligned, and if not, how does the timeframe mismatch affect the validity of a cross-pair USD-weakness conclusion?",
+        "emergence_reason": "The USDJPY signal is explicitly H1 while the EURUSD timeframe is unspecified. Combining signals from different horizons can produce misleading portfolio-level directional bias if one is intraday and the other is longer/shorter-term."
+      },
+      "created_at": "2025-09-10T08:41:04.412336"
+    },
+    "b895cd63-10db-4b3b-82ab-13610dc1c967": {
+      "id": "b895cd63-10db-4b3b-82ab-13610dc1c967",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How strong and stable is the inter-pair correlation between EURUSD and USDJPY right now (and over relevant lookback windows), and does that correlation justify synthesizing a single USD-directional view?",
+        "emergence_reason": "The insight synthesizes a cross-pair USD weakness from two pairs, but it hinges on sufficient correlation; unknown correlation strength/time-dependence is a major gap."
+      },
+      "created_at": "2025-09-10T08:41:04.412336"
+    },
+    "d624b993-fd65-44dc-b4f4-40dbf413b17f": {
+      "id": "d624b993-fd65-44dc-b4f4-40dbf413b17f",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Is the very low EURUSD volume an artifact of the data source/time-of-day, or indicative of true liquidity/conviction issues, and how should that downgrade the combined signal?",
+        "emergence_reason": "EURUSD volume flagged Very_Low undermines conviction; need to know whether this is temporary (session) or persistent (market-wide) to weight the signal appropriately."
+      },
+      "created_at": "2025-09-10T08:41:04.412336"
+    },
+    "24ee1917-19c8-4281-bd5a-865608857ab5": {
+      "id": "24ee1917-19c8-4281-bd5a-865608857ab5",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Are there near-term macroeconomic events, news releases, or central bank comments (USD, EUR, JPY) that could drive divergent moves in EURUSD vs USDJPY and invalidate a unified USD-weakness stance?",
+        "emergence_reason": "Macro events can produce pair-specific reactions (e.g., JPY sensitivity to BoJ statements, USD to NFP); not accounting for them risks large divergences between crosses."
+      },
+      "created_at": "2025-09-10T08:41:04.412336"
+    },
+    "0a72a8fd-1728-4cd0-b86d-2bd4a50b40c3": {
+      "id": "0a72a8fd-1728-4cd0-b86d-2bd4a50b40c3",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What JPY-specific risks (BoJ policy shifts, risk-off/japan-safe-haven flows, intervention risk) could be driving USDJPY independently of USD direction, and how do we separate JPY-driven moves from USD-driven moves?",
+        "emergence_reason": "USDJPY may move due to JPY factors unrelated to USD strength; conflating JPY strength with USD weakness could misattribute drivers and lead to wrong sizing/hedging."
+      },
+      "created_at": "2025-09-10T08:41:04.412336"
+    },
+    "c16e8602-0e51-4687-b2b2-dfc2eb1555a3": {
+      "id": "c16e8602-0e51-4687-b2b2-dfc2eb1555a3",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How independent are the two model-generated signals (different models/instances, data inputs, or shared biases), and does this reduce the effective number of independent confirmations?",
+        "emergence_reason": "Both signals were described as model-generated; if they share inputs/architectures or recent training/priors, apparent agreement may not be independent confirmation."
+      },
+      "created_at": "2025-09-10T08:41:04.412336"
+    },
+    "220dc71a-3523-4151-b672-426940db84d7": {
+      "id": "220dc71a-3523-4151-b672-426940db84d7",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What are the execution risks (spread variation, slippage, order fill probability) across the relevant sessions for both signals, and do current spreads truly remain 'OK' under live conditions?",
+        "emergence_reason": "The notes say 'spread OK' but execution conditions can change; combined portfolio exposure magnifies slippage risk and can materially alter realized RR."
+      },
+      "created_at": "2025-09-10T08:41:04.412336"
+    },
+    "394be236-3659-4f32-b3fc-a9a50d789257": {
+      "id": "394be236-3659-4f32-b3fc-a9a50d789257",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Given conflicting conviction levels (high for USDJPY, low for EURUSD), what portfolio-level position-sizing and correlation-aware hedging rules should be applied to take these signals together?",
+        "emergence_reason": "Synthesizing a USD view for portfolio decisions requires rules to translate mixed-confidence, correlated signals into sizes/hedges to control aggregate risk."
+      },
+      "created_at": "2025-09-10T08:41:04.412336"
+    },
+    "9cf64e82-80ef-4ba3-9d2d-c1f1523e3aca": {
+      "id": "9cf64e82-80ef-4ba3-9d2d-c1f1523e3aca",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Has this pattern of cross-pair agreement (USD weakness across multiple crosses) been backtested for predictive edge and drawdown characteristics, and what is its historical hit-rate when one pair had low liquidity?",
+        "emergence_reason": "Before increasing confidence, we need empirical evidence that multi-pair concordance improves edge and that low-liquidity members don't degrade performance."
+      },
+      "created_at": "2025-09-10T08:41:04.412336"
+    },
+    "07d893b3-8068-4ad3-bded-f657a0bbe9f4": {
+      "id": "07d893b3-8068-4ad3-bded-f657a0bbe9f4",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Are there intraday/sessional effects (e.g., Tokyo/London/New York overlap) that explain the signals or cause them to decay, meaning the trade windows for each signal differ materially?",
+        "emergence_reason": "Time-of-day effects affect liquidity, volatility and the persistence of setups; differing trade windows could reduce the practical utility of a cross-pair stance."
+      },
+      "created_at": "2025-09-10T08:41:04.412336"
+    },
+    "9387b085-09c8-4a25-bd32-a7a336331b8f": {
+      "id": "9387b085-09c8-4a25-bd32-a7a336331b8f",
+      "node_type": "Insight",
+      "properties": {
+        "content": "STRENGTHEN",
+        "insight_type": "trend",
+        "title": "Consistent USD weakness across major pairs (confidence: 0.86)",
+        "confidence": 0.92,
+        "investigation_relevance": 0.95,
+        "key_evidence": [
+          "gpt-5-mini-2025-08-07 strategy: Short USDJPY TP 146.308 SL 147.585, Strong_Downtrend, targeting H1 support, RR=3.4",
+          "OpenAI GPT-5 and GPT-5 mini now generally available in GitHub Copilot (implies multiple independent model instances producing signals)"
+        ]
+      },
+      "created_at": "2025-09-10T08:41:18.678490"
+    },
+    "41fb7624-d539-4ee9-a40d-8e4d9560393e": {
+      "id": "41fb7624-d539-4ee9-a40d-8e4d9560393e",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What exact timeframe was the EURUSD long signal generated on, and is it horizon-aligned with the USDJPY H1 short?",
+        "emergence_reason": "The insights note timeframe ambiguity (EURUSD unspecified vs USDJPY H1). Different horizons reduce the ability to interpret them as a single USD-directional signal and affect trade management and correlation assumptions."
+      },
+      "created_at": "2025-09-10T08:41:38.240746"
+    },
+    "0ca5afa0-4de2-4351-b393-9492d5444c1b": {
+      "id": "0ca5afa0-4de2-4351-b393-9492d5444c1b",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How strong and stable is the current correlation between EURUSD and USDJPY (and other USD crosses) over the relevant horizon(s)?",
+        "emergence_reason": "The conclusion of cross-pair USD weakness relies on inter-pair correlation. Without quantifying correlation strength and stability, portfolio-level sizing and conviction are uncertain."
+      },
+      "created_at": "2025-09-10T08:41:38.240746"
+    },
+    "5e2d332e-7251-4d58-a8e4-a5f8dc2857e0": {
+      "id": "5e2d332e-7251-4d58-a8e4-a5f8dc2857e0",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Are there contemporaneous macro or policy drivers (Fed/BoJ announcements, economic data, risk sentiment) that independently support USD weakness or might contradict it?",
+        "emergence_reason": "Model-generated technical signals may be contradicted or reinforced by fundamentals; identifying macro catalysts helps assess persistence and potential abrupt reversals (e.g., central bank interventions)."
+      },
+      "created_at": "2025-09-10T08:41:38.240746"
+    },
+    "8b2f35d5-e2ba-4ce8-bb14-69e3fa7c8510": {
+      "id": "8b2f35d5-e2ba-4ce8-bb14-69e3fa7c8510",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Why is EURUSD volume flagged as Very_Low \u2014 is this due to market hours, instrument liquidity, data feed issues, or genuine market illiquidity?",
+        "emergence_reason": "Low volume materially reduces signal reliability; diagnosing the cause helps determine whether the EURUSD signal should be down-weighted or ignored."
+      },
+      "created_at": "2025-09-10T08:41:38.240746"
+    },
+    "daa772a2-6f54-48a1-8dff-d9d6f1f32ae1": {
+      "id": "daa772a2-6f54-48a1-8dff-d9d6f1f32ae1",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Are there JPY-specific risks (e.g., BOJ policy shifts, potential FX intervention, safe-haven flows) that could drive USDJPY independently of a broader USD trend?",
+        "emergence_reason": "USDJPY moves can be driven by JPY idiosyncratic factors that would invalidate a pure USD-weakness interpretation. These risks need to be assessed separately to avoid misattributing direction."
+      },
+      "created_at": "2025-09-10T08:41:38.240746"
+    },
+    "a6af919e-5ec7-467a-81cc-c57b89f88d2b": {
+      "id": "a6af919e-5ec7-467a-81cc-c57b89f88d2b",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Do other major USD pairs (USDCHF, USDCAD, AUDUSD, NZDUSD) show consistent directional signals, or are there contradictions in the broader cross-section?",
+        "emergence_reason": "The insight is based on two crosses; scanning additional majors can reveal contradictions or strengthen the cross-pair USD weakness thesis."
+      },
+      "created_at": "2025-09-10T08:41:38.240746"
+    },
+    "7c17efad-ade0-4843-b39e-f38e81980fe9": {
+      "id": "7c17efad-ade0-4843-b39e-f38e81980fe9",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How do spreads and intraday liquidity profiles for the proposed trade times affect execution risk and realized risk/reward?",
+        "emergence_reason": "Although spreads were reported OK for USDJPY and EURUSD, execution conditions can change across sessions; understanding liquidity dynamics is necessary for realistic trade planning and slippage estimates."
+      },
+      "created_at": "2025-09-10T08:41:38.240746"
+    },
+    "d2b3988e-68d3-4187-a9da-b67d3f536a57": {
+      "id": "d2b3988e-68d3-4187-a9da-b67d3f536a57",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What does historical backtesting show about instances where model signals aligned across EURUSD and USDJPY \u2014 did these precede sustained USD-weakness moves or were they noise?",
+        "emergence_reason": "Empirical validation of multi-pair signal alignment will indicate whether concurrent signals have predictive value beyond single-pair strategies."
+      },
+      "created_at": "2025-09-10T08:41:38.240746"
+    },
+    "2dd3d155-e33a-4ef8-ab07-744a665e8623": {
+      "id": "2dd3d155-e33a-4ef8-ab07-744a665e8623",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Given correlated positions (both short USD exposure), what correlation-aware position sizing or portfolio limits should be applied to control drawdown risk?",
+        "emergence_reason": "Treating the two trades as independent can understate portfolio risk; sizing rules that account for cross-correlation are needed to manage aggregate exposure."
+      },
+      "created_at": "2025-09-10T08:41:38.240746"
+    },
+    "258d0bf6-2cce-4fa4-a9fe-d2296efc3c47": {
+      "id": "258d0bf6-2cce-4fa4-a9fe-d2296efc3c47",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Are there timing or holding-period mismatches (entry triggers, TP/SL horizons) that could produce conflicting trade lifecycles even if directional bias is the same?",
+        "emergence_reason": "Different RR and TP/SL setups and time-in-market can produce divergent outcomes (one trade may hit TP quickly while the other lingers or reverses), reducing the practical benefit of a synthesized directional bias."
+      },
+      "created_at": "2025-09-10T08:41:38.241747"
+    },
+    "9f6e437d-7dee-4292-945c-61d1c3d6fa57": {
+      "id": "9f6e437d-7dee-4292-945c-61d1c3d6fa57",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Changed from GPT5 mini to the regular one and now Cline is really smart and way more effective",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 6.0,
+          "timestamp": "2025-09-10T08:41:55.809149"
+        }
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    "09be1ffd-6d20-4a6d-b1a2-e0ad153d105e": {
+      "id": "09be1ffd-6d20-4a6d-b1a2-e0ad153d105e",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "@hadohunter gpt-5-mini knows ball",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 6.0,
+          "timestamp": "2025-09-10T08:41:55.809149"
+        }
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    "436af965-0c6c-4001-8baa-48a6bf2ddfe5": {
+      "id": "436af965-0c6c-4001-8baa-48a6bf2ddfe5",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "gpt-5-mini-2025-08-07- strategy \ud83d\udcc8 | Short TP:146.308 SL:147.585\nStrong_Downtrend, targeting H1 support 146.308, SL above resistance 147.579, RR=3.4, spread OK\n#USDJPY https://t.co/Vlh2rEf3HK",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 6.0,
+          "timestamp": "2025-09-10T08:41:55.809149"
+        }
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    "ef6d200a-34c0-4f1f-8f2c-3ad6611dda04": {
+      "id": "ef6d200a-34c0-4f1f-8f2c-3ad6611dda04",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "gpt-5-mini-2025-08-07- strategy \ud83d\udcc8 | Long TP:1.17985 SL:1.1689\nStrong_Uptrend, bounce above pivot/support, SL below 1.16911, RR=2.0, volume Very_Low, spread OK. L73/S36.5\n#EURUSD https://t.co/1CURKV7BuT",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 6.0,
+          "timestamp": "2025-09-10T08:41:55.809149"
+        }
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    "61b5cd15-a3ec-4c43-876f-d379904e6e64": {
+      "id": "61b5cd15-a3ec-4c43-876f-d379904e6e64",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "@roo_code @rodrigoscoelho I think GPT-5 Mini and GPT-5 Flex through @roo_code  , @TraycerAI  and @RequestyAI are the golden ticket.",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 6.0,
+          "timestamp": "2025-09-10T08:41:55.809149"
+        }
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    "59541248-8344-476d-b998-02e45e60f7e5": {
+      "id": "59541248-8344-476d-b998-02e45e60f7e5",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Multiple informal user reports/tweets indicate gpt-5-mini is being used and in some cases preferred to larger/fuller models (results 1,5,14,18,20).",
+        "insight_type": "evaluation_derived",
+        "title": "Multiple informal user reports/tweets indicate gpt-5-mini...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.6,
+        "key_evidence": [
+          "Multiple informal user reports/tweets indicate gpt-5-mini is being used and in some cases preferred to larger/fuller models (results 1,5,14,18,20)."
+        ]
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    "88ab902b-bd0c-4144-af68-b529f901caaf": {
+      "id": "88ab902b-bd0c-4144-af68-b529f901caaf",
+      "node_type": "Insight",
+      "properties": {
+        "content": "gpt-5-mini is being used across domains (coding, trading signals, general chat) \u2014 several tweets show trading strategy outputs labeled with gpt-5-mini (results 3,4,15,16,17).",
+        "insight_type": "evaluation_derived",
+        "title": "gpt-5-mini is being used across domains...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.6,
+        "key_evidence": [
+          "gpt-5-mini is being used across domains (coding, trading signals, general chat) \u2014 several tweets show trading strategy outputs labeled with gpt-5-mini (results 3,4,15,16,17)."
+        ]
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    "b8c8534f-d060-419e-8afb-6c50eb7dfd74": {
+      "id": "b8c8534f-d060-419e-8afb-6c50eb7dfd74",
+      "node_type": "Insight",
+      "properties": {
+        "content": "There is at least one product-level mention: GitHub Copilot changelog notes availability of OpenAI GPT-5 and GPT-5 mini in Copilot (result 6) \u2014 this is the most authoritative-looking item in the set.",
+        "insight_type": "evaluation_derived",
+        "title": "There is at least one product-level...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.6,
+        "key_evidence": [
+          "There is at least one product-level mention: GitHub Copilot changelog notes availability of OpenAI GPT-5 and GPT-5 mini in Copilot (result 6) \u2014 this is the most authoritative-looking item in the set."
+        ]
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    "85cc9fc1-8f10-43fe-81df-9e83c7d83f2a": {
+      "id": "85cc9fc1-8f10-43fe-81df-9e83c7d83f2a",
+      "node_type": "Insight",
+      "properties": {
+        "content": "gpt-5-mini appears in community lists of available models and toolchains alongside many other models, suggesting it's being integrated into multi-model stacks (results 8,9,10,12).",
+        "insight_type": "evaluation_derived",
+        "title": "gpt-5-mini appears in community lists of...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.6,
+        "key_evidence": [
+          "gpt-5-mini appears in community lists of available models and toolchains alongside many other models, suggesting it's being integrated into multi-model stacks (results 8,9,10,12)."
+        ]
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    "4b6cbb37-432c-48e8-a621-f51915a811ec": {
+      "id": "4b6cbb37-432c-48e8-a621-f51915a811ec",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Some posts are non-English (Japanese/Chinese), indicating global usage and anecdotal evaluations (results 13,18).",
+        "insight_type": "evaluation_derived",
+        "title": "Some posts are non-English (Japanese/Chinese), indicating...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.6,
+        "key_evidence": [
+          "Some posts are non-English (Japanese/Chinese), indicating global usage and anecdotal evaluations (results 13,18)."
+        ]
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    "e2ef1b94-706d-4385-a65b-5e22c6256418": {
+      "id": "e2ef1b94-706d-4385-a65b-5e22c6256418",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Many results are terse social posts/links (tweets) that assert performance but provide little reproducible detail or benchmarks.",
+        "insight_type": "evaluation_derived",
+        "title": "Many results are terse social posts/links...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.6,
+        "key_evidence": [
+          "Many results are terse social posts/links (tweets) that assert performance but provide little reproducible detail or benchmarks."
+        ]
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    }
+  },
+  "edges": [
+    {
+      "id": "b0060767-e859-49c0-a15c-ea56a47dda22",
+      "source_id": "ea379dcc-e416-4f9d-b391-74fac7adc0d2",
+      "target_id": "111af712-f270-4ea2-acd5-fbefd62f6ace",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T08:36:09.372685"
+    },
+    {
+      "id": "1669f142-0428-4b98-8418-bc0707c9f22e",
+      "source_id": "111af712-f270-4ea2-acd5-fbefd62f6ace",
+      "target_id": "aee3a39e-4cb9-4336-b684-b355b9295a23",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T08:36:09.372685"
+    },
+    {
+      "id": "51980a97-fd89-4174-b6d0-02e7d92e0b02",
+      "source_id": "ea379dcc-e416-4f9d-b391-74fac7adc0d2",
+      "target_id": "9385f113-8f69-494d-9db7-10508406ab0e",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T08:36:09.373189"
+    },
+    {
+      "id": "293303f2-5fbd-476f-aab3-ceaa0aa7bcb4",
+      "source_id": "9385f113-8f69-494d-9db7-10508406ab0e",
+      "target_id": "b8be763b-685e-4a05-a74e-884cc6adfa98",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T08:36:09.373202"
+    },
+    {
+      "id": "b59608ac-817d-4eee-8764-bdec04b10436",
+      "source_id": "ea379dcc-e416-4f9d-b391-74fac7adc0d2",
+      "target_id": "57f36040-657c-4515-98e5-19e88427899f",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T08:36:09.373202"
+    },
+    {
+      "id": "96292185-d8ab-4e90-9822-02f66ca6b471",
+      "source_id": "57f36040-657c-4515-98e5-19e88427899f",
+      "target_id": "be40469b-32fa-4b45-964f-c30f084e1f30",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T08:36:09.373202"
+    },
+    {
+      "id": "265440b9-3e51-4e7e-b09c-e6e812d9dda0",
+      "source_id": "ea379dcc-e416-4f9d-b391-74fac7adc0d2",
+      "target_id": "bb09ee56-ee03-4fa7-b96e-9f5c98ec8719",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T08:36:09.373202"
+    },
+    {
+      "id": "cb4434cd-b061-4936-9029-5ab54551705c",
+      "source_id": "bb09ee56-ee03-4fa7-b96e-9f5c98ec8719",
+      "target_id": "51a35773-7521-4df9-898e-74986f629047",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T08:36:09.373202"
+    },
+    {
+      "id": "b53d6c40-7994-4003-81bd-0a1a7be04aee",
+      "source_id": "ea379dcc-e416-4f9d-b391-74fac7adc0d2",
+      "target_id": "ad5b89ac-45be-4f81-810f-70ba9bc31d81",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T08:36:09.373202"
+    },
+    {
+      "id": "30325acc-96cb-4050-a657-a5a451d14ecb",
+      "source_id": "ad5b89ac-45be-4f81-810f-70ba9bc31d81",
+      "target_id": "bd3dc9be-957d-4e50-8cdb-e5485863a266",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T08:36:09.373202"
+    },
+    {
+      "id": "8f5ac79b-dc83-4ceb-bf70-71e6c3d68b97",
+      "source_id": "aee3a39e-4cb9-4336-b684-b355b9295a23",
+      "target_id": "e8ab12e8-588f-4643-90ef-012efda8bec0",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.6
+      },
+      "created_at": "2025-09-10T08:36:47.536894"
+    },
+    {
+      "id": "ed26832a-907e-4ddf-bdd5-ba2f1d1a6076",
+      "source_id": "aee3a39e-4cb9-4336-b684-b355b9295a23",
+      "target_id": "15423c28-ea64-46d8-947e-f7f6d6d654fb",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.85
+      },
+      "created_at": "2025-09-10T08:36:47.536894"
+    },
+    {
+      "id": "a03bd50a-5eb3-494a-a215-7a3d8ae139f2",
+      "source_id": "aee3a39e-4cb9-4336-b684-b355b9295a23",
+      "target_id": "60825651-f0b4-4251-81f4-1b6c866b07ac",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.85
+      },
+      "created_at": "2025-09-10T08:36:47.537372"
+    },
+    {
+      "id": "6b162c0c-62a4-49b3-9ff4-24f2910ad722",
+      "source_id": "aee3a39e-4cb9-4336-b684-b355b9295a23",
+      "target_id": "eaf72356-5bb9-4e9b-9cf4-b8c4263fe866",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.95
+      },
+      "created_at": "2025-09-10T08:36:47.537372"
+    },
+    {
+      "id": "c39b270e-2b5d-4d10-a5dc-c1a62f817eca",
+      "source_id": "aee3a39e-4cb9-4336-b684-b355b9295a23",
+      "target_id": "79011f0f-7e71-4a4d-b531-0dd679508002",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.6
+      },
+      "created_at": "2025-09-10T08:36:47.537372"
+    },
+    {
+      "id": "db98e5bc-ea3d-465c-8d78-dfbabbded3bd",
+      "source_id": "15423c28-ea64-46d8-947e-f7f6d6d654fb",
+      "target_id": "bb5735b7-96fa-4284-861a-d4c44aaf7250",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T08:37:48.844432"
+      },
+      "created_at": "2025-09-10T08:37:48.844432"
+    },
+    {
+      "id": "3feca734-892f-4297-9a16-c1fd283f10fd",
+      "source_id": "60825651-f0b4-4251-81f4-1b6c866b07ac",
+      "target_id": "bb5735b7-96fa-4284-861a-d4c44aaf7250",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T08:37:48.844432"
+      },
+      "created_at": "2025-09-10T08:37:48.844432"
+    },
+    {
+      "id": "6d453469-05c7-4603-bfd5-ef556f724bc7",
+      "source_id": "bb5735b7-96fa-4284-861a-d4c44aaf7250",
+      "target_id": "6674b0ca-0263-4d74-af35-9fbc2d471594",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The insight notes potentially different timeframes/contexts. Combining signals from different horizons can create false confidence if one is short-term noise and the other is a longer-term setup.",
+        "priority": 0.9,
+        "created_at": "2025-09-10T08:38:15.857885"
+      },
+      "created_at": "2025-09-10T08:38:15.857885"
+    },
+    {
+      "id": "aa49566f-bc1a-4a71-81ce-6c4da007597e",
+      "source_id": "bb5735b7-96fa-4284-861a-d4c44aaf7250",
+      "target_id": "23eafe00-047e-4899-96dd-de39430fa0d1",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The cross-pair directional bias assumes USD is the common driver. Correlation can be regime-dependent; confirming stability reduces the risk of treating independent moves as a unified USD signal.",
+        "priority": 0.85,
+        "created_at": "2025-09-10T08:38:15.857885"
+      },
+      "created_at": "2025-09-10T08:38:15.857885"
+    },
+    {
+      "id": "b89063d0-6e24-45d4-ada8-c6fa875abed8",
+      "source_id": "bb5735b7-96fa-4284-861a-d4c44aaf7250",
+      "target_id": "85f42c8c-4002-4409-9ef6-98ae7c56bca6",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "EURUSD volume is reported Very_Low, and different currency pairs have differing spreads and slippage profiles which affect realised risk/reward and position sizing.",
+        "priority": 0.75,
+        "created_at": "2025-09-10T08:38:15.857885"
+      },
+      "created_at": "2025-09-10T08:38:15.857885"
+    },
+    {
+      "id": "dcca994a-d37c-4ccc-ace6-dc02ede883d3",
+      "source_id": "bb5735b7-96fa-4284-861a-d4c44aaf7250",
+      "target_id": "c47e988b-0512-4448-8155-6c7af83bf6a1",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "News can sharply move one cross without affecting the other or can trigger correlated flows; identifying such events can change trade conviction or require adjusting SL/TP.",
+        "priority": 0.9,
+        "created_at": "2025-09-10T08:38:15.857885"
+      },
+      "created_at": "2025-09-10T08:38:15.857885"
+    },
+    {
+      "id": "af3be799-b0c8-4bd1-bafc-1a835a7ee381",
+      "source_id": "bb5735b7-96fa-4284-861a-d4c44aaf7250",
+      "target_id": "bcf54a7f-3400-4c64-a8bd-51daf60bffaf",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "USD weakness could arise from different causes across pairs. If drivers differ, the apparent agreement may be coincidental and less robust to shocks.",
+        "priority": 0.85,
+        "created_at": "2025-09-10T08:38:15.857885"
+      },
+      "created_at": "2025-09-10T08:38:15.857885"
+    },
+    {
+      "id": "abd0fad9-546d-4d66-a508-8d30b6ddad48",
+      "source_id": "bb5735b7-96fa-4284-861a-d4c44aaf7250",
+      "target_id": "3ddbaacb-a731-4379-9227-f0b68622354b",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Taking both trades without portfolio-aware sizing could overweight USD exposure or overcommit capital based on signals with unequal conviction.",
+        "priority": 0.9,
+        "created_at": "2025-09-10T08:38:15.857885"
+      },
+      "created_at": "2025-09-10T08:38:15.857885"
+    },
+    {
+      "id": "deefd853-3d5c-4314-8d93-93f6f0daa142",
+      "source_id": "bb5735b7-96fa-4284-861a-d4c44aaf7250",
+      "target_id": "e823c962-389f-407b-900e-ebca78798809",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Triangulating with additional pairs or a USD index reduces the risk that two pairs are coincidentally aligned; lack of broader confirmation is a gap.",
+        "priority": 0.8,
+        "created_at": "2025-09-10T08:38:15.857885"
+      },
+      "created_at": "2025-09-10T08:38:15.857885"
+    },
+    {
+      "id": "9d08d247-7a96-4e7a-b859-47fbb91d864c",
+      "source_id": "bb5735b7-96fa-4284-861a-d4c44aaf7250",
+      "target_id": "5cb01a1b-4e46-4c72-9ff5-f689149be0cc",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "JPY often reacts to global risk and BoJ policy idiosyncratically, introducing a plausible divergence risk that undermines a simple USD-weakness aggregation.",
+        "priority": 0.75,
+        "created_at": "2025-09-10T08:38:15.857885"
+      },
+      "created_at": "2025-09-10T08:38:15.857885"
+    },
+    {
+      "id": "caf2d8bb-e7c0-444c-a4e0-745794b67271",
+      "source_id": "bb5735b7-96fa-4284-861a-d4c44aaf7250",
+      "target_id": "9b708066-e4b2-4310-ac59-ff54b26be776",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Labelled 'Very_Low' volume needs context\u2014if it's time-of-day or data feed-specific, the signal may be salvageable with simple adjustments; if systemic, conviction should be reduced.",
+        "priority": 0.7,
+        "created_at": "2025-09-10T08:38:15.857885"
+      },
+      "created_at": "2025-09-10T08:38:15.857885"
+    },
+    {
+      "id": "ed93aebb-01a8-4d6f-97c2-9fae2f958621",
+      "source_id": "bb5735b7-96fa-4284-861a-d4c44aaf7250",
+      "target_id": "667798bc-ddc9-4918-ac27-39568f16b803",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The insight suggests a portfolio-level approach; empirical testing is needed to validate whether correlation-aware entry rules improve performance versus single-pair trades.",
+        "priority": 0.8,
+        "created_at": "2025-09-10T08:38:15.857885"
+      },
+      "created_at": "2025-09-10T08:38:15.857885"
+    },
+    {
+      "id": "c6456e20-4048-4c30-acd4-6922705ff3b4",
+      "source_id": "e8ab12e8-588f-4643-90ef-012efda8bec0",
+      "target_id": "357fb903-4aed-425c-a6e3-3259f7a930d2",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T08:38:40.100650"
+      },
+      "created_at": "2025-09-10T08:38:40.100650"
+    },
+    {
+      "id": "488f7f29-0fcf-4f8a-85ae-1447e37efa97",
+      "source_id": "15423c28-ea64-46d8-947e-f7f6d6d654fb",
+      "target_id": "357fb903-4aed-425c-a6e3-3259f7a930d2",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T08:38:40.100650"
+      },
+      "created_at": "2025-09-10T08:38:40.100650"
+    },
+    {
+      "id": "0d473938-a7c9-48ac-9a16-d618ca25377a",
+      "source_id": "357fb903-4aed-425c-a6e3-3259f7a930d2",
+      "target_id": "39026582-553e-4eff-9186-dc55885b5226",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The insight synthesizes a USD directional bias from two pairs. That inference depends on a meaningful cross-pair correlation; if correlations are weak or transient, the multi-pair bias may be invalid.",
+        "priority": 0.9,
+        "created_at": "2025-09-10T08:39:05.023015"
+      },
+      "created_at": "2025-09-10T08:39:05.023015"
+    },
+    {
+      "id": "f7336405-84a3-4050-bfea-84ad24eb2bbd",
+      "source_id": "357fb903-4aed-425c-a6e3-3259f7a930d2",
+      "target_id": "9118bed3-349a-4d8b-9f62-950980d28fe6",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The note flags possible difference in timeframes/context. If the signals operate on different horizons, aggregating them into one portfolio decision could be misleading.",
+        "priority": 0.8,
+        "created_at": "2025-09-10T08:39:05.023015"
+      },
+      "created_at": "2025-09-10T08:39:05.023015"
+    },
+    {
+      "id": "c14661be-c082-451d-807f-5bb6133408b9",
+      "source_id": "357fb903-4aed-425c-a6e3-3259f7a930d2",
+      "target_id": "7c0dfba8-d3ec-4318-89d5-1d1ccec6609e",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Without identifying macro drivers (rates, data, risk sentiment, central bank communication), it's unclear whether the USD weakening is structural or a short-lived technical move.",
+        "priority": 0.85,
+        "created_at": "2025-09-10T08:39:05.023015"
+      },
+      "created_at": "2025-09-10T08:39:05.023015"
+    },
+    {
+      "id": "436c4118-fbba-4ac0-a1c5-2077c05164f5",
+      "source_id": "357fb903-4aed-425c-a6e3-3259f7a930d2",
+      "target_id": "bb1a9f60-1e70-41e4-83f5-20b5019ec8f3",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Low volume reduces conviction per the insight. Quantifying when/where volume is low will determine whether the EURUSD setup should be trusted or downweighted.",
+        "priority": 0.8,
+        "created_at": "2025-09-10T08:39:05.023015"
+      },
+      "created_at": "2025-09-10T08:39:05.023015"
+    },
+    {
+      "id": "d651913a-bae1-4a3a-86fc-be8b88073690",
+      "source_id": "357fb903-4aed-425c-a6e3-3259f7a930d2",
+      "target_id": "1cf81e5f-babe-46dd-8adf-538eb1ea34a0",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "JPY often moves for idiosyncratic reasons. The USDJPY short could be invalidated by JPY drivers even if EURUSD points to USD weakness.",
+        "priority": 0.75,
+        "created_at": "2025-09-10T08:39:05.023015"
+      },
+      "created_at": "2025-09-10T08:39:05.023015"
+    },
+    {
+      "id": "f0bffb27-8918-4a8d-9887-b7864bc13da0",
+      "source_id": "357fb903-4aed-425c-a6e3-3259f7a930d2",
+      "target_id": "a4171773-92c5-4120-aedd-f6abcf9463d2",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The risk/reward and SLs are given, but their robustness depends on current volatility and execution; inadequate SLs could produce worse-than-expected outcomes.",
+        "priority": 0.7,
+        "created_at": "2025-09-10T08:39:05.023015"
+      },
+      "created_at": "2025-09-10T08:39:05.023015"
+    },
+    {
+      "id": "0ef6487a-2ec8-4bf6-9bee-a7291a4909d8",
+      "source_id": "357fb903-4aed-425c-a6e3-3259f7a930d2",
+      "target_id": "2819f424-849c-432a-b90a-23a01156c8ac",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Looking across more crosses would test whether the observed USD weakness is pervasive or confined to select pairs.",
+        "priority": 0.8,
+        "created_at": "2025-09-10T08:39:05.023015"
+      },
+      "created_at": "2025-09-10T08:39:05.023015"
+    },
+    {
+      "id": "9f02d20c-8a6e-4d9b-ac91-80ebe7330745",
+      "source_id": "357fb903-4aed-425c-a6e3-3259f7a930d2",
+      "target_id": "1d376742-bfdf-49c2-a150-6f2d99250426",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "USDJPY spread was noted as OK for one source; different execution environments could materially change trade viability and realized RR.",
+        "priority": 0.55,
+        "created_at": "2025-09-10T08:39:05.023015"
+      },
+      "created_at": "2025-09-10T08:39:05.023015"
+    },
+    {
+      "id": "c07e466f-aac4-4276-ab43-67c596d9457c",
+      "source_id": "357fb903-4aed-425c-a6e3-3259f7a930d2",
+      "target_id": "de105fdb-6356-4451-91ae-75ff64f9957b",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Determining whether similar multi-pair USD-sell signals have worked historically will inform confidence and sizing decisions.",
+        "priority": 0.75,
+        "created_at": "2025-09-10T08:39:05.023015"
+      },
+      "created_at": "2025-09-10T08:39:05.023015"
+    },
+    {
+      "id": "f0dbe5dc-421a-42a4-a004-234ca3092795",
+      "source_id": "357fb903-4aed-425c-a6e3-3259f7a930d2",
+      "target_id": "ef72245c-8f4f-4126-aae1-8e8fb677d21f",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "High-impact releases can rapidly change correlations, liquidity, and price action; the trades' timing relative to news matters for risk management.",
+        "priority": 0.7,
+        "created_at": "2025-09-10T08:39:05.023015"
+      },
+      "created_at": "2025-09-10T08:39:05.023015"
+    },
+    {
+      "id": "87d149eb-294e-4f05-9231-d17a06f9982d",
+      "source_id": "357fb903-4aed-425c-a6e3-3259f7a930d2",
+      "target_id": "e4bb6004-85c9-4826-9106-4e71f2535c58",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Synthesis into a USD directional bias implies concentrated exposure; without sizing rules or hedges, portfolio risk may be mis-specified.",
+        "priority": 0.8,
+        "created_at": "2025-09-10T08:39:05.023015"
+      },
+      "created_at": "2025-09-10T08:39:05.023015"
+    },
+    {
+      "id": "9013066c-fd5b-4331-a637-7d224eab8cd6",
+      "source_id": "15423c28-ea64-46d8-947e-f7f6d6d654fb",
+      "target_id": "d8cb9e50-fcca-47c9-b30f-c6fa1296d773",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T08:40:42.301529"
+      },
+      "created_at": "2025-09-10T08:40:42.301529"
+    },
+    {
+      "id": "113a298b-5f6a-4ea7-bac7-f0afefe858ef",
+      "source_id": "60825651-f0b4-4251-81f4-1b6c866b07ac",
+      "target_id": "d8cb9e50-fcca-47c9-b30f-c6fa1296d773",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T08:40:42.301529"
+      },
+      "created_at": "2025-09-10T08:40:42.301529"
+    },
+    {
+      "id": "6a3ac987-f02b-47e3-9ba2-f2053e2a6343",
+      "source_id": "d8cb9e50-fcca-47c9-b30f-c6fa1296d773",
+      "target_id": "0d98d049-0668-420f-a501-955aa74542ae",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The USDJPY signal is explicitly H1 while the EURUSD timeframe is unspecified. Combining signals from different horizons can produce misleading portfolio-level directional bias if one is intraday and the other is longer/shorter-term.",
+        "priority": 0.98,
+        "created_at": "2025-09-10T08:41:04.412336"
+      },
+      "created_at": "2025-09-10T08:41:04.412336"
+    },
+    {
+      "id": "deb5fba7-6193-4e9b-8207-b06cda3a5a2b",
+      "source_id": "d8cb9e50-fcca-47c9-b30f-c6fa1296d773",
+      "target_id": "b895cd63-10db-4b3b-82ab-13610dc1c967",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The insight synthesizes a cross-pair USD weakness from two pairs, but it hinges on sufficient correlation; unknown correlation strength/time-dependence is a major gap.",
+        "priority": 0.94,
+        "created_at": "2025-09-10T08:41:04.412336"
+      },
+      "created_at": "2025-09-10T08:41:04.412336"
+    },
+    {
+      "id": "79daf3c5-521e-450e-b570-3bacaf6b74f7",
+      "source_id": "d8cb9e50-fcca-47c9-b30f-c6fa1296d773",
+      "target_id": "d624b993-fd65-44dc-b4f4-40dbf413b17f",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "EURUSD volume flagged Very_Low undermines conviction; need to know whether this is temporary (session) or persistent (market-wide) to weight the signal appropriately.",
+        "priority": 0.92,
+        "created_at": "2025-09-10T08:41:04.412336"
+      },
+      "created_at": "2025-09-10T08:41:04.412336"
+    },
+    {
+      "id": "1ecdcbcd-0fb8-4668-8e23-211059135f64",
+      "source_id": "d8cb9e50-fcca-47c9-b30f-c6fa1296d773",
+      "target_id": "24ee1917-19c8-4281-bd5a-865608857ab5",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Macro events can produce pair-specific reactions (e.g., JPY sensitivity to BoJ statements, USD to NFP); not accounting for them risks large divergences between crosses.",
+        "priority": 0.9,
+        "created_at": "2025-09-10T08:41:04.412336"
+      },
+      "created_at": "2025-09-10T08:41:04.412336"
+    },
+    {
+      "id": "c8bcbd23-7565-4b0f-ab7f-f2fc77c7b520",
+      "source_id": "d8cb9e50-fcca-47c9-b30f-c6fa1296d773",
+      "target_id": "0a72a8fd-1728-4cd0-b86d-2bd4a50b40c3",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "USDJPY may move due to JPY factors unrelated to USD strength; conflating JPY strength with USD weakness could misattribute drivers and lead to wrong sizing/hedging.",
+        "priority": 0.88,
+        "created_at": "2025-09-10T08:41:04.412336"
+      },
+      "created_at": "2025-09-10T08:41:04.412336"
+    },
+    {
+      "id": "d9696767-d8d6-4225-8b33-6cef9a84d384",
+      "source_id": "d8cb9e50-fcca-47c9-b30f-c6fa1296d773",
+      "target_id": "c16e8602-0e51-4687-b2b2-dfc2eb1555a3",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Both signals were described as model-generated; if they share inputs/architectures or recent training/priors, apparent agreement may not be independent confirmation.",
+        "priority": 0.85,
+        "created_at": "2025-09-10T08:41:04.412336"
+      },
+      "created_at": "2025-09-10T08:41:04.412336"
+    },
+    {
+      "id": "7c063943-d7b5-4e83-b376-7092e5be0a5d",
+      "source_id": "d8cb9e50-fcca-47c9-b30f-c6fa1296d773",
+      "target_id": "220dc71a-3523-4151-b672-426940db84d7",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The notes say 'spread OK' but execution conditions can change; combined portfolio exposure magnifies slippage risk and can materially alter realized RR.",
+        "priority": 0.8,
+        "created_at": "2025-09-10T08:41:04.412336"
+      },
+      "created_at": "2025-09-10T08:41:04.412336"
+    },
+    {
+      "id": "d72ad263-1a8e-4516-96e5-b855f21d8fe9",
+      "source_id": "d8cb9e50-fcca-47c9-b30f-c6fa1296d773",
+      "target_id": "394be236-3659-4f32-b3fc-a9a50d789257",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Synthesizing a USD view for portfolio decisions requires rules to translate mixed-confidence, correlated signals into sizes/hedges to control aggregate risk.",
+        "priority": 0.78,
+        "created_at": "2025-09-10T08:41:04.412336"
+      },
+      "created_at": "2025-09-10T08:41:04.412336"
+    },
+    {
+      "id": "adc63d04-cf34-4afa-b831-65d92da45914",
+      "source_id": "d8cb9e50-fcca-47c9-b30f-c6fa1296d773",
+      "target_id": "9cf64e82-80ef-4ba3-9d2d-c1f1523e3aca",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Before increasing confidence, we need empirical evidence that multi-pair concordance improves edge and that low-liquidity members don't degrade performance.",
+        "priority": 0.72,
+        "created_at": "2025-09-10T08:41:04.412336"
+      },
+      "created_at": "2025-09-10T08:41:04.412336"
+    },
+    {
+      "id": "7764ca41-d6dc-41d2-9836-cbcf6dabcb37",
+      "source_id": "d8cb9e50-fcca-47c9-b30f-c6fa1296d773",
+      "target_id": "07d893b3-8068-4ad3-bded-f657a0bbe9f4",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Time-of-day effects affect liquidity, volatility and the persistence of setups; differing trade windows could reduce the practical utility of a cross-pair stance.",
+        "priority": 0.7,
+        "created_at": "2025-09-10T08:41:04.412336"
+      },
+      "created_at": "2025-09-10T08:41:04.412336"
+    },
+    {
+      "id": "f0bf62ad-fce5-47bb-a2ed-19ef9a443baf",
+      "source_id": "eaf72356-5bb9-4e9b-9cf4-b8c4263fe866",
+      "target_id": "9387b085-09c8-4a25-bd32-a7a336331b8f",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T08:41:18.678490"
+      },
+      "created_at": "2025-09-10T08:41:18.678490"
+    },
+    {
+      "id": "67250627-b04a-4b29-a7f3-37dc589b9236",
+      "source_id": "15423c28-ea64-46d8-947e-f7f6d6d654fb",
+      "target_id": "9387b085-09c8-4a25-bd32-a7a336331b8f",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T08:41:18.678490"
+      },
+      "created_at": "2025-09-10T08:41:18.678490"
+    },
+    {
+      "id": "ed598961-592a-4311-abfe-9a2ef7e04b6a",
+      "source_id": "9387b085-09c8-4a25-bd32-a7a336331b8f",
+      "target_id": "41fb7624-d539-4ee9-a40d-8e4d9560393e",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The insights note timeframe ambiguity (EURUSD unspecified vs USDJPY H1). Different horizons reduce the ability to interpret them as a single USD-directional signal and affect trade management and correlation assumptions.",
+        "priority": 0.9,
+        "created_at": "2025-09-10T08:41:38.241747"
+      },
+      "created_at": "2025-09-10T08:41:38.241747"
+    },
+    {
+      "id": "23655487-589d-4635-a137-d384ff077e1f",
+      "source_id": "9387b085-09c8-4a25-bd32-a7a336331b8f",
+      "target_id": "0ca5afa0-4de2-4351-b393-9492d5444c1b",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The conclusion of cross-pair USD weakness relies on inter-pair correlation. Without quantifying correlation strength and stability, portfolio-level sizing and conviction are uncertain.",
+        "priority": 0.85,
+        "created_at": "2025-09-10T08:41:38.241747"
+      },
+      "created_at": "2025-09-10T08:41:38.241747"
+    },
+    {
+      "id": "a9c36fc2-d988-4047-9fc8-4cb99e92c9ef",
+      "source_id": "9387b085-09c8-4a25-bd32-a7a336331b8f",
+      "target_id": "5e2d332e-7251-4d58-a8e4-a5f8dc2857e0",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Model-generated technical signals may be contradicted or reinforced by fundamentals; identifying macro catalysts helps assess persistence and potential abrupt reversals (e.g., central bank interventions).",
+        "priority": 0.9,
+        "created_at": "2025-09-10T08:41:38.241747"
+      },
+      "created_at": "2025-09-10T08:41:38.241747"
+    },
+    {
+      "id": "d26e8d99-64c7-4c8f-9a24-acd47de7da5a",
+      "source_id": "9387b085-09c8-4a25-bd32-a7a336331b8f",
+      "target_id": "8b2f35d5-e2ba-4ce8-bb14-69e3fa7c8510",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Low volume materially reduces signal reliability; diagnosing the cause helps determine whether the EURUSD signal should be down-weighted or ignored.",
+        "priority": 0.8,
+        "created_at": "2025-09-10T08:41:38.241747"
+      },
+      "created_at": "2025-09-10T08:41:38.241747"
+    },
+    {
+      "id": "cb919e19-b914-49a3-add4-3945ec8a1b90",
+      "source_id": "9387b085-09c8-4a25-bd32-a7a336331b8f",
+      "target_id": "daa772a2-6f54-48a1-8dff-d9d6f1f32ae1",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "USDJPY moves can be driven by JPY idiosyncratic factors that would invalidate a pure USD-weakness interpretation. These risks need to be assessed separately to avoid misattributing direction.",
+        "priority": 0.75,
+        "created_at": "2025-09-10T08:41:38.241747"
+      },
+      "created_at": "2025-09-10T08:41:38.241747"
+    },
+    {
+      "id": "dc7f467f-b9de-422c-b442-9d23fde99762",
+      "source_id": "9387b085-09c8-4a25-bd32-a7a336331b8f",
+      "target_id": "a6af919e-5ec7-467a-81cc-c57b89f88d2b",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The insight is based on two crosses; scanning additional majors can reveal contradictions or strengthen the cross-pair USD weakness thesis.",
+        "priority": 0.75,
+        "created_at": "2025-09-10T08:41:38.241747"
+      },
+      "created_at": "2025-09-10T08:41:38.241747"
+    },
+    {
+      "id": "233d5aa3-4696-427f-8831-7deff87a8fcf",
+      "source_id": "9387b085-09c8-4a25-bd32-a7a336331b8f",
+      "target_id": "7c17efad-ade0-4843-b39e-f38e81980fe9",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Although spreads were reported OK for USDJPY and EURUSD, execution conditions can change across sessions; understanding liquidity dynamics is necessary for realistic trade planning and slippage estimates.",
+        "priority": 0.7,
+        "created_at": "2025-09-10T08:41:38.241747"
+      },
+      "created_at": "2025-09-10T08:41:38.241747"
+    },
+    {
+      "id": "aad1f7b4-200e-419c-b43b-101e79881eac",
+      "source_id": "9387b085-09c8-4a25-bd32-a7a336331b8f",
+      "target_id": "d2b3988e-68d3-4187-a9da-b67d3f536a57",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Empirical validation of multi-pair signal alignment will indicate whether concurrent signals have predictive value beyond single-pair strategies.",
+        "priority": 0.8,
+        "created_at": "2025-09-10T08:41:38.241747"
+      },
+      "created_at": "2025-09-10T08:41:38.241747"
+    },
+    {
+      "id": "401b7232-1fc7-4e06-88a7-851119185423",
+      "source_id": "9387b085-09c8-4a25-bd32-a7a336331b8f",
+      "target_id": "2dd3d155-e33a-4ef8-ab07-744a665e8623",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Treating the two trades as independent can understate portfolio risk; sizing rules that account for cross-correlation are needed to manage aggregate exposure.",
+        "priority": 0.7,
+        "created_at": "2025-09-10T08:41:38.241747"
+      },
+      "created_at": "2025-09-10T08:41:38.241747"
+    },
+    {
+      "id": "fab8f794-f24d-4cf3-be74-cfda69eb8123",
+      "source_id": "9387b085-09c8-4a25-bd32-a7a336331b8f",
+      "target_id": "258d0bf6-2cce-4fa4-a9fe-d2296efc3c47",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Different RR and TP/SL setups and time-in-market can produce divergent outcomes (one trade may hit TP quickly while the other lingers or reverses), reducing the practical benefit of a synthesized directional bias.",
+        "priority": 0.85,
+        "created_at": "2025-09-10T08:41:38.241747"
+      },
+      "created_at": "2025-09-10T08:41:38.241747"
+    },
+    {
+      "id": "63e30131-5a0b-4900-a8b6-94501aa07e51",
+      "source_id": "bd3dc9be-957d-4e50-8cdb-e5485863a266",
+      "target_id": "9f6e437d-7dee-4292-945c-61d1c3d6fa57",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 6.0
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    {
+      "id": "d40221f3-71e6-48c9-8a7f-bf144e85454f",
+      "source_id": "bd3dc9be-957d-4e50-8cdb-e5485863a266",
+      "target_id": "09be1ffd-6d20-4a6d-b1a2-e0ad153d105e",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 6.0
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    {
+      "id": "16a7c3c1-689e-4796-abdd-d9988b816820",
+      "source_id": "bd3dc9be-957d-4e50-8cdb-e5485863a266",
+      "target_id": "436af965-0c6c-4001-8baa-48a6bf2ddfe5",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 6.0
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    {
+      "id": "6a835766-3bbd-46f1-a3bd-221822d05132",
+      "source_id": "bd3dc9be-957d-4e50-8cdb-e5485863a266",
+      "target_id": "ef6d200a-34c0-4f1f-8f2c-3ad6611dda04",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 6.0
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    {
+      "id": "d21886ac-1d01-47b5-a907-a7e6ad86d60f",
+      "source_id": "bd3dc9be-957d-4e50-8cdb-e5485863a266",
+      "target_id": "61b5cd15-a3ec-4c43-876f-d379904e6e64",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 6.0
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    {
+      "id": "b3bfd79c-a970-4f64-91e4-01dbcb8d5b59",
+      "source_id": "9f6e437d-7dee-4292-945c-61d1c3d6fa57",
+      "target_id": "59541248-8344-476d-b998-02e45e60f7e5",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    {
+      "id": "0a2aff8f-9962-4a94-b25f-c1c4507f0e02",
+      "source_id": "09be1ffd-6d20-4a6d-b1a2-e0ad153d105e",
+      "target_id": "59541248-8344-476d-b998-02e45e60f7e5",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    {
+      "id": "24047b09-7a7b-4792-86e3-a02ed0d94845",
+      "source_id": "436af965-0c6c-4001-8baa-48a6bf2ddfe5",
+      "target_id": "59541248-8344-476d-b998-02e45e60f7e5",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    {
+      "id": "468c536e-0d4a-4ab2-9c6d-a12172c1c2fd",
+      "source_id": "ef6d200a-34c0-4f1f-8f2c-3ad6611dda04",
+      "target_id": "59541248-8344-476d-b998-02e45e60f7e5",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    {
+      "id": "ed3cf280-704c-46eb-9dcb-c083dc1bb684",
+      "source_id": "61b5cd15-a3ec-4c43-876f-d379904e6e64",
+      "target_id": "59541248-8344-476d-b998-02e45e60f7e5",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    {
+      "id": "36e6f0d0-e2b5-468e-9f6d-1542d8b7c395",
+      "source_id": "9f6e437d-7dee-4292-945c-61d1c3d6fa57",
+      "target_id": "88ab902b-bd0c-4144-af68-b529f901caaf",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    {
+      "id": "9643eed4-2be7-464a-af11-51ad2dceb057",
+      "source_id": "09be1ffd-6d20-4a6d-b1a2-e0ad153d105e",
+      "target_id": "88ab902b-bd0c-4144-af68-b529f901caaf",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    {
+      "id": "086654f9-3498-4fd4-9fd6-0b2295b1ae3e",
+      "source_id": "436af965-0c6c-4001-8baa-48a6bf2ddfe5",
+      "target_id": "88ab902b-bd0c-4144-af68-b529f901caaf",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    {
+      "id": "6e3dc2ef-ae17-40b9-ae88-ac4d699c696a",
+      "source_id": "ef6d200a-34c0-4f1f-8f2c-3ad6611dda04",
+      "target_id": "88ab902b-bd0c-4144-af68-b529f901caaf",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    {
+      "id": "cfb423fe-b6d6-474c-9ac2-7e62bc6decb1",
+      "source_id": "61b5cd15-a3ec-4c43-876f-d379904e6e64",
+      "target_id": "88ab902b-bd0c-4144-af68-b529f901caaf",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    {
+      "id": "7f63ea92-cc33-4379-b269-df5d727e1f92",
+      "source_id": "9f6e437d-7dee-4292-945c-61d1c3d6fa57",
+      "target_id": "b8c8534f-d060-419e-8afb-6c50eb7dfd74",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    {
+      "id": "47b61bc7-a372-4c21-ae98-a91f14fd6136",
+      "source_id": "09be1ffd-6d20-4a6d-b1a2-e0ad153d105e",
+      "target_id": "b8c8534f-d060-419e-8afb-6c50eb7dfd74",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    {
+      "id": "df495e29-a8d4-45f2-9cb7-c89d3b1bff07",
+      "source_id": "436af965-0c6c-4001-8baa-48a6bf2ddfe5",
+      "target_id": "b8c8534f-d060-419e-8afb-6c50eb7dfd74",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    {
+      "id": "8d5ff693-ec3a-487b-a652-cd2436f45bac",
+      "source_id": "ef6d200a-34c0-4f1f-8f2c-3ad6611dda04",
+      "target_id": "b8c8534f-d060-419e-8afb-6c50eb7dfd74",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    {
+      "id": "985ce027-65ab-4ca4-b0d6-8c74b9584476",
+      "source_id": "61b5cd15-a3ec-4c43-876f-d379904e6e64",
+      "target_id": "b8c8534f-d060-419e-8afb-6c50eb7dfd74",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    {
+      "id": "44375f74-16fd-4ca7-86f4-cf7010a85f64",
+      "source_id": "9f6e437d-7dee-4292-945c-61d1c3d6fa57",
+      "target_id": "85cc9fc1-8f10-43fe-81df-9e83c7d83f2a",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    {
+      "id": "651e6b5d-c092-4706-9ad3-c1b0f4eabbe1",
+      "source_id": "09be1ffd-6d20-4a6d-b1a2-e0ad153d105e",
+      "target_id": "85cc9fc1-8f10-43fe-81df-9e83c7d83f2a",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    {
+      "id": "317c3f10-48c2-48ff-870f-01e7aa561d75",
+      "source_id": "436af965-0c6c-4001-8baa-48a6bf2ddfe5",
+      "target_id": "85cc9fc1-8f10-43fe-81df-9e83c7d83f2a",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    {
+      "id": "16307610-3702-4170-8713-5f95fe47171c",
+      "source_id": "ef6d200a-34c0-4f1f-8f2c-3ad6611dda04",
+      "target_id": "85cc9fc1-8f10-43fe-81df-9e83c7d83f2a",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    {
+      "id": "2d7110dc-ed1d-4ffe-994c-a2928c404b11",
+      "source_id": "61b5cd15-a3ec-4c43-876f-d379904e6e64",
+      "target_id": "85cc9fc1-8f10-43fe-81df-9e83c7d83f2a",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    {
+      "id": "717ba13c-a04e-4ca8-8d36-359f2ce987fd",
+      "source_id": "9f6e437d-7dee-4292-945c-61d1c3d6fa57",
+      "target_id": "4b6cbb37-432c-48e8-a621-f51915a811ec",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    {
+      "id": "0b6d0cd5-aeb8-4a26-b57b-02a7901675fb",
+      "source_id": "09be1ffd-6d20-4a6d-b1a2-e0ad153d105e",
+      "target_id": "4b6cbb37-432c-48e8-a621-f51915a811ec",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    {
+      "id": "cc05cbcf-5734-453c-bda7-8033fb869632",
+      "source_id": "436af965-0c6c-4001-8baa-48a6bf2ddfe5",
+      "target_id": "4b6cbb37-432c-48e8-a621-f51915a811ec",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    {
+      "id": "3afc7549-8725-464c-83f3-4bc0549a9903",
+      "source_id": "ef6d200a-34c0-4f1f-8f2c-3ad6611dda04",
+      "target_id": "4b6cbb37-432c-48e8-a621-f51915a811ec",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    {
+      "id": "f9dd86b5-6167-43e1-b885-670056579bd3",
+      "source_id": "61b5cd15-a3ec-4c43-876f-d379904e6e64",
+      "target_id": "4b6cbb37-432c-48e8-a621-f51915a811ec",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    {
+      "id": "1d32aa4f-39c2-4a3f-b893-d5be602c1560",
+      "source_id": "9f6e437d-7dee-4292-945c-61d1c3d6fa57",
+      "target_id": "e2ef1b94-706d-4385-a65b-5e22c6256418",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    {
+      "id": "a2eaf1cd-a23d-4683-8b83-65d15694fdec",
+      "source_id": "09be1ffd-6d20-4a6d-b1a2-e0ad153d105e",
+      "target_id": "e2ef1b94-706d-4385-a65b-5e22c6256418",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    {
+      "id": "a2884f60-c09c-405c-9df0-ac99e29b1d3e",
+      "source_id": "436af965-0c6c-4001-8baa-48a6bf2ddfe5",
+      "target_id": "e2ef1b94-706d-4385-a65b-5e22c6256418",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    {
+      "id": "7c6bcdd1-6581-4bef-bd83-1b5ffb3ed8f1",
+      "source_id": "ef6d200a-34c0-4f1f-8f2c-3ad6611dda04",
+      "target_id": "e2ef1b94-706d-4385-a65b-5e22c6256418",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    },
+    {
+      "id": "3688368b-980e-4649-ba0b-d1949725dd01",
+      "source_id": "61b5cd15-a3ec-4c43-876f-d379904e6e64",
+      "target_id": "e2ef1b94-706d-4385-a65b-5e22c6256418",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-10T08:41:55.809149"
+    }
+  ],
+  "analytic_question": "ea379dcc-e416-4f9d-b391-74fac7adc0d2",
+  "created_at": "2025-09-10T08:42:03.846552"
+}

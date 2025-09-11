@@ -1,0 +1,200 @@
+{
+  "session_metadata": {
+    "session_id": "0c9d81d7-65cb-4848-a72c-5ec5c841c20e",
+    "start_time": "2025-09-09T13:36:20.530676+00:00",
+    "end_time": "2025-09-09T13:46:09.708663+00:00",
+    "duration_seconds": 589.177987,
+    "user_query": "does joe rogan propagate disinformation"
+  },
+  "configuration": {
+    "max_searches": 15,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.6,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "pages_per_search": 3,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true,
+    "enforce_endpoint_diversity": false,
+    "max_endpoint_repeats": 5,
+    "diversity_threshold": 0.3
+  },
+  "performance_metrics": {
+    "total_searches": 15,
+    "total_rounds": 3,
+    "total_results_found": 574,
+    "satisfaction_score": 0.34500000000000003,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.2,
+      "source_diversity": 0.1,
+      "evidence_quality": 0.8,
+      "claim_specificity": 0.5,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Reached maximum search limit (15)"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [],
+      "moderately_effective": [],
+      "low_effectiveness": [
+        {
+          "search_id": 2,
+          "query": "",
+          "results": 56,
+          "effectiveness": 3.0
+        },
+        {
+          "search_id": 3,
+          "query": "joerogan (misinformation OR disinformation OR debunked OR fact-check OR false OR 'was false' OR 'debunk') -from:joerogan",
+          "results": 33,
+          "effectiveness": 3.0
+        },
+        {
+          "search_id": 4,
+          "query": "",
+          "results": 169,
+          "effectiveness": 3.0
+        },
+        {
+          "search_id": 14,
+          "query": "",
+          "results": 56,
+          "effectiveness": 2.0
+        }
+      ],
+      "ineffective": [
+        {
+          "search_id": 1,
+          "query": "from:joerogan (vaccine OR vaccination OR COVID OR coronavirus OR ivermectin OR \"plandemic\" OR microchip OR mask OR lockdown OR \"5G\" OR election OR \"false\" OR misinformation)",
+          "results": 2,
+          "effectiveness": 0.30000000000000004
+        },
+        {
+          "search_id": 5,
+          "query": "",
+          "results": 0,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 6,
+          "query": "from:joerogan (vaccine OR vaccines OR COVID OR covid OR ivermectin OR 'vaccine injury' OR mask OR '5G' OR microchip OR plandemic OR mandate)",
+          "results": 0,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 7,
+          "query": "",
+          "results": 56,
+          "effectiveness": 1.0
+        },
+        {
+          "search_id": 8,
+          "query": "(joerogan OR @joerogan) (factcheck OR 'fact check' OR 'fact-check' OR misinformation OR false OR debunk OR Snopes OR PolitiFact OR 'fact checkers' OR 'false claim')",
+          "results": 30,
+          "effectiveness": 1.0
+        },
+        {
+          "search_id": 9,
+          "query": "",
+          "results": 1,
+          "effectiveness": 0.05
+        },
+        {
+          "search_id": 10,
+          "query": "",
+          "results": 169,
+          "effectiveness": 1.0
+        },
+        {
+          "search_id": 11,
+          "query": "",
+          "results": 0,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 12,
+          "query": "",
+          "results": 1,
+          "effectiveness": 0.05
+        },
+        {
+          "search_id": 13,
+          "query": "",
+          "results": 0,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 15,
+          "query": "",
+          "results": 1,
+          "effectiveness": 0.1
+        }
+      ]
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "Graph Strategy: We currently have no collected data. The highest-priority gaps are (1) what Joe Rogan himself has posted on Twitter about topics often associated with disinformation (COVID, vaccines, ivermectin, election claims, 5G, etc.), (2) the frequency and recency of any problematic claims, (3) how his audience amplifies those messages, and (4) external reaction (fact-checks, debunks, critiques) and formal affiliations that could influence messaging. To fill these gaps efficiently and coherently, the next round should combine content discovery (targeted searches for claims and reactions), direct source collection (his timeline), and network/context endpoints (followers and affiliations). This mix uses diverse endpoints and produces complementary outputs that enable selection of specific tweets/threads for deeper forensic analysis (tweet.php, tweet_thread.php, latest_replies.php) in subsequent rounds.",
+        "avg_effectiveness": 1.86
+      },
+      {
+        "strategy": "Graph Strategy: Multiple critical gaps relate to primary-source content (Rogan's own posts), audience size and network, and media/clips that commonly carry misinformation. Prior rounds over-relied on search.php and returned placeholders; to correct that, this plan avoids search.php entirely and uses a diverse set of endpoints that directly capture Rogan's timeline, profile/follower metrics, media clips, declared affiliations, and follower samples. These data will (1) produce the raw candidate claims for verification, (2) quantify amplification potential, and (3) supply leads for targeted conversation and fact-check searches in the next round. The chosen endpoints follow the CRITICAL REQUIREMENTS (use diverse endpoints, address highest-priority gaps first, and build coherent next steps).",
+        "avg_effectiveness": 1.05
+      },
+      {
+        "strategy": "Graph Strategy: Current investigation lacks primary-source tweets from Joe Rogan, external fact-check assessments, and audience / affiliation metadata needed to judge amplification potential. To determine whether Rogan propagates disinformation we must (1) collect candidate tweets on topics commonly associated with misinformation (health, COVID, vaccines, treatments, 5G, political conspiracies), (2) pull his unfiltered recent timeline to capture full context and obtain tweet IDs/timestamps for forensic checks, (3) gather how fact-checkers and journalists reference him on Twitter, and (4) estimate audience size/affiliations to measure amplification. The next round must use multiple endpoints (profile, timeline, search, network, conversation) so results link together and close the most critical gaps first.",
+        "avg_effectiveness": 0.38749999999999996
+      }
+    ],
+    "dead_ends": [
+      "from:joerogan (vaccine OR vaccination OR COVID OR coronavirus OR ivermectin OR \"plandemic\" OR microchip OR mask OR lockdown OR \"5G\" OR election OR \"false\" OR misinformation)",
+      "",
+      "from:joerogan (vaccine OR vaccines OR COVID OR covid OR ivermectin OR 'vaccine injury' OR mask OR '5G' OR microchip OR plandemic OR mandate)",
+      "(joerogan OR @joerogan) (factcheck OR 'fact check' OR 'fact-check' OR misinformation OR false OR debunk OR Snopes OR PolitiFact OR 'fact checkers' OR 'false claim')"
+    ],
+    "promising_leads": []
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Graph Strategy: We currently have no collected data. The highest-priority gaps are (1) what Joe Rogan himself has posted on Twitter about topics often associated with disinformation (COVID, vaccines, ivermectin, election claims, 5G, etc.), (2) the frequency and recency of any problematic claims, (3) how his audience amplifies those messages, and (4) external reaction (fact-checks, debunks, critiques) and formal affiliations that could influence messaging. To fill these gaps efficiently and coherently, the next round should combine content discovery (targeted searches for claims and reactions), direct source collection (his timeline), and network/context endpoints (followers and affiliations). This mix uses diverse endpoints and produces complementary outputs that enable selection of specific tweets/threads for deeper forensic analysis (tweet.php, tweet_thread.php, latest_replies.php) in subsequent rounds.",
+      "searches_count": 5,
+      "total_results": 260,
+      "effectiveness": 1.86,
+      "insights": [
+        "Most items are promotional tweets/retweets (podcast guests, show promos, YouTube links) and do not contain substantive claims or factually checkable content relevant to whether Joe Rogan propagates disinformation.",
+        "A few items are potentially relevant: result 1 references 'Dissolving Illusions' and vaccine skepticism (which could indicate platforming of anti-vaccine views); results 7 and 8 involve Ben Van Kerkwyk/UAP/ancient-Egypt content (examples of fringe topics Rogan has amplified).",
+        "No items in this set provide direct examples of false factual claims by Joe Rogan, nor do they include transcripts, timestamps, or fact-checks that would allow assessment of whether he propagated disinformation."
+      ]
+    },
+    {
+      "round_number": 2,
+      "strategy": "Graph Strategy: Current investigation lacks primary-source tweets from Joe Rogan, external fact-check assessments, and audience / affiliation metadata needed to judge amplification potential. To determine whether Rogan propagates disinformation we must (1) collect candidate tweets on topics commonly associated with misinformation (health, COVID, vaccines, treatments, 5G, political conspiracies), (2) pull his unfiltered recent timeline to capture full context and obtain tweet IDs/timestamps for forensic checks, (3) gather how fact-checkers and journalists reference him on Twitter, and (4) estimate audience size/affiliations to measure amplification. The next round must use multiple endpoints (profile, timeline, search, network, conversation) so results link together and close the most critical gaps first.",
+      "searches_count": 8,
+      "total_results": 257,
+      "effectiveness": 0.38749999999999996,
+      "insights": [
+        "The provided results are mostly promotional tweets and retweets about episodes, guests, and live shows — they do not directly address whether Joe Rogan propagates disinformation.",
+        "A few items hint at topics commonly associated with conspiracy or fringe claims (UAP, ancient mysteries, a comment about conspiracies), which shows Rogan's platform sometimes hosts unconventional/controversial guests — but these items do not document falsehoods or provide fact-checks."
+      ]
+    },
+    {
+      "round_number": 3,
+      "strategy": "Graph Strategy: Multiple critical gaps relate to primary-source content (Rogan's own posts), audience size and network, and media/clips that commonly carry misinformation. Prior rounds over-relied on search.php and returned placeholders; to correct that, this plan avoids search.php entirely and uses a diverse set of endpoints that directly capture Rogan's timeline, profile/follower metrics, media clips, declared affiliations, and follower samples. These data will (1) produce the raw candidate claims for verification, (2) quantify amplification potential, and (3) supply leads for targeted conversation and fact-check searches in the next round. The chosen endpoints follow the CRITICAL REQUIREMENTS (use diverse endpoints, address highest-priority gaps first, and build coherent next steps).",
+      "searches_count": 2,
+      "total_results": 57,
+      "effectiveness": 1.05,
+      "insights": [
+        "The results are almost entirely promotional tweets and episode links; they do not contain explicit claims, fact-checks, or analysis about Joe Rogan spreading disinformation.",
+        "A few items indicate guests or topics that can be associated with fringe claims (e.g., Ben Van Kerkwyk on ancient mysteries, UAP-related retweets), which could be relevant to an investigation about platforming of fringe ideas—but the items do not show Rogan endorsing falsehoods.",
+        "Several entries point to Spotify/YouTube episode links (which could supply primary-source audio/transcripts), but the results do not quote or summarize episode content."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1480 @@
+{
+  "nodes": {
+    "514e723a-7c8a-46e7-81fa-a914fd38300a": {
+      "id": "514e723a-7c8a-46e7-81fa-a914fd38300a",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "does joe rogan propagate disinformation",
+        "is_root": true,
+        "investigation_goal": "does joe rogan propagate disinformation"
+      },
+      "created_at": "2025-09-09T06:36:20.530676"
+    },
+    "9bf5073e-8591-4c96-9a78-a3319a813b36": {
+      "id": "9bf5073e-8591-4c96-9a78-a3319a813b36",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Directly capture Joe Rogan's own recent tweets on topics most associated with misinformation. Using from:joerogan plus a focused keyword set reveals candidate tweets that may contain false or misleading claims and provides tweet IDs and timestamps for follow-up forensic checks.",
+        "parent_analytic_question": "514e723a-7c8a-46e7-81fa-a914fd38300a"
+      },
+      "created_at": "2025-09-09T06:37:04.864736"
+    },
+    "48cbf618-d910-448c-ada1-d9b4334ee857": {
+      "id": "48cbf618-d910-448c-ada1-d9b4334ee857",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "from:joerogan (vaccine OR vaccination OR COVID OR coronavirus OR ivermectin OR \"plandemic\" OR microchip OR mask OR lockdown OR \"5G\" OR election OR \"false\" OR misinformation)",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-09T06:37:04.864736"
+    },
+    "6b482d20-4ada-4e55-86fa-495ce9cbbf4d": {
+      "id": "6b482d20-4ada-4e55-86fa-495ce9cbbf4d",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Pull Joe Rogan's chronological recent posts to understand context, cadence, and whether misinformation-like claims are isolated or recurring. The timeline will also surface replies/threads and media that search queries might miss.",
+        "parent_analytic_question": "514e723a-7c8a-46e7-81fa-a914fd38300a"
+      },
+      "created_at": "2025-09-09T06:37:04.864736"
+    },
+    "986df145-f40f-41b8-909d-9674a85c14f8": {
+      "id": "986df145-f40f-41b8-909d-9674a85c14f8",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "joerogan"
+        }
+      },
+      "created_at": "2025-09-09T06:37:04.864736"
+    },
+    "bc893d93-8bc3-4ea5-8755-f14dfb70666b": {
+      "id": "bc893d93-8bc3-4ea5-8755-f14dfb70666b",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Capture how other users, journalists, and fact-checkers are discussing or labeling Rogan's tweets\u2014this identifies external assessments, major criticisms, and specific claims already flagged as false or disputed.",
+        "parent_analytic_question": "514e723a-7c8a-46e7-81fa-a914fd38300a"
+      },
+      "created_at": "2025-09-09T06:37:04.864736"
+    },
+    "25760538-430f-44a3-bda7-965b2737de2b": {
+      "id": "25760538-430f-44a3-bda7-965b2737de2b",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "joerogan (misinformation OR disinformation OR debunked OR fact-check OR false OR 'was false' OR 'debunk') -from:joerogan",
+          "search_type": "Top"
+        }
+      },
+      "created_at": "2025-09-09T06:37:04.864736"
+    },
+    "6a2a4926-e822-4d79-be42-8055e1c634cf": {
+      "id": "6a2a4926-e822-4d79-be42-8055e1c634cf",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Estimate audience size and composition to assess amplification potential. A large or highly connected follower base increases the chance that any misinformation is widely propagated; follower metadata will guide sampling for network analysis.",
+        "parent_analytic_question": "514e723a-7c8a-46e7-81fa-a914fd38300a"
+      },
+      "created_at": "2025-09-09T06:37:04.864736"
+    },
+    "1d2b68f1-e93a-4a21-ad62-e4eeb881f4f6": {
+      "id": "1d2b68f1-e93a-4a21-ad62-e4eeb881f4f6",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "followers.php",
+        "parameters": {
+          "screenname": "joerogan"
+        }
+      },
+      "created_at": "2025-09-09T06:37:04.864736"
+    },
+    "f47810fc-bcfb-4f6e-8b0c-b16e1c843c11": {
+      "id": "f47810fc-bcfb-4f6e-8b0c-b16e1c843c11",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Identify official affiliations, sponsors, or institutional ties that might shape or amplify messaging (e.g., podcast partners, media outlets). Affiliations help explain reach, incentives, and potential echo chambers.",
+        "parent_analytic_question": "514e723a-7c8a-46e7-81fa-a914fd38300a"
+      },
+      "created_at": "2025-09-09T06:37:04.864736"
+    },
+    "e5c37fff-6f52-4843-a660-c82239cf8215": {
+      "id": "e5c37fff-6f52-4843-a660-c82239cf8215",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "affilates.php",
+        "parameters": {
+          "screenname": "joerogan"
+        }
+      },
+      "created_at": "2025-09-09T06:37:04.864736"
+    },
+    "ab8b787c-a6e6-4844-80ac-8c51a1d24295": {
+      "id": "ab8b787c-a6e6-4844-80ac-8c51a1d24295",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "@ye_dennis @FacticityMage @joerogan @grok @AskPerplexity 248 factual claims detected. Breakdown\n\u2705 79 true, \u274c 87 false, \u26a0\ufe0f 82 unverifiable.\nDetailed breakdown here:\nhttps://t.co/PeO4lvg4dk",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-09T06:38:38.949306",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.9,
+          "goal_relevance_score": 0.4
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-09T06:38:38.949306"
+      },
+      "created_at": "2025-09-09T06:38:38.949306"
+    },
+    "1ddebcd1-4e57-4810-bf36-49d49816f240": {
+      "id": "1ddebcd1-4e57-4810-bf36-49d49816f240",
+      "node_type": "Insight",
+      "properties": {
+        "content": "One clear pattern in the provided findings is that a large share of the analyzed claims linked to Joe Rogan are either false or cannot be verified: of 248 claims identified, only 79 (\u224832%) were true, while 87 (\u224835%) were false and 82 (\u224833%) were unverifiable. This means roughly 68% of claims fall into categories (false + unverifiable) that are consistent with the propagation of misinformation or unsubstantiated assertions. \n\nImplications for the investigation: this distribution signals a substantive risk that Rogan\u2019s content contributes to public exposure to inaccurate or unsupported claims. However, the dataset alone does not establish intent, relative harm, or audience impact. To strengthen conclusions, investigators should (1) review the methodology used to label claims, (2) analyze context and prominence of each claim (e.g., repeated vs. casual mention), (3) measure reach and amplification, and (4) compare rates to peer communicators to assess whether this is atypical. Absent that further work, the most defensible single insight is that the available evidence shows a pronounced pattern of false or unverifiable claims consistent with propagating disinformation at scale.",
+        "insight_type": "trend",
+        "confidence": 0.7,
+        "title": "Majority of claims are false or unverifiable, indicating a pattern of disseminating potentially misleading information"
+      },
+      "created_at": "2025-09-09T06:39:32.428084"
+    },
+    "23eb9943-296e-432d-90a3-14585bbc0f4c": {
+      "id": "23eb9943-296e-432d-90a3-14585bbc0f4c",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How were claims identified and sampled from Joe Rogan's output (inclusion/exclusion criteria, time window, episode selection, and whether clips/derivative posts were included)?",
+        "emergence_reason": "Sampling choices can create bias (over- or under-counting certain claim types or time periods); without this we can't assess whether the 32/35/33 split generalizes to Rogan's overall output."
+      },
+      "created_at": "2025-09-09T06:39:55.559646"
+    },
+    "3c5f4154-d15c-4074-84a1-47a2f0201dd7": {
+      "id": "3c5f4154-d15c-4074-84a1-47a2f0201dd7",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What exact labeling criteria distinguished 'true', 'false', and 'unverifiable', and what sources/evidence standards were used for each label?",
+        "emergence_reason": "Validity of the main result depends on robust, transparent definitions and authoritative sources; ambiguity in criteria could drive classification artifacts."
+      },
+      "created_at": "2025-09-09T06:39:55.559646"
+    },
+    "442d8c3c-9ff4-4e88-8ee9-5f7c53f9ba53": {
+      "id": "442d8c3c-9ff4-4e88-8ee9-5f7c53f9ba53",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What was the inter-rater reliability (e.g., Cohen's kappa) or review process used for labeling, and were disputed labels adjudicated by experts?",
+        "emergence_reason": "High rates of 'unverifiable' and 'false' claims could reflect subjective judgments; measuring agreement quantifies labeling robustness."
+      },
+      "created_at": "2025-09-09T06:39:55.559646"
+    },
+    "cdf8b64e-2eb6-4942-8850-6a92c40c7331": {
+      "id": "cdf8b64e-2eb6-4942-8850-6a92c40c7331",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How is 'unverifiable' operationalized \u2014 are these claims inherently impossible to verify, or were they unverifiable due to limited research or ambiguous phrasing?",
+        "emergence_reason": "Distinguishing inherent unknowability from methodological limits affects whether unverifiable items represent misinformation gaps or evidence-collection gaps."
+      },
+      "created_at": "2025-09-09T06:39:55.559646"
+    },
+    "17651243-070a-4229-8d24-83931f61685e": {
+      "id": "17651243-070a-4229-8d24-83931f61685e",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How do claims cluster by topic (health, politics, science, personal anecdotes), and are particular topics disproportionately false or unverifiable?",
+        "emergence_reason": "If specific topics drive the false/unverifiable proportions, interventions can be targeted and interpretation of overall rates becomes more nuanced."
+      },
+      "created_at": "2025-09-09T06:39:55.559646"
+    },
+    "6f2defff-dc02-455b-9ceb-03017f107795": {
+      "id": "6f2defff-dc02-455b-9ceb-03017f107795",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What is the reach and amplification of each claim (audience size, share/retweet counts, excerpted clips), and do false/unverifiable claims receive disproportionate engagement?",
+        "emergence_reason": "Prevalence alone is insufficient; public exposure and engagement determine real-world impact and whether misinformation is amplified at scale."
+      },
+      "created_at": "2025-09-09T06:39:55.559646"
+    },
+    "2935cbad-31c1-48f3-95c0-f68bdec7845a": {
+      "id": "2935cbad-31c1-48f3-95c0-f68bdec7845a",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How do these rates compare to peer communicators (other podcasters, media figures, comparable long-form interviewers) using the same methodology?",
+        "emergence_reason": "Without a benchmark, it's unclear whether ~68% false/unverifiable is unusually high or typical for this communication format."
+      },
+      "created_at": "2025-09-09T06:39:55.559646"
+    },
+    "3e8d8b8d-8486-42b8-9999-a5eb5c5a44fe": {
+      "id": "3e8d8b8d-8486-42b8-9999-a5eb5c5a44fe",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What is the contextual prominence of each claim (central claim vs. passing remark; repeated claims across episodes), and how often are claims framed as opinion versus factual assertion?",
+        "emergence_reason": "A passing opinion has different implications than repeated assertive claims; context affects both responsibility and likely audience interpretation."
+      },
+      "created_at": "2025-09-09T06:39:55.559646"
+    },
+    "be1acea1-662d-43c1-bcc8-bf2780c204db": {
+      "id": "be1acea1-662d-43c1-bcc8-bf2780c204db",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Are there temporal trends (e.g., changes over time in the share of false/unverifiable claims) that correlate with external events, policy debates, or changes in production/guest mix?",
+        "emergence_reason": "Temporal patterns could reveal situational drivers or the effect of editorial choices, informing mitigation strategies."
+      },
+      "created_at": "2025-09-09T06:39:55.559646"
+    },
+    "1ef5f7c5-e658-4b84-8d44-6a9f2b26a300": {
+      "id": "1ef5f7c5-e658-4b84-8d44-6a9f2b26a300",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What downstream harms can be linked to specific false or unverifiable claims (e.g., health behaviors, votes, purchases), and how can harm be measured or estimated?",
+        "emergence_reason": "Establishing actual harm is essential for assessing severity and prioritizing responses beyond documenting inaccuracy rates."
+      },
+      "created_at": "2025-09-09T06:39:55.559646"
+    },
+    "f410e035-312a-46a7-a181-1f0538defc75": {
+      "id": "f410e035-312a-46a7-a181-1f0538defc75",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Were false claims ever corrected on-show, in show notes, or via other public corrections, and how often do hosts/guests update claims when new evidence appears?",
+        "emergence_reason": "Correction behavior affects net misinformation impact; lack of corrections heightens ongoing risk even if initial error rates are similar across communicators."
+      },
+      "created_at": "2025-09-09T06:39:55.559646"
+    },
+    "3789ebcb-891f-492c-ac64-6bd7e9b8c5bc": {
+      "id": "3789ebcb-891f-492c-ac64-6bd7e9b8c5bc",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What roles do guests, producers, and platform-specific features (clips, algorithmic recommendations) play in creating and amplifying false/unverifiable claims?",
+        "emergence_reason": "Responsibility and intervention points differ if misinformation primarily arises from guests, editorial choices, or downstream clipping and social-platform amplification."
+      },
+      "created_at": "2025-09-09T06:39:55.559646"
+    },
+    "a9a45838-97eb-40c8-bdde-97f0dd2453d2": {
+      "id": "a9a45838-97eb-40c8-bdde-97f0dd2453d2",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Most items are promotional tweets/retweets (podcast guests, show promos, YouTube links) and do not contain substantive claims or factually checkable content relevant to whether Joe Rogan propagates disinformation.",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-09T06:40:13.202925"
+    },
+    "cc645169-2e0d-48c7-b5e6-c5cac18eae21": {
+      "id": "cc645169-2e0d-48c7-b5e6-c5cac18eae21",
+      "node_type": "Insight",
+      "properties": {
+        "content": "A few items are potentially relevant: result 1 references 'Dissolving Illusions' and vaccine skepticism (which could indicate platforming of anti-vaccine views); results 7 and 8 involve Ben Van Kerkwyk/UAP/ancient-Egypt content (examples of fringe topics Rogan has amplified).",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-09T06:40:13.202925"
+    },
+    "f054f099-e68f-4736-b210-ab0cb0966c94": {
+      "id": "f054f099-e68f-4736-b210-ab0cb0966c94",
+      "node_type": "Insight",
+      "properties": {
+        "content": "No items in this set provide direct examples of false factual claims by Joe Rogan, nor do they include transcripts, timestamps, or fact-checks that would allow assessment of whether he propagated disinformation.",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-09T06:40:13.202925"
+    },
+    "78c1343d-7d26-4f7d-8404-4fba89aa9f60": {
+      "id": "78c1343d-7d26-4f7d-8404-4fba89aa9f60",
+      "node_type": "Insight",
+      "properties": {
+        "content": "The collection is dominated by entertainment/promo material; as provided it is insufficient to judge patterns or frequency of misinformation from Rogan.",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-09T06:40:13.202925"
+    },
+    "127a2cb5-f812-48f3-9666-d7c64cbd533a": {
+      "id": "127a2cb5-f812-48f3-9666-d7c64cbd533a",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Targeted pull of Joe Rogan's own tweets that mention topics most associated with misinformation. This will produce candidate tweets (text, IDs, timestamps) to evaluate for factual accuracy and to seed deeper conversation and thread queries.",
+        "parent_analytic_question": "514e723a-7c8a-46e7-81fa-a914fd38300a"
+      },
+      "created_at": "2025-09-09T06:40:58.289903"
+    },
+    "523345ee-e125-4000-8db7-26d0b556b674": {
+      "id": "523345ee-e125-4000-8db7-26d0b556b674",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "from:joerogan (vaccine OR vaccines OR COVID OR covid OR ivermectin OR 'vaccine injury' OR mask OR '5G' OR microchip OR plandemic OR mandate)",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-09T06:40:58.290421"
+    },
+    "1aa10f5c-250e-4f19-9ac2-a2c90d570d50": {
+      "id": "1aa10f5c-250e-4f19-9ac2-a2c90d570d50",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Complete chronological recent posts from Rogan to capture context, embedded media, replies, and any claims that might not include keywords. Timeline output will provide canonical tweet IDs and timestamps needed for forensic checks and conversation retrieval.",
+        "parent_analytic_question": "514e723a-7c8a-46e7-81fa-a914fd38300a"
+      },
+      "created_at": "2025-09-09T06:40:58.290421"
+    },
+    "fdadfcf2-64ac-4c64-b4e9-847a23334638": {
+      "id": "fdadfcf2-64ac-4c64-b4e9-847a23334638",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "joerogan"
+        }
+      },
+      "created_at": "2025-09-09T06:40:58.290421"
+    },
+    "b1058aa6-4e81-42f9-b79e-6e998b6fa5f6": {
+      "id": "b1058aa6-4e81-42f9-b79e-6e998b6fa5f6",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Find tweets by journalists, fact-check organizations, and the public labeling or assessing Rogan's statements. This identifies which specific claims have already been flagged, and points to external evidence and debunks for each candidate claim.",
+        "parent_analytic_question": "514e723a-7c8a-46e7-81fa-a914fd38300a"
+      },
+      "created_at": "2025-09-09T06:40:58.290421"
+    },
+    "b145924a-e6b0-4597-a076-a8fb44227954": {
+      "id": "b145924a-e6b0-4597-a076-a8fb44227954",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "(joerogan OR @joerogan) (factcheck OR 'fact check' OR 'fact-check' OR misinformation OR false OR debunk OR Snopes OR PolitiFact OR 'fact checkers' OR 'false claim')",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-09T06:40:58.290421"
+    },
+    "bdb48212-be67-438f-9d62-2ebbe6a5b5f2": {
+      "id": "bdb48212-be67-438f-9d62-2ebbe6a5b5f2",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Retrieve Rogan's profile metadata (bio, verified status, follower count snapshot) to quickly estimate audience size and credibility signals that affect amplification. This complements followers.php sampling.",
+        "parent_analytic_question": "514e723a-7c8a-46e7-81fa-a914fd38300a"
+      },
+      "created_at": "2025-09-09T06:40:58.290421"
+    },
+    "3325ef2a-ebcb-45f0-89dc-642dff737466": {
+      "id": "3325ef2a-ebcb-45f0-89dc-642dff737466",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "screenname.php",
+        "parameters": {
+          "screenname": "joerogan"
+        }
+      },
+      "created_at": "2025-09-09T06:40:58.290421"
+    },
+    "528724b7-6bb3-4c7a-a282-9c601c5c63f2": {
+      "id": "528724b7-6bb3-4c7a-a282-9c601c5c63f2",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Collect follower list (or at least counts and first-page sample) to assess amplification potential and to select a representative sample for network analysis and sentiment/engagement sampling on suspect tweets.",
+        "parent_analytic_question": "514e723a-7c8a-46e7-81fa-a914fd38300a"
+      },
+      "created_at": "2025-09-09T06:40:58.290421"
+    },
+    "3b0ccf1b-83b9-4d6a-b648-75cba9b94480": {
+      "id": "3b0ccf1b-83b9-4d6a-b648-75cba9b94480",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "followers.php",
+        "parameters": {
+          "screenname": "joerogan"
+        }
+      },
+      "created_at": "2025-09-09T06:40:58.290421"
+    },
+    "1812103c-8f74-49ac-8a47-aa01ba8d7121": {
+      "id": "1812103c-8f74-49ac-8a47-aa01ba8d7121",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Identify official affiliations, sponsors, and institutional ties (Spotify, podcast partners, advertisers) that could explain reach or repeated amplification of particular claims.",
+        "parent_analytic_question": "514e723a-7c8a-46e7-81fa-a914fd38300a"
+      },
+      "created_at": "2025-09-09T06:40:58.290421"
+    },
+    "6d61663e-e778-4a4d-9d50-25492b563b56": {
+      "id": "6d61663e-e778-4a4d-9d50-25492b563b56",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "affilates.php",
+        "parameters": {
+          "screenname": "joerogan"
+        }
+      },
+      "created_at": "2025-09-09T06:40:58.290421"
+    },
+    "222b0c3a-e0c5-4ca5-aceb-b2997832875c": {
+      "id": "222b0c3a-e0c5-4ca5-aceb-b2997832875c",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: For each candidate tweet identified in the timeline/search, retrieve the full conversation thread to capture replies, clarifications, deletions, and whether Rogan or others corrected or amplified the claim.",
+        "parent_analytic_question": "514e723a-7c8a-46e7-81fa-a914fd38300a"
+      },
+      "created_at": "2025-09-09T06:40:58.290421"
+    },
+    "6fbed90f-072b-4e4c-8ee4-a7a90075d492": {
+      "id": "6fbed90f-072b-4e4c-8ee4-a7a90075d492",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "tweet_thread.php",
+        "parameters": {
+          "id": "REPLACE_WITH_TWEET_ID_FROM_TIMELINE"
+        }
+      },
+      "created_at": "2025-09-09T06:40:58.290421"
+    },
+    "02042316-6f2d-47a6-95f0-4828e8708d5b": {
+      "id": "02042316-6f2d-47a6-95f0-4828e8708d5b",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Pull replies to high-priority candidate tweets to surface immediate fact-checks, corrections, and engagement patterns; replies often include links to external debunks or supporting evidence.",
+        "parent_analytic_question": "514e723a-7c8a-46e7-81fa-a914fd38300a"
+      },
+      "created_at": "2025-09-09T06:40:58.290421"
+    },
+    "4e0c8327-bdb9-4839-acf0-7a42460f5ca8": {
+      "id": "4e0c8327-bdb9-4839-acf0-7a42460f5ca8",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "latest_replies.php",
+        "parameters": {
+          "id": "REPLACE_WITH_TWEET_ID_FROM_TIMELINE"
+        }
+      },
+      "created_at": "2025-09-09T06:40:58.290421"
+    },
+    "16eda1d7-95e6-47e0-9c83-f3911301a081": {
+      "id": "16eda1d7-95e6-47e0-9c83-f3911301a081",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "@IvankaNews_ Fact-checkers have reviewed @finkd interview with @joerogan .\nHis claim of regretting censorship under Biden? \nFake news.\nCensorship is alive and well in Europe.\nHow do you regret something selectively?\nHe didn\u2019t regret it. \nHe just lied.\nCannot be trusted.",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-09T06:42:31.810167",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.7,
+          "goal_relevance_score": 0.4
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-09T06:42:31.810167"
+      },
+      "created_at": "2025-09-09T06:42:31.810167"
+    },
+    "1ccfec6c-32c7-433b-9b7c-e55cc5bfc0b2": {
+      "id": "1ccfec6c-32c7-433b-9b7c-e55cc5bfc0b2",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Multiple identical posts from the same account repeat an assertion that \u201cfact-checkers\u201d have reviewed Joe Rogan\u2019s interview and call his claim about \u201cregretting censorship under Biden\u201d \u201cfake news.\u201d This pattern is a coordinated amplification of an unsourced fact-check claim: the posts do not cite which fact-checkers or provide links to specific findings and simultaneously assert censorship \u201cis alive and well in Europe,\u201d creating an ambiguous message (denying Rogan\u2019s specific claim while affirming broader censorship concerns). Implications for the investigation: the material shows a trend of amplification that could influence perception but does not by itself establish that Rogan propagated disinformation\u2014verification requires locating the original interview, the exact claim Rogan made, and named, credible fact-checks assessing that claim. Emerging themes relevant to whether Rogan propagates disinformation: (1) coordinated repetition of claims without sourcing, (2) reliance on vague appeals to \u201cfact-checkers\u201d as authority, and (3) message inconsistency (denial of a specific claim alongside broad assertions of censorship). These themes increase the risk of misinformation spread via amplification and signal next steps: obtain primary sources and audit independent fact-checks before concluding Rogan propagated disinformation.",
+        "insight_type": "trend",
+        "confidence": 0.6,
+        "title": "Repeated, unsourced claims suggest coordinated amplification rather than clear evidence Rogan spread disinformation"
+      },
+      "created_at": "2025-09-09T06:43:35.060103"
+    },
+    "c58b1d1c-81b4-45a0-b735-bcc484781f0c": {
+      "id": "c58b1d1c-81b4-45a0-b735-bcc484781f0c",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What exact methodology and criteria were used to classify claims as true, false, or unverifiable (including coding rules, coder training, and inter-rater reliability)?",
+        "emergence_reason": "The headline distribution (32% true / 35% false / 33% unverifiable) drives the main conclusion but rests entirely on labeling decisions; understanding methods is essential to judge validity, bias, and reproducibility."
+      },
+      "created_at": "2025-09-09T06:44:01.667285"
+    },
+    "f09bb852-0640-4542-9aa7-70278c688814": {
+      "id": "f09bb852-0640-4542-9aa7-70278c688814",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How representative and complete is the dataset (sampling frame, time window, platforms covered, search/collection strategy), and might promotional material dominance reflect collection bias?",
+        "emergence_reason": "Multiple insights note that most items are promos/retweets, which could skew the ability to detect misinformation; clarifying sampling will reveal whether the dataset can support claims about Rogan's propensity to propagate falsehoods."
+      },
+      "created_at": "2025-09-09T06:44:01.667285"
+    },
+    "28879180-5727-4521-bc47-cf501a35dbd5": {
+      "id": "28879180-5727-4521-bc47-cf501a35dbd5",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Are there direct primary-source examples (transcripts, timestamps, audio/video) of Joe Rogan making false factual claims in the sample or in an expanded set?",
+        "emergence_reason": "One insight states no direct examples are present; locating primary source evidence is necessary to move from aggregate inference to case-level attribution of disinformation to Rogan."
+      },
+      "created_at": "2025-09-09T06:44:01.667285"
+    },
+    "01ce0005-8f15-4c52-bbcb-a5fb727444ff": {
+      "id": "01ce0005-8f15-4c52-bbcb-a5fb727444ff",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How were 'unverifiable' items defined and what proportion could become verifiable with additional context (e.g., fuller transcripts, links, or sourcing)?",
+        "emergence_reason": "A third of claims are labeled unverifiable\u2014understanding this category's heterogeneity will determine whether apparent misinformation is actually a data artifact."
+      },
+      "created_at": "2025-09-09T06:44:01.667285"
+    },
+    "28b92670-0181-4130-a6cb-378c3cbd4f35": {
+      "id": "28b92670-0181-4130-a6cb-378c3cbd4f35",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What is the reach and amplification of false and unverifiable claims (audience size, shares, impressions, follower counts, cross-platform propagation, and repetition), and who are the key amplifiers?",
+        "emergence_reason": "Aggregate counts do not measure public impact; amplification metrics are needed to assess harm and whether coordinated repetition increases effective exposure."
+      },
+      "created_at": "2025-09-09T06:44:01.667285"
+    },
+    "3af3271a-3a1a-4da4-8539-2e568b9b9597": {
+      "id": "3af3271a-3a1a-4da4-8539-2e568b9b9597",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How often are questionable claims originated by Rogan himself versus guests, citations, or third-party reposts (host vs. guest responsibility)?",
+        "emergence_reason": "Insights mention platforming of fringe guests; distinguishing Rogan's own assertions from guest content is critical to attributing responsibility for misinformation."
+      },
+      "created_at": "2025-09-09T06:44:01.667285"
+    },
+    "51bb2951-e7d6-4ea3-9a4b-24cdbd2a438c": {
+      "id": "51bb2951-e7d6-4ea3-9a4b-24cdbd2a438c",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Which 'fact-checkers' are being referenced in the repeated posts, and do their assessments corroborate or contradict the unsourced amplification claims?",
+        "emergence_reason": "A coordinated pattern invoking anonymous 'fact-checkers' could mislead audiences; verifying named fact-checks would clarify whether amplification is spreading accurate corrections or unsourced denials."
+      },
+      "created_at": "2025-09-09T06:44:01.667285"
+    },
+    "3c15ea5a-1f9f-4090-aa4f-25ddaa2cc767": {
+      "id": "3c15ea5a-1f9f-4090-aa4f-25ddaa2cc767",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Are there patterns of coordinated amplification (same text repeated by multiple accounts), and what are the accounts' characteristics (bot-like, partisan networks, influencer accounts)?",
+        "emergence_reason": "Insights identify repeated identical posts asserting fact-checks; mapping coordination will reveal whether spread is organic or orchestrated and the actors involved."
+      },
+      "created_at": "2025-09-09T06:44:01.667285"
+    },
+    "b5dc240a-91a4-463a-8c2f-ab70209a875e": {
+      "id": "b5dc240a-91a4-463a-8c2f-ab70209a875e",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How does Rogan's rate of false/unverifiable claims compare to comparable communicators (other podcasters, broadcasters, or influencers) when using the same methods?",
+        "emergence_reason": "The assertion that Rogan contributes disproportionally to misinformation requires a comparators analysis to establish whether observed rates are atypical."
+      },
+      "created_at": "2025-09-09T06:44:01.667285"
+    },
+    "ceae08de-6335-4c67-bce5-c082a6f6a375": {
+      "id": "ceae08de-6335-4c67-bce5-c082a6f6a375",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What is the temporal distribution of the false/unverifiable claims (clustered in particular periods or topics), and do spikes align with specific guests, episodes, or external events?",
+        "emergence_reason": "Temporal clustering could point to episodic causes (a guest, news events) and indicate whether misinformation is persistent or episodic."
+      },
+      "created_at": "2025-09-09T06:44:01.667285"
+    },
+    "e3d2ead4-83b5-40e0-bbd9-7ffaf436bfe2": {
+      "id": "e3d2ead4-83b5-40e0-bbd9-7ffaf436bfe2",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What is the downstream harm from these claims (changes in public belief, behavior, policy discourse, or measurable real-world outcomes), and how can harm be operationalized and measured here?",
+        "emergence_reason": "The dataset signals risk but does not establish harm; assessing impacts is required to prioritize mitigation and to justify reputational or policy conclusions."
+      },
+      "created_at": "2025-09-09T06:44:01.667285"
+    },
+    "8ff6e564-d782-4b45-8be0-ce6a0db2f56d": {
+      "id": "8ff6e564-d782-4b45-8be0-ce6a0db2f56d",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Do platform-level features or algorithms (search, recommendation, autoplay, cross-posting) disproportionately amplify Rogan content or particular claims relative to other content types?",
+        "emergence_reason": "Understanding algorithmic promotion will clarify whether observed exposure stems from content characteristics, Rogan's profile, or platform mechanics."
+      },
+      "created_at": "2025-09-09T06:44:01.667285"
+    },
+    "68f5fd89-b930-4e36-80d5-3e2c51e0433a": {
+      "id": "68f5fd89-b930-4e36-80d5-3e2c51e0433a",
+      "node_type": "Insight",
+      "properties": {
+        "content": "The provided results are mostly promotional tweets and retweets about episodes, guests, and live shows \u2014 they do not directly address whether Joe Rogan propagates disinformation.",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-09T06:44:34.303301"
+    },
+    "f25f85a6-ade0-4f4c-85f3-59a25ede1407": {
+      "id": "f25f85a6-ade0-4f4c-85f3-59a25ede1407",
+      "node_type": "Insight",
+      "properties": {
+        "content": "A few items hint at topics commonly associated with conspiracy or fringe claims (UAP, ancient mysteries, a comment about conspiracies), which shows Rogan's platform sometimes hosts unconventional/controversial guests \u2014 but these items do not document falsehoods or provide fact-checks.",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-09T06:44:34.303301"
+    },
+    "44774ac1-0c76-4e92-86b4-cdd5b913a4af": {
+      "id": "44774ac1-0c76-4e92-86b4-cdd5b913a4af",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Retrieve Joe Rogan's chronological recent posts to identify exact candidate claims, timestamps, tweet IDs and context (threads, replies, embedded media). This directly addresses the primary gap: no captured Rogan-origin tweets for forensic checking.",
+        "parent_analytic_question": "514e723a-7c8a-46e7-81fa-a914fd38300a"
+      },
+      "created_at": "2025-09-09T06:45:03.373802"
+    },
+    "3a7d0d4f-6b33-45d1-87fc-124038221948": {
+      "id": "3a7d0d4f-6b33-45d1-87fc-124038221948",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "joerogan"
+        }
+      },
+      "created_at": "2025-09-09T06:45:03.373802"
+    },
+    "c58e8a99-5a0e-4019-8159-92e02b6afba9": {
+      "id": "c58e8a99-5a0e-4019-8159-92e02b6afba9",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Collect profile metadata (bio, follower/following counts, account creation, verified status) to estimate audience size and baseline credibility; this helps assess amplification potential and sampling strategy for network analysis.",
+        "parent_analytic_question": "514e723a-7c8a-46e7-81fa-a914fd38300a"
+      },
+      "created_at": "2025-09-09T06:45:03.373802"
+    },
+    "ec40727c-7ae1-4f13-8ba7-92624da216e1": {
+      "id": "ec40727c-7ae1-4f13-8ba7-92624da216e1",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "screenname.php",
+        "parameters": {
+          "screenname": "joerogan"
+        }
+      },
+      "created_at": "2025-09-09T06:45:03.373802"
+    },
+    "7208e732-170f-47dc-aea2-44cd789703f3": {
+      "id": "7208e732-170f-47dc-aea2-44cd789703f3",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Pull a sample/page of followers to characterize audience composition and to identify high-amplifier accounts (influencers, media, suspected bots) for downstream propagation and coordination analysis.",
+        "parent_analytic_question": "514e723a-7c8a-46e7-81fa-a914fd38300a"
+      },
+      "created_at": "2025-09-09T06:45:03.373802"
+    },
+    "fe441197-fb17-4946-b2fb-e85acad7ea01": {
+      "id": "fe441197-fb17-4946-b2fb-e85acad7ea01",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "followers.php",
+        "parameters": {
+          "screenname": "joerogan"
+        }
+      },
+      "created_at": "2025-09-09T06:45:03.373802"
+    },
+    "0851dcd6-26b2-4ffc-9f33-497bcb94ddb8": {
+      "id": "0851dcd6-26b2-4ffc-9f33-497bcb94ddb8",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Identify declared affiliations (podcast platforms, sponsors, media partners) that can amplify or frame messages; useful to judge incentives, reach multipliers and institutional sources for any corrections or responses.",
+        "parent_analytic_question": "514e723a-7c8a-46e7-81fa-a914fd38300a"
+      },
+      "created_at": "2025-09-09T06:45:03.373802"
+    },
+    "d4e6ea5d-4722-4526-a874-66e21760d793": {
+      "id": "d4e6ea5d-4722-4526-a874-66e21760d793",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "affilates.php",
+        "parameters": {
+          "screenname": "joerogan"
+        }
+      },
+      "created_at": "2025-09-09T06:45:03.373802"
+    },
+    "2e1177d3-2105-4ce8-bcc8-192a4efe8e19": {
+      "id": "2e1177d3-2105-4ce8-bcc8-192a4efe8e19",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Retrieve Rogan's posted photos/videos and clips that frequently carry distilled claims or misleading excerpts; media often spreads faster and is harder to contextualize, so capturing these assets is essential for verifying whether disinformation is being propagated in clipped form.",
+        "parent_analytic_question": "514e723a-7c8a-46e7-81fa-a914fd38300a"
+      },
+      "created_at": "2025-09-09T06:45:03.373802"
+    },
+    "c74d2e72-1b99-45d3-9ef9-075fa7a8fa50": {
+      "id": "c74d2e72-1b99-45d3-9ef9-075fa7a8fa50",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "usermedia.php",
+        "parameters": {
+          "screenname": "joerogan"
+        }
+      },
+      "created_at": "2025-09-09T06:45:03.373802"
+    },
+    "49f50940-bf0f-4b48-a836-aa60597a687c": {
+      "id": "49f50940-bf0f-4b48-a836-aa60597a687c",
+      "node_type": "Insight",
+      "properties": {
+        "content": "The results are almost entirely promotional tweets and episode links; they do not contain explicit claims, fact-checks, or analysis about Joe Rogan spreading disinformation.",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-09T06:46:03.696662"
+    },
+    "40bc80fa-12e9-44ed-be14-18becc76932f": {
+      "id": "40bc80fa-12e9-44ed-be14-18becc76932f",
+      "node_type": "Insight",
+      "properties": {
+        "content": "A few items indicate guests or topics that can be associated with fringe claims (e.g., Ben Van Kerkwyk on ancient mysteries, UAP-related retweets), which could be relevant to an investigation about platforming of fringe ideas\u2014but the items do not show Rogan endorsing falsehoods.",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-09T06:46:03.696662"
+    },
+    "e949c32d-0631-4ef5-8e3b-1d11dd165561": {
+      "id": "e949c32d-0631-4ef5-8e3b-1d11dd165561",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Several entries point to Spotify/YouTube episode links (which could supply primary-source audio/transcripts), but the results do not quote or summarize episode content.",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-09T06:46:03.696662"
+    },
+    "11191058-1d8a-45cc-a90c-b74c81f61d14": {
+      "id": "11191058-1d8a-45cc-a90c-b74c81f61d14",
+      "node_type": "Insight",
+      "properties": {
+        "content": "No direct evidence in these results of Joe Rogan making demonstrably false claims, nor links to reputable fact-checks, news investigations, or scholarly analyses about his propagation of disinformation.",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-09T06:46:03.696662"
+    }
+  },
+  "edges": [
+    {
+      "id": "0f736f2a-95fe-47fb-9cba-ed1fbaf19c46",
+      "source_id": "514e723a-7c8a-46e7-81fa-a914fd38300a",
+      "target_id": "9bf5073e-8591-4c96-9a78-a3319a813b36",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T06:37:04.864736"
+    },
+    {
+      "id": "84a787c5-78a4-4637-91b6-a471df3e1928",
+      "source_id": "9bf5073e-8591-4c96-9a78-a3319a813b36",
+      "target_id": "48cbf618-d910-448c-ada1-d9b4334ee857",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T06:37:04.864736"
+    },
+    {
+      "id": "be690636-93bb-48ec-9c9f-819f1afef6dc",
+      "source_id": "514e723a-7c8a-46e7-81fa-a914fd38300a",
+      "target_id": "6b482d20-4ada-4e55-86fa-495ce9cbbf4d",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T06:37:04.864736"
+    },
+    {
+      "id": "f57cfa3a-83c4-4b38-90f2-09fc68f9701a",
+      "source_id": "6b482d20-4ada-4e55-86fa-495ce9cbbf4d",
+      "target_id": "986df145-f40f-41b8-909d-9674a85c14f8",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T06:37:04.864736"
+    },
+    {
+      "id": "f4d5fecf-aadb-40dd-aaa4-68ef15d7c73c",
+      "source_id": "514e723a-7c8a-46e7-81fa-a914fd38300a",
+      "target_id": "bc893d93-8bc3-4ea5-8755-f14dfb70666b",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T06:37:04.864736"
+    },
+    {
+      "id": "f031d529-fc16-4945-996b-470507d88be9",
+      "source_id": "bc893d93-8bc3-4ea5-8755-f14dfb70666b",
+      "target_id": "25760538-430f-44a3-bda7-965b2737de2b",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T06:37:04.864736"
+    },
+    {
+      "id": "5460182f-aeb1-4026-a3f6-96c4372624e8",
+      "source_id": "514e723a-7c8a-46e7-81fa-a914fd38300a",
+      "target_id": "6a2a4926-e822-4d79-be42-8055e1c634cf",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T06:37:04.864736"
+    },
+    {
+      "id": "8b5194dc-2c28-4af5-9719-496d42ed14a1",
+      "source_id": "6a2a4926-e822-4d79-be42-8055e1c634cf",
+      "target_id": "1d2b68f1-e93a-4a21-ad62-e4eeb881f4f6",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T06:37:04.864736"
+    },
+    {
+      "id": "87418c7b-dd91-41f9-a04d-044bd50e8b5a",
+      "source_id": "514e723a-7c8a-46e7-81fa-a914fd38300a",
+      "target_id": "f47810fc-bcfb-4f6e-8b0c-b16e1c843c11",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T06:37:04.864736"
+    },
+    {
+      "id": "6892cd33-00a8-4e50-b323-79cdd54bd73a",
+      "source_id": "f47810fc-bcfb-4f6e-8b0c-b16e1c843c11",
+      "target_id": "e5c37fff-6f52-4843-a660-c82239cf8215",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T06:37:04.864736"
+    },
+    {
+      "id": "813e8815-02d8-43b7-97d9-b9180a846796",
+      "source_id": "25760538-430f-44a3-bda7-965b2737de2b",
+      "target_id": "ab8b787c-a6e6-4844-80ac-8c51a1d24295",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.9
+      },
+      "created_at": "2025-09-09T06:38:38.949306"
+    },
+    {
+      "id": "ff14c84a-82c8-4e5e-8fc4-55bf6324092b",
+      "source_id": "ab8b787c-a6e6-4844-80ac-8c51a1d24295",
+      "target_id": "1ddebcd1-4e57-4810-bf36-49d49816f240",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-09T06:39:32.428084"
+      },
+      "created_at": "2025-09-09T06:39:32.428084"
+    },
+    {
+      "id": "6f1a5af5-166b-41bc-9c03-9b3201866bc2",
+      "source_id": "ab8b787c-a6e6-4844-80ac-8c51a1d24295",
+      "target_id": "1ddebcd1-4e57-4810-bf36-49d49816f240",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-09T06:39:32.428084"
+      },
+      "created_at": "2025-09-09T06:39:32.428084"
+    },
+    {
+      "id": "7b3bd83b-8cb2-48eb-9d53-4b8aca59e9cf",
+      "source_id": "ab8b787c-a6e6-4844-80ac-8c51a1d24295",
+      "target_id": "1ddebcd1-4e57-4810-bf36-49d49816f240",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-09T06:39:32.428084"
+      },
+      "created_at": "2025-09-09T06:39:32.428084"
+    },
+    {
+      "id": "010458fd-84b7-4e6a-ba3e-520803eb774b",
+      "source_id": "1ddebcd1-4e57-4810-bf36-49d49816f240",
+      "target_id": "23eb9943-296e-432d-90a3-14585bbc0f4c",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Sampling choices can create bias (over- or under-counting certain claim types or time periods); without this we can't assess whether the 32/35/33 split generalizes to Rogan's overall output.",
+        "priority": 0.98,
+        "created_at": "2025-09-09T06:39:55.559646"
+      },
+      "created_at": "2025-09-09T06:39:55.559646"
+    },
+    {
+      "id": "2e277d86-31ce-47b4-8433-13fa3e3f3ae2",
+      "source_id": "1ddebcd1-4e57-4810-bf36-49d49816f240",
+      "target_id": "3c5f4154-d15c-4074-84a1-47a2f0201dd7",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Validity of the main result depends on robust, transparent definitions and authoritative sources; ambiguity in criteria could drive classification artifacts.",
+        "priority": 0.99,
+        "created_at": "2025-09-09T06:39:55.559646"
+      },
+      "created_at": "2025-09-09T06:39:55.559646"
+    },
+    {
+      "id": "1ed61f81-aea1-4f7d-9a8f-cb38797f3cf1",
+      "source_id": "1ddebcd1-4e57-4810-bf36-49d49816f240",
+      "target_id": "442d8c3c-9ff4-4e88-8ee9-5f7c53f9ba53",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "High rates of 'unverifiable' and 'false' claims could reflect subjective judgments; measuring agreement quantifies labeling robustness.",
+        "priority": 0.94,
+        "created_at": "2025-09-09T06:39:55.559646"
+      },
+      "created_at": "2025-09-09T06:39:55.559646"
+    },
+    {
+      "id": "19443e7a-fab9-4200-addc-bd1de51e143f",
+      "source_id": "1ddebcd1-4e57-4810-bf36-49d49816f240",
+      "target_id": "cdf8b64e-2eb6-4942-8850-6a92c40c7331",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Distinguishing inherent unknowability from methodological limits affects whether unverifiable items represent misinformation gaps or evidence-collection gaps.",
+        "priority": 0.96,
+        "created_at": "2025-09-09T06:39:55.559646"
+      },
+      "created_at": "2025-09-09T06:39:55.559646"
+    },
+    {
+      "id": "e77a7df3-156d-43f8-b10c-e8c7bd758b5a",
+      "source_id": "1ddebcd1-4e57-4810-bf36-49d49816f240",
+      "target_id": "17651243-070a-4229-8d24-83931f61685e",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "If specific topics drive the false/unverifiable proportions, interventions can be targeted and interpretation of overall rates becomes more nuanced.",
+        "priority": 0.85,
+        "created_at": "2025-09-09T06:39:55.559646"
+      },
+      "created_at": "2025-09-09T06:39:55.559646"
+    },
+    {
+      "id": "a9b7a785-9a0e-4c63-b8c0-0df2974593f2",
+      "source_id": "1ddebcd1-4e57-4810-bf36-49d49816f240",
+      "target_id": "6f2defff-dc02-455b-9ceb-03017f107795",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Prevalence alone is insufficient; public exposure and engagement determine real-world impact and whether misinformation is amplified at scale.",
+        "priority": 0.95,
+        "created_at": "2025-09-09T06:39:55.559646"
+      },
+      "created_at": "2025-09-09T06:39:55.559646"
+    },
+    {
+      "id": "345d7f15-0d87-4046-90b2-6f8bfe4af6f3",
+      "source_id": "1ddebcd1-4e57-4810-bf36-49d49816f240",
+      "target_id": "2935cbad-31c1-48f3-95c0-f68bdec7845a",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Without a benchmark, it's unclear whether ~68% false/unverifiable is unusually high or typical for this communication format.",
+        "priority": 0.93,
+        "created_at": "2025-09-09T06:39:55.559646"
+      },
+      "created_at": "2025-09-09T06:39:55.559646"
+    },
+    {
+      "id": "d344ef15-d5a9-4c55-a4a3-470ecba1808f",
+      "source_id": "1ddebcd1-4e57-4810-bf36-49d49816f240",
+      "target_id": "3e8d8b8d-8486-42b8-9999-a5eb5c5a44fe",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "A passing opinion has different implications than repeated assertive claims; context affects both responsibility and likely audience interpretation.",
+        "priority": 0.9,
+        "created_at": "2025-09-09T06:39:55.559646"
+      },
+      "created_at": "2025-09-09T06:39:55.559646"
+    },
+    {
+      "id": "048cfb8e-0b81-4ec0-8d44-e7b76f28db78",
+      "source_id": "1ddebcd1-4e57-4810-bf36-49d49816f240",
+      "target_id": "be1acea1-662d-43c1-bcc8-bf2780c204db",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Temporal patterns could reveal situational drivers or the effect of editorial choices, informing mitigation strategies.",
+        "priority": 0.7,
+        "created_at": "2025-09-09T06:39:55.559646"
+      },
+      "created_at": "2025-09-09T06:39:55.559646"
+    },
+    {
+      "id": "4a3f45b5-a332-4588-8c61-52ccb3d3e831",
+      "source_id": "1ddebcd1-4e57-4810-bf36-49d49816f240",
+      "target_id": "1ef5f7c5-e658-4b84-8d44-6a9f2b26a300",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Establishing actual harm is essential for assessing severity and prioritizing responses beyond documenting inaccuracy rates.",
+        "priority": 0.92,
+        "created_at": "2025-09-09T06:39:55.559646"
+      },
+      "created_at": "2025-09-09T06:39:55.559646"
+    },
+    {
+      "id": "5e02b4c2-a3e8-45d8-8a18-c8af18f2d25f",
+      "source_id": "1ddebcd1-4e57-4810-bf36-49d49816f240",
+      "target_id": "f410e035-312a-46a7-a181-1f0538defc75",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Correction behavior affects net misinformation impact; lack of corrections heightens ongoing risk even if initial error rates are similar across communicators.",
+        "priority": 0.78,
+        "created_at": "2025-09-09T06:39:55.559646"
+      },
+      "created_at": "2025-09-09T06:39:55.559646"
+    },
+    {
+      "id": "e3561b01-08d9-4f5d-b90d-8fbdcb412178",
+      "source_id": "1ddebcd1-4e57-4810-bf36-49d49816f240",
+      "target_id": "3789ebcb-891f-492c-ac64-6bd7e9b8c5bc",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Responsibility and intervention points differ if misinformation primarily arises from guests, editorial choices, or downstream clipping and social-platform amplification.",
+        "priority": 0.88,
+        "created_at": "2025-09-09T06:39:55.559646"
+      },
+      "created_at": "2025-09-09T06:39:55.559646"
+    },
+    {
+      "id": "27587fd8-c76d-4c25-9335-6cce3b015fda",
+      "source_id": "514e723a-7c8a-46e7-81fa-a914fd38300a",
+      "target_id": "127a2cb5-f812-48f3-9666-d7c64cbd533a",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T06:40:58.289903"
+    },
+    {
+      "id": "a4a277f7-7ada-4efd-ab7b-aff72b63afe3",
+      "source_id": "127a2cb5-f812-48f3-9666-d7c64cbd533a",
+      "target_id": "523345ee-e125-4000-8db7-26d0b556b674",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T06:40:58.290421"
+    },
+    {
+      "id": "f5671fc2-bb82-469b-8ad7-09d902a4ecbe",
+      "source_id": "514e723a-7c8a-46e7-81fa-a914fd38300a",
+      "target_id": "1aa10f5c-250e-4f19-9ac2-a2c90d570d50",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T06:40:58.290421"
+    },
+    {
+      "id": "a84eed2d-4248-4355-9625-29469dbc3312",
+      "source_id": "1aa10f5c-250e-4f19-9ac2-a2c90d570d50",
+      "target_id": "fdadfcf2-64ac-4c64-b4e9-847a23334638",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T06:40:58.290421"
+    },
+    {
+      "id": "a43b6e97-e8c1-4ca8-9aa9-49fab94d8a97",
+      "source_id": "514e723a-7c8a-46e7-81fa-a914fd38300a",
+      "target_id": "b1058aa6-4e81-42f9-b79e-6e998b6fa5f6",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T06:40:58.290421"
+    },
+    {
+      "id": "ecb54362-4aba-48b6-8dd7-269a0d9f9048",
+      "source_id": "b1058aa6-4e81-42f9-b79e-6e998b6fa5f6",
+      "target_id": "b145924a-e6b0-4597-a076-a8fb44227954",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T06:40:58.290421"
+    },
+    {
+      "id": "33df9d16-4454-4904-b813-4a8fbe324f2d",
+      "source_id": "514e723a-7c8a-46e7-81fa-a914fd38300a",
+      "target_id": "bdb48212-be67-438f-9d62-2ebbe6a5b5f2",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T06:40:58.290421"
+    },
+    {
+      "id": "9adb84ff-2b0e-4c2e-8085-d51a091d3625",
+      "source_id": "bdb48212-be67-438f-9d62-2ebbe6a5b5f2",
+      "target_id": "3325ef2a-ebcb-45f0-89dc-642dff737466",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T06:40:58.290421"
+    },
+    {
+      "id": "35596b08-ed6c-4827-bb17-fdb046c181ff",
+      "source_id": "514e723a-7c8a-46e7-81fa-a914fd38300a",
+      "target_id": "528724b7-6bb3-4c7a-a282-9c601c5c63f2",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T06:40:58.290421"
+    },
+    {
+      "id": "a5c48729-d2f3-456c-bd2c-300c5b2a531a",
+      "source_id": "528724b7-6bb3-4c7a-a282-9c601c5c63f2",
+      "target_id": "3b0ccf1b-83b9-4d6a-b648-75cba9b94480",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T06:40:58.290421"
+    },
+    {
+      "id": "047d864e-c1d1-4e09-a302-cba087129948",
+      "source_id": "514e723a-7c8a-46e7-81fa-a914fd38300a",
+      "target_id": "1812103c-8f74-49ac-8a47-aa01ba8d7121",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T06:40:58.290421"
+    },
+    {
+      "id": "d0f8f20a-b3ec-457e-bfed-5fa432800e86",
+      "source_id": "1812103c-8f74-49ac-8a47-aa01ba8d7121",
+      "target_id": "6d61663e-e778-4a4d-9d50-25492b563b56",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T06:40:58.290421"
+    },
+    {
+      "id": "54dfaf4e-871f-4989-9701-5612cab65919",
+      "source_id": "514e723a-7c8a-46e7-81fa-a914fd38300a",
+      "target_id": "222b0c3a-e0c5-4ca5-aceb-b2997832875c",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T06:40:58.290421"
+    },
+    {
+      "id": "16786b46-4573-44ff-a0ed-5e700f00a6b5",
+      "source_id": "222b0c3a-e0c5-4ca5-aceb-b2997832875c",
+      "target_id": "6fbed90f-072b-4e4c-8ee4-a7a90075d492",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T06:40:58.290421"
+    },
+    {
+      "id": "94c2cf23-8912-442c-a361-0048af18bd0b",
+      "source_id": "514e723a-7c8a-46e7-81fa-a914fd38300a",
+      "target_id": "02042316-6f2d-47a6-95f0-4828e8708d5b",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T06:40:58.290421"
+    },
+    {
+      "id": "4fafad9e-5174-497c-b0e3-20c92bf3f125",
+      "source_id": "02042316-6f2d-47a6-95f0-4828e8708d5b",
+      "target_id": "4e0c8327-bdb9-4839-acf0-7a42460f5ca8",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T06:40:58.290421"
+    },
+    {
+      "id": "284dcf3c-7dd1-4388-b7be-87b37b78640a",
+      "source_id": "b145924a-e6b0-4597-a076-a8fb44227954",
+      "target_id": "16eda1d7-95e6-47e0-9c83-f3911301a081",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.7
+      },
+      "created_at": "2025-09-09T06:42:31.810167"
+    },
+    {
+      "id": "bacc04d7-ae6c-4091-bac7-c95217d9143f",
+      "source_id": "16eda1d7-95e6-47e0-9c83-f3911301a081",
+      "target_id": "1ccfec6c-32c7-433b-9b7c-e55cc5bfc0b2",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-09T06:43:35.060103"
+      },
+      "created_at": "2025-09-09T06:43:35.060103"
+    },
+    {
+      "id": "a67ab33e-8b3c-4f91-99cc-4e2191d8e6dc",
+      "source_id": "16eda1d7-95e6-47e0-9c83-f3911301a081",
+      "target_id": "1ccfec6c-32c7-433b-9b7c-e55cc5bfc0b2",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-09T06:43:35.060103"
+      },
+      "created_at": "2025-09-09T06:43:35.060103"
+    },
+    {
+      "id": "b5235bb8-931a-4d05-bfbc-543da9111572",
+      "source_id": "16eda1d7-95e6-47e0-9c83-f3911301a081",
+      "target_id": "1ccfec6c-32c7-433b-9b7c-e55cc5bfc0b2",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-09T06:43:35.060103"
+      },
+      "created_at": "2025-09-09T06:43:35.060103"
+    },
+    {
+      "id": "089d6636-cbbb-486c-917f-896ffb8a65a1",
+      "source_id": "1ccfec6c-32c7-433b-9b7c-e55cc5bfc0b2",
+      "target_id": "c58b1d1c-81b4-45a0-b735-bcc484781f0c",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The headline distribution (32% true / 35% false / 33% unverifiable) drives the main conclusion but rests entirely on labeling decisions; understanding methods is essential to judge validity, bias, and reproducibility.",
+        "priority": 1.0,
+        "created_at": "2025-09-09T06:44:01.667285"
+      },
+      "created_at": "2025-09-09T06:44:01.667285"
+    },
+    {
+      "id": "450deaa7-d00e-4b90-8851-f24b0d1f47eb",
+      "source_id": "1ccfec6c-32c7-433b-9b7c-e55cc5bfc0b2",
+      "target_id": "f09bb852-0640-4542-9aa7-70278c688814",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Multiple insights note that most items are promos/retweets, which could skew the ability to detect misinformation; clarifying sampling will reveal whether the dataset can support claims about Rogan's propensity to propagate falsehoods.",
+        "priority": 0.95,
+        "created_at": "2025-09-09T06:44:01.667285"
+      },
+      "created_at": "2025-09-09T06:44:01.667285"
+    },
+    {
+      "id": "2f0f3ade-83b3-4d6c-8c04-fb1017d5a10d",
+      "source_id": "1ccfec6c-32c7-433b-9b7c-e55cc5bfc0b2",
+      "target_id": "28879180-5727-4521-bc47-cf501a35dbd5",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "One insight states no direct examples are present; locating primary source evidence is necessary to move from aggregate inference to case-level attribution of disinformation to Rogan.",
+        "priority": 0.98,
+        "created_at": "2025-09-09T06:44:01.667285"
+      },
+      "created_at": "2025-09-09T06:44:01.667285"
+    },
+    {
+      "id": "11c5a547-2eb6-413e-9a31-6aa8283c0c33",
+      "source_id": "1ccfec6c-32c7-433b-9b7c-e55cc5bfc0b2",
+      "target_id": "01ce0005-8f15-4c52-bbcb-a5fb727444ff",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "A third of claims are labeled unverifiable\u2014understanding this category's heterogeneity will determine whether apparent misinformation is actually a data artifact.",
+        "priority": 0.9,
+        "created_at": "2025-09-09T06:44:01.667285"
+      },
+      "created_at": "2025-09-09T06:44:01.667285"
+    },
+    {
+      "id": "9cb5168b-24c8-459e-a4de-cddabbc7e4d3",
+      "source_id": "1ccfec6c-32c7-433b-9b7c-e55cc5bfc0b2",
+      "target_id": "28b92670-0181-4130-a6cb-378c3cbd4f35",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Aggregate counts do not measure public impact; amplification metrics are needed to assess harm and whether coordinated repetition increases effective exposure.",
+        "priority": 0.98,
+        "created_at": "2025-09-09T06:44:01.667285"
+      },
+      "created_at": "2025-09-09T06:44:01.667285"
+    },
+    {
+      "id": "eddea391-5e98-4926-a5dd-584577832f92",
+      "source_id": "1ccfec6c-32c7-433b-9b7c-e55cc5bfc0b2",
+      "target_id": "3af3271a-3a1a-4da4-8539-2e568b9b9597",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Insights mention platforming of fringe guests; distinguishing Rogan's own assertions from guest content is critical to attributing responsibility for misinformation.",
+        "priority": 0.93,
+        "created_at": "2025-09-09T06:44:01.667285"
+      },
+      "created_at": "2025-09-09T06:44:01.667285"
+    },
+    {
+      "id": "38bb39ca-4d5f-49eb-9585-8d3c4ae02bfc",
+      "source_id": "1ccfec6c-32c7-433b-9b7c-e55cc5bfc0b2",
+      "target_id": "51bb2951-e7d6-4ea3-9a4b-24cdbd2a438c",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "A coordinated pattern invoking anonymous 'fact-checkers' could mislead audiences; verifying named fact-checks would clarify whether amplification is spreading accurate corrections or unsourced denials.",
+        "priority": 0.85,
+        "created_at": "2025-09-09T06:44:01.667285"
+      },
+      "created_at": "2025-09-09T06:44:01.667285"
+    },
+    {
+      "id": "9f9cf784-9159-400a-be2b-2797f3f6b2f1",
+      "source_id": "1ccfec6c-32c7-433b-9b7c-e55cc5bfc0b2",
+      "target_id": "3c15ea5a-1f9f-4090-aa4f-25ddaa2cc767",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Insights identify repeated identical posts asserting fact-checks; mapping coordination will reveal whether spread is organic or orchestrated and the actors involved.",
+        "priority": 0.88,
+        "created_at": "2025-09-09T06:44:01.667285"
+      },
+      "created_at": "2025-09-09T06:44:01.667285"
+    },
+    {
+      "id": "10693cbb-0928-44c9-ac55-7b218cb6f5db",
+      "source_id": "1ccfec6c-32c7-433b-9b7c-e55cc5bfc0b2",
+      "target_id": "b5dc240a-91a4-463a-8c2f-ab70209a875e",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The assertion that Rogan contributes disproportionally to misinformation requires a comparators analysis to establish whether observed rates are atypical.",
+        "priority": 0.9,
+        "created_at": "2025-09-09T06:44:01.667285"
+      },
+      "created_at": "2025-09-09T06:44:01.667285"
+    },
+    {
+      "id": "6fe26903-0d1e-4a9e-bb6a-9201104c6a0b",
+      "source_id": "1ccfec6c-32c7-433b-9b7c-e55cc5bfc0b2",
+      "target_id": "ceae08de-6335-4c67-bce5-c082a6f6a375",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Temporal clustering could point to episodic causes (a guest, news events) and indicate whether misinformation is persistent or episodic.",
+        "priority": 0.75,
+        "created_at": "2025-09-09T06:44:01.667285"
+      },
+      "created_at": "2025-09-09T06:44:01.667285"
+    },
+    {
+      "id": "c152faff-1af1-4129-bef2-a261a8dab27a",
+      "source_id": "1ccfec6c-32c7-433b-9b7c-e55cc5bfc0b2",
+      "target_id": "e3d2ead4-83b5-40e0-bbd9-7ffaf436bfe2",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The dataset signals risk but does not establish harm; assessing impacts is required to prioritize mitigation and to justify reputational or policy conclusions.",
+        "priority": 0.9,
+        "created_at": "2025-09-09T06:44:01.667285"
+      },
+      "created_at": "2025-09-09T06:44:01.667285"
+    },
+    {
+      "id": "b0ae9752-bf20-46b0-92ad-84a7d6fde20c",
+      "source_id": "1ccfec6c-32c7-433b-9b7c-e55cc5bfc0b2",
+      "target_id": "8ff6e564-d782-4b45-8be0-ce6a0db2f56d",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Understanding algorithmic promotion will clarify whether observed exposure stems from content characteristics, Rogan's profile, or platform mechanics.",
+        "priority": 0.8,
+        "created_at": "2025-09-09T06:44:01.667285"
+      },
+      "created_at": "2025-09-09T06:44:01.667285"
+    },
+    {
+      "id": "ea7e9eca-2e3d-40b1-8360-ba8745984b89",
+      "source_id": "514e723a-7c8a-46e7-81fa-a914fd38300a",
+      "target_id": "44774ac1-0c76-4e92-86b4-cdd5b913a4af",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T06:45:03.373802"
+    },
+    {
+      "id": "7ca23717-b776-4a73-bb65-39fc1cd4c7c9",
+      "source_id": "44774ac1-0c76-4e92-86b4-cdd5b913a4af",
+      "target_id": "3a7d0d4f-6b33-45d1-87fc-124038221948",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T06:45:03.373802"
+    },
+    {
+      "id": "00e16025-e3f3-49bb-9db8-10fb3e54d35d",
+      "source_id": "514e723a-7c8a-46e7-81fa-a914fd38300a",
+      "target_id": "c58e8a99-5a0e-4019-8159-92e02b6afba9",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T06:45:03.373802"
+    },
+    {
+      "id": "e8cf4888-8fde-4681-8b97-b89692b2d8f4",
+      "source_id": "c58e8a99-5a0e-4019-8159-92e02b6afba9",
+      "target_id": "ec40727c-7ae1-4f13-8ba7-92624da216e1",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T06:45:03.373802"
+    },
+    {
+      "id": "73b3b078-9f9d-4a37-ab4d-e14ae8761efc",
+      "source_id": "514e723a-7c8a-46e7-81fa-a914fd38300a",
+      "target_id": "7208e732-170f-47dc-aea2-44cd789703f3",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T06:45:03.373802"
+    },
+    {
+      "id": "1ffeedef-4884-40a8-a4da-9b8cab10663e",
+      "source_id": "7208e732-170f-47dc-aea2-44cd789703f3",
+      "target_id": "fe441197-fb17-4946-b2fb-e85acad7ea01",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T06:45:03.373802"
+    },
+    {
+      "id": "08b13b60-973e-4d80-baa2-8b396d4f29c2",
+      "source_id": "514e723a-7c8a-46e7-81fa-a914fd38300a",
+      "target_id": "0851dcd6-26b2-4ffc-9f33-497bcb94ddb8",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T06:45:03.373802"
+    },
+    {
+      "id": "7d46881f-3d00-4bfa-9b69-f646c5d6d59a",
+      "source_id": "0851dcd6-26b2-4ffc-9f33-497bcb94ddb8",
+      "target_id": "d4e6ea5d-4722-4526-a874-66e21760d793",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T06:45:03.373802"
+    },
+    {
+      "id": "4d037166-99b8-4530-bd7d-d25c17047af5",
+      "source_id": "514e723a-7c8a-46e7-81fa-a914fd38300a",
+      "target_id": "2e1177d3-2105-4ce8-bcc8-192a4efe8e19",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T06:45:03.373802"
+    },
+    {
+      "id": "0e7c9a75-320e-4fb4-9e17-324cbd371e07",
+      "source_id": "2e1177d3-2105-4ce8-bcc8-192a4efe8e19",
+      "target_id": "c74d2e72-1b99-45d3-9ef9-075fa7a8fa50",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T06:45:03.374320"
+    }
+  ],
+  "analytic_question": "514e723a-7c8a-46e7-81fa-a914fd38300a",
+  "created_at": "2025-09-09T06:46:09.711663"
+}

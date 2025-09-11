@@ -1,0 +1,526 @@
+{
+  "nodes": {
+    "fc7b37e9-fbc6-4f82-8301-b7127f2d2b38": {
+      "id": "fc7b37e9-fbc6-4f82-8301-b7127f2d2b38",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "test query",
+        "is_root": true,
+        "investigation_goal": "test query"
+      },
+      "created_at": "2025-09-10T06:02:18.851355"
+    },
+    "3ceb7a77-ae1b-443f-a663-4bc6c924510c": {
+      "id": "3ceb7a77-ae1b-443f-a663-4bc6c924510c",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: This search targets recent tweets specifically mentioning 'test query', which is vital for gauging current public discourse and sentiments around the topic.",
+        "parent_analytic_question": "fc7b37e9-fbc6-4f82-8301-b7127f2d2b38"
+      },
+      "created_at": "2025-09-10T06:02:36.983921"
+    },
+    "ac00fb51-185e-4034-9a49-ee0cbd4a014b": {
+      "id": "ac00fb51-185e-4034-9a49-ee0cbd4a014b",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "test query",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-10T06:02:36.984922"
+    },
+    "7ac79d89-2766-4db0-8abc-b46a152a0f20": {
+      "id": "7ac79d89-2766-4db0-8abc-b46a152a0f20",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: By examining trending topics in the United States, I can identify related discussions or events that may frame the 'test query' within a broader context, providing insights into public perception and relevance.",
+        "parent_analytic_question": "fc7b37e9-fbc6-4f82-8301-b7127f2d2b38"
+      },
+      "created_at": "2025-09-10T06:02:36.984922"
+    },
+    "896f311b-3558-4081-8b27-fd6ceb89adce": {
+      "id": "896f311b-3558-4081-8b27-fd6ceb89adce",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "trends.php",
+        "parameters": {
+          "country": "UnitedStates"
+        }
+      },
+      "created_at": "2025-09-10T06:02:36.984922"
+    },
+    "ac7a2758-ead8-4ea1-9587-69e4282fbcb1": {
+      "id": "ac7a2758-ead8-4ea1-9587-69e4282fbcb1",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Investigating who Elon Musk follows may reveal influential figures or organizations in the tech landscape, which can provide context or impact to the 'test query'. As a high-profile figure, his network could significantly influence discussions around technology and testing.",
+        "parent_analytic_question": "fc7b37e9-fbc6-4f82-8301-b7127f2d2b38"
+      },
+      "created_at": "2025-09-10T06:02:36.984922"
+    },
+    "32f373f4-51db-43ff-9e51-5c583e4809a7": {
+      "id": "32f373f4-51db-43ff-9e51-5c583e4809a7",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "following.php",
+        "parameters": {
+          "screenname": "elonmusk"
+        }
+      },
+      "created_at": "2025-09-10T06:02:36.984922"
+    },
+    "09240843-4ef4-4cfe-b83c-193fd1f3ac07": {
+      "id": "09240843-4ef4-4cfe-b83c-193fd1f3ac07",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "For all HIV Related information &amp; query, call national aids helpline number - 1097.\n\n#Thisismytype #IndiaFightsHIVandSTI #KnowHIV #HIVAwareness #HIVCampaign #HIV\n#AIDS #KnowFacts #HIVPrevention #AidsAwareness\n[ HIV Awareness, HIV Prevention, HIV Treatment, HIV Test ] https://t.co/MCH8B1xwmc",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T06:02:59.603130",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.8,
+          "goal_relevance_score": 1.0
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T06:02:59.603130"
+      },
+      "created_at": "2025-09-10T06:02:59.603130"
+    },
+    "c2d831be-b314-4d71-9411-3c69a9dcb654": {
+      "id": "c2d831be-b314-4d71-9411-3c69a9dcb654",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "For all HIV Related information &amp; query, call national aids helpline number - 1097.\n\n#Thisismytype #IndiaFightsHIVandSTI #KnowHIV #HIVAwareness #HIVCampaign #HIV\n#AIDS #KnowFacts #HIVPrevention #AidsAwareness\n[ HIV Awareness, HIV Prevention, HIV Treatment, HIV Test ] https://t.co/FjFXPQksgP",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T06:02:59.603130",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.8,
+          "goal_relevance_score": 1.0
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T06:02:59.603130"
+      },
+      "created_at": "2025-09-10T06:02:59.603130"
+    },
+    "943f030e-320e-4256-a99c-fc5021d4fc02": {
+      "id": "943f030e-320e-4256-a99c-fc5021d4fc02",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "New Subgraph published on @graphprotocol's decentralized network:\n\nelephant protocol test v0.0.3 (Polygon) #TheGraph #web3 $GRT\n\nhttps://t.co/W538VV5564",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T06:02:59.603130",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.7,
+          "goal_relevance_score": 0.5
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T06:02:59.603130"
+      },
+      "created_at": "2025-09-10T06:02:59.603130"
+    },
+    "bec4d63b-ff13-4afb-b077-1f1f57e11fbd": {
+      "id": "bec4d63b-ff13-4afb-b077-1f1f57e11fbd",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Getting a taste:\n\u2022Connect to public RPC servers\n\u2022Query blockchain data\n\u2022Send test transactions\nAll with just a few lines of Python.",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T06:02:59.603130",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.6,
+          "goal_relevance_score": 1.0
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T06:02:59.603130"
+      },
+      "created_at": "2025-09-10T06:02:59.603130"
+    },
+    "31563ab3-7752-459f-b164-1bc274b690d4": {
+      "id": "31563ab3-7752-459f-b164-1bc274b690d4",
+      "node_type": "Insight",
+      "properties": {
+        "content": "The new findings emphasize the importance of a national AIDS helpline number (1097) for individuals seeking information regarding HIV. By promoting this helpline, it provides a direct resource for those in need, signifying accessibility and the need for immediate assistance in health education regarding HIV and STIs. This is different from existing insights, which may not focus on immediate support resources available to the public.",
+        "insight_type": "implication",
+        "title": "National Helpline for HIV Awareness in India",
+        "confidence": 0.8,
+        "investigation_relevance": 0.9,
+        "key_evidence": [
+          "Call national aids helpline number - 1097 for all HIV-related information and queries.",
+          "Promotion of HIV awareness campaigns through national helplines.",
+          "Direct access to educational resources is critical for public health awareness."
+        ]
+      },
+      "created_at": "2025-09-10T06:03:14.020599"
+    },
+    "65156c51-56ea-4d21-8b21-81a8e8f01cee": {
+      "id": "65156c51-56ea-4d21-8b21-81a8e8f01cee",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What are the existing insights that do not focus on immediate support resources like helplines, and how do they differ from the new findings?",
+        "emergence_reason": "This question emerges from the identified difference between the new emphasis on a national AIDS helpline and the existing insights that may lack this focus, pointing to potential gaps in public health communication strategies."
+      },
+      "created_at": "2025-09-10T06:03:22.275361"
+    },
+    "9f8bcfad-1026-469e-958f-80a6f901976d": {
+      "id": "9f8bcfad-1026-469e-958f-80a6f901976d",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How effective is the national AIDS helpline (1097) in improving public access to HIV information compared to other existing support mechanisms?",
+        "emergence_reason": "This question arises from the unexpected finding that emphasizes the importance of the helpline without understanding its effectiveness or how it compares to other forms of support, creating a need for evaluation."
+      },
+      "created_at": "2025-09-10T06:03:22.275361"
+    },
+    "6236bd67-2784-4d7c-8db0-4002960f97e4": {
+      "id": "6236bd67-2784-4d7c-8db0-4002960f97e4",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What barriers do individuals face in accessing the national AIDS helpline, and how do these barriers impact the system's perceived accessibility?",
+        "emergence_reason": "This question stems from the insight about the importance of accessibility, highlighting a potential gap in understanding whether there are practical barriers for users attempting to access the helpline."
+      },
+      "created_at": "2025-09-10T06:03:22.275361"
+    },
+    "cca76c6e-5ebe-4db5-ac14-2604940ba418": {
+      "id": "cca76c6e-5ebe-4db5-ac14-2604940ba418",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What strategies can be employed to promote the national AIDS helpline effectively in communities that may not be aware of it?",
+        "emergence_reason": "This question is driven by the need for immediate assistance as highlighted in the insights, suggesting that new strategies may need exploration to increase awareness and utilization among affected populations."
+      },
+      "created_at": "2025-09-10T06:03:22.275361"
+    },
+    "d295d7ae-b0a9-4083-96b5-7171a4f72594": {
+      "id": "d295d7ae-b0a9-4083-96b5-7171a4f72594",
+      "node_type": "Insight",
+      "properties": {
+        "content": "The new findings underscore the critical role of the national AIDS helpline number (1097) for providing comprehensive information about HIV and related issues. Calling this helpline is strongly promoted as the primary resource for individuals seeking knowledge and support regarding HIV in India. This reinforces the existing insight about the helpline's function but focuses on its role as the go-to communication channel for all HIV-related inquiries, rather than just awareness. By emphasizing repeated calls to action in community campaigns, this insight can help to improve public access to essential health information.",
+        "insight_type": "trend",
+        "title": "Reaffirming Importance of National AIDS Helpline for HIV Queries",
+        "confidence": 0.85,
+        "investigation_relevance": 0.9,
+        "key_evidence": [
+          "Call 1097 for all HIV related information & query.",
+          "For all HIV related information call national aids helpline number - 1097."
+        ]
+      },
+      "created_at": "2025-09-10T06:03:48.551950"
+    },
+    "826c8010-8b4e-4600-9ae0-d1f4c373aed1": {
+      "id": "826c8010-8b4e-4600-9ae0-d1f4c373aed1",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What specific barriers exist that prevent individuals from accessing the national AIDS helpline number (1097)?",
+        "emergence_reason": "While the insights emphasize the importance of the helpline, they do not address why individuals might not be utilizing it, indicating a gap in understanding actual accessibility issues."
+      },
+      "created_at": "2025-09-10T06:03:53.983706"
+    },
+    "9c6e471a-68fa-45fb-a049-3d671d3eebcc": {
+      "id": "9c6e471a-68fa-45fb-a049-3d671d3eebcc",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How effective is the helpline in providing comprehensive information and support to callers regarding HIV?",
+        "emergence_reason": "The insights promote the helpline as a primary resource but do not evaluate its effectiveness, creating a need for evidence on its operational impact."
+      },
+      "created_at": "2025-09-10T06:03:53.983706"
+    },
+    "62d393e6-0c8c-4e4f-a05d-dd675fb3ee30": {
+      "id": "62d393e6-0c8c-4e4f-a05d-dd675fb3ee30",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Are there demographic differences in the utilization of the national AIDS helpline (1097)?",
+        "emergence_reason": "Understanding whether certain populations are more or less likely to utilize the helpline could reveal significant gaps in healthcare access and highlight relevant outreach needs."
+      },
+      "created_at": "2025-09-10T06:03:53.983706"
+    },
+    "3ceebf78-1a26-47e1-92f1-d2e3105fce31": {
+      "id": "3ceebf78-1a26-47e1-92f1-d2e3105fce31",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What specific strategies should be implemented to increase awareness and usage of the helpline in underserved communities?",
+        "emergence_reason": "The current insights mention community campaigns, but they do not provide specific strategies or target demographics, indicating a need for applied research to improve outreach."
+      },
+      "created_at": "2025-09-10T06:03:53.983706"
+    },
+    "f0b96ecc-a5e6-46f6-9212-a0ea49ac800d": {
+      "id": "f0b96ecc-a5e6-46f6-9212-a0ea49ac800d",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Several results discuss tests related to queries and problem-solving in various contexts, but none are specifically focused on the search concept of 'test query.'",
+        "insight_type": "evaluation_derived",
+        "title": "Several results discuss tests related to...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.4,
+        "key_evidence": [
+          "Several results discuss tests related to queries and problem-solving in various contexts, but none are specifically focused on the search concept of 'test query.'"
+        ]
+      },
+      "created_at": "2025-09-10T06:03:57.314156"
+    },
+    "9925d840-8d96-4ef6-bc11-66dc811a8f60": {
+      "id": "9925d840-8d96-4ef6-bc11-66dc811a8f60",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Results mostly revolve around no specific actionable insights for the query about testing.",
+        "insight_type": "evaluation_derived",
+        "title": "Results mostly revolve around no specific...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.4,
+        "key_evidence": [
+          "Results mostly revolve around no specific actionable insights for the query about testing."
+        ]
+      },
+      "created_at": "2025-09-10T06:03:57.314156"
+    }
+  },
+  "edges": [
+    {
+      "id": "b3f534bc-a9a1-4832-bbf4-7de0d7815e0e",
+      "source_id": "fc7b37e9-fbc6-4f82-8301-b7127f2d2b38",
+      "target_id": "3ceb7a77-ae1b-443f-a663-4bc6c924510c",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T06:02:36.983921"
+    },
+    {
+      "id": "e53fad11-05fe-4194-a990-7501980060af",
+      "source_id": "3ceb7a77-ae1b-443f-a663-4bc6c924510c",
+      "target_id": "ac00fb51-185e-4034-9a49-ee0cbd4a014b",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T06:02:36.984922"
+    },
+    {
+      "id": "ab545c59-4768-42e2-ab43-d540f757eadc",
+      "source_id": "fc7b37e9-fbc6-4f82-8301-b7127f2d2b38",
+      "target_id": "7ac79d89-2766-4db0-8abc-b46a152a0f20",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T06:02:36.984922"
+    },
+    {
+      "id": "302b0154-0f2e-4040-9d05-f77c8d94d489",
+      "source_id": "7ac79d89-2766-4db0-8abc-b46a152a0f20",
+      "target_id": "896f311b-3558-4081-8b27-fd6ceb89adce",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T06:02:36.984922"
+    },
+    {
+      "id": "2f4d9655-b086-4e28-a15d-f6eda0c76206",
+      "source_id": "fc7b37e9-fbc6-4f82-8301-b7127f2d2b38",
+      "target_id": "ac7a2758-ead8-4ea1-9587-69e4282fbcb1",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T06:02:36.984922"
+    },
+    {
+      "id": "e1c9a341-d9cf-415a-a667-66c93701856c",
+      "source_id": "ac7a2758-ead8-4ea1-9587-69e4282fbcb1",
+      "target_id": "32f373f4-51db-43ff-9e51-5c583e4809a7",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T06:02:36.984922"
+    },
+    {
+      "id": "25ba005b-1b81-4628-8fe3-66d0a2eab83b",
+      "source_id": "ac00fb51-185e-4034-9a49-ee0cbd4a014b",
+      "target_id": "09240843-4ef4-4cfe-b83c-193fd1f3ac07",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.8
+      },
+      "created_at": "2025-09-10T06:02:59.603130"
+    },
+    {
+      "id": "bf31bb59-6c6c-4144-b5a7-e7f0aa58b3cb",
+      "source_id": "ac00fb51-185e-4034-9a49-ee0cbd4a014b",
+      "target_id": "c2d831be-b314-4d71-9411-3c69a9dcb654",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.8
+      },
+      "created_at": "2025-09-10T06:02:59.603130"
+    },
+    {
+      "id": "614fac55-62a4-45e1-9ba6-414143aa7736",
+      "source_id": "ac00fb51-185e-4034-9a49-ee0cbd4a014b",
+      "target_id": "943f030e-320e-4256-a99c-fc5021d4fc02",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.7
+      },
+      "created_at": "2025-09-10T06:02:59.603130"
+    },
+    {
+      "id": "0e81589d-0f9a-48c8-954d-be90ac768ff8",
+      "source_id": "ac00fb51-185e-4034-9a49-ee0cbd4a014b",
+      "target_id": "bec4d63b-ff13-4afb-b077-1f1f57e11fbd",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.6
+      },
+      "created_at": "2025-09-10T06:02:59.603130"
+    },
+    {
+      "id": "d19008dc-7221-46e1-a02c-86682b4cfba6",
+      "source_id": "09240843-4ef4-4cfe-b83c-193fd1f3ac07",
+      "target_id": "31563ab3-7752-459f-b164-1bc274b690d4",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T06:03:14.020599"
+      },
+      "created_at": "2025-09-10T06:03:14.020599"
+    },
+    {
+      "id": "fd636819-cba5-400e-bcee-13b2c54ca0d7",
+      "source_id": "c2d831be-b314-4d71-9411-3c69a9dcb654",
+      "target_id": "31563ab3-7752-459f-b164-1bc274b690d4",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T06:03:14.020599"
+      },
+      "created_at": "2025-09-10T06:03:14.020599"
+    },
+    {
+      "id": "0c5b5223-59bf-4bea-9b53-93fe961e60d1",
+      "source_id": "31563ab3-7752-459f-b164-1bc274b690d4",
+      "target_id": "65156c51-56ea-4d21-8b21-81a8e8f01cee",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "This question emerges from the identified difference between the new emphasis on a national AIDS helpline and the existing insights that may lack this focus, pointing to potential gaps in public health communication strategies.",
+        "priority": 0.8,
+        "created_at": "2025-09-10T06:03:22.275361"
+      },
+      "created_at": "2025-09-10T06:03:22.275361"
+    },
+    {
+      "id": "7102f2a7-74d6-4b7b-8c28-6d8ba014f3c0",
+      "source_id": "31563ab3-7752-459f-b164-1bc274b690d4",
+      "target_id": "9f8bcfad-1026-469e-958f-80a6f901976d",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "This question arises from the unexpected finding that emphasizes the importance of the helpline without understanding its effectiveness or how it compares to other forms of support, creating a need for evaluation.",
+        "priority": 0.7,
+        "created_at": "2025-09-10T06:03:22.275361"
+      },
+      "created_at": "2025-09-10T06:03:22.275361"
+    },
+    {
+      "id": "49a7c556-a663-4701-98d1-51a4622b62f2",
+      "source_id": "31563ab3-7752-459f-b164-1bc274b690d4",
+      "target_id": "6236bd67-2784-4d7c-8db0-4002960f97e4",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "This question stems from the insight about the importance of accessibility, highlighting a potential gap in understanding whether there are practical barriers for users attempting to access the helpline.",
+        "priority": 0.9,
+        "created_at": "2025-09-10T06:03:22.275361"
+      },
+      "created_at": "2025-09-10T06:03:22.275361"
+    },
+    {
+      "id": "bcde4745-4735-4d5a-85da-16d546c641ef",
+      "source_id": "31563ab3-7752-459f-b164-1bc274b690d4",
+      "target_id": "cca76c6e-5ebe-4db5-ac14-2604940ba418",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "This question is driven by the need for immediate assistance as highlighted in the insights, suggesting that new strategies may need exploration to increase awareness and utilization among affected populations.",
+        "priority": 0.6,
+        "created_at": "2025-09-10T06:03:22.275361"
+      },
+      "created_at": "2025-09-10T06:03:22.275361"
+    },
+    {
+      "id": "381bf4db-6952-465c-add5-598ffd01ff0b",
+      "source_id": "09240843-4ef4-4cfe-b83c-193fd1f3ac07",
+      "target_id": "d295d7ae-b0a9-4083-96b5-7171a4f72594",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T06:03:48.551950"
+      },
+      "created_at": "2025-09-10T06:03:48.551950"
+    },
+    {
+      "id": "79180e9b-60ef-41d4-98d7-23bb756eaaba",
+      "source_id": "c2d831be-b314-4d71-9411-3c69a9dcb654",
+      "target_id": "d295d7ae-b0a9-4083-96b5-7171a4f72594",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-10T06:03:48.551950"
+      },
+      "created_at": "2025-09-10T06:03:48.551950"
+    },
+    {
+      "id": "5c72461d-5e55-45b3-a89d-62a2b1072db5",
+      "source_id": "d295d7ae-b0a9-4083-96b5-7171a4f72594",
+      "target_id": "826c8010-8b4e-4600-9ae0-d1f4c373aed1",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "While the insights emphasize the importance of the helpline, they do not address why individuals might not be utilizing it, indicating a gap in understanding actual accessibility issues.",
+        "priority": 0.9,
+        "created_at": "2025-09-10T06:03:53.983706"
+      },
+      "created_at": "2025-09-10T06:03:53.983706"
+    },
+    {
+      "id": "1aba38fa-175b-4c0e-be3f-174bf94f5b38",
+      "source_id": "d295d7ae-b0a9-4083-96b5-7171a4f72594",
+      "target_id": "9c6e471a-68fa-45fb-a049-3d671d3eebcc",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The insights promote the helpline as a primary resource but do not evaluate its effectiveness, creating a need for evidence on its operational impact.",
+        "priority": 0.8,
+        "created_at": "2025-09-10T06:03:53.983706"
+      },
+      "created_at": "2025-09-10T06:03:53.983706"
+    },
+    {
+      "id": "f006e0c0-0cb4-41c2-a512-7d06c3903cbf",
+      "source_id": "d295d7ae-b0a9-4083-96b5-7171a4f72594",
+      "target_id": "62d393e6-0c8c-4e4f-a05d-dd675fb3ee30",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Understanding whether certain populations are more or less likely to utilize the helpline could reveal significant gaps in healthcare access and highlight relevant outreach needs.",
+        "priority": 0.75,
+        "created_at": "2025-09-10T06:03:53.983706"
+      },
+      "created_at": "2025-09-10T06:03:53.983706"
+    },
+    {
+      "id": "33481db3-d154-430d-b579-36ae87f3a9ec",
+      "source_id": "d295d7ae-b0a9-4083-96b5-7171a4f72594",
+      "target_id": "3ceebf78-1a26-47e1-92f1-d2e3105fce31",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The current insights mention community campaigns, but they do not provide specific strategies or target demographics, indicating a need for applied research to improve outreach.",
+        "priority": 0.85,
+        "created_at": "2025-09-10T06:03:53.983706"
+      },
+      "created_at": "2025-09-10T06:03:53.983706"
+    }
+  ],
+  "analytic_question": "fc7b37e9-fbc6-4f82-8301-b7127f2d2b38",
+  "created_at": "2025-09-10T06:03:57.322156"
+}

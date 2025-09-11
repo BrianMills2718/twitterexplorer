@@ -1,0 +1,376 @@
+{
+  "nodes": {
+    "e9a510dd-37cd-46ab-91dd-a5f7c10d24dd": {
+      "id": "e9a510dd-37cd-46ab-91dd-a5f7c10d24dd",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "test issue validation",
+        "is_root": true,
+        "investigation_goal": "test issue validation"
+      },
+      "created_at": "2025-09-10T06:22:46.475255"
+    },
+    "2f525e6b-76ee-48ac-aa75-037210d10cf9": {
+      "id": "2f525e6b-76ee-48ac-aa75-037210d10cf9",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: This search directly targets the core concept of 'issue validation' and associated 'challenges' to gather recent discussions and identify key terms, definitions, and problems. Focusing on 'Latest' ensures the information is current, reflecting contemporary industry concerns.",
+        "parent_analytic_question": "e9a510dd-37cd-46ab-91dd-a5f7c10d24dd"
+      },
+      "created_at": "2025-09-10T06:23:01.088738"
+    },
+    "7a5eb6e2-ebd2-471b-8f91-59507362e5d0": {
+      "id": "7a5eb6e2-ebd2-471b-8f91-59507362e5d0",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "issue validation process challenges",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-10T06:23:01.089736"
+    },
+    "92ff2512-3741-49c3-9613-99c161abb849": {
+      "id": "92ff2512-3741-49c3-9613-99c161abb849",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Investigating general trends in a major tech-active country like the UnitedStates can provide broader context. While not directly about 'issue validation,' these trends might highlight related discussions in software development, quality assurance, or project management that implicitly touch upon validation processes or their outcomes.",
+        "parent_analytic_question": "e9a510dd-37cd-46ab-91dd-a5f7c10d24dd"
+      },
+      "created_at": "2025-09-10T06:23:01.089736"
+    },
+    "36e194cf-8120-437d-be77-fe99f459f32e": {
+      "id": "36e194cf-8120-437d-be77-fe99f459f32e",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "trends.php",
+        "parameters": {
+          "country": "UnitedStates"
+        }
+      },
+      "created_at": "2025-09-10T06:23:01.089736"
+    },
+    "a34779ef-1b8f-42ac-802a-3b7d59a216d9": {
+      "id": "a34779ef-1b8f-42ac-802a-3b7d59a216d9",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Examining the recent posts of a prominent technology news outlet like TechCrunch can reveal discussions, articles, or expert opinions related to software development, product launches, or quality control. This provides a general industry perspective that might indirectly cover aspects of 'issue validation' or lead to identifying influential figures and companies involved in these processes.",
+        "parent_analytic_question": "e9a510dd-37cd-46ab-91dd-a5f7c10d24dd"
+      },
+      "created_at": "2025-09-10T06:23:01.089736"
+    },
+    "c9ae9224-820a-40a9-88bf-94c37cb7851b": {
+      "id": "c9ae9224-820a-40a9-88bf-94c37cb7851b",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "TechCrunch"
+        }
+      },
+      "created_at": "2025-09-10T06:23:01.089736"
+    },
+    "8aeaf7b5-ccdb-4c9c-9178-31084f971853": {
+      "id": "8aeaf7b5-ccdb-4c9c-9178-31084f971853",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "DigiCert Faces Challenges Amid Mass Certificate Revocations\n\nDigiCert is in the process of revoking thousands of certificates due to a recently discovered domain validation issue. This incident, impacting 83,267 certificates and 6,807 subscribers, was communicated to customers on July 29. Adhering to CA/Browser Forum (CABF) rules, DigiCert must revoke the affected certificates within 24 hours of notification.\n\nSome customers, particularly those in critical infrastructure, telecommunications, cloud services, and healthcare, have faced difficulties in reissuing certificates within the tight timeframe. \u201cMany large organizations cannot reissue and deploy new certificates everywhere in time,\u201d said Jeremy Rowley, DigiCert's CISO.\n\nIn response to the urgency, DigiCert has been coordinating with browser representatives and customers to delay revocations under exceptional circumstances to avoid critical service interruptions. However, the company stated that all impacted certificates would be revoked no later than August 3, 2024, at 19:30 UTC.",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T06:23:33.769940",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.9,
+          "goal_relevance_score": 0.6666666666666666
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T06:23:33.769940"
+      },
+      "created_at": "2025-09-10T06:23:33.769940"
+    },
+    "c951a719-d5b7-4695-b795-e27caeb18df5": {
+      "id": "c951a719-d5b7-4695-b795-e27caeb18df5",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Encountered challenges with @SectigoHQ Code Signing Cert process. CSR issue discovered after validation stage forced us to restart all process, causing delays. A pre-validation CSR check could've saved us time. Tnx, #Sectigo support for help, they issued the cert as fast as can.",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T06:23:33.769940",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.85,
+          "goal_relevance_score": 0.6666666666666666
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T06:23:33.769940"
+      },
+      "created_at": "2025-09-10T06:23:33.769940"
+    },
+    "38f13ad7-a4a8-4571-aae9-6f0f0e3c9e3a": {
+      "id": "38f13ad7-a4a8-4571-aae9-6f0f0e3c9e3a",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: This search directly targets the core concept of 'issue validation' and 'bug validation' within the specific context of 'software development'. Using exact phrases and boolean 'OR' with 'Top' search type aims to find the most relevant and authoritative discussions, definitions, or methodologies, avoiding the previous pitfall of overly general results.",
+        "parent_analytic_question": "e9a510dd-37cd-46ab-91dd-a5f7c10d24dd"
+      },
+      "created_at": "2025-09-10T06:23:57.227412"
+    },
+    "d55417d6-327f-4baf-ab33-84f8fd1c0c93": {
+      "id": "d55417d6-327f-4baf-ab33-84f8fd1c0c93",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "\"issue validation process\" OR \"bug validation workflow\" software development",
+          "search_type": "Top"
+        }
+      },
+      "created_at": "2025-09-10T06:23:57.227412"
+    },
+    "e80dd10a-c426-4a5b-8746-c2ad6251760b": {
+      "id": "e80dd10a-c426-4a5b-8746-c2ad6251760b",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: As a prominent cybersecurity company, @SectigoHQ likely adheres to rigorous software development, testing, and validation standards. Analyzing their recent timeline may reveal discussions, news, or articles related to software quality assurance, vulnerability management, or validation processes, providing a practical industry perspective or leading to relevant thought leaders.",
+        "parent_analytic_question": "e9a510dd-37cd-46ab-91dd-a5f7c10d24dd"
+      },
+      "created_at": "2025-09-10T06:23:57.227412"
+    },
+    "322db4c9-9493-4408-81f3-fcd5a4abf376": {
+      "id": "322db4c9-9493-4408-81f3-fcd5a4abf376",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "SectigoHQ"
+        }
+      },
+      "created_at": "2025-09-10T06:23:57.227412"
+    },
+    "96d1d1cb-3b3f-42c8-aabd-f81f4d578486": {
+      "id": "96d1d1cb-3b3f-42c8-aabd-f81f4d578486",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Investigating who @SectigoHQ follows can uncover other organizations, experts, or industry bodies that are influential in cybersecurity, software development, quality assurance, or testing. This network analysis can help identify additional relevant sources of information or potential experts discussing 'issue validation'.",
+        "parent_analytic_question": "e9a510dd-37cd-46ab-91dd-a5f7c10d24dd"
+      },
+      "created_at": "2025-09-10T06:23:57.227921"
+    },
+    "19570a8b-3a13-4c50-85af-2437bfe47ed4": {
+      "id": "19570a8b-3a13-4c50-85af-2437bfe47ed4",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "following.php",
+        "parameters": {
+          "screenname": "SectigoHQ"
+        }
+      },
+      "created_at": "2025-09-10T06:23:57.227928"
+    },
+    "9f66215d-52fd-4ebb-bd63-0c6ad240a5af": {
+      "id": "9f66215d-52fd-4ebb-bd63-0c6ad240a5af",
+      "node_type": "Insight",
+      "properties": {
+        "content": "OCSP (Online Certificate Status Protocol) is a mechanism used for validating the status of SSL/TLS certificates, which helps ensure digital information protection and prevent issues related to invalid certificates.",
+        "insight_type": "evaluation_derived",
+        "title": "OCSP (Online Certificate Status Protocol) is...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.4,
+        "key_evidence": [
+          "OCSP (Online Certificate Status Protocol) is a mechanism used for validating the status of SSL/TLS certificates, which helps ensure digital information protection and prevent issues related to invalid"
+        ]
+      },
+      "created_at": "2025-09-10T06:24:51.039328"
+    },
+    "042b8346-37bb-4cc0-8757-157138ff55ae": {
+      "id": "042b8346-37bb-4cc0-8757-157138ff55ae",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Expired security certificates are a common issue that can lead to various problems, highlighting the need for proactive prevention and validation strategies.",
+        "insight_type": "evaluation_derived",
+        "title": "Expired security certificates are a common...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.4,
+        "key_evidence": [
+          "Expired security certificates are a common issue that can lead to various problems, highlighting the need for proactive prevention and validation strategies."
+        ]
+      },
+      "created_at": "2025-09-10T06:24:51.039328"
+    },
+    "4bda05ea-e48b-4767-b2a6-b24238dde644": {
+      "id": "4bda05ea-e48b-4767-b2a6-b24238dde644",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Challenges exist in certificate management, such as the division between public-facing and internal processes and over-reliance on solutions like Microsoft's Active Directory Certificate Services (AD CS).",
+        "insight_type": "evaluation_derived",
+        "title": "Challenges exist in certificate management, such...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.4,
+        "key_evidence": [
+          "Challenges exist in certificate management, such as the division between public-facing and internal processes and over-reliance on solutions like Microsoft's Active Directory Certificate Services (AD "
+        ]
+      },
+      "created_at": "2025-09-10T06:24:51.039328"
+    },
+    "39adb832-0e7f-4194-add4-a48aba12194c": {
+      "id": "39adb832-0e7f-4194-add4-a48aba12194c",
+      "node_type": "Insight",
+      "properties": {
+        "content": "There are 'security questionnaire sins' (avoidable problems and errors) that enterprises frequently encounter, suggesting a need for validation in security assessment processes.",
+        "insight_type": "evaluation_derived",
+        "title": "There are 'security questionnaire sins' (avoidable...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.4,
+        "key_evidence": [
+          "There are 'security questionnaire sins' (avoidable problems and errors) that enterprises frequently encounter, suggesting a need for validation in security assessment processes."
+        ]
+      },
+      "created_at": "2025-09-10T06:24:51.039328"
+    }
+  },
+  "edges": [
+    {
+      "id": "c8672bd2-0611-49f5-ba3a-937bef9e3a1f",
+      "source_id": "e9a510dd-37cd-46ab-91dd-a5f7c10d24dd",
+      "target_id": "2f525e6b-76ee-48ac-aa75-037210d10cf9",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T06:23:01.088738"
+    },
+    {
+      "id": "3106dccc-5cfa-4ed1-ae53-8609fbe355e7",
+      "source_id": "2f525e6b-76ee-48ac-aa75-037210d10cf9",
+      "target_id": "7a5eb6e2-ebd2-471b-8f91-59507362e5d0",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T06:23:01.089736"
+    },
+    {
+      "id": "a6d79fda-f6a8-4147-9534-ae0784cbf1ca",
+      "source_id": "e9a510dd-37cd-46ab-91dd-a5f7c10d24dd",
+      "target_id": "92ff2512-3741-49c3-9613-99c161abb849",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T06:23:01.089736"
+    },
+    {
+      "id": "d403b9f4-1f7b-4a7c-bb7b-013a98c388de",
+      "source_id": "92ff2512-3741-49c3-9613-99c161abb849",
+      "target_id": "36e194cf-8120-437d-be77-fe99f459f32e",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T06:23:01.089736"
+    },
+    {
+      "id": "06f328e3-79c3-40d9-b5e2-827da725c411",
+      "source_id": "e9a510dd-37cd-46ab-91dd-a5f7c10d24dd",
+      "target_id": "a34779ef-1b8f-42ac-802a-3b7d59a216d9",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T06:23:01.089736"
+    },
+    {
+      "id": "6ed2411d-0c7a-4db1-8595-f1e4f9d6481e",
+      "source_id": "a34779ef-1b8f-42ac-802a-3b7d59a216d9",
+      "target_id": "c9ae9224-820a-40a9-88bf-94c37cb7851b",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T06:23:01.089736"
+    },
+    {
+      "id": "31c9c85e-e8b4-4b30-9f7c-98e2d9b9b43a",
+      "source_id": "7a5eb6e2-ebd2-471b-8f91-59507362e5d0",
+      "target_id": "8aeaf7b5-ccdb-4c9c-9178-31084f971853",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.9
+      },
+      "created_at": "2025-09-10T06:23:33.769940"
+    },
+    {
+      "id": "c2a4a67b-7d38-42ab-ab8d-212dc89563b8",
+      "source_id": "7a5eb6e2-ebd2-471b-8f91-59507362e5d0",
+      "target_id": "c951a719-d5b7-4695-b795-e27caeb18df5",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.85
+      },
+      "created_at": "2025-09-10T06:23:33.769940"
+    },
+    {
+      "id": "c34a5ff9-666c-4c8f-bff1-7db8c637f044",
+      "source_id": "e9a510dd-37cd-46ab-91dd-a5f7c10d24dd",
+      "target_id": "38f13ad7-a4a8-4571-aae9-6f0f0e3c9e3a",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T06:23:57.227412"
+    },
+    {
+      "id": "d70a41a8-0a8a-4fcc-9b61-cdf576476a96",
+      "source_id": "38f13ad7-a4a8-4571-aae9-6f0f0e3c9e3a",
+      "target_id": "d55417d6-327f-4baf-ab33-84f8fd1c0c93",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T06:23:57.227412"
+    },
+    {
+      "id": "2c030f0b-5cfb-47c1-8527-0a58fc372307",
+      "source_id": "e9a510dd-37cd-46ab-91dd-a5f7c10d24dd",
+      "target_id": "e80dd10a-c426-4a5b-8746-c2ad6251760b",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T06:23:57.227412"
+    },
+    {
+      "id": "99779a36-8c68-4842-aa75-07e0dc20ca29",
+      "source_id": "e80dd10a-c426-4a5b-8746-c2ad6251760b",
+      "target_id": "322db4c9-9493-4408-81f3-fcd5a4abf376",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T06:23:57.227916"
+    },
+    {
+      "id": "7fabf255-69ba-4fc9-bb17-30c081c0657d",
+      "source_id": "e9a510dd-37cd-46ab-91dd-a5f7c10d24dd",
+      "target_id": "96d1d1cb-3b3f-42c8-aabd-f81f4d578486",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T06:23:57.227928"
+    },
+    {
+      "id": "475d50df-1709-4a5c-8bb7-0f37b3379ec7",
+      "source_id": "96d1d1cb-3b3f-42c8-aabd-f81f4d578486",
+      "target_id": "19570a8b-3a13-4c50-85af-2437bfe47ed4",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T06:23:57.227928"
+    }
+  ],
+  "analytic_question": "e9a510dd-37cd-46ab-91dd-a5f7c10d24dd",
+  "created_at": "2025-09-10T06:24:57.062607"
+}

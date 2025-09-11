@@ -1,0 +1,17 @@
+{
+  "nodes": {
+    "41de82af-81e4-4e3c-b67e-5283ac73d2b5": {
+      "id": "41de82af-81e4-4e3c-b67e-5283ac73d2b5",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "test placeholder parameter resolution fix",
+        "is_root": true,
+        "investigation_goal": "test placeholder parameter resolution fix"
+      },
+      "created_at": "2025-09-10T04:07:11.632141"
+    }
+  },
+  "edges": [],
+  "analytic_question": "41de82af-81e4-4e3c-b67e-5283ac73d2b5",
+  "created_at": "2025-09-10T04:07:13.769922"
+}

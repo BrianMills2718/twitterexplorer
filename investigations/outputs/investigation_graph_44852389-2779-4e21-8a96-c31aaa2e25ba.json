@@ -1,0 +1,139 @@
+{
+  "nodes": {
+    "837d006a-69dc-4ef9-9e7a-53f1477cdcb6": {
+      "id": "837d006a-69dc-4ef9-9e7a-53f1477cdcb6",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "test search execution validation",
+        "is_root": true,
+        "investigation_goal": "test search execution validation"
+      },
+      "created_at": "2025-09-10T07:56:08.221765"
+    },
+    "e8b01eca-77af-4d1f-81ca-0c31a7ff8ed6": {
+      "id": "e8b01eca-77af-4d1f-81ca-0c31a7ff8ed6",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: This search directly tests the fundamental search execution capability with a relevant keyword ('API testing validation') and a specific search type ('Top') to identify key discussions and popular content related to the investigation goal. This is a direct test of a core search function.",
+        "parent_analytic_question": "837d006a-69dc-4ef9-9e7a-53f1477cdcb6"
+      },
+      "created_at": "2025-09-10T07:56:27.452711"
+    },
+    "c6dcbdfd-5461-40bd-a20b-f96e21768f9f": {
+      "id": "c6dcbdfd-5461-40bd-a20b-f96e21768f9f",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "API testing validation",
+          "search_type": "Top"
+        }
+      },
+      "created_at": "2025-09-10T07:56:27.452711"
+    },
+    "71f21be8-3bac-41a6-a5df-cfbd71c3c5f1": {
+      "id": "71f21be8-3bac-41a6-a5df-cfbd71c3c5f1",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: This search explores the chronological posts of a highly relevant user ('TwitterDev', the official developer account) to identify any discussions, announcements, or references to 'search execution validation' or API testing from an authoritative source. This tests a user-centric content retrieval method, offering a different form of 'search execution'.",
+        "parent_analytic_question": "837d006a-69dc-4ef9-9e7a-53f1477cdcb6"
+      },
+      "created_at": "2025-09-10T07:56:27.452711"
+    },
+    "a1710177-34c2-4dff-9d51-fe168e8cb4e2": {
+      "id": "a1710177-34c2-4dff-9d51-fe168e8cb4e2",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "TwitterDev"
+        }
+      },
+      "created_at": "2025-09-10T07:56:27.452711"
+    },
+    "b6f75ba0-b146-4f15-84c4-9884f2ccbbb7": {
+      "id": "b6f75ba0-b146-4f15-84c4-9884f2ccbbb7",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: This search identifies accounts that 'TwitterDev' follows. This can reveal related organizations, experts, or communities involved in 'search execution validation' or platform testing, providing leads for further investigation and testing the network analysis capability of the API. This provides a diverse search execution method for relationships rather than content.",
+        "parent_analytic_question": "837d006a-69dc-4ef9-9e7a-53f1477cdcb6"
+      },
+      "created_at": "2025-09-10T07:56:27.452711"
+    },
+    "3c50c8da-abb2-40cd-98d5-31ceb96d2d40": {
+      "id": "3c50c8da-abb2-40cd-98d5-31ceb96d2d40",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "following.php",
+        "parameters": {
+          "screenname": "TwitterDev"
+        }
+      },
+      "created_at": "2025-09-10T07:56:27.452711"
+    }
+  },
+  "edges": [
+    {
+      "id": "4e53ad76-f58e-428b-a1a1-e1856477b50b",
+      "source_id": "837d006a-69dc-4ef9-9e7a-53f1477cdcb6",
+      "target_id": "e8b01eca-77af-4d1f-81ca-0c31a7ff8ed6",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T07:56:27.452711"
+    },
+    {
+      "id": "927ad7b0-65c6-4468-bc7d-99d848dd6860",
+      "source_id": "e8b01eca-77af-4d1f-81ca-0c31a7ff8ed6",
+      "target_id": "c6dcbdfd-5461-40bd-a20b-f96e21768f9f",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T07:56:27.452711"
+    },
+    {
+      "id": "d2cdaec0-df1c-478a-8aba-82048e41ca41",
+      "source_id": "837d006a-69dc-4ef9-9e7a-53f1477cdcb6",
+      "target_id": "71f21be8-3bac-41a6-a5df-cfbd71c3c5f1",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T07:56:27.452711"
+    },
+    {
+      "id": "0e63746b-479b-4ba9-9551-a3c3f2aa0a32",
+      "source_id": "71f21be8-3bac-41a6-a5df-cfbd71c3c5f1",
+      "target_id": "a1710177-34c2-4dff-9d51-fe168e8cb4e2",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T07:56:27.452711"
+    },
+    {
+      "id": "6d108ea3-329d-4461-9091-d7b458480b32",
+      "source_id": "837d006a-69dc-4ef9-9e7a-53f1477cdcb6",
+      "target_id": "b6f75ba0-b146-4f15-84c4-9884f2ccbbb7",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T07:56:27.452711"
+    },
+    {
+      "id": "d4d49bc1-95b4-423e-8de6-8affd3059177",
+      "source_id": "b6f75ba0-b146-4f15-84c4-9884f2ccbbb7",
+      "target_id": "3c50c8da-abb2-40cd-98d5-31ceb96d2d40",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T07:56:27.452711"
+    }
+  ],
+  "analytic_question": "837d006a-69dc-4ef9-9e7a-53f1477cdcb6",
+  "created_at": "2025-09-10T07:56:27.454711"
+}

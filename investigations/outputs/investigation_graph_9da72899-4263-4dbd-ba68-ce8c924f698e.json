@@ -1,0 +1,194 @@
+{
+  "nodes": {
+    "4a6da604-8d9a-4c06-9159-f1ae5e397cdc": {
+      "id": "4a6da604-8d9a-4c06-9159-f1ae5e397cdc",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "verification test",
+        "is_root": true,
+        "investigation_goal": "verification test"
+      },
+      "created_at": "2025-09-10T01:27:41.016416"
+    },
+    "6d051963-94c6-4401-bc35-f22786a367ea": {
+      "id": "6d051963-94c6-4401-bc35-f22786a367ea",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: This search broadly targets recent public discussions on Twitter related to fact-checking, information testing, proof of concept, and validation processes, directly addressing the 'verification test' goal. Using 'Latest' ensures we capture current conversations.",
+        "parent_analytic_question": "4a6da604-8d9a-4c06-9159-f1ae5e397cdc"
+      },
+      "created_at": "2025-09-10T01:27:52.964258"
+    },
+    "877b2075-0ae0-4a78-b97e-b72a43e4812f": {
+      "id": "877b2075-0ae0-4a78-b97e-b72a43e4812f",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "\"fact-check verification\" OR \"information testing\" OR \"proof of concept\" OR \"validation process\"",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-10T01:27:52.965258"
+    },
+    "d7902195-7885-4208-9bc9-be4a54fe2e75": {
+      "id": "d7902195-7885-4208-9bc9-be4a54fe2e75",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Examining the timeline of a reputable news organization like Reuters can provide insights into how they conduct or report on verification processes, tests of information, or the vetting of sources, offering practical examples relevant to the investigation goal.",
+        "parent_analytic_question": "4a6da604-8d9a-4c06-9159-f1ae5e397cdc"
+      },
+      "created_at": "2025-09-10T01:27:52.965258"
+    },
+    "f8302be3-ca27-432f-95e2-c386dbaec116": {
+      "id": "f8302be3-ca27-432f-95e2-c386dbaec116",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "reuters"
+        }
+      },
+      "created_at": "2025-09-10T01:27:52.965258"
+    },
+    "65c9b1ce-5462-4f4f-9ed1-23f9a8462851": {
+      "id": "65c9b1ce-5462-4f4f-9ed1-23f9a8462851",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: To identify potential subject matter experts, organizations, or prominent accounts that frequently discuss or are involved in verification and testing, which can serve as valuable sources for deeper dives in subsequent rounds. The 'People' search type is crucial for this discovery.",
+        "parent_analytic_question": "4a6da604-8d9a-4c06-9159-f1ae5e397cdc"
+      },
+      "created_at": "2025-09-10T01:27:52.965258"
+    },
+    "10ab7bc8-b670-468d-9b71-bd1568a9c272": {
+      "id": "10ab7bc8-b670-468d-9b71-bd1568a9c272",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "\"fact-checker\" OR \"verification expert\" OR \"validation specialist\"",
+          "search_type": "People"
+        }
+      },
+      "created_at": "2025-09-10T01:27:52.966258"
+    },
+    "968ec4c2-3d22-4d5c-8e4c-943dc794df81": {
+      "id": "968ec4c2-3d22-4d5c-8e4c-943dc794df81",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Most results discuss 'Proof of Concept' (PoC), which is an initial verification of an idea's feasibility, often preceding more formal testing or development.",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-10T01:28:36.062839"
+    },
+    "67144746-01be-4aba-b00f-231ad4968067": {
+      "id": "67144746-01be-4aba-b00f-231ad4968067",
+      "node_type": "Insight",
+      "properties": {
+        "content": "A PoC can be a live demonstration of a concept's viability, such as for agent-native businesses, AR technology, or digital banking infrastructure.",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-10T01:28:36.062839"
+    },
+    "8dcbdf27-bae5-4bdb-9eb1-e7cfd6414566": {
+      "id": "8dcbdf27-bae5-4bdb-9eb1-e7cfd6414566",
+      "node_type": "Insight",
+      "properties": {
+        "content": "The term 'validation process' is directly mentioned in relation to verification, and AI is noted for its potential to optimize such processes.",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-10T01:28:36.062839"
+    },
+    "fe7d5d97-bf1c-46eb-82f0-37d2959acf36": {
+      "id": "fe7d5d97-bf1c-46eb-82f0-37d2959acf36",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Interoperability testing is identified as a type of verification activity.",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-10T01:28:36.062839"
+    },
+    "dacede9c-f57e-4d46-9170-ecff87b0f777": {
+      "id": "dacede9c-f57e-4d46-9170-ecff87b0f777",
+      "node_type": "Insight",
+      "properties": {
+        "content": "PoCs are also being developed for advanced and potentially malicious AI applications, such as AI-driven ransomware and malware, raising security concerns.",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-10T01:28:36.062839"
+    },
+    "f08673f4-752d-4c60-891a-974615b5f4cb": {
+      "id": "f08673f4-752d-4c60-891a-974615b5f4cb",
+      "node_type": "Insight",
+      "properties": {
+        "content": "There are financial costs associated with developing software PoCs.",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-10T01:28:36.062839"
+    }
+  },
+  "edges": [
+    {
+      "id": "f162d0e8-f0a7-47af-baf4-375b74671c94",
+      "source_id": "4a6da604-8d9a-4c06-9159-f1ae5e397cdc",
+      "target_id": "6d051963-94c6-4401-bc35-f22786a367ea",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T01:27:52.964258"
+    },
+    {
+      "id": "f8e455f0-1fa1-4dd6-9c22-879c03a733be",
+      "source_id": "6d051963-94c6-4401-bc35-f22786a367ea",
+      "target_id": "877b2075-0ae0-4a78-b97e-b72a43e4812f",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T01:27:52.965258"
+    },
+    {
+      "id": "6dc52493-47e5-4076-8c67-b95b37ff7d1b",
+      "source_id": "4a6da604-8d9a-4c06-9159-f1ae5e397cdc",
+      "target_id": "d7902195-7885-4208-9bc9-be4a54fe2e75",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T01:27:52.965258"
+    },
+    {
+      "id": "5a50b6eb-ad97-43e4-a00d-93085e238092",
+      "source_id": "d7902195-7885-4208-9bc9-be4a54fe2e75",
+      "target_id": "f8302be3-ca27-432f-95e2-c386dbaec116",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T01:27:52.965258"
+    },
+    {
+      "id": "cab3ba5d-8284-4910-94de-0b813d95e200",
+      "source_id": "4a6da604-8d9a-4c06-9159-f1ae5e397cdc",
+      "target_id": "65c9b1ce-5462-4f4f-9ed1-23f9a8462851",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T01:27:52.965258"
+    },
+    {
+      "id": "b12d1eba-b840-4a4b-91a5-8985ff209b05",
+      "source_id": "65c9b1ce-5462-4f4f-9ed1-23f9a8462851",
+      "target_id": "10ab7bc8-b670-468d-9b71-bd1568a9c272",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T01:27:52.966258"
+    }
+  ],
+  "analytic_question": "4a6da604-8d9a-4c06-9159-f1ae5e397cdc",
+  "created_at": "2025-09-10T01:28:36.065840"
+}

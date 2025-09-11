@@ -1,0 +1,66 @@
+2025-09-10 07:09:38,672 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-10 07:09:40,712 - INFO - Loaded configuration from C:\Users\Brian\AppData\Local\Temp\tmpd4xllnvb.yaml
+2025-09-10 07:09:40,713 - INFO - Configuration validation passed
+2025-09-10 07:09:40,713 - INFO - Model manager initialized with config: C:\Users\Brian\AppData\Local\Temp\tmpd4xllnvb.yaml
+2025-09-10 07:09:40,961 - INFO - ConcreteInvestigationBridge initialized - architectural integration active
+2025-09-10 07:09:40,961 - INFO - Started investigation session e39f1e71-0725-4b47-a116-f1dc56d1c181 for query: Trump Epstein connections investigation...
+2025-09-10 07:09:40,962 - INFO - DIAGNOSTIC: Prompt size: 8085 chars, 958 words
+2025-09-10 07:09:40,962 - INFO - DIAGNOSTIC: Prompt lines: 208 lines
+[92m07:09:40 - LiteLLM:INFO[0m: utils.py:3230 - 
+LiteLLM completion() model= gpt-4o-mini; provider = openai
+2025-09-10 07:09:40,970 - INFO - 
+LiteLLM completion() model= gpt-4o-mini; provider = openai
+2025-09-10 07:09:48,827 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[92m07:09:48 - LiteLLM:INFO[0m: utils.py:1239 - Wrapper: Completed Call, calling success_handler
+2025-09-10 07:09:48,890 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-10 07:09:48,892 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-09-10 07:09:48,893 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-09-10 07:09:48,893 - INFO - DIAGNOSTIC: Searches count: 2
+2025-09-10 07:09:48,893 - INFO - DIAGNOSTIC: Reasoning length: 368 chars
+2025-09-10 07:09:48,893 - INFO - DIAGNOSTIC: Search 1 - Endpoint: search.php
+2025-09-10 07:09:48,893 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': 'Trump Epstein', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-10 07:09:48,893 - INFO - DIAGNOSTIC: Search 1 - Reasoning: This search will yield the latest discussions and tweets mentioning both Trump and Epstein, providin...
+2025-09-10 07:09:48,893 - INFO - DIAGNOSTIC: Search 2 - Endpoint: timeline.php
+2025-09-10 07:09:48,893 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': None, 'screenname': 'realDonaldTrump', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-10 07:09:48,893 - INFO - DIAGNOSTIC: Search 2 - Reasoning: Retrieving the recent tweets from Trump's official account will allow us to directly analyze his per...
+2025-09-10 07:09:48,893 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
+2025-09-10 07:09:48,893 - INFO - DIAGNOSTIC: Endpoints used: ['search.php', 'timeline.php']
+2025-09-10 07:09:48,894 - ERROR - Error in make_strategic_decision: 2 validation errors for StrategicDecision
+expected_outcomes
+  Field required [type=missing, input_value={'decision_type': 'gap_fi...in broader searches.")]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+confidence
+  Field required [type=missing, input_value={'decision_type': 'gap_fi...in broader searches.")]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+2025-09-10 07:09:48,894 - ERROR - DIAGNOSTIC: Prompt was: 
+You are an expert investigation strategist. Your goal: Trump Epstein connections investigation
+
+
+INVESTIGATION CONTEXT:
+- Goal: Trump Epstein connections investigation
+- Key Focus Areas: trump, epstein, connections, investigation
+- Scope: twitter_investigation
+
+IMPORTANT: All search strategies must stay relevant to the investigation goal.
+Avoid searches that would find content unrelated to: Trump Epstein connections investigation
+
+COMPLETE INVESTIGATION CONTEXT:
+ORIGINAL GOAL: Trump Epstein con...
+2025-09-10 07:09:48,896 - INFO - Completed investigation session e39f1e71-0725-4b47-a116-f1dc56d1c181 - 0 searches, 0 results
+Initializing TwitterExplorer Investigation Engine (using openai)...
+LiteLLM: Loaded 2 API keys: ['OPENAI_API_KEY', 'GEMINI_API_KEY']
+Starting CLI investigation: Trump Epstein connections investigation
+============================================================
+Graph exported: investigation_graph_e39f1e71-0725-4b47-a116-f1dc56d1c181.json and investigation_graph_e39f1e71-0725-4b47-a116-f1dc56d1c181.html
+
+Investigation Complete!
+Searches performed: 0
+Findings discovered: 0
+Final satisfaction: 0.00
+
+Graph State:
+  DataPoints: 0
+  Insights: 0
+  Emergent Questions: 0
+
+CLI investigation completed - Bridge integration and emergent questions working!

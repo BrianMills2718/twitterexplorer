@@ -264,13 +264,17 @@ class InvestigationGraph:
         # Return a wrapper for test compatibility
         return DataPointNodeWrapper(node, self)
     
-    def create_insight_node_enhanced(self, content: str, confidence: float, supporting_datapoints: List[str]) -> 'InsightNodeWrapper':
-        """Create an Insight node with confidence and supporting datapoints"""
+    def create_insight_node_enhanced(self, content: str, confidence: float, supporting_datapoints: List[str], title: str = None) -> 'InsightNodeWrapper':
+        """Create an Insight node with confidence, supporting datapoints, and title"""
         node = self.create_insight_node(content, "derived")
         
         # Add enhanced attributes
         node.properties['confidence'] = confidence
         node.properties['supporting_datapoints'] = supporting_datapoints
+        
+        # CRITICAL FIX: Set title if provided to prevent "Untitled" insights
+        if title and title.strip():
+            node.properties['title'] = title.strip()
         
         # Create edges from datapoints to this insight
         for dp_id in supporting_datapoints:

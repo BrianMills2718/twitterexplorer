@@ -1,0 +1,17 @@
+{
+  "nodes": {
+    "6ae015e8-f2d5-496c-8273-c6713a3e6b08": {
+      "id": "6ae015e8-f2d5-496c-8273-c6713a3e6b08",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "test",
+        "is_root": true,
+        "investigation_goal": "test"
+      },
+      "created_at": "2025-09-10T06:58:27.519332"
+    }
+  },
+  "edges": [],
+  "analytic_question": "6ae015e8-f2d5-496c-8273-c6713a3e6b08",
+  "created_at": "2025-09-10T06:58:36.798045"
+}

@@ -1,0 +1,17 @@
+{
+  "nodes": {
+    "3523a587-36f7-43cd-800b-8d2cbd1a89ad": {
+      "id": "3523a587-36f7-43cd-800b-8d2cbd1a89ad",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "test",
+        "is_root": true,
+        "investigation_goal": "test"
+      },
+      "created_at": "2025-09-10T06:59:12.329403"
+    }
+  },
+  "edges": [],
+  "analytic_question": "3523a587-36f7-43cd-800b-8d2cbd1a89ad",
+  "created_at": "2025-09-10T06:59:24.200224"
+}

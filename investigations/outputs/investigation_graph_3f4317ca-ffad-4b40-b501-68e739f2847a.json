@@ -1,0 +1,2485 @@
+{
+  "nodes": {
+    "dc631527-9ab8-4746-99cd-29884a9b66ca": {
+      "id": "dc631527-9ab8-4746-99cd-29884a9b66ca",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "what is happening with bitcoin today",
+        "is_root": true,
+        "investigation_goal": "what is happening with bitcoin today"
+      },
+      "created_at": "2025-09-09T04:28:11.885194"
+    },
+    "9d0f4720-9670-4b6f-ab9d-c60fb41df85a": {
+      "id": "9d0f4720-9670-4b6f-ab9d-c60fb41df85a",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: A broad, real-time 'Latest' search for bitcoin-related terms will surface breaking news, price commentary, and immediate public reaction. Excluding replies focuses on original posts and threads that drive the conversation.",
+        "parent_analytic_question": "dc631527-9ab8-4746-99cd-29884a9b66ca"
+      },
+      "created_at": "2025-09-09T04:28:48.668086"
+    },
+    "22f81650-b951-4bea-8a91-34a453286ad7": {
+      "id": "22f81650-b951-4bea-8a91-34a453286ad7",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "bitcoin (today OR BTC OR #Bitcoin OR price OR rally OR crash OR halving) -filter:replies",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-09T04:28:48.668086"
+    },
+    "8bc2efbb-191c-4a9f-891d-93725c7864de": {
+      "id": "8bc2efbb-191c-4a9f-891d-93725c7864de",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Check trending topics in a major market (UnitedStates) to determine whether bitcoin or related terms are trending \u2014 this shows broader public attention and helps prioritize follow-up by region.",
+        "parent_analytic_question": "dc631527-9ab8-4746-99cd-29884a9b66ca"
+      },
+      "created_at": "2025-09-09T04:28:48.668086"
+    },
+    "2a302aae-93c2-4fd1-badf-25ed604d40bd": {
+      "id": "2a302aae-93c2-4fd1-badf-25ed604d40bd",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "trends.php",
+        "parameters": {
+          "country": "UnitedStates"
+        }
+      },
+      "created_at": "2025-09-09T04:28:48.668086"
+    },
+    "1f12e09f-456d-41a5-8caf-968ad2bcd66c": {
+      "id": "1f12e09f-456d-41a5-8caf-968ad2bcd66c",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Inspect CoinDesk's recent posts for authoritative reporting or breaking headlines about bitcoin today. Publisher timelines give context and source links for price moves or regulatory/market events.",
+        "parent_analytic_question": "dc631527-9ab8-4746-99cd-29884a9b66ca"
+      },
+      "created_at": "2025-09-09T04:28:48.668086"
+    },
+    "32f2f911-0a9e-443a-8091-f43265e6a3c4": {
+      "id": "32f2f911-0a9e-443a-8091-f43265e6a3c4",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "coindesk"
+        }
+      },
+      "created_at": "2025-09-09T04:28:48.668086"
+    },
+    "00670b1d-23a7-4a7f-80c7-05f9cdb15f36": {
+      "id": "00670b1d-23a7-4a7f-80c7-05f9cdb15f36",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Elon Musk and other high-profile accounts often move crypto sentiment. Checking his recent timeline will reveal any direct signals or memes affecting bitcoin today.",
+        "parent_analytic_question": "dc631527-9ab8-4746-99cd-29884a9b66ca"
+      },
+      "created_at": "2025-09-09T04:28:48.668086"
+    },
+    "4a351d5f-752c-411e-afe0-112a8df28de4": {
+      "id": "4a351d5f-752c-411e-afe0-112a8df28de4",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "elonmusk"
+        }
+      },
+      "created_at": "2025-09-09T04:28:48.668086"
+    },
+    "b450d416-c43f-4e1b-992c-e40b93d7343b": {
+      "id": "b450d416-c43f-4e1b-992c-e40b93d7343b",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Pulling CoinDesk's follower set (or a sample) helps map who is likely to amplify bitcoin news (influencers, large accounts). This supports prioritizing which users to monitor for retweets and commentary.",
+        "parent_analytic_question": "dc631527-9ab8-4746-99cd-29884a9b66ca"
+      },
+      "created_at": "2025-09-09T04:28:48.668086"
+    },
+    "38c6995f-453b-45d5-9ef4-2840d2de5843": {
+      "id": "38c6995f-453b-45d5-9ef4-2840d2de5843",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "followers.php",
+        "parameters": {
+          "screenname": "coindesk"
+        }
+      },
+      "created_at": "2025-09-09T04:28:48.668086"
+    },
+    "193f032b-91fc-4431-9624-0d1c3ba73201": {
+      "id": "193f032b-91fc-4431-9624-0d1c3ba73201",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "\ud83d\udca5 BREAKING:\n\n12 US SENATE DEMOCRATS UNVEILED A NEW FRAMEWORK FOR #BITCOIN AND CRYPTO MARKET STRUCTURE LEGISLATION TODAY\n\nBTC BECOMING BIPARTISAN. LOVE TO SEE IT \ud83e\udde1 https://t.co/2uQD1EAQ87",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-09T04:29:30.518758",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.9,
+          "goal_relevance_score": 0.6666666666666666
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-09T04:29:30.518758"
+      },
+      "created_at": "2025-09-09T04:29:30.519758"
+    },
+    "d855a077-6037-4c24-87a0-43947f3c8947": {
+      "id": "d855a077-6037-4c24-87a0-43947f3c8947",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "\ud83d\udea8BREAKING:\nEasyJet billionaire founder Stelios Haji-Ioannou is officially launching his own #Bitcoin exchange.\n\nBullish For Bitcoin! \ud83d\ude80 https://t.co/hX1JE7JnFa",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-09T04:29:30.519758",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.7,
+          "goal_relevance_score": 0.3333333333333333
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-09T04:29:30.519758"
+      },
+      "created_at": "2025-09-09T04:29:30.519758"
+    },
+    "2631db39-c2d6-4e34-8452-199b93f3206d": {
+      "id": "2631db39-c2d6-4e34-8452-199b93f3206d",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Tether beats most ETFs in Bitcoin inflows with 27,700 BTC added in one year -\u00a0CryptoSlate",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-09T04:29:30.519758",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.85,
+          "goal_relevance_score": 0.3333333333333333
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-09T04:29:30.519758"
+      },
+      "created_at": "2025-09-09T04:29:30.519758"
+    },
+    "360c2004-fea0-468b-a692-6169e70482e7": {
+      "id": "360c2004-fea0-468b-a692-6169e70482e7",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Both items point to the same pattern: Bitcoin is moving from fringe asset to mainstream market infrastructure. On the political side, a group of U.S. Senate Democrats unveiling a market-structure framework signals growing bipartisan attention and momentum toward formal regulation. On the commercial side, a high-profile entrepreneur launching a dedicated Bitcoin exchange shows private-sector investment in dedicated infrastructure and retail access. Together these developments imply accelerating legitimization, likely increases in institutional and retail capital flows, faster infrastructure build-out (more exchanges, custody, compliance products), and a nearer-term shift from regulatory uncertainty to structured oversight \u2014 which can both enable growth and impose compliance costs. No direct contradiction between sources; instead they reinforce a theme of concurrent political and marketplace maturation.",
+        "insight_type": "connection",
+        "confidence": 0.8,
+        "title": "Mainstreaming: political and commercial legitimation of Bitcoin"
+      },
+      "created_at": "2025-09-09T04:30:14.881875"
+    },
+    "da1c76a0-d9e7-4669-9c56-855ac0e5b6f7": {
+      "id": "da1c76a0-d9e7-4669-9c56-855ac0e5b6f7",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What specific regulatory elements are included in the Senate Democrats' market-structure framework (e.g., custody rules, exchange licensing, capital requirements, disclosure, tax treatment)?",
+        "emergence_reason": "The insight asserts a market-structure framework but provides no detail; knowing concrete provisions is essential to assess how regulation will enable or constrain exchanges, custody, institutional entry, and compliance costs."
+      },
+      "created_at": "2025-09-09T04:30:42.006744"
+    },
+    "ca8959b8-3e56-49dc-98bc-fefd69a0a0c6": {
+      "id": "ca8959b8-3e56-49dc-98bc-fefd69a0a0c6",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How bipartisan is the political momentum in reality (are Republicans engaged or is this primarily a Democratic initiative)?",
+        "emergence_reason": "The summary claims \"growing bipartisan attention\" but cites a Democratic group, creating a potential contradiction\u2014bipartisanship affects the likelihood, timing, durability, and form of any legislation or oversight regime."
+      },
+      "created_at": "2025-09-09T04:30:42.006744"
+    },
+    "4d67ea87-d908-49ee-a20d-368825a2b20c": {
+      "id": "4d67ea87-d908-49ee-a20d-368825a2b20c",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What is the likely timeline from framework proposal to implemented regulation or enforcement guidance?",
+        "emergence_reason": "The insight forecasts a \"nearer-term shift\" from uncertainty to structured oversight, but without timelines it's unclear when market participants should expect regulatory changes and how that will interact with product rollout and capital flows."
+      },
+      "created_at": "2025-09-09T04:30:42.006744"
+    },
+    "ea7adb15-66a3-4b59-8d47-28a77ad38e56": {
+      "id": "ea7adb15-66a3-4b59-8d47-28a77ad38e56",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What are the projected compliance costs and operational burdens for new and incumbent market participants, and how will those costs affect market structure and retail pricing?",
+        "emergence_reason": "The insights note compliance costs could accompany legitimization, but lack estimates or analysis\u2014these costs will influence who can compete, whether smaller entrants survive, and whether retail fees or access change."
+      },
+      "created_at": "2025-09-09T04:30:42.006744"
+    },
+    "a8c207f5-c11d-40b2-91cf-07d57d549d15": {
+      "id": "a8c207f5-c11d-40b2-91cf-07d57d549d15",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What is the business model and scope of the entrepreneur-launched Bitcoin exchange (retail vs institutional focus, custody provision vs partnership, geographic footprint, native on-chain features)?",
+        "emergence_reason": "Understanding the exchange's design clarifies whether it expands retail access, targets institutional flows, or changes custody/settlement practices\u2014key to predicting market impact."
+      },
+      "created_at": "2025-09-09T04:30:42.006744"
+    },
+    "ff2d3152-fc97-4398-b263-b3f57fc77baf": {
+      "id": "ff2d3152-fc97-4398-b263-b3f57fc77baf",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Will the proliferation of dedicated Bitcoin exchanges increase competitive diversity or accelerate concentration around a few dominant platforms and custodians?",
+        "emergence_reason": "More exchanges can mean more competition, but network effects, liquidity aggregation, and trust requirements can produce concentration; the outcome affects resilience, fees, and systemic risk."
+      },
+      "created_at": "2025-09-09T04:30:42.006744"
+    },
+    "04ce3a57-5720-4bb6-a708-7f1b0e098746": {
+      "id": "04ce3a57-5720-4bb6-a708-7f1b0e098746",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How will incumbent exchanges and custodians respond (e.g., new product launches, lobbying, consolidation), and does the current evidence indicate likely industry consolidation or fragmentation?",
+        "emergence_reason": "Current insights omit incumbents' strategic responses; their actions will materially shape market structure, competition, and the pace of institutional adoption."
+      },
+      "created_at": "2025-09-09T04:30:42.006744"
+    },
+    "094da0ac-2841-4bfb-a6d3-c19ac8d9c6b3": {
+      "id": "094da0ac-2841-4bfb-a6d3-c19ac8d9c6b3",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What security, custody, and risk-management standards are being proposed or likely to be required, and will they meet institutional due-diligence expectations?",
+        "emergence_reason": "Institutional flows depend on robust custody and risk frameworks; the absence of details on standards is a gap preventing assessment of how quickly institutional capital will arrive."
+      },
+      "created_at": "2025-09-09T04:30:42.006744"
+    },
+    "d98169a9-06d5-4ddc-bc07-502627854a61": {
+      "id": "d98169a9-06d5-4ddc-bc07-502627854a61",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Does stronger U.S. regulatory structuring risk driving activity offshore, creating regulatory arbitrage, and if so which jurisdictions are likely beneficiaries?",
+        "emergence_reason": "A domestic shift to structured oversight could push certain activities to more permissive jurisdictions; that would alter where infrastructure and liquidity concentrate and has cross-border policy implications."
+      },
+      "created_at": "2025-09-09T04:30:42.006744"
+    },
+    "52260efe-99bb-4d31-a1be-2533551b4505": {
+      "id": "52260efe-99bb-4d31-a1be-2533551b4505",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What are the expected effects on Bitcoin market dynamics (liquidity, volatility, market depth) from increased institutional and retail capital, and how resilient will markets be to shocks under new structures?",
+        "emergence_reason": "The insight predicts increased capital flows but doesn't analyze market microstructure impacts; understanding liquidity and volatility implications is important for risk management and policymaking."
+      },
+      "created_at": "2025-09-09T04:30:42.006744"
+    },
+    "a5ae63c2-b536-4aa3-b48d-5a2769db78b9": {
+      "id": "a5ae63c2-b536-4aa3-b48d-5a2769db78b9",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How will consumer protection, disclosure, and retail-education requirements be handled as retail access expands, and are there gaps that could increase retail investor harm?",
+        "emergence_reason": "Expanding retail access without adequate protections can increase investor losses and political backlash; the insights don't address safeguards, a key gap for sustainable growth."
+      },
+      "created_at": "2025-09-09T04:30:42.006744"
+    },
+    "4f78cb44-a3a3-4407-9e64-09d591dfe19a": {
+      "id": "4f78cb44-a3a3-4407-9e64-09d591dfe19a",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What are the implications for Bitcoin's decentralization (mining concentration, node distribution, protocol governance) as it becomes more integrated with mainstream financial infrastructure?",
+        "emergence_reason": "Mainstreaming can shift incentives toward centralized custody and infrastructure, potentially affecting decentralization and long-term protocol resilience\u2014an area not covered by the provided insights."
+      },
+      "created_at": "2025-09-09T04:30:42.006744"
+    },
+    "9f264838-cec6-49e6-95ba-559f326cacb2": {
+      "id": "9f264838-cec6-49e6-95ba-559f326cacb2",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Both findings point to a single, connected story: sustained and diversifying demand for Bitcoin is simultaneously being met by large, concentrated accumulation by non\u2011exchange players (Tether) and by expanding mainstream on\u2011 and off\u2011ramps (a high\u2011profile new Bitcoin exchange). Tether adding ~27,700 BTC over a year signals substantial buy-side accumulation that can provide price support and reduce available float, while Stelios Haji\u2011Ioannou launching a branded Bitcoin exchange signals increasing retail and mainstream access, marketing reach, and legitimacy. Together these developments imply stronger net demand, deeper structural liquidity changes (more BTC held off\u2011exchange and new venues pulling in new users), and a market transitioning from ETF\u2011centric flows toward a broader ecosystem of custodians, stablecoin issuers, and consumer\u2011facing exchanges. Key implications: potential upward price pressure and lower circulating liquidity due to accumulation; shifting concentration and counterparty risk toward large non\u2011exchange holders like Tether; and greater mainstream adoption \u2014 which could draw regulatory scrutiny and competitive dynamics between institutional holders and new retail platforms.",
+        "insight_type": "connection",
+        "confidence": 0.78,
+        "title": "Stablecoin-led accumulation and mainstream exchange expansion point to growing demand and shifting market structure"
+      },
+      "created_at": "2025-09-09T04:30:53.109556"
+    },
+    "b125f359-fde4-40b9-b7f8-0e9667de5c25": {
+      "id": "b125f359-fde4-40b9-b7f8-0e9667de5c25",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How will a formal U.S. market\u2011structure framework for Bitcoin actually change capital flows and market structure \u2014 will it primarily accelerate institutional/retail inflows or will compliance costs and stricter rules constrain growth?",
+        "emergence_reason": "Both insights point to accelerating legitimization via political and commercial developments, but it's unclear whether regulation will predominantly enable growth (through clarity and trust) or impose frictions (costs, gatekeeping) that slow certain participants."
+      },
+      "created_at": "2025-09-09T04:31:32.034111"
+    },
+    "89bbb2eb-a340-411c-9dc2-d85655525d80": {
+      "id": "89bbb2eb-a340-411c-9dc2-d85655525d80",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How sustainable and market\u2011impactful is Tether's ~27,700 BTC accumulation \u2014 to what extent does it reduce circulating supply, and how would large-scale liquidation or internal reallocation affect price and liquidity?",
+        "emergence_reason": "The insight highlights concentrated accumulation by a non\u2011exchange actor that can materially alter float and price dynamics; understanding the durability and exit risks of those holdings is critical for assessing market stability."
+      },
+      "created_at": "2025-09-09T04:31:32.034111"
+    },
+    "023ac2ea-af15-4cfb-a415-d4d79e0671b7": {
+      "id": "023ac2ea-af15-4cfb-a415-d4d79e0671b7",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Is there a contradiction between heavy off\u2011exchange accumulation (by Tether) and expanding retail on\u2011ramps (new exchange) \u2014 specifically, who will supply liquidity to meet increased retail demand if a significant portion of BTC is locked up off\u2011exchange?",
+        "emergence_reason": "The two findings together imply rising demand plus declining available float; this tension may produce elevated volatility, widening spreads, or incentivize new issuance/OTC mechanisms, and needs clarification."
+      },
+      "created_at": "2025-09-09T04:31:32.034111"
+    },
+    "e328868a-7d94-4cbc-a4ad-5f4eedda3b33": {
+      "id": "e328868a-7d94-4cbc-a4ad-5f4eedda3b33",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How transparent and verifiable are Tether's BTC holdings and related reserve practices, and what counterparty or systemic risks do they introduce?",
+        "emergence_reason": "Concentration in a single, non\u2011exchange entity raises counterparty risk and regulatory interest; opacity about reserves or custody arrangements would increase uncertainty and require targeted investigation."
+      },
+      "created_at": "2025-09-09T04:31:32.034111"
+    },
+    "7ef7cd6f-c09f-47cd-a71c-4d25d8144fd9": {
+      "id": "7ef7cd6f-c09f-47cd-a71c-4d25d8144fd9",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Will regulatory scrutiny shift toward stablecoin issuers, custodians, and consumer exchanges as political attention and mainstream adoption rise, and what regulatory levers are most likely to be applied?",
+        "emergence_reason": "The combination of political momentum and commercial expansion suggests regulators may broaden focus beyond exchanges/ETFs to other infrastructure providers; anticipating regulatory targets affects risk assessment and strategic planning."
+      },
+      "created_at": "2025-09-09T04:31:32.034111"
+    },
+    "1565fa2d-3a30-48ee-aaa3-65456a012ee1": {
+      "id": "1565fa2d-3a30-48ee-aaa3-65456a012ee1",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What is the new exchange's compliance posture and business model (e.g., KYC/AML strictness, custody arrangements, jurisdictional focus), and how will that influence its ability to onboard mainstream retail without triggering regulatory pushback?",
+        "emergence_reason": "A high\u2011profile entrepreneurial entrant can rapidly expand retail access, but the nature of its compliance and jurisdictional choices will determine both adoption trajectory and regulatory responses."
+      },
+      "created_at": "2025-09-09T04:31:32.034111"
+    },
+    "dc0e39b5-7bc1-41f9-98db-8219eaa13227": {
+      "id": "dc0e39b5-7bc1-41f9-98db-8219eaa13227",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How will ETF flows interact with non\u2011exchange accumulation and new retail venues \u2014 are we moving away from ETF\u2011dominant flows toward a multi\u2011channel ecosystem, and what are the implications for liquidity fragmentation and price discovery?",
+        "emergence_reason": "Insights suggest a market transition from ETF\u2011centric flows toward a broader ecosystem; understanding cross\u2011channel interactions is necessary to forecast liquidity, price discovery, and market resilience."
+      },
+      "created_at": "2025-09-09T04:31:32.034111"
+    },
+    "0f4fc20f-cefb-4061-a6ff-7d3875fae8e6": {
+      "id": "0f4fc20f-cefb-4061-a6ff-7d3875fae8e6",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How concentrated will custody and counterparty risk become as demand shifts toward custodians, stablecoin issuers, and branded exchanges, and which entities will emerge as critical nodes?",
+        "emergence_reason": "Both insights imply infrastructure build\u2011out and accumulation by big players; identifying concentration points is essential to assess systemic risk and regulatory priorities."
+      },
+      "created_at": "2025-09-09T04:31:32.034111"
+    },
+    "ac8e5ae4-af62-4751-93c4-4c7ab7202689": {
+      "id": "ac8e5ae4-af62-4751-93c4-4c7ab7202689",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What gaps exist in on\u2011chain and off\u2011chain data needed to accurately track constructive metrics (on/off\u2011exchange supply, large holder movements, OTC flows), and which data sources or methods would close those gaps?",
+        "emergence_reason": "The analysis relies on inferred changes in float, accumulation, and flows, but current visibility is limited; targeted data improvements are necessary to validate hypotheses and quantify impacts."
+      },
+      "created_at": "2025-09-09T04:31:32.034111"
+    },
+    "fab6c9c9-ffa1-4981-b762-fd6b470c1a1b": {
+      "id": "fab6c9c9-ffa1-4981-b762-fd6b470c1a1b",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Do the combined developments create new avenues or incentives for market manipulation, coordination, or conflicts of interest between large non\u2011exchange holders and retail or institutional venues?",
+        "emergence_reason": "Large concentrated holdings plus expanding retail distribution could enable market power or manipulative strategies (intentional or not); this is an important regulatory and market\u2011integrity concern."
+      },
+      "created_at": "2025-09-09T04:31:32.034111"
+    },
+    "6cbc2ac0-e1a2-49b6-beb0-8d3becb0c76a": {
+      "id": "6cbc2ac0-e1a2-49b6-beb0-8d3becb0c76a",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Are these trends primarily U.S.\u2011centric, or will similar political and commercial maturation occur internationally \u2014 and how might jurisdictional differences create arbitrage or fragmentation?",
+        "emergence_reason": "The political insight is U.S. Senate\u2011focused while the commercial actor may operate cross\u2011border; understanding geographic scope affects regulatory arbitrage, competitive dynamics, and adoption patterns."
+      },
+      "created_at": "2025-09-09T04:31:32.034111"
+    },
+    "58e84476-afec-448b-9a67-551931693dec": {
+      "id": "58e84476-afec-448b-9a67-551931693dec",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Today\u2019s developments show two linked forces shaping Bitcoin: growing political/regulatory legitimacy (12 US Senate Democrats releasing a new Bitcoin/crypto market-structure framework, signaling bipartisan legislative attention) is unfolding at the same time that private-sector on\u2011chain accumulation\u2014led by Tether\u2014remains a dominant source of net Bitcoin demand (27,700 BTC added over a year). The connection implies that regulatory choices will interact directly with the primary channels of demand. A potential mismatch is emerging: lawmakers appear focused on market structure and institutional frameworks (exchanges, ETFs, custody), while the largest net buying is occurring via stablecoin issuance and on\u2011chain transfers. Practical implications for the investigation: track whether the draft legislation addresses stablecoins, custody and on\u2011chain settlement rules, AML/KYC for off\u2011exchange flows, and how regulators treat tether\u2011mediated purchases\u2014because changes there could materially alter liquidity sources, price drivers, and the effectiveness of any market\u2011structure reforms.",
+        "insight_type": "connection",
+        "confidence": 0.75,
+        "title": "Political legitimization meets large stablecoin-driven on\u2011chain demand"
+      },
+      "created_at": "2025-09-09T04:32:55.472561"
+    },
+    "9c15149c-7993-4634-ab21-4a05e319daaa": {
+      "id": "9c15149c-7993-4634-ab21-4a05e319daaa",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Does the draft market-structure legislation explicitly address stablecoins (e.g., Tether) and tether\u2011mediated BTC purchases, and if not, why?",
+        "emergence_reason": "Insights highlight a potential mismatch: lawmakers are focused on exchanges/custody while the largest net buying is occurring via stablecoin issuance and on\u2011chain flows. Whether legislation covers stablecoins will determine if it meaningfully influences the primary demand channel."
+      },
+      "created_at": "2025-09-09T04:33:23.663589"
+    },
+    "79ad5e0d-8674-45e8-b96b-fab137e411d2": {
+      "id": "79ad5e0d-8674-45e8-b96b-fab137e411d2",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "To what extent does Tether's ~27,700 BTC accumulation reduce circulating float versus simply moving BTC off\u2011exchange temporarily, and what is the measurable impact on liquidity and price formation?",
+        "emergence_reason": "The assertions that accumulation reduces available float and creates upward price pressure depend on whether coins are effectively removed from liquid supply or remain accessible via OTC/addresses; the actual liquidity impact needs quantification."
+      },
+      "created_at": "2025-09-09T04:33:23.663589"
+    },
+    "352c764b-515f-437d-8481-57a437f772d9": {
+      "id": "352c764b-515f-437d-8481-57a437f772d9",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Are Tether's BTC holdings custodial, controlled by a small number of wallets, or linked to identifiable OTC/partner counterparties (i.e., what is the true counterparty and custody topology)?",
+        "emergence_reason": "Concentration and counterparty risk hinge on who controls the accumulated BTC; if holdings are concentrated or custodial in ways that create single\u2011point risks, systemic implications differ materially."
+      },
+      "created_at": "2025-09-09T04:33:23.663589"
+    },
+    "8dbe2087-714a-487f-8af8-a0d409394588": {
+      "id": "8dbe2087-714a-487f-8af8-a0d409394588",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How would proposed regulatory changes to exchanges, custody, or AML/KYC interact with on\u2011chain settlement practices and off\u2011exchange stablecoin flows in practice?",
+        "emergence_reason": "Legislative focus on market structure may not translate to control over off\u2011exchange/stablecoin\u2011driven demand unless rules explicitly address settlement and off\u2011ramp/on\u2011ramp rules; this interaction is critical to policy effectiveness."
+      },
+      "created_at": "2025-09-09T04:33:23.663589"
+    },
+    "37910ec3-75bc-4f20-af6c-a98f152f0272": {
+      "id": "37910ec3-75bc-4f20-af6c-a98f152f0272",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What specific compliance and custody models will the new high\u2011profile Bitcoin exchange adopt (e.g., self\u2011custody vs third\u2011party custodians, fiat rails, KYC intensity), and how might those choices change retail/institutional behavior?",
+        "emergence_reason": "The commercial signal of a new exchange is important only insofar as its design affects user trust, on\u2011ramp scale, and interaction with existing liquidity providers; details will shape adoption and competitive dynamics."
+      },
+      "created_at": "2025-09-09T04:33:23.663589"
+    },
+    "ca232904-61b6-4158-851f-ae53f411ecbb": {
+      "id": "ca232904-61b6-4158-851f-ae53f411ecbb",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How reliable are the open\u2011source or reported figures on Tether's BTC accumulation (data sources, on\u2011chain attribution methods), and what are the margin-of-error and alternative estimates?",
+        "emergence_reason": "Policy and market inferences depend on data accuracy; if the 27,700 BTC figure is misattributed or incomplete, conclusions about demand and concentration may be flawed."
+      },
+      "created_at": "2025-09-09T04:33:23.663589"
+    },
+    "8c4d54bc-3f24-400d-b320-87b75c03ed3c": {
+      "id": "8c4d54bc-3f24-400d-b320-87b75c03ed3c",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What are the plausible market stress scenarios (e.g., rapid deleveraging, regulatory clampdowns on stablecoins, exchange runs) given current concentration of off\u2011exchange BTC and growing retail on\u2011ramps, and who are the systemic counterparties?",
+        "emergence_reason": "Identifying stress scenarios is necessary to evaluate systemic risk from concentration and new retail access; it reveals which entities/regulatory levers matter most in a crisis."
+      },
+      "created_at": "2025-09-09T04:33:23.663589"
+    },
+    "4b116f28-9c7a-414b-8e4f-dab239004312": {
+      "id": "4b116f28-9c7a-414b-8e4f-dab239004312",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "If regulators target stablecoin issuance or impose stricter AML/KYC on on\u2011chain transfers, how quickly and through what channels would that change translate into altered liquidity, price volatility, or migration of activity to alternatives?",
+        "emergence_reason": "Understanding transmission lags and behavioral responses is needed to forecast the market impact of plausible regulatory interventions."
+      },
+      "created_at": "2025-09-09T04:33:23.663589"
+    },
+    "ee002d8a-61ae-454c-8893-e94cca814d2e": {
+      "id": "ee002d8a-61ae-454c-8893-e94cca814d2e",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Will mainstreaming via branded retail exchanges materially change the composition of demand (more small retail positions, different holding periods) versus continued dominance of large non\u2011exchange accumulators and ETF flows?",
+        "emergence_reason": "The extent to which retail inflows change market dynamics vs institutional/stablecoin accumulation affects volatility, turnover, and product design for custody/liquidity providers."
+      },
+      "created_at": "2025-09-09T04:33:23.663589"
+    },
+    "4443ff1c-4801-43b7-a33f-ef2bad6300a3": {
+      "id": "4443ff1c-4801-43b7-a33f-ef2bad6300a3",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How do ETF flows, institutional custodians, stablecoin issuers, and branded retail exchanges compete or complement one another for liquidity provision and custody; could competitive dynamics concentrate risk in new ways?",
+        "emergence_reason": "Insights imply a shift away from an ETF\u2011centric model toward a diversified ecosystem; the resulting inter\u2011firm relationships could create new concentration points or fragmentation that matter for regulation and resilience."
+      },
+      "created_at": "2025-09-09T04:33:23.663589"
+    },
+    "3899c48f-ea7b-400e-9de7-4da24f2fc069": {
+      "id": "3899c48f-ea7b-400e-9de7-4da24f2fc069",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What monitoring and data collection gaps exist for policymakers and market surveillance (e.g., off\u2011exchange holdings, stablecoin mint/redemption flows, large wallet movements), and what specific metrics should be prioritized?",
+        "emergence_reason": "Effective oversight requires visibility into the very channels (stablecoins, off\u2011exchange accumulation) that current legislative focus may miss; defining metrics is a practical gap to fill."
+      },
+      "created_at": "2025-09-09T04:33:23.663589"
+    },
+    "4120aba4-f643-4634-a18c-5da8d3150330": {
+      "id": "4120aba4-f643-4634-a18c-5da8d3150330",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What is the timing alignment between accelerating market infrastructure build\u2011out (new exchanges, custody products) and likely legislative milestones, and could misalignment create transitional risks or arbitrage opportunities?",
+        "emergence_reason": "The pace of private\u2011sector buildout vs policy implementation determines whether market participants can lock in behaviors before rules bind, affecting regulatory efficacy and short\u2011term market risks."
+      },
+      "created_at": "2025-09-09T04:33:23.663589"
+    },
+    "c89a3204-c5cf-45db-b8ae-f517adcbcb2a": {
+      "id": "c89a3204-c5cf-45db-b8ae-f517adcbcb2a",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Both items point to a simultaneous expansion of Bitcoin access and crypto-native capital accumulation: a mainstream entrepreneur launching a dedicated Bitcoin exchange signals new on\u2011ramps and broader retail/brand-driven distribution, while Tether\u2019s acquisition of 27,700 BTC shows large-scale, centralized crypto-native accumulation outside ETF channels. Together these trends increase liquidity and buy-side pressure, help explain current bullish dynamics, and shift where demand comes from \u2014 from traditional institutional ETFs toward a mix of branded exchanges and stablecoin treasuries. Key implications: stronger price support but greater concentration risk (Tether holdings, exchange custody), evolving market structure that may draw regulatory scrutiny, and the need to track off\u2011exchange accumulation and new retail flows as near-term drivers of market moves.",
+        "insight_type": "connection",
+        "confidence": 0.82,
+        "title": "Growing retail/on\u2011ramps plus crypto-native treasury accumulation are jointly boosting Bitcoin demand and market influence"
+      },
+      "created_at": "2025-09-09T04:33:32.679548"
+    },
+    "674fd31b-aeee-46a1-a71c-27c62e7ee550": {
+      "id": "674fd31b-aeee-46a1-a71c-27c62e7ee550",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Does the Senate Democrats' market-structure framework explicitly address stablecoins, on-chain settlement, and off-exchange flows (e.g., tether\u2011mediated purchases), or is it narrowly focused on exchanges/ETFs/custody?",
+        "emergence_reason": "Multiple insights flag a potential mismatch: lawmakers appear to target market-structure/institutional frameworks while the largest net buying is occurring via stablecoin issuance and on\u2011chain transfers. If the draft legislation omits stablecoins or on\u2011chain mechanics, reforms may fail to influence the primary demand channels driving price and liquidity."
+      },
+      "created_at": "2025-09-09T04:33:59.088274"
+    },
+    "c7aedb22-e0ff-4e8e-b608-d9970092dead": {
+      "id": "c7aedb22-e0ff-4e8e-b608-d9970092dead",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What are Tether's motives, funding sources, and trading counterparties for accumulating ~27,700 BTC (treasury diversification, market\u2011making, arbitrage, customer flows)?",
+        "emergence_reason": "Tether's sizable on\u2011chain accumulation is a key driver of net demand and concentration risk, but the insights don't explain why Tether is buying or how purchases are funded, which matters for sustainability and systemic risk."
+      },
+      "created_at": "2025-09-09T04:33:59.088274"
+    },
+    "9fef4785-bb4f-45fb-873c-87720acfdee7": {
+      "id": "9fef4785-bb4f-45fb-873c-87720acfdee7",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How transparent and auditable are the on\u2011chain flows that increased Tether's BTC balance\u2014can we trace counterparties, timing, and whether BTC was acquired on\u2011exchange or OTC?",
+        "emergence_reason": "Understanding whether these BTC purchases occurred via exchanges, OTC desks, or internal transfers affects counterparty risk, AML/KYC exposure, and the efficacy of exchange\u2011focused regulation."
+      },
+      "created_at": "2025-09-09T04:33:59.088274"
+    },
+    "8967f139-f5ce-4381-a19f-5720e62d99e3": {
+      "id": "8967f139-f5ce-4381-a19f-5720e62d99e3",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How much of Bitcoin's circulating supply or available float is effectively locked or reduced by concentrated holders (Tether, custodial treasuries), and what is the quantitative impact on liquidity and implied price sensitivity?",
+        "emergence_reason": "Insights assert lower circulating liquidity and upward price pressure, but lack quantification. Measuring the removed float is necessary to model market impact and stress scenarios."
+      },
+      "created_at": "2025-09-09T04:33:59.088274"
+    },
+    "809c1682-c52f-4c7b-b2a2-c47ff89c4eb5": {
+      "id": "809c1682-c52f-4c7b-b2a2-c47ff89c4eb5",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What custodial arrangements and counterparty risk will the new branded Bitcoin exchange use (self\u2011custody, third\u2011party custodians, insured custody), and how do those choices interact with proposed regulatory guardrails?",
+        "emergence_reason": "A mainstream entrepreneur launching an exchange increases retail access, but the custody model determines counterparty concentration, insurer exposure, and regulatory oversight needs."
+      },
+      "created_at": "2025-09-09T04:33:59.088274"
+    },
+    "a6ba3a5b-a7f3-4d02-a3dc-59e2eec9c3fa": {
+      "id": "a6ba3a5b-a7f3-4d02-a3dc-59e2eec9c3fa",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Will the emerging regulatory framework harmonize treatment across channels (ETFs, exchanges, stablecoin issuers, OTC desks), or will it create regulatory arbitrage that shifts flows offshore or into less\u2011regulated venues?",
+        "emergence_reason": "Convergence of political attention and private\u2011sector on\u2011chain activity could either centralize oversight or push activity into jurisdictions/venues not covered by the legislation, affecting the effectiveness of oversight."
+      },
+      "created_at": "2025-09-09T04:33:59.088274"
+    },
+    "87ed4dbb-8982-4393-9d65-c6b5a99f496d": {
+      "id": "87ed4dbb-8982-4393-9d65-c6b5a99f496d",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How correlated are Tether's BTC accumulation events with retail on\u2011ramp growth from new exchanges (e.g., is Tether supplying liquidity to retail venues, or operating independently)?",
+        "emergence_reason": "Insights link accumulation and new retail on\u2011ramps as joint drivers of demand, but the relationship between them is unclear; correlation/causation affects where regulatory focus should lie."
+      },
+      "created_at": "2025-09-09T04:33:59.088274"
+    },
+    "e565cdb6-20ba-4bec-aef9-171ee9c2b0b2": {
+      "id": "e565cdb6-20ba-4bec-aef9-171ee9c2b0b2",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Does the draft market\u2011structure framework include AML/KYC and reporting requirements targeted at on\u2011chain stablecoin transactions and large off\u2011exchange transfers, and if not, how will regulators detect/manipulate on\u2011chain demand drivers?",
+        "emergence_reason": "If regulatory proposals remain exchange/ETF centric without strong on\u2011chain surveillance rules, regulators may lack tools to monitor or constrain the dominant demand channels identified (stablecoin treasuries)."
+      },
+      "created_at": "2025-09-09T04:33:59.088274"
+    },
+    "7c1e8af3-55f0-45f9-b248-461e2890dd92": {
+      "id": "7c1e8af3-55f0-45f9-b248-461e2890dd92",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What scenario analyses or stress tests exist (or should be run) to estimate market outcomes if a major non\u2011exchange holder (e.g., Tether) slows purchases, liquidates, or becomes subject to regulatory action?",
+        "emergence_reason": "Concentration risk implies tail events could meaningfully alter price and liquidity; the insights imply such risk but do not present scenario modeling to guide contingency planning."
+      },
+      "created_at": "2025-09-09T04:33:59.088274"
+    },
+    "fd8c0dd3-ba14-4291-86d1-02b1baab6931": {
+      "id": "fd8c0dd3-ba14-4291-86d1-02b1baab6931",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Where will new retail exchanges choose to incorporate and operate (domestic vs offshore), and how will that choice affect regulatory coverage, consumer protection, and the ability to enforce AML/market\u2011structure rules?",
+        "emergence_reason": "A mainstream entrepreneur launching an exchange can increase adoption, but jurisdictional choices can create gaps in enforcement and enable regulatory arbitrage\u2014an investigative blind spot in the current insights."
+      },
+      "created_at": "2025-09-09T04:33:59.088274"
+    },
+    "4627092a-74ab-4c9d-8710-aedb4a2853b4": {
+      "id": "4627092a-74ab-4c9d-8710-aedb4a2853b4",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "\ud83c\uddfa\ud83c\uddf8 NEW: The Trump family's stake in American Bitcoin is now over $1.5B. https://t.co/U6lIRv3Kf1",
+        "source_info": {
+          "source": "timeline.php",
+          "timestamp": "2025-09-09T04:34:22.241160",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.9,
+          "goal_relevance_score": 0.3333333333333333
+        },
+        "source": "timeline.php",
+        "timestamp": "2025-09-09T04:34:22.241160"
+      },
+      "created_at": "2025-09-09T04:34:22.241160"
+    },
+    "9a83d872-5690-485d-a5f1-4700aa3c2251": {
+      "id": "9a83d872-5690-485d-a5f1-4700aa3c2251",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Both items indicate that Bitcoin\u2019s current momentum is being driven not only by visible ETF inflows but also by large, less-publicized accumulators (stablecoin issuers) and expanding retail/infrastructure adoption. Tether\u2019s reported 27,700 BTC purchase over a year\u2014outpacing most ETFs\u2014reveals a significant, non-ETF source of demand that can quietly tighten available supply. Meanwhile, a high-profile entrepreneur launching a consumer-facing Bitcoin exchange signals increasing mainstream on\u2011ramps and retail engagement. Together these point to a diversification of demand (institutional, OTC/treasury-level accumulation, and new retail channels), which raises short-to-medium-term upward price pressure, increases liquidity on-ramps, and heightens regulatory scrutiny and concentration risk around large custodial holders. This challenges the simplified narrative that ETFs are the sole dominant buyer and highlights emerging ecosystem themes: opaque large buyers, mainstream entrepreneurial endorsement, and rapidly improving retail infrastructure.",
+        "insight_type": "connection",
+        "confidence": 0.8,
+        "title": "Broadening demand base \u2014 hidden accumulation and mainstream infrastructure growth are jointly driving Bitcoin dynamics today"
+      },
+      "created_at": "2025-09-09T04:35:08.503056"
+    },
+    "138e4e31-e727-4192-8638-112c1527a8f3": {
+      "id": "138e4e31-e727-4192-8638-112c1527a8f3",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Does the Senate market-structure framework explicitly address stablecoins (including Tether) and on\u2011chain settlement channels, or is it narrowly focused on exchanges/ETFs/custody?",
+        "emergence_reason": "Multiple insights flag a potential mismatch between lawmakers\u2019 focus (market structure, exchanges, ETFs, custody) and the primary net buyers/settlement channels (stablecoin issuers and on\u2011chain flows). If the draft omits stablecoins, regulatory changes may miss a dominant demand channel or create unintended loopholes."
+      },
+      "created_at": "2025-09-09T04:35:44.783871"
+    },
+    "7ae06b30-917c-4da4-817b-e2a37faa449c": {
+      "id": "7ae06b30-917c-4da4-817b-e2a37faa449c",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How reliable and transparent are the underlying data and methodology that produce the claim Tether acquired ~27,700 BTC over the past year?",
+        "emergence_reason": "The Tether accumulation figure is central to several conclusions (supply tightening, concentration risk). Understanding data provenance, on\u2011chain analysis methods, and uncertainties is critical before acting on that signal."
+      },
+      "created_at": "2025-09-09T04:35:44.783871"
+    },
+    "31ec84cc-9f6b-4950-aa7a-35ec7500973d": {
+      "id": "31ec84cc-9f6b-4950-aa7a-35ec7500973d",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What fraction of Tether\u2019s BTC holdings are effectively off\u2011exchange/illiquid (long\u2011term treasury) versus short\u2011term or available for sale, and how quickly could those holdings be mobilized?",
+        "emergence_reason": "Policy and market-impact assessments hinge on whether Tether\u2019s BTC materially reduces circulating float or simply rotates through custody. Liquidity characteristics determine price sensitivity and systemic risk."
+      },
+      "created_at": "2025-09-09T04:35:44.783871"
+    },
+    "d92cd916-a538-42a4-8074-f00a831f3acb": {
+      "id": "d92cd916-a538-42a4-8074-f00a831f3acb",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What are the custody arrangements and counterparty exposures for Tether\u2019s BTC and for the new entrepreneur\u2011launched exchange (including third\u2011party custodians, insurance, and settlement guarantees)?",
+        "emergence_reason": "Several insights point to concentration and custodial risk. Identifying counterparties and their resilience is necessary to assess counterparty and systemic risk if large holders or a new exchange face stress."
+      },
+      "created_at": "2025-09-09T04:35:44.783871"
+    },
+    "59b90acf-7ebf-429d-bb97-11c630b0a50f": {
+      "id": "59b90acf-7ebf-429d-bb97-11c630b0a50f",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How would proposed regulatory reforms treat off\u2011exchange, stablecoin\u2011mediated purchases with respect to AML/KYC, reporting, and market\u2011abuse monitoring?",
+        "emergence_reason": "If policymakers regulate only exchange/ETF flows, large stablecoin\u2011mediated on\u2011chain accumulation could remain opaque and unmonitored, undermining regulatory objectives and enabling regulatory arbitrage."
+      },
+      "created_at": "2025-09-09T04:35:44.783871"
+    },
+    "429c5daf-96b1-4edf-895f-0a7a97420b62": {
+      "id": "429c5daf-96b1-4edf-895f-0a7a97420b62",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Does concentration of BTC in large non\u2011exchange holders (e.g., Tether) meaningfully increase manipulation, liquidity squeeze, or systemic risk scenarios, and what thresholds should trigger supervisory attention?",
+        "emergence_reason": "Multiple insights warn of concentration risk. Quantifying the systemic and market\u2011manipulation vectors is necessary to determine whether and how to impose limits, disclosure, or stress testing."
+      },
+      "created_at": "2025-09-09T04:35:44.783871"
+    },
+    "5ebc8f61-7ca8-4c00-9056-02a56504e315": {
+      "id": "5ebc8f61-7ca8-4c00-9056-02a56504e315",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Will the new high\u2011profile Bitcoin exchange attract material retail/institutional flows, or is its near\u2011term effect likely limited to brand/marketing and marginal new users?",
+        "emergence_reason": "Assumptions about accelerating retail on\u2011ramps influence forecasts for demand growth and infrastructure strain. Assessing the exchange\u2019s expected liquidity providers, fee structure, and user acquisition plans tests that assumption."
+      },
+      "created_at": "2025-09-09T04:35:44.783871"
+    },
+    "b825f128-62b1-461a-b12c-8260988bc8f2": {
+      "id": "b825f128-62b1-461a-b12c-8260988bc8f2",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How will increased compliance and licensing costs from likely structured oversight affect the economics and competitive dynamics of new retail on\u2011ramps and crypto\u2011native accumulators?",
+        "emergence_reason": "Insights suggest regulation will both enable growth and impose costs. Understanding whether compliance burdens concentrate activity in incumbents or deter new entrants is important for market structure projections."
+      },
+      "created_at": "2025-09-09T04:35:44.783871"
+    },
+    "51cf14fd-c979-4dcc-a32b-6056954ec7f0": {
+      "id": "51cf14fd-c979-4dcc-a32b-6056954ec7f0",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Are U.S. regulatory agencies (SEC, CFTC, Treasury/FinCEN, state regulators) coordinating to cover both market\u2011structure and on\u2011chain/stablecoin risks, or are there jurisdictional gaps?",
+        "emergence_reason": "Effective oversight of a market that blends traditional market infrastructure and on\u2011chain flows requires interagency coordination; gaps could leave major demand channels unregulated."
+      },
+      "created_at": "2025-09-09T04:35:44.783871"
+    },
+    "1c5ec649-eb60-400e-9613-0df6253aa426": {
+      "id": "1c5ec649-eb60-400e-9613-0df6253aa426",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What is the realistic timeline for (a) legislative/regulatory clarity, (b) infrastructure build\u2011out (exchanges, custody, compliance products), and (c) the mobilization of large on\u2011chain accumulators\u2014how do these timelines interact to shape near\u2011term price dynamics?",
+        "emergence_reason": "Several insights infer near\u2011term shifts in supply/demand and market structure. Aligning timelines is necessary to model short\u2011 vs medium\u2011term price and liquidity outcomes and to prioritize monitoring."
+      },
+      "created_at": "2025-09-09T04:35:44.783871"
+    },
+    "dc281d7e-d0b6-48c1-ba9c-6372febdc8e5": {
+      "id": "dc281d7e-d0b6-48c1-ba9c-6372febdc8e5",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "To what extent do opaque large accumulations (stablecoin treasuries, OTC buys) distort market signals used by ETFs, funds, and retail participants, potentially undermining price discovery?",
+        "emergence_reason": "If major flows are hidden off\u2011exchange, public metrics (ETF flows, exchange volumes) may misrepresent true demand, leading to mispriced risk and flawed policymaker or investor responses."
+      },
+      "created_at": "2025-09-09T04:35:44.783871"
+    },
+    "3165ef12-972f-40a2-bf50-f306145a9f4c": {
+      "id": "3165ef12-972f-40a2-bf50-f306145a9f4c",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Today\u2019s developments show two complementary forces accelerating Bitcoin\u2019s mainstreaming: U.S. Senate Democrats unveiling a market-structure framework signals increasing bipartisan regulatory attention and potential legitimization, while a high\u2011profile entrepreneur launching a dedicated Bitcoin exchange demonstrates private-sector investment in infrastructure to capture growing demand. Together these trends imply a near-term shift from speculative niche asset toward regulated market infrastructure\u2014likely raising institutional participation and liquidity, supporting bullish market sentiment\u2014but also increasing compliance costs and operational constraints for new entrants. Key implications for the investigation: (1) regulatory text and timing will be a primary driver of market structure and which business models survive; (2) private launches may accelerate adoption but will face scrutiny and consolidation risk; (3) monitor legislative milestones, exchange registration/approval activity, and liquidity/inflow metrics as leading signals of market impact.",
+        "insight_type": "connection",
+        "confidence": 0.8,
+        "title": "Policy momentum and private-sector buildout are converging to mainstream Bitcoin"
+      },
+      "created_at": "2025-09-09T04:35:55.403631"
+    },
+    "58f52805-e0a5-41f4-b0c1-fcbd177b9da1": {
+      "id": "58f52805-e0a5-41f4-b0c1-fcbd177b9da1",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Does the Senate Democrats' market-structure framework explicitly address stablecoins, stablecoin issuers (e.g., Tether), and on\u2011chain settlement/treasury activity, or is it narrowly focused on exchanges/ETFs/custody?",
+        "emergence_reason": "Multiple insights flag a potential mismatch: lawmakers are targeting market structure (exchanges, custody, ETFs) while a large share of net demand is happening via stablecoin issuers on\u2011chain. Knowing whether legislation covers stablecoins determines whether the primary demand channel will be regulated or remain opaque."
+      },
+      "created_at": "2025-09-09T04:36:27.961533"
+    },
+    "590f87f1-8131-47df-adfb-7b416d771c25": {
+      "id": "590f87f1-8131-47df-adfb-7b416d771c25",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What is the provenance and execution pathway of Tether\u2019s reported ~27,700 BTC accumulation (on\u2011chain buys, OTC deals, exchange purchases, custody locations), and how transparent/traceable are those flows?",
+        "emergence_reason": "The scale and mechanism of Tether\u2019s purchases materially affect liquidity and counterparty concentration risk. The insights assume large off\u2011exchange accumulation but do not detail how those BTC were acquired or where they are held."
+      },
+      "created_at": "2025-09-09T04:36:27.961533"
+    },
+    "4b639341-d7ab-4243-8a3d-2aa6ab2f4bda": {
+      "id": "4b639341-d7ab-4243-8a3d-2aa6ab2f4bda",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How concentrated are custodial holdings across large non\u2011exchange holders (Tether, institutional treasuries) and consumer-facing exchanges, and what are the counterparty and operational risks associated with that concentration?",
+        "emergence_reason": "Several insights highlight concentration risk but lack measurements of custody concentration, counterparty exposures, and single\u2011point failure scenarios that could amplify market stress."
+      },
+      "created_at": "2025-09-09T04:36:27.961533"
+    },
+    "4efe7102-5d21-4cb1-8038-b4f27f37cd4d": {
+      "id": "4efe7102-5d21-4cb1-8038-b4f27f37cd4d",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "To what extent will the new high\u2011profile, branded Bitcoin exchange target retail users vs. institutional flows, and what custody, liquidity\u2011provision, and compliance models will it deploy?",
+        "emergence_reason": "The market impact (retail onboarding, liquidity shifts, compliance costs) depends on the exchange\u2019s business model and partner choices\u2014information not provided in the insights."
+      },
+      "created_at": "2025-09-09T04:36:27.961533"
+    },
+    "164f609e-8e5d-4967-92ad-35b607b8cf3f": {
+      "id": "164f609e-8e5d-4967-92ad-35b607b8cf3f",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How do net demand contributions from ETFs, stablecoin issuers (Tether), OTC/treasury buys, and retail on\u2011ramps compare quantitatively over recent months, and how is that mix evolving?",
+        "emergence_reason": "Insights assert a diversification of demand away from ETFs but lack a quantitative breakdown. Understanding the relative magnitudes is crucial for assessing price drivers and policy impact."
+      },
+      "created_at": "2025-09-09T04:36:27.961533"
+    },
+    "d6743ef8-3ec2-40b3-8998-cca7b331ced1": {
+      "id": "d6743ef8-3ec2-40b3-8998-cca7b331ced1",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Are significant portions of BTC being moved off\u2011exchange into long\u2011term treasuries (reducing float) versus being held in liquid custodial accounts, and how quickly is on\u2011exchange available float changing?",
+        "emergence_reason": "Multiple insights infer tightening supply from off\u2011exchange accumulation. Quantifying changes in exchange float and long\u2011term holdings is necessary to evaluate upward price pressure and liquidity risk."
+      },
+      "created_at": "2025-09-09T04:36:27.961533"
+    },
+    "e338774a-a847-4654-8cb0-c13959e121ba": {
+      "id": "e338774a-a847-4654-8cb0-c13959e121ba",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Does current or proposed regulation include AML/KYC, reporting, or settlement rules that would materially affect on\u2011chain stablecoin\u2011mediated purchases or OTC transactions?",
+        "emergence_reason": "If regulation tightens AML/KYC or reporting for stablecoin issuers or OTC desks, the main demand channel identified (Tether/treasury buys) could be disrupted\u2014this risk is repeatedly suggested but not confirmed in the insights."
+      },
+      "created_at": "2025-09-09T04:36:27.961533"
+    },
+    "52ecf206-9e2a-49ad-8e46-9568f91e313f": {
+      "id": "52ecf206-9e2a-49ad-8e46-9568f91e313f",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What monitoring and on\u2011chain/OTC data sources can reliably track non\u2011ETF accumulators (stablecoin issuers, treasuries) in near real\u2011time, and what are their blind spots?",
+        "emergence_reason": "The investigation needs practical telemetry (metrics, feeds) to detect large off\u2011exchange accumulation and shifting liquidity; the insights point to opaque buyers but don\u2019t specify monitoring approaches."
+      },
+      "created_at": "2025-09-09T04:36:27.961533"
+    },
+    "2867ed03-117f-4196-b6a8-2f9a3a635243": {
+      "id": "2867ed03-117f-4196-b6a8-2f9a3a635243",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Could the growing political/regulatory attention accelerate consolidation among exchanges and custodians, and which business models are most at risk from compliance costs or legislative constraints?",
+        "emergence_reason": "Insights suggest compliance costs and consolidation risk but do not identify which types of firms (small retail exchanges, crypto\u2011native custodians, stablecoin treasuries) are most vulnerable\u2014this affects forecasting and risk mapping."
+      },
+      "created_at": "2025-09-09T04:36:27.961533"
+    },
+    "2fae53d7-e95b-4ca3-9159-4eecc8b7d6c3": {
+      "id": "2fae53d7-e95b-4ca3-9159-4eecc8b7d6c3",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Does the accumulation behavior of stablecoin issuers introduce market\u2011manipulation or systemic\u2011risk pathways (e.g., coordination of buys/sells, fire\u2011sales, leverage interactions) that differ from ETF\u2011driven flows?",
+        "emergence_reason": "Stablecoin treasuries and opaque accumulators may create different dynamics (less transparency, quicker concentration moves) compared with regulated ETFs; insights imply risk but don\u2019t explore mechanisms."
+      },
+      "created_at": "2025-09-09T04:36:27.961533"
+    },
+    "6f98a660-4ac7-4690-86d5-3e9527b5af03": {
+      "id": "6f98a660-4ac7-4690-86d5-3e9527b5af03",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How will cross\u2011border activity and regulatory arbitrage affect where stablecoin issuers and new retail exchanges operate, and could that blunt U.S. legislative impact?",
+        "emergence_reason": "The insights focus on U.S. legislative signals but acknowledge private\u2011sector global players; cross\u2011border responses could alter outcomes and are not addressed in the current analysis."
+      },
+      "created_at": "2025-09-09T04:36:27.961533"
+    },
+    "cfcafc68-f20f-46a2-8dc3-fac7a8285f27": {
+      "id": "cfcafc68-f20f-46a2-8dc3-fac7a8285f27",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What is the likely timing and sequencing between legislative milestones, new exchange launches, and observable market impacts (liquidity shifts, price moves), and which leading indicators should be tracked?",
+        "emergence_reason": "Several insights emphasize timing as a driver but lack a monitoring plan or hypothesized sequencing. Knowing which indicators precede market shifts would focus investigative resources effectively."
+      },
+      "created_at": "2025-09-09T04:36:27.961533"
+    },
+    "8b907a36-f711-4fcb-9868-5da1f05bf794": {
+      "id": "8b907a36-f711-4fcb-9868-5da1f05bf794",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "\ud83d\udca5 BREAKING:\n\n12 US SENATE DEMOCRATS UNVEILED A NEW FRAMEWORK FOR #BITCOIN AND CRYPTO MARKET STRUCTURE LEGISLATION TODAY\n\nBTC BECOMING BIPARTISAN. LOVE TO SEE IT \ud83e\udde1 https://t.co/2uQD1EAQ87",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 6.0,
+          "timestamp": "2025-09-09T04:36:52.377792"
+        }
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    "b05bb59e-1048-4621-9cc5-764db86e4c5f": {
+      "id": "b05bb59e-1048-4621-9cc5-764db86e4c5f",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "If #Bitcoin's price keeps going up,  #Altcoins will likely do well too. \n\nThe economy is shifting, and the market could see big gains. \n\nI'm fully invested in #altcoins.",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 6.0,
+          "timestamp": "2025-09-09T04:36:52.377792"
+        }
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    "1baaef27-3fa5-47c6-a14f-b7691f773c48": {
+      "id": "1baaef27-3fa5-47c6-a14f-b7691f773c48",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "\ud83d\udea8BREAKING:\nEasyJet billionaire founder Stelios Haji-Ioannou is officially launching his own #Bitcoin exchange.\n\nBullish For Bitcoin! \ud83d\ude80 https://t.co/hX1JE7JnFa",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 6.0,
+          "timestamp": "2025-09-09T04:36:52.377792"
+        }
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    "593decb8-a35d-4403-9f00-a7c7e4b952fe": {
+      "id": "593decb8-a35d-4403-9f00-a7c7e4b952fe",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Asked @EdgenTech\" what is the current price of bitcoin?... \"because humans were too slow (again):\n\nHere\u2019s its answer:\n https://t.co/PrJ9WiTSy2 loving the @EdgenTech  x @SaharaLabsAI  quest , fast ai insights for crypto ans stocks",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 6.0,
+          "timestamp": "2025-09-09T04:36:52.377792"
+        }
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    "48aaa4fa-f9ae-4d37-9626-46cf30b20fae": {
+      "id": "48aaa4fa-f9ae-4d37-9626-46cf30b20fae",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Tether beats most ETFs in Bitcoin inflows with 27,700 BTC added in one year -\u00a0CryptoSlate",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 6.0,
+          "timestamp": "2025-09-09T04:36:52.377792"
+        }
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    "ac47c0ce-3adf-4448-9a34-ca32dc20141c": {
+      "id": "ac47c0ce-3adf-4448-9a34-ca32dc20141c",
+      "node_type": "Insight",
+      "properties": {
+        "content": "US Senate Democrats have publicly unveiled a new framework for Bitcoin/crypto market-structure legislation \u2014 signals growing bipartisan political attention (items 1 and 18).",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    "ffa28bd3-acbb-41e5-91e0-c3d6d511b373": {
+      "id": "ffa28bd3-acbb-41e5-91e0-c3d6d511b373",
+      "node_type": "Insight",
+      "properties": {
+        "content": "A high-profile private actor (EasyJet founder Stelios Haji-Ioannou) is reportedly launching a Bitcoin exchange \u2014 potential incremental retail/investor infrastructure expansion (item 3).",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    "b3bab3a3-87c3-4437-b1ca-a172742d3a2f": {
+      "id": "b3bab3a3-87c3-4437-b1ca-a172742d3a2f",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Tether reportedly added ~27,700 BTC in one year, indicating large stablecoin-related BTC accumulation and meaningful on\u2011chain flows compared with ETF flows (item 5).",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    "4f619e84-3b85-499c-93f3-995f341bf3e0": {
+      "id": "4f619e84-3b85-499c-93f3-995f341bf3e0",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Macro calendar risk: US CPI data (Sept 11) is flagged as a potential catalyst; prior CPI releases coincided with 9\u201311% BTC drops \u2014 suggests near-term volatility risk (item 12).",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    "c41eab4a-8994-4659-af6d-6487d2386d23": {
+      "id": "c41eab4a-8994-4659-af6d-6487d2386d23",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Market participants are discussing technical indicators and patterns (50-week EMA importance, symmetric/descending triangle patterns) \u2014 traders are monitoring momentum and pattern breakouts (items 13, 15, 20).",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    "ac65f9fb-59ed-4ce7-8939-827df837a70a": {
+      "id": "ac65f9fb-59ed-4ce7-8939-827df837a70a",
+      "node_type": "Insight",
+      "properties": {
+        "content": "There is visible promotional activity for Bitcoin-related products (synthetic BTC yield, staking, apps) and social-media hype \u2014 mixed quality signals and possible noise (items 6, 7, 11, 2, 9).",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    "11d07b0a-a61f-41a3-bfd5-b2918aba4de2": {
+      "id": "11d07b0a-a61f-41a3-bfd5-b2918aba4de2",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Some institutional signals (Nasdaq investment in Gemini mentioned) point to continued institutional interest, though the result is a brief social post and needs verification (item 16).",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    }
+  },
+  "edges": [
+    {
+      "id": "a96aafe7-d98a-487b-9c78-21c098096b36",
+      "source_id": "dc631527-9ab8-4746-99cd-29884a9b66ca",
+      "target_id": "9d0f4720-9670-4b6f-ab9d-c60fb41df85a",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T04:28:48.668086"
+    },
+    {
+      "id": "6df9e70c-37fe-4db5-96ef-eac1fcb94713",
+      "source_id": "9d0f4720-9670-4b6f-ab9d-c60fb41df85a",
+      "target_id": "22f81650-b951-4bea-8a91-34a453286ad7",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T04:28:48.668086"
+    },
+    {
+      "id": "41ed4d80-76d3-4e84-8641-c6163bda502f",
+      "source_id": "dc631527-9ab8-4746-99cd-29884a9b66ca",
+      "target_id": "8bc2efbb-191c-4a9f-891d-93725c7864de",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T04:28:48.668086"
+    },
+    {
+      "id": "8c79e801-4aa3-4e7f-930d-5bb07986cda4",
+      "source_id": "8bc2efbb-191c-4a9f-891d-93725c7864de",
+      "target_id": "2a302aae-93c2-4fd1-badf-25ed604d40bd",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T04:28:48.668086"
+    },
+    {
+      "id": "83fe3cc7-0156-4587-bc7e-e344c8dacda0",
+      "source_id": "dc631527-9ab8-4746-99cd-29884a9b66ca",
+      "target_id": "1f12e09f-456d-41a5-8caf-968ad2bcd66c",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T04:28:48.668086"
+    },
+    {
+      "id": "cb8f4228-e34a-4554-b09a-b8fa2f9b74c4",
+      "source_id": "1f12e09f-456d-41a5-8caf-968ad2bcd66c",
+      "target_id": "32f2f911-0a9e-443a-8091-f43265e6a3c4",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T04:28:48.668086"
+    },
+    {
+      "id": "0c87b8cc-c800-483e-84d0-baa7ccc543fa",
+      "source_id": "dc631527-9ab8-4746-99cd-29884a9b66ca",
+      "target_id": "00670b1d-23a7-4a7f-80c7-05f9cdb15f36",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T04:28:48.668086"
+    },
+    {
+      "id": "fe4962ba-3f43-4bdb-851e-0eb3fb4cd043",
+      "source_id": "00670b1d-23a7-4a7f-80c7-05f9cdb15f36",
+      "target_id": "4a351d5f-752c-411e-afe0-112a8df28de4",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T04:28:48.668086"
+    },
+    {
+      "id": "f2901259-30ce-4d73-befe-ef903fd150dd",
+      "source_id": "dc631527-9ab8-4746-99cd-29884a9b66ca",
+      "target_id": "b450d416-c43f-4e1b-992c-e40b93d7343b",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T04:28:48.668086"
+    },
+    {
+      "id": "bb721c99-d459-472d-9de1-fb75df0953f2",
+      "source_id": "b450d416-c43f-4e1b-992c-e40b93d7343b",
+      "target_id": "38c6995f-453b-45d5-9ef4-2840d2de5843",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T04:28:48.668086"
+    },
+    {
+      "id": "4e5cc09e-0414-4ac6-a154-53eb8053f5e9",
+      "source_id": "22f81650-b951-4bea-8a91-34a453286ad7",
+      "target_id": "193f032b-91fc-4431-9624-0d1c3ba73201",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.9
+      },
+      "created_at": "2025-09-09T04:29:30.519758"
+    },
+    {
+      "id": "e56bd776-3e1c-494b-884b-16d6c7039a33",
+      "source_id": "22f81650-b951-4bea-8a91-34a453286ad7",
+      "target_id": "d855a077-6037-4c24-87a0-43947f3c8947",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.7
+      },
+      "created_at": "2025-09-09T04:29:30.519758"
+    },
+    {
+      "id": "08d37648-0f60-46d7-8718-cde2ddbed689",
+      "source_id": "22f81650-b951-4bea-8a91-34a453286ad7",
+      "target_id": "2631db39-c2d6-4e34-8452-199b93f3206d",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.85
+      },
+      "created_at": "2025-09-09T04:29:30.519758"
+    },
+    {
+      "id": "1738d587-bc1a-4440-b3f3-ebab79aa5b06",
+      "source_id": "193f032b-91fc-4431-9624-0d1c3ba73201",
+      "target_id": "360c2004-fea0-468b-a692-6169e70482e7",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-09T04:30:14.881875"
+      },
+      "created_at": "2025-09-09T04:30:14.881875"
+    },
+    {
+      "id": "d1785a49-cd12-4cf7-a6b2-77d74715d768",
+      "source_id": "d855a077-6037-4c24-87a0-43947f3c8947",
+      "target_id": "360c2004-fea0-468b-a692-6169e70482e7",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-09T04:30:14.881875"
+      },
+      "created_at": "2025-09-09T04:30:14.881875"
+    },
+    {
+      "id": "954e50fe-b365-41bf-bcbb-5c635079e1d9",
+      "source_id": "360c2004-fea0-468b-a692-6169e70482e7",
+      "target_id": "da1c76a0-d9e7-4669-9c56-855ac0e5b6f7",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The insight asserts a market-structure framework but provides no detail; knowing concrete provisions is essential to assess how regulation will enable or constrain exchanges, custody, institutional entry, and compliance costs.",
+        "priority": 0.9,
+        "created_at": "2025-09-09T04:30:42.006744"
+      },
+      "created_at": "2025-09-09T04:30:42.006744"
+    },
+    {
+      "id": "380823cc-40a4-46d4-995d-65cfb2695dc0",
+      "source_id": "360c2004-fea0-468b-a692-6169e70482e7",
+      "target_id": "ca8959b8-3e56-49dc-98bc-fefd69a0a0c6",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The summary claims \"growing bipartisan attention\" but cites a Democratic group, creating a potential contradiction\u2014bipartisanship affects the likelihood, timing, durability, and form of any legislation or oversight regime.",
+        "priority": 0.8,
+        "created_at": "2025-09-09T04:30:42.006744"
+      },
+      "created_at": "2025-09-09T04:30:42.006744"
+    },
+    {
+      "id": "cb05d39b-898f-4f34-92fa-ede5c201c85a",
+      "source_id": "360c2004-fea0-468b-a692-6169e70482e7",
+      "target_id": "4d67ea87-d908-49ee-a20d-368825a2b20c",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The insight forecasts a \"nearer-term shift\" from uncertainty to structured oversight, but without timelines it's unclear when market participants should expect regulatory changes and how that will interact with product rollout and capital flows.",
+        "priority": 0.8,
+        "created_at": "2025-09-09T04:30:42.006744"
+      },
+      "created_at": "2025-09-09T04:30:42.006744"
+    },
+    {
+      "id": "4273cb5b-f271-4561-bfa9-5cc1e48b3445",
+      "source_id": "360c2004-fea0-468b-a692-6169e70482e7",
+      "target_id": "ea7adb15-66a3-4b59-8d47-28a77ad38e56",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The insights note compliance costs could accompany legitimization, but lack estimates or analysis\u2014these costs will influence who can compete, whether smaller entrants survive, and whether retail fees or access change.",
+        "priority": 0.75,
+        "created_at": "2025-09-09T04:30:42.006744"
+      },
+      "created_at": "2025-09-09T04:30:42.006744"
+    },
+    {
+      "id": "9a7686e7-0d94-4025-b185-51bbb737b91d",
+      "source_id": "360c2004-fea0-468b-a692-6169e70482e7",
+      "target_id": "a8c207f5-c11d-40b2-91cf-07d57d549d15",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Understanding the exchange's design clarifies whether it expands retail access, targets institutional flows, or changes custody/settlement practices\u2014key to predicting market impact.",
+        "priority": 0.75,
+        "created_at": "2025-09-09T04:30:42.006744"
+      },
+      "created_at": "2025-09-09T04:30:42.006744"
+    },
+    {
+      "id": "67353fcc-70f2-4c1a-a7fd-6b6449c2f355",
+      "source_id": "360c2004-fea0-468b-a692-6169e70482e7",
+      "target_id": "ff2d3152-fc97-4398-b263-b3f57fc77baf",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "More exchanges can mean more competition, but network effects, liquidity aggregation, and trust requirements can produce concentration; the outcome affects resilience, fees, and systemic risk.",
+        "priority": 0.65,
+        "created_at": "2025-09-09T04:30:42.006744"
+      },
+      "created_at": "2025-09-09T04:30:42.006744"
+    },
+    {
+      "id": "dbf4db84-ba77-490d-ac08-369775f9949e",
+      "source_id": "360c2004-fea0-468b-a692-6169e70482e7",
+      "target_id": "04ce3a57-5720-4bb6-a708-7f1b0e098746",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Current insights omit incumbents' strategic responses; their actions will materially shape market structure, competition, and the pace of institutional adoption.",
+        "priority": 0.65,
+        "created_at": "2025-09-09T04:30:42.006744"
+      },
+      "created_at": "2025-09-09T04:30:42.007760"
+    },
+    {
+      "id": "ca696567-9fa9-4c4a-abea-5ed61e097082",
+      "source_id": "360c2004-fea0-468b-a692-6169e70482e7",
+      "target_id": "094da0ac-2841-4bfb-a6d3-c19ac8d9c6b3",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Institutional flows depend on robust custody and risk frameworks; the absence of details on standards is a gap preventing assessment of how quickly institutional capital will arrive.",
+        "priority": 0.8,
+        "created_at": "2025-09-09T04:30:42.007760"
+      },
+      "created_at": "2025-09-09T04:30:42.007760"
+    },
+    {
+      "id": "693610ce-5c43-4c3c-b503-5767e19a3081",
+      "source_id": "360c2004-fea0-468b-a692-6169e70482e7",
+      "target_id": "d98169a9-06d5-4ddc-bc07-502627854a61",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "A domestic shift to structured oversight could push certain activities to more permissive jurisdictions; that would alter where infrastructure and liquidity concentrate and has cross-border policy implications.",
+        "priority": 0.7,
+        "created_at": "2025-09-09T04:30:42.007760"
+      },
+      "created_at": "2025-09-09T04:30:42.007760"
+    },
+    {
+      "id": "5155c52d-8443-4ce4-b1c4-a8d884dffbc3",
+      "source_id": "360c2004-fea0-468b-a692-6169e70482e7",
+      "target_id": "52260efe-99bb-4d31-a1be-2533551b4505",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The insight predicts increased capital flows but doesn't analyze market microstructure impacts; understanding liquidity and volatility implications is important for risk management and policymaking.",
+        "priority": 0.6,
+        "created_at": "2025-09-09T04:30:42.007760"
+      },
+      "created_at": "2025-09-09T04:30:42.007760"
+    },
+    {
+      "id": "db4ffa8a-f7b5-41e8-abe9-721eac6b5b37",
+      "source_id": "360c2004-fea0-468b-a692-6169e70482e7",
+      "target_id": "a5ae63c2-b536-4aa3-b48d-5a2769db78b9",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Expanding retail access without adequate protections can increase investor losses and political backlash; the insights don't address safeguards, a key gap for sustainable growth.",
+        "priority": 0.6,
+        "created_at": "2025-09-09T04:30:42.007760"
+      },
+      "created_at": "2025-09-09T04:30:42.007760"
+    },
+    {
+      "id": "79ff5d37-6eed-47b8-9c60-ee3571e16134",
+      "source_id": "360c2004-fea0-468b-a692-6169e70482e7",
+      "target_id": "4f78cb44-a3a3-4407-9e64-09d591dfe19a",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Mainstreaming can shift incentives toward centralized custody and infrastructure, potentially affecting decentralization and long-term protocol resilience\u2014an area not covered by the provided insights.",
+        "priority": 0.55,
+        "created_at": "2025-09-09T04:30:42.007760"
+      },
+      "created_at": "2025-09-09T04:30:42.007760"
+    },
+    {
+      "id": "5568074d-a7b0-4b10-a98b-5dcf056109ae",
+      "source_id": "2631db39-c2d6-4e34-8452-199b93f3206d",
+      "target_id": "9f264838-cec6-49e6-95ba-559f326cacb2",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-09T04:30:53.109556"
+      },
+      "created_at": "2025-09-09T04:30:53.109556"
+    },
+    {
+      "id": "420ae2dd-d2d8-4444-a018-b0414dae50d9",
+      "source_id": "d855a077-6037-4c24-87a0-43947f3c8947",
+      "target_id": "9f264838-cec6-49e6-95ba-559f326cacb2",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-09T04:30:53.109556"
+      },
+      "created_at": "2025-09-09T04:30:53.109556"
+    },
+    {
+      "id": "6eb0a564-4222-4955-acf5-5d4a91f62613",
+      "source_id": "9f264838-cec6-49e6-95ba-559f326cacb2",
+      "target_id": "b125f359-fde4-40b9-b7f8-0e9667de5c25",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Both insights point to accelerating legitimization via political and commercial developments, but it's unclear whether regulation will predominantly enable growth (through clarity and trust) or impose frictions (costs, gatekeeping) that slow certain participants.",
+        "priority": 0.95,
+        "created_at": "2025-09-09T04:31:32.034111"
+      },
+      "created_at": "2025-09-09T04:31:32.034111"
+    },
+    {
+      "id": "218a848c-d2bc-4429-adc0-d6ae44333829",
+      "source_id": "9f264838-cec6-49e6-95ba-559f326cacb2",
+      "target_id": "89bbb2eb-a340-411c-9dc2-d85655525d80",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The insight highlights concentrated accumulation by a non\u2011exchange actor that can materially alter float and price dynamics; understanding the durability and exit risks of those holdings is critical for assessing market stability.",
+        "priority": 0.9,
+        "created_at": "2025-09-09T04:31:32.034111"
+      },
+      "created_at": "2025-09-09T04:31:32.034111"
+    },
+    {
+      "id": "91c258c8-b599-4c55-b2ad-18fed7c3ff48",
+      "source_id": "9f264838-cec6-49e6-95ba-559f326cacb2",
+      "target_id": "023ac2ea-af15-4cfb-a415-d4d79e0671b7",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The two findings together imply rising demand plus declining available float; this tension may produce elevated volatility, widening spreads, or incentivize new issuance/OTC mechanisms, and needs clarification.",
+        "priority": 0.85,
+        "created_at": "2025-09-09T04:31:32.034111"
+      },
+      "created_at": "2025-09-09T04:31:32.034111"
+    },
+    {
+      "id": "8d1c2dab-6463-405a-90ed-0be149b95fe7",
+      "source_id": "9f264838-cec6-49e6-95ba-559f326cacb2",
+      "target_id": "e328868a-7d94-4cbc-a4ad-5f4eedda3b33",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Concentration in a single, non\u2011exchange entity raises counterparty risk and regulatory interest; opacity about reserves or custody arrangements would increase uncertainty and require targeted investigation.",
+        "priority": 0.92,
+        "created_at": "2025-09-09T04:31:32.034111"
+      },
+      "created_at": "2025-09-09T04:31:32.034111"
+    },
+    {
+      "id": "1ba8e4b5-ab3e-4ed7-a982-d357cb1c782e",
+      "source_id": "9f264838-cec6-49e6-95ba-559f326cacb2",
+      "target_id": "7ef7cd6f-c09f-47cd-a71c-4d25d8144fd9",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The combination of political momentum and commercial expansion suggests regulators may broaden focus beyond exchanges/ETFs to other infrastructure providers; anticipating regulatory targets affects risk assessment and strategic planning.",
+        "priority": 0.88,
+        "created_at": "2025-09-09T04:31:32.034111"
+      },
+      "created_at": "2025-09-09T04:31:32.034111"
+    },
+    {
+      "id": "f5e370e2-a396-4651-a96a-5f6aaa6675a0",
+      "source_id": "9f264838-cec6-49e6-95ba-559f326cacb2",
+      "target_id": "1565fa2d-3a30-48ee-aaa3-65456a012ee1",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "A high\u2011profile entrepreneurial entrant can rapidly expand retail access, but the nature of its compliance and jurisdictional choices will determine both adoption trajectory and regulatory responses.",
+        "priority": 0.75,
+        "created_at": "2025-09-09T04:31:32.034111"
+      },
+      "created_at": "2025-09-09T04:31:32.034111"
+    },
+    {
+      "id": "3b36fb31-d893-4dd6-abec-e0752ee80900",
+      "source_id": "9f264838-cec6-49e6-95ba-559f326cacb2",
+      "target_id": "dc0e39b5-7bc1-41f9-98db-8219eaa13227",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Insights suggest a market transition from ETF\u2011centric flows toward a broader ecosystem; understanding cross\u2011channel interactions is necessary to forecast liquidity, price discovery, and market resilience.",
+        "priority": 0.8,
+        "created_at": "2025-09-09T04:31:32.034111"
+      },
+      "created_at": "2025-09-09T04:31:32.034111"
+    },
+    {
+      "id": "a25f4717-2839-4572-b8a5-0c23a3443535",
+      "source_id": "9f264838-cec6-49e6-95ba-559f326cacb2",
+      "target_id": "0f4fc20f-cefb-4061-a6ff-7d3875fae8e6",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Both insights imply infrastructure build\u2011out and accumulation by big players; identifying concentration points is essential to assess systemic risk and regulatory priorities.",
+        "priority": 0.86,
+        "created_at": "2025-09-09T04:31:32.034111"
+      },
+      "created_at": "2025-09-09T04:31:32.034111"
+    },
+    {
+      "id": "870fba82-be1c-469a-b0cc-e226741d323a",
+      "source_id": "9f264838-cec6-49e6-95ba-559f326cacb2",
+      "target_id": "ac8e5ae4-af62-4751-93c4-4c7ab7202689",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The analysis relies on inferred changes in float, accumulation, and flows, but current visibility is limited; targeted data improvements are necessary to validate hypotheses and quantify impacts.",
+        "priority": 0.9,
+        "created_at": "2025-09-09T04:31:32.034111"
+      },
+      "created_at": "2025-09-09T04:31:32.034111"
+    },
+    {
+      "id": "3986e10c-ecaf-417f-83dd-cf544044a0ca",
+      "source_id": "9f264838-cec6-49e6-95ba-559f326cacb2",
+      "target_id": "fab6c9c9-ffa1-4981-b762-fd6b470c1a1b",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Large concentrated holdings plus expanding retail distribution could enable market power or manipulative strategies (intentional or not); this is an important regulatory and market\u2011integrity concern.",
+        "priority": 0.7,
+        "created_at": "2025-09-09T04:31:32.034111"
+      },
+      "created_at": "2025-09-09T04:31:32.034111"
+    },
+    {
+      "id": "f5cce7bd-5ddc-4308-9343-7798a3a33333",
+      "source_id": "9f264838-cec6-49e6-95ba-559f326cacb2",
+      "target_id": "6cbc2ac0-e1a2-49b6-beb0-8d3becb0c76a",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The political insight is U.S. Senate\u2011focused while the commercial actor may operate cross\u2011border; understanding geographic scope affects regulatory arbitrage, competitive dynamics, and adoption patterns.",
+        "priority": 0.65,
+        "created_at": "2025-09-09T04:31:32.034111"
+      },
+      "created_at": "2025-09-09T04:31:32.034111"
+    },
+    {
+      "id": "7d147e69-c58f-4a7a-9e32-3f0bb76244e3",
+      "source_id": "193f032b-91fc-4431-9624-0d1c3ba73201",
+      "target_id": "58e84476-afec-448b-9a67-551931693dec",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-09T04:32:55.472561"
+      },
+      "created_at": "2025-09-09T04:32:55.472561"
+    },
+    {
+      "id": "6e26fd5c-75ec-48ce-b798-faa8eb7265ef",
+      "source_id": "2631db39-c2d6-4e34-8452-199b93f3206d",
+      "target_id": "58e84476-afec-448b-9a67-551931693dec",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-09T04:32:55.472561"
+      },
+      "created_at": "2025-09-09T04:32:55.472561"
+    },
+    {
+      "id": "a04b68e4-e632-4fbf-8934-e0ee28b369d0",
+      "source_id": "58e84476-afec-448b-9a67-551931693dec",
+      "target_id": "9c15149c-7993-4634-ab21-4a05e319daaa",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Insights highlight a potential mismatch: lawmakers are focused on exchanges/custody while the largest net buying is occurring via stablecoin issuance and on\u2011chain flows. Whether legislation covers stablecoins will determine if it meaningfully influences the primary demand channel.",
+        "priority": 0.95,
+        "created_at": "2025-09-09T04:33:23.663589"
+      },
+      "created_at": "2025-09-09T04:33:23.663589"
+    },
+    {
+      "id": "ed302af8-fb2d-4f5e-8325-9263f86f5d56",
+      "source_id": "58e84476-afec-448b-9a67-551931693dec",
+      "target_id": "79ad5e0d-8674-45e8-b96b-fab137e411d2",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The assertions that accumulation reduces available float and creates upward price pressure depend on whether coins are effectively removed from liquid supply or remain accessible via OTC/addresses; the actual liquidity impact needs quantification.",
+        "priority": 0.9,
+        "created_at": "2025-09-09T04:33:23.663589"
+      },
+      "created_at": "2025-09-09T04:33:23.663589"
+    },
+    {
+      "id": "85f4494c-1195-47ba-9887-7f05acb5e229",
+      "source_id": "58e84476-afec-448b-9a67-551931693dec",
+      "target_id": "352c764b-515f-437d-8481-57a437f772d9",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Concentration and counterparty risk hinge on who controls the accumulated BTC; if holdings are concentrated or custodial in ways that create single\u2011point risks, systemic implications differ materially.",
+        "priority": 0.85,
+        "created_at": "2025-09-09T04:33:23.663589"
+      },
+      "created_at": "2025-09-09T04:33:23.663589"
+    },
+    {
+      "id": "2420b3b6-9de0-4aa4-9fcf-988f5fb624f6",
+      "source_id": "58e84476-afec-448b-9a67-551931693dec",
+      "target_id": "8dbe2087-714a-487f-8af8-a0d409394588",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Legislative focus on market structure may not translate to control over off\u2011exchange/stablecoin\u2011driven demand unless rules explicitly address settlement and off\u2011ramp/on\u2011ramp rules; this interaction is critical to policy effectiveness.",
+        "priority": 0.9,
+        "created_at": "2025-09-09T04:33:23.663589"
+      },
+      "created_at": "2025-09-09T04:33:23.663589"
+    },
+    {
+      "id": "19a7d2d6-bb1e-4a16-a630-88102da914fc",
+      "source_id": "58e84476-afec-448b-9a67-551931693dec",
+      "target_id": "37910ec3-75bc-4f20-af6c-a98f152f0272",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The commercial signal of a new exchange is important only insofar as its design affects user trust, on\u2011ramp scale, and interaction with existing liquidity providers; details will shape adoption and competitive dynamics.",
+        "priority": 0.75,
+        "created_at": "2025-09-09T04:33:23.663589"
+      },
+      "created_at": "2025-09-09T04:33:23.663589"
+    },
+    {
+      "id": "ba486abc-27f2-41f8-8826-f1c34183ee20",
+      "source_id": "58e84476-afec-448b-9a67-551931693dec",
+      "target_id": "ca232904-61b6-4158-851f-ae53f411ecbb",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Policy and market inferences depend on data accuracy; if the 27,700 BTC figure is misattributed or incomplete, conclusions about demand and concentration may be flawed.",
+        "priority": 0.7,
+        "created_at": "2025-09-09T04:33:23.663589"
+      },
+      "created_at": "2025-09-09T04:33:23.663589"
+    },
+    {
+      "id": "1b4faf50-46dd-4aac-8229-a349d9d81112",
+      "source_id": "58e84476-afec-448b-9a67-551931693dec",
+      "target_id": "8c4d54bc-3f24-400d-b320-87b75c03ed3c",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Identifying stress scenarios is necessary to evaluate systemic risk from concentration and new retail access; it reveals which entities/regulatory levers matter most in a crisis.",
+        "priority": 0.88,
+        "created_at": "2025-09-09T04:33:23.663589"
+      },
+      "created_at": "2025-09-09T04:33:23.663589"
+    },
+    {
+      "id": "715fdeb5-cd34-4ed1-878a-7a9d31c1a40f",
+      "source_id": "58e84476-afec-448b-9a67-551931693dec",
+      "target_id": "4b116f28-9c7a-414b-8e4f-dab239004312",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Understanding transmission lags and behavioral responses is needed to forecast the market impact of plausible regulatory interventions.",
+        "priority": 0.85,
+        "created_at": "2025-09-09T04:33:23.663589"
+      },
+      "created_at": "2025-09-09T04:33:23.663589"
+    },
+    {
+      "id": "7bd1c952-4666-47b5-b3d0-b871820ae1db",
+      "source_id": "58e84476-afec-448b-9a67-551931693dec",
+      "target_id": "ee002d8a-61ae-454c-8893-e94cca814d2e",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The extent to which retail inflows change market dynamics vs institutional/stablecoin accumulation affects volatility, turnover, and product design for custody/liquidity providers.",
+        "priority": 0.6,
+        "created_at": "2025-09-09T04:33:23.663589"
+      },
+      "created_at": "2025-09-09T04:33:23.663589"
+    },
+    {
+      "id": "c17d7150-3f5c-477a-a793-b5ac802a6c7e",
+      "source_id": "58e84476-afec-448b-9a67-551931693dec",
+      "target_id": "4443ff1c-4801-43b7-a33f-ef2bad6300a3",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Insights imply a shift away from an ETF\u2011centric model toward a diversified ecosystem; the resulting inter\u2011firm relationships could create new concentration points or fragmentation that matter for regulation and resilience.",
+        "priority": 0.65,
+        "created_at": "2025-09-09T04:33:23.663589"
+      },
+      "created_at": "2025-09-09T04:33:23.663589"
+    },
+    {
+      "id": "13e48903-d021-45f5-92f8-53ec2db1b81f",
+      "source_id": "58e84476-afec-448b-9a67-551931693dec",
+      "target_id": "3899c48f-ea7b-400e-9de7-4da24f2fc069",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Effective oversight requires visibility into the very channels (stablecoins, off\u2011exchange accumulation) that current legislative focus may miss; defining metrics is a practical gap to fill.",
+        "priority": 0.8,
+        "created_at": "2025-09-09T04:33:23.663589"
+      },
+      "created_at": "2025-09-09T04:33:23.663589"
+    },
+    {
+      "id": "2dea315d-a489-47ab-a634-c98fda11878a",
+      "source_id": "58e84476-afec-448b-9a67-551931693dec",
+      "target_id": "4120aba4-f643-4634-a18c-5da8d3150330",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The pace of private\u2011sector buildout vs policy implementation determines whether market participants can lock in behaviors before rules bind, affecting regulatory efficacy and short\u2011term market risks.",
+        "priority": 0.72,
+        "created_at": "2025-09-09T04:33:23.663589"
+      },
+      "created_at": "2025-09-09T04:33:23.663589"
+    },
+    {
+      "id": "7f1ed327-59b1-4bf0-8730-aaf04748b2af",
+      "source_id": "d855a077-6037-4c24-87a0-43947f3c8947",
+      "target_id": "c89a3204-c5cf-45db-b8ae-f517adcbcb2a",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-09T04:33:32.679548"
+      },
+      "created_at": "2025-09-09T04:33:32.679548"
+    },
+    {
+      "id": "87d7dd2f-d689-4467-9a76-99aee6022695",
+      "source_id": "2631db39-c2d6-4e34-8452-199b93f3206d",
+      "target_id": "c89a3204-c5cf-45db-b8ae-f517adcbcb2a",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-09T04:33:32.679548"
+      },
+      "created_at": "2025-09-09T04:33:32.679548"
+    },
+    {
+      "id": "0b61f357-59f6-4851-b199-f5bc4081a5db",
+      "source_id": "c89a3204-c5cf-45db-b8ae-f517adcbcb2a",
+      "target_id": "674fd31b-aeee-46a1-a71c-27c62e7ee550",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Multiple insights flag a potential mismatch: lawmakers appear to target market-structure/institutional frameworks while the largest net buying is occurring via stablecoin issuance and on\u2011chain transfers. If the draft legislation omits stablecoins or on\u2011chain mechanics, reforms may fail to influence the primary demand channels driving price and liquidity.",
+        "priority": 0.95,
+        "created_at": "2025-09-09T04:33:59.088274"
+      },
+      "created_at": "2025-09-09T04:33:59.088274"
+    },
+    {
+      "id": "0151dcf7-5fad-4e71-8850-406badf40159",
+      "source_id": "c89a3204-c5cf-45db-b8ae-f517adcbcb2a",
+      "target_id": "c7aedb22-e0ff-4e8e-b608-d9970092dead",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Tether's sizable on\u2011chain accumulation is a key driver of net demand and concentration risk, but the insights don't explain why Tether is buying or how purchases are funded, which matters for sustainability and systemic risk.",
+        "priority": 0.85,
+        "created_at": "2025-09-09T04:33:59.088274"
+      },
+      "created_at": "2025-09-09T04:33:59.088274"
+    },
+    {
+      "id": "05939d65-8dcd-457b-be2c-f41c6079c60a",
+      "source_id": "c89a3204-c5cf-45db-b8ae-f517adcbcb2a",
+      "target_id": "9fef4785-bb4f-45fb-873c-87720acfdee7",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Understanding whether these BTC purchases occurred via exchanges, OTC desks, or internal transfers affects counterparty risk, AML/KYC exposure, and the efficacy of exchange\u2011focused regulation.",
+        "priority": 0.88,
+        "created_at": "2025-09-09T04:33:59.088274"
+      },
+      "created_at": "2025-09-09T04:33:59.088274"
+    },
+    {
+      "id": "8441c0b4-459d-4273-8e6b-be752debeae5",
+      "source_id": "c89a3204-c5cf-45db-b8ae-f517adcbcb2a",
+      "target_id": "8967f139-f5ce-4381-a19f-5720e62d99e3",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Insights assert lower circulating liquidity and upward price pressure, but lack quantification. Measuring the removed float is necessary to model market impact and stress scenarios.",
+        "priority": 0.82,
+        "created_at": "2025-09-09T04:33:59.088274"
+      },
+      "created_at": "2025-09-09T04:33:59.088274"
+    },
+    {
+      "id": "76468adc-e790-46bc-8fe8-22cdbbd3527d",
+      "source_id": "c89a3204-c5cf-45db-b8ae-f517adcbcb2a",
+      "target_id": "809c1682-c52f-4c7b-b2a2-c47ff89c4eb5",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "A mainstream entrepreneur launching an exchange increases retail access, but the custody model determines counterparty concentration, insurer exposure, and regulatory oversight needs.",
+        "priority": 0.74,
+        "created_at": "2025-09-09T04:33:59.088274"
+      },
+      "created_at": "2025-09-09T04:33:59.088274"
+    },
+    {
+      "id": "da0d4ac8-a9af-4e89-a316-89afb497239b",
+      "source_id": "c89a3204-c5cf-45db-b8ae-f517adcbcb2a",
+      "target_id": "a6ba3a5b-a7f3-4d02-a3dc-59e2eec9c3fa",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Convergence of political attention and private\u2011sector on\u2011chain activity could either centralize oversight or push activity into jurisdictions/venues not covered by the legislation, affecting the effectiveness of oversight.",
+        "priority": 0.84,
+        "created_at": "2025-09-09T04:33:59.088274"
+      },
+      "created_at": "2025-09-09T04:33:59.088274"
+    },
+    {
+      "id": "4fb67cf8-865a-4e2c-b346-d62f2f40a86e",
+      "source_id": "c89a3204-c5cf-45db-b8ae-f517adcbcb2a",
+      "target_id": "87ed4dbb-8982-4393-9d65-c6b5a99f496d",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Insights link accumulation and new retail on\u2011ramps as joint drivers of demand, but the relationship between them is unclear; correlation/causation affects where regulatory focus should lie.",
+        "priority": 0.76,
+        "created_at": "2025-09-09T04:33:59.088274"
+      },
+      "created_at": "2025-09-09T04:33:59.088274"
+    },
+    {
+      "id": "5559543e-1ac6-4308-85a2-cdf89ca642dc",
+      "source_id": "c89a3204-c5cf-45db-b8ae-f517adcbcb2a",
+      "target_id": "e565cdb6-20ba-4bec-aef9-171ee9c2b0b2",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "If regulatory proposals remain exchange/ETF centric without strong on\u2011chain surveillance rules, regulators may lack tools to monitor or constrain the dominant demand channels identified (stablecoin treasuries).",
+        "priority": 0.9,
+        "created_at": "2025-09-09T04:33:59.088274"
+      },
+      "created_at": "2025-09-09T04:33:59.088274"
+    },
+    {
+      "id": "a8ef4dca-9b67-46ad-9c3e-8ad524df2a3f",
+      "source_id": "c89a3204-c5cf-45db-b8ae-f517adcbcb2a",
+      "target_id": "7c1e8af3-55f0-45f9-b248-461e2890dd92",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Concentration risk implies tail events could meaningfully alter price and liquidity; the insights imply such risk but do not present scenario modeling to guide contingency planning.",
+        "priority": 0.8,
+        "created_at": "2025-09-09T04:33:59.088274"
+      },
+      "created_at": "2025-09-09T04:33:59.088274"
+    },
+    {
+      "id": "2ff3a0cb-ba32-44e7-be1f-529561ad3c30",
+      "source_id": "c89a3204-c5cf-45db-b8ae-f517adcbcb2a",
+      "target_id": "fd8c0dd3-ba14-4291-86d1-02b1baab6931",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "A mainstream entrepreneur launching an exchange can increase adoption, but jurisdictional choices can create gaps in enforcement and enable regulatory arbitrage\u2014an investigative blind spot in the current insights.",
+        "priority": 0.65,
+        "created_at": "2025-09-09T04:33:59.088274"
+      },
+      "created_at": "2025-09-09T04:33:59.088274"
+    },
+    {
+      "id": "e10b7313-c0db-4001-b643-31abaf519351",
+      "source_id": "32f2f911-0a9e-443a-8091-f43265e6a3c4",
+      "target_id": "4627092a-74ab-4c9d-8710-aedb4a2853b4",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.9
+      },
+      "created_at": "2025-09-09T04:34:22.241160"
+    },
+    {
+      "id": "a74fb465-5571-4194-b40e-4aa809455147",
+      "source_id": "2631db39-c2d6-4e34-8452-199b93f3206d",
+      "target_id": "9a83d872-5690-485d-a5f1-4700aa3c2251",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-09T04:35:08.503056"
+      },
+      "created_at": "2025-09-09T04:35:08.503056"
+    },
+    {
+      "id": "13a77f20-f011-4255-aa81-282a0ae59746",
+      "source_id": "d855a077-6037-4c24-87a0-43947f3c8947",
+      "target_id": "9a83d872-5690-485d-a5f1-4700aa3c2251",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-09T04:35:08.503056"
+      },
+      "created_at": "2025-09-09T04:35:08.503056"
+    },
+    {
+      "id": "b7ec6a7e-7141-495a-9ed8-6a4f0486cb29",
+      "source_id": "9a83d872-5690-485d-a5f1-4700aa3c2251",
+      "target_id": "138e4e31-e727-4192-8638-112c1527a8f3",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Multiple insights flag a potential mismatch between lawmakers\u2019 focus (market structure, exchanges, ETFs, custody) and the primary net buyers/settlement channels (stablecoin issuers and on\u2011chain flows). If the draft omits stablecoins, regulatory changes may miss a dominant demand channel or create unintended loopholes.",
+        "priority": 0.98,
+        "created_at": "2025-09-09T04:35:44.783871"
+      },
+      "created_at": "2025-09-09T04:35:44.783871"
+    },
+    {
+      "id": "bb4c5512-9432-4ac4-8535-710883eb1649",
+      "source_id": "9a83d872-5690-485d-a5f1-4700aa3c2251",
+      "target_id": "7ae06b30-917c-4da4-817b-e2a37faa449c",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The Tether accumulation figure is central to several conclusions (supply tightening, concentration risk). Understanding data provenance, on\u2011chain analysis methods, and uncertainties is critical before acting on that signal.",
+        "priority": 0.95,
+        "created_at": "2025-09-09T04:35:44.783871"
+      },
+      "created_at": "2025-09-09T04:35:44.783871"
+    },
+    {
+      "id": "9c50fab9-393b-41d3-b6af-58b5c1204f81",
+      "source_id": "9a83d872-5690-485d-a5f1-4700aa3c2251",
+      "target_id": "31ec84cc-9f6b-4950-aa7a-35ec7500973d",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Policy and market-impact assessments hinge on whether Tether\u2019s BTC materially reduces circulating float or simply rotates through custody. Liquidity characteristics determine price sensitivity and systemic risk.",
+        "priority": 0.93,
+        "created_at": "2025-09-09T04:35:44.783871"
+      },
+      "created_at": "2025-09-09T04:35:44.783871"
+    },
+    {
+      "id": "25c982d0-5ec5-4d41-bf72-08a0a13a717d",
+      "source_id": "9a83d872-5690-485d-a5f1-4700aa3c2251",
+      "target_id": "d92cd916-a538-42a4-8074-f00a831f3acb",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Several insights point to concentration and custodial risk. Identifying counterparties and their resilience is necessary to assess counterparty and systemic risk if large holders or a new exchange face stress.",
+        "priority": 0.94,
+        "created_at": "2025-09-09T04:35:44.783871"
+      },
+      "created_at": "2025-09-09T04:35:44.783871"
+    },
+    {
+      "id": "3d272b3b-31e1-41ec-a322-4d62e743e7ce",
+      "source_id": "9a83d872-5690-485d-a5f1-4700aa3c2251",
+      "target_id": "59b90acf-7ebf-429d-bb97-11c630b0a50f",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "If policymakers regulate only exchange/ETF flows, large stablecoin\u2011mediated on\u2011chain accumulation could remain opaque and unmonitored, undermining regulatory objectives and enabling regulatory arbitrage.",
+        "priority": 0.97,
+        "created_at": "2025-09-09T04:35:44.783871"
+      },
+      "created_at": "2025-09-09T04:35:44.783871"
+    },
+    {
+      "id": "3961a8ff-4398-4bba-bb52-c8df6352bd8f",
+      "source_id": "9a83d872-5690-485d-a5f1-4700aa3c2251",
+      "target_id": "429c5daf-96b1-4edf-895f-0a7a97420b62",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Multiple insights warn of concentration risk. Quantifying the systemic and market\u2011manipulation vectors is necessary to determine whether and how to impose limits, disclosure, or stress testing.",
+        "priority": 0.96,
+        "created_at": "2025-09-09T04:35:44.783871"
+      },
+      "created_at": "2025-09-09T04:35:44.783871"
+    },
+    {
+      "id": "4cb69bc6-4ab6-4112-b126-a82adbf3ca6c",
+      "source_id": "9a83d872-5690-485d-a5f1-4700aa3c2251",
+      "target_id": "5ebc8f61-7ca8-4c00-9056-02a56504e315",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Assumptions about accelerating retail on\u2011ramps influence forecasts for demand growth and infrastructure strain. Assessing the exchange\u2019s expected liquidity providers, fee structure, and user acquisition plans tests that assumption.",
+        "priority": 0.86,
+        "created_at": "2025-09-09T04:35:44.783871"
+      },
+      "created_at": "2025-09-09T04:35:44.783871"
+    },
+    {
+      "id": "bce51310-0a76-432f-97c6-72a59d3573e3",
+      "source_id": "9a83d872-5690-485d-a5f1-4700aa3c2251",
+      "target_id": "b825f128-62b1-461a-b12c-8260988bc8f2",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Insights suggest regulation will both enable growth and impose costs. Understanding whether compliance burdens concentrate activity in incumbents or deter new entrants is important for market structure projections.",
+        "priority": 0.78,
+        "created_at": "2025-09-09T04:35:44.783871"
+      },
+      "created_at": "2025-09-09T04:35:44.783871"
+    },
+    {
+      "id": "93d9b475-0e66-4082-b953-fdd11b4cd623",
+      "source_id": "9a83d872-5690-485d-a5f1-4700aa3c2251",
+      "target_id": "51cf14fd-c979-4dcc-a32b-6056954ec7f0",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Effective oversight of a market that blends traditional market infrastructure and on\u2011chain flows requires interagency coordination; gaps could leave major demand channels unregulated.",
+        "priority": 0.9,
+        "created_at": "2025-09-09T04:35:44.783871"
+      },
+      "created_at": "2025-09-09T04:35:44.783871"
+    },
+    {
+      "id": "cd221da7-9e6b-4cb9-99ba-40678ff92ce3",
+      "source_id": "9a83d872-5690-485d-a5f1-4700aa3c2251",
+      "target_id": "1c5ec649-eb60-400e-9613-0df6253aa426",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Several insights infer near\u2011term shifts in supply/demand and market structure. Aligning timelines is necessary to model short\u2011 vs medium\u2011term price and liquidity outcomes and to prioritize monitoring.",
+        "priority": 0.8,
+        "created_at": "2025-09-09T04:35:44.783871"
+      },
+      "created_at": "2025-09-09T04:35:44.783871"
+    },
+    {
+      "id": "dfff3b72-5ee4-4e5d-a07a-3b7fd7b66de2",
+      "source_id": "9a83d872-5690-485d-a5f1-4700aa3c2251",
+      "target_id": "dc281d7e-d0b6-48c1-ba9c-6372febdc8e5",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "If major flows are hidden off\u2011exchange, public metrics (ETF flows, exchange volumes) may misrepresent true demand, leading to mispriced risk and flawed policymaker or investor responses.",
+        "priority": 0.88,
+        "created_at": "2025-09-09T04:35:44.783871"
+      },
+      "created_at": "2025-09-09T04:35:44.783871"
+    },
+    {
+      "id": "11f7105f-834f-4bb7-b2dc-a0960fd48560",
+      "source_id": "193f032b-91fc-4431-9624-0d1c3ba73201",
+      "target_id": "3165ef12-972f-40a2-bf50-f306145a9f4c",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-09T04:35:55.403631"
+      },
+      "created_at": "2025-09-09T04:35:55.403631"
+    },
+    {
+      "id": "37bfd2a1-cd60-41f7-af71-510f5d7caf5e",
+      "source_id": "d855a077-6037-4c24-87a0-43947f3c8947",
+      "target_id": "3165ef12-972f-40a2-bf50-f306145a9f4c",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-09T04:35:55.403631"
+      },
+      "created_at": "2025-09-09T04:35:55.403631"
+    },
+    {
+      "id": "f93aaf90-4c34-4f89-9052-64b4f124a213",
+      "source_id": "3165ef12-972f-40a2-bf50-f306145a9f4c",
+      "target_id": "58f52805-e0a5-41f4-b0c1-fcbd177b9da1",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Multiple insights flag a potential mismatch: lawmakers are targeting market structure (exchanges, custody, ETFs) while a large share of net demand is happening via stablecoin issuers on\u2011chain. Knowing whether legislation covers stablecoins determines whether the primary demand channel will be regulated or remain opaque.",
+        "priority": 0.98,
+        "created_at": "2025-09-09T04:36:27.961533"
+      },
+      "created_at": "2025-09-09T04:36:27.961533"
+    },
+    {
+      "id": "e6ed63cf-8606-470e-ab60-e703088aaa63",
+      "source_id": "3165ef12-972f-40a2-bf50-f306145a9f4c",
+      "target_id": "590f87f1-8131-47df-adfb-7b416d771c25",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The scale and mechanism of Tether\u2019s purchases materially affect liquidity and counterparty concentration risk. The insights assume large off\u2011exchange accumulation but do not detail how those BTC were acquired or where they are held.",
+        "priority": 0.97,
+        "created_at": "2025-09-09T04:36:27.961533"
+      },
+      "created_at": "2025-09-09T04:36:27.961533"
+    },
+    {
+      "id": "047b9a25-4129-4721-86f3-110b00371801",
+      "source_id": "3165ef12-972f-40a2-bf50-f306145a9f4c",
+      "target_id": "4b639341-d7ab-4243-8a3d-2aa6ab2f4bda",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Several insights highlight concentration risk but lack measurements of custody concentration, counterparty exposures, and single\u2011point failure scenarios that could amplify market stress.",
+        "priority": 0.95,
+        "created_at": "2025-09-09T04:36:27.961533"
+      },
+      "created_at": "2025-09-09T04:36:27.961533"
+    },
+    {
+      "id": "4129db3d-e4e5-45ef-910f-5e4089bd76e1",
+      "source_id": "3165ef12-972f-40a2-bf50-f306145a9f4c",
+      "target_id": "4efe7102-5d21-4cb1-8038-b4f27f37cd4d",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The market impact (retail onboarding, liquidity shifts, compliance costs) depends on the exchange\u2019s business model and partner choices\u2014information not provided in the insights.",
+        "priority": 0.88,
+        "created_at": "2025-09-09T04:36:27.961533"
+      },
+      "created_at": "2025-09-09T04:36:27.961533"
+    },
+    {
+      "id": "765498dc-0924-44a7-b2d2-2e43aefd9436",
+      "source_id": "3165ef12-972f-40a2-bf50-f306145a9f4c",
+      "target_id": "164f609e-8e5d-4967-92ad-35b607b8cf3f",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Insights assert a diversification of demand away from ETFs but lack a quantitative breakdown. Understanding the relative magnitudes is crucial for assessing price drivers and policy impact.",
+        "priority": 0.96,
+        "created_at": "2025-09-09T04:36:27.961533"
+      },
+      "created_at": "2025-09-09T04:36:27.961533"
+    },
+    {
+      "id": "0af6d65e-7c89-4fae-96bd-f060f251f58a",
+      "source_id": "3165ef12-972f-40a2-bf50-f306145a9f4c",
+      "target_id": "d6743ef8-3ec2-40b3-8998-cca7b331ced1",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Multiple insights infer tightening supply from off\u2011exchange accumulation. Quantifying changes in exchange float and long\u2011term holdings is necessary to evaluate upward price pressure and liquidity risk.",
+        "priority": 0.94,
+        "created_at": "2025-09-09T04:36:27.961533"
+      },
+      "created_at": "2025-09-09T04:36:27.961533"
+    },
+    {
+      "id": "58fd25e5-5c89-4fa8-825f-4dc0f2cff54b",
+      "source_id": "3165ef12-972f-40a2-bf50-f306145a9f4c",
+      "target_id": "e338774a-a847-4654-8cb0-c13959e121ba",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "If regulation tightens AML/KYC or reporting for stablecoin issuers or OTC desks, the main demand channel identified (Tether/treasury buys) could be disrupted\u2014this risk is repeatedly suggested but not confirmed in the insights.",
+        "priority": 0.92,
+        "created_at": "2025-09-09T04:36:27.961533"
+      },
+      "created_at": "2025-09-09T04:36:27.961533"
+    },
+    {
+      "id": "1f3188b1-daa1-4365-8ba7-82629994664a",
+      "source_id": "3165ef12-972f-40a2-bf50-f306145a9f4c",
+      "target_id": "52ecf206-9e2a-49ad-8e46-9568f91e313f",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The investigation needs practical telemetry (metrics, feeds) to detect large off\u2011exchange accumulation and shifting liquidity; the insights point to opaque buyers but don\u2019t specify monitoring approaches.",
+        "priority": 0.9,
+        "created_at": "2025-09-09T04:36:27.962047"
+      },
+      "created_at": "2025-09-09T04:36:27.962047"
+    },
+    {
+      "id": "b42c111c-c4f9-4778-9c73-533227d732b0",
+      "source_id": "3165ef12-972f-40a2-bf50-f306145a9f4c",
+      "target_id": "2867ed03-117f-4196-b6a8-2f9a3a635243",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Insights suggest compliance costs and consolidation risk but do not identify which types of firms (small retail exchanges, crypto\u2011native custodians, stablecoin treasuries) are most vulnerable\u2014this affects forecasting and risk mapping.",
+        "priority": 0.85,
+        "created_at": "2025-09-09T04:36:27.962047"
+      },
+      "created_at": "2025-09-09T04:36:27.962047"
+    },
+    {
+      "id": "3e9c75ad-7679-4fc6-a4ab-f0bb30199adc",
+      "source_id": "3165ef12-972f-40a2-bf50-f306145a9f4c",
+      "target_id": "2fae53d7-e95b-4ca3-9159-4eecc8b7d6c3",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Stablecoin treasuries and opaque accumulators may create different dynamics (less transparency, quicker concentration moves) compared with regulated ETFs; insights imply risk but don\u2019t explore mechanisms.",
+        "priority": 0.89,
+        "created_at": "2025-09-09T04:36:27.962047"
+      },
+      "created_at": "2025-09-09T04:36:27.962047"
+    },
+    {
+      "id": "722185f4-dada-4c35-b5e3-7a74b5ece236",
+      "source_id": "3165ef12-972f-40a2-bf50-f306145a9f4c",
+      "target_id": "6f98a660-4ac7-4690-86d5-3e9527b5af03",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The insights focus on U.S. legislative signals but acknowledge private\u2011sector global players; cross\u2011border responses could alter outcomes and are not addressed in the current analysis.",
+        "priority": 0.82,
+        "created_at": "2025-09-09T04:36:27.962047"
+      },
+      "created_at": "2025-09-09T04:36:27.962047"
+    },
+    {
+      "id": "a701e6ee-1df0-4b08-b9d7-f54729210d81",
+      "source_id": "3165ef12-972f-40a2-bf50-f306145a9f4c",
+      "target_id": "cfcafc68-f20f-46a2-8dc3-fac7a8285f27",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Several insights emphasize timing as a driver but lack a monitoring plan or hypothesized sequencing. Knowing which indicators precede market shifts would focus investigative resources effectively.",
+        "priority": 0.91,
+        "created_at": "2025-09-09T04:36:27.962047"
+      },
+      "created_at": "2025-09-09T04:36:27.962047"
+    },
+    {
+      "id": "78a872c8-8ff9-4aeb-82ef-bbd6b614469e",
+      "source_id": "38c6995f-453b-45d5-9ef4-2840d2de5843",
+      "target_id": "8b907a36-f711-4fcb-9868-5da1f05bf794",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 6.0
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    {
+      "id": "fb4c6790-2ec6-466c-96c7-80f5130589a8",
+      "source_id": "38c6995f-453b-45d5-9ef4-2840d2de5843",
+      "target_id": "b05bb59e-1048-4621-9cc5-764db86e4c5f",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 6.0
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    {
+      "id": "0f823bbb-5693-42f4-a4b2-5f8b68a44a23",
+      "source_id": "38c6995f-453b-45d5-9ef4-2840d2de5843",
+      "target_id": "1baaef27-3fa5-47c6-a14f-b7691f773c48",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 6.0
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    {
+      "id": "839ccc5e-9525-4c32-812e-42b883356866",
+      "source_id": "38c6995f-453b-45d5-9ef4-2840d2de5843",
+      "target_id": "593decb8-a35d-4403-9f00-a7c7e4b952fe",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 6.0
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    {
+      "id": "be4f8cd9-1551-4e98-91eb-03636cd5a4c9",
+      "source_id": "38c6995f-453b-45d5-9ef4-2840d2de5843",
+      "target_id": "48aaa4fa-f9ae-4d37-9626-46cf30b20fae",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 6.0
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    {
+      "id": "fdc2f179-f9fe-4402-9d1f-b8dc581292e0",
+      "source_id": "8b907a36-f711-4fcb-9868-5da1f05bf794",
+      "target_id": "ac47c0ce-3adf-4448-9a34-ca32dc20141c",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    {
+      "id": "2c689f96-0c57-4a8e-9eb0-8f1e06491e1c",
+      "source_id": "b05bb59e-1048-4621-9cc5-764db86e4c5f",
+      "target_id": "ac47c0ce-3adf-4448-9a34-ca32dc20141c",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    {
+      "id": "7f9d7411-ab04-4f68-a236-f72ec9b352a0",
+      "source_id": "1baaef27-3fa5-47c6-a14f-b7691f773c48",
+      "target_id": "ac47c0ce-3adf-4448-9a34-ca32dc20141c",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    {
+      "id": "e49cfe86-484a-4df5-99fc-8dd395f08fad",
+      "source_id": "593decb8-a35d-4403-9f00-a7c7e4b952fe",
+      "target_id": "ac47c0ce-3adf-4448-9a34-ca32dc20141c",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    {
+      "id": "431985ff-e249-4caa-b93f-2b939bc35595",
+      "source_id": "48aaa4fa-f9ae-4d37-9626-46cf30b20fae",
+      "target_id": "ac47c0ce-3adf-4448-9a34-ca32dc20141c",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    {
+      "id": "24d2e0b9-0253-4302-ba90-70f8f66e153c",
+      "source_id": "8b907a36-f711-4fcb-9868-5da1f05bf794",
+      "target_id": "ffa28bd3-acbb-41e5-91e0-c3d6d511b373",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    {
+      "id": "21a7c68a-f15a-4843-9aab-096a6dc335a8",
+      "source_id": "b05bb59e-1048-4621-9cc5-764db86e4c5f",
+      "target_id": "ffa28bd3-acbb-41e5-91e0-c3d6d511b373",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    {
+      "id": "51eb8a9a-643a-49fe-b785-1ecd2178b308",
+      "source_id": "1baaef27-3fa5-47c6-a14f-b7691f773c48",
+      "target_id": "ffa28bd3-acbb-41e5-91e0-c3d6d511b373",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    {
+      "id": "82684178-8fe9-4540-90c4-f57f7a6ccbf0",
+      "source_id": "593decb8-a35d-4403-9f00-a7c7e4b952fe",
+      "target_id": "ffa28bd3-acbb-41e5-91e0-c3d6d511b373",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    {
+      "id": "a3dc352d-977a-48bf-8078-c6bcf986a00f",
+      "source_id": "48aaa4fa-f9ae-4d37-9626-46cf30b20fae",
+      "target_id": "ffa28bd3-acbb-41e5-91e0-c3d6d511b373",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    {
+      "id": "a296534f-7547-440c-b122-999776934d2f",
+      "source_id": "8b907a36-f711-4fcb-9868-5da1f05bf794",
+      "target_id": "b3bab3a3-87c3-4437-b1ca-a172742d3a2f",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    {
+      "id": "dda11964-420c-4da6-94ea-c0f6f4d536aa",
+      "source_id": "b05bb59e-1048-4621-9cc5-764db86e4c5f",
+      "target_id": "b3bab3a3-87c3-4437-b1ca-a172742d3a2f",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    {
+      "id": "c1412792-9836-4873-b43e-653300e3961c",
+      "source_id": "1baaef27-3fa5-47c6-a14f-b7691f773c48",
+      "target_id": "b3bab3a3-87c3-4437-b1ca-a172742d3a2f",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    {
+      "id": "8e6048b3-08ea-4aba-b199-3ffcc8d6277c",
+      "source_id": "593decb8-a35d-4403-9f00-a7c7e4b952fe",
+      "target_id": "b3bab3a3-87c3-4437-b1ca-a172742d3a2f",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    {
+      "id": "aabe160d-fb55-4545-949c-b2815091b93a",
+      "source_id": "48aaa4fa-f9ae-4d37-9626-46cf30b20fae",
+      "target_id": "b3bab3a3-87c3-4437-b1ca-a172742d3a2f",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    {
+      "id": "60daccc3-f8c7-4e17-b65a-8d10e8a4f0cf",
+      "source_id": "8b907a36-f711-4fcb-9868-5da1f05bf794",
+      "target_id": "4f619e84-3b85-499c-93f3-995f341bf3e0",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    {
+      "id": "5f529125-1dc5-481e-9778-595b1bebe712",
+      "source_id": "b05bb59e-1048-4621-9cc5-764db86e4c5f",
+      "target_id": "4f619e84-3b85-499c-93f3-995f341bf3e0",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    {
+      "id": "46bd466e-ebe1-437b-b70c-c3ee7734c240",
+      "source_id": "1baaef27-3fa5-47c6-a14f-b7691f773c48",
+      "target_id": "4f619e84-3b85-499c-93f3-995f341bf3e0",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    {
+      "id": "46845ac8-db53-450a-a446-06de6ff3993b",
+      "source_id": "593decb8-a35d-4403-9f00-a7c7e4b952fe",
+      "target_id": "4f619e84-3b85-499c-93f3-995f341bf3e0",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    {
+      "id": "9ebd16d3-2446-4588-9ef9-1eebeaf8bcd5",
+      "source_id": "48aaa4fa-f9ae-4d37-9626-46cf30b20fae",
+      "target_id": "4f619e84-3b85-499c-93f3-995f341bf3e0",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    {
+      "id": "e4971bc3-b166-4efc-82fc-95a303f47b79",
+      "source_id": "8b907a36-f711-4fcb-9868-5da1f05bf794",
+      "target_id": "c41eab4a-8994-4659-af6d-6487d2386d23",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    {
+      "id": "45f5e804-50a4-46e3-a738-a5c749725c57",
+      "source_id": "b05bb59e-1048-4621-9cc5-764db86e4c5f",
+      "target_id": "c41eab4a-8994-4659-af6d-6487d2386d23",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    {
+      "id": "5b6dbfcf-0fae-4417-9658-7874c266b7c9",
+      "source_id": "1baaef27-3fa5-47c6-a14f-b7691f773c48",
+      "target_id": "c41eab4a-8994-4659-af6d-6487d2386d23",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    {
+      "id": "62f39b89-1e75-4e88-9b8f-dbd511eaeeef",
+      "source_id": "593decb8-a35d-4403-9f00-a7c7e4b952fe",
+      "target_id": "c41eab4a-8994-4659-af6d-6487d2386d23",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    {
+      "id": "111a79ab-6370-4f96-a193-38c930a9416b",
+      "source_id": "48aaa4fa-f9ae-4d37-9626-46cf30b20fae",
+      "target_id": "c41eab4a-8994-4659-af6d-6487d2386d23",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    {
+      "id": "731413cb-977e-47b4-8238-59d779a4c4a7",
+      "source_id": "8b907a36-f711-4fcb-9868-5da1f05bf794",
+      "target_id": "ac65f9fb-59ed-4ce7-8939-827df837a70a",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    {
+      "id": "8b0e303d-8c61-46c8-bca6-be16eebe7900",
+      "source_id": "b05bb59e-1048-4621-9cc5-764db86e4c5f",
+      "target_id": "ac65f9fb-59ed-4ce7-8939-827df837a70a",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    {
+      "id": "d7782c39-76a1-433c-badc-c42b70bf1253",
+      "source_id": "1baaef27-3fa5-47c6-a14f-b7691f773c48",
+      "target_id": "ac65f9fb-59ed-4ce7-8939-827df837a70a",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    {
+      "id": "14d8fb5c-26fb-492f-94f5-b359e2fc5436",
+      "source_id": "593decb8-a35d-4403-9f00-a7c7e4b952fe",
+      "target_id": "ac65f9fb-59ed-4ce7-8939-827df837a70a",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    {
+      "id": "fdd825ee-9b80-4025-b378-9ab221c9a325",
+      "source_id": "48aaa4fa-f9ae-4d37-9626-46cf30b20fae",
+      "target_id": "ac65f9fb-59ed-4ce7-8939-827df837a70a",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    {
+      "id": "4fa37938-7a30-4df5-aa83-8851d1be7787",
+      "source_id": "8b907a36-f711-4fcb-9868-5da1f05bf794",
+      "target_id": "11d07b0a-a61f-41a3-bfd5-b2918aba4de2",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    {
+      "id": "6b030563-9a4b-4302-8d3e-18feb7650022",
+      "source_id": "b05bb59e-1048-4621-9cc5-764db86e4c5f",
+      "target_id": "11d07b0a-a61f-41a3-bfd5-b2918aba4de2",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    {
+      "id": "bb869824-4521-41d5-bff1-48e9ff71bcc4",
+      "source_id": "1baaef27-3fa5-47c6-a14f-b7691f773c48",
+      "target_id": "11d07b0a-a61f-41a3-bfd5-b2918aba4de2",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    {
+      "id": "5875f11c-b92d-40f9-a6a0-bb58fae5f677",
+      "source_id": "593decb8-a35d-4403-9f00-a7c7e4b952fe",
+      "target_id": "11d07b0a-a61f-41a3-bfd5-b2918aba4de2",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    },
+    {
+      "id": "eb8caa21-8551-41ef-ad0c-c457933015c6",
+      "source_id": "48aaa4fa-f9ae-4d37-9626-46cf30b20fae",
+      "target_id": "11d07b0a-a61f-41a3-bfd5-b2918aba4de2",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-09T04:36:52.377792"
+    }
+  ],
+  "analytic_question": "dc631527-9ab8-4746-99cd-29884a9b66ca",
+  "created_at": "2025-09-09T04:37:07.499298"
+}

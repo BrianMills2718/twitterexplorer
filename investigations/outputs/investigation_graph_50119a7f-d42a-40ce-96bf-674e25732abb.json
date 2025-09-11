@@ -1,0 +1,212 @@
+{
+  "nodes": {
+    "85d52822-e4c6-4932-ba8a-681bc7a79662": {
+      "id": "85d52822-e4c6-4932-ba8a-681bc7a79662",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "test search execution validation",
+        "is_root": true,
+        "investigation_goal": "test search execution validation"
+      },
+      "created_at": "2025-09-10T08:02:47.683259"
+    },
+    "d2a0c17e-d86d-459b-b3fe-bf6f8ba2e661": {
+      "id": "d2a0c17e-d86d-459b-b3fe-bf6f8ba2e661",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: This search aims to capture relevant discussions or content directly addressing the investigation's main topic of 'test search execution validation'. Using the 'Top' search type allows us to retrieve the most popular results linked to this query.",
+        "parent_analytic_question": "85d52822-e4c6-4932-ba8a-681bc7a79662"
+      },
+      "created_at": "2025-09-10T08:03:01.443620"
+    },
+    "a20d5ab5-ea50-46e1-83cd-85ca004a943b": {
+      "id": "a20d5ab5-ea50-46e1-83cd-85ca004a943b",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "test search execution validation",
+          "search_type": "Top"
+        }
+      },
+      "created_at": "2025-09-10T08:03:01.444124"
+    },
+    "4167f18d-1239-4567-8e25-4f9832d901a7": {
+      "id": "4167f18d-1239-4567-8e25-4f9832d901a7",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Reviewing Elon Musk's recent tweets can provide insight into high-profile discussions about technology and validation practices in social media. Given his influence, understanding his perspective could help validate current search trends.",
+        "parent_analytic_question": "85d52822-e4c6-4932-ba8a-681bc7a79662"
+      },
+      "created_at": "2025-09-10T08:03:01.444135"
+    },
+    "43766c72-219d-4c13-9f24-7749872bab0d": {
+      "id": "43766c72-219d-4c13-9f24-7749872bab0d",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "elonmusk"
+        }
+      },
+      "created_at": "2025-09-10T08:03:01.444135"
+    },
+    "7d1779ca-779e-4f1c-a78e-4f16387f064a": {
+      "id": "7d1779ca-779e-4f1c-a78e-4f16387f064a",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: By examining trending topics in the United States, we can gather context around important discussions that may relate to the focus on search execution and validation. Understanding these trends will help inform our approach and identify potential overlaps with our investigation.",
+        "parent_analytic_question": "85d52822-e4c6-4932-ba8a-681bc7a79662"
+      },
+      "created_at": "2025-09-10T08:03:01.444135"
+    },
+    "a0131eda-00c5-40bc-a5a4-fd26518feda1": {
+      "id": "a0131eda-00c5-40bc-a5a4-fd26518feda1",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "trends.php",
+        "parameters": {
+          "country": "UnitedStates"
+        }
+      },
+      "created_at": "2025-09-10T08:03:01.444135"
+    },
+    "52e7e4a8-41f3-4db9-be6a-2eb36d014dbf": {
+      "id": "52e7e4a8-41f3-4db9-be6a-2eb36d014dbf",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "\ud83d\udc1bBug Bounty Tips: Using \"Waymore\" to discover more security Issues\ud83c\udf10\n\nIn the bug bounty world, having the right tools is essential. While there are many useful ones like waybackurls and gau, let's focus on \"waymore\" from @xnl_h4ck3r today. It's a handy tool for finding archived URLs, and it can give you an advantage when hunting for bugs.\n\n\ud83d\udd75\ufe0f\u200d\u2642\ufe0f Why \"waymore\"? It's my favorite tool for deep investigations. Whether I'm exploring a specific target or a new area, \"waymore\" helps me collect ALL the archived URLs I need.\n\nHere's where \"waymore\" gets its data:\n\n\ud83d\udcdc Wayback Machine (https://t.co/gAWRY0MUeD): It stores old versions of websites, which can be a goldmine.\n\n\ud83c\udf10 Common Crawl (https://t.co/nZLLYOdzJr): This resource has a massive amount of web data.\n\n\ud83d\udef8 Alien Vault OTX (https://t.co/QrvZM2ns9A): It offers threat intelligence, including valuable URL data.\n\n\ud83d\udd0e URLScan (https://t.co/Uyq55teG9R): This service scans and analyzes websites, giving you crucial insights.\n\nNow, let's dive into using \"waymore\":\n\nInstallation is straightforward:\n\ngit clone https://github[.]com/xnl-h4ck3r/waymore.git\ncd waymore\nsudo python https://t.co/t3WrbvoEzi install\nsudo pip3 install -r requirements.txt\n\nOnce it's set up, you can run \"waymore\" on your target like this:\n\npython3 https://t.co/28vL8nki98 -i target[.]com -mode U\n\nIf you want to go deeper, use -mode R to download all archived responses. This sets the stage for local analysis, where you might uncover hidden treasures like passwords or forgotten APIs. \ud83d\udc8e\n\nBut what's next in your bug bounty journey? \ud83e\udd14\n\n1\ufe0f\u20e3 One-Liner Magic: Check out this list of one-liners at https://t.co/QNkVnXD86A. You can apply these to your \"waymore\" dataset. With a bit of automation, you'll be surprised by the results! \ud83d\ude80\n\n2\ufe0f\u20e3 Testing Tools: Use tools like dalfox, try out nuclei templates, and other XSS detection methods to find vulnerabilities like XSS, SQLI, SSTI, and more.\n\n3\ufe0f\u20e3 Custom Searches: Create your checklist for specific keywords like \"user,\" \"admin,\" \"orderId=,\" \"id=,\" \"login,\" \"signup,\" and others. Tailor your searches to what matters most.\n\n4\ufe0f\u20e3 Dive into JS: Look at .JS (JavaScript) files, find API endpoints, and test them for issues like IDORs, information leaks, or hardcoded credentials. The details matter.\n\nAnd if you haven't found any bugs yet? \ud83e\udd37\u200d\u2642\ufe0f Don't worry; there are many creative paths to explore within this dataset. Stay tuned for more insights!\n\nKey Takeaways: Gathering URLs is your secret weapon in bug bounty hunting. Always include testing archived URLs in your research and testing methods \u2013 you'll be amazed at what you discover. \ud83d\ude80 #BugBounty #InfoSec #Cybersecurity #HackerOne #BugCrowd #BugBountyTips",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-10T08:03:34.823150",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.8,
+          "goal_relevance_score": 0.5
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-10T08:03:34.823150"
+      },
+      "created_at": "2025-09-10T08:03:34.823150"
+    },
+    "f0ec2b6e-72e8-49b5-96ab-2e67bb845e0f": {
+      "id": "f0ec2b6e-72e8-49b5-96ab-2e67bb845e0f",
+      "node_type": "Insight",
+      "properties": {
+        "content": "API testing types such as smoke and functional testing are essential in validating APIs.",
+        "insight_type": "evaluation_derived",
+        "title": "API testing types such as smoke...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.5,
+        "key_evidence": [
+          "API testing types such as smoke and functional testing are essential in validating APIs."
+        ]
+      },
+      "created_at": "2025-09-10T08:03:53.364737"
+    },
+    "a5d0496c-17e4-4a4b-a7ae-a94d50925ed0": {
+      "id": "a5d0496c-17e4-4a4b-a7ae-a94d50925ed0",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Understanding different types of testing (unit, smoke, functional) can contribute to validating search execution effectively.",
+        "insight_type": "evaluation_derived",
+        "title": "Understanding different types of testing (unit,...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.5,
+        "key_evidence": [
+          "Understanding different types of testing (unit, smoke, functional) can contribute to validating search execution effectively."
+        ]
+      },
+      "created_at": "2025-09-10T08:03:53.364737"
+    },
+    "01fbd165-5dd6-4f3d-87d2-9ab9e8bcd762": {
+      "id": "01fbd165-5dd6-4f3d-87d2-9ab9e8bcd762",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Validation bottlenecks highlight the importance of structured validation processes to ensure systems work correctly.",
+        "insight_type": "evaluation_derived",
+        "title": "Validation bottlenecks highlight the importance of...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.5,
+        "key_evidence": [
+          "Validation bottlenecks highlight the importance of structured validation processes to ensure systems work correctly."
+        ]
+      },
+      "created_at": "2025-09-10T08:03:53.365249"
+    }
+  },
+  "edges": [
+    {
+      "id": "2edfb3af-ca72-4dff-8059-924601171011",
+      "source_id": "85d52822-e4c6-4932-ba8a-681bc7a79662",
+      "target_id": "d2a0c17e-d86d-459b-b3fe-bf6f8ba2e661",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T08:03:01.443620"
+    },
+    {
+      "id": "6526e079-0c9f-4eba-8f9c-19669730ce8d",
+      "source_id": "d2a0c17e-d86d-459b-b3fe-bf6f8ba2e661",
+      "target_id": "a20d5ab5-ea50-46e1-83cd-85ca004a943b",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T08:03:01.444135"
+    },
+    {
+      "id": "c922ac24-efdc-4898-9d36-0a8dd83510fc",
+      "source_id": "85d52822-e4c6-4932-ba8a-681bc7a79662",
+      "target_id": "4167f18d-1239-4567-8e25-4f9832d901a7",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T08:03:01.444135"
+    },
+    {
+      "id": "06513821-c028-45c8-83db-f799e0ce160c",
+      "source_id": "4167f18d-1239-4567-8e25-4f9832d901a7",
+      "target_id": "43766c72-219d-4c13-9f24-7749872bab0d",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T08:03:01.444135"
+    },
+    {
+      "id": "907eb7f4-1172-4443-ad92-b87b58770f02",
+      "source_id": "85d52822-e4c6-4932-ba8a-681bc7a79662",
+      "target_id": "7d1779ca-779e-4f1c-a78e-4f16387f064a",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T08:03:01.444135"
+    },
+    {
+      "id": "eea33d32-c212-4993-9541-c5286d185ae2",
+      "source_id": "7d1779ca-779e-4f1c-a78e-4f16387f064a",
+      "target_id": "a0131eda-00c5-40bc-a5a4-fd26518feda1",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T08:03:01.444135"
+    },
+    {
+      "id": "e9645b59-d1e2-4a0e-a614-8de51c044ca7",
+      "source_id": "a20d5ab5-ea50-46e1-83cd-85ca004a943b",
+      "target_id": "52e7e4a8-41f3-4db9-be6a-2eb36d014dbf",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.8
+      },
+      "created_at": "2025-09-10T08:03:34.823150"
+    }
+  ],
+  "analytic_question": "85d52822-e4c6-4932-ba8a-681bc7a79662",
+  "created_at": "2025-09-10T08:03:53.370537"
+}

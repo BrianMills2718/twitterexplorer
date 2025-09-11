@@ -1,0 +1,262 @@
+{
+  "nodes": {
+    "160aeb5a-841b-45c4-bf7a-971cf54545a4": {
+      "id": "160aeb5a-841b-45c4-bf7a-971cf54545a4",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "test context synthesis duplicate prevention",
+        "is_root": true,
+        "investigation_goal": "test context synthesis duplicate prevention"
+      },
+      "created_at": "2025-09-10T05:47:58.652110"
+    },
+    "cac53da6-52f4-4661-a275-56645f5df97a": {
+      "id": "cac53da6-52f4-4661-a275-56645f5df97a",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: This search will help identify the most recent discussions and developments regarding context synthesis and duplicate prevention, which is central to our investigation goal.",
+        "parent_analytic_question": "160aeb5a-841b-45c4-bf7a-971cf54545a4"
+      },
+      "created_at": "2025-09-10T05:48:07.545184"
+    },
+    "de7641b7-5425-4ed2-aa50-7aae524fcaa7": {
+      "id": "de7641b7-5425-4ed2-aa50-7aae524fcaa7",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "context synthesis duplicate prevention",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-10T05:48:07.546741"
+    },
+    "7688be50-2fbd-4380-b4c2-eb86c9002b59": {
+      "id": "7688be50-2fbd-4380-b4c2-eb86c9002b59",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Analyzing Elon Musk's recent posts can provide insights into how prominent figures in related fields are discussing topics that may overlap with context synthesis and duplicate prevention.",
+        "parent_analytic_question": "160aeb5a-841b-45c4-bf7a-971cf54545a4"
+      },
+      "created_at": "2025-09-10T05:48:07.546741"
+    },
+    "7b3d4a4e-dd8d-4252-ad28-db06ae4f110e": {
+      "id": "7b3d4a4e-dd8d-4252-ad28-db06ae4f110e",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "elonmusk"
+        }
+      },
+      "created_at": "2025-09-10T05:48:07.546741"
+    },
+    "46adb47d-029f-47c2-b1e6-44fa2d659dee": {
+      "id": "46adb47d-029f-47c2-b1e6-44fa2d659dee",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Understanding who Reuters follows can reveal connections and networks in discussions pertaining to our investigation, facilitating deeper context extraction.",
+        "parent_analytic_question": "160aeb5a-841b-45c4-bf7a-971cf54545a4"
+      },
+      "created_at": "2025-09-10T05:48:07.546741"
+    },
+    "ae68c9a1-fba1-41d7-a15b-a8d87ac7d52e": {
+      "id": "ae68c9a1-fba1-41d7-a15b-a8d87ac7d52e",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "following.php",
+        "parameters": {
+          "screenname": "reuters"
+        }
+      },
+      "created_at": "2025-09-10T05:48:07.546741"
+    },
+    "faeeabfb-b182-49c9-a069-183f668ae9df": {
+      "id": "faeeabfb-b182-49c9-a069-183f668ae9df",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: This search aims to capture the latest discussions and articles related to context synthesis and duplicate prevention specifically from Reuters, which is crucial for understanding how mainstream media addresses these topics.",
+        "parent_analytic_question": "160aeb5a-841b-45c4-bf7a-971cf54545a4"
+      },
+      "created_at": "2025-09-10T05:48:54.040263"
+    },
+    "56bdd873-f391-4a10-a605-233ac1b25c3c": {
+      "id": "56bdd873-f391-4a10-a605-233ac1b25c3c",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "context synthesis duplicate prevention",
+          "screenname": "reuters",
+          "country": "UnitedStates",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-10T05:48:54.040263"
+    },
+    "ed313c8b-67be-48fe-ac0d-38569e9a3be2": {
+      "id": "ed313c8b-67be-48fe-ac0d-38569e9a3be2",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Analyzing Elon Musk's recent tweets can provide insight into how influential figures discuss topics related to context synthesis and duplicate prevention, offering a unique angle to our investigation.",
+        "parent_analytic_question": "160aeb5a-841b-45c4-bf7a-971cf54545a4"
+      },
+      "created_at": "2025-09-10T05:48:54.040263"
+    },
+    "26f2d01c-f70f-4016-be15-3ecbc9e7d7c7": {
+      "id": "26f2d01c-f70f-4016-be15-3ecbc9e7d7c7",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "elonmusk"
+        }
+      },
+      "created_at": "2025-09-10T05:48:54.040263"
+    },
+    "a9e82477-70d3-489a-9068-4c42c7dfcbb4": {
+      "id": "a9e82477-70d3-489a-9068-4c42c7dfcbb4",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Understanding whom Reuters follows can reveal important connections in discussions about context synthesis and duplicate prevention, potentially highlighting other influential voices in the field.",
+        "parent_analytic_question": "160aeb5a-841b-45c4-bf7a-971cf54545a4"
+      },
+      "created_at": "2025-09-10T05:48:54.040263"
+    },
+    "4b3eac47-bf07-4e38-8f36-ae1ad6ff6577": {
+      "id": "4b3eac47-bf07-4e38-8f36-ae1ad6ff6577",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "following.php",
+        "parameters": {
+          "screenname": "reuters"
+        }
+      },
+      "created_at": "2025-09-10T05:48:54.040263"
+    }
+  },
+  "edges": [
+    {
+      "id": "46416948-2abf-40e6-998b-7346bbd011d0",
+      "source_id": "160aeb5a-841b-45c4-bf7a-971cf54545a4",
+      "target_id": "cac53da6-52f4-4661-a275-56645f5df97a",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:48:07.545184"
+    },
+    {
+      "id": "9f3be8c5-fb9e-4ecc-9123-165ce28c3649",
+      "source_id": "cac53da6-52f4-4661-a275-56645f5df97a",
+      "target_id": "de7641b7-5425-4ed2-aa50-7aae524fcaa7",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:48:07.546741"
+    },
+    {
+      "id": "425aca94-a232-4beb-9c47-f9a3b9a0bbed",
+      "source_id": "160aeb5a-841b-45c4-bf7a-971cf54545a4",
+      "target_id": "7688be50-2fbd-4380-b4c2-eb86c9002b59",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:48:07.546741"
+    },
+    {
+      "id": "4a692d19-d8f9-429a-b085-8a4b0c3ad2a1",
+      "source_id": "7688be50-2fbd-4380-b4c2-eb86c9002b59",
+      "target_id": "7b3d4a4e-dd8d-4252-ad28-db06ae4f110e",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:48:07.546741"
+    },
+    {
+      "id": "6ec10930-b906-4e35-b8a9-734fe2e70bdb",
+      "source_id": "160aeb5a-841b-45c4-bf7a-971cf54545a4",
+      "target_id": "46adb47d-029f-47c2-b1e6-44fa2d659dee",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:48:07.546741"
+    },
+    {
+      "id": "4f8f8af2-f700-4aa6-9d17-71dce01f5ff9",
+      "source_id": "46adb47d-029f-47c2-b1e6-44fa2d659dee",
+      "target_id": "ae68c9a1-fba1-41d7-a15b-a8d87ac7d52e",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:48:07.546741"
+    },
+    {
+      "id": "bf9db9bc-d3e7-46db-95a7-910385f837e4",
+      "source_id": "160aeb5a-841b-45c4-bf7a-971cf54545a4",
+      "target_id": "faeeabfb-b182-49c9-a069-183f668ae9df",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:48:54.040263"
+    },
+    {
+      "id": "a780b694-f008-427d-98e6-482e2cf555fd",
+      "source_id": "faeeabfb-b182-49c9-a069-183f668ae9df",
+      "target_id": "56bdd873-f391-4a10-a605-233ac1b25c3c",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:48:54.040263"
+    },
+    {
+      "id": "f23acd34-d8a3-4a1f-867d-03ba486f8740",
+      "source_id": "160aeb5a-841b-45c4-bf7a-971cf54545a4",
+      "target_id": "ed313c8b-67be-48fe-ac0d-38569e9a3be2",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:48:54.040263"
+    },
+    {
+      "id": "3240b124-90ca-4292-aaf6-aa91c41ac336",
+      "source_id": "ed313c8b-67be-48fe-ac0d-38569e9a3be2",
+      "target_id": "26f2d01c-f70f-4016-be15-3ecbc9e7d7c7",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:48:54.040263"
+    },
+    {
+      "id": "aa76906a-bff0-45ed-939d-e8b4ad315559",
+      "source_id": "160aeb5a-841b-45c4-bf7a-971cf54545a4",
+      "target_id": "a9e82477-70d3-489a-9068-4c42c7dfcbb4",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:48:54.040263"
+    },
+    {
+      "id": "80bd1d22-eaf6-438e-b9cc-c9f0bf0ae796",
+      "source_id": "a9e82477-70d3-489a-9068-4c42c7dfcbb4",
+      "target_id": "4b3eac47-bf07-4e38-8f36-ae1ad6ff6577",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-10T05:48:54.040263"
+    }
+  ],
+  "analytic_question": "160aeb5a-841b-45c4-bf7a-971cf54545a4",
+  "created_at": "2025-09-10T05:48:59.992190"
+}

@@ -1,0 +1,88 @@
+{
+  "session_metadata": {
+    "session_id": "d4a116ce-bedb-4515-83ab-588c0881b460",
+    "start_time": "2025-09-09T14:38:31.712330+00:00",
+    "end_time": "2025-09-09T14:39:35.436251+00:00",
+    "duration_seconds": 63.723921,
+    "user_query": "simple test query"
+  },
+  "configuration": {
+    "max_searches": 2,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.6,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "model_provider": "gemini",
+    "pages_per_search": 3,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true,
+    "enforce_endpoint_diversity": false,
+    "max_endpoint_repeats": 5,
+    "diversity_threshold": 0.3
+  },
+  "performance_metrics": {
+    "total_searches": 2,
+    "total_rounds": 1,
+    "total_results_found": 61,
+    "satisfaction_score": 0.47,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.2,
+      "source_diversity": 0.1,
+      "evidence_quality": 1.0,
+      "claim_specificity": 1.0,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Reached maximum search limit (2)"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [],
+      "moderately_effective": [],
+      "low_effectiveness": [
+        {
+          "search_id": 2,
+          "query": "",
+          "results": 60,
+          "effectiveness": 2.0
+        }
+      ],
+      "ineffective": [
+        {
+          "search_id": 1,
+          "query": "\"simple test query\"",
+          "results": 1,
+          "effectiveness": 0.1
+        }
+      ]
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "Graph Strategy: To establish an initial understanding of the terms 'simple', 'test', and 'query' within the Twitter ecosystem, utilizing diverse search methods to gather broad contextual data. This includes direct keyword search, observing relevant user activity, and checking trending topics for wider context. This approach adheres to the diversity rule by using three distinct endpoints and focuses on systematically exploring the foundational concepts of the investigation goal.",
+        "avg_effectiveness": 1.05
+      }
+    ],
+    "dead_ends": [
+      "\"simple test query\""
+    ],
+    "promising_leads": []
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Graph Strategy: To establish an initial understanding of the terms 'simple', 'test', and 'query' within the Twitter ecosystem, utilizing diverse search methods to gather broad contextual data. This includes direct keyword search, observing relevant user activity, and checking trending topics for wider context. This approach adheres to the diversity rule by using three distinct endpoints and focuses on systematically exploring the foundational concepts of the investigation goal.",
+      "searches_count": 2,
+      "total_results": 61,
+      "effectiveness": 1.05,
+      "insights": [
+        "\"Simple test queries\" are used to evaluate \"CUA agents\".",
+        "The performance of \"CUA agents\" when subjected to these queries is often considered \"underwhelming\", suggesting significant room for improvement in their development."
+      ]
+    }
+  ]
+}

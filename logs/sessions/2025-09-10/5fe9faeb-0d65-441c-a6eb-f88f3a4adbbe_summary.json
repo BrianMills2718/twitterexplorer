@@ -1,0 +1,124 @@
+{
+  "session_metadata": {
+    "session_id": "5fe9faeb-0d65-441c-a6eb-f88f3a4adbbe",
+    "start_time": "2025-09-10T15:12:12.053262+00:00",
+    "end_time": "2025-09-10T15:23:51.764256+00:00",
+    "duration_seconds": 699.710432,
+    "user_query": "find me different takes on trump epstein drama"
+  },
+  "configuration": {
+    "max_searches": 5,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.6,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "model_provider": "gemini",
+    "pages_per_search": 3,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true,
+    "enforce_endpoint_diversity": false,
+    "max_endpoint_repeats": 5,
+    "diversity_threshold": 0.3
+  },
+  "performance_metrics": {
+    "total_searches": 5,
+    "total_rounds": 2,
+    "total_results_found": 120,
+    "satisfaction_score": 0.424,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.4,
+      "source_diversity": 0.2,
+      "evidence_quality": 0.7999999999999998,
+      "claim_specificity": 0.56,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Reached maximum search limit (5)"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [
+        {
+          "search_id": 1,
+          "query": "Trump Epstein statements OR comments OR defense",
+          "results": 59,
+          "effectiveness": 8.2
+        },
+        {
+          "search_id": 2,
+          "query": "(Trump OR Donald Trump) Epstein drama OR scandal critical OR analysis",
+          "results": 59,
+          "effectiveness": 8.2
+        }
+      ],
+      "moderately_effective": [],
+      "low_effectiveness": [],
+      "ineffective": [
+        {
+          "search_id": 3,
+          "query": "",
+          "results": 0,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 4,
+          "query": "from:realDonaldTrump epstein",
+          "results": 2,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 5,
+          "query": "epstein trump republican OR GOP OR conservative \"political weaponization\"",
+          "results": 0,
+          "effectiveness": 0.0
+        }
+      ]
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "Graph Strategy: The current information gaps require immediate attention: understanding Trump's direct perspective/statements and gathering broader context on the Epstein drama. To achieve 'different takes,' the strategy involves targeted searches for Trump's direct comments, a broader search for critical and public reactions, and examining the timeline of a prominent political journalist for their perspective. This approach ensures endpoint diversity while addressing the core investigation goal and identified gaps.",
+        "avg_effectiveness": 5.466666666666666
+      },
+      {
+        "strategy": "Graph Strategy: The primary goal is to address the identified information gaps regarding 'Trump's perspective/statements' and 'broader public and media reactions' which previously yielded no data. This strategy employs targeted searches to elicit direct statements from Donald Trump and diverse political viewpoints, while also using network analysis to discover new voices, ensuring a comprehensive approach to filling these critical gaps and finding 'different takes'. This approach also directly tackles several emergent questions about Trump's statements, political weaponization, and alternative analytical perspectives, while diversifying endpoint usage.",
+        "avg_effectiveness": 0.0
+      }
+    ],
+    "dead_ends": [
+      "",
+      "from:realDonaldTrump epstein",
+      "epstein trump republican OR GOP OR conservative \"political weaponization\""
+    ],
+    "promising_leads": [
+      "Trump Epstein statements OR comments OR defense",
+      "(Trump OR Donald Trump) Epstein drama OR scandal critical OR analysis"
+    ]
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Graph Strategy: The current information gaps require immediate attention: understanding Trump's direct perspective/statements and gathering broader context on the Epstein drama. To achieve 'different takes,' the strategy involves targeted searches for Trump's direct comments, a broader search for critical and public reactions, and examining the timeline of a prominent political journalist for their perspective. This approach ensures endpoint diversity while addressing the core investigation goal and identified gaps.",
+      "searches_count": 3,
+      "total_results": 118,
+      "effectiveness": 5.466666666666666,
+      "insights": [
+        "Multiple critical perspectives highlight Trump's dismissive stance towards the Epstein scandal, including his alleged labeling of focusing on the files as \"irrelevant\" and his past comments calling Epstein a \"terrific guy\" who liked \"women on the younger side.\"",
+        "Accusations range from Trump being \"cooked\" due to legal amendments concerning minors, to highly speculative claims like paying Epstein \"hush money,\" and resurfaced controversial comments about dating underage girls.",
+        "Trump's defense or mitigating factors include his actions of posting statements from Epstein's lawyer denying compromising evidence, and the argument that he was a businessman, not a politician, during the time of some alleged abuses."
+      ]
+    },
+    {
+      "round_number": 2,
+      "strategy": "Graph Strategy: The primary goal is to address the identified information gaps regarding 'Trump's perspective/statements' and 'broader public and media reactions' which previously yielded no data. This strategy employs targeted searches to elicit direct statements from Donald Trump and diverse political viewpoints, while also using network analysis to discover new voices, ensuring a comprehensive approach to filling these critical gaps and finding 'different takes'. This approach also directly tackles several emergent questions about Trump's statements, political weaponization, and alternative analytical perspectives, while diversifying endpoint usage.",
+      "searches_count": 2,
+      "total_results": 2,
+      "effectiveness": 0.0,
+      "insights": []
+    }
+  ]
+}

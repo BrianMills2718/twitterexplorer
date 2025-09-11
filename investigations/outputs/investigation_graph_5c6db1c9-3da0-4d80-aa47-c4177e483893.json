@@ -1,0 +1,1464 @@
+{
+  "nodes": {
+    "a934cf16-b7c9-4a3b-94e0-f7846782f198": {
+      "id": "a934cf16-b7c9-4a3b-94e0-f7846782f198",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "test short query",
+        "is_root": true,
+        "investigation_goal": "test short query"
+      },
+      "created_at": "2025-09-09T05:54:55.674571"
+    },
+    "8ee93aee-3261-4987-8c13-86e245774f4f": {
+      "id": "8ee93aee-3261-4987-8c13-86e245774f4f",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Run the minimal single-character query in Latest mode to observe how the API handles extremely short queries, pagination behavior, and noise level. This directly tests the lower bound of query length and collects candidate tweet IDs for deeper follow-up.",
+        "parent_analytic_question": "a934cf16-b7c9-4a3b-94e0-f7846782f198"
+      },
+      "created_at": "2025-09-09T05:55:25.867967"
+    },
+    "7f45f185-a4b2-4474-9659-035145850adb": {
+      "id": "7f45f185-a4b2-4474-9659-035145850adb",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "a",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-09T05:55:25.867967"
+    },
+    "9c049fc5-06ae-4577-b4d3-c5de9c8ab40c": {
+      "id": "9c049fc5-06ae-4577-b4d3-c5de9c8ab40c",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: A short two-letter token in Top mode will show whether popularity ranking filters short tokens into coherent results and whether Top surfaces distinct content vs Latest.",
+        "parent_analytic_question": "a934cf16-b7c9-4a3b-94e0-f7846782f198"
+      },
+      "created_at": "2025-09-09T05:55:25.867967"
+    },
+    "524bbaa0-bcd0-403c-acb6-6307a4e50cdf": {
+      "id": "524bbaa0-bcd0-403c-acb6-6307a4e50cdf",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "ok",
+          "search_type": "Top"
+        }
+      },
+      "created_at": "2025-09-09T05:55:25.867967"
+    },
+    "c1f3aecb-7889-47c3-92aa-f18eac41c714": {
+      "id": "c1f3aecb-7889-47c3-92aa-f18eac41c714",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Search People with the short keyword 'test' to examine how short queries map to user profiles/names and to identify accounts that frequently post short queries for timeline sampling.",
+        "parent_analytic_question": "a934cf16-b7c9-4a3b-94e0-f7846782f198"
+      },
+      "created_at": "2025-09-09T05:55:25.867967"
+    },
+    "039d87ea-e3b7-47fd-aa62-0a75f5b60510": {
+      "id": "039d87ea-e3b7-47fd-aa62-0a75f5b60510",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "test",
+          "search_type": "People"
+        }
+      },
+      "created_at": "2025-09-09T05:55:25.867967"
+    },
+    "00ae5760-e9e9-41a1-aff3-59e02e65f321": {
+      "id": "00ae5760-e9e9-41a1-aff3-59e02e65f321",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Pull the recent posts from a high-volume, high-visibility account to collect concrete examples of short tweets (single-word or punctuation) that we can use to validate search behavior and select tweet IDs for conversation analysis.",
+        "parent_analytic_question": "a934cf16-b7c9-4a3b-94e0-f7846782f198"
+      },
+      "created_at": "2025-09-09T05:55:25.867967"
+    },
+    "8d31c822-6de5-419a-b3f7-1b1d86f32184": {
+      "id": "8d31c822-6de5-419a-b3f7-1b1d86f32184",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "elonmusk"
+        }
+      },
+      "created_at": "2025-09-09T05:55:25.867967"
+    },
+    "d9d47e99-bbdc-4a8f-8437-d55b8c6e3bad": {
+      "id": "d9d47e99-bbdc-4a8f-8437-d55b8c6e3bad",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Fetch current trending topics in the UnitedStates to determine whether very short tokens or abbreviations appear as trends and to test if short queries correlate with trending short tokens.",
+        "parent_analytic_question": "a934cf16-b7c9-4a3b-94e0-f7846782f198"
+      },
+      "created_at": "2025-09-09T05:55:25.867967"
+    },
+    "efb7d081-ed4f-45cc-a51c-467a492e22f9": {
+      "id": "efb7d081-ed4f-45cc-a51c-467a492e22f9",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "trends.php",
+        "parameters": {
+          "country": "UnitedStates"
+        }
+      },
+      "created_at": "2025-09-09T05:55:25.867967"
+    },
+    "1fea3652-150d-4b20-9814-22d07c4fc5a6": {
+      "id": "1fea3652-150d-4b20-9814-22d07c4fc5a6",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "The Native AI-Agentic Cloud Platform to Supercharge Quality Engineering. Test intelligently and ship faster.\n\n#LambdaTestYourApps",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-09T05:57:13.313166",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.8,
+          "goal_relevance_score": 0.5
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-09T05:57:13.313166"
+      },
+      "created_at": "2025-09-09T05:57:13.313166"
+    },
+    "3fffdd4d-7901-41ac-8015-cd2eb231b399": {
+      "id": "3fffdd4d-7901-41ac-8015-cd2eb231b399",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Track, Analyze, and Trade Smart Money Signals \u2013 Easier than ever with KaBoom\ud83d\udd25 https://t.co/XNCW6U47Up. \nWallet IQ Test is LIVE! Check to sharpen your insights!",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-09T05:57:13.313166",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.7,
+          "goal_relevance_score": 0.5
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-09T05:57:13.313166"
+      },
+      "created_at": "2025-09-09T05:57:13.313166"
+    },
+    "a2aa66df-5159-4335-a8d8-626d7d48b8ed": {
+      "id": "a2aa66df-5159-4335-a8d8-626d7d48b8ed",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "U-Test is a provider of rapid home testing kits, offering an accurate way to test for a range of medical conditions, giving you the result in just 10 minutes \ud83e\uddea",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-09T05:57:13.313166",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.9,
+          "goal_relevance_score": 0.5
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-09T05:57:13.313166"
+      },
+      "created_at": "2025-09-09T05:57:13.313166"
+    },
+    "7ba28bad-d690-4a32-bc9d-644523edcde3": {
+      "id": "7ba28bad-d690-4a32-bc9d-644523edcde3",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "The Bahamian Citizenship Test is an annual digital daily trivia that tests your knowledge of Bahamian culture!",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-09T05:57:13.313166",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.6,
+          "goal_relevance_score": 0.5
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-09T05:57:13.313166"
+      },
+      "created_at": "2025-09-09T05:57:13.313670"
+    },
+    "15bd6a9e-a8ec-440a-ae20-773dbfb09896": {
+      "id": "15bd6a9e-a8ec-440a-ae20-773dbfb09896",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Test token deployed by BNB on @four_meme_ $TST - TST Trading Bot: https://t.co/S4fsg37gNy",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-09T05:57:13.313676",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.55,
+          "goal_relevance_score": 0.5
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-09T05:57:13.313676"
+      },
+      "created_at": "2025-09-09T05:57:13.313676"
+    },
+    "91b8b735-0f60-402e-adfd-0562a1dd08ef": {
+      "id": "91b8b735-0f60-402e-adfd-0562a1dd08ef",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Both findings describe active testing of crypto analytics/trading infrastructure: one announces Wallet IQ and Smart Money signal tooling (KaBoom) to sharpen insights, the other deploys a test token ($TST) and a trading bot. This indicates a coordinated pattern of experimentation where analytics providers and bot operators use test assets/environments to validate signal pipelines and automated trading flows. Implications: (1) These tests accelerate tool validation and onboarding while reducing direct market risk, making short, focused queries about tool performance meaningful; (2) test activity can create misleading on-chain noise or marketing-driven attention that must be distinguished from genuine market signals; (3) investigators should treat metrics from these events as controlled/experimental rather than representative of organic market behavior. Emerging themes: emphasis on \u2018test\u2019 environments, interplay between signal providers and automated traders, and use of promotional messaging to drive participation. Recommended next steps: monitor on-chain transactions for $TST to map bot behavior, confirm whether tests are on mainnet vs testnet, track performance of Wallet IQ/KaBoom signals vs bot outcomes, and flag promotional posts that might bias interpretation of short-query results.",
+        "insight_type": "connection",
+        "confidence": 0.85,
+        "title": "Coordinated testing of analytics and trading tools using a test token"
+      },
+      "created_at": "2025-09-09T05:58:48.135917"
+    },
+    "0071c6e1-0447-4c69-85f3-accf971d6f1c": {
+      "id": "0071c6e1-0447-4c69-85f3-accf971d6f1c",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Are the $TST transactions occurring on mainnet or on a testnet/sandbox?",
+        "emergence_reason": "Whether activity is on mainnet determines if real economic value and market participants are involved; testnet activity implies controlled experiments and lower signal validity for market analysis."
+      },
+      "created_at": "2025-09-09T05:59:11.293235"
+    },
+    "81f985b8-e686-47d8-8997-c3bce19d6ca2": {
+      "id": "81f985b8-e686-47d8-8997-c3bce19d6ca2",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Do the Wallet IQ / KaBoom teams and the $TST/trading-bot operators share common ownership, control, or coordination?",
+        "emergence_reason": "Shared control would indicate coordinated experimentation and potential conflict of interest or marketing-driven activity that biases signal evaluation."
+      },
+      "created_at": "2025-09-09T05:59:11.293235"
+    },
+    "281d965d-bd53-436e-882e-d8dcb9901470": {
+      "id": "281d965d-bd53-436e-882e-d8dcb9901470",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Is there direct causality between Wallet IQ/KaBoom signals and the trading bot's execution (i.e., are signals programmatically wired to trigger the bot)?",
+        "emergence_reason": "If signals directly trigger automated trading, on-chain test trades may be deliberate end-to-end validation rather than organic market reactions, affecting interpretation of outcomes."
+      },
+      "created_at": "2025-09-09T05:59:11.293235"
+    },
+    "da9d46ce-c4d0-477f-9300-dcc5fbc4cbe6": {
+      "id": "da9d46ce-c4d0-477f-9300-dcc5fbc4cbe6",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Are promotional posts or marketing campaigns amplifying participation in the tests, and are they paid/promoted or organic?",
+        "emergence_reason": "Promotional amplification can create artificial participation/noise and make short-term engagement metrics misleading; distinguishing paid vs organic is key to assessing representativeness."
+      },
+      "created_at": "2025-09-09T05:59:11.293235"
+    },
+    "695c671a-4ea5-47d6-84a7-12c96f5b2448": {
+      "id": "695c671a-4ea5-47d6-84a7-12c96f5b2448",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Are the test trades and wallets exhibiting patterns that differ from organic market behavior (e.g., clustered timing, limited unique counterparties, round-number sizes)?",
+        "emergence_reason": "Characteristic differences would allow automated detection/labeling of test activity and prevent contamination of analytics trained on 'organic' data."
+      },
+      "created_at": "2025-09-09T05:59:11.293235"
+    },
+    "e09670e3-3d75-493b-ab78-71632e6264f9": {
+      "id": "e09670e3-3d75-493b-ab78-71632e6264f9",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Is the $TST token and associated liquidity provision temporary/controlled (e.g., locked/unlocked by developers) or open and persistent in the market?",
+        "emergence_reason": "Controlled liquidity or developer access can enable manipulation and makes measured performance non-representative of live market conditions."
+      },
+      "created_at": "2025-09-09T05:59:11.293235"
+    },
+    "dcd97174-ab2f-4a97-80c8-6d5bf80010b4": {
+      "id": "dcd97174-ab2f-4a97-80c8-6d5bf80010b4",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Are off-chain coordination channels (Discord, Telegram, Twitter/X threads) being used to orchestrate the tests, and can we capture and correlate those signals with on-chain events?",
+        "emergence_reason": "Off-chain coordination often precedes on-chain tests; correlating channels helps establish intent, timing, and whether participants knew it was a test."
+      },
+      "created_at": "2025-09-09T05:59:11.293235"
+    },
+    "91a1e3c6-876c-448a-a46d-503a6f59f2b2": {
+      "id": "91a1e3c6-876c-448a-a46d-503a6f59f2b2",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Are the metrics used to evaluate Wallet IQ/KaBoom performance public-facing (potentially cherry-picked) or internal/automated backtests?",
+        "emergence_reason": "Understanding what metrics are reported and how they are selected reveals susceptibility to selective reporting and marketing bias."
+      },
+      "created_at": "2025-09-09T05:59:11.293235"
+    },
+    "cb9eab24-ce6b-4020-bbe2-b18773654c74": {
+      "id": "cb9eab24-ce6b-4020-bbe2-b18773654c74",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How reproducible are observed results across repeated tests or different assets \u2014 is there a consistent pattern of bot outcomes when using the same signals?",
+        "emergence_reason": "Reproducibility determines whether observed success/failure is a one-off or indicative of systematic tool performance; lack of repetition is a gap in validation."
+      },
+      "created_at": "2025-09-09T05:59:11.293235"
+    },
+    "df5166d0-fd5d-42c6-ad52-aefccba99ae4": {
+      "id": "df5166d0-fd5d-42c6-ad52-aefccba99ae4",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Can we develop or apply automated heuristics to tag and filter 'test' activity (tokens labeled as test, small-coin ticks, known test wallets) from market analytics?",
+        "emergence_reason": "Operational capability to automatically separate experimental noise from genuine market signals is a practical next-step to protect analytic integrity."
+      },
+      "created_at": "2025-09-09T05:59:11.293235"
+    },
+    "45d3fa0d-5f26-464c-9d5f-2a0aa97dee66": {
+      "id": "45d3fa0d-5f26-464c-9d5f-2a0aa97dee66",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Across the disparate findings, a clear trend emerges: a \u201ctest short query\u201d is implemented as a brief, user-triggered input that initiates a fast, automated testing workflow tailored to domain goals. In software QA this takes the form of AI-agentic cloud platforms that accept concise test directives to run broad, automated test suites and deliver rapid build feedback. In consumer health it appears as single-step rapid home tests that deliver diagnostic results in ~10 minutes in response to a simple user action. In cultural/knowledge contexts it appears as daily short trivia prompts that assess and reinforce knowledge quickly. The shared pattern is emphasis on speed, minimal friction of input, and immediate or near-immediate actionable output. A key tension is the trade-off between speed/simplicity and depth/rigor: rapid QA or diagnostics require additional verification, confidence metadata, and orchestration to avoid false positives/negatives or superficial coverage. For the investigation into \u201ctest short query,\u201d this implies prioritizing standard short-query schemas (explicit intent, required context fields), automated orchestration for domain-appropriate follow-ups, and result payloads that include confidence indicators and suggested next steps to manage accuracy and user expectations.",
+        "insight_type": "trend",
+        "confidence": 0.8,
+        "title": "'Test short query' converges on rapid, compact input yielding fast, domain-specific tests"
+      },
+      "created_at": "2025-09-09T05:59:25.630062"
+    },
+    "b39e8918-bc93-4080-a3a4-50735ec452cf": {
+      "id": "b39e8918-bc93-4080-a3a4-50735ec452cf",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Are the $TST transactions and bot activity occurring on mainnet or on a testnet (and can we reliably distinguish them on-chain)?",
+        "emergence_reason": "The insights emphasize \u2018test\u2019 activity but do not confirm network context; whether activity is on mainnet changes legal/market impact and how to treat metrics (noise vs material signal)."
+      },
+      "created_at": "2025-09-09T05:59:48.029619"
+    },
+    "9a7ca86e-7565-4db8-879a-1e71a01c8f0a": {
+      "id": "9a7ca86e-7565-4db8-879a-1e71a01c8f0a",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Is there an operational or organizational link between Wallet IQ/KaBoom (signal providers) and the $TST trading bot operator(s)?",
+        "emergence_reason": "Both findings suggest coordinated experimentation between analytics providers and automated traders; establishing links would clarify whether behavior is joint testing, neutral validation, or potential collusion/manipulation."
+      },
+      "created_at": "2025-09-09T05:59:48.029619"
+    },
+    "18e134f3-d3c4-4b2e-9ed4-0ecbaa4049e9": {
+      "id": "18e134f3-d3c4-4b2e-9ed4-0ecbaa4049e9",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Are promotional messages about Wallet IQ/KaBoom intentionally driving participation in tests to create favorable-looking performance or social proof?",
+        "emergence_reason": "Promotional posts could bias short-term metrics and create misleading market attention; determining intent helps separate marketing from genuine tool validation."
+      },
+      "created_at": "2025-09-09T05:59:48.029619"
+    },
+    "1a0fdad9-414b-4a83-a518-257b5819ee29": {
+      "id": "1a0fdad9-414b-4a83-a518-257b5819ee29",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Do the Wallet IQ/KaBoom signals materially affect the bot\u2019s trading decisions, and can we quantify signal-to-action latency and fidelity?",
+        "emergence_reason": "Understanding whether signals directly trigger trades (and with what delay/accuracy) is necessary to evaluate effectiveness of the analytics pipeline and to judge whether on-chain trades are validation experiments or organic market responses."
+      },
+      "created_at": "2025-09-09T05:59:48.029619"
+    },
+    "cb54b10b-c3af-485e-9540-70559abca424": {
+      "id": "cb54b10b-c3af-485e-9540-70559abca424",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Are the observed test events being logged as controlled experiments (with metadata, confidence indicators, and explicit test labels), or are they indistinguishable from organic trades on public feeds?",
+        "emergence_reason": "The insights recommend treating these as controlled; confirming presence/absence of test metadata affects how we ingest and interpret resulting metrics."
+      },
+      "created_at": "2025-09-09T05:59:48.029619"
+    },
+    "6d840329-9034-4022-a72d-b516a32d38bc": {
+      "id": "6d840329-9034-4022-a72d-b516a32d38bc",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Is the short-query pattern observed across domains (QA, health, cultural) generalizable into a common schema, and what are the minimal required context fields for safe, reliable short queries in each domain?",
+        "emergence_reason": "The cross-domain trend suggests potential for a standardized short-query schema, but domain-specific failure modes imply the need to define required fields per domain to balance speed and rigor."
+      },
+      "created_at": "2025-09-09T05:59:48.029619"
+    },
+    "2cb6ef75-a8d1-4102-a5eb-b279e134a2ed": {
+      "id": "2cb6ef75-a8d1-4102-a5eb-b279e134a2ed",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What automated follow-up/orchestration strategies (e.g., confidence thresholds, verification queries) are most effective to mitigate false positives from rapid short-query outputs in each domain?",
+        "emergence_reason": "Rapid outputs risk superficial or incorrect results; specifying orchestration patterns would improve reliability and user expectations."
+      },
+      "created_at": "2025-09-09T05:59:48.029619"
+    },
+    "b46dd980-7d3a-4215-b98d-62207a5ae234": {
+      "id": "b46dd980-7d3a-4215-b98d-62207a5ae234",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Can we detect controlled test activity automatically (e.g., pattern detection, address clustering, timing signatures, repeated test tokens) to flag experimental events in analytics pipelines?",
+        "emergence_reason": "Manual labeling is impractical at scale; automated detection would allow downstream consumers to filter or weight such events appropriately."
+      },
+      "created_at": "2025-09-09T05:59:48.029619"
+    },
+    "2e5a57f3-666a-4f85-afc0-ef8c4789c866": {
+      "id": "2e5a57f3-666a-4f85-afc0-ef8c4789c866",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Is there evidence the $TST or similar test-assets are being used for market manipulation, e.g., wash trading, pump-and-dump, or to train trading strategies on artificially generated signals?",
+        "emergence_reason": "Tests conducted on mainnet without clear labeling could be abused to manipulate perceptions or to stealthily train strategies; this has regulatory and integrity implications."
+      },
+      "created_at": "2025-09-09T05:59:48.029619"
+    },
+    "3d0daa84-e392-4163-8bd3-496379d3c56f": {
+      "id": "3d0daa84-e392-4163-8bd3-496379d3c56f",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What are the observable performance metrics for Wallet IQ/KaBoom during these tests (precision, recall, trade profitability, adverse selection), and over what time horizons do they hold?",
+        "emergence_reason": "Quantifying signal performance against bot outcomes is a direct recommendation in the insights and is necessary to judge tool validity rather than marketing claims."
+      },
+      "created_at": "2025-09-09T05:59:48.030124"
+    },
+    "5f71e320-b01c-4d77-909c-593b70cbe5cc": {
+      "id": "5f71e320-b01c-4d77-909c-593b70cbe5cc",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Do short test runs produce persistent on-chain noise that skews analytics/indices (e.g., volume spikes, token ranking), and how should dashboards treat such transient events?",
+        "emergence_reason": "The insight about misleading on-chain noise implies analytics providers and consumers need rules for excluding test-driven artifacts from aggregate indicators."
+      },
+      "created_at": "2025-09-09T05:59:48.030136"
+    },
+    "e062e506-b4b9-4d49-9abe-d1848c37e253": {
+      "id": "e062e506-b4b9-4d49-9abe-d1848c37e253",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Are there legal, compliance, or disclosure obligations for labeling coordinated testing activity on mainnet, and are the actors following best practices?",
+        "emergence_reason": "If experiments meaningfully affect markets or users, there may be regulatory expectations; understanding obligations informs risk assessment and possible escalation."
+      },
+      "created_at": "2025-09-09T05:59:48.030136"
+    },
+    "56334e0c-22ec-472f-94ee-0a0e87a94bda": {
+      "id": "56334e0c-22ec-472f-94ee-0a0e87a94bda",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What incentives (technical, commercial, or reputational) drive participants to run these quick, public tests instead of private sandboxing, and how do those incentives shape observable behavior?",
+        "emergence_reason": "Explaining why actors choose public tests over private environments helps predict future testing behavior and identify opportunities to reduce on-chain noise."
+      },
+      "created_at": "2025-09-09T05:59:48.030136"
+    },
+    "13a43022-a1b4-4447-8a6f-68bb9f7de2a7": {
+      "id": "13a43022-a1b4-4447-8a6f-68bb9f7de2a7",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Both findings describe deliberate \"test\" efforts in the BNB ecosystem: a Wallet IQ Test and a test token ($TST) with a trading bot. This indicates a pattern of parallel, low-risk experiments used to validate analytics (Smart Money Signals/Wallet IQ) and automated trading strategies (TST trading bot). There are no direct contradictions between the sources; rather they reinforce an emerging theme that participants are using dedicated test artifacts to calibrate models and tools. Significant implications for the investigation: these test deployments can serve as controlled data sources for evaluating short-query behaviours (market response, signal accuracy, bot execution) but also introduce experimental noise and potential promotional activity that could confound analysis if not identified and isolated.",
+        "insight_type": "trend",
+        "confidence": 0.85,
+        "title": "Parallel test deployments indicate coordinated validation of trading tools on BNB"
+      },
+      "created_at": "2025-09-09T06:00:59.196297"
+    },
+    "d7c42ada-fadd-4caa-bfce-a839e493478b": {
+      "id": "d7c42ada-fadd-4caa-bfce-a839e493478b",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Are these test activities (Wallet IQ/KaBoom and the $TST trading bot) occurring on mainnet or on one or more testnets?",
+        "emergence_reason": "Whether events are on mainnet vs testnet changes their market impact, legal risk, and how on-chain traces should be interpreted (real liquidity/money vs synthetic/test flows)."
+      },
+      "created_at": "2025-09-09T06:01:18.306611"
+    },
+    "9b55d8d2-5b37-4919-af33-1b4c18775948": {
+      "id": "9b55d8d2-5b37-4919-af33-1b4c18775948",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Is there direct coordination or data-sharing between the Wallet IQ/KaBoom signal providers and the $TST trading-bot operators?",
+        "emergence_reason": "If signal providers and bot operators are linked, tests may be validating an end-to-end pipeline rather than independent experiments \u2014 this affects causality analysis and who to monitor or question."
+      },
+      "created_at": "2025-09-09T06:01:18.306611"
+    },
+    "f5ad5bb7-a1ac-4223-9f64-b1789cd41464": {
+      "id": "f5ad5bb7-a1ac-4223-9f64-b1789cd41464",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Are promotional posts or marketing messages intentionally amplifying these tests to generate participation or on-chain activity?",
+        "emergence_reason": "Promotional amplification can create artificial attention/noise that confounds short-query metrics and may be mistaken for organic market response."
+      },
+      "created_at": "2025-09-09T06:01:18.306611"
+    },
+    "27ce4b37-7435-4a2d-8b8a-da5dc0de17d4": {
+      "id": "27ce4b37-7435-4a2d-8b8a-da5dc0de17d4",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "To what extent are metrics generated during these tests representative of organic market behavior versus controlled/experimental behavior?",
+        "emergence_reason": "Investigative interpretation and model validation depend on whether test results generalize; treating experimental metrics as representative risks incorrect conclusions."
+      },
+      "created_at": "2025-09-09T06:01:18.306611"
+    },
+    "af21097d-6a03-4951-b382-53bc88523e5d": {
+      "id": "af21097d-6a03-4951-b382-53bc88523e5d",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What metadata, provenance, and confidence indicators accompany Wallet IQ/KaBoom outputs and the bot's execution logs?",
+        "emergence_reason": "Rapid 'short-query' outputs require provenance/confidence metadata to manage the speed vs. rigor trade-off and to enable automated downstream handling and verification."
+      },
+      "created_at": "2025-09-09T06:01:18.306611"
+    },
+    "edb1c485-f896-4cb7-973f-108e0ff709d7": {
+      "id": "edb1c485-f896-4cb7-973f-108e0ff709d7",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How widely distributed is the $TST token and trading activity (number of unique wallets, volume, time-distribution), and is it limited to known tester addresses?",
+        "emergence_reason": "Understanding spread vs. containment helps distinguish isolated validation tests from market-level experiments that could affect real users."
+      },
+      "created_at": "2025-09-09T06:01:18.306611"
+    },
+    "47ec81b0-2494-4840-804c-a76c29bdef78": {
+      "id": "47ec81b0-2494-4840-804c-a76c29bdef78",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Are tests being intentionally designed to mimic realistic trading/noise (e.g., using timing, amounts, wallets) that would be hard to distinguish from organic activity?",
+        "emergence_reason": "If tests are obfuscated to resemble real behavior, detection and isolation become harder and raise concerns about deceptive practices or deliberate stress-testing of observers."
+      },
+      "created_at": "2025-09-09T06:01:18.306611"
+    },
+    "61af9d60-90ef-4570-a3ee-f0bfd1e8e4b1": {
+      "id": "61af9d60-90ef-4570-a3ee-f0bfd1e8e4b1",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What instrumentation exists (logs, signal timestamps, bot decision traces) to map temporal causal chains between a signal emission and a bot trade?",
+        "emergence_reason": "Causal mapping is required to validate whether signals cause bot actions or whether both respond to the same external stimuli; lack of traces is a gap in attribution."
+      },
+      "created_at": "2025-09-09T06:01:18.306611"
+    },
+    "d283ef51-0fc5-49fd-8f7b-19e495ec70ce": {
+      "id": "d283ef51-0fc5-49fd-8f7b-19e495ec70ce",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Can controlled test deployments (like $TST and Wallet IQ trials) be used as ground-truth benchmarks for evaluating short-query systems and automated signal-to-execution pipelines?",
+        "emergence_reason": "Test artifacts may be an opportunity: if well-instrumented, they provide labeled events to evaluate accuracy, latency, and failure modes of short-query driven workflows."
+      },
+      "created_at": "2025-09-09T06:01:18.306611"
+    },
+    "4a3d7b36-a35a-4641-b1fe-dab9447dfc61": {
+      "id": "4a3d7b36-a35a-4641-b1fe-dab9447dfc61",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What are the legal and compliance implications (market-manipulation risk, disclosure requirements) of running these experiments on a live chain?",
+        "emergence_reason": "Running test tokens or bots on mainnet can raise regulatory exposure; identifying these risks informs whether to escalate to compliance/legal teams or to recommend mitigation steps."
+      },
+      "created_at": "2025-09-09T06:01:18.306611"
+    },
+    "6b8ad078-c65b-4d85-bbe8-7a2dbf6fe9ed": {
+      "id": "6b8ad078-c65b-4d85-bbe8-7a2dbf6fe9ed",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Both sources emphasize rapid, actionable testing: U-Test promises 10-minute medical results, while the AI-agentic cloud platform promises faster, intelligent software QA. The shared pattern is a demand for short-feedback testing cycles enabled by automation and AI. For the investigation into \"test short query,\" this implies prioritizing concise test designs that deliver immediate, easily interpretable results and that leverage automation/AI to shorten turnaround time and reduce manual interpretation. No direct contradictions were found between sources; instead they reinforce an emerging theme that speed + intelligence is the primary value proposition for modern testing solutions across domains.",
+        "insight_type": "trend",
+        "confidence": 0.85,
+        "title": "Cross-domain trend toward rapid, intelligent testing"
+      },
+      "created_at": "2025-09-09T06:01:26.999417"
+    },
+    "f8a4c1e7-4acf-4089-9004-dc22c1ae58e7": {
+      "id": "f8a4c1e7-4acf-4089-9004-dc22c1ae58e7",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Are the Wallet IQ / KaBoom tests and the $TST trading bot operating on mainnet or on a testnet?",
+        "emergence_reason": "The distinction determines whether on-chain activity reflects real market risk and liquidity impact or controlled experiments; sources did not consistently state the execution environment."
+      },
+      "created_at": "2025-09-09T06:01:48.404227"
+    },
+    "2de2e0b4-3d92-41b2-8d01-ae09dac4b858": {
+      "id": "2de2e0b4-3d92-41b2-8d01-ae09dac4b858",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Is there an operational or ownership link between the analytics providers (Wallet IQ / KaBoom) and the $TST trading bot?",
+        "emergence_reason": "Establishing coordination (shared operators, shared wallets, or signal-to-bot pipelines) is necessary to determine whether activity represents integrated tool validation or coincidental parallel testing."
+      },
+      "created_at": "2025-09-09T06:01:48.404227"
+    },
+    "4dca95f1-eff0-471b-bd90-9cef1008bd68": {
+      "id": "4dca95f1-eff0-471b-bd90-9cef1008bd68",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "To what extent are promotional posts or marketing campaigns driving the observed test transactions versus purely technical validation?",
+        "emergence_reason": "Promotional activity can produce artificial on-chain noise that looks like organic response to signals, confounding signal evaluation unless identified and separated."
+      },
+      "created_at": "2025-09-09T06:01:48.404227"
+    },
+    "d3c8d6c1-4b40-48a3-8494-88e4836eba54": {
+      "id": "d3c8d6c1-4b40-48a3-8494-88e4836eba54",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Can we reliably distinguish test artifacts (e.g., $TST trades, labeled 'test' wallets) from organic market behavior using heuristics or metadata?",
+        "emergence_reason": "Investigators need practical filters (labels, token metadata, transaction patterns) to isolate controlled experiments from real trading for valid metric computation."
+      },
+      "created_at": "2025-09-09T06:01:48.404227"
+    },
+    "eb1f88f8-b286-44d6-8a0f-1bd519c9bb9f": {
+      "id": "eb1f88f8-b286-44d6-8a0f-1bd519c9bb9f",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What confidence metadata, provenance, and follow-up orchestration are being produced by Wallet IQ/KaBoom and the trading bot for each short-query result?",
+        "emergence_reason": "Rapid outputs require confidence indicators and provenance to assess reliability; current insights note the need but lack specifics on what is emitted."
+      },
+      "created_at": "2025-09-09T06:01:48.404227"
+    },
+    "48c8cb4a-3462-4df7-8999-c44b1af54796": {
+      "id": "48c8cb4a-3462-4df7-8999-c44b1af54796",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How do the actual signal recommendations from Wallet IQ/KaBoom correlate with the bot's executed trades and profit/loss outcomes?",
+        "emergence_reason": "Direct performance correlation is needed to validate the analytics-to-execution pipeline and to judge whether signals translate into effective automated trading."
+      },
+      "created_at": "2025-09-09T06:01:48.404227"
+    },
+    "44f5c56e-5355-4f8b-b24c-6a27988869d7": {
+      "id": "44f5c56e-5355-4f8b-b24c-6a27988869d7",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Are test deployments intentionally anonymized or obfuscated (multiple throwaway wallets, mixer usage), and how does that affect attribution?",
+        "emergence_reason": "Obfuscation would impede attribution and risk assessment, and could indicate attempts to mask market manipulation under the guise of testing."
+      },
+      "created_at": "2025-09-09T06:01:48.404227"
+    },
+    "537f76b2-7a74-40e1-ab7d-9c607e464ed1": {
+      "id": "537f76b2-7a74-40e1-ab7d-9c607e464ed1",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What telemetry exists to link off-chain social posts (promo tweets, announcements) to discrete on-chain events, and can we build automated correlation pipelines?",
+        "emergence_reason": "Linking social signals with on-chain actions is crucial to separate marketing-driven activity from analytics-driven behavior; current recommendations mention flagging promos but lack pipeline specifics."
+      },
+      "created_at": "2025-09-09T06:01:48.404227"
+    },
+    "f82f792b-988e-4c9e-98d9-3d8f97a9f6f2": {
+      "id": "f82f792b-988e-4c9e-98d9-3d8f97a9f6f2",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Could adversaries exploit test-derived noise (e.g., issuing test tokens or coordinated short queries) to manipulate attention, front-run bots, or game signal evaluation?",
+        "emergence_reason": "The presence of low-risk experiments creates an attack surface for manipulation; the insights raise this risk but do not analyze exploit feasibility."
+      },
+      "created_at": "2025-09-09T06:01:48.404227"
+    },
+    "89f652cf-23df-47ef-9339-ed8a807e37ef": {
+      "id": "89f652cf-23df-47ef-9339-ed8a807e37ef",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How transferable are the 'test short query' design principles across domains (crypto analytics, software QA, consumer health), and what standardized schema would be practical?",
+        "emergence_reason": "Insights propose a shared pattern (speed, minimal input), but there's a gap in concrete standard schemas (required fields, confidence, follow-ups) that would enable cross-domain tooling."
+      },
+      "created_at": "2025-09-09T06:01:48.404227"
+    },
+    "513a6249-dbd8-4104-9479-60c8a7b94f8f": {
+      "id": "513a6249-dbd8-4104-9479-60c8a7b94f8f",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Do rapid diagnostic/test products (e.g., U-Test) meet regulatory and quality thresholds comparable to the rigor expected in financial signal testing?",
+        "emergence_reason": "Cross-domain comparisons highlight trade-offs between speed and rigor; regulatory/safety requirements in health suggest analogous constraints that may be under-considered in crypto testing."
+      },
+      "created_at": "2025-09-09T06:01:48.404227"
+    },
+    "d188a491-9c52-40a5-9d0d-ed9c39f65e5e": {
+      "id": "d188a491-9c52-40a5-9d0d-ed9c39f65e5e",
+      "node_type": "Insight",
+      "properties": {
+        "content": "The result set is a heterogeneous mix of short social-media posts (tweets) in multiple languages and a few links; there is no coherent topical focus.",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-09T06:02:17.049848"
+    },
+    "5b131281-a28d-455c-b4d5-98efda964ac5": {
+      "id": "5b131281-a28d-455c-b4d5-98efda964ac5",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Several items touch on politics, conspiracy theories, defense tech (Anduril helmet), sports, music, and mycology \u2014 indicating broad noise rather than relevance to a specific investigation.",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-09T06:02:17.049848"
+    },
+    "4b93ba3e-a27f-44a9-802e-d70fef05c166": {
+      "id": "4b93ba3e-a27f-44a9-802e-d70fef05c166",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Many entries are conversational or ephemeral (replies, tweets) and lack context or provenance beyond a snippet or link.",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-09T06:02:17.049848"
+    },
+    "49e37466-201f-41c0-9e96-107c1e130963": {
+      "id": "49e37466-201f-41c0-9e96-107c1e130963",
+      "node_type": "Insight",
+      "properties": {
+        "content": "No result clearly addresses or explains the phrase/goal 'test short query' \u2014 the results look like an unfiltered stream returned for a very short/ambiguous query.",
+        "insight_type": "evaluation_derived"
+      },
+      "created_at": "2025-09-09T06:02:17.049848"
+    }
+  },
+  "edges": [
+    {
+      "id": "6ee34463-cd01-4e45-8404-5b0011d5e272",
+      "source_id": "a934cf16-b7c9-4a3b-94e0-f7846782f198",
+      "target_id": "8ee93aee-3261-4987-8c13-86e245774f4f",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T05:55:25.867967"
+    },
+    {
+      "id": "d8e78834-58e1-45b2-8c41-d6f29f025e20",
+      "source_id": "8ee93aee-3261-4987-8c13-86e245774f4f",
+      "target_id": "7f45f185-a4b2-4474-9659-035145850adb",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T05:55:25.867967"
+    },
+    {
+      "id": "a3beb576-ed73-4b63-ab69-f425adc8df4a",
+      "source_id": "a934cf16-b7c9-4a3b-94e0-f7846782f198",
+      "target_id": "9c049fc5-06ae-4577-b4d3-c5de9c8ab40c",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T05:55:25.867967"
+    },
+    {
+      "id": "da653f4a-5a6f-4469-813e-c4732fc1df32",
+      "source_id": "9c049fc5-06ae-4577-b4d3-c5de9c8ab40c",
+      "target_id": "524bbaa0-bcd0-403c-acb6-6307a4e50cdf",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T05:55:25.867967"
+    },
+    {
+      "id": "b2fed858-af0d-42a6-8b1b-5d426632c5bb",
+      "source_id": "a934cf16-b7c9-4a3b-94e0-f7846782f198",
+      "target_id": "c1f3aecb-7889-47c3-92aa-f18eac41c714",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T05:55:25.867967"
+    },
+    {
+      "id": "6b7be49c-6fca-409b-917f-e9266376b664",
+      "source_id": "c1f3aecb-7889-47c3-92aa-f18eac41c714",
+      "target_id": "039d87ea-e3b7-47fd-aa62-0a75f5b60510",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T05:55:25.867967"
+    },
+    {
+      "id": "70c0efb1-6b5a-425a-9bcd-e1d5fae67e8e",
+      "source_id": "a934cf16-b7c9-4a3b-94e0-f7846782f198",
+      "target_id": "00ae5760-e9e9-41a1-aff3-59e02e65f321",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T05:55:25.867967"
+    },
+    {
+      "id": "4e6630ed-4c49-4421-a426-d355409829ba",
+      "source_id": "00ae5760-e9e9-41a1-aff3-59e02e65f321",
+      "target_id": "8d31c822-6de5-419a-b3f7-1b1d86f32184",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T05:55:25.867967"
+    },
+    {
+      "id": "328b8a96-d6ea-444b-9f81-2470eacccdb7",
+      "source_id": "a934cf16-b7c9-4a3b-94e0-f7846782f198",
+      "target_id": "d9d47e99-bbdc-4a8f-8437-d55b8c6e3bad",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T05:55:25.867967"
+    },
+    {
+      "id": "be420e65-7846-4e63-8c5f-bd077a05b397",
+      "source_id": "d9d47e99-bbdc-4a8f-8437-d55b8c6e3bad",
+      "target_id": "efb7d081-ed4f-45cc-a51c-467a492e22f9",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-09T05:55:25.867967"
+    },
+    {
+      "id": "63d1384f-2516-4581-a0f2-47f7952ed568",
+      "source_id": "039d87ea-e3b7-47fd-aa62-0a75f5b60510",
+      "target_id": "1fea3652-150d-4b20-9814-22d07c4fc5a6",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.8
+      },
+      "created_at": "2025-09-09T05:57:13.313166"
+    },
+    {
+      "id": "d3e3031a-2bee-4f94-9ded-0ca4181b5493",
+      "source_id": "039d87ea-e3b7-47fd-aa62-0a75f5b60510",
+      "target_id": "3fffdd4d-7901-41ac-8015-cd2eb231b399",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.7
+      },
+      "created_at": "2025-09-09T05:57:13.313166"
+    },
+    {
+      "id": "c1cf0b9b-9da5-4943-b99f-b83579802b64",
+      "source_id": "039d87ea-e3b7-47fd-aa62-0a75f5b60510",
+      "target_id": "a2aa66df-5159-4335-a8d8-626d7d48b8ed",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.9
+      },
+      "created_at": "2025-09-09T05:57:13.313166"
+    },
+    {
+      "id": "242d7397-c268-4978-8f3d-45f9f1b8e732",
+      "source_id": "039d87ea-e3b7-47fd-aa62-0a75f5b60510",
+      "target_id": "7ba28bad-d690-4a32-bc9d-644523edcde3",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.6
+      },
+      "created_at": "2025-09-09T05:57:13.313676"
+    },
+    {
+      "id": "e0f56619-c8cb-44b8-bd07-d4a13917b314",
+      "source_id": "039d87ea-e3b7-47fd-aa62-0a75f5b60510",
+      "target_id": "15bd6a9e-a8ec-440a-ae20-773dbfb09896",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.55
+      },
+      "created_at": "2025-09-09T05:57:13.313676"
+    },
+    {
+      "id": "f70b4513-4594-452a-a81a-6e868b4f8195",
+      "source_id": "3fffdd4d-7901-41ac-8015-cd2eb231b399",
+      "target_id": "91b8b735-0f60-402e-adfd-0562a1dd08ef",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-09T05:58:48.135917"
+      },
+      "created_at": "2025-09-09T05:58:48.135917"
+    },
+    {
+      "id": "34d32698-701f-4782-9502-ed36edd727f9",
+      "source_id": "15bd6a9e-a8ec-440a-ae20-773dbfb09896",
+      "target_id": "91b8b735-0f60-402e-adfd-0562a1dd08ef",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-09T05:58:48.135917"
+      },
+      "created_at": "2025-09-09T05:58:48.135917"
+    },
+    {
+      "id": "599c77a1-afa0-4f03-b713-dbe40323bc9c",
+      "source_id": "91b8b735-0f60-402e-adfd-0562a1dd08ef",
+      "target_id": "0071c6e1-0447-4c69-85f3-accf971d6f1c",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Whether activity is on mainnet determines if real economic value and market participants are involved; testnet activity implies controlled experiments and lower signal validity for market analysis.",
+        "priority": 0.9,
+        "created_at": "2025-09-09T05:59:11.294235"
+      },
+      "created_at": "2025-09-09T05:59:11.294235"
+    },
+    {
+      "id": "a2476505-1009-466d-a328-417f8ecd4987",
+      "source_id": "91b8b735-0f60-402e-adfd-0562a1dd08ef",
+      "target_id": "81f985b8-e686-47d8-8997-c3bce19d6ca2",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Shared control would indicate coordinated experimentation and potential conflict of interest or marketing-driven activity that biases signal evaluation.",
+        "priority": 0.85,
+        "created_at": "2025-09-09T05:59:11.294235"
+      },
+      "created_at": "2025-09-09T05:59:11.294235"
+    },
+    {
+      "id": "a081815a-fc83-4318-a259-9a129494a091",
+      "source_id": "91b8b735-0f60-402e-adfd-0562a1dd08ef",
+      "target_id": "281d965d-bd53-436e-882e-d8dcb9901470",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "If signals directly trigger automated trading, on-chain test trades may be deliberate end-to-end validation rather than organic market reactions, affecting interpretation of outcomes.",
+        "priority": 0.9,
+        "created_at": "2025-09-09T05:59:11.294235"
+      },
+      "created_at": "2025-09-09T05:59:11.294235"
+    },
+    {
+      "id": "53c51f70-b531-42dd-ad09-5f0f09c852ba",
+      "source_id": "91b8b735-0f60-402e-adfd-0562a1dd08ef",
+      "target_id": "da9d46ce-c4d0-477f-9300-dcc5fbc4cbe6",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Promotional amplification can create artificial participation/noise and make short-term engagement metrics misleading; distinguishing paid vs organic is key to assessing representativeness.",
+        "priority": 0.75,
+        "created_at": "2025-09-09T05:59:11.294235"
+      },
+      "created_at": "2025-09-09T05:59:11.294235"
+    },
+    {
+      "id": "1a1e0d06-b0a2-46e6-a904-95139e75b633",
+      "source_id": "91b8b735-0f60-402e-adfd-0562a1dd08ef",
+      "target_id": "695c671a-4ea5-47d6-84a7-12c96f5b2448",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Characteristic differences would allow automated detection/labeling of test activity and prevent contamination of analytics trained on 'organic' data.",
+        "priority": 0.8,
+        "created_at": "2025-09-09T05:59:11.294235"
+      },
+      "created_at": "2025-09-09T05:59:11.294235"
+    },
+    {
+      "id": "886d6a7f-ab35-4e08-b373-318d09dd1496",
+      "source_id": "91b8b735-0f60-402e-adfd-0562a1dd08ef",
+      "target_id": "e09670e3-3d75-493b-ab78-71632e6264f9",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Controlled liquidity or developer access can enable manipulation and makes measured performance non-representative of live market conditions.",
+        "priority": 0.75,
+        "created_at": "2025-09-09T05:59:11.294235"
+      },
+      "created_at": "2025-09-09T05:59:11.294235"
+    },
+    {
+      "id": "14779e4d-39a0-4dd9-afc6-fa9ef6aba536",
+      "source_id": "91b8b735-0f60-402e-adfd-0562a1dd08ef",
+      "target_id": "dcd97174-ab2f-4a97-80c8-6d5bf80010b4",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Off-chain coordination often precedes on-chain tests; correlating channels helps establish intent, timing, and whether participants knew it was a test.",
+        "priority": 0.85,
+        "created_at": "2025-09-09T05:59:11.294235"
+      },
+      "created_at": "2025-09-09T05:59:11.294235"
+    },
+    {
+      "id": "24bedb80-60ba-4f19-af5a-b0a2740656e3",
+      "source_id": "91b8b735-0f60-402e-adfd-0562a1dd08ef",
+      "target_id": "91a1e3c6-876c-448a-a46d-503a6f59f2b2",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Understanding what metrics are reported and how they are selected reveals susceptibility to selective reporting and marketing bias.",
+        "priority": 0.65,
+        "created_at": "2025-09-09T05:59:11.294235"
+      },
+      "created_at": "2025-09-09T05:59:11.294235"
+    },
+    {
+      "id": "d8b45fc1-ac72-4def-bfc8-b94450d3a70f",
+      "source_id": "91b8b735-0f60-402e-adfd-0562a1dd08ef",
+      "target_id": "cb9eab24-ce6b-4020-bbe2-b18773654c74",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Reproducibility determines whether observed success/failure is a one-off or indicative of systematic tool performance; lack of repetition is a gap in validation.",
+        "priority": 0.7,
+        "created_at": "2025-09-09T05:59:11.294235"
+      },
+      "created_at": "2025-09-09T05:59:11.294235"
+    },
+    {
+      "id": "47b1712f-96eb-4994-9ef6-5061e2501434",
+      "source_id": "91b8b735-0f60-402e-adfd-0562a1dd08ef",
+      "target_id": "df5166d0-fd5d-42c6-ad52-aefccba99ae4",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Operational capability to automatically separate experimental noise from genuine market signals is a practical next-step to protect analytic integrity.",
+        "priority": 0.8,
+        "created_at": "2025-09-09T05:59:11.294235"
+      },
+      "created_at": "2025-09-09T05:59:11.294235"
+    },
+    {
+      "id": "d02e396f-8a9d-4f90-be21-3471228b32ce",
+      "source_id": "1fea3652-150d-4b20-9814-22d07c4fc5a6",
+      "target_id": "45d3fa0d-5f26-464c-9d5f-2a0aa97dee66",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-09T05:59:25.630062"
+      },
+      "created_at": "2025-09-09T05:59:25.630062"
+    },
+    {
+      "id": "759bac63-2d45-4347-b6f2-095f85bd662f",
+      "source_id": "a2aa66df-5159-4335-a8d8-626d7d48b8ed",
+      "target_id": "45d3fa0d-5f26-464c-9d5f-2a0aa97dee66",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-09T05:59:25.630062"
+      },
+      "created_at": "2025-09-09T05:59:25.630062"
+    },
+    {
+      "id": "3ed5d91a-85de-4134-bd8d-3d90eebe7ab9",
+      "source_id": "7ba28bad-d690-4a32-bc9d-644523edcde3",
+      "target_id": "45d3fa0d-5f26-464c-9d5f-2a0aa97dee66",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-09T05:59:25.630062"
+      },
+      "created_at": "2025-09-09T05:59:25.630062"
+    },
+    {
+      "id": "4aa0c684-d8bd-445f-b881-6f7de1db49ae",
+      "source_id": "45d3fa0d-5f26-464c-9d5f-2a0aa97dee66",
+      "target_id": "b39e8918-bc93-4080-a3a4-50735ec452cf",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The insights emphasize \u2018test\u2019 activity but do not confirm network context; whether activity is on mainnet changes legal/market impact and how to treat metrics (noise vs material signal).",
+        "priority": 0.95,
+        "created_at": "2025-09-09T05:59:48.030136"
+      },
+      "created_at": "2025-09-09T05:59:48.030136"
+    },
+    {
+      "id": "e9a6f05f-5ae1-47ac-9c31-f528f36dc33a",
+      "source_id": "45d3fa0d-5f26-464c-9d5f-2a0aa97dee66",
+      "target_id": "9a7ca86e-7565-4db8-879a-1e71a01c8f0a",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Both findings suggest coordinated experimentation between analytics providers and automated traders; establishing links would clarify whether behavior is joint testing, neutral validation, or potential collusion/manipulation.",
+        "priority": 0.9,
+        "created_at": "2025-09-09T05:59:48.030136"
+      },
+      "created_at": "2025-09-09T05:59:48.030136"
+    },
+    {
+      "id": "55bb3333-920c-4605-aa72-c3c71785198b",
+      "source_id": "45d3fa0d-5f26-464c-9d5f-2a0aa97dee66",
+      "target_id": "18e134f3-d3c4-4b2e-9ed4-0ecbaa4049e9",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Promotional posts could bias short-term metrics and create misleading market attention; determining intent helps separate marketing from genuine tool validation.",
+        "priority": 0.85,
+        "created_at": "2025-09-09T05:59:48.030136"
+      },
+      "created_at": "2025-09-09T05:59:48.030136"
+    },
+    {
+      "id": "e2356a22-6332-41a2-b891-dbf933b9a659",
+      "source_id": "45d3fa0d-5f26-464c-9d5f-2a0aa97dee66",
+      "target_id": "1a0fdad9-414b-4a83-a518-257b5819ee29",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Understanding whether signals directly trigger trades (and with what delay/accuracy) is necessary to evaluate effectiveness of the analytics pipeline and to judge whether on-chain trades are validation experiments or organic market responses.",
+        "priority": 0.9,
+        "created_at": "2025-09-09T05:59:48.030136"
+      },
+      "created_at": "2025-09-09T05:59:48.030136"
+    },
+    {
+      "id": "af18dc65-dfaa-4804-a904-1453503075ba",
+      "source_id": "45d3fa0d-5f26-464c-9d5f-2a0aa97dee66",
+      "target_id": "cb54b10b-c3af-485e-9540-70559abca424",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The insights recommend treating these as controlled; confirming presence/absence of test metadata affects how we ingest and interpret resulting metrics.",
+        "priority": 0.88,
+        "created_at": "2025-09-09T05:59:48.030136"
+      },
+      "created_at": "2025-09-09T05:59:48.030136"
+    },
+    {
+      "id": "31fc12fa-27d7-4379-be4a-2d9c40323fa6",
+      "source_id": "45d3fa0d-5f26-464c-9d5f-2a0aa97dee66",
+      "target_id": "6d840329-9034-4022-a72d-b516a32d38bc",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The cross-domain trend suggests potential for a standardized short-query schema, but domain-specific failure modes imply the need to define required fields per domain to balance speed and rigor.",
+        "priority": 0.72,
+        "created_at": "2025-09-09T05:59:48.030136"
+      },
+      "created_at": "2025-09-09T05:59:48.030136"
+    },
+    {
+      "id": "de046124-1827-4533-bdcb-92dcbb4477a4",
+      "source_id": "45d3fa0d-5f26-464c-9d5f-2a0aa97dee66",
+      "target_id": "2cb6ef75-a8d1-4102-a5eb-b279e134a2ed",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Rapid outputs risk superficial or incorrect results; specifying orchestration patterns would improve reliability and user expectations.",
+        "priority": 0.78,
+        "created_at": "2025-09-09T05:59:48.030136"
+      },
+      "created_at": "2025-09-09T05:59:48.030136"
+    },
+    {
+      "id": "2d7d26ef-a5ed-4d03-805d-42f3936bda4d",
+      "source_id": "45d3fa0d-5f26-464c-9d5f-2a0aa97dee66",
+      "target_id": "b46dd980-7d3a-4215-b98d-62207a5ae234",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Manual labeling is impractical at scale; automated detection would allow downstream consumers to filter or weight such events appropriately.",
+        "priority": 0.82,
+        "created_at": "2025-09-09T05:59:48.030136"
+      },
+      "created_at": "2025-09-09T05:59:48.030136"
+    },
+    {
+      "id": "07171498-6fcd-4c04-ad3e-d0be7c90dc18",
+      "source_id": "45d3fa0d-5f26-464c-9d5f-2a0aa97dee66",
+      "target_id": "2e5a57f3-666a-4f85-afc0-ef8c4789c866",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Tests conducted on mainnet without clear labeling could be abused to manipulate perceptions or to stealthily train strategies; this has regulatory and integrity implications.",
+        "priority": 0.86,
+        "created_at": "2025-09-09T05:59:48.030136"
+      },
+      "created_at": "2025-09-09T05:59:48.030136"
+    },
+    {
+      "id": "4de124cd-69d7-43d8-8653-6eada52ffee7",
+      "source_id": "45d3fa0d-5f26-464c-9d5f-2a0aa97dee66",
+      "target_id": "3d0daa84-e392-4163-8bd3-496379d3c56f",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Quantifying signal performance against bot outcomes is a direct recommendation in the insights and is necessary to judge tool validity rather than marketing claims.",
+        "priority": 0.87,
+        "created_at": "2025-09-09T05:59:48.030136"
+      },
+      "created_at": "2025-09-09T05:59:48.030136"
+    },
+    {
+      "id": "7c37e813-897a-4b94-892a-15b613488dfe",
+      "source_id": "45d3fa0d-5f26-464c-9d5f-2a0aa97dee66",
+      "target_id": "5f71e320-b01c-4d77-909c-593b70cbe5cc",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The insight about misleading on-chain noise implies analytics providers and consumers need rules for excluding test-driven artifacts from aggregate indicators.",
+        "priority": 0.74,
+        "created_at": "2025-09-09T05:59:48.030136"
+      },
+      "created_at": "2025-09-09T05:59:48.030136"
+    },
+    {
+      "id": "3dbbc1c0-07c4-4584-ae60-8fa8d34a4cbd",
+      "source_id": "45d3fa0d-5f26-464c-9d5f-2a0aa97dee66",
+      "target_id": "e062e506-b4b9-4d49-9abe-d1848c37e253",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "If experiments meaningfully affect markets or users, there may be regulatory expectations; understanding obligations informs risk assessment and possible escalation.",
+        "priority": 0.6,
+        "created_at": "2025-09-09T05:59:48.030136"
+      },
+      "created_at": "2025-09-09T05:59:48.030136"
+    },
+    {
+      "id": "c4aba4f7-59d7-404b-890c-fb3a8d7ee859",
+      "source_id": "45d3fa0d-5f26-464c-9d5f-2a0aa97dee66",
+      "target_id": "56334e0c-22ec-472f-94ee-0a0e87a94bda",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Explaining why actors choose public tests over private environments helps predict future testing behavior and identify opportunities to reduce on-chain noise.",
+        "priority": 0.65,
+        "created_at": "2025-09-09T05:59:48.030136"
+      },
+      "created_at": "2025-09-09T05:59:48.030136"
+    },
+    {
+      "id": "eada07d0-f661-44ee-92d5-0ced2a352be5",
+      "source_id": "3fffdd4d-7901-41ac-8015-cd2eb231b399",
+      "target_id": "13a43022-a1b4-4447-8a6f-68bb9f7de2a7",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-09T06:00:59.196297"
+      },
+      "created_at": "2025-09-09T06:00:59.196297"
+    },
+    {
+      "id": "4223a5d9-0ae9-4581-aec6-e1831fd5f22d",
+      "source_id": "15bd6a9e-a8ec-440a-ae20-773dbfb09896",
+      "target_id": "13a43022-a1b4-4447-8a6f-68bb9f7de2a7",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-09T06:00:59.196297"
+      },
+      "created_at": "2025-09-09T06:00:59.196297"
+    },
+    {
+      "id": "b28ed961-330d-44fa-a6b4-e9fe70edfbba",
+      "source_id": "13a43022-a1b4-4447-8a6f-68bb9f7de2a7",
+      "target_id": "d7c42ada-fadd-4caa-bfce-a839e493478b",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Whether events are on mainnet vs testnet changes their market impact, legal risk, and how on-chain traces should be interpreted (real liquidity/money vs synthetic/test flows).",
+        "priority": 0.9,
+        "created_at": "2025-09-09T06:01:18.306611"
+      },
+      "created_at": "2025-09-09T06:01:18.306611"
+    },
+    {
+      "id": "84db812c-8f39-446d-b393-2332fb3b594b",
+      "source_id": "13a43022-a1b4-4447-8a6f-68bb9f7de2a7",
+      "target_id": "9b55d8d2-5b37-4919-af33-1b4c18775948",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "If signal providers and bot operators are linked, tests may be validating an end-to-end pipeline rather than independent experiments \u2014 this affects causality analysis and who to monitor or question.",
+        "priority": 0.85,
+        "created_at": "2025-09-09T06:01:18.306611"
+      },
+      "created_at": "2025-09-09T06:01:18.306611"
+    },
+    {
+      "id": "da055995-7565-4429-b6b6-5356805e5301",
+      "source_id": "13a43022-a1b4-4447-8a6f-68bb9f7de2a7",
+      "target_id": "f5ad5bb7-a1ac-4223-9f64-b1789cd41464",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Promotional amplification can create artificial attention/noise that confounds short-query metrics and may be mistaken for organic market response.",
+        "priority": 0.75,
+        "created_at": "2025-09-09T06:01:18.306611"
+      },
+      "created_at": "2025-09-09T06:01:18.306611"
+    },
+    {
+      "id": "dab46d02-3632-433d-a1f6-d7b81afd69aa",
+      "source_id": "13a43022-a1b4-4447-8a6f-68bb9f7de2a7",
+      "target_id": "27ce4b37-7435-4a2d-8b8a-da5dc0de17d4",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Investigative interpretation and model validation depend on whether test results generalize; treating experimental metrics as representative risks incorrect conclusions.",
+        "priority": 0.8,
+        "created_at": "2025-09-09T06:01:18.306611"
+      },
+      "created_at": "2025-09-09T06:01:18.306611"
+    },
+    {
+      "id": "5e1d1fb8-14c9-4d16-9671-265f1c23daca",
+      "source_id": "13a43022-a1b4-4447-8a6f-68bb9f7de2a7",
+      "target_id": "af21097d-6a03-4951-b382-53bc88523e5d",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Rapid 'short-query' outputs require provenance/confidence metadata to manage the speed vs. rigor trade-off and to enable automated downstream handling and verification.",
+        "priority": 0.8,
+        "created_at": "2025-09-09T06:01:18.306611"
+      },
+      "created_at": "2025-09-09T06:01:18.306611"
+    },
+    {
+      "id": "12766c42-b70b-401f-b419-08c1533cc81b",
+      "source_id": "13a43022-a1b4-4447-8a6f-68bb9f7de2a7",
+      "target_id": "edb1c485-f896-4cb7-973f-108e0ff709d7",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Understanding spread vs. containment helps distinguish isolated validation tests from market-level experiments that could affect real users.",
+        "priority": 0.7,
+        "created_at": "2025-09-09T06:01:18.306611"
+      },
+      "created_at": "2025-09-09T06:01:18.306611"
+    },
+    {
+      "id": "5c2fbf63-082c-4182-a834-def4fbb743c6",
+      "source_id": "13a43022-a1b4-4447-8a6f-68bb9f7de2a7",
+      "target_id": "47ec81b0-2494-4840-804c-a76c29bdef78",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "If tests are obfuscated to resemble real behavior, detection and isolation become harder and raise concerns about deceptive practices or deliberate stress-testing of observers.",
+        "priority": 0.65,
+        "created_at": "2025-09-09T06:01:18.306611"
+      },
+      "created_at": "2025-09-09T06:01:18.306611"
+    },
+    {
+      "id": "eaca0fcd-fa56-4736-9eb5-55a5219d5f8d",
+      "source_id": "13a43022-a1b4-4447-8a6f-68bb9f7de2a7",
+      "target_id": "61af9d60-90ef-4570-a3ee-f0bfd1e8e4b1",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Causal mapping is required to validate whether signals cause bot actions or whether both respond to the same external stimuli; lack of traces is a gap in attribution.",
+        "priority": 0.8,
+        "created_at": "2025-09-09T06:01:18.306611"
+      },
+      "created_at": "2025-09-09T06:01:18.306611"
+    },
+    {
+      "id": "2fbc5e94-ec3c-419f-a0f6-9912e54ee9a9",
+      "source_id": "13a43022-a1b4-4447-8a6f-68bb9f7de2a7",
+      "target_id": "d283ef51-0fc5-49fd-8f7b-19e495ec70ce",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Test artifacts may be an opportunity: if well-instrumented, they provide labeled events to evaluate accuracy, latency, and failure modes of short-query driven workflows.",
+        "priority": 0.7,
+        "created_at": "2025-09-09T06:01:18.306611"
+      },
+      "created_at": "2025-09-09T06:01:18.306611"
+    },
+    {
+      "id": "69fc2130-1463-4b9f-aa6f-99e9dfeab4e2",
+      "source_id": "13a43022-a1b4-4447-8a6f-68bb9f7de2a7",
+      "target_id": "4a3d7b36-a35a-4641-b1fe-dab9447dfc61",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Running test tokens or bots on mainnet can raise regulatory exposure; identifying these risks informs whether to escalate to compliance/legal teams or to recommend mitigation steps.",
+        "priority": 0.6,
+        "created_at": "2025-09-09T06:01:18.307611"
+      },
+      "created_at": "2025-09-09T06:01:18.307611"
+    },
+    {
+      "id": "e89251a0-72a6-4757-ac4e-2d02f0b4bc90",
+      "source_id": "a2aa66df-5159-4335-a8d8-626d7d48b8ed",
+      "target_id": "6b8ad078-c65b-4d85-bbe8-7a2dbf6fe9ed",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-09T06:01:26.999417"
+      },
+      "created_at": "2025-09-09T06:01:26.999417"
+    },
+    {
+      "id": "c4ac90a6-aa35-4acd-97b9-e2546e592336",
+      "source_id": "1fea3652-150d-4b20-9814-22d07c4fc5a6",
+      "target_id": "6b8ad078-c65b-4d85-bbe8-7a2dbf6fe9ed",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-09T06:01:26.999417"
+      },
+      "created_at": "2025-09-09T06:01:26.999417"
+    },
+    {
+      "id": "cb3e379c-7d16-4762-bab9-5534725dfa7d",
+      "source_id": "6b8ad078-c65b-4d85-bbe8-7a2dbf6fe9ed",
+      "target_id": "f8a4c1e7-4acf-4089-9004-dc22c1ae58e7",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The distinction determines whether on-chain activity reflects real market risk and liquidity impact or controlled experiments; sources did not consistently state the execution environment.",
+        "priority": 0.9,
+        "created_at": "2025-09-09T06:01:48.404227"
+      },
+      "created_at": "2025-09-09T06:01:48.404227"
+    },
+    {
+      "id": "8b004579-039d-4ac8-bab4-86dd1d1c892f",
+      "source_id": "6b8ad078-c65b-4d85-bbe8-7a2dbf6fe9ed",
+      "target_id": "2de2e0b4-3d92-41b2-8d01-ae09dac4b858",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Establishing coordination (shared operators, shared wallets, or signal-to-bot pipelines) is necessary to determine whether activity represents integrated tool validation or coincidental parallel testing.",
+        "priority": 0.8,
+        "created_at": "2025-09-09T06:01:48.404227"
+      },
+      "created_at": "2025-09-09T06:01:48.404227"
+    },
+    {
+      "id": "03c039cd-e69a-4909-a45f-a0e5ef89b2e0",
+      "source_id": "6b8ad078-c65b-4d85-bbe8-7a2dbf6fe9ed",
+      "target_id": "4dca95f1-eff0-471b-bd90-9cef1008bd68",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Promotional activity can produce artificial on-chain noise that looks like organic response to signals, confounding signal evaluation unless identified and separated.",
+        "priority": 0.8,
+        "created_at": "2025-09-09T06:01:48.404227"
+      },
+      "created_at": "2025-09-09T06:01:48.404227"
+    },
+    {
+      "id": "58aef5f7-f917-4b9e-97b3-38b3bb11a352",
+      "source_id": "6b8ad078-c65b-4d85-bbe8-7a2dbf6fe9ed",
+      "target_id": "d3c8d6c1-4b40-48a3-8494-88e4836eba54",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Investigators need practical filters (labels, token metadata, transaction patterns) to isolate controlled experiments from real trading for valid metric computation.",
+        "priority": 0.75,
+        "created_at": "2025-09-09T06:01:48.404227"
+      },
+      "created_at": "2025-09-09T06:01:48.404227"
+    },
+    {
+      "id": "35f4fedb-1a72-49c7-ac63-be7a9c28c581",
+      "source_id": "6b8ad078-c65b-4d85-bbe8-7a2dbf6fe9ed",
+      "target_id": "eb1f88f8-b286-44d6-8a0f-1bd519c9bb9f",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Rapid outputs require confidence indicators and provenance to assess reliability; current insights note the need but lack specifics on what is emitted.",
+        "priority": 0.85,
+        "created_at": "2025-09-09T06:01:48.404227"
+      },
+      "created_at": "2025-09-09T06:01:48.404227"
+    },
+    {
+      "id": "7b4036b7-1d7e-4e54-9be8-df7e5b4b4d67",
+      "source_id": "6b8ad078-c65b-4d85-bbe8-7a2dbf6fe9ed",
+      "target_id": "48c8cb4a-3462-4df7-8999-c44b1af54796",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Direct performance correlation is needed to validate the analytics-to-execution pipeline and to judge whether signals translate into effective automated trading.",
+        "priority": 0.9,
+        "created_at": "2025-09-09T06:01:48.404227"
+      },
+      "created_at": "2025-09-09T06:01:48.404227"
+    },
+    {
+      "id": "f41479c7-d30a-4a9f-91a0-fbb91af7ca01",
+      "source_id": "6b8ad078-c65b-4d85-bbe8-7a2dbf6fe9ed",
+      "target_id": "44f5c56e-5355-4f8b-b24c-6a27988869d7",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Obfuscation would impede attribution and risk assessment, and could indicate attempts to mask market manipulation under the guise of testing.",
+        "priority": 0.7,
+        "created_at": "2025-09-09T06:01:48.404227"
+      },
+      "created_at": "2025-09-09T06:01:48.404227"
+    },
+    {
+      "id": "c19f30db-8fcb-45b4-bf2c-23c304c57751",
+      "source_id": "6b8ad078-c65b-4d85-bbe8-7a2dbf6fe9ed",
+      "target_id": "537f76b2-7a74-40e1-ab7d-9c607e464ed1",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Linking social signals with on-chain actions is crucial to separate marketing-driven activity from analytics-driven behavior; current recommendations mention flagging promos but lack pipeline specifics.",
+        "priority": 0.8,
+        "created_at": "2025-09-09T06:01:48.405227"
+      },
+      "created_at": "2025-09-09T06:01:48.405227"
+    },
+    {
+      "id": "36871af5-46c1-4586-8604-524e4e815911",
+      "source_id": "6b8ad078-c65b-4d85-bbe8-7a2dbf6fe9ed",
+      "target_id": "f82f792b-988e-4c9e-98d9-3d8f97a9f6f2",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The presence of low-risk experiments creates an attack surface for manipulation; the insights raise this risk but do not analyze exploit feasibility.",
+        "priority": 0.85,
+        "created_at": "2025-09-09T06:01:48.405227"
+      },
+      "created_at": "2025-09-09T06:01:48.405227"
+    },
+    {
+      "id": "599f1aae-1970-4ba5-936e-a3412b69722a",
+      "source_id": "6b8ad078-c65b-4d85-bbe8-7a2dbf6fe9ed",
+      "target_id": "89f652cf-23df-47ef-9339-ed8a807e37ef",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Insights propose a shared pattern (speed, minimal input), but there's a gap in concrete standard schemas (required fields, confidence, follow-ups) that would enable cross-domain tooling.",
+        "priority": 0.6,
+        "created_at": "2025-09-09T06:01:48.405227"
+      },
+      "created_at": "2025-09-09T06:01:48.405227"
+    },
+    {
+      "id": "5e23a8e6-a197-4efb-a1dd-efd9e29a46ff",
+      "source_id": "6b8ad078-c65b-4d85-bbe8-7a2dbf6fe9ed",
+      "target_id": "513a6249-dbd8-4104-9479-60c8a7b94f8f",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Cross-domain comparisons highlight trade-offs between speed and rigor; regulatory/safety requirements in health suggest analogous constraints that may be under-considered in crypto testing.",
+        "priority": 0.4,
+        "created_at": "2025-09-09T06:01:48.405227"
+      },
+      "created_at": "2025-09-09T06:01:48.405227"
+    }
+  ],
+  "analytic_question": "a934cf16-b7c9-4a3b-94e0-f7846782f198",
+  "created_at": "2025-09-09T06:02:32.353469"
+}

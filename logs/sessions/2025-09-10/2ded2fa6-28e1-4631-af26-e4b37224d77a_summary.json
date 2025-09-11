@@ -1,0 +1,91 @@
+{
+  "session_metadata": {
+    "session_id": "2ded2fa6-28e1-4631-af26-e4b37224d77a",
+    "start_time": "2025-09-10T15:11:17.568828+00:00",
+    "end_time": "2025-09-10T15:11:46.461066+00:00",
+    "duration_seconds": 28.892238,
+    "user_query": "test search execution validation"
+  },
+  "configuration": {
+    "max_searches": 3,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.6,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "model_provider": "gemini",
+    "pages_per_search": 3,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true,
+    "enforce_endpoint_diversity": false,
+    "max_endpoint_repeats": 5,
+    "diversity_threshold": 0.3
+  },
+  "performance_metrics": {
+    "total_searches": 3,
+    "total_rounds": 1,
+    "total_results_found": 0,
+    "satisfaction_score": 0.0,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.0,
+      "source_diversity": 0.0,
+      "evidence_quality": 0.0,
+      "claim_specificity": 0.0,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Reached maximum search limit (3)"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [],
+      "moderately_effective": [],
+      "low_effectiveness": [],
+      "ineffective": [
+        {
+          "search_id": 1,
+          "query": "twitter search API validation OR tweet execution testing",
+          "results": 0,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 2,
+          "query": "",
+          "results": 0,
+          "effectiveness": 0.0
+        },
+        {
+          "search_id": 3,
+          "query": "",
+          "results": 0,
+          "effectiveness": 0.0
+        }
+      ]
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "Graph Strategy: The initial phase of investigating 'test search execution validation' requires gathering broad, foundational knowledge. This strategy aims to identify general discussions, official announcements, and key stakeholders within the Twitter developer ecosystem to establish a baseline understanding of how search execution validation is discussed, implemented, or tested. By combining general searches with targeted user timelines and network analysis, we can begin to map the relevant information landscape and identify specific areas for deeper dives.",
+        "avg_effectiveness": 0.0
+      }
+    ],
+    "dead_ends": [
+      "twitter search API validation OR tweet execution testing",
+      ""
+    ],
+    "promising_leads": []
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Graph Strategy: The initial phase of investigating 'test search execution validation' requires gathering broad, foundational knowledge. This strategy aims to identify general discussions, official announcements, and key stakeholders within the Twitter developer ecosystem to establish a baseline understanding of how search execution validation is discussed, implemented, or tested. By combining general searches with targeted user timelines and network analysis, we can begin to map the relevant information landscape and identify specific areas for deeper dives.",
+      "searches_count": 3,
+      "total_results": 0,
+      "effectiveness": 0.0,
+      "insights": []
+    }
+  ]
+}

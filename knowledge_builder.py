@@ -1,12 +1,19 @@
 # knowledge_builder.py
-from typing import Dict, List, Any, Optional, Set, Tuple
+from typing import Dict, List, Any, Optional, Set, Tuple, TYPE_CHECKING
 from dataclasses import dataclass, field
 from collections import defaultdict, Counter
 import json
 import re
 from datetime import datetime
 
-from twitterexplorer.investigation_engine import InvestigationSession, SearchAttempt, Finding
+# Use TYPE_CHECKING to avoid circular import and performance hit
+if TYPE_CHECKING:
+    from investigation_engine import InvestigationSession, SearchAttempt, Finding
+else:
+    # At runtime, use forward references to avoid heavy investigation_engine import
+    InvestigationSession = 'InvestigationSession'
+    SearchAttempt = 'SearchAttempt'
+    Finding = 'Finding'
 
 @dataclass
 class KnowledgeNode:
@@ -70,7 +77,7 @@ class KnowledgeBuilder:
             'journalist', 'investigation', 'analysis'
         ]
     
-    def build_knowledge_from_session(self, session: InvestigationSession) -> InvestigationMemory:
+    def build_knowledge_from_session(self, session: 'InvestigationSession') -> InvestigationMemory:
         """Build comprehensive knowledge from investigation session"""
         
         # Process all search attempts
@@ -209,7 +216,7 @@ class KnowledgeBuilder:
         
         return pattern if len(pattern.split()) > 1 else None
     
-    def _analyze_search_patterns(self, session: InvestigationSession):
+    def _analyze_search_patterns(self, session: 'InvestigationSession'):
         """Analyze effectiveness of different search patterns"""
         
         pattern_stats = defaultdict(list)
@@ -270,7 +277,7 @@ class KnowledgeBuilder:
         
         return (has_credibility_a and has_debunking_b) or (has_credibility_b and has_debunking_a)
     
-    def _generate_insights(self, session: InvestigationSession):
+    def _generate_insights(self, session: 'InvestigationSession'):
         """Generate key insights from accumulated knowledge"""
         
         insights = []
@@ -314,7 +321,7 @@ class KnowledgeBuilder:
         
         self.memory.key_insights = insights
     
-    def _identify_research_gaps(self, session: InvestigationSession):
+    def _identify_research_gaps(self, session: 'InvestigationSession'):
         """Identify gaps in the investigation that could be addressed"""
         
         gaps = []
@@ -396,7 +403,7 @@ class KnowledgeBuilder:
         
         return "\n".join(summary_parts)
     
-    def get_investigation_recommendations(self, session: InvestigationSession) -> List[str]:
+    def get_investigation_recommendations(self, session: 'InvestigationSession') -> List[str]:
         """Get specific recommendations based on accumulated knowledge"""
         
         recommendations = []

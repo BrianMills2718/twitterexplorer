@@ -199,6 +199,8 @@ class GraphAwareLLMCoordinator:
         self.diversity_tracker = EndpointDiversityTracker()
         self.adaptive_strategy = AdaptiveStrategySystem()
         self.search_history = []  # Track searches for adaptation
+        self.emergent_questions = []  # Emergent questions to drive follow-up searches
+        self.logger = logging.getLogger(__name__)  # Initialize logger
         
         # Initialize model manager
         if model_manager is None:
@@ -334,6 +336,14 @@ class GraphAwareLLMCoordinator:
         self.rejection_context = context
         self.logger.info(f"Rejection context set: {len(context)} chars")
     
+    def set_emergent_questions_context(self, emergent_questions: List[str]):
+        """Set emergent questions to drive follow-up searches"""
+        self.emergent_questions = emergent_questions
+        if emergent_questions:
+            self.logger.info(f"Emergent questions set: {len(emergent_questions)} questions")
+        else:
+            self.emergent_questions = []
+    
     def check_and_adapt_strategy(self, goal: str) -> Optional[StrategicDecision]:
         """
         Check if strategy adaptation is needed and generate pivot if necessary
@@ -397,14 +407,18 @@ class GraphAwareLLMCoordinator:
         pivot_decision = self.check_and_adapt_strategy(goal)
         if pivot_decision:
             self.logger.info("ADAPTIVE: Using pivot strategy instead of normal decision")
-            # Track the pivot searches
-            for search in pivot_decision.searches:
+            
+            # CRITICAL: Validate pivot decision parameters too
+            validated_pivot_decision = self._enforce_parameter_validation(pivot_decision)
+            
+            # Track the validated pivot searches
+            for search in validated_pivot_decision.searches:
                 self.search_history.append({
                     'endpoint': search.endpoint,
                     'query': search.parameters.query if hasattr(search.parameters, 'query') else None,
                     'parameters': search.parameters
                 })
-            return pivot_decision
+            return validated_pivot_decision
         
         try:
             # Get complete strategic context from graph
@@ -489,10 +503,13 @@ class GraphAwareLLMCoordinator:
             self.logger.info(f"DIAGNOSTIC: Endpoint diversity score: {diversity_score:.2f}")
             self.logger.info(f"DIAGNOSTIC: Endpoints used: {list(self.diversity_tracker.endpoint_usage.keys())}")
             
-            # Update graph with decision
-            self._update_graph_with_decision(decision)
+            # CRITICAL: Validate parameters and prevent placeholders from reaching API
+            validated_decision = self._enforce_parameter_validation(decision)
             
-            return decision
+            # Update graph with validated decision  
+            self._update_graph_with_decision(validated_decision)
+            
+            return validated_decision
                 
         except Exception as e:
             self.logger.error(f"Error in make_strategic_decision: {e}")
@@ -738,6 +755,112 @@ class GraphAwareLLMCoordinator:
         
         return "\n".join(report_lines)
     
+    def _extract_available_tweet_ids(self) -> str:
+        """Extract tweet IDs from graph data points to provide context for dependent searches"""
+        tweet_ids = []
+        
+        try:
+            # Get data points from graph that contain tweet data
+            data_points = self.graph.get_nodes_by_type("DataPoint")
+            
+            for dp in data_points:
+                source_info = dp.properties.get('source_info', {})
+                content = dp.properties.get('content', '')
+                
+                # Extract tweet ID from source info - check multiple fields
+                if isinstance(source_info, dict):
+                    # Check various possible ID fields
+                    tweet_id = (source_info.get('id') or 
+                               source_info.get('tweet_id') or
+                               source_info.get('rest_id') or
+                               source_info.get('id_str'))
+                    
+                    if tweet_id and tweet_id != 'unknown' and str(tweet_id).strip():
+                        tweet_ids.append(f"- {tweet_id} (from {source_info.get('source', 'unknown')})")
+                
+                # Also check if content contains structured data
+                if content and isinstance(content, str):
+                    import re
+                    # More comprehensive ID patterns
+                    id_patterns = [
+                        r'"id":\s*"(\d{15,})"',  # JSON format with long IDs
+                        r'"rest_id":\s*"(\d{15,})"',  # REST ID format
+                        r'"id_str":\s*"(\d{15,})"',  # ID string format
+                        r'id["\']?\s*:\s*["\']?(\d{15,})',  # Various ID patterns
+                        r'tweet_id["\']?\s*:\s*["\']?(\d{15,})',  # Tweet ID patterns
+                    ]
+                    
+                    for pattern in id_patterns:
+                        matches = re.findall(pattern, content)
+                        for match in matches:
+                            if len(match) >= 15:  # Twitter IDs are typically 15+ chars
+                                tweet_ids.append(f"- {match} (extracted from content)")
+                                break  # Only take first match per pattern per datapoint
+                        if matches:  # If we found matches with this pattern, move to next datapoint
+                            break
+            
+            # Remove duplicates while preserving order
+            seen = set()
+            unique_tweet_ids = []
+            for tid in tweet_ids:
+                id_part = tid.split(' ')[1]  # Extract just the ID number
+                if id_part not in seen:
+                    seen.add(id_part)
+                    unique_tweet_ids.append(tid)
+                            
+            if unique_tweet_ids:
+                return "\n".join(unique_tweet_ids[:10])  # Limit to 10 most recent
+            else:
+                return "No tweet IDs available from previous searches - suggest using search queries instead of specific ID-dependent operations"
+                
+        except Exception as e:
+            self.logger.error(f"Error extracting tweet IDs: {e}")
+            return "Error extracting tweet IDs from context - suggest using search queries instead"
+    
+    def _extract_available_user_data(self) -> str:
+        """Extract user data from graph data points to provide context for user-related searches"""
+        user_data = []
+        
+        try:
+            # Get data points from graph that contain user data
+            data_points = self.graph.get_nodes_by_type("DataPoint")
+            
+            for dp in data_points:
+                source_info = dp.properties.get('source_info', {})
+                content = dp.properties.get('content', '')
+                
+                # Extract usernames from source info
+                if isinstance(source_info, dict):
+                    username = source_info.get('username') or source_info.get('screenname')
+                    if username:
+                        user_data.append(f"- @{username}")
+                
+                # Try to extract usernames from content
+                import re
+                username_patterns = [
+                    r'"screenname":\s*"([^"]+)"',  # JSON screenname
+                    r'"username":\s*"([^"]+)"',    # JSON username
+                    r'@([a-zA-Z0-9_]+)',           # @mentions
+                ]
+                
+                for pattern in username_patterns:
+                    matches = re.findall(pattern, content)
+                    for match in matches:
+                        if len(match) > 2:  # Valid username length
+                            user_data.append(f"- @{match}")
+                            
+            # Remove duplicates and limit
+            unique_users = list(set(user_data))[:10]
+            
+            if unique_users:
+                return "\n".join(unique_users)
+            else:
+                return "No user data available from previous searches"
+                
+        except Exception as e:
+            self.logger.error(f"Error extracting user data: {e}")
+            return "Error extracting user data from context"
+    
     def _create_strategic_decision_prompt(self, goal: str, context: str) -> str:
         """Create prompt for strategic decision making"""
         json_structure = """{
@@ -759,13 +882,25 @@ class GraphAwareLLMCoordinator:
       "reasoning": "Why this timeline is relevant"
     }
   ],
-  "expected_outcomes": ["What this strategy should achieve", "Expected results"]
+  "expected_outcomes": ["What this strategy should achieve", "Expected results"],
+  "confidence": 0.8
 }"""
         
         # Add rejection feedback if available
         rejection_info = ""
         if self.rejection_context:
             rejection_info = f"\nIMPORTANT FEEDBACK FROM PREVIOUS ROUND:\n{self.rejection_context}\n"
+        
+        # Add emergent questions for follow-up searches
+        emergent_questions_info = ""
+        if self.emergent_questions:
+            questions_text = "\n".join(f"- {q}" for q in self.emergent_questions)
+            emergent_questions_info = f"""
+EMERGENT QUESTIONS TO EXPLORE:
+{questions_text}
+
+PRIORITY: These emergent questions should drive your search strategy. Design searches to explore and answer these specific questions.
+"""
         
         # Include context information if available
         context_prompt = ""
@@ -780,6 +915,10 @@ IMPORTANT: All search strategies must stay relevant to the investigation goal.
 Avoid searches that would find content unrelated to: {self.context.analytic_question}
 """
 
+        # Extract available data for parameter resolution
+        available_tweet_ids = self._extract_available_tweet_ids()
+        available_user_data = self._extract_available_user_data()
+
         return f"""
 You are an expert investigation strategist. Your goal: {goal}
 
@@ -787,6 +926,7 @@ You are an expert investigation strategist. Your goal: {goal}
 COMPLETE INVESTIGATION CONTEXT:
 {context}
 {rejection_info}
+{emergent_questions_info}
 Based on this COMPLETE context, make the most strategically coherent decision for the next investigation round.
 
 CRITICAL REQUIREMENTS:
@@ -832,10 +972,27 @@ Available endpoints - ALL 16 ENDPOINTS WITH COMPLETE PARAMETERS:
 
 **STRATEGIC IMPERATIVE: Use diverse endpoints for comprehensive investigation. Network endpoints reveal associations. Conversation endpoints show reactions and discussions. Tweet analysis provides deep context. Profile endpoints verify credibility.**
 
+**CRITICAL PARAMETER REQUIREMENTS - ABSOLUTELY MANDATORY:**
+
+✅ PARAMETER REQUIREMENTS - USE CONCRETE VALUES ONLY:
+- Use actual usernames: "elonmusk", "reuters", "nasa"
+- Use real search terms: "climate change policy", "AI safety"  
+- Use specific tweet IDs from available context data when needed
+- If specific IDs are not available in context, design searches that don't require them
+
+**AVAILABLE TWEET IDs FROM PREVIOUS SEARCHES:**
+{available_tweet_ids}
+
+**AVAILABLE USER DATA FROM PREVIOUS SEARCHES:**
+{available_user_data}
+
+**VALIDATION**: Every parameter value must be ready to send to the API immediately without replacement.
+
 Return a strategic decision with EXACT JSON structure:
 {json_structure}
 
 CRITICAL: Each search MUST have "endpoint" and "parameters" with appropriate parameter names for that endpoint.
+All parameter VALUES must be concrete and usable - NO PLACEHOLDERS!
 
 **COMPREHENSIVE ENDPOINT PARAMETER GUIDE:**
 
@@ -1088,6 +1245,14 @@ Focus on building a coherent narrative from the evidence while acknowledging unc
                         if hasattr(search.parameters, 'model_dump'):
                             try:
                                 params_dict = {k: v for k, v in search.parameters.model_dump().items() if v is not None}
+                                
+                                # CRITICAL: Validate parameters for placeholders
+                                placeholder_errors = self._validate_no_placeholders(params_dict)
+                                if placeholder_errors:
+                                    self.logger.error(f"PLACEHOLDER VALIDATION FAILED: {placeholder_errors}")
+                                    # Skip this search to prevent API failures
+                                    continue
+                                    
                             except Exception as param_error:
                                 self.logger.error(f"Error dumping search parameters: {param_error}")
                                 params_dict = {}
@@ -1146,6 +1311,19 @@ Focus on building a coherent narrative from the evidence while acknowledging unc
         # Add insights to graph and connect to data points
         for insight_text in evaluation.key_insights:
             insight = self.graph.create_insight_node(insight_text, "evaluation_derived")
+            
+            # CRITICAL: Add missing properties to evaluation-derived insights to prevent "Untitled" display
+            # Generate a title from the content (first 6 words + ellipsis if longer)
+            words = insight_text.split()[:6]
+            title = ' '.join(words)
+            if len(insight_text.split()) > 6:
+                title += "..."
+            
+            # Add properties consistent with real-time synthesis insights
+            insight.properties['title'] = title
+            insight.properties['confidence'] = 0.7  # Reasonable default for evaluation-derived insights
+            insight.properties['investigation_relevance'] = evaluation.relevance_score / 10.0  # Convert 0-10 to 0-1
+            insight.properties['key_evidence'] = [insight_text[:200]]  # First 200 chars as evidence
             
             # Connect insights to data points that support them
             for data_point in created_data_points:
@@ -1316,4 +1494,107 @@ Return ONLY valid JSON with the exact parameters needed (no other text):
             # Return empty parameters
             return {}
     
+    def _validate_no_placeholders(self, params_dict: Dict[str, Any]) -> List[str]:
+        """
+        Validate that parameters contain no placeholder values
+        
+        Returns: List of error messages for any placeholders found
+        """
+        errors = []
+        
+        # Define placeholder patterns to detect
+        placeholder_patterns = [
+            r'REPLACE_WITH_[A-Z_]+',       # REPLACE_WITH_TWEET_ID_FROM_TIMELINE
+            r'<[A-Za-z_]+>',               # <username>, <tweet_id>
+            r'\{[A-Za-z_]+\}',             # {placeholder}
+            r'\[[A-Za-z_\s]+\]',           # [placeholder text]
+            r'TODO[:\s]',                  # TODO: something
+            r'INSERT_[A-Z_]+',             # INSERT_VALUE_HERE
+            r'example_[a-z_]+',            # example_value
+            r'sample_[a-z_]+',             # sample_id
+            r'placeholder_[a-z_]+',        # placeholder_text
+        ]
+        
+        import re
+        
+        # Check each parameter value
+        for param_name, param_value in params_dict.items():
+            if not isinstance(param_value, str):
+                continue
+                
+            # Check against all placeholder patterns
+            for pattern in placeholder_patterns:
+                if re.search(pattern, param_value, re.IGNORECASE):
+                    errors.append(f"Parameter '{param_name}' contains placeholder: '{param_value}'")
+                    break
+            
+            # Check for specific placeholder patterns (more precise detection)
+            specific_placeholder_indicators = [
+                'replace_with',
+                'insert_here', 
+                'todo:',
+                'example_',
+                'sample_',
+                'your_',
+                'user_id_here',
+                'tweet_id_here'
+            ]
+            param_lower = param_value.lower()
+            for indicator in specific_placeholder_indicators:
+                if indicator in param_lower:
+                    errors.append(f"Parameter '{param_name}' contains placeholder pattern: '{param_value}'")
+                    break
+        
+        return errors
+
+    def _enforce_parameter_validation(self, decision: StrategicDecision) -> StrategicDecision:
+        """
+        Enforce parameter validation and prevent any placeholders from reaching API calls
+        
+        Returns: Validated decision with placeholder searches removed
+        """
+        validated_searches = []
+        
+        for search in decision.searches:
+            try:
+                # Convert search parameters to dict for validation
+                if hasattr(search.parameters, '__dict__'):
+                    params_dict = search.parameters.__dict__
+                elif hasattr(search.parameters, 'model_dump'):
+                    params_dict = search.parameters.model_dump()
+                else:
+                    params_dict = {}
+                
+                # Run validation
+                validation_errors = self._validate_no_placeholders(params_dict)
+                
+                if validation_errors:
+                    self.logger.error(f"CRITICAL: Blocked placeholder parameters in {search.endpoint}: {validation_errors}")
+                    self.logger.error(f"CRITICAL: Parameters were: {params_dict}")
+                    # Skip this search entirely - do not allow placeholders to reach API
+                    continue
+                else:
+                    validated_searches.append(search)
+                    
+            except Exception as e:
+                self.logger.error(f"Error validating search parameters: {e}")
+                # If validation fails, be safe and skip the search
+                continue
+        
+        # Return decision with only validated searches
+        if len(validated_searches) < len(decision.searches):
+            self.logger.warning(f"Removed {len(decision.searches) - len(validated_searches)} searches due to placeholder parameters")
+        
+        # Create new decision with validated searches - preserve ALL required fields
+        validated_decision = StrategicDecision(
+            decision_type=decision.decision_type,
+            reasoning=decision.reasoning,
+            searches=validated_searches,
+            expected_outcomes=getattr(decision, 'expected_outcomes', []),
+            confidence=getattr(decision, 'confidence', 0.8),
+            context_utilization=getattr(decision, 'context_utilization', 0.8),
+            strategic_coherence_score=getattr(decision, 'strategic_coherence_score', 0.8)
+        )
+        
+        return validated_decision
     

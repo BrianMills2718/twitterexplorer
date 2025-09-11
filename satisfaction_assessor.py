@@ -1,8 +1,22 @@
 # satisfaction_assessor.py
-from typing import List, Dict, Any, Tuple
+from typing import List, Dict, Any, Tuple, TYPE_CHECKING
 import re
 from dataclasses import dataclass
-from twitterexplorer.investigation_engine import InvestigationSession, SearchAttempt, SatisfactionMetrics, Finding
+
+# Use TYPE_CHECKING to avoid circular import - only import types during type checking
+if TYPE_CHECKING:
+    from investigation_engine import InvestigationSession, SearchAttempt, SatisfactionMetrics, Finding
+else:
+    # At runtime, use forward references to avoid heavy investigation_engine import
+    InvestigationSession = 'InvestigationSession'
+    SearchAttempt = 'SearchAttempt' 
+    SatisfactionMetrics = 'SatisfactionMetrics'
+    Finding = 'Finding'
+
+def _lazy_import_satisfaction_metrics():
+    """Lazy import SatisfactionMetrics only when needed to avoid startup delay"""
+    from investigation_engine import SatisfactionMetrics
+    return SatisfactionMetrics
 
 @dataclass
 class ContentAnalysis:
@@ -46,7 +60,7 @@ class SatisfactionAssessor:
             'contradictions', 'claims vs reality'
         ]
     
-    def assess_investigation_satisfaction(self, session: InvestigationSession) -> SatisfactionMetrics:
+    def assess_investigation_satisfaction(self, session: 'InvestigationSession') -> 'SatisfactionMetrics':
         """Comprehensive assessment of investigation satisfaction"""
         
         # Analyze all search results
@@ -59,6 +73,7 @@ class SatisfactionAssessor:
         claim_specificity = self._calculate_claim_specificity(content_analysis)
         contradiction_resolution = self._calculate_contradiction_resolution(session, content_analysis)
         
+        SatisfactionMetrics = _lazy_import_satisfaction_metrics()
         return SatisfactionMetrics(
             information_coverage=information_coverage,
             source_diversity=source_diversity,
@@ -67,7 +82,7 @@ class SatisfactionAssessor:
             contradiction_resolution=contradiction_resolution
         )
     
-    def _analyze_search_content(self, session: InvestigationSession) -> ContentAnalysis:
+    def _analyze_search_content(self, session: 'InvestigationSession') -> ContentAnalysis:
         """Analyze content across all searches to assess quality"""
         
         analysis = ContentAnalysis()
@@ -99,7 +114,7 @@ class SatisfactionAssessor:
         
         return analysis
     
-    def _calculate_information_coverage(self, session: InvestigationSession, content_analysis: ContentAnalysis) -> float:
+    def _calculate_information_coverage(self, session: 'InvestigationSession', content_analysis: ContentAnalysis) -> float:
         """Calculate how well the investigation covers the topic (0-1)"""
         
         # Base coverage on variety of search approaches tried
@@ -129,7 +144,7 @@ class SatisfactionAssessor:
         
         return coverage_score
     
-    def _calculate_source_diversity(self, session: InvestigationSession) -> float:
+    def _calculate_source_diversity(self, session: 'InvestigationSession') -> float:
         """Calculate diversity of information sources (0-1)"""
         
         # Count different types of searches attempted
@@ -162,7 +177,7 @@ class SatisfactionAssessor:
         
         return diversity_score
     
-    def _calculate_evidence_quality(self, session: InvestigationSession, content_analysis: ContentAnalysis) -> float:
+    def _calculate_evidence_quality(self, session: 'InvestigationSession', content_analysis: ContentAnalysis) -> float:
         """Calculate quality of evidence found (0-1)"""
         
         quality_factors = []
@@ -203,7 +218,7 @@ class SatisfactionAssessor:
         
         return specificity_ratio
     
-    def _calculate_contradiction_resolution(self, session: InvestigationSession, content_analysis: ContentAnalysis) -> float:
+    def _calculate_contradiction_resolution(self, session: 'InvestigationSession', content_analysis: ContentAnalysis) -> float:
         """Calculate how well contradictions and disputes are addressed (0-1)"""
         
         # Check if investigation found both supporting and opposing views
@@ -272,7 +287,7 @@ class SatisfactionAssessor:
         
         return round_assessment
     
-    def generate_satisfaction_report(self, session: InvestigationSession) -> str:
+    def generate_satisfaction_report(self, session: 'InvestigationSession') -> str:
         """Generate human-readable satisfaction report"""
         
         metrics = self.assess_investigation_satisfaction(session)
@@ -325,7 +340,7 @@ class SatisfactionAssessor:
         
         return "\n".join(report_parts)
     
-    def should_continue_investigation(self, session: InvestigationSession) -> Tuple[bool, str, List[str]]:
+    def should_continue_investigation(self, session: 'InvestigationSession') -> Tuple[bool, str, List[str]]:
         """Determine if investigation should continue with specific reasons and suggestions"""
         
         metrics = self.assess_investigation_satisfaction(session)
