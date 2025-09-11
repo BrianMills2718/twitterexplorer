@@ -1,0 +1,130 @@
+{
+  "session_metadata": {
+    "session_id": "e9b7e927-42e3-49b2-8459-e8db6633e4a8",
+    "start_time": "2025-09-11T08:17:31.656688+00:00",
+    "end_time": "2025-09-11T10:34:52.252093+00:00",
+    "duration_seconds": 8240.595405,
+    "user_query": "conversations and perspectives on charlie kirk's death"
+  },
+  "configuration": {
+    "max_searches": 15,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.6,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "model_provider": "openai",
+    "pages_per_search": 3,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true,
+    "enforce_endpoint_diversity": false,
+    "max_endpoint_repeats": 5,
+    "diversity_threshold": 0.3
+  },
+  "performance_metrics": {
+    "total_searches": 8,
+    "total_rounds": 1,
+    "total_results_found": 473,
+    "satisfaction_score": 0.38431818181818206,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.4,
+      "source_diversity": 0.3,
+      "evidence_quality": 0.7154545454545462,
+      "claim_specificity": 0.30303030303030304,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Reached time limit (60 minutes)"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [
+        {
+          "search_id": 1,
+          "query": "charlie kirk death",
+          "results": 59,
+          "effectiveness": 8.0
+        },
+        {
+          "search_id": 2,
+          "query": "\"Charlie Kirk\" died OR dead OR \"RIP Charlie Kirk\"",
+          "results": 59,
+          "effectiveness": 8.0
+        },
+        {
+          "search_id": 3,
+          "query": "",
+          "results": 55,
+          "effectiveness": 8.0
+        },
+        {
+          "search_id": 5,
+          "query": "",
+          "results": 20,
+          "effectiveness": 8.0
+        },
+        {
+          "search_id": 6,
+          "query": "",
+          "results": 170,
+          "effectiveness": 8.0
+        },
+        {
+          "search_id": 7,
+          "query": "",
+          "results": 50,
+          "effectiveness": 8.0
+        },
+        {
+          "search_id": 8,
+          "query": "@charliekirk11 \"dead\" OR \"died\" OR \"RIP\"",
+          "results": 59,
+          "effectiveness": 8.0
+        }
+      ],
+      "moderately_effective": [],
+      "low_effectiveness": [],
+      "ineffective": [
+        {
+          "search_id": 4,
+          "query": "",
+          "results": 1,
+          "effectiveness": 0.4
+        }
+      ]
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "Graph Strategy: We currently have no data about whether Charlie Kirk is actually dead, how people are talking about it, what narratives are emerging, or whether the claim is trending. The highest-priority gaps are: (1) verification of the factual status (account activity, authoritative reports), (2) volume and tone of public conversation, and (3) key influencers and networks propagating the claim. To fill those gaps efficiently and coherently, the next round should combine content searches for mentions, direct inspection of Charlie Kirk's account and media, follower/network sampling, and trend checks. Using multiple endpoints (search, profile/timeline, media, followers, trends) will both cross-validate signals and map conversation spread.",
+        "avg_effectiveness": 7.05
+      }
+    ],
+    "dead_ends": [
+      ""
+    ],
+    "promising_leads": [
+      "charlie kirk death",
+      "\"Charlie Kirk\" died OR dead OR \"RIP Charlie Kirk\"",
+      "",
+      "@charliekirk11 \"dead\" OR \"died\" OR \"RIP\""
+    ]
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Graph Strategy: We currently have no data about whether Charlie Kirk is actually dead, how people are talking about it, what narratives are emerging, or whether the claim is trending. The highest-priority gaps are: (1) verification of the factual status (account activity, authoritative reports), (2) volume and tone of public conversation, and (3) key influencers and networks propagating the claim. To fill those gaps efficiently and coherently, the next round should combine content searches for mentions, direct inspection of Charlie Kirk's account and media, follower/network sampling, and trend checks. Using multiple endpoints (search, profile/timeline, media, followers, trends) will both cross-validate signals and map conversation spread.",
+      "searches_count": 8,
+      "total_results": 473,
+      "effectiveness": 7.05,
+      "insights": [
+        "Search results are directly on-topic: they represent a range of social-media reactions to Charlie Kirk’s death (celebration, condemnation, ambivalence, political framing).",
+        "Many posts accuse parts of the left of celebrating his death or describe cheering on social platforms (several mentions of Bluesky/Twitter).",
+        "Countervailing voices are visible: users explicitly condemn celebrating a death and call for empathy or restraint."
+      ]
+    }
+  ]
+}

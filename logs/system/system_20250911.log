@@ -1131,3 +1131,1385 @@ LiteLLM completion() model= gpt-5-mini; provider = openai
 2025-09-11 02:10:27,523 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Polarized responses: political acusatory frames vs faith-based mourning (confidence: 0.68)", "insight_confidence": 0.78, "timestamp": "2025-09-11T02:10:27.523872"}
 2025-09-11 02:10:27,524 - INFO - 
 LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:10:54,105 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:10:54,109 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:10:54,110 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:10:54.110123"}
+2025-09-11 02:10:54,110 - INFO - Bridge notification: Insight created - Strengthen — Refusal-to-mourn framing reinforced by memetic copying
+2025-09-11 02:10:54,111 - INFO - Bridge calling detect_emergent_questions with 47 insights
+2025-09-11 02:10:54,112 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:11:22,487 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:11:22,501 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:11:22,503 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 02:11:22,504 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 02:11:22,504 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Refusal-to-mourn framing reinforced by memetic copying", "insight_confidence": 0.9, "timestamp": "2025-09-11T02:11:22.504879"}
+2025-09-11 02:11:22,505 - INFO - {"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T02:11:22.505879"}
+2025-09-11 02:11:22,505 - INFO - {"event": "datapoint_added", "datapoint_id": "cc099199-0b6b-4b97-8900-ce578c749568", "pending_count": 1, "timestamp": "2025-09-11T02:11:22.505879"}
+2025-09-11 02:11:22,505 - INFO - {"event": "datapoint_added", "datapoint_id": "a0bf88e2-84ec-4138-9ae7-014efbd8663d", "pending_count": 2, "timestamp": "2025-09-11T02:11:22.505879"}
+2025-09-11 02:11:22,505 - INFO - {"event": "datapoint_added", "datapoint_id": "1fd1a6fc-b1b8-4846-a338-c88b0f72bb67", "pending_count": 3, "timestamp": "2025-09-11T02:11:22.505879"}
+2025-09-11 02:11:22,506 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:11:29,661 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:11:29,664 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:11:29,665 - INFO - {"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:11:29.665090"}
+2025-09-11 02:11:29,666 - INFO - {"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:11:29.666090"}
+2025-09-11 02:11:29,667 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:11:47,523 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:11:47,527 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:11:47,527 - INFO - {"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:11:47.527679"}
+2025-09-11 02:11:47,528 - INFO - {"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Polarized online reactions \u2014 refusal to mourn versus alleged celebrations", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Media/platform response and reporting accuracy after Charlie Kirk's death", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:11:47.528679"}
+2025-09-11 02:11:47,529 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:12:03,750 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:12:03,753 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:12:03,754 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:12:03.754068"}
+2025-09-11 02:12:03,755 - INFO - Bridge notification: Insight created - Strengthen — Refusal-to-mourn + responsibility framing
+2025-09-11 02:12:03,755 - INFO - Bridge calling detect_emergent_questions with 48 insights
+2025-09-11 02:12:03,756 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:12:33,240 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:12:33,254 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:12:33,256 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 02:12:33,257 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 02:12:33,257 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Refusal-to-mourn + responsibility framing", "insight_confidence": 0.9, "timestamp": "2025-09-11T02:12:33.257834"}
+2025-09-11 02:12:33,258 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:13:08,124 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:13:08,128 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:13:08,128 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:13:08.128237"}
+2025-09-11 02:13:08,129 - INFO - Bridge notification: Insight created - Strengthen — Broadcasters remove Kirk-related content after death
+2025-09-11 02:13:08,129 - INFO - Bridge calling detect_emergent_questions with 49 insights
+2025-09-11 02:13:08,131 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:13:34,871 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:13:34,884 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:13:34,886 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 02:13:34,887 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 02:13:34,887 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Broadcasters remove Kirk-related content after death", "insight_confidence": 0.88, "timestamp": "2025-09-11T02:13:34.887102"}
+2025-09-11 02:13:34,887 - INFO - {"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T02:13:34.887102"}
+2025-09-11 02:13:34,887 - INFO - {"event": "datapoint_added", "datapoint_id": "bf33a9b0-4ff7-4378-b9e3-9582377b2e0d", "pending_count": 1, "timestamp": "2025-09-11T02:13:34.887102"}
+2025-09-11 02:13:34,887 - INFO - {"event": "datapoint_added", "datapoint_id": "363ca8de-78a3-4da6-9241-f1581b38fa50", "pending_count": 2, "timestamp": "2025-09-11T02:13:34.887102"}
+2025-09-11 02:13:34,888 - INFO - {"event": "datapoint_added", "datapoint_id": "d82fbaae-028c-4704-8223-51993a16a337", "pending_count": 3, "timestamp": "2025-09-11T02:13:34.888102"}
+2025-09-11 02:13:34,888 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:13:41,555 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:13:41,557 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:13:41,558 - INFO - {"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:13:41.558259"}
+2025-09-11 02:13:41,559 - INFO - {"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:13:41.559260"}
+2025-09-11 02:13:41,560 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:13:58,538 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:13:58,543 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:13:58,544 - INFO - {"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:13:58.544636"}
+2025-09-11 02:13:58,545 - INFO - {"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Personal and moral reactions \u2014 grief, faith, and restraint from celebratory responses", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Political framing and discourse \u2014 accusations of distraction/psyop and ideological vilification", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:13:58.545637"}
+2025-09-11 02:13:58,546 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:14:18,119 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:14:18,128 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:14:18,129 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:14:18.129577"}
+2025-09-11 02:14:18,130 - INFO - Bridge notification: Insight created - Strengthen — Condemnation-plus-refusal-to-mourn emerges as distinct framing
+2025-09-11 02:14:18,130 - INFO - Bridge calling detect_emergent_questions with 50 insights
+2025-09-11 02:14:18,131 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:14:37,493 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:14:37,508 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:14:37,510 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 02:14:37,511 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 02:14:37,511 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Condemnation-plus-refusal-to-mourn emerges as distinct framing", "insight_confidence": 0.9, "timestamp": "2025-09-11T02:14:37.511844"}
+2025-09-11 02:14:37,513 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:14:55,734 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:14:55,738 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:14:55,738 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:14:55.738613"}
+2025-09-11 02:14:55,740 - INFO - Bridge notification: Insight created - STRENGTHEN — Existing framings supported by new posts
+2025-09-11 02:14:55,740 - INFO - Bridge calling detect_emergent_questions with 51 insights
+2025-09-11 02:14:55,741 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:15:20,315 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:15:20,330 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:15:20,333 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 02:15:20,335 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 02:15:20,336 - INFO - {"event": "insight_creation", "success": true, "insight_title": "STRENGTHEN \u2014 Existing framings supported by new posts", "insight_confidence": 0.92, "timestamp": "2025-09-11T02:15:20.336434"}
+2025-09-11 02:15:20,337 - INFO - {"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T02:15:20.337434"}
+2025-09-11 02:15:20,337 - INFO - {"event": "datapoint_added", "datapoint_id": "738fd3b4-1036-442c-8c64-9fb2de13a429", "pending_count": 1, "timestamp": "2025-09-11T02:15:20.337434"}
+2025-09-11 02:15:20,337 - INFO - {"event": "datapoint_added", "datapoint_id": "af933be5-fbde-4045-9f0f-13dea5fab792", "pending_count": 2, "timestamp": "2025-09-11T02:15:20.337434"}
+2025-09-11 02:15:20,337 - INFO - {"event": "datapoint_added", "datapoint_id": "e9bb5908-868a-4af9-b7f1-768a753eaf09", "pending_count": 3, "timestamp": "2025-09-11T02:15:20.337434"}
+2025-09-11 02:15:20,338 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:15:27,055 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:15:27,058 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:15:27,058 - INFO - {"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:15:27.058171"}
+2025-09-11 02:15:27,059 - INFO - {"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:15:27.059170"}
+2025-09-11 02:15:27,060 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:15:49,130 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:15:49,134 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:15:49,135 - INFO - {"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:15:49.135073"}
+2025-09-11 02:15:49,136 - INFO - {"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Moral shock and condemnation of people celebrating Charlie Kirk's death", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Surprise at the death and attribution of celebratory responses to specific social/political groups and platforms", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:15:49.136073"}
+2025-09-11 02:15:49,137 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:16:07,496 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:16:07,500 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:16:07,501 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:16:07.501278"}
+2025-09-11 02:16:07,501 - INFO - Bridge notification: Insight created - Strengthen — Refusal-to-mourn framing prevalence
+2025-09-11 02:16:07,502 - INFO - Bridge calling detect_emergent_questions with 52 insights
+2025-09-11 02:16:07,503 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:16:32,775 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:16:32,783 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:16:32,786 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 02:16:32,786 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 02:16:32,786 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Refusal-to-mourn framing prevalence", "insight_confidence": 0.92, "timestamp": "2025-09-11T02:16:32.786331"}
+2025-09-11 02:16:32,789 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:16:49,061 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:16:49,068 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:16:49,068 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:16:49.068041"}
+2025-09-11 02:16:49,070 - INFO - Bridge notification: Insight created - STRENGTHEN — Refusal-to-mourn framing prevalence
+2025-09-11 02:16:49,070 - INFO - Bridge calling detect_emergent_questions with 53 insights
+2025-09-11 02:16:49,071 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:17:20,279 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:17:20,283 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:17:20,286 - INFO - Bridge integration: Created 12 emergent questions, 12 SPAWNS edges
+2025-09-11 02:17:20,287 - INFO - Bridge integration: 12 emergent questions created from insight
+2025-09-11 02:17:20,287 - INFO - {"event": "insight_creation", "success": true, "insight_title": "STRENGTHEN \u2014 Refusal-to-mourn framing prevalence", "insight_confidence": 0.9, "timestamp": "2025-09-11T02:17:20.287215"}
+2025-09-11 02:17:20,288 - INFO - {"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T02:17:20.288217"}
+2025-09-11 02:17:20,288 - INFO - {"event": "datapoint_added", "datapoint_id": "89370104-9409-4806-a1d7-b28d50c1237d", "pending_count": 1, "timestamp": "2025-09-11T02:17:20.288217"}
+2025-09-11 02:17:20,288 - INFO - {"event": "datapoint_added", "datapoint_id": "09669de7-9a72-46bf-abfe-00422d924821", "pending_count": 2, "timestamp": "2025-09-11T02:17:20.288217"}
+2025-09-11 02:17:20,288 - INFO - {"event": "datapoint_added", "datapoint_id": "313ad284-1a66-4354-8754-deb6e0320a2e", "pending_count": 3, "timestamp": "2025-09-11T02:17:20.288217"}
+2025-09-11 02:17:20,289 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:17:36,823 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:17:36,826 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:17:36,827 - INFO - {"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:17:36.827136"}
+2025-09-11 02:17:36,828 - INFO - {"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:17:36.828196"}
+2025-09-11 02:17:36,829 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:18:01,377 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:18:01,381 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:18:01,382 - INFO - {"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:18:01.382338"}
+2025-09-11 02:18:01,382 - INFO - {"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Official/political response and commemoration following Charlie Kirk's assassination", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Social-media outrage and moral framing that links Kirk's death to victims (Uvalde) and accusations of 'acceptable losses'", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:18:01.382338"}
+2025-09-11 02:18:01,384 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:18:18,967 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:18:18,971 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:18:18,971 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:18:18.971989"}
+2025-09-11 02:18:18,972 - INFO - Bridge notification: Insight created - High-profile political leader frames Kirk as martyr
+2025-09-11 02:18:18,972 - INFO - Bridge calling detect_emergent_questions with 54 insights
+2025-09-11 02:18:18,973 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:18:57,049 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:18:57,054 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:18:57,058 - INFO - Bridge integration: Created 12 emergent questions, 12 SPAWNS edges
+2025-09-11 02:18:57,060 - INFO - Bridge integration: 12 emergent questions created from insight
+2025-09-11 02:18:57,060 - INFO - {"event": "insight_creation", "success": true, "insight_title": "High-profile political leader frames Kirk as martyr", "insight_confidence": 0.78, "timestamp": "2025-09-11T02:18:57.060054"}
+2025-09-11 02:18:57,061 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:19:18,199 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:19:18,203 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:19:18,204 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:19:18.204842"}
+2025-09-11 02:19:18,205 - INFO - Bridge notification: Insight created - Refusal-to-mourn + responsibility framing strengthened
+2025-09-11 02:19:18,205 - INFO - Bridge calling detect_emergent_questions with 55 insights
+2025-09-11 02:19:18,206 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:19:43,330 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:19:43,343 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:19:43,345 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 02:19:43,346 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 02:19:43,346 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Refusal-to-mourn + responsibility framing strengthened", "insight_confidence": 0.92, "timestamp": "2025-09-11T02:19:43.346645"}
+2025-09-11 02:19:43,347 - INFO - {"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T02:19:43.347645"}
+2025-09-11 02:19:43,347 - INFO - {"event": "datapoint_added", "datapoint_id": "17af59bf-28a7-4da0-b617-069e53196593", "pending_count": 1, "timestamp": "2025-09-11T02:19:43.347645"}
+2025-09-11 02:19:43,347 - INFO - {"event": "datapoint_added", "datapoint_id": "9a43594f-94dd-4cd4-9f1b-930bbda5af01", "pending_count": 2, "timestamp": "2025-09-11T02:19:43.347645"}
+2025-09-11 02:19:43,347 - INFO - {"event": "datapoint_added", "datapoint_id": "5d73f827-efac-44c1-8e2f-8934066da023", "pending_count": 3, "timestamp": "2025-09-11T02:19:43.347645"}
+2025-09-11 02:19:43,349 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:19:53,224 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:19:53,227 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:19:53,227 - INFO - {"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:19:53.227543"}
+2025-09-11 02:19:53,228 - INFO - {"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:19:53.228542"}
+2025-09-11 02:19:53,229 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:20:04,994 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:20:04,998 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:20:04,999 - INFO - {"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:20:04.999262"}
+2025-09-11 02:20:05,000 - INFO - {"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 1, "groups": [{"theme": "Claims and reactions asserting Charlie Kirk has died \u2014 mixture of rumor, condolence, and politicized framing", "datapoint_count": 3, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:20:05.000263"}
+2025-09-11 02:20:05,001 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:20:22,129 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:20:22,133 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:20:22,133 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:20:22.133430"}
+2025-09-11 02:20:22,134 - INFO - Bridge notification: Insight created - Strengthen — Polarized political vs faith-based responses
+2025-09-11 02:20:22,135 - INFO - Bridge calling detect_emergent_questions with 56 insights
+2025-09-11 02:20:22,136 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:20:44,333 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:20:44,340 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:20:44,342 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 02:20:44,344 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 02:20:44,344 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Polarized political vs faith-based responses", "insight_confidence": 0.82, "timestamp": "2025-09-11T02:20:44.344405"}
+2025-09-11 02:20:44,344 - INFO - {"event": "synthesis_completed", "insights_created": 1, "timestamp": "2025-09-11T02:20:44.344405"}
+2025-09-11 02:20:44,344 - INFO - {"event": "datapoint_added", "datapoint_id": "473b6bf9-30c7-4e2c-89ed-1b3c80ac5243", "pending_count": 1, "timestamp": "2025-09-11T02:20:44.344405"}
+2025-09-11 02:20:44,344 - INFO - {"event": "datapoint_added", "datapoint_id": "54d0b93f-8c39-4dc0-aa8e-0cf977a19004", "pending_count": 2, "timestamp": "2025-09-11T02:20:44.344405"}
+2025-09-11 02:20:44,345 - INFO - {"event": "datapoint_added", "datapoint_id": "e334fa6b-1626-42ea-b7d2-24a803a89c75", "pending_count": 3, "timestamp": "2025-09-11T02:20:44.345403"}
+2025-09-11 02:20:44,345 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:20:52,663 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:20:52,666 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:20:52,667 - INFO - {"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:20:52.667177"}
+2025-09-11 02:20:52,668 - INFO - {"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:20:52.668177"}
+2025-09-11 02:20:52,669 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:21:10,997 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:21:11,001 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:21:11,002 - INFO - {"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:21:11.002553"}
+2025-09-11 02:21:11,003 - INFO - {"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Mourning and respectful recollection despite political differences", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Sarcastic or politicized reactions framing the death as political commentary", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:21:11.003552"}
+2025-09-11 02:21:11,004 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:21:25,986 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:21:25,990 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:21:25,990 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:21:25.990238"}
+2025-09-11 02:21:26,000 - INFO - Bridge calling detect_emergent_questions with 57 insights
+2025-09-11 02:21:26,001 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:21:50,167 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:21:50,176 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:21:50,179 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 02:21:50,180 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 02:21:50,181 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Sympathetic cross\u2011ideological mourning reinforces polarization insight", "insight_confidence": 0.74, "timestamp": "2025-09-11T02:21:50.181508"}
+2025-09-11 02:21:50,182 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:22:03,484 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:22:03,488 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:22:03,488 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:22:03.488733"}
+2025-09-11 02:22:03,489 - INFO - Bridge notification: Insight created - Strengthen — Refusal-to-mourn + responsibility framing strengthened
+2025-09-11 02:22:03,489 - INFO - Bridge calling detect_emergent_questions with 58 insights
+2025-09-11 02:22:03,490 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:22:29,329 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:22:29,343 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:22:29,345 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 02:22:29,347 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 02:22:29,347 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Refusal-to-mourn + responsibility framing strengthened", "insight_confidence": 0.9, "timestamp": "2025-09-11T02:22:29.347661"}
+2025-09-11 02:22:29,347 - INFO - {"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T02:22:29.347661"}
+2025-09-11 02:22:29,347 - INFO - {"event": "datapoint_added", "datapoint_id": "fbcfdcd1-dbd5-406e-980d-cfe18d479ce4", "pending_count": 1, "timestamp": "2025-09-11T02:22:29.347661"}
+2025-09-11 02:22:29,347 - INFO - {"event": "datapoint_added", "datapoint_id": "bd8bf842-d908-4145-8309-075b43e9802f", "pending_count": 2, "timestamp": "2025-09-11T02:22:29.347661"}
+2025-09-11 02:22:29,347 - INFO - {"event": "datapoint_added", "datapoint_id": "e02528bd-ee53-4b77-8a5e-bb5692ec3d24", "pending_count": 3, "timestamp": "2025-09-11T02:22:29.347661"}
+2025-09-11 02:22:29,349 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:22:37,452 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:22:37,454 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:22:37,455 - INFO - {"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:22:37.455704"}
+2025-09-11 02:22:37,456 - INFO - {"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:22:37.456731"}
+2025-09-11 02:22:37,457 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:23:07,354 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:23:07,359 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:23:07,360 - INFO - {"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:23:07.360338"}
+2025-09-11 02:23:07,362 - INFO - {"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Media/political clash: Charlie Kirk vs. Van Jones about the Iryna Zarutska murder", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Religious/moral framing of Charlie Kirk's death and calls to faith", "datapoint_count": 2, "synthesis_worthy": false}], "timestamp": "2025-09-11T02:23:07.362337"}
+2025-09-11 02:23:07,363 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:23:30,755 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:23:30,759 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:23:30,759 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:23:30.759412"}
+2025-09-11 02:23:30,760 - INFO - Bridge notification: Insight created - Strengthen — Polarized responses reinforced by pro-Kirk media amplification
+2025-09-11 02:23:30,761 - INFO - Bridge calling detect_emergent_questions with 59 insights
+2025-09-11 02:23:30,762 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:23:31,459 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+2025-09-11 02:23:31,459 - INFO - Retrying request to /chat/completions in 0.468660 seconds
+2025-09-11 02:24:01,155 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:24:01,160 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:24:01,163 - INFO - Bridge integration: Created 12 emergent questions, 12 SPAWNS edges
+2025-09-11 02:24:01,164 - INFO - Bridge integration: 12 emergent questions created from insight
+2025-09-11 02:24:01,164 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Polarized responses reinforced by pro-Kirk media amplification", "insight_confidence": 0.78, "timestamp": "2025-09-11T02:24:01.164414"}
+2025-09-11 02:24:01,164 - INFO - {"event": "synthesis_completed", "insights_created": 1, "timestamp": "2025-09-11T02:24:01.164414"}
+2025-09-11 02:24:01,164 - INFO - {"event": "datapoint_added", "datapoint_id": "53d8a7f6-c14d-4275-a474-d81d27686f26", "pending_count": 1, "timestamp": "2025-09-11T02:24:01.164414"}
+2025-09-11 02:24:01,165 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:24:13,564 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:24:13,569 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:24:13,570 - INFO - {"event": "datapoint_added", "datapoint_id": "6e1473d4-6f21-432d-affd-d67762da0689", "pending_count": 2, "timestamp": "2025-09-11T02:24:13.570755"}
+2025-09-11 02:24:13,571 - INFO - {"event": "datapoint_added", "datapoint_id": "cc099199-0b6b-4b97-8900-ce578c749568", "pending_count": 3, "timestamp": "2025-09-11T02:24:13.571757"}
+2025-09-11 02:24:13,571 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:24:20,382 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:24:20,384 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:24:20,386 - INFO - {"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:24:20.386198"}
+2025-09-11 02:24:20,387 - INFO - {"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:24:20.387298"}
+2025-09-11 02:24:20,388 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:24:46,568 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:24:46,573 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:24:46,573 - INFO - {"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:24:46.573748"}
+2025-09-11 02:24:46,574 - INFO - {"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Social-media amplification and public reactions to Charlie Kirk's death (viral reposting and praise/critique)", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Media and entertainment consequences following Kirk's death (content removal and editorial response)", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:24:46.574775"}
+2025-09-11 02:24:46,575 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:25:08,173 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:25:08,177 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:25:08,177 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:25:08.177191"}
+2025-09-11 02:25:08,178 - INFO - Bridge notification: Insight created - Supportive amplification of Kirk's rhetoric among pro accounts
+2025-09-11 02:25:08,178 - INFO - Bridge calling detect_emergent_questions with 60 insights
+2025-09-11 02:25:08,180 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:25:32,390 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:25:32,405 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:25:32,407 - INFO - Bridge integration: Created 11 emergent questions, 11 SPAWNS edges
+2025-09-11 02:25:32,408 - INFO - Bridge integration: 11 emergent questions created from insight
+2025-09-11 02:25:32,408 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Supportive amplification of Kirk's rhetoric among pro accounts", "insight_confidence": 0.62, "timestamp": "2025-09-11T02:25:32.408425"}
+2025-09-11 02:25:32,409 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:25:45,304 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:25:45,307 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:25:45,308 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:25:45.308620"}
+2025-09-11 02:25:45,309 - INFO - Bridge notification: Insight created - Strengthen — Broadcasters remove Kirk-related content after death
+2025-09-11 02:25:45,309 - INFO - Bridge calling detect_emergent_questions with 61 insights
+2025-09-11 02:25:45,310 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:26:08,506 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:26:08,511 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:26:08,513 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 02:26:08,514 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 02:26:08,515 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Broadcasters remove Kirk-related content after death", "insight_confidence": 0.84, "timestamp": "2025-09-11T02:26:08.515243"}
+2025-09-11 02:26:08,515 - INFO - {"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T02:26:08.515243"}
+2025-09-11 02:26:08,515 - INFO - {"event": "datapoint_added", "datapoint_id": "a0bf88e2-84ec-4138-9ae7-014efbd8663d", "pending_count": 1, "timestamp": "2025-09-11T02:26:08.515243"}
+2025-09-11 02:26:08,515 - INFO - {"event": "datapoint_added", "datapoint_id": "1fd1a6fc-b1b8-4846-a338-c88b0f72bb67", "pending_count": 2, "timestamp": "2025-09-11T02:26:08.515243"}
+2025-09-11 02:26:08,515 - INFO - {"event": "datapoint_added", "datapoint_id": "bf33a9b0-4ff7-4378-b9e3-9582377b2e0d", "pending_count": 3, "timestamp": "2025-09-11T02:26:08.515243"}
+2025-09-11 02:26:08,516 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:26:15,299 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:26:15,301 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:26:15,302 - INFO - {"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:26:15.302530"}
+2025-09-11 02:26:15,303 - INFO - {"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:26:15.303531"}
+2025-09-11 02:26:15,304 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:26:36,349 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:26:36,353 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:26:36,354 - INFO - {"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:26:36.354724"}
+2025-09-11 02:26:36,355 - INFO - {"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Contested social-media reactions: claims people are celebrating vs refusing to mourn Charlie Kirk", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Narrative/attention-management and misinformation: framing the death as distraction or a 'psyop' and calls of misleading coverage", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:26:36.355723"}
+2025-09-11 02:26:36,356 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:26:52,199 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:26:52,202 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:26:52,203 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:26:52.203663"}
+2025-09-11 02:26:52,204 - INFO - Bridge notification: Insight created - Refusal-to-mourn coupled with responsibility framing
+2025-09-11 02:26:52,204 - INFO - Bridge calling detect_emergent_questions with 62 insights
+2025-09-11 02:26:52,205 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:27:20,215 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:27:20,220 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:27:20,222 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 02:27:20,223 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 02:27:20,225 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Refusal-to-mourn coupled with responsibility framing", "insight_confidence": 0.9, "timestamp": "2025-09-11T02:27:20.225964"}
+2025-09-11 02:27:20,226 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:27:47,497 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:27:47,501 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:27:47,501 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:27:47.501457"}
+2025-09-11 02:27:47,502 - INFO - Bridge notification: Insight created - Strengthen — 'Psyop'/distraction framing reinforced
+2025-09-11 02:27:47,503 - INFO - Bridge calling detect_emergent_questions with 63 insights
+2025-09-11 02:27:47,504 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:28:15,708 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:28:15,712 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:28:15,714 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 02:28:15,716 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 02:28:15,716 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 'Psyop'/distraction framing reinforced", "insight_confidence": 0.85, "timestamp": "2025-09-11T02:28:15.716075"}
+2025-09-11 02:28:15,716 - INFO - {"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T02:28:15.716075"}
+2025-09-11 02:28:15,716 - INFO - {"event": "datapoint_added", "datapoint_id": "363ca8de-78a3-4da6-9241-f1581b38fa50", "pending_count": 1, "timestamp": "2025-09-11T02:28:15.716075"}
+2025-09-11 02:28:15,716 - INFO - {"event": "datapoint_added", "datapoint_id": "d82fbaae-028c-4704-8223-51993a16a337", "pending_count": 2, "timestamp": "2025-09-11T02:28:15.716075"}
+2025-09-11 02:28:15,716 - INFO - {"event": "datapoint_added", "datapoint_id": "738fd3b4-1036-442c-8c64-9fb2de13a429", "pending_count": 3, "timestamp": "2025-09-11T02:28:15.716075"}
+2025-09-11 02:28:15,717 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:28:23,643 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:28:23,646 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:28:23,646 - INFO - {"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:28:23.646693"}
+2025-09-11 02:28:23,647 - INFO - {"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:28:23.647693"}
+2025-09-11 02:28:23,648 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:28:44,650 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:28:44,654 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:28:44,656 - INFO - {"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:28:44.656019"}
+2025-09-11 02:28:44,656 - INFO - {"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Condemnation of celebrating Charlie Kirk's death \u2014 critics oppose gleeful reactions", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Emotional and faith-based framing of Kirk's death \u2014 sadness, anger, and religious consolation", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:28:44.656532"}
+2025-09-11 02:28:44,657 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:28:59,706 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:28:59,710 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:28:59,711 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:28:59.710757"}
+2025-09-11 02:28:59,711 - INFO - Bridge notification: Insight created - Strengthen — Condemnation-plus-refusal-to-mourn framing
+2025-09-11 02:28:59,712 - INFO - Bridge calling detect_emergent_questions with 64 insights
+2025-09-11 02:28:59,713 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:29:27,642 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:29:27,646 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:29:27,649 - INFO - Bridge integration: Created 11 emergent questions, 11 SPAWNS edges
+2025-09-11 02:29:27,650 - INFO - Bridge integration: 11 emergent questions created from insight
+2025-09-11 02:29:27,650 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Condemnation-plus-refusal-to-mourn framing", "insight_confidence": 0.92, "timestamp": "2025-09-11T02:29:27.650728"}
+2025-09-11 02:29:27,651 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:29:44,509 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:29:44,513 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:29:44,514 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:29:44.514290"}
+2025-09-11 02:29:44,515 - INFO - Bridge notification: Insight created - Strengthen — Polarized responses: political accusatory frames vs faith-based mourning
+2025-09-11 02:29:44,515 - INFO - Bridge calling detect_emergent_questions with 65 insights
+2025-09-11 02:29:44,516 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:30:07,596 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:30:07,605 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:30:07,607 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 02:30:07,608 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 02:30:07,608 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Polarized responses: political accusatory frames vs faith-based mourning", "insight_confidence": 0.82, "timestamp": "2025-09-11T02:30:07.608206"}
+2025-09-11 02:30:07,609 - INFO - {"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T02:30:07.609206"}
+2025-09-11 02:30:07,609 - INFO - {"event": "datapoint_added", "datapoint_id": "af933be5-fbde-4045-9f0f-13dea5fab792", "pending_count": 1, "timestamp": "2025-09-11T02:30:07.609206"}
+2025-09-11 02:30:07,609 - INFO - {"event": "datapoint_added", "datapoint_id": "e9bb5908-868a-4af9-b7f1-768a753eaf09", "pending_count": 2, "timestamp": "2025-09-11T02:30:07.609206"}
+2025-09-11 02:30:07,609 - INFO - {"event": "datapoint_added", "datapoint_id": "89370104-9409-4806-a1d7-b28d50c1237d", "pending_count": 3, "timestamp": "2025-09-11T02:30:07.609206"}
+2025-09-11 02:30:07,610 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:30:16,434 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:30:16,436 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:30:16,438 - INFO - {"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:30:16.437891"}
+2025-09-11 02:30:16,438 - INFO - {"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:30:16.438402"}
+2025-09-11 02:30:16,440 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:30:30,580 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:30:30,584 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:30:30,585 - INFO - {"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:30:30.585520"}
+2025-09-11 02:30:30,586 - INFO - {"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 1, "groups": [{"theme": "Public reactions and moral framing of Charlie Kirk's death (celebration, condemnation, and contextualization with past shootings)", "datapoint_count": 3, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:30:30.586520"}
+2025-09-11 02:30:30,587 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:30:43,244 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:30:43,247 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:30:43,248 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:30:43.248027"}
+2025-09-11 02:30:43,249 - INFO - Bridge notification: Insight created - Strengthen — Refusal-to-mourn coupled with responsibility framing
+2025-09-11 02:30:43,249 - INFO - Bridge calling detect_emergent_questions with 66 insights
+2025-09-11 02:30:43,250 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:31:12,628 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:31:12,643 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:31:12,646 - INFO - Bridge integration: Created 12 emergent questions, 12 SPAWNS edges
+2025-09-11 02:31:12,647 - INFO - Bridge integration: 12 emergent questions created from insight
+2025-09-11 02:31:12,647 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Refusal-to-mourn coupled with responsibility framing", "insight_confidence": 0.92, "timestamp": "2025-09-11T02:31:12.647555"}
+2025-09-11 02:31:12,647 - INFO - {"event": "synthesis_completed", "insights_created": 1, "timestamp": "2025-09-11T02:31:12.647555"}
+2025-09-11 02:31:12,647 - INFO - {"event": "datapoint_added", "datapoint_id": "09669de7-9a72-46bf-abfe-00422d924821", "pending_count": 1, "timestamp": "2025-09-11T02:31:12.647555"}
+2025-09-11 02:31:12,647 - INFO - {"event": "datapoint_added", "datapoint_id": "313ad284-1a66-4354-8754-deb6e0320a2e", "pending_count": 2, "timestamp": "2025-09-11T02:31:12.647555"}
+2025-09-11 02:31:12,648 - INFO - {"event": "datapoint_added", "datapoint_id": "17af59bf-28a7-4da0-b617-069e53196593", "pending_count": 3, "timestamp": "2025-09-11T02:31:12.648555"}
+2025-09-11 02:31:12,648 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:31:21,178 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:31:21,180 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:31:21,181 - INFO - {"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:31:21.181476"}
+2025-09-11 02:31:21,181 - INFO - {"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:31:21.181476"}
+2025-09-11 02:31:21,182 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:31:41,918 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:31:41,922 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:31:41,923 - INFO - {"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:31:41.923087"}
+2025-09-11 02:31:41,924 - INFO - {"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Viral claims and questions asserting Charlie Kirk has been killed", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "High-profile/political response framing the incident as an assassination", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:31:41.924086"}
+2025-09-11 02:31:41,924 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:31:59,457 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:31:59,460 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:31:59,461 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:31:59.461317"}
+2025-09-11 02:31:59,462 - INFO - Bridge notification: Insight created - Strengthen — Refusal-to-mourn + responsibility framing
+2025-09-11 02:31:59,462 - INFO - Bridge calling detect_emergent_questions with 67 insights
+2025-09-11 02:31:59,463 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:32:25,404 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:32:25,418 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:32:25,420 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 02:32:25,421 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 02:32:25,422 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Refusal-to-mourn + responsibility framing", "insight_confidence": 0.92, "timestamp": "2025-09-11T02:32:25.422967"}
+2025-09-11 02:32:25,423 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:32:48,236 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:32:48,240 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:32:48,240 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:32:48.240260"}
+2025-09-11 02:32:48,242 - INFO - Bridge notification: Insight created - Strengthen — Polarized responses: elite pro-mourning evidence
+2025-09-11 02:32:48,242 - INFO - Bridge calling detect_emergent_questions with 68 insights
+2025-09-11 02:32:48,243 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:33:12,313 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:33:12,327 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:33:12,329 - INFO - Bridge integration: Created 12 emergent questions, 12 SPAWNS edges
+2025-09-11 02:33:12,331 - INFO - Bridge integration: 12 emergent questions created from insight
+2025-09-11 02:33:12,331 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Polarized responses: elite pro-mourning evidence", "insight_confidence": 0.82, "timestamp": "2025-09-11T02:33:12.331219"}
+2025-09-11 02:33:12,331 - INFO - {"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T02:33:12.331219"}
+2025-09-11 02:33:12,331 - INFO - {"event": "datapoint_added", "datapoint_id": "9a43594f-94dd-4cd4-9f1b-930bbda5af01", "pending_count": 1, "timestamp": "2025-09-11T02:33:12.331219"}
+2025-09-11 02:33:12,331 - INFO - {"event": "datapoint_added", "datapoint_id": "5d73f827-efac-44c1-8e2f-8934066da023", "pending_count": 2, "timestamp": "2025-09-11T02:33:12.331219"}
+2025-09-11 02:33:12,332 - INFO - {"event": "datapoint_added", "datapoint_id": "473b6bf9-30c7-4e2c-89ed-1b3c80ac5243", "pending_count": 3, "timestamp": "2025-09-11T02:33:12.332219"}
+2025-09-11 02:33:12,332 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:33:18,783 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:33:18,786 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:33:18,787 - INFO - {"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:33:18.787245"}
+2025-09-11 02:33:18,788 - INFO - {"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:33:18.788277"}
+2025-09-11 02:33:18,789 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:33:35,133 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:33:35,137 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:33:35,138 - INFO - {"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:33:35.138242"}
+2025-09-11 02:33:35,139 - INFO - {"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Expressions of mourning and condolence (personal grief, religious framing)", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Political framing and polarization (blame, narratives about 'woke' opposition, and cross-ideological respect)", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:33:35.139241"}
+2025-09-11 02:33:35,140 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:43:35,148 - INFO - Retrying request to /chat/completions in 0.393166 seconds
+2025-09-11 02:43:54,557 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:43:54,561 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:43:54,562 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:43:54.562788"}
+2025-09-11 02:43:54,563 - INFO - Bridge notification: Insight created - Strengthen — Polarized responses (political accusatory vs faith-based mourning)
+2025-09-11 02:43:54,563 - INFO - Bridge calling detect_emergent_questions with 69 insights
+2025-09-11 02:43:54,565 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:44:16,682 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:44:16,691 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:44:16,693 - INFO - Bridge integration: Created 8 emergent questions, 8 SPAWNS edges
+2025-09-11 02:44:16,694 - INFO - Bridge integration: 8 emergent questions created from insight
+2025-09-11 02:44:16,694 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Polarized responses (political accusatory vs faith-based mourning)", "insight_confidence": 0.8, "timestamp": "2025-09-11T02:44:16.694012"}
+2025-09-11 02:44:16,695 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:44:39,473 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:44:39,477 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:44:39,477 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:44:39.477450"}
+2025-09-11 02:44:39,478 - INFO - Bridge notification: Insight created - Strengthen — Polarized responses: accusatory vs. sympathetic mourning
+2025-09-11 02:44:39,479 - INFO - Bridge calling detect_emergent_questions with 70 insights
+2025-09-11 02:44:39,480 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:45:14,010 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:45:14,020 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:45:14,022 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 02:45:14,023 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 02:45:14,024 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Polarized responses: accusatory vs. sympathetic mourning", "insight_confidence": 0.86, "timestamp": "2025-09-11T02:45:14.024450"}
+2025-09-11 02:45:14,024 - INFO - {"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T02:45:14.024450"}
+2025-09-11 02:45:14,024 - INFO - {"event": "datapoint_added", "datapoint_id": "54d0b93f-8c39-4dc0-aa8e-0cf977a19004", "pending_count": 1, "timestamp": "2025-09-11T02:45:14.024450"}
+2025-09-11 02:45:14,024 - INFO - {"event": "datapoint_added", "datapoint_id": "e334fa6b-1626-42ea-b7d2-24a803a89c75", "pending_count": 2, "timestamp": "2025-09-11T02:45:14.024450"}
+2025-09-11 02:45:14,024 - INFO - {"event": "datapoint_added", "datapoint_id": "fbcfdcd1-dbd5-406e-980d-cfe18d479ce4", "pending_count": 3, "timestamp": "2025-09-11T02:45:14.024450"}
+2025-09-11 02:45:14,025 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:45:22,051 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:45:22,054 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:45:22,054 - INFO - {"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:45:22.054631"}
+2025-09-11 02:45:22,055 - INFO - {"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:45:22.055617"}
+2025-09-11 02:45:22,056 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:45:40,120 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:45:40,129 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:45:40,130 - INFO - {"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:45:40.130307"}
+2025-09-11 02:45:40,131 - INFO - {"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Immediate social-media reactions and sensational announcement of Charlie Kirk's death", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Death used as a prompt for moral/religious critique or exhortation", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:45:40.131307"}
+2025-09-11 02:45:40,132 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:45:55,788 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:45:55,791 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:45:55,792 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:45:55.792753"}
+2025-09-11 02:45:55,793 - INFO - Bridge notification: Insight created - Refusal-to-mourn + responsibility framing strengthened
+2025-09-11 02:45:55,793 - INFO - Bridge calling detect_emergent_questions with 71 insights
+2025-09-11 02:45:55,794 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:46:19,198 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:46:19,212 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:46:19,214 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 02:46:19,216 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 02:46:19,216 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Refusal-to-mourn + responsibility framing strengthened", "insight_confidence": 0.9, "timestamp": "2025-09-11T02:46:19.216009"}
+2025-09-11 02:46:19,217 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:46:36,837 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:46:36,841 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:46:36,841 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:46:36.841786"}
+2025-09-11 02:46:36,842 - INFO - Bridge notification: Insight created - Strengthen — Polarized responses reinforced by new posts
+2025-09-11 02:46:36,842 - INFO - Bridge calling detect_emergent_questions with 72 insights
+2025-09-11 02:46:36,843 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:47:07,707 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:47:07,717 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:47:07,719 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 02:47:07,720 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 02:47:07,721 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Polarized responses reinforced by new posts", "insight_confidence": 0.82, "timestamp": "2025-09-11T02:47:07.721007"}
+2025-09-11 02:47:07,721 - INFO - {"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T02:47:07.721007"}
+2025-09-11 02:47:07,721 - INFO - {"event": "datapoint_added", "datapoint_id": "bd8bf842-d908-4145-8309-075b43e9802f", "pending_count": 1, "timestamp": "2025-09-11T02:47:07.721007"}
+2025-09-11 02:47:07,721 - INFO - {"event": "datapoint_added", "datapoint_id": "e02528bd-ee53-4b77-8a5e-bb5692ec3d24", "pending_count": 2, "timestamp": "2025-09-11T02:47:07.721007"}
+2025-09-11 02:47:07,722 - INFO - {"event": "datapoint_added", "datapoint_id": "53d8a7f6-c14d-4275-a474-d81d27686f26", "pending_count": 3, "timestamp": "2025-09-11T02:47:07.722009"}
+2025-09-11 02:47:07,723 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:47:17,152 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:47:17,154 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:47:17,154 - INFO - {"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:47:17.154254"}
+2025-09-11 02:47:17,155 - INFO - {"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:47:17.155254"}
+2025-09-11 02:47:17,156 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:47:32,858 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:47:32,862 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:47:32,863 - INFO - {"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:47:32.863833"}
+2025-09-11 02:47:32,864 - INFO - {"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Media-framed confrontation: Charlie Kirk vs. Van Jones over the Iryna Zarutska murder", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Ideological framing and generalization: Kirk linking the attacker to Islam/Western values", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:47:32.863833"}
+2025-09-11 02:47:32,865 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:47:51,859 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:47:51,862 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:47:51,863 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:47:51.863750"}
+2025-09-11 02:47:51,864 - INFO - Bridge notification: Insight created - Strengthen — Polarized political framing reinforced (Kirk vs Van Jones)
+2025-09-11 02:47:51,864 - INFO - Bridge calling detect_emergent_questions with 73 insights
+2025-09-11 02:47:51,865 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:48:20,077 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:48:20,086 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:48:20,089 - INFO - Bridge integration: Created 11 emergent questions, 11 SPAWNS edges
+2025-09-11 02:48:20,089 - INFO - Bridge integration: 11 emergent questions created from insight
+2025-09-11 02:48:20,090 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Polarized political framing reinforced (Kirk vs Van Jones)", "insight_confidence": 0.74, "timestamp": "2025-09-11T02:48:20.090144"}
+2025-09-11 02:48:20,091 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:48:41,386 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:48:41,389 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:48:41,390 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:48:41.390284"}
+2025-09-11 02:48:41,391 - INFO - Bridge notification: Insight created - Strengthen — Pro-Kirk celebratory amplification reinforces polarization
+2025-09-11 02:48:41,391 - INFO - Bridge calling detect_emergent_questions with 74 insights
+2025-09-11 02:48:41,393 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:49:00,321 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:49:00,334 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:49:00,337 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 02:49:00,338 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 02:49:00,338 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Pro-Kirk celebratory amplification reinforces polarization", "insight_confidence": 0.82, "timestamp": "2025-09-11T02:49:00.338219"}
+2025-09-11 02:49:00,338 - INFO - {"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T02:49:00.338219"}
+2025-09-11 02:49:00,339 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:49:17,673 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:49:17,674 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:49:17,675 - INFO - {"event": "datapoint_added", "datapoint_id": "6e1473d4-6f21-432d-affd-d67762da0689", "pending_count": 1, "timestamp": "2025-09-11T02:49:17.675380"}
+2025-09-11 02:49:17,676 - INFO - {"event": "datapoint_added", "datapoint_id": "cc099199-0b6b-4b97-8900-ce578c749568", "pending_count": 2, "timestamp": "2025-09-11T02:49:17.676446"}
+2025-09-11 02:49:17,676 - INFO - {"event": "datapoint_added", "datapoint_id": "a0bf88e2-84ec-4138-9ae7-014efbd8663d", "pending_count": 3, "timestamp": "2025-09-11T02:49:17.676446"}
+2025-09-11 02:49:17,676 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:49:26,301 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:49:26,303 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:49:26,304 - INFO - {"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:49:26.304808"}
+2025-09-11 02:49:26,304 - INFO - {"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:49:26.304808"}
+2025-09-11 02:49:26,305 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:49:43,642 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:49:43,647 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:49:43,648 - INFO - {"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:49:43.648027"}
+2025-09-11 02:49:43,649 - INFO - {"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Public / social-media reactions to Charlie Kirk\u2019s death \u2014 refusal to mourn vs. celebration", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Media and content-handling responses after Kirk\u2019s death (episode pulls, viral reposting)", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:49:43.649084"}
+2025-09-11 02:49:43,650 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:50:12,708 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:50:12,712 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:50:12,712 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:50:12.712960"}
+2025-09-11 02:50:12,713 - INFO - Bridge notification: Insight created - Strengthen — Refusal-to-mourn framing reinforced by memetic copying
+2025-09-11 02:50:12,713 - INFO - Bridge calling detect_emergent_questions with 75 insights
+2025-09-11 02:50:12,714 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:50:36,198 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:50:36,213 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:50:36,215 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 02:50:36,216 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 02:50:36,216 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Refusal-to-mourn framing reinforced by memetic copying", "insight_confidence": 0.92, "timestamp": "2025-09-11T02:50:36.216079"}
+2025-09-11 02:50:36,217 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:50:53,924 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:50:53,927 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:50:53,928 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:50:53.928070"}
+2025-09-11 02:50:53,929 - INFO - Bridge notification: Insight created - Strengthen — Memetic copying and broadcaster content removal
+2025-09-11 02:50:53,929 - INFO - Bridge calling detect_emergent_questions with 76 insights
+2025-09-11 02:50:53,930 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:51:26,812 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:51:26,818 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:51:26,820 - INFO - Bridge integration: Created 9 emergent questions, 9 SPAWNS edges
+2025-09-11 02:51:26,821 - INFO - Bridge integration: 9 emergent questions created from insight
+2025-09-11 02:51:26,821 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Memetic copying and broadcaster content removal", "insight_confidence": 0.9, "timestamp": "2025-09-11T02:51:26.821054"}
+2025-09-11 02:51:26,822 - INFO - {"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T02:51:26.822054"}
+2025-09-11 02:51:26,822 - INFO - {"event": "datapoint_added", "datapoint_id": "1fd1a6fc-b1b8-4846-a338-c88b0f72bb67", "pending_count": 1, "timestamp": "2025-09-11T02:51:26.822054"}
+2025-09-11 02:51:26,822 - INFO - {"event": "datapoint_added", "datapoint_id": "bf33a9b0-4ff7-4378-b9e3-9582377b2e0d", "pending_count": 2, "timestamp": "2025-09-11T02:51:26.822054"}
+2025-09-11 02:51:26,822 - INFO - {"event": "datapoint_added", "datapoint_id": "363ca8de-78a3-4da6-9241-f1581b38fa50", "pending_count": 3, "timestamp": "2025-09-11T02:51:26.822054"}
+2025-09-11 02:51:26,823 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:51:33,531 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:51:33,533 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:51:33,534 - INFO - {"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:51:33.534113"}
+2025-09-11 02:51:33,535 - INFO - {"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:51:33.534113"}
+2025-09-11 02:51:33,536 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:51:54,165 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:51:54,169 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:51:54,170 - INFO - {"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:51:54.170218"}
+2025-09-11 02:51:54,171 - INFO - {"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Social-media narratives, misinformation, and strategic framing around Charlie Kirk's death", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Polarized emotional and religious responses to Charlie Kirk's death (mourning vs claims of celebration)", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:51:54.171245"}
+2025-09-11 02:51:54,172 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:52:22,179 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:52:22,182 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:52:22,182 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:52:22.182597"}
+2025-09-11 02:52:22,185 - INFO - Bridge calling detect_emergent_questions with 77 insights
+2025-09-11 02:52:22,186 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:52:43,651 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:52:43,656 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:52:43,658 - INFO - Bridge integration: Created 11 emergent questions, 11 SPAWNS edges
+2025-09-11 02:52:43,658 - INFO - Bridge integration: 11 emergent questions created from insight
+2025-09-11 02:52:43,658 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Psyop framing + cross\u2011platform evidence dispute emerge together", "insight_confidence": 0.75, "timestamp": "2025-09-11T02:52:43.658764"}
+2025-09-11 02:52:43,662 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:53:05,114 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:53:05,117 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:53:05,118 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:53:05.118938"}
+2025-09-11 02:53:05,119 - INFO - Bridge notification: Insight created - STRENGTHEN: Polarized responses — faith-based mourning confirmed; platform-misattribution noted
+2025-09-11 02:53:05,119 - INFO - Bridge calling detect_emergent_questions with 78 insights
+2025-09-11 02:53:05,121 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:53:27,047 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:53:27,051 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:53:27,053 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 02:53:27,055 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 02:53:27,055 - INFO - {"event": "insight_creation", "success": true, "insight_title": "STRENGTHEN: Polarized responses \u2014 faith-based mourning confirmed; platform-misattribution noted", "insight_confidence": 0.75, "timestamp": "2025-09-11T02:53:27.055574"}
+2025-09-11 02:53:27,055 - INFO - {"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T02:53:27.055574"}
+2025-09-11 02:53:27,056 - INFO - {"event": "datapoint_added", "datapoint_id": "d82fbaae-028c-4704-8223-51993a16a337", "pending_count": 1, "timestamp": "2025-09-11T02:53:27.056110"}
+2025-09-11 02:53:27,056 - INFO - {"event": "datapoint_added", "datapoint_id": "738fd3b4-1036-442c-8c64-9fb2de13a429", "pending_count": 2, "timestamp": "2025-09-11T02:53:27.056110"}
+2025-09-11 02:53:27,056 - INFO - {"event": "datapoint_added", "datapoint_id": "af933be5-fbde-4045-9f0f-13dea5fab792", "pending_count": 3, "timestamp": "2025-09-11T02:53:27.056110"}
+2025-09-11 02:53:27,057 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:53:36,197 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:53:36,199 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:53:36,200 - INFO - {"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:53:36.200434"}
+2025-09-11 02:53:36,201 - INFO - {"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:53:36.201434"}
+2025-09-11 02:53:36,202 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:54:08,071 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:54:08,075 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:54:08,075 - INFO - {"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:54:08.075874"}
+2025-09-11 02:54:08,076 - INFO - {"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Moral ambivalence and rejection of celebrating Charlie Kirk's death", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Surprise/ignorance about the victim plus reports of celebratory reactions on left-leaning platforms", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:54:08.076958"}
+2025-09-11 02:54:08,077 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:54:38,945 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:54:38,948 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:54:38,949 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:54:38.949526"}
+2025-09-11 02:54:38,950 - INFO - Bridge notification: Insight created - Condemnation-plus-refusal-to-mourn emerges as distinct framing (confidence: 0.8)
+2025-09-11 02:54:38,950 - INFO - Bridge calling detect_emergent_questions with 79 insights
+2025-09-11 02:54:38,951 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:55:39,879 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:55:39,887 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:55:39,890 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 02:55:39,892 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 02:55:39,892 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Condemnation-plus-refusal-to-mourn emerges as distinct framing (confidence: 0.8)", "insight_confidence": 0.9, "timestamp": "2025-09-11T02:55:39.892589"}
+2025-09-11 02:55:39,893 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:56:05,155 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:56:05,158 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:56:05,159 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:56:05.159439"}
+2025-09-11 02:56:05,160 - INFO - Bridge notification: Insight created - Refusal-to-mourn framing prevalence strengthened
+2025-09-11 02:56:05,160 - INFO - Bridge calling detect_emergent_questions with 80 insights
+2025-09-11 02:56:05,161 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:56:39,493 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:56:39,502 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:56:39,506 - INFO - Bridge integration: Created 12 emergent questions, 12 SPAWNS edges
+2025-09-11 02:56:39,507 - INFO - Bridge integration: 12 emergent questions created from insight
+2025-09-11 02:56:39,508 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Refusal-to-mourn framing prevalence strengthened", "insight_confidence": 0.88, "timestamp": "2025-09-11T02:56:39.508009"}
+2025-09-11 02:56:39,508 - INFO - {"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T02:56:39.508009"}
+2025-09-11 02:56:39,508 - INFO - {"event": "datapoint_added", "datapoint_id": "e9bb5908-868a-4af9-b7f1-768a753eaf09", "pending_count": 1, "timestamp": "2025-09-11T02:56:39.508009"}
+2025-09-11 02:56:39,508 - INFO - {"event": "datapoint_added", "datapoint_id": "89370104-9409-4806-a1d7-b28d50c1237d", "pending_count": 2, "timestamp": "2025-09-11T02:56:39.508009"}
+2025-09-11 02:56:39,508 - INFO - {"event": "datapoint_added", "datapoint_id": "09669de7-9a72-46bf-abfe-00422d924821", "pending_count": 3, "timestamp": "2025-09-11T02:56:39.508009"}
+2025-09-11 02:56:39,509 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:56:49,348 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:56:49,351 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:56:49,351 - INFO - {"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:56:49.351344"}
+2025-09-11 02:56:49,352 - INFO - {"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:56:49.352344"}
+2025-09-11 02:56:49,353 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:57:16,067 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:57:16,071 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:57:16,071 - INFO - {"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:57:16.071041"}
+2025-09-11 02:57:16,072 - INFO - {"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Moral condemnation of celebratory reactions to Charlie Kirk's death \u2014 concerns about dehumanization and hypocrisy", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Polarized political framing: critics invoke Kirk's prior rhetoric (Uvalde victims) while political allies publicly mourn and valorize him", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:57:16.072041"}
+2025-09-11 02:57:16,073 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:57:38,047 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:57:38,051 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:57:38,051 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:57:38.051692"}
+2025-09-11 02:57:38,052 - INFO - Bridge notification: Insight created - Strengthen — Refusal-to-mourn + responsibility framing
+2025-09-11 02:57:38,052 - INFO - Bridge calling detect_emergent_questions with 81 insights
+2025-09-11 02:57:38,053 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:58:01,731 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:58:01,750 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:58:01,753 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 02:58:01,754 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 02:58:01,754 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Refusal-to-mourn + responsibility framing", "insight_confidence": 0.92, "timestamp": "2025-09-11T02:58:01.754204"}
+2025-09-11 02:58:01,755 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:58:26,580 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:58:26,584 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:58:26,584 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:58:26.584801"}
+2025-09-11 02:58:26,585 - INFO - Bridge notification: Insight created - Elite pro-mourning statement vs grassroots refusal-to-mourn reinforces polarization
+2025-09-11 02:58:26,585 - INFO - Bridge calling detect_emergent_questions with 82 insights
+2025-09-11 02:58:26,586 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:58:55,222 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:58:55,236 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:58:55,238 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 02:58:55,240 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 02:58:55,240 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Elite pro-mourning statement vs grassroots refusal-to-mourn reinforces polarization", "insight_confidence": 0.88, "timestamp": "2025-09-11T02:58:55.240125"}
+2025-09-11 02:58:55,240 - INFO - {"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T02:58:55.240125"}
+2025-09-11 02:58:55,240 - INFO - {"event": "datapoint_added", "datapoint_id": "313ad284-1a66-4354-8754-deb6e0320a2e", "pending_count": 1, "timestamp": "2025-09-11T02:58:55.240125"}
+2025-09-11 02:58:55,240 - INFO - {"event": "datapoint_added", "datapoint_id": "17af59bf-28a7-4da0-b617-069e53196593", "pending_count": 2, "timestamp": "2025-09-11T02:58:55.240125"}
+2025-09-11 02:58:55,240 - INFO - {"event": "datapoint_added", "datapoint_id": "9a43594f-94dd-4cd4-9f1b-930bbda5af01", "pending_count": 3, "timestamp": "2025-09-11T02:58:55.240125"}
+2025-09-11 02:58:55,241 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:59:02,871 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:59:02,874 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:59:02,874 - INFO - {"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:59:02.874538"}
+2025-09-11 02:59:02,875 - INFO - {"event": "datapoint_added", "datapoint_id": "5d73f827-efac-44c1-8e2f-8934066da023", "pending_count": 4, "timestamp": "2025-09-11T02:59:02.875538"}
+2025-09-11 02:59:02,876 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:59:11,015 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:59:11,018 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:59:11,018 - INFO - {"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:59:11.018288"}
+2025-09-11 02:59:11,019 - INFO - {"event": "synthesis_triggered", "pending_count": 4, "timestamp": "2025-09-11T02:59:11.019289"}
+2025-09-11 02:59:11,020 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:59:27,401 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:59:27,405 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:59:27,405 - INFO - {"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:59:27.405941"}
+2025-09-11 02:59:27,406 - INFO - {"event": "semantic_grouping", "input_datapoint_count": 4, "output_groups": 2, "groups": [{"theme": "Announcements and unverified claims about Charlie Kirk's death (rumor propagation)", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Emotional reactions framing death as martyrdom or religious consolation", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:59:27.406940"}
+2025-09-11 02:59:27,407 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 02:59:44,237 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 02:59:44,241 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 02:59:44,241 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:59:44.241893"}
+2025-09-11 02:59:44,242 - INFO - Bridge notification: Insight created - Strengthen — Refusal-to-mourn + responsibility framing
+2025-09-11 02:59:44,242 - INFO - Bridge calling detect_emergent_questions with 83 insights
+2025-09-11 02:59:44,243 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:00:05,563 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:00:05,572 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:00:05,575 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 03:00:05,576 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 03:00:05,577 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Refusal-to-mourn + responsibility framing", "insight_confidence": 0.9, "timestamp": "2025-09-11T03:00:05.577244"}
+2025-09-11 03:00:05,577 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:00:23,317 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:00:23,320 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:00:23,320 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:00:23.320217"}
+2025-09-11 03:00:23,321 - INFO - Bridge notification: Insight created - Martyrdom/persecution framing mixed with faith proselytizing
+2025-09-11 03:00:23,321 - INFO - Bridge calling detect_emergent_questions with 84 insights
+2025-09-11 03:00:23,322 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:00:46,582 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:00:46,586 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:00:46,589 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 03:00:46,590 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 03:00:46,590 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Martyrdom/persecution framing mixed with faith proselytizing", "insight_confidence": 0.72, "timestamp": "2025-09-11T03:00:46.590557"}
+2025-09-11 03:00:46,590 - INFO - {"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T03:00:46.590557"}
+2025-09-11 03:00:46,591 - INFO - {"event": "datapoint_added", "datapoint_id": "473b6bf9-30c7-4e2c-89ed-1b3c80ac5243", "pending_count": 1, "timestamp": "2025-09-11T03:00:46.591556"}
+2025-09-11 03:00:46,591 - INFO - {"event": "datapoint_added", "datapoint_id": "54d0b93f-8c39-4dc0-aa8e-0cf977a19004", "pending_count": 2, "timestamp": "2025-09-11T03:00:46.591556"}
+2025-09-11 03:00:46,591 - INFO - {"event": "datapoint_added", "datapoint_id": "e334fa6b-1626-42ea-b7d2-24a803a89c75", "pending_count": 3, "timestamp": "2025-09-11T03:00:46.591556"}
+2025-09-11 03:00:46,592 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:00:55,457 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:00:55,464 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:00:55,465 - INFO - {"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T03:00:55.465744"}
+2025-09-11 03:00:55,466 - INFO - {"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T03:00:55.466842"}
+2025-09-11 03:00:55,467 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:01:22,575 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:01:22,580 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:01:22,580 - INFO - {"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T03:01:22.580453"}
+2025-09-11 03:01:22,581 - INFO - {"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Expressions of grief, respect, and cross-partisan reflection", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Derisive or critical reactions tying death to political positions (accusations of hypocrisy)", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T03:01:22.581454"}
+2025-09-11 03:01:22,582 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:01:37,931 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:01:37,934 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:01:37,934 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:01:37.934873"}
+2025-09-11 03:01:37,937 - INFO - Bridge calling detect_emergent_questions with 85 insights
+2025-09-11 03:01:37,938 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:01:59,426 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:01:59,435 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:01:59,438 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 03:01:59,439 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 03:01:59,440 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Polarized responses: evidence of cross\u2011ideological mourning", "insight_confidence": 0.82, "timestamp": "2025-09-11T03:01:59.440842"}
+2025-09-11 03:01:59,441 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:02:16,768 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:02:16,774 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:02:16,775 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:02:16.775430"}
+2025-09-11 03:02:16,776 - INFO - Bridge notification: Insight created - Strengthen — Condemnation-plus-refusal-to-mourn (hypocrisy framing)
+2025-09-11 03:02:16,776 - INFO - Bridge calling detect_emergent_questions with 86 insights
+2025-09-11 03:02:16,777 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:02:40,528 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:02:40,542 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:02:40,545 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 03:02:40,546 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 03:02:40,546 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Condemnation-plus-refusal-to-mourn (hypocrisy framing)", "insight_confidence": 0.88, "timestamp": "2025-09-11T03:02:40.546702"}
+2025-09-11 03:02:40,546 - INFO - {"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T03:02:40.546702"}
+2025-09-11 03:02:40,546 - INFO - {"event": "datapoint_added", "datapoint_id": "fbcfdcd1-dbd5-406e-980d-cfe18d479ce4", "pending_count": 1, "timestamp": "2025-09-11T03:02:40.546702"}
+2025-09-11 03:02:40,547 - INFO - {"event": "datapoint_added", "datapoint_id": "bd8bf842-d908-4145-8309-075b43e9802f", "pending_count": 2, "timestamp": "2025-09-11T03:02:40.547701"}
+2025-09-11 03:02:40,547 - INFO - {"event": "datapoint_added", "datapoint_id": "e02528bd-ee53-4b77-8a5e-bb5692ec3d24", "pending_count": 3, "timestamp": "2025-09-11T03:02:40.547701"}
+2025-09-11 03:02:40,547 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:02:52,819 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:02:52,822 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:02:52,823 - INFO - {"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T03:02:52.823486"}
+2025-09-11 03:02:52,823 - INFO - {"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T03:02:52.823486"}
+2025-09-11 03:02:52,825 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:03:15,509 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:03:15,514 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:03:15,515 - INFO - {"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T03:03:15.515209"}
+2025-09-11 03:03:15,516 - INFO - {"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Media/political dispute over the murder of Iryna Zarutska: Charlie Kirk vs Van Jones", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Religious/spiritual framing of Charlie Kirk's death and public exhortation", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T03:03:15.516208"}
+2025-09-11 03:03:15,517 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:13:15,524 - INFO - Retrying request to /chat/completions in 0.459363 seconds
+2025-09-11 03:13:32,583 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:13:32,587 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:13:32,588 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:13:32.588352"}
+2025-09-11 03:13:32,589 - INFO - Bridge notification: Insight created - Strengthen — Polarized political-accusatory framing reinforced
+2025-09-11 03:13:32,589 - INFO - Bridge calling detect_emergent_questions with 87 insights
+2025-09-11 03:13:32,590 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:13:57,717 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:13:57,728 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:13:57,731 - INFO - Bridge integration: Created 12 emergent questions, 12 SPAWNS edges
+2025-09-11 03:13:57,732 - INFO - Bridge integration: 12 emergent questions created from insight
+2025-09-11 03:13:57,732 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Polarized political-accusatory framing reinforced", "insight_confidence": 0.75, "timestamp": "2025-09-11T03:13:57.732637"}
+2025-09-11 03:13:57,733 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:14:18,441 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:14:18,449 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:14:18,449 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:14:18.449592"}
+2025-09-11 03:14:18,450 - INFO - Bridge notification: Insight created - Polarization reinforced — faith-based mourning vs political framing
+2025-09-11 03:14:18,450 - INFO - Bridge calling detect_emergent_questions with 88 insights
+2025-09-11 03:14:18,452 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:14:39,911 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:14:39,920 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:14:39,923 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 03:14:39,924 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 03:14:39,924 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Polarization reinforced \u2014 faith-based mourning vs political framing", "insight_confidence": 0.8, "timestamp": "2025-09-11T03:14:39.924988"}
+2025-09-11 03:14:39,924 - INFO - {"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T03:14:39.924988"}
+2025-09-11 03:14:39,924 - INFO - {"event": "datapoint_added", "datapoint_id": "53d8a7f6-c14d-4275-a474-d81d27686f26", "pending_count": 1, "timestamp": "2025-09-11T03:14:39.924988"}
+2025-09-11 03:14:39,926 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:15:02,751 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:15:02,752 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:15:02,753 - INFO - {"event": "datapoint_added", "datapoint_id": "6e1473d4-6f21-432d-affd-d67762da0689", "pending_count": 2, "timestamp": "2025-09-11T03:15:02.753503"}
+2025-09-11 03:15:02,754 - INFO - {"event": "datapoint_added", "datapoint_id": "cc099199-0b6b-4b97-8900-ce578c749568", "pending_count": 3, "timestamp": "2025-09-11T03:15:02.754503"}
+2025-09-11 03:15:02,755 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:15:09,614 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:15:09,617 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:15:09,617 - INFO - {"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T03:15:09.617777"}
+2025-09-11 03:15:09,619 - INFO - {"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T03:15:09.619341"}
+2025-09-11 03:15:09,620 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:15:34,243 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:15:34,248 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:15:34,248 - INFO - {"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T03:15:34.248121"}
+2025-09-11 03:15:34,249 - INFO - {"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Social media framing, partisan amplification, and meme-ification of Kirk's death", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Institutional/media response and content removal after Kirk's death", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T03:15:34.249121"}
+2025-09-11 03:15:34,251 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:16:12,078 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:16:12,082 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:16:12,083 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:16:12.083143"}
+2025-09-11 03:16:12,084 - INFO - Bridge notification: Insight created - Supportive/celebratory pro-Kirk framing among right-wing accounts
+2025-09-11 03:16:12,084 - INFO - Bridge calling detect_emergent_questions with 89 insights
+2025-09-11 03:16:12,085 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:16:40,866 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:16:40,882 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:16:40,886 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 03:16:40,887 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 03:16:40,887 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Supportive/celebratory pro-Kirk framing among right-wing accounts", "insight_confidence": 0.55, "timestamp": "2025-09-11T03:16:40.887848"}
+2025-09-11 03:16:40,889 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:16:59,822 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:16:59,826 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:16:59,828 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:16:59.828252"}
+2025-09-11 03:16:59,829 - INFO - Bridge notification: Insight created - Broadcaster content removal and memetic copying jointly shape post-death discourse
+2025-09-11 03:16:59,830 - INFO - Bridge calling detect_emergent_questions with 90 insights
+2025-09-11 03:16:59,831 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:17:27,843 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:17:27,851 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:17:27,854 - INFO - Bridge integration: Created 11 emergent questions, 11 SPAWNS edges
+2025-09-11 03:17:27,856 - INFO - Bridge integration: 11 emergent questions created from insight
+2025-09-11 03:17:27,856 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Broadcaster content removal and memetic copying jointly shape post-death discourse", "insight_confidence": 0.85, "timestamp": "2025-09-11T03:17:27.856649"}
+2025-09-11 03:17:27,856 - INFO - {"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T03:17:27.856649"}
+2025-09-11 03:17:27,856 - INFO - {"event": "datapoint_added", "datapoint_id": "a0bf88e2-84ec-4138-9ae7-014efbd8663d", "pending_count": 1, "timestamp": "2025-09-11T03:17:27.856649"}
+2025-09-11 03:17:27,856 - INFO - {"event": "datapoint_added", "datapoint_id": "1fd1a6fc-b1b8-4846-a338-c88b0f72bb67", "pending_count": 2, "timestamp": "2025-09-11T03:17:27.856649"}
+2025-09-11 03:17:27,857 - INFO - {"event": "datapoint_added", "datapoint_id": "bf33a9b0-4ff7-4378-b9e3-9582377b2e0d", "pending_count": 3, "timestamp": "2025-09-11T03:17:27.857649"}
+2025-09-11 03:17:27,857 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:17:36,593 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:17:36,596 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:17:36,596 - INFO - {"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T03:17:36.596327"}
+2025-09-11 03:17:36,597 - INFO - {"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T03:17:36.597327"}
+2025-09-11 03:17:36,598 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:18:01,988 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:18:01,994 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:18:01,997 - INFO - {"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T03:18:01.997369"}
+2025-09-11 03:18:01,998 - INFO - {"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Contestation over whether people are celebrating or refusing to mourn Charlie Kirk's death; polarized reactions and calls to violence", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Framing the news of Kirk's death as a strategic distraction/\u2019psyop\u2019 from Palestinian deaths and broader narrative management", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T03:18:01.998369"}
+2025-09-11 03:18:02,003 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:18:22,692 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:18:22,695 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:18:22,696 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:18:22.696656"}
+2025-09-11 03:18:22,697 - INFO - Bridge notification: Insight created - Refusal-to-mourn + responsibility framing strengthened (confidence: 0.85)
+2025-09-11 03:18:22,697 - INFO - Bridge calling detect_emergent_questions with 91 insights
+2025-09-11 03:18:22,698 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:18:49,659 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:18:49,664 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:18:49,667 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 03:18:49,668 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 03:18:49,668 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Refusal-to-mourn + responsibility framing strengthened (confidence: 0.85)", "insight_confidence": 0.9, "timestamp": "2025-09-11T03:18:49.668224"}
+2025-09-11 03:18:49,670 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:19:06,184 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:19:06,194 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:19:06,195 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:19:06.195056"}
+2025-09-11 03:19:06,195 - INFO - Bridge notification: Insight created - Strengthen — 'Psyop'/distraction framing reinforced
+2025-09-11 03:19:06,196 - INFO - Bridge calling detect_emergent_questions with 92 insights
+2025-09-11 03:19:06,197 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:19:32,209 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:19:32,219 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:19:32,222 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 03:19:32,223 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 03:19:32,224 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 'Psyop'/distraction framing reinforced", "insight_confidence": 0.86, "timestamp": "2025-09-11T03:19:32.224450"}
+2025-09-11 03:19:32,224 - INFO - {"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T03:19:32.224450"}
+2025-09-11 03:19:32,225 - INFO - {"event": "datapoint_added", "datapoint_id": "363ca8de-78a3-4da6-9241-f1581b38fa50", "pending_count": 1, "timestamp": "2025-09-11T03:19:32.225032"}
+2025-09-11 03:19:32,225 - INFO - {"event": "datapoint_added", "datapoint_id": "d82fbaae-028c-4704-8223-51993a16a337", "pending_count": 2, "timestamp": "2025-09-11T03:19:32.225032"}
+2025-09-11 03:19:32,225 - INFO - {"event": "datapoint_added", "datapoint_id": "738fd3b4-1036-442c-8c64-9fb2de13a429", "pending_count": 3, "timestamp": "2025-09-11T03:19:32.225032"}
+2025-09-11 03:19:32,226 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:19:46,661 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:19:46,734 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:19:46,735 - INFO - {"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T03:19:46.735166"}
+2025-09-11 03:19:46,736 - INFO - {"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T03:19:46.736168"}
+2025-09-11 03:19:46,737 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:20:11,210 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:20:11,219 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:20:11,220 - INFO - {"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T03:20:11.220189"}
+2025-09-11 03:20:11,220 - INFO - {"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Condemnation of celebratory responses to Charlie Kirk's death; appeal to basic decency", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Divergent emotional framing and public polarization \u2014 religious consolation versus public cheering/disbelief", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T03:20:11.220189"}
+2025-09-11 03:20:11,221 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:20:32,761 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:20:32,765 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:20:32,766 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:20:32.766673"}
+2025-09-11 03:20:32,767 - INFO - Bridge notification: Insight created - Strengthen — Condemnation-plus-refusal-to-mourn emerges as distinct framing (confidence: 0.8)
+2025-09-11 03:20:32,767 - INFO - Bridge calling detect_emergent_questions with 93 insights
+2025-09-11 03:20:32,769 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:20:56,492 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:20:56,496 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:20:56,499 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 03:20:56,501 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 03:20:56,501 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Condemnation-plus-refusal-to-mourn emerges as distinct framing (confidence: 0.8)", "insight_confidence": 0.9, "timestamp": "2025-09-11T03:20:56.501392"}
+2025-09-11 03:20:56,502 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:21:20,536 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:21:20,540 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:21:20,540 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:21:20.540337"}
+2025-09-11 03:21:20,541 - INFO - Bridge notification: Insight created - Strengthen — Polarized responses (political accusatory frames vs faith-based mourning)
+2025-09-11 03:21:20,541 - INFO - Bridge calling detect_emergent_questions with 94 insights
+2025-09-11 03:21:20,542 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:21:44,912 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:21:44,921 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:21:44,923 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 03:21:44,925 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 03:21:44,925 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Polarized responses (political accusatory frames vs faith-based mourning)", "insight_confidence": 0.78, "timestamp": "2025-09-11T03:21:44.925409"}
+2025-09-11 03:21:44,925 - INFO - {"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T03:21:44.925409"}
+2025-09-11 03:21:44,925 - INFO - {"event": "datapoint_added", "datapoint_id": "af933be5-fbde-4045-9f0f-13dea5fab792", "pending_count": 1, "timestamp": "2025-09-11T03:21:44.925928"}
+2025-09-11 03:21:44,925 - INFO - {"event": "datapoint_added", "datapoint_id": "e9bb5908-868a-4af9-b7f1-768a753eaf09", "pending_count": 2, "timestamp": "2025-09-11T03:21:44.925928"}
+2025-09-11 03:21:44,925 - INFO - {"event": "datapoint_added", "datapoint_id": "89370104-9409-4806-a1d7-b28d50c1237d", "pending_count": 3, "timestamp": "2025-09-11T03:21:44.925928"}
+2025-09-11 03:21:44,927 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:21:52,384 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:21:52,387 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:21:52,387 - INFO - {"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T03:21:52.387826"}
+2025-09-11 03:21:52,388 - INFO - {"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T03:21:52.388826"}
+2025-09-11 03:21:52,389 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:22:09,224 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:22:09,229 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:22:09,229 - INFO - {"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T03:22:09.229979"}
+2025-09-11 03:22:09,230 - INFO - {"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Moral condemnation of celebratory reactions to Charlie Kirk's death", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Context and justification for reactions: references to Kirk's past statements about victims (Uvalde)", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T03:22:09.230979"}
+2025-09-11 03:22:09,231 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:22:37,134 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:22:37,138 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:22:37,138 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:22:37.138639"}
+2025-09-11 03:22:37,139 - INFO - Bridge notification: Insight created - Strengthen — Condemnation-of-celebratory-responses reinforces refusal-to-mourn framing
+2025-09-11 03:22:37,139 - INFO - Bridge calling detect_emergent_questions with 95 insights
+2025-09-11 03:22:37,140 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:23:13,628 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:23:13,637 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:23:13,639 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 03:23:13,641 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 03:23:13,641 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Condemnation-of-celebratory-responses reinforces refusal-to-mourn framing", "insight_confidence": 0.88, "timestamp": "2025-09-11T03:23:13.641829"}
+2025-09-11 03:23:13,642 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:23:36,879 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:23:36,883 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:23:36,884 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:23:36.884751"}
+2025-09-11 03:23:36,885 - INFO - Bridge notification: Insight created - Strengthen — Refusal-to-mourn + responsibility framing
+2025-09-11 03:23:36,885 - INFO - Bridge calling detect_emergent_questions with 96 insights
+2025-09-11 03:23:36,886 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:24:03,802 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:24:03,817 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:24:03,820 - INFO - Bridge integration: Created 11 emergent questions, 11 SPAWNS edges
+2025-09-11 03:24:03,822 - INFO - Bridge integration: 11 emergent questions created from insight
+2025-09-11 03:24:03,822 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Refusal-to-mourn + responsibility framing", "insight_confidence": 0.92, "timestamp": "2025-09-11T03:24:03.822983"}
+2025-09-11 03:24:03,822 - INFO - {"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T03:24:03.822983"}
+2025-09-11 03:24:03,823 - INFO - {"event": "datapoint_added", "datapoint_id": "09669de7-9a72-46bf-abfe-00422d924821", "pending_count": 1, "timestamp": "2025-09-11T03:24:03.823492"}
+2025-09-11 03:24:03,823 - INFO - {"event": "datapoint_added", "datapoint_id": "313ad284-1a66-4354-8754-deb6e0320a2e", "pending_count": 2, "timestamp": "2025-09-11T03:24:03.823492"}
+2025-09-11 03:24:03,823 - INFO - {"event": "datapoint_added", "datapoint_id": "17af59bf-28a7-4da0-b617-069e53196593", "pending_count": 3, "timestamp": "2025-09-11T03:24:03.823492"}
+2025-09-11 03:24:03,824 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:24:13,625 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:24:13,628 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:24:13,629 - INFO - {"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T03:24:13.629033"}
+2025-09-11 03:24:13,630 - INFO - {"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T03:24:13.630034"}
+2025-09-11 03:24:13,631 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:24:29,232 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:24:29,237 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:24:29,237 - INFO - {"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T03:24:29.237384"}
+2025-09-11 03:24:29,238 - INFO - {"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Announcements and rumor propagation about Charlie Kirk's death", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Political framing and attribution around the reported assassination", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T03:24:29.238384"}
+2025-09-11 03:24:29,239 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:24:46,082 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:24:46,089 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:24:46,090 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:24:46.090717"}
+2025-09-11 03:24:46,091 - INFO - Bridge notification: Insight created - STRENGTHEN — Refusal-to-mourn + responsibility framing
+2025-09-11 03:24:46,091 - INFO - Bridge calling detect_emergent_questions with 97 insights
+2025-09-11 03:24:46,092 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:25:10,506 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:25:10,511 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:25:10,515 - INFO - Bridge integration: Created 11 emergent questions, 11 SPAWNS edges
+2025-09-11 03:25:10,516 - INFO - Bridge integration: 11 emergent questions created from insight
+2025-09-11 03:25:10,517 - INFO - {"event": "insight_creation", "success": true, "insight_title": "STRENGTHEN \u2014 Refusal-to-mourn + responsibility framing", "insight_confidence": 0.9, "timestamp": "2025-09-11T03:25:10.517159"}
+2025-09-11 03:25:10,518 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:25:44,307 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:25:44,311 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:25:44,312 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:25:44.312508"}
+2025-09-11 03:25:44,313 - INFO - Bridge notification: Insight created - STRENGTHEN — Polarized responses: elite mourning vs accusatory frames
+2025-09-11 03:25:44,313 - INFO - Bridge calling detect_emergent_questions with 98 insights
+2025-09-11 03:25:44,314 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:26:07,525 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:26:07,535 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:26:07,539 - INFO - Bridge integration: Created 9 emergent questions, 9 SPAWNS edges
+2025-09-11 03:26:07,540 - INFO - Bridge integration: 9 emergent questions created from insight
+2025-09-11 03:26:07,541 - INFO - {"event": "insight_creation", "success": true, "insight_title": "STRENGTHEN \u2014 Polarized responses: elite mourning vs accusatory frames", "insight_confidence": 0.86, "timestamp": "2025-09-11T03:26:07.541189"}
+2025-09-11 03:26:07,541 - INFO - {"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T03:26:07.541189"}
+2025-09-11 03:26:07,542 - INFO - {"event": "datapoint_added", "datapoint_id": "9a43594f-94dd-4cd4-9f1b-930bbda5af01", "pending_count": 1, "timestamp": "2025-09-11T03:26:07.542191"}
+2025-09-11 03:26:07,542 - INFO - {"event": "datapoint_added", "datapoint_id": "5d73f827-efac-44c1-8e2f-8934066da023", "pending_count": 2, "timestamp": "2025-09-11T03:26:07.542191"}
+2025-09-11 03:26:07,542 - INFO - {"event": "datapoint_added", "datapoint_id": "473b6bf9-30c7-4e2c-89ed-1b3c80ac5243", "pending_count": 3, "timestamp": "2025-09-11T03:26:07.542191"}
+2025-09-11 03:26:07,543 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:26:15,897 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:26:15,899 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:26:15,900 - INFO - {"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T03:26:15.900798"}
+2025-09-11 03:26:15,901 - INFO - {"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T03:26:15.901799"}
+2025-09-11 03:26:15,902 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:26:33,124 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:26:33,129 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:26:33,130 - INFO - {"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T03:26:33.130099"}
+2025-09-11 03:26:33,132 - INFO - {"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Religious consolation and afterlife framing in reactions", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Political framing and cross\u2011ideological respect", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T03:26:33.132024"}
+2025-09-11 03:26:33,133 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:26:34,147 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 500 Internal Server Error"
+2025-09-11 03:26:34,147 - INFO - Retrying request to /chat/completions in 0.479140 seconds
+2025-09-11 03:27:01,238 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:27:01,242 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:27:01,242 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:27:01.242628"}
+2025-09-11 03:27:01,243 - INFO - Bridge notification: Insight created - Strengthen polarized responses insight
+2025-09-11 03:27:01,243 - INFO - Bridge calling detect_emergent_questions with 99 insights
+2025-09-11 03:27:01,244 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:27:32,378 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:27:32,389 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:27:32,393 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 03:27:32,395 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 03:27:32,395 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Strengthen polarized responses insight", "insight_confidence": 0.82, "timestamp": "2025-09-11T03:27:32.395150"}
+2025-09-11 03:27:32,396 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:27:57,459 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:27:57,463 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:27:57,464 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:27:57.464967"}
+2025-09-11 03:27:57,465 - INFO - Bridge notification: Insight created - Polarization reinforced: accusatory victimhood vs cross-partisan condolence
+2025-09-11 03:27:57,466 - INFO - Bridge calling detect_emergent_questions with 100 insights
+2025-09-11 03:27:57,467 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:28:22,724 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:28:22,728 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:28:22,734 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 03:28:22,736 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 03:28:22,736 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Polarization reinforced: accusatory victimhood vs cross-partisan condolence", "insight_confidence": 0.82, "timestamp": "2025-09-11T03:28:22.736038"}
+2025-09-11 03:28:22,736 - INFO - {"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T03:28:22.736550"}
+2025-09-11 03:28:22,736 - INFO - {"event": "datapoint_added", "datapoint_id": "54d0b93f-8c39-4dc0-aa8e-0cf977a19004", "pending_count": 1, "timestamp": "2025-09-11T03:28:22.736550"}
+2025-09-11 03:28:22,736 - INFO - {"event": "datapoint_added", "datapoint_id": "e334fa6b-1626-42ea-b7d2-24a803a89c75", "pending_count": 2, "timestamp": "2025-09-11T03:28:22.736550"}
+2025-09-11 03:28:22,736 - INFO - {"event": "datapoint_added", "datapoint_id": "fbcfdcd1-dbd5-406e-980d-cfe18d479ce4", "pending_count": 3, "timestamp": "2025-09-11T03:28:22.736550"}
+2025-09-11 03:28:22,737 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:28:31,370 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:28:31,372 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:28:31,373 - INFO - {"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T03:28:31.373908"}
+2025-09-11 03:28:31,374 - INFO - {"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T03:28:31.374908"}
+2025-09-11 03:28:31,375 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:28:42,970 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:28:42,974 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:28:42,975 - INFO - {"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T03:28:42.974974"}
+2025-09-11 03:28:42,975 - INFO - {"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 1, "groups": [{"theme": "Immediate public reactions framing Charlie Kirk's death as both a news/taunt and a religious/evangelical message", "datapoint_count": 3, "synthesis_worthy": true}], "timestamp": "2025-09-11T03:28:42.975974"}
+2025-09-11 03:28:42,977 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:29:09,275 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:29:09,279 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:29:09,279 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:29:09.279198"}
+2025-09-11 03:29:09,280 - INFO - Bridge notification: Insight created - Strengthen — Polarized responses: political accusatory frames vs faith-based mourning
+2025-09-11 03:29:09,280 - INFO - Bridge calling detect_emergent_questions with 101 insights
+2025-09-11 03:29:09,282 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:29:30,458 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:29:30,471 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:29:30,474 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 03:29:30,476 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 03:29:30,476 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Polarized responses: political accusatory frames vs faith-based mourning", "insight_confidence": 0.82, "timestamp": "2025-09-11T03:29:30.476330"}
+2025-09-11 03:29:30,476 - INFO - {"event": "synthesis_completed", "insights_created": 1, "timestamp": "2025-09-11T03:29:30.476330"}
+2025-09-11 03:29:30,476 - INFO - {"event": "datapoint_added", "datapoint_id": "bd8bf842-d908-4145-8309-075b43e9802f", "pending_count": 1, "timestamp": "2025-09-11T03:29:30.476330"}
+2025-09-11 03:29:30,476 - INFO - {"event": "datapoint_added", "datapoint_id": "e02528bd-ee53-4b77-8a5e-bb5692ec3d24", "pending_count": 2, "timestamp": "2025-09-11T03:29:30.476330"}
+2025-09-11 03:29:30,476 - INFO - {"event": "datapoint_added", "datapoint_id": "53d8a7f6-c14d-4275-a474-d81d27686f26", "pending_count": 3, "timestamp": "2025-09-11T03:29:30.476330"}
+2025-09-11 03:29:30,478 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:29:39,235 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:29:39,240 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:29:39,240 - INFO - {"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T03:29:39.240699"}
+2025-09-11 03:29:39,241 - INFO - {"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T03:29:39.241699"}
+2025-09-11 03:29:39,243 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:29:50,551 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:29:50,556 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:29:50,556 - INFO - {"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T03:29:50.556920"}
+2025-09-11 03:29:50,557 - INFO - {"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 1, "groups": [{"theme": "Public amplification of Charlie Kirk's incendiary rhetoric \u2014 responses tying his comments to the Iryna Zarutska murder, racial framing, and anti\u2011Islam claims", "datapoint_count": 3, "synthesis_worthy": true}], "timestamp": "2025-09-11T03:29:50.557921"}
+2025-09-11 03:29:50,559 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:30:04,993 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:30:04,996 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:30:04,997 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:30:04.997962"}
+2025-09-11 03:30:04,998 - INFO - Bridge notification: Insight created - Strengthen — Polarized responses with active right-wing amplification
+2025-09-11 03:30:04,998 - INFO - Bridge calling detect_emergent_questions with 102 insights
+2025-09-11 03:30:05,000 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:30:26,894 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:30:26,899 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:30:26,903 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 03:30:26,904 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 03:30:26,904 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Polarized responses with active right-wing amplification", "insight_confidence": 0.85, "timestamp": "2025-09-11T03:30:26.904127"}
+2025-09-11 03:30:26,904 - INFO - {"event": "synthesis_completed", "insights_created": 1, "timestamp": "2025-09-11T03:30:26.904127"}
+2025-09-11 03:30:26,904 - INFO - {"event": "datapoint_added", "datapoint_id": "b70aca77-6a4c-48f4-b8f3-e328b224a5c4", "pending_count": 1, "timestamp": "2025-09-11T03:30:26.904127"}
+2025-09-11 03:30:26,904 - INFO - {"event": "datapoint_added", "datapoint_id": "46c7f6ce-792e-48c6-8768-0347a9b04e12", "pending_count": 2, "timestamp": "2025-09-11T03:30:26.904127"}
+2025-09-11 03:30:26,905 - INFO - {"event": "datapoint_added", "datapoint_id": "2cd0997c-2b15-4d93-a7e9-d428407afc12", "pending_count": 3, "timestamp": "2025-09-11T03:30:26.905127"}
+2025-09-11 03:30:26,905 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:30:45,156 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:30:45,158 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:30:45,159 - INFO - {"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T03:30:45.159428"}
+2025-09-11 03:30:45,160 - INFO - {"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T03:30:45.160429"}
+2025-09-11 03:30:45,161 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:31:11,039 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:31:11,043 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:31:11,044 - INFO - {"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T03:31:11.044910"}
+2025-09-11 03:31:11,045 - INFO - {"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Grief, free\u2011speech framing and political mobilization", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Attribution of cause / violent imagery, mocking and potential misinformation", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T03:31:11.045998"}
+2025-09-11 03:31:11,047 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:31:31,872 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:31:31,878 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:31:31,879 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:31:31.879743"}
+2025-09-11 03:31:31,880 - INFO - Bridge notification: Insight created - Strengthen — Polarized responses: political accusatory frames vs faith-based mourning
+2025-09-11 03:31:31,880 - INFO - Bridge calling detect_emergent_questions with 103 insights
+2025-09-11 03:31:31,881 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:31:55,645 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:31:55,659 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:31:55,663 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 03:31:55,664 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 03:31:55,664 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Polarized responses: political accusatory frames vs faith-based mourning", "insight_confidence": 0.82, "timestamp": "2025-09-11T03:31:55.664242"}
+2025-09-11 03:31:55,666 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:32:19,879 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:32:19,883 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:32:19,883 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:32:19.883325"}
+2025-09-11 03:32:19,884 - INFO - Bridge notification: Insight created - STRENGTHEN — Condemnation-plus-refusal-to-mourn emerges as distinct framing
+2025-09-11 03:32:19,884 - INFO - Bridge calling detect_emergent_questions with 104 insights
+2025-09-11 03:32:19,885 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:32:40,723 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:32:40,734 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:32:40,737 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 03:32:40,739 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 03:32:40,739 - INFO - {"event": "insight_creation", "success": true, "insight_title": "STRENGTHEN \u2014 Condemnation-plus-refusal-to-mourn emerges as distinct framing", "insight_confidence": 0.88, "timestamp": "2025-09-11T03:32:40.739379"}
+2025-09-11 03:32:40,739 - INFO - {"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T03:32:40.739379"}
+2025-09-11 03:32:40,739 - INFO - {"event": "datapoint_added", "datapoint_id": "b3448d73-0e89-41af-a550-9fae72c6188f", "pending_count": 1, "timestamp": "2025-09-11T03:32:40.739925"}
+2025-09-11 03:32:40,740 - INFO - {"event": "datapoint_added", "datapoint_id": "d155adba-f8f4-41e9-ae3a-d50f2907cc2d", "pending_count": 2, "timestamp": "2025-09-11T03:32:40.740250"}
+2025-09-11 03:32:40,740 - INFO - {"event": "datapoint_added", "datapoint_id": "84ab8b42-8bf1-40ae-98d8-dbb2486eb5ca", "pending_count": 3, "timestamp": "2025-09-11T03:32:40.740789"}
+2025-09-11 03:32:40,741 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:32:49,162 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:32:49,165 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:32:49,166 - INFO - {"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T03:32:49.166039"}
+2025-09-11 03:32:49,167 - INFO - {"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T03:32:49.167070"}
+2025-09-11 03:32:49,168 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:33:09,148 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:33:09,152 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:33:09,153 - INFO - {"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T03:33:09.153079"}
+2025-09-11 03:33:09,154 - INFO - {"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Tributes framing Charlie Kirk as a patriot and public debater", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Anger and defense of the grieving family; call-outs of insensitive reactions", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T03:33:09.153079"}
+2025-09-11 03:33:09,154 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:33:30,104 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:33:30,112 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:33:30,113 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:33:30.113727"}
+2025-09-11 03:33:30,114 - INFO - Bridge notification: Insight created - Strengthen — Polarized responses: presence of supportive mourning
+2025-09-11 03:33:30,114 - INFO - Bridge calling detect_emergent_questions with 105 insights
+2025-09-11 03:33:30,115 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:33:56,293 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:33:56,308 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:33:56,311 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 03:33:56,312 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 03:33:56,312 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Polarized responses: presence of supportive mourning", "insight_confidence": 0.82, "timestamp": "2025-09-11T03:33:56.312471"}
+2025-09-11 03:33:56,314 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:34:09,150 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:34:09,153 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:34:09,154 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:34:09.154425"}
+2025-09-11 03:34:09,155 - INFO - Bridge notification: Insight created - Strengthen — Polarized responses: political accusatory frames vs faith-based mourning
+2025-09-11 03:34:09,155 - INFO - Bridge calling detect_emergent_questions with 106 insights
+2025-09-11 03:34:09,156 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:34:32,915 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:34:32,927 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:34:32,931 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-11 03:34:32,933 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-11 03:34:32,933 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Polarized responses: political accusatory frames vs faith-based mourning", "insight_confidence": 0.82, "timestamp": "2025-09-11T03:34:32.933795"}
+2025-09-11 03:34:32,933 - INFO - {"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T03:34:32.933795"}
+2025-09-11 03:34:32,934 - INFO - {"event": "datapoint_added", "datapoint_id": "30645d0b-ff41-4b1e-b7ce-a9f76bc360f4", "pending_count": 1, "timestamp": "2025-09-11T03:34:32.934796"}
+2025-09-11 03:34:32,934 - INFO - {"event": "datapoint_added", "datapoint_id": "1d9cb707-79cb-4e98-978d-671c4ae74cc2", "pending_count": 2, "timestamp": "2025-09-11T03:34:32.934796"}
+2025-09-11 03:34:32,936 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-11 03:34:52,217 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-11 03:34:52,225 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-11 03:34:52,234 - INFO - Loaded configuration from C:\Users\Brian\projects\twitterexplorer\twitterexplorer\config\models.yaml
+2025-09-11 03:34:52,235 - INFO - Configuration validation passed
+2025-09-11 03:34:52,235 - INFO - Model manager initialized with config: C:\Users\Brian\projects\twitterexplorer\twitterexplorer\config\models.yaml
+2025-09-11 03:34:52,254 - INFO - Completed investigation session e9b7e927-42e3-49b2-8459-e8db6633e4a8 - 8 searches, 473 results

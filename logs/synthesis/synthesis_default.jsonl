@@ -3621,3 +3621,470 @@
 {"event": "datapoint_added", "datapoint_id": "a0bf88e2-84ec-4138-9ae7-014efbd8663d", "pending_count": 3, "timestamp": "2025-09-11T01:54:20.885583"}
 {"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T01:54:30.033067"}
 {"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T01:54:30.034067"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T01:55:35.182148"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Social media reactions and debates over mourning vs. celebration", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Institutional/media response and content moderation after the death", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T01:55:35.183145"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T01:56:02.628057"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Refusal-to-mourn framing reinforced by memetic copying (confidence: 0.75)", "insight_confidence": 0.9, "timestamp": "2025-09-11T01:56:26.546299"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T01:56:54.547193"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Refusal-to-mourn + responsibility framing", "insight_confidence": 0.92, "timestamp": "2025-09-11T01:57:14.904924"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T01:57:14.904924"}
+{"event": "datapoint_added", "datapoint_id": "1fd1a6fc-b1b8-4846-a338-c88b0f72bb67", "pending_count": 1, "timestamp": "2025-09-11T01:57:14.905926"}
+{"event": "datapoint_added", "datapoint_id": "bf33a9b0-4ff7-4378-b9e3-9582377b2e0d", "pending_count": 2, "timestamp": "2025-09-11T01:57:14.905926"}
+{"event": "datapoint_added", "datapoint_id": "363ca8de-78a3-4da6-9241-f1581b38fa50", "pending_count": 3, "timestamp": "2025-09-11T01:57:14.905926"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T01:57:22.600722"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T01:57:22.601722"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T01:57:43.139677"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Narrative control and political instrumentalization \u2014 claims of misinformation and 'psyop' framing", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Public emotional reactions and verification \u2014 reported celebrations versus grief and religious consolation", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T01:57:43.140677"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T01:58:08.401689"}
+{"event": "insight_creation", "success": true, "insight_title": "Cross-platform celebration reports are being contested", "insight_confidence": 0.7, "timestamp": "2025-09-11T01:58:31.178836"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T01:58:56.233657"}
+{"event": "insight_creation", "success": true, "insight_title": "Platform variation and misattribution shape perceived polarization", "insight_confidence": 0.78, "timestamp": "2025-09-11T01:59:15.351403"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T01:59:15.352403"}
+{"event": "datapoint_added", "datapoint_id": "d82fbaae-028c-4704-8223-51993a16a337", "pending_count": 1, "timestamp": "2025-09-11T01:59:15.352403"}
+{"event": "datapoint_added", "datapoint_id": "738fd3b4-1036-442c-8c64-9fb2de13a429", "pending_count": 2, "timestamp": "2025-09-11T01:59:15.352403"}
+{"event": "datapoint_added", "datapoint_id": "af933be5-fbde-4045-9f0f-13dea5fab792", "pending_count": 3, "timestamp": "2025-09-11T01:59:15.352403"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T01:59:22.708329"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T01:59:22.709330"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T01:59:51.381346"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Shock and moral rejection of people celebrating Charlie Kirk's death", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Newly informed observers noticing details and platform-specific celebratory reactions", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T01:59:51.382936"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:00:16.290029"}
+{"event": "insight_creation", "success": true, "insight_title": "Condemnation-plus-refusal-to-mourn framing strengthened", "insight_confidence": 0.9, "timestamp": "2025-09-11T02:00:45.286156"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:01:02.647246"}
+{"event": "insight_creation", "success": true, "insight_title": "STRENGTHEN \u2014 Refusal-to-mourn framing prevalence (confidence: 0.90)", "insight_confidence": 0.9, "timestamp": "2025-09-11T02:01:31.729747"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T02:01:31.729747"}
+{"event": "datapoint_added", "datapoint_id": "e9bb5908-868a-4af9-b7f1-768a753eaf09", "pending_count": 1, "timestamp": "2025-09-11T02:01:31.729747"}
+{"event": "datapoint_added", "datapoint_id": "89370104-9409-4806-a1d7-b28d50c1237d", "pending_count": 2, "timestamp": "2025-09-11T02:01:31.729747"}
+{"event": "datapoint_added", "datapoint_id": "09669de7-9a72-46bf-abfe-00422d924821", "pending_count": 3, "timestamp": "2025-09-11T02:01:31.729747"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:01:38.359845"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:01:38.360845"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:01:49.743294"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Public outrage and moral critique of celebratory reactions to Charlie Kirk's death", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Political framing and official responses to Charlie Kirk's assassination", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:01:49.744294"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:02:09.660152"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Refusal-to-mourn + responsibility framing", "insight_confidence": 0.92, "timestamp": "2025-09-11T02:02:35.564168"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:03:00.960769"}
+{"event": "insight_creation", "success": true, "insight_title": "Elite mourning vs. accusatory grassroots reinforces polarization", "insight_confidence": 0.86, "timestamp": "2025-09-11T02:03:27.520053"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T02:03:27.520053"}
+{"event": "datapoint_added", "datapoint_id": "313ad284-1a66-4354-8754-deb6e0320a2e", "pending_count": 1, "timestamp": "2025-09-11T02:03:27.521054"}
+{"event": "datapoint_added", "datapoint_id": "17af59bf-28a7-4da0-b617-069e53196593", "pending_count": 2, "timestamp": "2025-09-11T02:03:27.521054"}
+{"event": "datapoint_added", "datapoint_id": "9a43594f-94dd-4cd4-9f1b-930bbda5af01", "pending_count": 3, "timestamp": "2025-09-11T02:03:27.521054"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:03:38.822889"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:03:38.823889"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:04:00.767606"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Death announcements and cause speculation (rumors that Charlie Kirk was shot or killed)", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Condolences and religious framing in response to reported death", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:04:00.768606"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:04:17.194900"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Refusal-to-mourn + responsibility framing reinforced", "insight_confidence": 0.9, "timestamp": "2025-09-11T02:04:46.271087"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:04:59.856845"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Faith-based mourning reinforces polarization insight", "insight_confidence": 0.8, "timestamp": "2025-09-11T02:05:23.305085"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T02:05:23.305604"}
+{"event": "datapoint_added", "datapoint_id": "5d73f827-efac-44c1-8e2f-8934066da023", "pending_count": 1, "timestamp": "2025-09-11T02:05:23.305604"}
+{"event": "datapoint_added", "datapoint_id": "473b6bf9-30c7-4e2c-89ed-1b3c80ac5243", "pending_count": 2, "timestamp": "2025-09-11T02:05:23.305604"}
+{"event": "datapoint_added", "datapoint_id": "54d0b93f-8c39-4dc0-aa8e-0cf977a19004", "pending_count": 3, "timestamp": "2025-09-11T02:05:23.306114"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:05:32.344110"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:05:32.345110"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:05:49.336052"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Mourning and immediate public reaction (announcement, condolences, expressions of loss)", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Competing political narratives about responsibility and civility \u2014 blame vs. cross-party respect", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:05:49.337992"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:06:13.048747"}
+{"event": "insight_creation", "success": true, "insight_title": "Cross-ideological respectful mourning for Kirk", "insight_confidence": 0.55, "timestamp": "2025-09-11T02:06:49.833730"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:07:14.942291"}
+{"event": "insight_creation", "success": true, "insight_title": "Polarized responses include respectful mourning and martyr narratives", "insight_confidence": 0.76, "timestamp": "2025-09-11T02:07:42.632500"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T02:07:42.633499"}
+{"event": "datapoint_added", "datapoint_id": "e334fa6b-1626-42ea-b7d2-24a803a89c75", "pending_count": 1, "timestamp": "2025-09-11T02:07:42.633499"}
+{"event": "datapoint_added", "datapoint_id": "fbcfdcd1-dbd5-406e-980d-cfe18d479ce4", "pending_count": 2, "timestamp": "2025-09-11T02:07:42.633499"}
+{"event": "datapoint_added", "datapoint_id": "bd8bf842-d908-4145-8309-075b43e9802f", "pending_count": 3, "timestamp": "2025-09-11T02:07:42.633499"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:07:50.513067"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:07:50.514066"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:08:17.650730"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Public moral and religious reactions to Charlie Kirk's death (critique vs evangelism)", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Political/media framing linking Charlie Kirk to discussions of violent crime and responsibility", "datapoint_count": 2, "synthesis_worthy": false}], "timestamp": "2025-09-11T02:08:17.651728"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:08:36.840242"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Polarized responses: political accusatory frames vs faith-based mourning", "insight_confidence": 0.82, "timestamp": "2025-09-11T02:09:00.625456"}
+{"event": "synthesis_completed", "insights_created": 1, "timestamp": "2025-09-11T02:09:00.625456"}
+{"event": "datapoint_added", "datapoint_id": "e02528bd-ee53-4b77-8a5e-bb5692ec3d24", "pending_count": 1, "timestamp": "2025-09-11T02:09:00.626456"}
+{"event": "datapoint_added", "datapoint_id": "53d8a7f6-c14d-4275-a474-d81d27686f26", "pending_count": 2, "timestamp": "2025-09-11T02:09:00.626820"}
+{"event": "datapoint_added", "datapoint_id": "6e1473d4-6f21-432d-affd-d67762da0689", "pending_count": 3, "timestamp": "2025-09-11T02:09:13.409508"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:09:23.472619"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:09:23.473619"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:09:49.545622"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Partisan/political framing and immediate reactions to Charlie Kirk (attacks, defenses, ideological positioning)", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Amplification, sensationalization, and content reuse around posts about Charlie Kirk's death", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:09:49.546646"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:10:05.848171"}
+{"event": "insight_creation", "success": true, "insight_title": "Polarized responses: political acusatory frames vs faith-based mourning (confidence: 0.68)", "insight_confidence": 0.78, "timestamp": "2025-09-11T02:10:27.523872"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:10:54.110123"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Refusal-to-mourn framing reinforced by memetic copying", "insight_confidence": 0.9, "timestamp": "2025-09-11T02:11:22.504879"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T02:11:22.505879"}
+{"event": "datapoint_added", "datapoint_id": "cc099199-0b6b-4b97-8900-ce578c749568", "pending_count": 1, "timestamp": "2025-09-11T02:11:22.505879"}
+{"event": "datapoint_added", "datapoint_id": "a0bf88e2-84ec-4138-9ae7-014efbd8663d", "pending_count": 2, "timestamp": "2025-09-11T02:11:22.505879"}
+{"event": "datapoint_added", "datapoint_id": "1fd1a6fc-b1b8-4846-a338-c88b0f72bb67", "pending_count": 3, "timestamp": "2025-09-11T02:11:22.505879"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:11:29.665090"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:11:29.666090"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:11:47.527679"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Polarized online reactions \u2014 refusal to mourn versus alleged celebrations", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Media/platform response and reporting accuracy after Charlie Kirk's death", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:11:47.528679"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:12:03.754068"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Refusal-to-mourn + responsibility framing", "insight_confidence": 0.9, "timestamp": "2025-09-11T02:12:33.257834"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:13:08.128237"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Broadcasters remove Kirk-related content after death", "insight_confidence": 0.88, "timestamp": "2025-09-11T02:13:34.887102"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T02:13:34.887102"}
+{"event": "datapoint_added", "datapoint_id": "bf33a9b0-4ff7-4378-b9e3-9582377b2e0d", "pending_count": 1, "timestamp": "2025-09-11T02:13:34.887102"}
+{"event": "datapoint_added", "datapoint_id": "363ca8de-78a3-4da6-9241-f1581b38fa50", "pending_count": 2, "timestamp": "2025-09-11T02:13:34.887102"}
+{"event": "datapoint_added", "datapoint_id": "d82fbaae-028c-4704-8223-51993a16a337", "pending_count": 3, "timestamp": "2025-09-11T02:13:34.888102"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:13:41.558259"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:13:41.559260"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:13:58.544636"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Personal and moral reactions \u2014 grief, faith, and restraint from celebratory responses", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Political framing and discourse \u2014 accusations of distraction/psyop and ideological vilification", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:13:58.545637"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:14:18.129577"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Condemnation-plus-refusal-to-mourn emerges as distinct framing", "insight_confidence": 0.9, "timestamp": "2025-09-11T02:14:37.511844"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:14:55.738613"}
+{"event": "insight_creation", "success": true, "insight_title": "STRENGTHEN \u2014 Existing framings supported by new posts", "insight_confidence": 0.92, "timestamp": "2025-09-11T02:15:20.336434"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T02:15:20.337434"}
+{"event": "datapoint_added", "datapoint_id": "738fd3b4-1036-442c-8c64-9fb2de13a429", "pending_count": 1, "timestamp": "2025-09-11T02:15:20.337434"}
+{"event": "datapoint_added", "datapoint_id": "af933be5-fbde-4045-9f0f-13dea5fab792", "pending_count": 2, "timestamp": "2025-09-11T02:15:20.337434"}
+{"event": "datapoint_added", "datapoint_id": "e9bb5908-868a-4af9-b7f1-768a753eaf09", "pending_count": 3, "timestamp": "2025-09-11T02:15:20.337434"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:15:27.058171"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:15:27.059170"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:15:49.135073"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Moral shock and condemnation of people celebrating Charlie Kirk's death", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Surprise at the death and attribution of celebratory responses to specific social/political groups and platforms", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:15:49.136073"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:16:07.501278"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Refusal-to-mourn framing prevalence", "insight_confidence": 0.92, "timestamp": "2025-09-11T02:16:32.786331"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:16:49.068041"}
+{"event": "insight_creation", "success": true, "insight_title": "STRENGTHEN \u2014 Refusal-to-mourn framing prevalence", "insight_confidence": 0.9, "timestamp": "2025-09-11T02:17:20.287215"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T02:17:20.288217"}
+{"event": "datapoint_added", "datapoint_id": "89370104-9409-4806-a1d7-b28d50c1237d", "pending_count": 1, "timestamp": "2025-09-11T02:17:20.288217"}
+{"event": "datapoint_added", "datapoint_id": "09669de7-9a72-46bf-abfe-00422d924821", "pending_count": 2, "timestamp": "2025-09-11T02:17:20.288217"}
+{"event": "datapoint_added", "datapoint_id": "313ad284-1a66-4354-8754-deb6e0320a2e", "pending_count": 3, "timestamp": "2025-09-11T02:17:20.288217"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:17:36.827136"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:17:36.828196"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:18:01.382338"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Official/political response and commemoration following Charlie Kirk's assassination", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Social-media outrage and moral framing that links Kirk's death to victims (Uvalde) and accusations of 'acceptable losses'", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:18:01.382338"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:18:18.971989"}
+{"event": "insight_creation", "success": true, "insight_title": "High-profile political leader frames Kirk as martyr", "insight_confidence": 0.78, "timestamp": "2025-09-11T02:18:57.060054"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:19:18.204842"}
+{"event": "insight_creation", "success": true, "insight_title": "Refusal-to-mourn + responsibility framing strengthened", "insight_confidence": 0.92, "timestamp": "2025-09-11T02:19:43.346645"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T02:19:43.347645"}
+{"event": "datapoint_added", "datapoint_id": "17af59bf-28a7-4da0-b617-069e53196593", "pending_count": 1, "timestamp": "2025-09-11T02:19:43.347645"}
+{"event": "datapoint_added", "datapoint_id": "9a43594f-94dd-4cd4-9f1b-930bbda5af01", "pending_count": 2, "timestamp": "2025-09-11T02:19:43.347645"}
+{"event": "datapoint_added", "datapoint_id": "5d73f827-efac-44c1-8e2f-8934066da023", "pending_count": 3, "timestamp": "2025-09-11T02:19:43.347645"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:19:53.227543"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:19:53.228542"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:20:04.999262"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 1, "groups": [{"theme": "Claims and reactions asserting Charlie Kirk has died \u2014 mixture of rumor, condolence, and politicized framing", "datapoint_count": 3, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:20:05.000263"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:20:22.133430"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Polarized political vs faith-based responses", "insight_confidence": 0.82, "timestamp": "2025-09-11T02:20:44.344405"}
+{"event": "synthesis_completed", "insights_created": 1, "timestamp": "2025-09-11T02:20:44.344405"}
+{"event": "datapoint_added", "datapoint_id": "473b6bf9-30c7-4e2c-89ed-1b3c80ac5243", "pending_count": 1, "timestamp": "2025-09-11T02:20:44.344405"}
+{"event": "datapoint_added", "datapoint_id": "54d0b93f-8c39-4dc0-aa8e-0cf977a19004", "pending_count": 2, "timestamp": "2025-09-11T02:20:44.344405"}
+{"event": "datapoint_added", "datapoint_id": "e334fa6b-1626-42ea-b7d2-24a803a89c75", "pending_count": 3, "timestamp": "2025-09-11T02:20:44.345403"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:20:52.667177"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:20:52.668177"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:21:11.002553"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Mourning and respectful recollection despite political differences", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Sarcastic or politicized reactions framing the death as political commentary", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:21:11.003552"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:21:25.990238"}
+{"event": "insight_creation", "success": true, "insight_title": "Sympathetic cross\u2011ideological mourning reinforces polarization insight", "insight_confidence": 0.74, "timestamp": "2025-09-11T02:21:50.181508"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:22:03.488733"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Refusal-to-mourn + responsibility framing strengthened", "insight_confidence": 0.9, "timestamp": "2025-09-11T02:22:29.347661"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T02:22:29.347661"}
+{"event": "datapoint_added", "datapoint_id": "fbcfdcd1-dbd5-406e-980d-cfe18d479ce4", "pending_count": 1, "timestamp": "2025-09-11T02:22:29.347661"}
+{"event": "datapoint_added", "datapoint_id": "bd8bf842-d908-4145-8309-075b43e9802f", "pending_count": 2, "timestamp": "2025-09-11T02:22:29.347661"}
+{"event": "datapoint_added", "datapoint_id": "e02528bd-ee53-4b77-8a5e-bb5692ec3d24", "pending_count": 3, "timestamp": "2025-09-11T02:22:29.347661"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:22:37.455704"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:22:37.456731"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:23:07.360338"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Media/political clash: Charlie Kirk vs. Van Jones about the Iryna Zarutska murder", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Religious/moral framing of Charlie Kirk's death and calls to faith", "datapoint_count": 2, "synthesis_worthy": false}], "timestamp": "2025-09-11T02:23:07.362337"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:23:30.759412"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Polarized responses reinforced by pro-Kirk media amplification", "insight_confidence": 0.78, "timestamp": "2025-09-11T02:24:01.164414"}
+{"event": "synthesis_completed", "insights_created": 1, "timestamp": "2025-09-11T02:24:01.164414"}
+{"event": "datapoint_added", "datapoint_id": "53d8a7f6-c14d-4275-a474-d81d27686f26", "pending_count": 1, "timestamp": "2025-09-11T02:24:01.164414"}
+{"event": "datapoint_added", "datapoint_id": "6e1473d4-6f21-432d-affd-d67762da0689", "pending_count": 2, "timestamp": "2025-09-11T02:24:13.570755"}
+{"event": "datapoint_added", "datapoint_id": "cc099199-0b6b-4b97-8900-ce578c749568", "pending_count": 3, "timestamp": "2025-09-11T02:24:13.571757"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:24:20.386198"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:24:20.387298"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:24:46.573748"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Social-media amplification and public reactions to Charlie Kirk's death (viral reposting and praise/critique)", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Media and entertainment consequences following Kirk's death (content removal and editorial response)", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:24:46.574775"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:25:08.177191"}
+{"event": "insight_creation", "success": true, "insight_title": "Supportive amplification of Kirk's rhetoric among pro accounts", "insight_confidence": 0.62, "timestamp": "2025-09-11T02:25:32.408425"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:25:45.308620"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Broadcasters remove Kirk-related content after death", "insight_confidence": 0.84, "timestamp": "2025-09-11T02:26:08.515243"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T02:26:08.515243"}
+{"event": "datapoint_added", "datapoint_id": "a0bf88e2-84ec-4138-9ae7-014efbd8663d", "pending_count": 1, "timestamp": "2025-09-11T02:26:08.515243"}
+{"event": "datapoint_added", "datapoint_id": "1fd1a6fc-b1b8-4846-a338-c88b0f72bb67", "pending_count": 2, "timestamp": "2025-09-11T02:26:08.515243"}
+{"event": "datapoint_added", "datapoint_id": "bf33a9b0-4ff7-4378-b9e3-9582377b2e0d", "pending_count": 3, "timestamp": "2025-09-11T02:26:08.515243"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:26:15.302530"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:26:15.303531"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:26:36.354724"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Contested social-media reactions: claims people are celebrating vs refusing to mourn Charlie Kirk", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Narrative/attention-management and misinformation: framing the death as distraction or a 'psyop' and calls of misleading coverage", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:26:36.355723"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:26:52.203663"}
+{"event": "insight_creation", "success": true, "insight_title": "Refusal-to-mourn coupled with responsibility framing", "insight_confidence": 0.9, "timestamp": "2025-09-11T02:27:20.225964"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:27:47.501457"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 'Psyop'/distraction framing reinforced", "insight_confidence": 0.85, "timestamp": "2025-09-11T02:28:15.716075"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T02:28:15.716075"}
+{"event": "datapoint_added", "datapoint_id": "363ca8de-78a3-4da6-9241-f1581b38fa50", "pending_count": 1, "timestamp": "2025-09-11T02:28:15.716075"}
+{"event": "datapoint_added", "datapoint_id": "d82fbaae-028c-4704-8223-51993a16a337", "pending_count": 2, "timestamp": "2025-09-11T02:28:15.716075"}
+{"event": "datapoint_added", "datapoint_id": "738fd3b4-1036-442c-8c64-9fb2de13a429", "pending_count": 3, "timestamp": "2025-09-11T02:28:15.716075"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:28:23.646693"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:28:23.647693"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:28:44.656019"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Condemnation of celebrating Charlie Kirk's death \u2014 critics oppose gleeful reactions", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Emotional and faith-based framing of Kirk's death \u2014 sadness, anger, and religious consolation", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:28:44.656532"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:28:59.710757"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Condemnation-plus-refusal-to-mourn framing", "insight_confidence": 0.92, "timestamp": "2025-09-11T02:29:27.650728"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:29:44.514290"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Polarized responses: political accusatory frames vs faith-based mourning", "insight_confidence": 0.82, "timestamp": "2025-09-11T02:30:07.608206"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T02:30:07.609206"}
+{"event": "datapoint_added", "datapoint_id": "af933be5-fbde-4045-9f0f-13dea5fab792", "pending_count": 1, "timestamp": "2025-09-11T02:30:07.609206"}
+{"event": "datapoint_added", "datapoint_id": "e9bb5908-868a-4af9-b7f1-768a753eaf09", "pending_count": 2, "timestamp": "2025-09-11T02:30:07.609206"}
+{"event": "datapoint_added", "datapoint_id": "89370104-9409-4806-a1d7-b28d50c1237d", "pending_count": 3, "timestamp": "2025-09-11T02:30:07.609206"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:30:16.437891"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:30:16.438402"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:30:30.585520"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 1, "groups": [{"theme": "Public reactions and moral framing of Charlie Kirk's death (celebration, condemnation, and contextualization with past shootings)", "datapoint_count": 3, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:30:30.586520"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:30:43.248027"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Refusal-to-mourn coupled with responsibility framing", "insight_confidence": 0.92, "timestamp": "2025-09-11T02:31:12.647555"}
+{"event": "synthesis_completed", "insights_created": 1, "timestamp": "2025-09-11T02:31:12.647555"}
+{"event": "datapoint_added", "datapoint_id": "09669de7-9a72-46bf-abfe-00422d924821", "pending_count": 1, "timestamp": "2025-09-11T02:31:12.647555"}
+{"event": "datapoint_added", "datapoint_id": "313ad284-1a66-4354-8754-deb6e0320a2e", "pending_count": 2, "timestamp": "2025-09-11T02:31:12.647555"}
+{"event": "datapoint_added", "datapoint_id": "17af59bf-28a7-4da0-b617-069e53196593", "pending_count": 3, "timestamp": "2025-09-11T02:31:12.648555"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:31:21.181476"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:31:21.181476"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:31:41.923087"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Viral claims and questions asserting Charlie Kirk has been killed", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "High-profile/political response framing the incident as an assassination", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:31:41.924086"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:31:59.461317"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Refusal-to-mourn + responsibility framing", "insight_confidence": 0.92, "timestamp": "2025-09-11T02:32:25.422967"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:32:48.240260"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Polarized responses: elite pro-mourning evidence", "insight_confidence": 0.82, "timestamp": "2025-09-11T02:33:12.331219"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T02:33:12.331219"}
+{"event": "datapoint_added", "datapoint_id": "9a43594f-94dd-4cd4-9f1b-930bbda5af01", "pending_count": 1, "timestamp": "2025-09-11T02:33:12.331219"}
+{"event": "datapoint_added", "datapoint_id": "5d73f827-efac-44c1-8e2f-8934066da023", "pending_count": 2, "timestamp": "2025-09-11T02:33:12.331219"}
+{"event": "datapoint_added", "datapoint_id": "473b6bf9-30c7-4e2c-89ed-1b3c80ac5243", "pending_count": 3, "timestamp": "2025-09-11T02:33:12.332219"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:33:18.787245"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:33:18.788277"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:33:35.138242"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Expressions of mourning and condolence (personal grief, religious framing)", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Political framing and polarization (blame, narratives about 'woke' opposition, and cross-ideological respect)", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:33:35.139241"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:43:54.562788"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Polarized responses (political accusatory vs faith-based mourning)", "insight_confidence": 0.8, "timestamp": "2025-09-11T02:44:16.694012"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:44:39.477450"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Polarized responses: accusatory vs. sympathetic mourning", "insight_confidence": 0.86, "timestamp": "2025-09-11T02:45:14.024450"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T02:45:14.024450"}
+{"event": "datapoint_added", "datapoint_id": "54d0b93f-8c39-4dc0-aa8e-0cf977a19004", "pending_count": 1, "timestamp": "2025-09-11T02:45:14.024450"}
+{"event": "datapoint_added", "datapoint_id": "e334fa6b-1626-42ea-b7d2-24a803a89c75", "pending_count": 2, "timestamp": "2025-09-11T02:45:14.024450"}
+{"event": "datapoint_added", "datapoint_id": "fbcfdcd1-dbd5-406e-980d-cfe18d479ce4", "pending_count": 3, "timestamp": "2025-09-11T02:45:14.024450"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:45:22.054631"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:45:22.055617"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:45:40.130307"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Immediate social-media reactions and sensational announcement of Charlie Kirk's death", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Death used as a prompt for moral/religious critique or exhortation", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:45:40.131307"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:45:55.792753"}
+{"event": "insight_creation", "success": true, "insight_title": "Refusal-to-mourn + responsibility framing strengthened", "insight_confidence": 0.9, "timestamp": "2025-09-11T02:46:19.216009"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:46:36.841786"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Polarized responses reinforced by new posts", "insight_confidence": 0.82, "timestamp": "2025-09-11T02:47:07.721007"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T02:47:07.721007"}
+{"event": "datapoint_added", "datapoint_id": "bd8bf842-d908-4145-8309-075b43e9802f", "pending_count": 1, "timestamp": "2025-09-11T02:47:07.721007"}
+{"event": "datapoint_added", "datapoint_id": "e02528bd-ee53-4b77-8a5e-bb5692ec3d24", "pending_count": 2, "timestamp": "2025-09-11T02:47:07.721007"}
+{"event": "datapoint_added", "datapoint_id": "53d8a7f6-c14d-4275-a474-d81d27686f26", "pending_count": 3, "timestamp": "2025-09-11T02:47:07.722009"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:47:17.154254"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:47:17.155254"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:47:32.863833"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Media-framed confrontation: Charlie Kirk vs. Van Jones over the Iryna Zarutska murder", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Ideological framing and generalization: Kirk linking the attacker to Islam/Western values", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:47:32.863833"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:47:51.863750"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Polarized political framing reinforced (Kirk vs Van Jones)", "insight_confidence": 0.74, "timestamp": "2025-09-11T02:48:20.090144"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:48:41.390284"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Pro-Kirk celebratory amplification reinforces polarization", "insight_confidence": 0.82, "timestamp": "2025-09-11T02:49:00.338219"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T02:49:00.338219"}
+{"event": "datapoint_added", "datapoint_id": "6e1473d4-6f21-432d-affd-d67762da0689", "pending_count": 1, "timestamp": "2025-09-11T02:49:17.675380"}
+{"event": "datapoint_added", "datapoint_id": "cc099199-0b6b-4b97-8900-ce578c749568", "pending_count": 2, "timestamp": "2025-09-11T02:49:17.676446"}
+{"event": "datapoint_added", "datapoint_id": "a0bf88e2-84ec-4138-9ae7-014efbd8663d", "pending_count": 3, "timestamp": "2025-09-11T02:49:17.676446"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:49:26.304808"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:49:26.304808"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:49:43.648027"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Public / social-media reactions to Charlie Kirk\u2019s death \u2014 refusal to mourn vs. celebration", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Media and content-handling responses after Kirk\u2019s death (episode pulls, viral reposting)", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:49:43.649084"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:50:12.712960"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Refusal-to-mourn framing reinforced by memetic copying", "insight_confidence": 0.92, "timestamp": "2025-09-11T02:50:36.216079"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:50:53.928070"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Memetic copying and broadcaster content removal", "insight_confidence": 0.9, "timestamp": "2025-09-11T02:51:26.821054"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T02:51:26.822054"}
+{"event": "datapoint_added", "datapoint_id": "1fd1a6fc-b1b8-4846-a338-c88b0f72bb67", "pending_count": 1, "timestamp": "2025-09-11T02:51:26.822054"}
+{"event": "datapoint_added", "datapoint_id": "bf33a9b0-4ff7-4378-b9e3-9582377b2e0d", "pending_count": 2, "timestamp": "2025-09-11T02:51:26.822054"}
+{"event": "datapoint_added", "datapoint_id": "363ca8de-78a3-4da6-9241-f1581b38fa50", "pending_count": 3, "timestamp": "2025-09-11T02:51:26.822054"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:51:33.534113"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:51:33.534113"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:51:54.170218"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Social-media narratives, misinformation, and strategic framing around Charlie Kirk's death", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Polarized emotional and religious responses to Charlie Kirk's death (mourning vs claims of celebration)", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:51:54.171245"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:52:22.182597"}
+{"event": "insight_creation", "success": true, "insight_title": "Psyop framing + cross\u2011platform evidence dispute emerge together", "insight_confidence": 0.75, "timestamp": "2025-09-11T02:52:43.658764"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:53:05.118938"}
+{"event": "insight_creation", "success": true, "insight_title": "STRENGTHEN: Polarized responses \u2014 faith-based mourning confirmed; platform-misattribution noted", "insight_confidence": 0.75, "timestamp": "2025-09-11T02:53:27.055574"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T02:53:27.055574"}
+{"event": "datapoint_added", "datapoint_id": "d82fbaae-028c-4704-8223-51993a16a337", "pending_count": 1, "timestamp": "2025-09-11T02:53:27.056110"}
+{"event": "datapoint_added", "datapoint_id": "738fd3b4-1036-442c-8c64-9fb2de13a429", "pending_count": 2, "timestamp": "2025-09-11T02:53:27.056110"}
+{"event": "datapoint_added", "datapoint_id": "af933be5-fbde-4045-9f0f-13dea5fab792", "pending_count": 3, "timestamp": "2025-09-11T02:53:27.056110"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:53:36.200434"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:53:36.201434"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:54:08.075874"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Moral ambivalence and rejection of celebrating Charlie Kirk's death", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Surprise/ignorance about the victim plus reports of celebratory reactions on left-leaning platforms", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:54:08.076958"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:54:38.949526"}
+{"event": "insight_creation", "success": true, "insight_title": "Condemnation-plus-refusal-to-mourn emerges as distinct framing (confidence: 0.8)", "insight_confidence": 0.9, "timestamp": "2025-09-11T02:55:39.892589"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:56:05.159439"}
+{"event": "insight_creation", "success": true, "insight_title": "Refusal-to-mourn framing prevalence strengthened", "insight_confidence": 0.88, "timestamp": "2025-09-11T02:56:39.508009"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T02:56:39.508009"}
+{"event": "datapoint_added", "datapoint_id": "e9bb5908-868a-4af9-b7f1-768a753eaf09", "pending_count": 1, "timestamp": "2025-09-11T02:56:39.508009"}
+{"event": "datapoint_added", "datapoint_id": "89370104-9409-4806-a1d7-b28d50c1237d", "pending_count": 2, "timestamp": "2025-09-11T02:56:39.508009"}
+{"event": "datapoint_added", "datapoint_id": "09669de7-9a72-46bf-abfe-00422d924821", "pending_count": 3, "timestamp": "2025-09-11T02:56:39.508009"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:56:49.351344"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T02:56:49.352344"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:57:16.071041"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Moral condemnation of celebratory reactions to Charlie Kirk's death \u2014 concerns about dehumanization and hypocrisy", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Polarized political framing: critics invoke Kirk's prior rhetoric (Uvalde victims) while political allies publicly mourn and valorize him", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:57:16.072041"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:57:38.051692"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Refusal-to-mourn + responsibility framing", "insight_confidence": 0.92, "timestamp": "2025-09-11T02:58:01.754204"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:58:26.584801"}
+{"event": "insight_creation", "success": true, "insight_title": "Elite pro-mourning statement vs grassroots refusal-to-mourn reinforces polarization", "insight_confidence": 0.88, "timestamp": "2025-09-11T02:58:55.240125"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T02:58:55.240125"}
+{"event": "datapoint_added", "datapoint_id": "313ad284-1a66-4354-8754-deb6e0320a2e", "pending_count": 1, "timestamp": "2025-09-11T02:58:55.240125"}
+{"event": "datapoint_added", "datapoint_id": "17af59bf-28a7-4da0-b617-069e53196593", "pending_count": 2, "timestamp": "2025-09-11T02:58:55.240125"}
+{"event": "datapoint_added", "datapoint_id": "9a43594f-94dd-4cd4-9f1b-930bbda5af01", "pending_count": 3, "timestamp": "2025-09-11T02:58:55.240125"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:59:02.874538"}
+{"event": "datapoint_added", "datapoint_id": "5d73f827-efac-44c1-8e2f-8934066da023", "pending_count": 4, "timestamp": "2025-09-11T02:59:02.875538"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T02:59:11.018288"}
+{"event": "synthesis_triggered", "pending_count": 4, "timestamp": "2025-09-11T02:59:11.019289"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T02:59:27.405941"}
+{"event": "semantic_grouping", "input_datapoint_count": 4, "output_groups": 2, "groups": [{"theme": "Announcements and unverified claims about Charlie Kirk's death (rumor propagation)", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Emotional reactions framing death as martyrdom or religious consolation", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T02:59:27.406940"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T02:59:44.241893"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Refusal-to-mourn + responsibility framing", "insight_confidence": 0.9, "timestamp": "2025-09-11T03:00:05.577244"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:00:23.320217"}
+{"event": "insight_creation", "success": true, "insight_title": "Martyrdom/persecution framing mixed with faith proselytizing", "insight_confidence": 0.72, "timestamp": "2025-09-11T03:00:46.590557"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T03:00:46.590557"}
+{"event": "datapoint_added", "datapoint_id": "473b6bf9-30c7-4e2c-89ed-1b3c80ac5243", "pending_count": 1, "timestamp": "2025-09-11T03:00:46.591556"}
+{"event": "datapoint_added", "datapoint_id": "54d0b93f-8c39-4dc0-aa8e-0cf977a19004", "pending_count": 2, "timestamp": "2025-09-11T03:00:46.591556"}
+{"event": "datapoint_added", "datapoint_id": "e334fa6b-1626-42ea-b7d2-24a803a89c75", "pending_count": 3, "timestamp": "2025-09-11T03:00:46.591556"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T03:00:55.465744"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T03:00:55.466842"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T03:01:22.580453"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Expressions of grief, respect, and cross-partisan reflection", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Derisive or critical reactions tying death to political positions (accusations of hypocrisy)", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T03:01:22.581454"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:01:37.934873"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Polarized responses: evidence of cross\u2011ideological mourning", "insight_confidence": 0.82, "timestamp": "2025-09-11T03:01:59.440842"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:02:16.775430"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Condemnation-plus-refusal-to-mourn (hypocrisy framing)", "insight_confidence": 0.88, "timestamp": "2025-09-11T03:02:40.546702"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T03:02:40.546702"}
+{"event": "datapoint_added", "datapoint_id": "fbcfdcd1-dbd5-406e-980d-cfe18d479ce4", "pending_count": 1, "timestamp": "2025-09-11T03:02:40.546702"}
+{"event": "datapoint_added", "datapoint_id": "bd8bf842-d908-4145-8309-075b43e9802f", "pending_count": 2, "timestamp": "2025-09-11T03:02:40.547701"}
+{"event": "datapoint_added", "datapoint_id": "e02528bd-ee53-4b77-8a5e-bb5692ec3d24", "pending_count": 3, "timestamp": "2025-09-11T03:02:40.547701"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T03:02:52.823486"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T03:02:52.823486"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T03:03:15.515209"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Media/political dispute over the murder of Iryna Zarutska: Charlie Kirk vs Van Jones", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Religious/spiritual framing of Charlie Kirk's death and public exhortation", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T03:03:15.516208"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:13:32.588352"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Polarized political-accusatory framing reinforced", "insight_confidence": 0.75, "timestamp": "2025-09-11T03:13:57.732637"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:14:18.449592"}
+{"event": "insight_creation", "success": true, "insight_title": "Polarization reinforced \u2014 faith-based mourning vs political framing", "insight_confidence": 0.8, "timestamp": "2025-09-11T03:14:39.924988"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T03:14:39.924988"}
+{"event": "datapoint_added", "datapoint_id": "53d8a7f6-c14d-4275-a474-d81d27686f26", "pending_count": 1, "timestamp": "2025-09-11T03:14:39.924988"}
+{"event": "datapoint_added", "datapoint_id": "6e1473d4-6f21-432d-affd-d67762da0689", "pending_count": 2, "timestamp": "2025-09-11T03:15:02.753503"}
+{"event": "datapoint_added", "datapoint_id": "cc099199-0b6b-4b97-8900-ce578c749568", "pending_count": 3, "timestamp": "2025-09-11T03:15:02.754503"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T03:15:09.617777"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T03:15:09.619341"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T03:15:34.248121"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Social media framing, partisan amplification, and meme-ification of Kirk's death", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Institutional/media response and content removal after Kirk's death", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T03:15:34.249121"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:16:12.083143"}
+{"event": "insight_creation", "success": true, "insight_title": "Supportive/celebratory pro-Kirk framing among right-wing accounts", "insight_confidence": 0.55, "timestamp": "2025-09-11T03:16:40.887848"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:16:59.828252"}
+{"event": "insight_creation", "success": true, "insight_title": "Broadcaster content removal and memetic copying jointly shape post-death discourse", "insight_confidence": 0.85, "timestamp": "2025-09-11T03:17:27.856649"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T03:17:27.856649"}
+{"event": "datapoint_added", "datapoint_id": "a0bf88e2-84ec-4138-9ae7-014efbd8663d", "pending_count": 1, "timestamp": "2025-09-11T03:17:27.856649"}
+{"event": "datapoint_added", "datapoint_id": "1fd1a6fc-b1b8-4846-a338-c88b0f72bb67", "pending_count": 2, "timestamp": "2025-09-11T03:17:27.856649"}
+{"event": "datapoint_added", "datapoint_id": "bf33a9b0-4ff7-4378-b9e3-9582377b2e0d", "pending_count": 3, "timestamp": "2025-09-11T03:17:27.857649"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T03:17:36.596327"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T03:17:36.597327"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T03:18:01.997369"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Contestation over whether people are celebrating or refusing to mourn Charlie Kirk's death; polarized reactions and calls to violence", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Framing the news of Kirk's death as a strategic distraction/\u2019psyop\u2019 from Palestinian deaths and broader narrative management", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T03:18:01.998369"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:18:22.696656"}
+{"event": "insight_creation", "success": true, "insight_title": "Refusal-to-mourn + responsibility framing strengthened (confidence: 0.85)", "insight_confidence": 0.9, "timestamp": "2025-09-11T03:18:49.668224"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:19:06.195056"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 'Psyop'/distraction framing reinforced", "insight_confidence": 0.86, "timestamp": "2025-09-11T03:19:32.224450"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T03:19:32.224450"}
+{"event": "datapoint_added", "datapoint_id": "363ca8de-78a3-4da6-9241-f1581b38fa50", "pending_count": 1, "timestamp": "2025-09-11T03:19:32.225032"}
+{"event": "datapoint_added", "datapoint_id": "d82fbaae-028c-4704-8223-51993a16a337", "pending_count": 2, "timestamp": "2025-09-11T03:19:32.225032"}
+{"event": "datapoint_added", "datapoint_id": "738fd3b4-1036-442c-8c64-9fb2de13a429", "pending_count": 3, "timestamp": "2025-09-11T03:19:32.225032"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T03:19:46.735166"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T03:19:46.736168"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T03:20:11.220189"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Condemnation of celebratory responses to Charlie Kirk's death; appeal to basic decency", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Divergent emotional framing and public polarization \u2014 religious consolation versus public cheering/disbelief", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T03:20:11.220189"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:20:32.766673"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Condemnation-plus-refusal-to-mourn emerges as distinct framing (confidence: 0.8)", "insight_confidence": 0.9, "timestamp": "2025-09-11T03:20:56.501392"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:21:20.540337"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Polarized responses (political accusatory frames vs faith-based mourning)", "insight_confidence": 0.78, "timestamp": "2025-09-11T03:21:44.925409"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T03:21:44.925409"}
+{"event": "datapoint_added", "datapoint_id": "af933be5-fbde-4045-9f0f-13dea5fab792", "pending_count": 1, "timestamp": "2025-09-11T03:21:44.925928"}
+{"event": "datapoint_added", "datapoint_id": "e9bb5908-868a-4af9-b7f1-768a753eaf09", "pending_count": 2, "timestamp": "2025-09-11T03:21:44.925928"}
+{"event": "datapoint_added", "datapoint_id": "89370104-9409-4806-a1d7-b28d50c1237d", "pending_count": 3, "timestamp": "2025-09-11T03:21:44.925928"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T03:21:52.387826"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T03:21:52.388826"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T03:22:09.229979"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Moral condemnation of celebratory reactions to Charlie Kirk's death", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Context and justification for reactions: references to Kirk's past statements about victims (Uvalde)", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T03:22:09.230979"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:22:37.138639"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Condemnation-of-celebratory-responses reinforces refusal-to-mourn framing", "insight_confidence": 0.88, "timestamp": "2025-09-11T03:23:13.641829"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:23:36.884751"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Refusal-to-mourn + responsibility framing", "insight_confidence": 0.92, "timestamp": "2025-09-11T03:24:03.822983"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T03:24:03.822983"}
+{"event": "datapoint_added", "datapoint_id": "09669de7-9a72-46bf-abfe-00422d924821", "pending_count": 1, "timestamp": "2025-09-11T03:24:03.823492"}
+{"event": "datapoint_added", "datapoint_id": "313ad284-1a66-4354-8754-deb6e0320a2e", "pending_count": 2, "timestamp": "2025-09-11T03:24:03.823492"}
+{"event": "datapoint_added", "datapoint_id": "17af59bf-28a7-4da0-b617-069e53196593", "pending_count": 3, "timestamp": "2025-09-11T03:24:03.823492"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T03:24:13.629033"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T03:24:13.630034"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T03:24:29.237384"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Announcements and rumor propagation about Charlie Kirk's death", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Political framing and attribution around the reported assassination", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T03:24:29.238384"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:24:46.090717"}
+{"event": "insight_creation", "success": true, "insight_title": "STRENGTHEN \u2014 Refusal-to-mourn + responsibility framing", "insight_confidence": 0.9, "timestamp": "2025-09-11T03:25:10.517159"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:25:44.312508"}
+{"event": "insight_creation", "success": true, "insight_title": "STRENGTHEN \u2014 Polarized responses: elite mourning vs accusatory frames", "insight_confidence": 0.86, "timestamp": "2025-09-11T03:26:07.541189"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T03:26:07.541189"}
+{"event": "datapoint_added", "datapoint_id": "9a43594f-94dd-4cd4-9f1b-930bbda5af01", "pending_count": 1, "timestamp": "2025-09-11T03:26:07.542191"}
+{"event": "datapoint_added", "datapoint_id": "5d73f827-efac-44c1-8e2f-8934066da023", "pending_count": 2, "timestamp": "2025-09-11T03:26:07.542191"}
+{"event": "datapoint_added", "datapoint_id": "473b6bf9-30c7-4e2c-89ed-1b3c80ac5243", "pending_count": 3, "timestamp": "2025-09-11T03:26:07.542191"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T03:26:15.900798"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T03:26:15.901799"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T03:26:33.130099"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Religious consolation and afterlife framing in reactions", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Political framing and cross\u2011ideological respect", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T03:26:33.132024"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:27:01.242628"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen polarized responses insight", "insight_confidence": 0.82, "timestamp": "2025-09-11T03:27:32.395150"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:27:57.464967"}
+{"event": "insight_creation", "success": true, "insight_title": "Polarization reinforced: accusatory victimhood vs cross-partisan condolence", "insight_confidence": 0.82, "timestamp": "2025-09-11T03:28:22.736038"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T03:28:22.736550"}
+{"event": "datapoint_added", "datapoint_id": "54d0b93f-8c39-4dc0-aa8e-0cf977a19004", "pending_count": 1, "timestamp": "2025-09-11T03:28:22.736550"}
+{"event": "datapoint_added", "datapoint_id": "e334fa6b-1626-42ea-b7d2-24a803a89c75", "pending_count": 2, "timestamp": "2025-09-11T03:28:22.736550"}
+{"event": "datapoint_added", "datapoint_id": "fbcfdcd1-dbd5-406e-980d-cfe18d479ce4", "pending_count": 3, "timestamp": "2025-09-11T03:28:22.736550"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T03:28:31.373908"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T03:28:31.374908"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T03:28:42.974974"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 1, "groups": [{"theme": "Immediate public reactions framing Charlie Kirk's death as both a news/taunt and a religious/evangelical message", "datapoint_count": 3, "synthesis_worthy": true}], "timestamp": "2025-09-11T03:28:42.975974"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:29:09.279198"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Polarized responses: political accusatory frames vs faith-based mourning", "insight_confidence": 0.82, "timestamp": "2025-09-11T03:29:30.476330"}
+{"event": "synthesis_completed", "insights_created": 1, "timestamp": "2025-09-11T03:29:30.476330"}
+{"event": "datapoint_added", "datapoint_id": "bd8bf842-d908-4145-8309-075b43e9802f", "pending_count": 1, "timestamp": "2025-09-11T03:29:30.476330"}
+{"event": "datapoint_added", "datapoint_id": "e02528bd-ee53-4b77-8a5e-bb5692ec3d24", "pending_count": 2, "timestamp": "2025-09-11T03:29:30.476330"}
+{"event": "datapoint_added", "datapoint_id": "53d8a7f6-c14d-4275-a474-d81d27686f26", "pending_count": 3, "timestamp": "2025-09-11T03:29:30.476330"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T03:29:39.240699"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T03:29:39.241699"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T03:29:50.556920"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 1, "groups": [{"theme": "Public amplification of Charlie Kirk's incendiary rhetoric \u2014 responses tying his comments to the Iryna Zarutska murder, racial framing, and anti\u2011Islam claims", "datapoint_count": 3, "synthesis_worthy": true}], "timestamp": "2025-09-11T03:29:50.557921"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:30:04.997962"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Polarized responses with active right-wing amplification", "insight_confidence": 0.85, "timestamp": "2025-09-11T03:30:26.904127"}
+{"event": "synthesis_completed", "insights_created": 1, "timestamp": "2025-09-11T03:30:26.904127"}
+{"event": "datapoint_added", "datapoint_id": "b70aca77-6a4c-48f4-b8f3-e328b224a5c4", "pending_count": 1, "timestamp": "2025-09-11T03:30:26.904127"}
+{"event": "datapoint_added", "datapoint_id": "46c7f6ce-792e-48c6-8768-0347a9b04e12", "pending_count": 2, "timestamp": "2025-09-11T03:30:26.904127"}
+{"event": "datapoint_added", "datapoint_id": "2cd0997c-2b15-4d93-a7e9-d428407afc12", "pending_count": 3, "timestamp": "2025-09-11T03:30:26.905127"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T03:30:45.159428"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T03:30:45.160429"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T03:31:11.044910"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Grief, free\u2011speech framing and political mobilization", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Attribution of cause / violent imagery, mocking and potential misinformation", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T03:31:11.045998"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:31:31.879743"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Polarized responses: political accusatory frames vs faith-based mourning", "insight_confidence": 0.82, "timestamp": "2025-09-11T03:31:55.664242"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:32:19.883325"}
+{"event": "insight_creation", "success": true, "insight_title": "STRENGTHEN \u2014 Condemnation-plus-refusal-to-mourn emerges as distinct framing", "insight_confidence": 0.88, "timestamp": "2025-09-11T03:32:40.739379"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T03:32:40.739379"}
+{"event": "datapoint_added", "datapoint_id": "b3448d73-0e89-41af-a550-9fae72c6188f", "pending_count": 1, "timestamp": "2025-09-11T03:32:40.739925"}
+{"event": "datapoint_added", "datapoint_id": "d155adba-f8f4-41e9-ae3a-d50f2907cc2d", "pending_count": 2, "timestamp": "2025-09-11T03:32:40.740250"}
+{"event": "datapoint_added", "datapoint_id": "84ab8b42-8bf1-40ae-98d8-dbb2486eb5ca", "pending_count": 3, "timestamp": "2025-09-11T03:32:40.740789"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T03:32:49.166039"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T03:32:49.167070"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T03:33:09.153079"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Tributes framing Charlie Kirk as a patriot and public debater", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Anger and defense of the grieving family; call-outs of insensitive reactions", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T03:33:09.153079"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:33:30.113727"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Polarized responses: presence of supportive mourning", "insight_confidence": 0.82, "timestamp": "2025-09-11T03:33:56.312471"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T03:34:09.154425"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen \u2014 Polarized responses: political accusatory frames vs faith-based mourning", "insight_confidence": 0.82, "timestamp": "2025-09-11T03:34:32.933795"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T03:34:32.933795"}
+{"event": "datapoint_added", "datapoint_id": "30645d0b-ff41-4b1e-b7ce-a9f76bc360f4", "pending_count": 1, "timestamp": "2025-09-11T03:34:32.934796"}
+{"event": "datapoint_added", "datapoint_id": "1d9cb707-79cb-4e98-978d-671c4ae74cc2", "pending_count": 2, "timestamp": "2025-09-11T03:34:32.934796"}
