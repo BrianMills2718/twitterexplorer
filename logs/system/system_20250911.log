@@ -2513,3 +2513,33 @@ LiteLLM completion() model= gpt-5-mini; provider = openai
 2025-09-11 03:34:52,235 - INFO - Configuration validation passed
 2025-09-11 03:34:52,235 - INFO - Model manager initialized with config: C:\Users\Brian\projects\twitterexplorer\twitterexplorer\config\models.yaml
 2025-09-11 03:34:52,254 - INFO - Completed investigation session e9b7e927-42e3-49b2-8459-e8db6633e4a8 - 8 searches, 473 results
+2025-09-11 07:29:30,946 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-11 07:30:22,808 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-11 07:30:43,967 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-11 07:41:56,791 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-11 07:42:20,052 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-11 08:24:44,530 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-11 08:24:46,367 - INFO - Loaded configuration from C:\Users\Brian\projects\twitterexplorer\twitterexplorer\config\models.yaml
+2025-09-11 08:24:46,367 - INFO - Configuration validation passed
+2025-09-11 08:24:46,367 - INFO - Model manager initialized with config: C:\Users\Brian\projects\twitterexplorer\twitterexplorer\config\models.yaml
+2025-09-11 08:25:05,724 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-11 08:25:22,297 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-11 08:25:23,978 - INFO - Loaded configuration from C:\Users\Brian\projects\twitterexplorer\twitterexplorer\config\models.yaml
+2025-09-11 08:25:23,978 - INFO - Configuration validation passed
+2025-09-11 08:25:23,978 - INFO - Model manager initialized with config: C:\Users\Brian\projects\twitterexplorer\twitterexplorer\config\models.yaml
+2025-09-11 08:31:48,834 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-11 08:31:50,548 - INFO - Loaded configuration from C:\Users\Brian\projects\twitterexplorer\twitterexplorer\config\models.yaml
+2025-09-11 08:31:50,548 - INFO - Configuration validation passed
+2025-09-11 08:31:50,548 - INFO - Model manager initialized with config: C:\Users\Brian\projects\twitterexplorer\twitterexplorer\config\models.yaml
+2025-09-11 08:38:43,009 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-11 08:38:44,673 - INFO - Loaded configuration from C:\Users\Brian\projects\twitterexplorer\twitterexplorer\config\models.yaml
+2025-09-11 08:38:44,673 - INFO - Configuration validation passed
+2025-09-11 08:38:44,673 - INFO - Model manager initialized with config: C:\Users\Brian\projects\twitterexplorer\twitterexplorer\config\models.yaml
+2025-09-11 08:39:29,262 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-11 08:39:30,882 - INFO - Loaded configuration from C:\Users\Brian\projects\twitterexplorer\twitterexplorer\config\models.yaml
+2025-09-11 08:39:30,882 - INFO - Configuration validation passed
+2025-09-11 08:39:30,882 - INFO - Model manager initialized with config: C:\Users\Brian\projects\twitterexplorer\twitterexplorer\config\models.yaml
+2025-09-11 08:57:59,062 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-11 08:58:00,667 - INFO - Loaded configuration from C:\Users\Brian\projects\twitterexplorer\twitterexplorer\config\models.yaml
+2025-09-11 08:58:00,667 - INFO - Configuration validation passed
+2025-09-11 08:58:00,667 - INFO - Model manager initialized with config: C:\Users\Brian\projects\twitterexplorer\twitterexplorer\config\models.yaml

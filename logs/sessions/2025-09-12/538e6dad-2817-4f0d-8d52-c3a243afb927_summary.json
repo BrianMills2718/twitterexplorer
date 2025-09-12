@@ -1,0 +1,78 @@
+{
+  "session_metadata": {
+    "session_id": "538e6dad-2817-4f0d-8d52-c3a243afb927",
+    "start_time": "2025-09-12T09:10:45.717074+00:00",
+    "end_time": "2025-09-12T09:11:35.912004+00:00",
+    "duration_seconds": 50.193924,
+    "user_query": "test bridge creation"
+  },
+  "configuration": {
+    "max_searches": 1,
+    "max_time_minutes": 60,
+    "satisfaction_enabled": true,
+    "satisfaction_threshold": 0.1,
+    "min_searches_before_satisfaction": 10,
+    "show_search_details": true,
+    "show_strategy_reasoning": true,
+    "show_effectiveness_scores": true,
+    "enable_strategy_adaptation": true,
+    "enable_alternative_approaches": true,
+    "enable_name_variation_search": true,
+    "model_provider": "openai",
+    "pages_per_search": 3,
+    "search_timeout_seconds": 30,
+    "retry_failed_searches": true,
+    "enforce_endpoint_diversity": false,
+    "max_endpoint_repeats": 5,
+    "diversity_threshold": 0.3
+  },
+  "performance_metrics": {
+    "total_searches": 1,
+    "total_rounds": 1,
+    "total_results_found": 0,
+    "satisfaction_score": 0.0,
+    "satisfaction_breakdown": {
+      "information_coverage": 0.0,
+      "source_diversity": 0.0,
+      "evidence_quality": 0.0,
+      "claim_specificity": 0.0,
+      "contradiction_resolution": 0.0
+    },
+    "completion_reason": "Reached maximum search limit (1)"
+  },
+  "search_summary": {
+    "searches_by_effectiveness": {
+      "highly_effective": [],
+      "moderately_effective": [],
+      "low_effectiveness": [],
+      "ineffective": [
+        {
+          "search_id": 1,
+          "query": "\"test bridge creation\"",
+          "results": 0,
+          "effectiveness": 0.0
+        }
+      ]
+    },
+    "most_effective_strategies": [
+      {
+        "strategy": "Graph Strategy: No searches have been run yet and the investigation needs a rapid, broad-first sweep to map who is talking about 'test bridge creation', surface representative tweets and authoritative accounts, and detect any trending or high-engagement items to follow up. The next round should fill the most important gaps: (1) find public tweets mentioning the exact phrase and closely related terms, (2) surface posts from credible organizations (civil engineering and US Army Corps), and (3) check national trending topics to see if bridge testing is currently prominent. To satisfy the diversity requirement and enable multiple follow-ups (conversation analysis, network mapping, media checks), the plan uses multiple endpoints (search.php, timeline.php, screenname.php, trends.php) that complement one another.",
+        "avg_effectiveness": 0.0
+      }
+    ],
+    "dead_ends": [
+      "\"test bridge creation\""
+    ],
+    "promising_leads": []
+  },
+  "rounds_summary": [
+    {
+      "round_number": 1,
+      "strategy": "Graph Strategy: No searches have been run yet and the investigation needs a rapid, broad-first sweep to map who is talking about 'test bridge creation', surface representative tweets and authoritative accounts, and detect any trending or high-engagement items to follow up. The next round should fill the most important gaps: (1) find public tweets mentioning the exact phrase and closely related terms, (2) surface posts from credible organizations (civil engineering and US Army Corps), and (3) check national trending topics to see if bridge testing is currently prominent. To satisfy the diversity requirement and enable multiple follow-ups (conversation analysis, network mapping, media checks), the plan uses multiple endpoints (search.php, timeline.php, screenname.php, trends.php) that complement one another.",
+      "searches_count": 1,
+      "total_results": 0,
+      "effectiveness": 0.0,
+      "insights": []
+    }
+  ]
+}

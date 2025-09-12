@@ -18,6 +18,14 @@ from datetime import datetime
 from investigation_graph import InvestigationGraph
 from investigation_context import InvestigationContext
 
+# Import LLM call tracer
+try:
+    from .utils.llm_call_tracer import get_tracer
+    TRACER_AVAILABLE = True
+except ImportError:
+    TRACER_AVAILABLE = False
+    get_tracer = lambda: None
+
 
 class InvestigationBridge(ABC):
     """Abstract bridge between insight synthesis and emergent question detection"""
@@ -79,23 +87,37 @@ class ConcreteInvestigationBridge(InvestigationBridge):
     
     def notify_insight_created(self, insight_node: Dict[str, Any]) -> Optional[List[Dict[str, Any]]]:
         """
-        Bridge: Insight created → Trigger emergent question detection
+        Bridge: Insight created -> Trigger emergent question detection
         
         CRITICAL: This is the missing integration that connects dual intelligence systems
         """
+        # Track bridge activation with enhanced visibility
+        tracer = get_tracer() if TRACER_AVAILABLE else None
+        if tracer:
+            tracer.log_trigger("insight_created", "investigation_bridge", "notify_insight_created")
+        
         try:
-            self.logger.info(f"Bridge notification: Insight created - {insight_node.get('title', 'Untitled')}")
+            insight_title = insight_node.get('title', 'Untitled')
+            print(f"BRIDGE ACTIVATION: Processing insight '{insight_title}'")
+            self.logger.info(f"Bridge notification: Insight created - {insight_title}")
             
-            # Get all insights for emergent question detection
-            all_insights = self.graph.get_nodes_by_type("Insight")
+            # Only process the new insight, not all insights (prevents exponential growth)
+            new_insight = None
+            for node in self.graph.get_nodes_by_type("Insight"):
+                if node.id == insight_node["id"]:
+                    new_insight = node
+                    break
             
-            if not all_insights:
-                self.logger.warning("No insights found in graph for emergent question detection")
+            if not new_insight:
+                print(f"BRIDGE WARNING: New insight not found in graph!")
+                self.logger.warning("New insight not found in graph for emergent question detection")
                 return []
             
-            # CRITICAL: Call the orphaned detect_emergent_questions method
-            self.logger.info(f"Bridge calling detect_emergent_questions with {len(all_insights)} insights")
-            emergent_questions = self.coordinator.detect_emergent_questions(all_insights)
+            # CRITICAL: Call detect_emergent_questions with ONLY the new insight
+            print(f"BRIDGE -> COORDINATOR: Calling detect_emergent_questions with 1 new insight")
+            print(f"   This will trigger LLM call for emergent question detection")
+            self.logger.info(f"Bridge calling detect_emergent_questions with 1 new insight")
+            emergent_questions = self.coordinator.detect_emergent_questions([new_insight])
             
             if not emergent_questions:
                 self.logger.info("No emergent questions generated from insights")

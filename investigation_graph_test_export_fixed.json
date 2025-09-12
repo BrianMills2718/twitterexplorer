@@ -1,0 +1,1127 @@
+{
+  "nodes": {
+    "0b88b3cb-bb16-47e6-a78d-4a9b458d1d87": {
+      "id": "0b88b3cb-bb16-47e6-a78d-4a9b458d1d87",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "conversations and perspectives on charlie kirk's death",
+        "is_root": true,
+        "investigation_goal": "conversations and perspectives on charlie kirk's death"
+      },
+      "created_at": "2025-09-11T01:17:31.656688"
+    },
+    "4cf27e22-6c62-45d4-a20b-d9e4f017bfa7": {
+      "id": "4cf27e22-6c62-45d4-a20b-d9e4f017bfa7",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Capture the freshest tweets mentioning 'charlie kirk death' to measure immediate conversation volume, collect early claims/rumors, and identify timestamps and accounts initiating the story.",
+        "parent_analytic_question": "0b88b3cb-bb16-47e6-a78d-4a9b458d1d87"
+      },
+      "created_at": "2025-09-11T01:18:11.185733"
+    },
+    "8b91b7ba-a414-460d-aefb-3b45fb65c90d": {
+      "id": "8b91b7ba-a414-460d-aefb-3b45fb65c90d",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "charlie kirk death",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-11T01:18:11.185733"
+    },
+    "0dcbfa78-5db4-496b-a729-f5714aee5cdc": {
+      "id": "0dcbfa78-5db4-496b-a729-f5714aee5cdc",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Pull top/most-engaged tweets about claims he died to identify influential posts shaping narratives and to surface potential authoritative sources or widely-shared misinformation.",
+        "parent_analytic_question": "0b88b3cb-bb16-47e6-a78d-4a9b458d1d87"
+      },
+      "created_at": "2025-09-11T01:18:11.185733"
+    },
+    "50b97ca8-1787-4e68-b7bf-506e75368871": {
+      "id": "50b97ca8-1787-4e68-b7bf-506e75368871",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "\"Charlie Kirk\" died OR dead OR \"RIP Charlie Kirk\"",
+          "search_type": "Top"
+        }
+      },
+      "created_at": "2025-09-11T01:18:11.185733"
+    },
+    "9c0e7781-850d-4b87-aa1d-3abfe70cd28b": {
+      "id": "9c0e7781-850d-4b87-aa1d-3abfe70cd28b",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Inspect Charlie Kirk's recent posts chronologically to verify account activity (recent tweets, pinned posts) and to check for any direct announcements, clarifications, or account suspension/deletion indicators.",
+        "parent_analytic_question": "0b88b3cb-bb16-47e6-a78d-4a9b458d1d87"
+      },
+      "created_at": "2025-09-11T01:18:11.185733"
+    },
+    "e23cf295-7013-4f60-93e7-a53522d16ed1": {
+      "id": "e23cf295-7013-4f60-93e7-a53522d16ed1",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "charliekirk11"
+        }
+      },
+      "created_at": "2025-09-11T01:18:11.185733"
+    },
+    "dec597c3-40da-4acd-91c0-c6262e5feffe": {
+      "id": "dec597c3-40da-4acd-91c0-c6262e5feffe",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Retrieve profile metadata (bio, verification status, follower counts) to contextualize reach and check for profile changes (bio updates, account suspension markers) that might indicate account status or recent events.",
+        "parent_analytic_question": "0b88b3cb-bb16-47e6-a78d-4a9b458d1d87"
+      },
+      "created_at": "2025-09-11T01:18:11.185733"
+    },
+    "80e9bd7a-7354-4a87-99a8-280e54beda4a": {
+      "id": "80e9bd7a-7354-4a87-99a8-280e54beda4a",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "screenname.php",
+        "parameters": {
+          "screenname": "charliekirk11"
+        }
+      },
+      "created_at": "2025-09-11T01:18:11.185733"
+    },
+    "24bf83cd-4bc2-421f-b18d-f19bcfcba674": {
+      "id": "24bf83cd-4bc2-421f-b18d-f19bcfcba674",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Collect recent photos/videos posted by the account to spot any content referencing health, hospitalization, or death, and to collect media that others may be using when claiming he died (helps detect manipulated/repurposed media).",
+        "parent_analytic_question": "0b88b3cb-bb16-47e6-a78d-4a9b458d1d87"
+      },
+      "created_at": "2025-09-11T01:18:11.185733"
+    },
+    "b7c2f117-64e9-4ce5-9b36-2a7b522bb5a2": {
+      "id": "b7c2f117-64e9-4ce5-9b36-2a7b522bb5a2",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "usermedia.php",
+        "parameters": {
+          "screenname": "charliekirk11"
+        }
+      },
+      "created_at": "2025-09-11T01:18:11.186237"
+    },
+    "1168f6bf-749d-448d-97ea-98789ec3b4f0": {
+      "id": "1168f6bf-749d-448d-97ea-98789ec3b4f0",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Sample followers to identify influential accounts likely to amplify or rebut the claim; this helps map the initial reach and find potential nodes for deeper network probing.",
+        "parent_analytic_question": "0b88b3cb-bb16-47e6-a78d-4a9b458d1d87"
+      },
+      "created_at": "2025-09-11T01:18:11.186244"
+    },
+    "bc4abb9d-d800-4b05-9c53-aa7c37a73d25": {
+      "id": "bc4abb9d-d800-4b05-9c53-aa7c37a73d25",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "followers.php",
+        "parameters": {
+          "screenname": "charliekirk11"
+        }
+      },
+      "created_at": "2025-09-11T01:18:11.186244"
+    },
+    "25462f5c-cf08-42df-b918-0c28e380ce53": {
+      "id": "25462f5c-cf08-42df-b918-0c28e380ce53",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Check whether related keywords or hashtags (e.g., #CharlieKirk, 'Charlie Kirk dead') are trending in the United States, which indicates scale and whether the topic has moved beyond niche circles.",
+        "parent_analytic_question": "0b88b3cb-bb16-47e6-a78d-4a9b458d1d87"
+      },
+      "created_at": "2025-09-11T01:18:11.186244"
+    },
+    "846069a9-2572-4e79-b6eb-c1d34ad9416b": {
+      "id": "846069a9-2572-4e79-b6eb-c1d34ad9416b",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "trends.php",
+        "parameters": {
+          "country": "UnitedStates"
+        }
+      },
+      "created_at": "2025-09-11T01:18:11.186244"
+    },
+    "efaf109e-df97-4788-a89f-b3cb083d063d": {
+      "id": "efaf109e-df97-4788-a89f-b3cb083d063d",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Find direct mentions to his handle using language that asserts death; these mentions often include replies, confirmations, or corrections that reveal the conversational dynamics and common claims.",
+        "parent_analytic_question": "0b88b3cb-bb16-47e6-a78d-4a9b458d1d87"
+      },
+      "created_at": "2025-09-11T01:18:11.186244"
+    },
+    "1f7a5282-51f3-412a-8d68-70eaeba78d54": {
+      "id": "1f7a5282-51f3-412a-8d68-70eaeba78d54",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "@charliekirk11 \"dead\" OR \"died\" OR \"RIP\"",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-11T01:18:11.186244"
+    },
+    "6e1473d4-6f21-432d-affd-d67762da0689": {
+      "id": "6e1473d4-6f21-432d-affd-d67762da0689",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "@mypalfootfoot7 Copying the garnacho post for Charlie Kirk\u2019s death is insane work",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-11T01:19:34.013082",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.5,
+          "goal_relevance_score": 0.6
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-11T01:19:34.013082"
+      },
+      "created_at": "2025-09-11T01:19:34.013082"
+    },
+    "cc099199-0b6b-4b97-8900-ce578c749568": {
+      "id": "cc099199-0b6b-4b97-8900-ce578c749568",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Comedy Central pulls Charlie Kirk 'South Park' episode from cable after his death https://t.co/0pMMhLVOuu via @azcentral",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-11T01:19:34.013082",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.92,
+          "goal_relevance_score": 0.6
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-11T01:19:34.013082"
+      },
+      "created_at": "2025-09-11T01:19:34.013082"
+    },
+    "a0bf88e2-84ec-4138-9ae7-014efbd8663d": {
+      "id": "a0bf88e2-84ec-4138-9ae7-014efbd8663d",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Charlie Kirk got the violence you are all asking to unleash\n\nYou aren't ready to learn that it was one of your own\n\nPeople are not celebrating his death , they are refusing to mourn a bigot and very much aware of how much trump will abuse this situation to trample yet more rights",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-11T01:19:34.013082",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.82,
+          "goal_relevance_score": 0.6
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-11T01:19:34.013082"
+      },
+      "created_at": "2025-09-11T01:19:34.013082"
+    },
+    "1fd1a6fc-b1b8-4846-a338-c88b0f72bb67": {
+      "id": "1fd1a6fc-b1b8-4846-a338-c88b0f72bb67",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "@JustinOnWeb can you stop misleading on R4 Today. Have you actually seen celebrations of Charlie Kirk's death on bluesky...or did you just read that on twitter?",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-11T01:19:34.013082",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.7,
+          "goal_relevance_score": 0.6
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-11T01:19:34.013082"
+      },
+      "created_at": "2025-09-11T01:19:34.013082"
+    },
+    "bf33a9b0-4ff7-4378-b9e3-9582377b2e0d": {
+      "id": "bf33a9b0-4ff7-4378-b9e3-9582377b2e0d",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "The Charlie Kirk death seems to be an effective distraction from the many deaths in Palestine. That could well be the strategy. #Psyop",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-11T01:19:34.013082",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.78,
+          "goal_relevance_score": 0.6
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-11T01:19:34.013082"
+      },
+      "created_at": "2025-09-11T01:19:34.013082"
+    },
+    "363ca8de-78a3-4da6-9241-f1581b38fa50": {
+      "id": "363ca8de-78a3-4da6-9241-f1581b38fa50",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "I know a lot of people are both extremely saddened and angry about Charlie Kirk's death, but remember that we will see him when the resurrection happens. I believe he is a Christian and that he is saved.\nPlease pray for everyone that is saddened and for his family.\n\u271d\ufe0f\u2764\ufe0f",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-11T01:19:34.014083",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.6,
+          "goal_relevance_score": 0.6
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-11T01:19:34.014083"
+      },
+      "created_at": "2025-09-11T01:19:34.014083"
+    },
+    "d82fbaae-028c-4704-8223-51993a16a337": {
+      "id": "d82fbaae-028c-4704-8223-51993a16a337",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Charlie Kirk was a vile, racist piece of shit. But he didn't deserve to die the way that he did today. I'm not celebrating his death nor am I mourning his passing. I wish our political leaders would do even the slightest bit of work to keep guns out of the hands of crazy people.",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-11T01:19:34.014083",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.8,
+          "goal_relevance_score": 0.6
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-11T01:19:34.014083"
+      },
+      "created_at": "2025-09-11T01:19:34.014083"
+    },
+    "738fd3b4-1036-442c-8c64-9fb2de13a429": {
+      "id": "738fd3b4-1036-442c-8c64-9fb2de13a429",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "I am still in utter disbelief on just how many people are cheering on for Charlie Kirk's death, I knew some would but not on this scale and for some reason I didnt think the networks would. Do any of them know how it is to lose a father at a young age? I can't even imagine how his son feels, a boy will never know who his dad now. I lost my dad at 14 and I am damn glad I knew him for the short time I did, the utter insanity coming from the opposite side of the court is making a herculean task not to push for more extremism from my camp.",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-11T01:19:34.014083",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.75,
+          "goal_relevance_score": 0.6
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-11T01:19:34.014083"
+      },
+      "created_at": "2025-09-11T01:19:34.014083"
+    },
+    "af933be5-fbde-4045-9f0f-13dea5fab792": {
+      "id": "af933be5-fbde-4045-9f0f-13dea5fab792",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "I woke up today to the news of Charlie Kirk being shot dead. I never knew who he was. Only just finding out that he was very young. Also just finding out that woke lefties on bluesky ( I'm not on that app) are celebrating his death!! Its just SHOCKING AND HORRENDOUS. UNFORGIVABLE",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-11T01:19:34.014083",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.72,
+          "goal_relevance_score": 0.6
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-11T01:19:34.014083"
+      },
+      "created_at": "2025-09-11T01:19:34.014083"
+    },
+    "e9bb5908-868a-4af9-b7f1-768a753eaf09": {
+      "id": "e9bb5908-868a-4af9-b7f1-768a753eaf09",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "I\u2019m seeing to many tweets about Charlie Kirk. It is depressing that some of us became like white supremacists, homophobes, transphobes, and muslims, celebrating someone\u2019s death as relief. I find it sad we have reached this level",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-11T01:19:34.014083",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.76,
+          "goal_relevance_score": 0.6
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-11T01:19:34.014083"
+      },
+      "created_at": "2025-09-11T01:19:34.014083"
+    },
+    "14096591-5ba5-4ea8-838f-f83f141d89d5": {
+      "id": "14096591-5ba5-4ea8-838f-f83f141d89d5",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Social media posts frame Charlie Kirk\u2019s death as a consequence of his own rhetoric and as something many users refuse to mourn. One post explicitly states \u201cCharlie Kirk got the violence you are all asking to unleash,\u201d linking his death to broader calls for violence and attributing responsibility to his political activity. Another emphasizes users are \u201crefusing to mourn a bigot,\u201d distinguishing this response from celebration and indicating a moral refusal to grant sympathy. A separate comment about \u201ccopying the garnacho post\u201d points to memetic replication of reaction templates, suggesting these framings are being reused across accounts. This reveals a trend where the dominant reaction is not simple celebration but a rhetorically framed denial of mourning and a circulation of ready-made responses.",
+        "insight_type": "trend",
+        "title": "Death framed as consequence; refusal to mourn",
+        "confidence": 0.6,
+        "investigation_relevance": 0.9,
+        "key_evidence": [
+          "\"Charlie Kirk got the violence you are all asking to unleash\"",
+          "\"People are not celebrating his death , they are refusing to mourn a bigot\"",
+          "\"Copying the garnacho post for Charlie Kirk\u2019s death is insane work\""
+        ]
+      },
+      "created_at": "2025-09-11T01:20:19.771455"
+    },
+    "6f561f09-5112-4976-9bd8-b4f8b8b5d020": {
+      "id": "6f561f09-5112-4976-9bd8-b4f8b8b5d020",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How prevalent are the \"refusal to mourn\" framings across platforms and communities (relative to celebratory, neutral, or condolence responses)?",
+        "emergence_reason": "The insight asserts a dominant reaction framed as refusal to mourn, but without quantitative scope\u2014knowing prevalence is essential to assess influence and whether this is a niche or widespread phenomenon."
+      },
+      "created_at": "2025-09-11T01:20:41.870135"
+    },
+    "17914af9-1c40-4458-a7be-4451862fcf43": {
+      "id": "17914af9-1c40-4458-a7be-4451862fcf43",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Are the \"refusal to mourn\" messages originating organically from many distinct users or being amplified/seeded by a smaller number of high-reach accounts or coordinated actors?",
+        "emergence_reason": "Distinguishing organic vs coordinated origins affects interpretation (grassroots sentiment vs engineered narrative) and informs mitigation or moderation approaches."
+      },
+      "created_at": "2025-09-11T01:20:41.870135"
+    },
+    "850159b9-29cf-42c6-80fe-d3c50e659608": {
+      "id": "850159b9-29cf-42c6-80fe-d3c50e659608",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "To what extent are these framings produced and propagated via memetic templates (the \"copying the garnacho post\" effect) versus bespoke commentary?",
+        "emergence_reason": "The insight notes reuse of reaction templates; quantifying memetic replication clarifies whether messaging is standardized and easier to track/intervene upon."
+      },
+      "created_at": "2025-09-11T01:20:41.870135"
+    },
+    "a5800bf2-f312-47b7-9ad2-c0c2d5de26aa": {
+      "id": "a5800bf2-f312-47b7-9ad2-c0c2d5de26aa",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Are accounts using the rhetoric-of-responsibility framing (\"got the violence you are all asking to unleash\") also issuing or amplifying explicit calls for violence, or is the rhetoric primarily accusatory/moralizing?",
+        "emergence_reason": "Understanding whether discourse crosses into explicit incitement is critical for safety assessments and platform policy enforcement."
+      },
+      "created_at": "2025-09-11T01:20:41.870135"
+    },
+    "59611476-328a-40b6-8e17-ad94df0b1196": {
+      "id": "59611476-328a-40b6-8e17-ad94df0b1196",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Is there a detectable contradiction between users who claim they are \"refusing to mourn\" and those who explicitly celebrate the death\u2014are these separate cohorts or overlapping rhetorics within the same posts/accounts?",
+        "emergence_reason": "Clarifying whether refusal-to-mourn and celebration are distinct responses or rhetorically intertwined affects how we categorize and respond to these reactions."
+      },
+      "created_at": "2025-09-11T01:20:41.870135"
+    },
+    "db3c2141-60af-498f-a492-6eccdb8dc37f": {
+      "id": "db3c2141-60af-498f-a492-6eccdb8dc37f",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What are the demographic, ideological, or network characteristics of users adopting the refusal-to-mourn framing (e.g., geography, partisan alignment, follower count)?",
+        "emergence_reason": "Profiling the populations driving this rhetoric helps target further investigation and understand motivations and likely spread patterns."
+      },
+      "created_at": "2025-09-11T01:20:41.870135"
+    },
+    "a0396c00-41fd-4f72-bb0d-4caaecc3ccd3": {
+      "id": "a0396c00-41fd-4f72-bb0d-4caaecc3ccd3",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Do automated accounts or bot networks disproportionately use the ready-made templates or the accusation-of-responsibility framing?",
+        "emergence_reason": "Bots can artificially inflate visibility and create false consensus; detecting their role is essential to evaluate organic public sentiment."
+      },
+      "created_at": "2025-09-11T01:20:41.870135"
+    },
+    "1869aa6d-1d6e-4151-be36-594fbc9e103c": {
+      "id": "1869aa6d-1d6e-4151-be36-594fbc9e103c",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How long do these template-driven responses persist\u2014are they a short-lived reaction to the event or do they become reusable norms for future similar incidents?",
+        "emergence_reason": "Temporal dynamics reveal whether this is a transient phenomenon or the emergence of a stable rhetorical tactic with longer-term implications."
+      },
+      "created_at": "2025-09-11T01:20:41.870135"
+    },
+    "e45eaa72-d5e0-46a2-94c3-8cf9011ee3b8": {
+      "id": "e45eaa72-d5e0-46a2-94c3-8cf9011ee3b8",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Are similar \"refusal to mourn\" framings observed in reactions to deaths of other controversial public figures, and if so, how do patterns compare?",
+        "emergence_reason": "Comparative analysis can show whether this is specific to this event/person or part of a broader pattern of partisan mourning norms."
+      },
+      "created_at": "2025-09-11T01:20:41.870135"
+    },
+    "46688efd-59e7-4116-89d7-a4751a628854": {
+      "id": "46688efd-59e7-4116-89d7-a4751a628854",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What is the role of platform affordances (e.g., retweet/reshare, quote tweet with comment, pinned templates) in enabling the spread of these ready-made reactions?",
+        "emergence_reason": "Platform mechanics may facilitate rapid replication; understanding affordances points to practical levers for moderation or de-amplification."
+      },
+      "created_at": "2025-09-11T01:20:41.870135"
+    },
+    "b52544e9-f9f7-49b0-9c15-c8e28fbbb06a": {
+      "id": "b52544e9-f9f7-49b0-9c15-c8e28fbbb06a",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What downstream effects do these refusal-to-mourn narratives have on broader discourse (polarization, harassment of mourners, offline behavior)?",
+        "emergence_reason": "Assessing consequences is necessary to judge societal impact and prioritize responses beyond immediate content moderation."
+      },
+      "created_at": "2025-09-11T01:20:41.870135"
+    },
+    "c94ecfd8-b65e-4a99-a7df-2dc44ab60060": {
+      "id": "c94ecfd8-b65e-4a99-a7df-2dc44ab60060",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Decision: STRENGTHEN the existing insight 'Death framed as consequence; refusal to mourn'. Rationale: The @mypalfootfoot7 post explicitly references 'Copying the garnacho post for Charlie Kirk\u2019s death is insane work', which is direct evidence that users are re-using a known memetic/post template (the 'garnacho' template) to comment on Charlie Kirk\u2019s death. This supports the emergent question about whether refusal-to-mourn messages are produced via memetic templates and indicates at least some portion of the observed refusals-to-mourn are template-driven rather than wholly original, organic compositions. The Comedy Central removal of the South Park episode is less directly tied to refusal-to-mourn language but is relevant context showing institutional/media-level reaction to the event, which may influence social media framing (e.g., driving more commentary or template use).",
+        "insight_type": "trend",
+        "title": "Strengthen \u2014 Refusal-to-mourn framing reinforced by memetic copying",
+        "confidence": 0.75,
+        "investigation_relevance": 0.85,
+        "key_evidence": [
+          "@mypalfootfoot7: 'Copying the garnacho post for Charlie Kirk\u2019s death is insane work' (indicates reuse of a memetic template)",
+          "News: 'Comedy Central pulls Charlie Kirk \"South Park\" episode from cable after his death' (shows institutional/media reaction)"
+        ]
+      },
+      "created_at": "2025-09-11T01:21:07.356557"
+    },
+    "4e97720f-73bc-4ce4-9f10-54fe27677dde": {
+      "id": "4e97720f-73bc-4ce4-9f10-54fe27677dde",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How prevalent is the 'refusal to mourn' framing compared with outright celebratory or sympathetic reactions across platforms and over time?",
+        "emergence_reason": "The insights claim the dominant reaction is rhetorically framed denial of mourning rather than celebration, but this is based on a small set of posts. Quantifying prevalence will resolve whether this characterization is representative or sample-specific."
+      },
+      "created_at": "2025-09-11T01:21:39.928709"
+    },
+    "bc033a77-0abf-4d66-be9a-8d4a29672e2c": {
+      "id": "bc033a77-0abf-4d66-be9a-8d4a29672e2c",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What proportion of refusal-to-mourn messages are produced via memetic templates (e.g., the 'garnacho' template) versus original, user-generated compositions?",
+        "emergence_reason": "One post explicitly references copying a template, supporting the template hypothesis for some posts, but the overall share produced by templates is unknown and critical to understanding content origin and dynamics."
+      },
+      "created_at": "2025-09-11T01:21:39.928709"
+    },
+    "6028793f-8731-4edf-b09f-d44f7caf62f4": {
+      "id": "6028793f-8731-4edf-b09f-d44f7caf62f4",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "What is the provenance and diffusion path of the 'garnacho' template (who created it, where it first appeared, and how did it propagate)?",
+        "emergence_reason": "Identifying the origin and early spreaders can clarify whether the template emerged organically, from influential accounts, or from coordinated sources, which alters interpretation and response strategies."
+      },
+      "created_at": "2025-09-11T01:21:39.928709"
+    },
+    "7705813c-b74f-4578-a920-d60b7e7af50c": {
+      "id": "7705813c-b74f-4578-a920-d60b7e7af50c",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Are template-driven refusal-to-mourn posts the result of coordinated activity (organized accounts/campaigns) or decentralized mimicry (organic memetic copying)?",
+        "emergence_reason": "Coordination implies different actors and mitigation approaches than organic meme diffusion; current evidence (a single 'copying' claim) does not distinguish these mechanisms."
+      },
+      "created_at": "2025-09-11T01:21:39.928709"
+    },
+    "0861c92a-60f8-42f1-8274-16359eaf6325": {
+      "id": "0861c92a-60f8-42f1-8274-16359eaf6325",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Which account types (verified influencers, partisan organizers, ordinary users, bots/troll farms) predominantly create and amplify these refusal-to-mourn templates?",
+        "emergence_reason": "Understanding the actors amplifying the framing is essential for attribution, assessing intent, and prioritizing moderation or disruption tactics."
+      },
+      "created_at": "2025-09-11T01:21:39.928709"
+    },
+    "df64440c-4bbd-48ee-b6c4-14682cb4be86": {
+      "id": "df64440c-4bbd-48ee-b6c4-14682cb4be86",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How do platform-level or media actions (e.g., Comedy Central's removal of a South Park episode) temporally relate to surges in template use or changes in framing?",
+        "emergence_reason": "The insight notes institutional reactions as contextual factors; temporal analysis can reveal whether such actions trigger, dampen, or redirect social media framing."
+      },
+      "created_at": "2025-09-11T01:21:39.928709"
+    },
+    "bfb57a0e-afdc-4933-af7a-78132cb5f59e": {
+      "id": "bfb57a0e-afdc-4933-af7a-78132cb5f59e",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Do refusal-to-mourn posts differ in linguistic features, severity, or policy-risk (e.g., incitement, threats, dehumanization) compared with celebratory posts, and do they therefore present distinct moderation challenges?",
+        "emergence_reason": "The distinction between refusing to mourn and celebrating may be subtle legally/policy-wise; assessing content risk is needed to inform moderation and safety decisions."
+      },
+      "created_at": "2025-09-11T01:21:39.928709"
+    },
+    "63ff331c-7fc5-4c1d-8db0-af7565867f25": {
+      "id": "63ff331c-7fc5-4c1d-8db0-af7565867f25",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How consistent is the refusal-to-mourn rhetorical template across similar prior events (i.e., is this a recurring meme applied to multiple deaths), indicating a reusable tactic?",
+        "emergence_reason": "If the template is reused across incidents, it suggests a stable cultural/strategic pattern rather than a one-off reaction tied to this individual event."
+      },
+      "created_at": "2025-09-11T01:21:39.928709"
+    },
+    "a97a25ae-4d23-47a1-bf22-33c0c2e74b9f": {
+      "id": "a97a25ae-4d23-47a1-bf22-33c0c2e74b9f",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "How do engagement metrics (likes, shares, replies) compare between template-based refusal-to-mourn posts and organic refusal-to-mourn or celebratory posts?",
+        "emergence_reason": "Measuring virality and engagement will show whether templates are effective at spreading the framing and which content types drive discourse."
+      },
+      "created_at": "2025-09-11T01:21:39.928709"
+    },
+    "db849827-f13c-4488-8a25-e91cc00a9bff": {
+      "id": "db849827-f13c-4488-8a25-e91cc00a9bff",
+      "node_type": "EmergentQuestion",
+      "properties": {
+        "text": "Do refusal-to-mourn messages cluster within particular network communities or cross partisan/ideological lines, and what are the demographic/ideological profiles of their audiences?",
+        "emergence_reason": "Mapping audience and network clustering will clarify whether this rhetoric is concentrated within echo chambers or diffusing broadly, which affects impact assessment."
+      },
+      "created_at": "2025-09-11T01:21:39.928709"
+    }
+  },
+  "edges": [
+    {
+      "id": "5301d77b-605f-4c10-bea0-628142083100",
+      "source_id": "0b88b3cb-bb16-47e6-a78d-4a9b458d1d87",
+      "target_id": "4cf27e22-6c62-45d4-a20b-d9e4f017bfa7",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-11T01:18:11.185733"
+    },
+    {
+      "id": "b60d9fe0-53fd-40eb-ae92-0ffc34c93fc6",
+      "source_id": "4cf27e22-6c62-45d4-a20b-d9e4f017bfa7",
+      "target_id": "8b91b7ba-a414-460d-aefb-3b45fb65c90d",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-11T01:18:11.185733"
+    },
+    {
+      "id": "162ad440-ceef-469c-b143-93af3d325197",
+      "source_id": "0b88b3cb-bb16-47e6-a78d-4a9b458d1d87",
+      "target_id": "0dcbfa78-5db4-496b-a729-f5714aee5cdc",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-11T01:18:11.185733"
+    },
+    {
+      "id": "114b09d1-0351-4f7d-acf1-6098d2d8e111",
+      "source_id": "0dcbfa78-5db4-496b-a729-f5714aee5cdc",
+      "target_id": "50b97ca8-1787-4e68-b7bf-506e75368871",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-11T01:18:11.185733"
+    },
+    {
+      "id": "25b389d1-130c-4402-8a15-2dbe34b19db4",
+      "source_id": "0b88b3cb-bb16-47e6-a78d-4a9b458d1d87",
+      "target_id": "9c0e7781-850d-4b87-aa1d-3abfe70cd28b",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-11T01:18:11.185733"
+    },
+    {
+      "id": "53d0ee40-0f55-4039-87cc-1b42f2d26713",
+      "source_id": "9c0e7781-850d-4b87-aa1d-3abfe70cd28b",
+      "target_id": "e23cf295-7013-4f60-93e7-a53522d16ed1",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-11T01:18:11.185733"
+    },
+    {
+      "id": "b22a818a-0a4a-4742-a6b0-6e519a9dad06",
+      "source_id": "0b88b3cb-bb16-47e6-a78d-4a9b458d1d87",
+      "target_id": "dec597c3-40da-4acd-91c0-c6262e5feffe",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-11T01:18:11.185733"
+    },
+    {
+      "id": "48b091f9-dd5b-4aaa-b640-d094534014ab",
+      "source_id": "dec597c3-40da-4acd-91c0-c6262e5feffe",
+      "target_id": "80e9bd7a-7354-4a87-99a8-280e54beda4a",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-11T01:18:11.185733"
+    },
+    {
+      "id": "e9bc7dd7-c8d5-4336-a5a2-748e0b53ab44",
+      "source_id": "0b88b3cb-bb16-47e6-a78d-4a9b458d1d87",
+      "target_id": "24bf83cd-4bc2-421f-b18d-f19bcfcba674",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-11T01:18:11.185733"
+    },
+    {
+      "id": "45a641c6-7d78-48e7-8f61-90e26ff9e2c9",
+      "source_id": "24bf83cd-4bc2-421f-b18d-f19bcfcba674",
+      "target_id": "b7c2f117-64e9-4ce5-9b36-2a7b522bb5a2",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-11T01:18:11.186244"
+    },
+    {
+      "id": "f7a4d5ac-95a0-4989-a4cf-59345ccc3d81",
+      "source_id": "0b88b3cb-bb16-47e6-a78d-4a9b458d1d87",
+      "target_id": "1168f6bf-749d-448d-97ea-98789ec3b4f0",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-11T01:18:11.186244"
+    },
+    {
+      "id": "53009c26-6e1d-46ad-96e3-7c36c956110c",
+      "source_id": "1168f6bf-749d-448d-97ea-98789ec3b4f0",
+      "target_id": "bc4abb9d-d800-4b05-9c53-aa7c37a73d25",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-11T01:18:11.186244"
+    },
+    {
+      "id": "8a18356c-d566-4bf6-a343-6be1d971c680",
+      "source_id": "0b88b3cb-bb16-47e6-a78d-4a9b458d1d87",
+      "target_id": "25462f5c-cf08-42df-b918-0c28e380ce53",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-11T01:18:11.186244"
+    },
+    {
+      "id": "8a2c0272-9ef0-4648-be91-55ef4cd4c3aa",
+      "source_id": "25462f5c-cf08-42df-b918-0c28e380ce53",
+      "target_id": "846069a9-2572-4e79-b6eb-c1d34ad9416b",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-11T01:18:11.186244"
+    },
+    {
+      "id": "94d20c52-c0ca-451a-97b5-9ae56eb4a8de",
+      "source_id": "0b88b3cb-bb16-47e6-a78d-4a9b458d1d87",
+      "target_id": "efaf109e-df97-4788-a89f-b3cb083d063d",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-11T01:18:11.186244"
+    },
+    {
+      "id": "038a5f3e-fdad-4afc-b34d-82c6801379f0",
+      "source_id": "efaf109e-df97-4788-a89f-b3cb083d063d",
+      "target_id": "1f7a5282-51f3-412a-8d68-70eaeba78d54",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-11T01:18:11.186244"
+    },
+    {
+      "id": "22f526c4-64e3-49bb-95ca-ee6f5cd6d538",
+      "source_id": "8b91b7ba-a414-460d-aefb-3b45fb65c90d",
+      "target_id": "6e1473d4-6f21-432d-affd-d67762da0689",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.5
+      },
+      "created_at": "2025-09-11T01:19:34.013082"
+    },
+    {
+      "id": "d6dbda32-6bdc-48bf-b9b9-1140b76beae8",
+      "source_id": "8b91b7ba-a414-460d-aefb-3b45fb65c90d",
+      "target_id": "cc099199-0b6b-4b97-8900-ce578c749568",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.92
+      },
+      "created_at": "2025-09-11T01:19:34.013082"
+    },
+    {
+      "id": "0429ea20-5106-40b4-b29e-b89424535231",
+      "source_id": "8b91b7ba-a414-460d-aefb-3b45fb65c90d",
+      "target_id": "a0bf88e2-84ec-4138-9ae7-014efbd8663d",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.82
+      },
+      "created_at": "2025-09-11T01:19:34.013082"
+    },
+    {
+      "id": "c7c4c742-53d6-4f41-a459-f07077f550fb",
+      "source_id": "8b91b7ba-a414-460d-aefb-3b45fb65c90d",
+      "target_id": "1fd1a6fc-b1b8-4846-a338-c88b0f72bb67",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.7
+      },
+      "created_at": "2025-09-11T01:19:34.013082"
+    },
+    {
+      "id": "78ce2c77-b568-4e08-9806-179cceeb78d5",
+      "source_id": "8b91b7ba-a414-460d-aefb-3b45fb65c90d",
+      "target_id": "bf33a9b0-4ff7-4378-b9e3-9582377b2e0d",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.78
+      },
+      "created_at": "2025-09-11T01:19:34.013082"
+    },
+    {
+      "id": "219ead37-fd4d-4c2a-87f3-0105f1d63a39",
+      "source_id": "8b91b7ba-a414-460d-aefb-3b45fb65c90d",
+      "target_id": "363ca8de-78a3-4da6-9241-f1581b38fa50",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.6
+      },
+      "created_at": "2025-09-11T01:19:34.014083"
+    },
+    {
+      "id": "ba136a17-dd5c-4d9a-bcdf-bad3f4b7e95d",
+      "source_id": "8b91b7ba-a414-460d-aefb-3b45fb65c90d",
+      "target_id": "d82fbaae-028c-4704-8223-51993a16a337",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.8
+      },
+      "created_at": "2025-09-11T01:19:34.014083"
+    },
+    {
+      "id": "9ae4b1c2-4038-4f60-99d1-44851fa290e8",
+      "source_id": "8b91b7ba-a414-460d-aefb-3b45fb65c90d",
+      "target_id": "738fd3b4-1036-442c-8c64-9fb2de13a429",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.75
+      },
+      "created_at": "2025-09-11T01:19:34.014083"
+    },
+    {
+      "id": "91563054-2df9-4e88-8c46-763ff8211e7d",
+      "source_id": "8b91b7ba-a414-460d-aefb-3b45fb65c90d",
+      "target_id": "af933be5-fbde-4045-9f0f-13dea5fab792",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.72
+      },
+      "created_at": "2025-09-11T01:19:34.014083"
+    },
+    {
+      "id": "d8b03ab5-9acd-4fbe-8897-8b5e2341c3ab",
+      "source_id": "8b91b7ba-a414-460d-aefb-3b45fb65c90d",
+      "target_id": "e9bb5908-868a-4af9-b7f1-768a753eaf09",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.76
+      },
+      "created_at": "2025-09-11T01:19:34.014083"
+    },
+    {
+      "id": "94a55e16-e602-4df1-b846-be334987ac1e",
+      "source_id": "6e1473d4-6f21-432d-affd-d67762da0689",
+      "target_id": "14096591-5ba5-4ea8-838f-f83f141d89d5",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-11T01:20:19.771455"
+      },
+      "created_at": "2025-09-11T01:20:19.771455"
+    },
+    {
+      "id": "975d62d7-c11c-4e91-83d7-ce0e858b47b7",
+      "source_id": "a0bf88e2-84ec-4138-9ae7-014efbd8663d",
+      "target_id": "14096591-5ba5-4ea8-838f-f83f141d89d5",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-11T01:20:19.771455"
+      },
+      "created_at": "2025-09-11T01:20:19.771455"
+    },
+    {
+      "id": "14027a6f-84c7-48f1-9a9b-0d63f6d050b1",
+      "source_id": "14096591-5ba5-4ea8-838f-f83f141d89d5",
+      "target_id": "6f561f09-5112-4976-9bd8-b4f8b8b5d020",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The insight asserts a dominant reaction framed as refusal to mourn, but without quantitative scope\u2014knowing prevalence is essential to assess influence and whether this is a niche or widespread phenomenon.",
+        "priority": 0.9,
+        "created_at": "2025-09-11T01:20:41.870135"
+      },
+      "created_at": "2025-09-11T01:20:41.870135"
+    },
+    {
+      "id": "5fc19524-8732-40af-99c9-8f77ba27109c",
+      "source_id": "14096591-5ba5-4ea8-838f-f83f141d89d5",
+      "target_id": "17914af9-1c40-4458-a7be-4451862fcf43",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Distinguishing organic vs coordinated origins affects interpretation (grassroots sentiment vs engineered narrative) and informs mitigation or moderation approaches.",
+        "priority": 0.85,
+        "created_at": "2025-09-11T01:20:41.870135"
+      },
+      "created_at": "2025-09-11T01:20:41.870135"
+    },
+    {
+      "id": "7150b806-4c10-4e4b-ae97-4c1f82f7ccc7",
+      "source_id": "14096591-5ba5-4ea8-838f-f83f141d89d5",
+      "target_id": "850159b9-29cf-42c6-80fe-d3c50e659608",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The insight notes reuse of reaction templates; quantifying memetic replication clarifies whether messaging is standardized and easier to track/intervene upon.",
+        "priority": 0.8,
+        "created_at": "2025-09-11T01:20:41.870135"
+      },
+      "created_at": "2025-09-11T01:20:41.870135"
+    },
+    {
+      "id": "1ea148e9-0af7-46fa-a211-dca0bf2cf4a2",
+      "source_id": "14096591-5ba5-4ea8-838f-f83f141d89d5",
+      "target_id": "a5800bf2-f312-47b7-9ad2-c0c2d5de26aa",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Understanding whether discourse crosses into explicit incitement is critical for safety assessments and platform policy enforcement.",
+        "priority": 0.85,
+        "created_at": "2025-09-11T01:20:41.870135"
+      },
+      "created_at": "2025-09-11T01:20:41.870135"
+    },
+    {
+      "id": "6ecf18ee-eadf-4e6c-96fd-ffe8b9935b70",
+      "source_id": "14096591-5ba5-4ea8-838f-f83f141d89d5",
+      "target_id": "59611476-328a-40b6-8e17-ad94df0b1196",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Clarifying whether refusal-to-mourn and celebration are distinct responses or rhetorically intertwined affects how we categorize and respond to these reactions.",
+        "priority": 0.6,
+        "created_at": "2025-09-11T01:20:41.870135"
+      },
+      "created_at": "2025-09-11T01:20:41.870135"
+    },
+    {
+      "id": "b0988f1f-ff59-4f89-a5ca-51173343e8ef",
+      "source_id": "14096591-5ba5-4ea8-838f-f83f141d89d5",
+      "target_id": "db3c2141-60af-498f-a492-6eccdb8dc37f",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Profiling the populations driving this rhetoric helps target further investigation and understand motivations and likely spread patterns.",
+        "priority": 0.8,
+        "created_at": "2025-09-11T01:20:41.870135"
+      },
+      "created_at": "2025-09-11T01:20:41.870135"
+    },
+    {
+      "id": "e770c07d-f4ce-4f82-a2d3-9afe37698182",
+      "source_id": "14096591-5ba5-4ea8-838f-f83f141d89d5",
+      "target_id": "a0396c00-41fd-4f72-bb0d-4caaecc3ccd3",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Bots can artificially inflate visibility and create false consensus; detecting their role is essential to evaluate organic public sentiment.",
+        "priority": 0.8,
+        "created_at": "2025-09-11T01:20:41.870135"
+      },
+      "created_at": "2025-09-11T01:20:41.870135"
+    },
+    {
+      "id": "b5fc2a26-c091-4125-8d49-85ea93ca9d52",
+      "source_id": "14096591-5ba5-4ea8-838f-f83f141d89d5",
+      "target_id": "1869aa6d-1d6e-4151-be36-594fbc9e103c",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Temporal dynamics reveal whether this is a transient phenomenon or the emergence of a stable rhetorical tactic with longer-term implications.",
+        "priority": 0.65,
+        "created_at": "2025-09-11T01:20:41.870135"
+      },
+      "created_at": "2025-09-11T01:20:41.870135"
+    },
+    {
+      "id": "c94bbd5e-ec5a-49fe-beac-4be95690a0f3",
+      "source_id": "14096591-5ba5-4ea8-838f-f83f141d89d5",
+      "target_id": "e45eaa72-d5e0-46a2-94c3-8cf9011ee3b8",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Comparative analysis can show whether this is specific to this event/person or part of a broader pattern of partisan mourning norms.",
+        "priority": 0.65,
+        "created_at": "2025-09-11T01:20:41.870135"
+      },
+      "created_at": "2025-09-11T01:20:41.870135"
+    },
+    {
+      "id": "2af16d54-75f2-4a6a-b97a-71a39536fdc4",
+      "source_id": "14096591-5ba5-4ea8-838f-f83f141d89d5",
+      "target_id": "46688efd-59e7-4116-89d7-a4751a628854",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Platform mechanics may facilitate rapid replication; understanding affordances points to practical levers for moderation or de-amplification.",
+        "priority": 0.7,
+        "created_at": "2025-09-11T01:20:41.870135"
+      },
+      "created_at": "2025-09-11T01:20:41.870135"
+    },
+    {
+      "id": "f9fe30fe-8df9-4422-ac9a-ead130a92d18",
+      "source_id": "14096591-5ba5-4ea8-838f-f83f141d89d5",
+      "target_id": "b52544e9-f9f7-49b0-9c15-c8e28fbbb06a",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Assessing consequences is necessary to judge societal impact and prioritize responses beyond immediate content moderation.",
+        "priority": 0.6,
+        "created_at": "2025-09-11T01:20:41.870135"
+      },
+      "created_at": "2025-09-11T01:20:41.870135"
+    },
+    {
+      "id": "809d2f74-ef1d-49b4-9d45-46173c17ff6d",
+      "source_id": "6e1473d4-6f21-432d-affd-d67762da0689",
+      "target_id": "c94ecfd8-b65e-4a99-a7df-2dc44ab60060",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-11T01:21:07.356557"
+      },
+      "created_at": "2025-09-11T01:21:07.356557"
+    },
+    {
+      "id": "cdb416a9-7461-4229-9f9e-424f7e4d4b58",
+      "source_id": "cc099199-0b6b-4b97-8900-ce578c749568",
+      "target_id": "c94ecfd8-b65e-4a99-a7df-2dc44ab60060",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-11T01:21:07.356557"
+      },
+      "created_at": "2025-09-11T01:21:07.356557"
+    },
+    {
+      "id": "23b08085-978c-45ab-ad36-49e3453e9a19",
+      "source_id": "c94ecfd8-b65e-4a99-a7df-2dc44ab60060",
+      "target_id": "4e97720f-73bc-4ce4-9f10-54fe27677dde",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The insights claim the dominant reaction is rhetorically framed denial of mourning rather than celebration, but this is based on a small set of posts. Quantifying prevalence will resolve whether this characterization is representative or sample-specific.",
+        "priority": 0.9,
+        "created_at": "2025-09-11T01:21:39.928709"
+      },
+      "created_at": "2025-09-11T01:21:39.928709"
+    },
+    {
+      "id": "4a1727b1-6b47-4195-8892-57b0d7f8130b",
+      "source_id": "c94ecfd8-b65e-4a99-a7df-2dc44ab60060",
+      "target_id": "bc033a77-0abf-4d66-be9a-8d4a29672e2c",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "One post explicitly references copying a template, supporting the template hypothesis for some posts, but the overall share produced by templates is unknown and critical to understanding content origin and dynamics.",
+        "priority": 0.88,
+        "created_at": "2025-09-11T01:21:39.928709"
+      },
+      "created_at": "2025-09-11T01:21:39.928709"
+    },
+    {
+      "id": "9bbe5a1f-9a6d-4d80-b088-ed8529624099",
+      "source_id": "c94ecfd8-b65e-4a99-a7df-2dc44ab60060",
+      "target_id": "6028793f-8731-4edf-b09f-d44f7caf62f4",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Identifying the origin and early spreaders can clarify whether the template emerged organically, from influential accounts, or from coordinated sources, which alters interpretation and response strategies.",
+        "priority": 0.75,
+        "created_at": "2025-09-11T01:21:39.928709"
+      },
+      "created_at": "2025-09-11T01:21:39.928709"
+    },
+    {
+      "id": "6c6e3764-8811-4898-ad55-4387130797c5",
+      "source_id": "c94ecfd8-b65e-4a99-a7df-2dc44ab60060",
+      "target_id": "7705813c-b74f-4578-a920-d60b7e7af50c",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Coordination implies different actors and mitigation approaches than organic meme diffusion; current evidence (a single 'copying' claim) does not distinguish these mechanisms.",
+        "priority": 0.82,
+        "created_at": "2025-09-11T01:21:39.928709"
+      },
+      "created_at": "2025-09-11T01:21:39.928709"
+    },
+    {
+      "id": "d337f5e6-1847-4a19-bc57-a4fc3d5e9994",
+      "source_id": "c94ecfd8-b65e-4a99-a7df-2dc44ab60060",
+      "target_id": "0861c92a-60f8-42f1-8274-16359eaf6325",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Understanding the actors amplifying the framing is essential for attribution, assessing intent, and prioritizing moderation or disruption tactics.",
+        "priority": 0.86,
+        "created_at": "2025-09-11T01:21:39.928709"
+      },
+      "created_at": "2025-09-11T01:21:39.928709"
+    },
+    {
+      "id": "9ffabde0-8580-400d-ab36-d40e42851d4c",
+      "source_id": "c94ecfd8-b65e-4a99-a7df-2dc44ab60060",
+      "target_id": "df64440c-4bbd-48ee-b6c4-14682cb4be86",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The insight notes institutional reactions as contextual factors; temporal analysis can reveal whether such actions trigger, dampen, or redirect social media framing.",
+        "priority": 0.65,
+        "created_at": "2025-09-11T01:21:39.928709"
+      },
+      "created_at": "2025-09-11T01:21:39.928709"
+    },
+    {
+      "id": "1a07abe5-6a6a-49b8-b89c-c5f20bb29cb7",
+      "source_id": "c94ecfd8-b65e-4a99-a7df-2dc44ab60060",
+      "target_id": "bfb57a0e-afdc-4933-af7a-78132cb5f59e",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "The distinction between refusing to mourn and celebrating may be subtle legally/policy-wise; assessing content risk is needed to inform moderation and safety decisions.",
+        "priority": 0.9,
+        "created_at": "2025-09-11T01:21:39.928709"
+      },
+      "created_at": "2025-09-11T01:21:39.928709"
+    },
+    {
+      "id": "5bb2b536-ffdc-4e88-8fc1-1676a985aad0",
+      "source_id": "c94ecfd8-b65e-4a99-a7df-2dc44ab60060",
+      "target_id": "63ff331c-7fc5-4c1d-8db0-af7565867f25",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "If the template is reused across incidents, it suggests a stable cultural/strategic pattern rather than a one-off reaction tied to this individual event.",
+        "priority": 0.55,
+        "created_at": "2025-09-11T01:21:39.928709"
+      },
+      "created_at": "2025-09-11T01:21:39.928709"
+    },
+    {
+      "id": "c6cf63f1-db36-4c84-8b16-8835e4425ddd",
+      "source_id": "c94ecfd8-b65e-4a99-a7df-2dc44ab60060",
+      "target_id": "a97a25ae-4d23-47a1-bf22-33c0c2e74b9f",
+      "edge_type": "SPAWNS",
+      "properties": {
+        "emergence_reason": "Measuring virality and engagement will show whether templates are effective at spreading the framing and which content types drive discourse.",
+        "priority": 0.68,
+        "created_at": "2025-09-11T01:21:39.928709"
+      },
+      "created_at": "2025-09-11T01:21:39.928709"
+    }
+  ],
+  "analytic_question": null,
+  "created_at": "2025-09-11T08:39:31.128958"
+}

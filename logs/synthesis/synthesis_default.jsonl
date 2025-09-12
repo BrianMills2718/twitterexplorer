@@ -4088,3 +4088,303 @@
 {"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T03:34:32.933795"}
 {"event": "datapoint_added", "datapoint_id": "30645d0b-ff41-4b1e-b7ce-a9f76bc360f4", "pending_count": 1, "timestamp": "2025-09-11T03:34:32.934796"}
 {"event": "datapoint_added", "datapoint_id": "1d9cb707-79cb-4e98-978d-671c4ae74cc2", "pending_count": 2, "timestamp": "2025-09-11T03:34:32.934796"}
+{"event": "datapoint_added", "datapoint_id": "d760eae9-57aa-44a9-b5d5-7103d1d9ff8e", "pending_count": 1, "timestamp": "2025-09-11T05:34:31.287964"}
+{"event": "datapoint_added", "datapoint_id": "24d1c476-5151-4356-a1e9-ff9e344adf17", "pending_count": 2, "timestamp": "2025-09-11T05:34:31.288963"}
+{"event": "datapoint_added", "datapoint_id": "4fb54f99-6cee-428f-a9e3-de5909e68923", "pending_count": 3, "timestamp": "2025-09-11T05:34:31.288963"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T05:34:43.620199"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T05:34:43.621198"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T05:35:04.566060"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Social/sensational reactions claiming the UFO 'survived' or 'deflected' a Hellfire missile", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Framing as official/validated evidence (declassification, shown to Congress)", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T05:35:04.567060"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T05:35:21.089761"}
+{"event": "insight_creation", "success": true, "insight_title": "Claim: Orb survives direct Hellfire hit", "insight_confidence": 0.4, "timestamp": "2025-09-11T05:36:03.284427"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T05:36:18.349427"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen: Orb-survives-hellfire claim", "insight_confidence": 0.55, "timestamp": "2025-09-11T05:36:48.079833"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T05:36:48.080833"}
+{"event": "datapoint_added", "datapoint_id": "eda7879e-873a-405e-93dc-32bcf3900245", "pending_count": 1, "timestamp": "2025-09-11T05:36:48.080833"}
+{"event": "datapoint_added", "datapoint_id": "1f45fd03-a74a-466e-82a0-382c1612e95b", "pending_count": 2, "timestamp": "2025-09-11T05:36:48.080833"}
+{"event": "datapoint_added", "datapoint_id": "140a5910-3159-4e26-9fdb-d7c83bd61731", "pending_count": 3, "timestamp": "2025-09-11T05:36:48.080833"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T05:36:57.043370"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T05:36:57.044306"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T05:37:35.811464"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Claims about the missile\u2013UFO interaction (impact neutralized / missile split)", "datapoint_count": 3, "synthesis_worthy": true}, {"theme": "Provenance and presentation (source, event, and messenger: MQ-9 drone, Congressional showing, Eric Burlison)", "datapoint_count": 3, "synthesis_worthy": true}], "timestamp": "2025-09-11T05:37:35.812470"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T05:37:55.378968"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen existing 'Orb survives Hellfire' insight", "insight_confidence": 0.65, "timestamp": "2025-09-11T05:38:23.267281"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T05:38:40.361092"}
+{"event": "insight_creation", "success": true, "insight_title": "New social/Congressional posts strengthen 'orb survives Hellfire' claim", "insight_confidence": 0.75, "timestamp": "2025-09-11T05:39:12.018988"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T05:39:12.018988"}
+{"event": "datapoint_added", "datapoint_id": "d760eae9-57aa-44a9-b5d5-7103d1d9ff8e", "pending_count": 1, "timestamp": "2025-09-11T05:39:12.018988"}
+{"event": "datapoint_added", "datapoint_id": "24d1c476-5151-4356-a1e9-ff9e344adf17", "pending_count": 2, "timestamp": "2025-09-11T05:39:12.019988"}
+{"event": "datapoint_added", "datapoint_id": "4fb54f99-6cee-428f-a9e3-de5909e68923", "pending_count": 3, "timestamp": "2025-09-11T05:39:12.019988"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T05:39:24.666207"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T05:39:24.667205"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T05:39:46.057553"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Official / evidentiary framing: MQ-9 footage shown to Congress and described as a Hellfire strike on an unidentified orb", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Sensational/social amplification: viral/entertainment framing that the object 'survived' a Hellfire missile (audience reaction / click-driven presentation)", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T05:39:46.058553"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T05:40:08.708194"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen: Orb-survives-Hellfire claim", "insight_confidence": 0.78, "timestamp": "2025-09-11T05:40:40.435208"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T05:40:57.007817"}
+{"event": "insight_creation", "success": true, "insight_title": "Social-media reposts of MQ-9/Hellfire clip reinforce 'orb survived' claim", "insight_confidence": 0.82, "timestamp": "2025-09-11T05:41:31.061607"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T05:41:31.061607"}
+{"event": "datapoint_added", "datapoint_id": "eda7879e-873a-405e-93dc-32bcf3900245", "pending_count": 1, "timestamp": "2025-09-11T05:41:31.061607"}
+{"event": "datapoint_added", "datapoint_id": "1f45fd03-a74a-466e-82a0-382c1612e95b", "pending_count": 2, "timestamp": "2025-09-11T05:41:31.061607"}
+{"event": "datapoint_added", "datapoint_id": "140a5910-3159-4e26-9fdb-d7c83bd61731", "pending_count": 3, "timestamp": "2025-09-11T05:41:31.062607"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T05:41:42.932960"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T05:41:42.933948"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T05:42:06.057373"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 1, "groups": [{"theme": "Claims that a Hellfire missile struck but failed to disable/was split by a UAP shown at a Congressional hearing", "datapoint_count": 3, "synthesis_worthy": true}], "timestamp": "2025-09-11T05:42:06.058373"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T05:42:21.136062"}
+{"event": "insight_creation", "success": true, "insight_title": "Reinforce: Orb survives Hellfire claim via Congressional clip reposts", "insight_confidence": 0.88, "timestamp": "2025-09-11T05:42:54.281456"}
+{"event": "synthesis_completed", "insights_created": 1, "timestamp": "2025-09-11T05:42:54.282457"}
+{"event": "datapoint_added", "datapoint_id": "d760eae9-57aa-44a9-b5d5-7103d1d9ff8e", "pending_count": 1, "timestamp": "2025-09-11T05:42:54.282457"}
+{"event": "datapoint_added", "datapoint_id": "24d1c476-5151-4356-a1e9-ff9e344adf17", "pending_count": 2, "timestamp": "2025-09-11T05:42:54.282457"}
+{"event": "datapoint_added", "datapoint_id": "4fb54f99-6cee-428f-a9e3-de5909e68923", "pending_count": 3, "timestamp": "2025-09-11T05:42:54.282457"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T05:43:04.804850"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T05:43:04.804850"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T05:43:25.908560"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Claims of projectile 'survival/deflection' and official presentation (declassified footage shown to Congress)", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Eyewitness/social-media reaction and descriptive framing of the MQ-9/hellfire impact video", "datapoint_count": 2, "synthesis_worthy": false}], "timestamp": "2025-09-11T05:43:25.909598"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T05:43:43.647352"}
+{"event": "insight_creation", "success": true, "insight_title": "Reinforce: Orb survives Hellfire claim via Congressional clip reposts (confidence: 0.92)", "insight_confidence": 0.92, "timestamp": "2025-09-11T05:44:15.669260"}
+{"event": "synthesis_completed", "insights_created": 1, "timestamp": "2025-09-11T05:44:15.669260"}
+{"event": "datapoint_added", "datapoint_id": "eda7879e-873a-405e-93dc-32bcf3900245", "pending_count": 1, "timestamp": "2025-09-11T05:44:15.670261"}
+{"event": "datapoint_added", "datapoint_id": "1f45fd03-a74a-466e-82a0-382c1612e95b", "pending_count": 2, "timestamp": "2025-09-11T05:44:15.670497"}
+{"event": "datapoint_added", "datapoint_id": "140a5910-3159-4e26-9fdb-d7c83bd61731", "pending_count": 3, "timestamp": "2025-09-11T05:44:15.670497"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T05:44:25.086063"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T05:44:25.087478"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T05:44:47.067382"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 1, "groups": [{"theme": "Single military video shown to Congress depicting a Hellfire missile impacting a UAP \u2014 conflicting descriptions (missile split vs. bounced/ineffective)", "datapoint_count": 3, "synthesis_worthy": true}], "timestamp": "2025-09-11T05:44:47.068382"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T05:44:59.495245"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen existing 'Orb survives Hellfire' insight", "insight_confidence": 0.94, "timestamp": "2025-09-11T05:45:37.228421"}
+{"event": "synthesis_completed", "insights_created": 1, "timestamp": "2025-09-11T05:45:37.228421"}
+{"event": "datapoint_added", "datapoint_id": "d760eae9-57aa-44a9-b5d5-7103d1d9ff8e", "pending_count": 1, "timestamp": "2025-09-11T05:45:53.270795"}
+{"event": "datapoint_added", "datapoint_id": "24d1c476-5151-4356-a1e9-ff9e344adf17", "pending_count": 2, "timestamp": "2025-09-11T05:45:53.271795"}
+{"event": "datapoint_added", "datapoint_id": "4fb54f99-6cee-428f-a9e3-de5909e68923", "pending_count": 3, "timestamp": "2025-09-11T05:45:53.271795"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T05:46:04.047358"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T05:46:04.047358"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T05:46:16.870400"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Sensational social-media framing portraying the footage as dramatic \u2018UFO survives Hellfire\u2019 event", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Claims about provenance and official disclosure \u2014 MQ-9 drone footage, declassification, shown to Congress", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T05:46:16.870400"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T05:46:30.002613"}
+{"event": "insight_creation", "success": true, "insight_title": "Repeated social posts amplify claim that MQ-9 Hellfire hit an orb and it survived", "insight_confidence": 0.95, "timestamp": "2025-09-11T05:46:51.354701"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T05:47:01.506316"}
+{"event": "insight_creation", "success": true, "insight_title": "Reinforce: Orb survives Hellfire claim via Congressional clip reposts (confidence: 0.95)", "insight_confidence": 0.97, "timestamp": "2025-09-11T05:47:37.680159"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T05:47:37.680159"}
+{"event": "datapoint_added", "datapoint_id": "eda7879e-873a-405e-93dc-32bcf3900245", "pending_count": 1, "timestamp": "2025-09-11T05:47:37.680159"}
+{"event": "datapoint_added", "datapoint_id": "1f45fd03-a74a-466e-82a0-382c1612e95b", "pending_count": 2, "timestamp": "2025-09-11T05:47:37.680159"}
+{"event": "datapoint_added", "datapoint_id": "140a5910-3159-4e26-9fdb-d7c83bd61731", "pending_count": 3, "timestamp": "2025-09-11T05:47:37.681159"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T05:47:45.454631"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T05:47:45.456225"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T05:48:06.273746"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Alleged missile-UAP interaction: Hellfire struck but did not incapacitate the UFO (descriptions: split missile, bounced off, no effect)", "datapoint_count": 3, "synthesis_worthy": true}, {"theme": "Provenance and framing: footage presented in Congress / by named actors (MQ-9 drone footage, congressional hearing, Rep. Eric Burlison, social media framing)", "datapoint_count": 3, "synthesis_worthy": true}], "timestamp": "2025-09-11T05:48:06.274745"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T05:48:26.465165"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen: 'Orb survived Hellfire' claim", "insight_confidence": 0.97, "timestamp": "2025-09-11T05:49:01.669854"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T05:49:14.369278"}
+{"event": "insight_creation", "success": true, "insight_title": "New Congressional posts reinforce 'orb survives Hellfire' claim", "insight_confidence": 0.97, "timestamp": "2025-09-11T05:49:56.266235"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T05:49:56.266235"}
+{"event": "datapoint_added", "datapoint_id": "d760eae9-57aa-44a9-b5d5-7103d1d9ff8e", "pending_count": 1, "timestamp": "2025-09-11T05:50:09.434837"}
+{"event": "datapoint_added", "datapoint_id": "24d1c476-5151-4356-a1e9-ff9e344adf17", "pending_count": 2, "timestamp": "2025-09-11T05:50:09.435861"}
+{"event": "datapoint_added", "datapoint_id": "4fb54f99-6cee-428f-a9e3-de5909e68923", "pending_count": 3, "timestamp": "2025-09-11T05:50:09.435861"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T05:50:19.764726"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T05:50:19.765832"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T05:50:46.498650"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Viral/sensational public reaction emphasizing dramatic survival", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Official/declassification and congressional presentation framing (legitimacy/authority)", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T05:50:46.499147"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T05:51:09.871175"}
+{"event": "insight_creation", "success": true, "insight_title": "Reinforce: Orb-survives-Hellfire claim via fresh social reposts", "insight_confidence": 0.96, "timestamp": "2025-09-11T05:51:46.203770"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T05:52:01.234308"}
+{"event": "insight_creation", "success": true, "insight_title": "Reinforce 'Orb survives Hellfire' insight via new Congressional-repost claims", "insight_confidence": 0.97, "timestamp": "2025-09-11T05:52:42.696087"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T05:52:42.696087"}
+{"event": "datapoint_added", "datapoint_id": "eda7879e-873a-405e-93dc-32bcf3900245", "pending_count": 1, "timestamp": "2025-09-11T05:52:42.696087"}
+{"event": "datapoint_added", "datapoint_id": "1f45fd03-a74a-466e-82a0-382c1612e95b", "pending_count": 2, "timestamp": "2025-09-11T05:52:42.696087"}
+{"event": "datapoint_added", "datapoint_id": "140a5910-3159-4e26-9fdb-d7c83bd61731", "pending_count": 3, "timestamp": "2025-09-11T05:52:42.697088"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T05:52:54.361049"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T05:52:54.362048"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T05:53:11.057951"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Alleged physical interaction: Hellfire missile impacts the object but is ineffective (split/bounced off)", "datapoint_count": 3, "synthesis_worthy": true}, {"theme": "Context, provenance, and audience: video provenance (MQ-9 drone, Oct 30, 2024) and public/political presentation (Congressional hearing, Rep. Eric Burlison)", "datapoint_count": 3, "synthesis_worthy": true}], "timestamp": "2025-09-11T05:53:11.058952"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T05:53:29.139944"}
+{"event": "insight_creation", "success": true, "insight_title": "Reinforce 'Orb survives Hellfire' with Congressional clip reposts", "insight_confidence": 0.97, "timestamp": "2025-09-11T05:53:59.918231"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T05:54:14.007440"}
+{"event": "insight_creation", "success": true, "insight_title": "Reinforce: Orb survives Hellfire claim via new Congressional reposts", "insight_confidence": 0.97, "timestamp": "2025-09-11T05:54:47.539503"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T05:54:47.540022"}
+{"event": "datapoint_added", "datapoint_id": "d760eae9-57aa-44a9-b5d5-7103d1d9ff8e", "pending_count": 1, "timestamp": "2025-09-11T05:54:53.481026"}
+{"event": "datapoint_added", "datapoint_id": "24d1c476-5151-4356-a1e9-ff9e344adf17", "pending_count": 2, "timestamp": "2025-09-11T05:54:53.482026"}
+{"event": "datapoint_added", "datapoint_id": "4fb54f99-6cee-428f-a9e3-de5909e68923", "pending_count": 3, "timestamp": "2025-09-11T05:54:53.482026"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T05:55:02.692819"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T05:55:02.693819"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T05:55:18.788180"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 1, "groups": [{"theme": "Public/social-media framing of the MQ-9 Hellfire missile footage as an unexplained 'UFO' that survives/deflects a direct hit (includes note of congressional/public disclosure)", "datapoint_count": 3, "synthesis_worthy": true}], "timestamp": "2025-09-11T05:55:18.789181"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T05:55:30.867811"}
+{"event": "insight_creation", "success": true, "insight_title": "Reinforce: Orb-survives-Hellfire claim via additional social reposts", "insight_confidence": 0.96, "timestamp": "2025-09-11T05:56:01.962045"}
+{"event": "synthesis_completed", "insights_created": 1, "timestamp": "2025-09-11T05:56:01.962045"}
+{"event": "datapoint_added", "datapoint_id": "eda7879e-873a-405e-93dc-32bcf3900245", "pending_count": 1, "timestamp": "2025-09-11T05:56:01.962045"}
+{"event": "datapoint_added", "datapoint_id": "1f45fd03-a74a-466e-82a0-382c1612e95b", "pending_count": 2, "timestamp": "2025-09-11T05:56:01.962045"}
+{"event": "datapoint_added", "datapoint_id": "140a5910-3159-4e26-9fdb-d7c83bd61731", "pending_count": 3, "timestamp": "2025-09-11T05:56:01.963045"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T05:56:08.826492"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T05:56:08.827527"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T05:56:32.403841"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Missile\u2013UFO physical interaction claims (missile split, bounced off, no effect)", "datapoint_count": 3, "synthesis_worthy": true}, {"theme": "Source, context, and framing (Congressional hearing, MQ-9 drone footage, Eric Burlison / social media framing)", "datapoint_count": 3, "synthesis_worthy": true}], "timestamp": "2025-09-11T05:56:32.404841"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T05:56:52.230811"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen: Orb survives Hellfire claim via Congressional clip reposts", "insight_confidence": 0.97, "timestamp": "2025-09-11T05:57:26.861868"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T05:57:51.512637"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen: Orb survives Hellfire claim via Congressional clip reposts", "insight_confidence": 0.97, "timestamp": "2025-09-11T05:58:14.583929"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T05:58:14.583929"}
+{"event": "datapoint_added", "datapoint_id": "d760eae9-57aa-44a9-b5d5-7103d1d9ff8e", "pending_count": 1, "timestamp": "2025-09-11T05:58:27.562875"}
+{"event": "datapoint_added", "datapoint_id": "24d1c476-5151-4356-a1e9-ff9e344adf17", "pending_count": 2, "timestamp": "2025-09-11T05:58:27.563874"}
+{"event": "datapoint_added", "datapoint_id": "4fb54f99-6cee-428f-a9e3-de5909e68923", "pending_count": 3, "timestamp": "2025-09-11T05:58:27.563874"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T05:58:44.432807"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T05:58:44.433635"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T05:59:03.609767"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Social-media sensational framing \u2014 'UFO survives/deflects Hellfire missile'", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Official / declassified context \u2014 footage presented to Congress / labeled newly declassified", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T05:59:03.610282"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T05:59:18.473943"}
+{"event": "insight_creation", "success": true, "insight_title": "Reinforce 'Orb survives Hellfire' claim via reposts", "insight_confidence": 0.97, "timestamp": "2025-09-11T05:59:51.444129"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T06:00:01.271415"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen existing 'Orb survives Hellfire' insight", "insight_confidence": 0.97, "timestamp": "2025-09-11T06:00:30.857812"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T06:00:30.857812"}
+{"event": "datapoint_added", "datapoint_id": "eda7879e-873a-405e-93dc-32bcf3900245", "pending_count": 1, "timestamp": "2025-09-11T06:00:30.857812"}
+{"event": "datapoint_added", "datapoint_id": "1f45fd03-a74a-466e-82a0-382c1612e95b", "pending_count": 2, "timestamp": "2025-09-11T06:00:30.857812"}
+{"event": "datapoint_added", "datapoint_id": "140a5910-3159-4e26-9fdb-d7c83bd61731", "pending_count": 3, "timestamp": "2025-09-11T06:00:30.858812"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T06:00:37.575386"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T06:00:37.576387"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T06:01:02.428525"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Conflicting visual interpretations of the Hellfire-UAP interaction (split, bounced, no effect)", "datapoint_count": 3, "synthesis_worthy": true}, {"theme": "Provenance and political context: MQ-9 drone footage presented in Congress (presentation, speaker, audience reaction)", "datapoint_count": 3, "synthesis_worthy": false}], "timestamp": "2025-09-11T06:01:02.429526"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T06:01:20.993296"}
+{"event": "insight_creation", "success": true, "insight_title": "Reinforce 'Orb survives Hellfire' claim via new Congressional/social posts", "insight_confidence": 0.97, "timestamp": "2025-09-11T06:01:55.745925"}
+{"event": "synthesis_completed", "insights_created": 1, "timestamp": "2025-09-11T06:01:55.746442"}
+{"event": "datapoint_added", "datapoint_id": "a5ca99ee-4ba7-472a-bf60-f0501d76d676", "pending_count": 1, "timestamp": "2025-09-11T06:04:16.887385"}
+{"event": "datapoint_added", "datapoint_id": "5dd8b303-d9b8-4ae5-bff5-6c749798d009", "pending_count": 2, "timestamp": "2025-09-11T06:04:16.888387"}
+{"event": "datapoint_added", "datapoint_id": "efad3502-4c1f-424d-9fde-43909783986b", "pending_count": 3, "timestamp": "2025-09-11T06:04:16.888387"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T06:04:31.460322"}
+{"event": "datapoint_added", "datapoint_id": "5a7b8110-a9a3-4d85-8464-a41dc740af96", "pending_count": 4, "timestamp": "2025-09-11T06:04:31.461373"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T06:04:44.879031"}
+{"event": "synthesis_triggered", "pending_count": 4, "timestamp": "2025-09-11T06:04:44.880623"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T06:05:07.939700"}
+{"event": "semantic_grouping", "input_datapoint_count": 4, "output_groups": 2, "groups": [{"theme": "Primary reporting / footage descriptions shown to Congress (MQ-9 Hellfire incident)", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Competing interpretations and reaction (expert analysis vs distraction/skeptic narrative)", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T06:05:07.940699"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T06:05:20.928100"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen existing 'Orb survives Hellfire' insight", "insight_confidence": 0.97, "timestamp": "2025-09-11T06:05:48.850134"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T06:06:01.637296"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen existing 'Orb survives Hellfire' insight", "insight_confidence": 0.97, "timestamp": "2025-09-11T06:06:24.072087"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T06:06:24.072087"}
+{"event": "datapoint_added", "datapoint_id": "a5ca99ee-4ba7-472a-bf60-f0501d76d676", "pending_count": 1, "timestamp": "2025-09-11T06:06:44.137845"}
+{"event": "datapoint_added", "datapoint_id": "5dd8b303-d9b8-4ae5-bff5-6c749798d009", "pending_count": 2, "timestamp": "2025-09-11T06:06:44.138846"}
+{"event": "datapoint_added", "datapoint_id": "efad3502-4c1f-424d-9fde-43909783986b", "pending_count": 3, "timestamp": "2025-09-11T06:06:44.138846"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T06:06:51.315894"}
+{"event": "datapoint_added", "datapoint_id": "5a7b8110-a9a3-4d85-8464-a41dc740af96", "pending_count": 4, "timestamp": "2025-09-11T06:06:51.316412"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T06:07:00.979568"}
+{"event": "synthesis_triggered", "pending_count": 4, "timestamp": "2025-09-11T06:07:00.980118"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T06:07:19.106610"}
+{"event": "semantic_grouping", "input_datapoint_count": 4, "output_groups": 2, "groups": [{"theme": "Congressional showing / source & event details (MQ\u20119 footage, Hellfire engagement)", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Competing interpretations: expert claims of unknown craft vs political/skeptical dismissal", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T06:07:19.107120"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T06:07:34.149701"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen existing 'Orb survives Hellfire' insight", "insight_confidence": 0.97, "timestamp": "2025-09-11T06:08:02.626819"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T06:08:14.128498"}
+{"event": "insight_creation", "success": true, "insight_title": "Reinforce: Orb survives Hellfire claim", "insight_confidence": 0.97, "timestamp": "2025-09-11T06:08:44.089718"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T06:08:44.089718"}
+{"event": "datapoint_added", "datapoint_id": "a5ca99ee-4ba7-472a-bf60-f0501d76d676", "pending_count": 1, "timestamp": "2025-09-11T06:08:57.192156"}
+{"event": "datapoint_added", "datapoint_id": "5dd8b303-d9b8-4ae5-bff5-6c749798d009", "pending_count": 2, "timestamp": "2025-09-11T06:08:57.193194"}
+{"event": "datapoint_added", "datapoint_id": "efad3502-4c1f-424d-9fde-43909783986b", "pending_count": 3, "timestamp": "2025-09-11T06:08:57.193194"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T06:09:05.626606"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T06:09:05.627607"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T06:09:22.091460"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Expert/official presentation and technical analysis indicating the Hellfire-UFO encounter is not a balloon or known craft", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Skeptical/political framing \u2014 claims the footage is a distraction or being misrepresented", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T06:09:22.092459"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T06:09:34.724711"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen existing 'Orb survives Hellfire' insight", "insight_confidence": 0.97, "timestamp": "2025-09-11T06:10:01.808139"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T06:10:12.472092"}
+{"event": "insight_creation", "success": true, "insight_title": "Reinforce: Orb survives Hellfire claim via Congressional clip reposts", "insight_confidence": 0.97, "timestamp": "2025-09-11T06:10:40.084775"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T06:10:40.084775"}
+{"event": "datapoint_added", "datapoint_id": "5a7b8110-a9a3-4d85-8464-a41dc740af96", "pending_count": 1, "timestamp": "2025-09-11T06:10:40.084775"}
+{"event": "datapoint_added", "datapoint_id": "a5ca99ee-4ba7-472a-bf60-f0501d76d676", "pending_count": 2, "timestamp": "2025-09-11T06:10:57.509472"}
+{"event": "datapoint_added", "datapoint_id": "5dd8b303-d9b8-4ae5-bff5-6c749798d009", "pending_count": 3, "timestamp": "2025-09-11T06:10:57.512450"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T06:11:15.567093"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T06:11:15.568094"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T06:11:42.439578"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Event & primary footage: MQ\u20119 engagement shown in Congress (context, source, and basic claim)", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Interpretation & analysis: claims the object deflected a Hellfire and experts arguing it's not a balloon or known craft", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T06:11:42.440560"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T06:12:05.567272"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen: Orb-survives-Hellfire claim via Congressional video", "insight_confidence": 0.97, "timestamp": "2025-09-11T06:12:42.539953"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T06:13:00.518507"}
+{"event": "insight_creation", "success": true, "insight_title": "Reinforce: Orb survives Hellfire via new social posts", "insight_confidence": 0.96, "timestamp": "2025-09-11T06:13:34.591190"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T06:13:34.591190"}
+{"event": "datapoint_added", "datapoint_id": "efad3502-4c1f-424d-9fde-43909783986b", "pending_count": 1, "timestamp": "2025-09-11T06:13:34.591190"}
+{"event": "datapoint_added", "datapoint_id": "5a7b8110-a9a3-4d85-8464-a41dc740af96", "pending_count": 2, "timestamp": "2025-09-11T06:13:34.591190"}
+{"event": "datapoint_added", "datapoint_id": "a5ca99ee-4ba7-472a-bf60-f0501d76d676", "pending_count": 3, "timestamp": "2025-09-11T06:13:49.902597"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T06:13:59.020786"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T06:13:59.021785"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T06:14:20.174382"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Event description: MQ-9 Hellfire engagement shown to Congress", "datapoint_count": 2, "synthesis_worthy": false}, {"theme": "Conflicting interpretations \u2014 expert analysis claiming unknown craft vs political/skeptical framing", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T06:14:20.175495"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T06:14:34.696867"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen: Orb-survives-Hellfire via new social/media amplification", "insight_confidence": 0.97, "timestamp": "2025-09-11T06:15:11.578145"}
+{"event": "synthesis_completed", "insights_created": 1, "timestamp": "2025-09-11T06:15:11.578145"}
+{"event": "datapoint_added", "datapoint_id": "5dd8b303-d9b8-4ae5-bff5-6c749798d009", "pending_count": 1, "timestamp": "2025-09-11T06:15:11.578145"}
+{"event": "datapoint_added", "datapoint_id": "efad3502-4c1f-424d-9fde-43909783986b", "pending_count": 2, "timestamp": "2025-09-11T06:15:11.578145"}
+{"event": "datapoint_added", "datapoint_id": "5a7b8110-a9a3-4d85-8464-a41dc740af96", "pending_count": 3, "timestamp": "2025-09-11T06:15:11.579146"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T06:15:17.542537"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T06:15:17.543538"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T06:15:46.034326"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Congressional presentation of MQ-9 footage showing a Hellfire missile interacting with an 'orb' (operational details: MQ-9, Hellfire, location/time)", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Public/political framing and skepticism \u2014 claims the footage is a distraction or manipulation (sensational reaction)", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T06:15:46.035377"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T06:16:00.503015"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen existing 'Orb survives Hellfire' insight", "insight_confidence": 0.97, "timestamp": "2025-09-11T06:16:26.899404"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T06:16:40.097708"}
+{"event": "insight_creation", "success": true, "insight_title": "Reinforce: Orb survives Hellfire claim via Congressional clip reposts", "insight_confidence": 0.97, "timestamp": "2025-09-11T06:17:13.356691"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T06:17:13.356691"}
+{"event": "datapoint_added", "datapoint_id": "a5ca99ee-4ba7-472a-bf60-f0501d76d676", "pending_count": 1, "timestamp": "2025-09-11T06:17:19.188539"}
+{"event": "datapoint_added", "datapoint_id": "5dd8b303-d9b8-4ae5-bff5-6c749798d009", "pending_count": 2, "timestamp": "2025-09-11T06:17:19.188539"}
+{"event": "datapoint_added", "datapoint_id": "efad3502-4c1f-424d-9fde-43909783986b", "pending_count": 3, "timestamp": "2025-09-11T06:17:19.189539"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-11T06:17:28.469903"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-11T06:17:28.469903"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-11T06:17:49.037760"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Expert/official evidence and provenance for the Hellfire/UAP video", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Public skepticism and political/distraction framing of the footage", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-11T06:17:49.038759"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T06:18:04.983603"}
+{"event": "insight_creation", "success": true, "insight_title": "STRENGTHEN: Orb-survives-Hellfire claim", "insight_confidence": 0.97, "timestamp": "2025-09-11T06:18:41.302533"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-11T06:18:57.230572"}
+{"event": "insight_creation", "success": true, "insight_title": "Reinforce: Social reposts claiming Hellfire 'bounced' off orb", "insight_confidence": 0.96, "timestamp": "2025-09-11T06:19:27.458996"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-11T06:19:27.459996"}
+{"event": "datapoint_added", "datapoint_id": "5a7b8110-a9a3-4d85-8464-a41dc740af96", "pending_count": 1, "timestamp": "2025-09-11T06:19:27.459996"}
+{"event": "datapoint_added", "datapoint_id": "7271495a-e5e2-4cde-958a-0ba10d5fda88", "pending_count": 1, "timestamp": "2025-09-12T02:08:49.800995"}
+{"event": "datapoint_added", "datapoint_id": "c8dc54aa-4abb-4877-a98c-937cecdd5e4b", "pending_count": 2, "timestamp": "2025-09-12T02:08:49.800995"}
+{"event": "datapoint_added", "datapoint_id": "7cd3a672-aa67-4d03-8a4d-86e7b839e1f4", "pending_count": 3, "timestamp": "2025-09-12T02:08:49.800995"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-12T02:09:03.534629"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-12T02:09:03.535626"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-12T02:09:35.515680"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Testnet setup and faucet-driven token acquisition for bridge testing (Monad and giwa_io L2)", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Cross-chain bridge operations and supported test tokens (bridging flows & token compatibility)", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-12T02:09:35.516679"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-12T02:09:48.036713"}
+{"event": "grouping_error", "error": "Critical bridge failure during insight creation: Critical architectural bridge failure: 'charmap' codec can't encode character '\\u2192' in position 75: character maps to <undefined>", "datapoint_count": 3, "timestamp": "2025-09-12T02:09:48.037719"}
+{"event": "synthesis_completed", "insights_created": 0, "timestamp": "2025-09-12T02:09:48.037719"}
+{"event": "datapoint_added", "datapoint_id": "f92ca83f-493c-4fbe-a6f1-e8b4ed5e190c", "pending_count": 1, "timestamp": "2025-09-12T02:09:48.037719"}
+{"event": "datapoint_added", "datapoint_id": "c3552701-6054-4bfa-9e65-95ceea1be2aa", "pending_count": 1, "timestamp": "2025-09-12T02:13:31.139597"}
+{"event": "datapoint_added", "datapoint_id": "bd03611f-2bf1-404d-8182-bb06aa436b9d", "pending_count": 2, "timestamp": "2025-09-12T02:13:31.140597"}
+{"event": "datapoint_added", "datapoint_id": "47950a23-38ce-48dc-8bcb-1d5c00f4e479", "pending_count": 3, "timestamp": "2025-09-12T02:13:31.140597"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-12T02:13:38.493457"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-12T02:13:38.493457"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-12T02:13:53.825128"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Conceptual emergence: discovering higher-level behaviours from basic principles", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Model-level emergent behaviors and unexpected capabilities in deployed systems", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-12T02:13:53.826128"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-12T02:14:12.293940"}
+{"event": "insight_creation", "success": true, "insight_title": "Emergence vs. Prompt-Induced Behavior: Distinguishing Origins", "insight_confidence": 0.6, "timestamp": "2025-09-12T02:14:47.396877"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-12T02:15:02.703703"}
+{"event": "insight_creation", "success": true, "insight_title": "Emergence vs. Prompt-Induced Behavior: Distinguishing Origins (strengthened)", "insight_confidence": 0.75, "timestamp": "2025-09-12T02:15:39.239031"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-12T02:15:39.239031"}
+{"event": "datapoint_added", "datapoint_id": "65e016dc-1260-46fb-8c36-8211d6d83ee3", "pending_count": 1, "timestamp": "2025-09-12T02:15:39.239031"}
+{"event": "datapoint_added", "datapoint_id": "bcaeac2c-6491-46b6-b7ba-640faacc33ac", "pending_count": 2, "timestamp": "2025-09-12T02:15:39.239031"}
+{"event": "datapoint_added", "datapoint_id": "e5c0dc02-dcaa-4a0b-b457-d66cd836a8d9", "pending_count": 3, "timestamp": "2025-09-12T02:15:39.239031"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-12T02:15:48.644459"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-12T02:15:48.645461"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-12T02:16:10.074096"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Curiosity about underlying mechanisms of emergent behavior in simple and complex systems", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Communication and dissemination of research on emergent / OOD behaviour in LLMs (event/poster + research focus)", "datapoint_count": 2, "synthesis_worthy": false}], "timestamp": "2025-09-12T02:16:10.075096"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-12T02:16:35.630451"}
+{"event": "insight_creation", "success": true, "insight_title": "Emergence vs. Prompt-Induced Behavior: Distinguishing Origins (strengthened)", "insight_confidence": 0.82, "timestamp": "2025-09-12T02:17:11.378857"}
+{"event": "synthesis_completed", "insights_created": 1, "timestamp": "2025-09-12T02:17:11.378857"}
+{"event": "datapoint_added", "datapoint_id": "c3552701-6054-4bfa-9e65-95ceea1be2aa", "pending_count": 1, "timestamp": "2025-09-12T02:17:37.820830"}
+{"event": "datapoint_added", "datapoint_id": "bd03611f-2bf1-404d-8182-bb06aa436b9d", "pending_count": 2, "timestamp": "2025-09-12T02:17:37.821828"}
+{"event": "datapoint_added", "datapoint_id": "47950a23-38ce-48dc-8bcb-1d5c00f4e479", "pending_count": 3, "timestamp": "2025-09-12T02:17:37.821828"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-12T02:17:48.692591"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-12T02:17:48.692591"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-12T02:18:07.643548"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Conceptual emergence \u2014 when higher-level behaviors arise from base principles", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Observed model-level emergent capabilities (multimodal/tool-like behaviour)", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-12T02:18:07.644488"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-12T02:18:34.482380"}
+{"event": "insight_creation", "success": true, "insight_title": "Emergence vs. Prompt-Induced Behavior: Distinction Strengthened by Discoverability and Persistent Personality Signals", "insight_confidence": 0.86, "timestamp": "2025-09-12T02:19:09.644549"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-12T02:19:28.374145"}
+{"event": "insight_creation", "success": true, "insight_title": "Distinction Strengthened by Discoverability and Persistent Personality Signals", "insight_confidence": 0.9, "timestamp": "2025-09-12T02:19:57.157108"}
+{"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-12T02:19:57.157108"}
+{"event": "datapoint_added", "datapoint_id": "65e016dc-1260-46fb-8c36-8211d6d83ee3", "pending_count": 1, "timestamp": "2025-09-12T02:19:57.157108"}
+{"event": "datapoint_added", "datapoint_id": "bcaeac2c-6491-46b6-b7ba-640faacc33ac", "pending_count": 2, "timestamp": "2025-09-12T02:19:57.158967"}
+{"event": "datapoint_added", "datapoint_id": "e5c0dc02-dcaa-4a0b-b457-d66cd836a8d9", "pending_count": 3, "timestamp": "2025-09-12T02:19:57.158967"}
+{"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-12T02:20:04.911500"}
+{"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-12T02:20:04.911500"}
+{"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-12T02:20:28.632277"}
+{"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Emergence, underlying mechanisms, and \u2018what\u2019s going on under the hood\u2019", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Research dissemination / community touchpoint (ICML poster on emergent & OOD behaviour)", "datapoint_count": 2, "synthesis_worthy": false}], "timestamp": "2025-09-12T02:20:28.632277"}
+{"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-12T02:20:57.844063"}
+{"event": "insight_creation", "success": true, "insight_title": "Strengthen: Discoverability & Internal-Mechanism Interest", "insight_confidence": 0.92, "timestamp": "2025-09-12T02:21:22.359142"}
+{"event": "synthesis_completed", "insights_created": 1, "timestamp": "2025-09-12T02:21:22.359142"}

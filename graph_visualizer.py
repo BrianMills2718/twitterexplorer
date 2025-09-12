@@ -12,7 +12,7 @@ from pathlib import Path
 class GraphNode:
     """Represents a node in the investigation graph"""
     id: str
-    node_type: str  # 'query', 'search', 'datapoint', 'insight'
+    node_type: str  # 'query', 'search', 'datapoint', 'insight', 'emergentquestion'
     label: str
     content: str
     timestamp: Optional[str] = None
@@ -24,14 +24,16 @@ class GraphNode:
             'query': {'background': '#9C27B0', 'border': '#7B1FA2'},  # Purple for initial query
             'search': {'background': '#4CAF50', 'border': '#388E3C'},  # Green for searches
             'datapoint': {'background': '#2196F3', 'border': '#1976D2'},  # Blue for findings
-            'insight': {'background': '#FF9800', 'border': '#F57C00'}  # Orange for insights
+            'insight': {'background': '#FF9800', 'border': '#F57C00'},  # Orange for insights
+            'emergentquestion': {'background': '#E91E63', 'border': '#C2185B'}  # Pink for emergent questions
         }
         
         shapes = {
             'query': 'star',
             'search': 'box',
             'datapoint': 'ellipse',
-            'insight': 'diamond'
+            'insight': 'diamond',
+            'emergentquestion': 'triangle'
         }
         
         return {
@@ -191,6 +193,32 @@ class InvestigationGraphVisualizer:
         
         return node_id
     
+    def add_emergentquestion_node(self, question_text: str, priority: float = 0.5,
+                                 spawning_insight: str = None) -> str:
+        """Add an emergent question node"""
+        node_id = self._generate_id(f"emergentquestion_{question_text[:50]}")
+        
+        # Create label
+        label = f"Question: {question_text[:35]}..." if len(question_text) > 35 else f"Question: {question_text}"
+        
+        node = GraphNode(
+            id=node_id,
+            node_type='emergentquestion',
+            label=label,
+            content=question_text,
+            timestamp=datetime.now().isoformat(),
+            metadata={'priority': priority}
+        )
+        
+        self.nodes[node_id] = node
+        self.nx_graph.add_node(node_id, **node.metadata)
+        
+        # Connect spawning insight if provided
+        if spawning_insight and spawning_insight in self.nodes:
+            self.add_edge(spawning_insight, node_id, 'SPAWNS')
+        
+        return node_id
+    
     def add_edge(self, source: str, target: str, edge_type: str, weight: float = 1.0):
         """Add an edge between nodes"""
         if source in self.nodes and target in self.nodes:
@@ -204,7 +232,8 @@ class InvestigationGraphVisualizer:
             'query': sum(1 for n in self.nodes.values() if n.node_type == 'query'),
             'search': sum(1 for n in self.nodes.values() if n.node_type == 'search'),
             'datapoint': sum(1 for n in self.nodes.values() if n.node_type == 'datapoint'),
-            'insight': sum(1 for n in self.nodes.values() if n.node_type == 'insight')
+            'insight': sum(1 for n in self.nodes.values() if n.node_type == 'insight'),
+            'emergentquestion': sum(1 for n in self.nodes.values() if n.node_type == 'emergentquestion')
         }
         
         edge_counts = {}
@@ -643,8 +672,17 @@ class InvestigationGraphVisualizer:
         return html
     
     def _generate_id(self, seed: str) -> str:
-        """Generate consistent ID from seed string"""
-        return hashlib.md5(seed.encode()).hexdigest()[:12]
+        """Generate consistent ID from seed string with collision prevention"""
+        base_id = hashlib.md5(seed.encode()).hexdigest()[:12]
+        
+        # Ensure uniqueness by adding counter if collision exists
+        counter = 0
+        unique_id = base_id
+        while unique_id in self.nodes:
+            counter += 1
+            unique_id = f"{base_id}_{counter}"
+        
+        return unique_id
     
     def _format_dead_ends(self, dead_ends: List[str]) -> str:
         """Format dead-end searches for display"""

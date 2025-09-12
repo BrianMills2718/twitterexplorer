@@ -1,0 +1,875 @@
+{
+  "nodes": {
+    "d950648a-de03-4d99-9fea-86f5fd225348": {
+      "id": "d950648a-de03-4d99-9fea-86f5fd225348",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "test bridge creation",
+        "is_root": true,
+        "investigation_goal": "test bridge creation"
+      },
+      "created_at": "2025-09-12T02:07:31.766179"
+    },
+    "14734b44-562a-4fb6-a040-b0261c28c194": {
+      "id": "14734b44-562a-4fb6-a040-b0261c28c194",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Capture recent tweets that explicitly use the phrase variants for 'test bridge creation' so we can identify original posts, prototypes, or lab/field test reports. Using Latest prioritizes fresh activity to quickly close the baseline gap.",
+        "parent_analytic_question": "d950648a-de03-4d99-9fea-86f5fd225348"
+      },
+      "created_at": "2025-09-12T02:08:13.898969"
+    },
+    "85583362-189e-4bf7-be66-16298fb0e07c": {
+      "id": "85583362-189e-4bf7-be66-16298fb0e07c",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "\"test bridge creation\" OR \"bridge creation test\" OR \"bridge test\"",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-12T02:08:13.898969"
+    },
+    "d613db0a-63fd-4d8c-b2f9-a83d9c93af57": {
+      "id": "d613db0a-63fd-4d8c-b2f9-a83d9c93af57",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Review Reuters' recent timeline for any news coverage or reporting about bridge tests, construction prototypes, or related engineering stories that might mention 'test bridge creation'. This helps find authoritative articles and source tweets to trace back to original reporting.",
+        "parent_analytic_question": "d950648a-de03-4d99-9fea-86f5fd225348"
+      },
+      "created_at": "2025-09-12T02:08:13.898969"
+    },
+    "a20e1f89-1a5d-40f7-b806-89e4c8971e60": {
+      "id": "a20e1f89-1a5d-40f7-b806-89e4c8971e60",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "reuters"
+        }
+      },
+      "created_at": "2025-09-12T02:08:13.898969"
+    },
+    "d738b27b-bf93-435c-b4b3-68ec99d0d5f6": {
+      "id": "d738b27b-bf93-435c-b4b3-68ec99d0d5f6",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Collect recent media from an engineering/science-oriented account (nasa) to locate photos or videos that may depict structural testing or bridge prototypes. Media often provides direct evidence of 'test bridge creation' even when tweet text is brief.",
+        "parent_analytic_question": "d950648a-de03-4d99-9fea-86f5fd225348"
+      },
+      "created_at": "2025-09-12T02:08:13.898969"
+    },
+    "2509e934-4214-4c54-8f7a-2b9af51e3b96": {
+      "id": "2509e934-4214-4c54-8f7a-2b9af51e3b96",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "usermedia.php",
+        "parameters": {
+          "screenname": "nasa"
+        }
+      },
+      "created_at": "2025-09-12T02:08:13.898969"
+    },
+    "649accc7-6b93-4862-a90a-96869ca93da1": {
+      "id": "649accc7-6b93-4862-a90a-96869ca93da1",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Check whether 'bridge creation' or related phrases are trending in the United States to understand broader interest and whether the topic merits a wider monitoring effort or immediate escalation.",
+        "parent_analytic_question": "d950648a-de03-4d99-9fea-86f5fd225348"
+      },
+      "created_at": "2025-09-12T02:08:13.898969"
+    },
+    "01725354-5b23-49b1-9610-11f44876c517": {
+      "id": "01725354-5b23-49b1-9610-11f44876c517",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "trends.php",
+        "parameters": {
+          "country": "UnitedStates"
+        }
+      },
+      "created_at": "2025-09-12T02:08:13.898969"
+    },
+    "ebbb9a15-5133-4afe-8901-8b29b02daa86": {
+      "id": "ebbb9a15-5133-4afe-8901-8b29b02daa86",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Pull Reuters' profile metadata and follower counts to assess credibility and amplification potential of any Reuters posts about bridge tests discovered in the timeline or search results; helps prioritize which sources to deep-dive next.",
+        "parent_analytic_question": "d950648a-de03-4d99-9fea-86f5fd225348"
+      },
+      "created_at": "2025-09-12T02:08:13.898969"
+    },
+    "41c94b50-9afe-4ac8-843a-b42f8464db70": {
+      "id": "41c94b50-9afe-4ac8-843a-b42f8464db70",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "screenname.php",
+        "parameters": {
+          "screenname": "reuters"
+        }
+      },
+      "created_at": "2025-09-12T02:08:13.898969"
+    },
+    "7271495a-e5e2-4cde-958a-0ba10d5fda88": {
+      "id": "7271495a-e5e2-4cde-958a-0ba10d5fda88",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "- Click on the faucet section and request for btc , using your EVM wallet .\n- Bridge test BTC to monad chain .\n- We now have cBTC on monad .\n- Bridge cBTC on monad to other chain or back to BTC chain .\n\nThat is all for today. \n\nGmonad\ud83d\udc9c. https://t.co/bBHvM9LVe4",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-12T02:08:49.799996",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.95,
+          "goal_relevance_score": 0.6666666666666666
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-12T02:08:49.799996"
+      },
+      "created_at": "2025-09-12T02:08:49.799996"
+    },
+    "c8dc54aa-4abb-4877-a98c-937cecdd5e4b": {
+      "id": "c8dc54aa-4abb-4877-a98c-937cecdd5e4b",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Bridge:\nYou can bridge test tokens from the Kite network to Base Sepolia. Supported tokens: KITE, ETH, USDT. https://t.co/4rWFU4Uvz3",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-12T02:08:49.799996",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.9,
+          "goal_relevance_score": 0.6666666666666666
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-12T02:08:49.799996"
+      },
+      "created_at": "2025-09-12T02:08:49.799996"
+    },
+    "7cd3a672-aa67-4d03-8a4d-86e7b839e1f4": {
+      "id": "7cd3a672-aa67-4d03-8a4d-86e7b839e1f4",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "yeni bir testnet ile devam edelim @Official_Upbit\nborsas\u0131n\u0131n L2 si olan @giwa_io projesi i\u00e7in i\u015flemler yapt\u0131m.\nLinkler : Faucet: https://t.co/QGfpauZ4V0 \nBridge: https://t.co/VHBhkdio4Q \ntest a\u011f\u0131 ekleme: https://t.co/M8VbL87TpP",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-12T02:08:49.799996",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.9,
+          "goal_relevance_score": 0.6666666666666666
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-12T02:08:49.799996"
+      },
+      "created_at": "2025-09-12T02:08:49.799996"
+    },
+    "f92ca83f-493c-4fbe-a6f1-e8b4ed5e190c": {
+      "id": "f92ca83f-493c-4fbe-a6f1-e8b4ed5e190c",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "\u2e3b\n\n6/ Call To Action\nGet started today:\n\ud83d\udd39 Add Giwa Sepolia to MetaMask\n\ud83d\udd39 Claim faucet ETH\n\ud83d\udd39 Bridge &amp; test transactions\n\n\ud83d\udc49 Don\u2019t sleep on this \u2014 being early always pays in web3!",
+        "source_info": {
+          "source": "search.php",
+          "timestamp": "2025-09-12T02:08:49.800995",
+          "entities": {},
+          "follow_up_needed": null,
+          "relevance_score": 0.85,
+          "goal_relevance_score": 0.6666666666666666
+        },
+        "source": "search.php",
+        "timestamp": "2025-09-12T02:08:49.800995"
+      },
+      "created_at": "2025-09-12T02:08:49.800995"
+    },
+    "4a01b305-5916-407c-8a5d-f0094e078ba7": {
+      "id": "4a01b305-5916-407c-8a5d-f0094e078ba7",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Findings describe an end-to-end test of bridging BTC into the Monad ecosystem and onward routing, documenting the operational steps and testnet tooling. Steps observed: obtaining BTC from a faucet with an EVM wallet, bridging BTC into Monad (resulting in cBTC on Monad), and then bridging that cBTC either to another chain or back to the BTC chain. Additional context references a testnet and links for the faucet and bridge, plus a note about transactions performed for Giwa (an L2 related to Upbit). This differs from other potential findings because it captures an actual round-trip bridging workflow (not just a planned integration) and supplies concrete tooling URLs and testnet usage, making it actionable for reproducing or diagnosing the bridge flow. Implications include verification of cross-chain minting (cBTC issuance on Monad), compatibility of EVM wallets with the faucet and bridge, and potential interoperability with L2 projects (Giwa). Recommended next steps: reproduce the steps, record tx hashes at each hop, validate cBTC custody and redemption back to BTC, and test edge cases (insufficient fee, nonce mismatch, cross-chain finality).",
+        "insight_type": "connection",
+        "title": "Successful testnet bridge flow: BTC \u2192 cBTC on Monad \u2192 onward",
+        "confidence": 0.75,
+        "investigation_relevance": 0.9,
+        "key_evidence": [
+          "\"Click on the faucet section and request for btc , using your EVM wallet .\"",
+          "\"Bridge test BTC to monad chain . We now have cBTC on monad .\"",
+          "\"Bridge cBTC on monad to other chain or back to BTC chain\""
+        ]
+      },
+      "created_at": "2025-09-12T02:09:48.036713"
+    },
+    "a91fc7ca-7831-403b-802e-2fffcecb6e51": {
+      "id": "a91fc7ca-7831-403b-802e-2fffcecb6e51",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "@L_Sassol_ @MuteMastoor @LayerZero_Core @zeroway_io Consistent advantage every bridge test",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 6.0,
+          "timestamp": "2025-09-12T02:10:10.567753"
+        }
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    "5e74f67a-841f-455a-b9a8-f09e44c1e767": {
+      "id": "5e74f67a-841f-455a-b9a8-f09e44c1e767",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "@alexandra199615 @LABtrade_ Speed is easy to promise, hard to prove bridge test will tell the real story",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 6.0,
+          "timestamp": "2025-09-12T02:10:10.567753"
+        }
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    "3b352583-92a7-4082-a8d9-23824edeef4c": {
+      "id": "3b352583-92a7-4082-a8d9-23824edeef4c",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "- Click on the faucet section and request for btc , using your EVM wallet .\n- Bridge test BTC to monad chain .\n- We now have cBTC on monad .\n- Bridge cBTC on monad to other chain or back to BTC chain .\n\nThat is all for today. \n\nGmonad\ud83d\udc9c. https://t.co/bBHvM9LVe4",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 6.0,
+          "timestamp": "2025-09-12T02:10:10.567753"
+        }
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    "5ff0c9dc-b032-48e1-9c05-e73953643bd2": {
+      "id": "5ff0c9dc-b032-48e1-9c05-e73953643bd2",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "Bridge:\nYou can bridge test tokens from the Kite network to Base Sepolia. Supported tokens: KITE, ETH, USDT. https://t.co/4rWFU4Uvz3",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 6.0,
+          "timestamp": "2025-09-12T02:10:10.567753"
+        }
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    "b875f984-0ba4-45df-888c-f201458ba15f": {
+      "id": "b875f984-0ba4-45df-888c-f201458ba15f",
+      "node_type": "DataPoint",
+      "properties": {
+        "content": "yeni bir testnet ile devam edelim @Official_Upbit\nborsas\u0131n\u0131n L2 si olan @giwa_io projesi i\u00e7in i\u015flemler yapt\u0131m.\nLinkler : Faucet: https://t.co/QGfpauZ4V0 \nBridge: https://t.co/VHBhkdio4Q \ntest a\u011f\u0131 ekleme: https://t.co/M8VbL87TpP",
+        "source_info": {
+          "source": "twitter_api_timeline",
+          "relevance_score": 6.0,
+          "timestamp": "2025-09-12T02:10:10.567753"
+        }
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    "8061406d-754e-4d3b-9cd1-b3e4ffc9c2ed": {
+      "id": "8061406d-754e-4d3b-9cd1-b3e4ffc9c2ed",
+      "node_type": "Insight",
+      "properties": {
+        "content": "A majority of results are short social posts referencing 'bridge test' or 'bridge test tokens' \u2014 signals there are active testnet bridge activities and calls-to-action rather than deep technical docs.",
+        "insight_type": "evaluation_derived",
+        "title": "A majority of results are short...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.6,
+        "key_evidence": [
+          "A majority of results are short social posts referencing 'bridge test' or 'bridge test tokens' \u2014 signals there are active testnet bridge activities and calls-to-action rather than deep technical docs."
+        ]
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    "f934322e-b9c3-41d2-b5a3-89c2fd0887a3": {
+      "id": "f934322e-b9c3-41d2-b5a3-89c2fd0887a3",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Several entries include actionable onboarding steps: add network to MetaMask, claim faucet ETH, bridge tokens and run transactions (entries 3, 4, 7, 11, 16, 20).",
+        "insight_type": "evaluation_derived",
+        "title": "Several entries include actionable onboarding steps:...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.6,
+        "key_evidence": [
+          "Several entries include actionable onboarding steps: add network to MetaMask, claim faucet ETH, bridge tokens and run transactions (entries 3, 4, 7, 11, 16, 20)."
+        ]
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    "edc650d7-fcbd-4831-8e83-718e4351c22f": {
+      "id": "edc650d7-fcbd-4831-8e83-718e4351c22f",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Specific networks and flows are mentioned: Kite network \u21c4 Base Sepolia with supported tokens KITE/ETH/USDT (result 4); Sepolia & BSC Testnet \u2192 EXPchain (result 11); BTC \u2192 Monad chain \u2192 cBTC and back (result 3); Giwa Sepolia / Upbit L2 references with faucet/bridge links (results 5,7).",
+        "insight_type": "evaluation_derived",
+        "title": "Specific networks and flows are mentioned:...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.6,
+        "key_evidence": [
+          "Specific networks and flows are mentioned: Kite network \u21c4 Base Sepolia with supported tokens KITE/ETH/USDT (result 4); Sepolia & BSC Testnet \u2192 EXPchain (result 11); BTC \u2192 Monad chain \u2192 cBTC and back ("
+        ]
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    "ebca5829-4bb3-4df0-a029-5e1c242f1308": {
+      "id": "ebca5829-4bb3-4df0-a029-5e1c242f1308",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Some results indicate which wallet types/tools are expected (EVM wallet, MetaMask, Hardhat/Solidity hints in result 17).",
+        "insight_type": "evaluation_derived",
+        "title": "Some results indicate which wallet types/tools...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.6,
+        "key_evidence": [
+          "Some results indicate which wallet types/tools are expected (EVM wallet, MetaMask, Hardhat/Solidity hints in result 17)."
+        ]
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    "a2656ea1-d119-4646-83d7-d416a5942bf2": {
+      "id": "a2656ea1-d119-4646-83d7-d416a5942bf2",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Multiple entries are simply promotional/social (tweets) and include shortened URLs; those may point to the actual bridge/faucet pages but the snippets themselves lack detailed steps, contract addresses, or test results.",
+        "insight_type": "evaluation_derived",
+        "title": "Multiple entries are simply promotional/social (tweets)...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.6,
+        "key_evidence": [
+          "Multiple entries are simply promotional/social (tweets) and include shortened URLs; those may point to the actual bridge/faucet pages but the snippets themselves lack detailed steps, contract addresse"
+        ]
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    "7288ca47-a7aa-4bee-a0d8-e9fdfa3de49e": {
+      "id": "7288ca47-a7aa-4bee-a0d8-e9fdfa3de49e",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Noise: several items are unrelated (cricket references, generic promotions) or ambiguous mentions of 'bridge test' without usable details (results 6, 8, 9, 18, etc.).",
+        "insight_type": "evaluation_derived",
+        "title": "Noise: several items are unrelated (cricket...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.6,
+        "key_evidence": [
+          "Noise: several items are unrelated (cricket references, generic promotions) or ambiguous mentions of 'bridge test' without usable details (results 6, 8, 9, 18, etc.)."
+        ]
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    }
+  },
+  "edges": [
+    {
+      "id": "795edc35-2a71-4c5f-b9dd-743efecd9202",
+      "source_id": "d950648a-de03-4d99-9fea-86f5fd225348",
+      "target_id": "14734b44-562a-4fb6-a040-b0261c28c194",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-12T02:08:13.898969"
+    },
+    {
+      "id": "817e76a2-b152-45a7-8beb-3a0af18bea17",
+      "source_id": "14734b44-562a-4fb6-a040-b0261c28c194",
+      "target_id": "85583362-189e-4bf7-be66-16298fb0e07c",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-12T02:08:13.898969"
+    },
+    {
+      "id": "04c9892d-eb36-4f6f-8a58-232a44ccb999",
+      "source_id": "d950648a-de03-4d99-9fea-86f5fd225348",
+      "target_id": "d613db0a-63fd-4d8c-b2f9-a83d9c93af57",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-12T02:08:13.898969"
+    },
+    {
+      "id": "f95093f1-1838-41d9-9c17-e88a13ac842a",
+      "source_id": "d613db0a-63fd-4d8c-b2f9-a83d9c93af57",
+      "target_id": "a20e1f89-1a5d-40f7-b806-89e4c8971e60",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-12T02:08:13.898969"
+    },
+    {
+      "id": "09720b74-7b6c-4151-91ab-ea61ca03bd71",
+      "source_id": "d950648a-de03-4d99-9fea-86f5fd225348",
+      "target_id": "d738b27b-bf93-435c-b4b3-68ec99d0d5f6",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-12T02:08:13.898969"
+    },
+    {
+      "id": "82eb90c5-a48e-4f04-a769-a7973e13b178",
+      "source_id": "d738b27b-bf93-435c-b4b3-68ec99d0d5f6",
+      "target_id": "2509e934-4214-4c54-8f7a-2b9af51e3b96",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-12T02:08:13.898969"
+    },
+    {
+      "id": "84e28e88-1df7-4346-9283-5a2d0cdf2b9b",
+      "source_id": "d950648a-de03-4d99-9fea-86f5fd225348",
+      "target_id": "649accc7-6b93-4862-a90a-96869ca93da1",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-12T02:08:13.898969"
+    },
+    {
+      "id": "a0b29a3e-d16e-40b5-ba9b-7f32fadb614d",
+      "source_id": "649accc7-6b93-4862-a90a-96869ca93da1",
+      "target_id": "01725354-5b23-49b1-9610-11f44876c517",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-12T02:08:13.898969"
+    },
+    {
+      "id": "5a628bc1-afd3-4769-ac28-1e4e5d23052d",
+      "source_id": "d950648a-de03-4d99-9fea-86f5fd225348",
+      "target_id": "ebbb9a15-5133-4afe-8901-8b29b02daa86",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-12T02:08:13.898969"
+    },
+    {
+      "id": "f47d5433-0d26-4d80-913b-8b7091a634d7",
+      "source_id": "ebbb9a15-5133-4afe-8901-8b29b02daa86",
+      "target_id": "41c94b50-9afe-4ac8-843a-b42f8464db70",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-12T02:08:13.898969"
+    },
+    {
+      "id": "c85c1398-ec17-4bcf-9032-19a1e55c266b",
+      "source_id": "85583362-189e-4bf7-be66-16298fb0e07c",
+      "target_id": "7271495a-e5e2-4cde-958a-0ba10d5fda88",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.95
+      },
+      "created_at": "2025-09-12T02:08:49.799996"
+    },
+    {
+      "id": "6db112b6-e12a-46f4-9c0e-a4a82ca51a84",
+      "source_id": "85583362-189e-4bf7-be66-16298fb0e07c",
+      "target_id": "c8dc54aa-4abb-4877-a98c-937cecdd5e4b",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.9
+      },
+      "created_at": "2025-09-12T02:08:49.799996"
+    },
+    {
+      "id": "b4cea654-674e-47f4-85ea-f562b4518edf",
+      "source_id": "85583362-189e-4bf7-be66-16298fb0e07c",
+      "target_id": "7cd3a672-aa67-4d03-8a4d-86e7b839e1f4",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.9
+      },
+      "created_at": "2025-09-12T02:08:49.800995"
+    },
+    {
+      "id": "2002fd54-140a-4da6-816e-8a3e39a48cd7",
+      "source_id": "85583362-189e-4bf7-be66-16298fb0e07c",
+      "target_id": "f92ca83f-493c-4fbe-a6f1-e8b4ed5e190c",
+      "edge_type": "DISCOVERED",
+      "properties": {
+        "relevance": 0.85
+      },
+      "created_at": "2025-09-12T02:08:49.800995"
+    },
+    {
+      "id": "02a81201-599c-4439-94e7-6c3b90c49119",
+      "source_id": "7271495a-e5e2-4cde-958a-0ba10d5fda88",
+      "target_id": "4a01b305-5916-407c-8a5d-f0094e078ba7",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-12T02:09:48.036713"
+      },
+      "created_at": "2025-09-12T02:09:48.036713"
+    },
+    {
+      "id": "2a9274a0-be70-449c-9a25-8b42f0909cf9",
+      "source_id": "7cd3a672-aa67-4d03-8a4d-86e7b839e1f4",
+      "target_id": "4a01b305-5916-407c-8a5d-f0094e078ba7",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "evidence_strength": 0.5,
+        "synthesis_timestamp": "2025-09-12T02:09:48.036713"
+      },
+      "created_at": "2025-09-12T02:09:48.036713"
+    },
+    {
+      "id": "dae58254-6ff4-415e-a0ae-f8318e6829a6",
+      "source_id": "41c94b50-9afe-4ac8-843a-b42f8464db70",
+      "target_id": "a91fc7ca-7831-403b-802e-2fffcecb6e51",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 6.0
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    {
+      "id": "53544687-ecc9-4880-af0a-8c12fb475212",
+      "source_id": "41c94b50-9afe-4ac8-843a-b42f8464db70",
+      "target_id": "5e74f67a-841f-455a-b9a8-f09e44c1e767",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 6.0
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    {
+      "id": "d9b9cb1b-7ad5-44af-88da-9b0e93c9a911",
+      "source_id": "41c94b50-9afe-4ac8-843a-b42f8464db70",
+      "target_id": "3b352583-92a7-4082-a8d9-23824edeef4c",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 6.0
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    {
+      "id": "6fefc21e-de48-4aed-b903-de9063396c39",
+      "source_id": "41c94b50-9afe-4ac8-843a-b42f8464db70",
+      "target_id": "5ff0c9dc-b032-48e1-9c05-e73953643bd2",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 6.0
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    {
+      "id": "3eae23e7-ceaa-4398-be6d-e94509718d82",
+      "source_id": "41c94b50-9afe-4ac8-843a-b42f8464db70",
+      "target_id": "b875f984-0ba4-45df-888c-f201458ba15f",
+      "edge_type": "GENERATES",
+      "properties": {
+        "relevance_score": 6.0
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    {
+      "id": "1ee2be1c-2153-4704-b991-4d77eac39694",
+      "source_id": "a91fc7ca-7831-403b-802e-2fffcecb6e51",
+      "target_id": "8061406d-754e-4d3b-9cd1-b3e4ffc9c2ed",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    {
+      "id": "09697c59-c59b-406f-96e2-64a84fec3441",
+      "source_id": "5e74f67a-841f-455a-b9a8-f09e44c1e767",
+      "target_id": "8061406d-754e-4d3b-9cd1-b3e4ffc9c2ed",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    {
+      "id": "5edd24e0-5874-4042-8a0c-238a1940ff02",
+      "source_id": "3b352583-92a7-4082-a8d9-23824edeef4c",
+      "target_id": "8061406d-754e-4d3b-9cd1-b3e4ffc9c2ed",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    {
+      "id": "1b7507c4-4634-431d-a307-ef90b0735400",
+      "source_id": "5ff0c9dc-b032-48e1-9c05-e73953643bd2",
+      "target_id": "8061406d-754e-4d3b-9cd1-b3e4ffc9c2ed",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    {
+      "id": "4cae0c0f-39f3-4a18-89fb-c609c9e47958",
+      "source_id": "b875f984-0ba4-45df-888c-f201458ba15f",
+      "target_id": "8061406d-754e-4d3b-9cd1-b3e4ffc9c2ed",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    {
+      "id": "17909beb-7b22-460d-8739-2ab4864a636d",
+      "source_id": "a91fc7ca-7831-403b-802e-2fffcecb6e51",
+      "target_id": "f934322e-b9c3-41d2-b5a3-89c2fd0887a3",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    {
+      "id": "11a719c2-5ac7-42e3-9f38-15e736b3e303",
+      "source_id": "5e74f67a-841f-455a-b9a8-f09e44c1e767",
+      "target_id": "f934322e-b9c3-41d2-b5a3-89c2fd0887a3",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    {
+      "id": "87c852c0-c3c2-4ed7-a739-00df6ffba638",
+      "source_id": "3b352583-92a7-4082-a8d9-23824edeef4c",
+      "target_id": "f934322e-b9c3-41d2-b5a3-89c2fd0887a3",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    {
+      "id": "1b65db6b-a6d6-4ab1-ac65-38b46e4bf60d",
+      "source_id": "5ff0c9dc-b032-48e1-9c05-e73953643bd2",
+      "target_id": "f934322e-b9c3-41d2-b5a3-89c2fd0887a3",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    {
+      "id": "d970627c-6761-4dbc-9788-0bf610c74177",
+      "source_id": "b875f984-0ba4-45df-888c-f201458ba15f",
+      "target_id": "f934322e-b9c3-41d2-b5a3-89c2fd0887a3",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    {
+      "id": "c9b1f86a-436e-4018-ab22-bd4362d0efc9",
+      "source_id": "a91fc7ca-7831-403b-802e-2fffcecb6e51",
+      "target_id": "edc650d7-fcbd-4831-8e83-718e4351c22f",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    {
+      "id": "3bca67d0-7aa1-4f7f-8b11-a41caf9b23a2",
+      "source_id": "5e74f67a-841f-455a-b9a8-f09e44c1e767",
+      "target_id": "edc650d7-fcbd-4831-8e83-718e4351c22f",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    {
+      "id": "f4ef20e7-954a-4cf0-a705-90b4a1964a05",
+      "source_id": "3b352583-92a7-4082-a8d9-23824edeef4c",
+      "target_id": "edc650d7-fcbd-4831-8e83-718e4351c22f",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    {
+      "id": "0fefec6a-64ac-41cf-873a-8beee3efd40b",
+      "source_id": "5ff0c9dc-b032-48e1-9c05-e73953643bd2",
+      "target_id": "edc650d7-fcbd-4831-8e83-718e4351c22f",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    {
+      "id": "ed590c17-d9b2-4cb9-b867-d80acd223f1e",
+      "source_id": "b875f984-0ba4-45df-888c-f201458ba15f",
+      "target_id": "edc650d7-fcbd-4831-8e83-718e4351c22f",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    {
+      "id": "90348600-0a9d-4436-b635-e6102873f84c",
+      "source_id": "a91fc7ca-7831-403b-802e-2fffcecb6e51",
+      "target_id": "ebca5829-4bb3-4df0-a029-5e1c242f1308",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    {
+      "id": "e86ad46e-8299-4dc4-9ccb-03bea53000fc",
+      "source_id": "5e74f67a-841f-455a-b9a8-f09e44c1e767",
+      "target_id": "ebca5829-4bb3-4df0-a029-5e1c242f1308",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    {
+      "id": "868a6e3c-fe96-46c4-822f-ea10559b5f0b",
+      "source_id": "3b352583-92a7-4082-a8d9-23824edeef4c",
+      "target_id": "ebca5829-4bb3-4df0-a029-5e1c242f1308",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    {
+      "id": "46142c0e-962f-4fbc-a4e3-b3be02a81755",
+      "source_id": "5ff0c9dc-b032-48e1-9c05-e73953643bd2",
+      "target_id": "ebca5829-4bb3-4df0-a029-5e1c242f1308",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    {
+      "id": "cfbede55-f2ad-4b6e-9a55-7976e8876a5e",
+      "source_id": "b875f984-0ba4-45df-888c-f201458ba15f",
+      "target_id": "ebca5829-4bb3-4df0-a029-5e1c242f1308",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    {
+      "id": "df3a3b5a-663b-4e54-85fd-2da0a5d1f149",
+      "source_id": "a91fc7ca-7831-403b-802e-2fffcecb6e51",
+      "target_id": "a2656ea1-d119-4646-83d7-d416a5942bf2",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    {
+      "id": "c02dc8fd-1de9-4032-a5f8-402151b21b9c",
+      "source_id": "5e74f67a-841f-455a-b9a8-f09e44c1e767",
+      "target_id": "a2656ea1-d119-4646-83d7-d416a5942bf2",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    {
+      "id": "ca9adba8-9348-421a-9dfd-7e97e58e5ff0",
+      "source_id": "3b352583-92a7-4082-a8d9-23824edeef4c",
+      "target_id": "a2656ea1-d119-4646-83d7-d416a5942bf2",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    {
+      "id": "694fef5a-57cb-4074-b747-15f66c68d259",
+      "source_id": "5ff0c9dc-b032-48e1-9c05-e73953643bd2",
+      "target_id": "a2656ea1-d119-4646-83d7-d416a5942bf2",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    {
+      "id": "a485ea5e-fa9f-4273-9674-3dbc4c3e8c89",
+      "source_id": "b875f984-0ba4-45df-888c-f201458ba15f",
+      "target_id": "a2656ea1-d119-4646-83d7-d416a5942bf2",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    {
+      "id": "9d63137e-286d-44eb-9e4f-509e2ffdcdba",
+      "source_id": "a91fc7ca-7831-403b-802e-2fffcecb6e51",
+      "target_id": "7288ca47-a7aa-4bee-a0d8-e9fdfa3de49e",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    {
+      "id": "cd97ab3f-a846-4e8f-9873-35325b3feb3d",
+      "source_id": "5e74f67a-841f-455a-b9a8-f09e44c1e767",
+      "target_id": "7288ca47-a7aa-4bee-a0d8-e9fdfa3de49e",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    {
+      "id": "2db4f487-ca36-4cad-9792-449717ede6ae",
+      "source_id": "3b352583-92a7-4082-a8d9-23824edeef4c",
+      "target_id": "7288ca47-a7aa-4bee-a0d8-e9fdfa3de49e",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    {
+      "id": "485606d1-bd4e-4ae2-87d0-5ab223baddb7",
+      "source_id": "5ff0c9dc-b032-48e1-9c05-e73953643bd2",
+      "target_id": "7288ca47-a7aa-4bee-a0d8-e9fdfa3de49e",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    },
+    {
+      "id": "fd74aeb2-d0e9-4467-b504-2ba396e1603f",
+      "source_id": "b875f984-0ba4-45df-888c-f201458ba15f",
+      "target_id": "7288ca47-a7aa-4bee-a0d8-e9fdfa3de49e",
+      "edge_type": "SUPPORTS",
+      "properties": {
+        "confidence": 0.8
+      },
+      "created_at": "2025-09-12T02:10:10.567753"
+    }
+  ],
+  "analytic_question": "d950648a-de03-4d99-9fea-86f5fd225348",
+  "created_at": "2025-09-12T02:10:19.484806"
+}

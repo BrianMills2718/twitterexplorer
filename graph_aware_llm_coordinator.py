@@ -13,6 +13,14 @@ from datetime import datetime
 import logging
 from pydantic import BaseModel, Field
 
+# Import LLM call tracer
+try:
+    from .utils.llm_call_tracer import get_tracer
+    TRACER_AVAILABLE = True
+except ImportError:
+    TRACER_AVAILABLE = False
+    get_tracer = lambda: None
+
 from investigation_graph import InvestigationGraph, InvestigationContext
 from llm_client import (
     LiteLLMClient, InvestigationEvaluation, 
@@ -595,6 +603,11 @@ class GraphAwareLLMCoordinator:
         
         EVIDENCE REQUIREMENT: Must spawn new questions from discoveries
         """
+        # Track emergent question detection call
+        tracer = get_tracer() if TRACER_AVAILABLE else None
+        if tracer:
+            tracer.log_trigger("insights_processed", "graph_aware_llm_coordinator", "detect_emergent_questions")
+        
         try:
             # Create emergent question detection prompt
             prompt = self._create_emergent_question_prompt(insights)
@@ -604,7 +617,8 @@ class GraphAwareLLMCoordinator:
             response = self.llm.completion(
                 model=model,
                 messages=[{"role": "user", "content": prompt}],
-                response_format=EmergentQuestions
+                response_format=EmergentQuestions,
+                purpose="emergent_question_detection"
             )
             
             # Parse structured response - use .parsed if available, fallback to manual parsing

@@ -16,6 +16,14 @@ from llm_client import LiteLLMClient
 from pydantic import BaseModel, Field
 import logging
 
+# Import LLM call tracer
+try:
+    from .utils.llm_call_tracer import get_tracer
+    TRACER_AVAILABLE = True
+except ImportError:
+    TRACER_AVAILABLE = False
+    get_tracer = lambda: None
+
 
 class SemanticGroup(BaseModel):
     """Semantic grouping of DataPoints via LLM clustering"""
@@ -232,7 +240,8 @@ class RealTimeInsightSynthesizer:
             response = self.llm.completion(
                 model=model, 
                 messages=[{"role": "user", "content": prompt}],
-                response_format=SynthesisDecision
+                response_format=SynthesisDecision,
+                purpose="synthesis_decision"
             )
             
             # Check if parsed attribute exists before accessing it
@@ -299,6 +308,11 @@ class RealTimeInsightSynthesizer:
     def _group_semantically_llm(self, datapoints: List[Node]) -> SemanticGrouping:
         """Use LLM for semantic grouping - NO hardcoded rules"""
         
+        # Track semantic grouping call
+        tracer = get_tracer() if TRACER_AVAILABLE else None
+        if tracer:
+            tracer.log_trigger("datapoints_ready", "realtime_insight_synthesizer", "semantic_grouping")
+        
         # Prepare DataPoint content
         datapoint_summaries = []
         for dp in datapoints:
@@ -331,7 +345,8 @@ class RealTimeInsightSynthesizer:
             response = self.llm.completion(
                 model=model,
                 messages=[{"role": "user", "content": prompt}],
-                response_format=SemanticGrouping
+                response_format=SemanticGrouping,
+                purpose="semantic_grouping"
             )
             
             # Check if parsed attribute exists before accessing it
@@ -445,7 +460,8 @@ class RealTimeInsightSynthesizer:
             response = self.llm.completion(
                 model=model,
                 messages=[{"role": "user", "content": prompt}],
-                response_format=InsightSynthesis  # Temporarily back to working schema
+                response_format=InsightSynthesis,  # Temporarily back to working schema
+                purpose="insight_synthesis"
             )
             
             # Check if parsed attribute exists before accessing it

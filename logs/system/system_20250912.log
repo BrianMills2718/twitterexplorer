@@ -1,0 +1,366 @@
+2025-09-12 01:52:51,950 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-12 01:52:57,194 - INFO - Loaded configuration from C:\Users\Brian\AppData\Local\Temp\tmpy0nujjya.yaml
+2025-09-12 01:52:57,195 - INFO - Configuration validation passed
+2025-09-12 01:52:57,195 - INFO - Model manager initialized with config: C:\Users\Brian\AppData\Local\Temp\tmpy0nujjya.yaml
+2025-09-12 01:53:09,392 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-12 01:53:11,013 - INFO - Loaded configuration from C:\Users\Brian\AppData\Local\Temp\tmpugbc2nj5.yaml
+2025-09-12 01:53:11,013 - INFO - Configuration validation passed
+2025-09-12 01:53:11,013 - INFO - Model manager initialized with config: C:\Users\Brian\AppData\Local\Temp\tmpugbc2nj5.yaml
+2025-09-12 01:54:21,722 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-12 01:54:23,309 - INFO - Loaded configuration from C:\Users\Brian\AppData\Local\Temp\tmpouu26pym.yaml
+2025-09-12 01:54:23,309 - INFO - Configuration validation passed
+2025-09-12 01:54:23,309 - INFO - Model manager initialized with config: C:\Users\Brian\AppData\Local\Temp\tmpouu26pym.yaml
+2025-09-12 01:54:23,548 - INFO - ConcreteInvestigationBridge initialized - architectural integration active
+2025-09-12 01:54:23,549 - INFO - Started investigation session 1fcb1487-c7e3-4395-b4f0-dcf09d23365f for query: test emergent question generation...
+2025-09-12 01:54:23,550 - INFO - DIAGNOSTIC: Prompt size: 8008 chars, 953 words
+2025-09-12 01:54:23,550 - INFO - DIAGNOSTIC: Prompt lines: 208 lines
+2025-09-12 01:54:23,566 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-12 01:54:56,993 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-12 01:54:57,368 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-12 01:54:57,371 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-09-12 01:54:57,371 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-09-12 01:54:57,371 - INFO - DIAGNOSTIC: Searches count: 5
+2025-09-12 01:54:57,371 - INFO - DIAGNOSTIC: Reasoning length: 1062 chars
+2025-09-12 01:54:57,371 - INFO - DIAGNOSTIC: Search 1 - Endpoint: search.php
+2025-09-12 01:54:57,371 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': '"emergent question generation"', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-12 01:54:57,371 - INFO - DIAGNOSTIC: Search 1 - Reasoning: Direct, exact-phrase search for the investigation's core phrase to find any mention of 'emergent que...
+2025-09-12 01:54:57,372 - INFO - DIAGNOSTIC: Search 2 - Endpoint: search.php
+2025-09-12 01:54:57,372 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': 'emergent abilities "question generation" OR "question-generation"', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Top', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-12 01:54:57,372 - INFO - DIAGNOSTIC: Search 2 - Reasoning: Broader topical search combining 'emergent abilities' with phrase-level matches for question generat...
+2025-09-12 01:54:57,372 - INFO - DIAGNOSTIC: Search 3 - Endpoint: timeline.php
+2025-09-12 01:54:57,372 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': None, 'screenname': 'OpenAI', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-12 01:54:57,372 - INFO - DIAGNOSTIC: Search 3 - Reasoning: Pull OpenAI's recent posts to check whether an influential AI account has posted about emergent beha...
+2025-09-12 01:54:57,372 - INFO - DIAGNOSTIC: Search 4 - Endpoint: following.php
+2025-09-12 01:54:57,372 - INFO - DIAGNOSTIC: Search 4 - Parameters: {'query': None, 'screenname': 'OpenAI', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-12 01:54:57,372 - INFO - DIAGNOSTIC: Search 4 - Reasoning: Retrieve who OpenAI follows to identify relevant researchers, labs, or commentators who may be posti...
+2025-09-12 01:54:57,372 - INFO - DIAGNOSTIC: Search 5 - Endpoint: trends.php
+2025-09-12 01:54:57,372 - INFO - DIAGNOSTIC: Search 5 - Parameters: {'query': None, 'screenname': None, 'country': 'UnitedStates', 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-12 01:54:57,372 - INFO - DIAGNOSTIC: Search 5 - Reasoning: Check trending topics in the UnitedStates to detect whether related terms (e.g., 'emergent', 'emerge...
+2025-09-12 01:54:57,372 - INFO - DIAGNOSTIC: Endpoint diversity score: 0.82
+2025-09-12 01:54:57,372 - INFO - DIAGNOSTIC: Endpoints used: ['search.php', 'timeline.php', 'following.php', 'trends.php']
+2025-09-12 01:55:15,458 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-12 01:55:43,391 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-12 01:55:43,392 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-12 01:55:43,394 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-12 01:56:01,749 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-12 01:56:01,761 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-12 01:56:01,763 - INFO - Completed investigation session 1fcb1487-c7e3-4395-b4f0-dcf09d23365f - 3 searches, 53 results
+2025-09-12 02:06:56,423 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-12 02:06:58,077 - INFO - Loaded configuration from C:\Users\Brian\AppData\Local\Temp\tmp9esvia8j.yaml
+2025-09-12 02:06:58,077 - INFO - Configuration validation passed
+2025-09-12 02:06:58,077 - INFO - Model manager initialized with config: C:\Users\Brian\AppData\Local\Temp\tmp9esvia8j.yaml
+2025-09-12 02:07:29,882 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-12 02:07:31,524 - INFO - Loaded configuration from C:\Users\Brian\AppData\Local\Temp\tmpeq15k_r6.yaml
+2025-09-12 02:07:31,524 - INFO - Configuration validation passed
+2025-09-12 02:07:31,524 - INFO - Model manager initialized with config: C:\Users\Brian\AppData\Local\Temp\tmpeq15k_r6.yaml
+2025-09-12 02:07:31,766 - INFO - ConcreteInvestigationBridge initialized - architectural integration active
+2025-09-12 02:07:31,767 - INFO - Started investigation session 32b83cbf-9dd1-4076-86ee-c5d4208c6138 for query: test bridge creation...
+2025-09-12 02:07:31,767 - INFO - DIAGNOSTIC: Prompt size: 7942 chars, 948 words
+2025-09-12 02:07:31,767 - INFO - DIAGNOSTIC: Prompt lines: 208 lines
+2025-09-12 02:07:31,778 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-12 02:08:13,833 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-12 02:08:13,894 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-12 02:08:13,896 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-09-12 02:08:13,896 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-09-12 02:08:13,896 - INFO - DIAGNOSTIC: Searches count: 5
+2025-09-12 02:08:13,896 - INFO - DIAGNOSTIC: Reasoning length: 879 chars
+2025-09-12 02:08:13,896 - INFO - DIAGNOSTIC: Search 1 - Endpoint: search.php
+2025-09-12 02:08:13,896 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': '"test bridge creation" OR "bridge creation test" OR "bridge test"', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-12 02:08:13,896 - INFO - DIAGNOSTIC: Search 1 - Reasoning: Capture recent tweets that explicitly use the phrase variants for 'test bridge creation' so we can i...
+2025-09-12 02:08:13,896 - INFO - DIAGNOSTIC: Search 2 - Endpoint: timeline.php
+2025-09-12 02:08:13,896 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': None, 'screenname': 'reuters', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-12 02:08:13,896 - INFO - DIAGNOSTIC: Search 2 - Reasoning: Review Reuters' recent timeline for any news coverage or reporting about bridge tests, construction ...
+2025-09-12 02:08:13,896 - INFO - DIAGNOSTIC: Search 3 - Endpoint: usermedia.php
+2025-09-12 02:08:13,896 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': None, 'screenname': 'nasa', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-12 02:08:13,896 - INFO - DIAGNOSTIC: Search 3 - Reasoning: Collect recent media from an engineering/science-oriented account (nasa) to locate photos or videos ...
+2025-09-12 02:08:13,896 - INFO - DIAGNOSTIC: Search 4 - Endpoint: trends.php
+2025-09-12 02:08:13,896 - INFO - DIAGNOSTIC: Search 4 - Parameters: {'query': None, 'screenname': None, 'country': 'UnitedStates', 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-12 02:08:13,896 - INFO - DIAGNOSTIC: Search 4 - Reasoning: Check whether 'bridge creation' or related phrases are trending in the United States to understand b...
+2025-09-12 02:08:13,896 - INFO - DIAGNOSTIC: Search 5 - Endpoint: screenname.php
+2025-09-12 02:08:13,896 - INFO - DIAGNOSTIC: Search 5 - Parameters: {'query': None, 'screenname': 'reuters', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-12 02:08:13,896 - INFO - DIAGNOSTIC: Search 5 - Reasoning: Pull Reuters' profile metadata and follower counts to assess credibility and amplification potential...
+2025-09-12 02:08:13,896 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
+2025-09-12 02:08:13,896 - INFO - DIAGNOSTIC: Endpoints used: ['search.php', 'timeline.php', 'usermedia.php', 'trends.php', 'screenname.php']
+2025-09-12 02:08:22,518 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-12 02:08:49,798 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-12 02:08:49,799 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-12 02:08:49,800 - INFO - {"event": "datapoint_added", "datapoint_id": "7271495a-e5e2-4cde-958a-0ba10d5fda88", "pending_count": 1, "timestamp": "2025-09-12T02:08:49.800995"}
+2025-09-12 02:08:49,800 - INFO - {"event": "datapoint_added", "datapoint_id": "c8dc54aa-4abb-4877-a98c-937cecdd5e4b", "pending_count": 2, "timestamp": "2025-09-12T02:08:49.800995"}
+2025-09-12 02:08:49,800 - INFO - {"event": "datapoint_added", "datapoint_id": "7cd3a672-aa67-4d03-8a4d-86e7b839e1f4", "pending_count": 3, "timestamp": "2025-09-12T02:08:49.800995"}
+2025-09-12 02:08:49,802 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-12 02:09:03,532 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-12 02:09:03,534 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-12 02:09:03,534 - INFO - {"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-12T02:09:03.534629"}
+2025-09-12 02:09:03,535 - INFO - {"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-12T02:09:03.535626"}
+2025-09-12 02:09:03,537 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-12 02:09:35,511 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-12 02:09:35,515 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-12 02:09:35,516 - INFO - {"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-12T02:09:35.515680"}
+2025-09-12 02:09:35,516 - INFO - {"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Testnet setup and faucet-driven token acquisition for bridge testing (Monad and giwa_io L2)", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Cross-chain bridge operations and supported test tokens (bridging flows & token compatibility)", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-12T02:09:35.516679"}
+2025-09-12 02:09:35,517 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-12 02:09:48,032 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-12 02:09:48,036 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-12 02:09:48,036 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-12T02:09:48.036713"}
+2025-09-12 02:09:48,036 - ERROR - Critical bridge failure in notify_insight_created: 'charmap' codec can't encode character '\u2192' in position 75: character maps to <undefined>
+2025-09-12 02:09:48,036 - ERROR - Bridge integration failed during insight creation: Critical architectural bridge failure: 'charmap' codec can't encode character '\u2192' in position 75: character maps to <undefined>
+2025-09-12 02:09:48,037 - INFO - {"event": "grouping_error", "error": "Critical bridge failure during insight creation: Critical architectural bridge failure: 'charmap' codec can't encode character '\\u2192' in position 75: character maps to <undefined>", "datapoint_count": 3, "timestamp": "2025-09-12T02:09:48.037719"}
+2025-09-12 02:09:48,037 - INFO - {"event": "synthesis_completed", "insights_created": 0, "timestamp": "2025-09-12T02:09:48.037719"}
+2025-09-12 02:09:48,037 - INFO - {"event": "datapoint_added", "datapoint_id": "f92ca83f-493c-4fbe-a6f1-e8b4ed5e190c", "pending_count": 1, "timestamp": "2025-09-12T02:09:48.037719"}
+2025-09-12 02:09:48,040 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-12 02:10:10,552 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-12 02:10:10,566 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-12 02:10:10,570 - INFO - Loaded configuration from C:\Users\Brian\projects\twitterexplorer\twitterexplorer\config\models.yaml
+2025-09-12 02:10:10,570 - INFO - Configuration validation passed
+2025-09-12 02:10:10,570 - INFO - Model manager initialized with config: C:\Users\Brian\projects\twitterexplorer\twitterexplorer\config\models.yaml
+2025-09-12 02:10:10,572 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-12 02:10:19,471 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-12 02:10:19,477 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-12 02:10:19,483 - INFO - Completed investigation session 32b83cbf-9dd1-4076-86ee-c5d4208c6138 - 1 searches, 58 results
+2025-09-12 02:10:43,866 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-12 02:10:45,476 - INFO - Loaded configuration from C:\Users\Brian\AppData\Local\Temp\tmpff2gxy2w.yaml
+2025-09-12 02:10:45,476 - INFO - Configuration validation passed
+2025-09-12 02:10:45,476 - INFO - Model manager initialized with config: C:\Users\Brian\AppData\Local\Temp\tmpff2gxy2w.yaml
+2025-09-12 02:10:45,717 - INFO - ConcreteInvestigationBridge initialized - architectural integration active
+2025-09-12 02:10:45,717 - INFO - Started investigation session 538e6dad-2817-4f0d-8d52-c3a243afb927 for query: test bridge creation...
+2025-09-12 02:10:45,717 - INFO - DIAGNOSTIC: Prompt size: 7942 chars, 948 words
+2025-09-12 02:10:45,718 - INFO - DIAGNOSTIC: Prompt lines: 208 lines
+2025-09-12 02:10:45,727 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-12 02:11:31,219 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-12 02:11:31,276 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-12 02:11:31,278 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-09-12 02:11:31,279 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-09-12 02:11:31,279 - INFO - DIAGNOSTIC: Searches count: 6
+2025-09-12 02:11:31,279 - INFO - DIAGNOSTIC: Reasoning length: 801 chars
+2025-09-12 02:11:31,279 - INFO - DIAGNOSTIC: Search 1 - Endpoint: search.php
+2025-09-12 02:11:31,279 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': '"test bridge creation"', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-12 02:11:31,279 - INFO - DIAGNOSTIC: Search 1 - Reasoning: Catch any recent tweets that use the exact phrase 'test bridge creation' across Twitter to establish...
+2025-09-12 02:11:31,279 - INFO - DIAGNOSTIC: Search 2 - Endpoint: search.php
+2025-09-12 02:11:31,279 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': '"bridge load test" OR "bridge test"', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Top', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-12 02:11:31,279 - INFO - DIAGNOSTIC: Search 2 - Reasoning: Find high-engagement posts about bridge load testing and related experiments — these are likely to i...
+2025-09-12 02:11:31,279 - INFO - DIAGNOSTIC: Search 3 - Endpoint: search.php
+2025-09-12 02:11:31,279 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': 'from:ASCEorg "bridge" OR "bridge test"', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-12 02:11:31,279 - INFO - DIAGNOSTIC: Search 3 - Reasoning: Target authoritative industry account ASCEorg for any posts about bridge testing or creation, giving...
+2025-09-12 02:11:31,279 - INFO - DIAGNOSTIC: Search 4 - Endpoint: timeline.php
+2025-09-12 02:11:31,279 - INFO - DIAGNOSTIC: Search 4 - Parameters: {'query': None, 'screenname': 'USACEHQ', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-12 02:11:31,279 - INFO - DIAGNOSTIC: Search 4 - Reasoning: Retrieve recent posts from the U.S. Army Corps of Engineers (USACEHQ) timeline to spot announcements...
+2025-09-12 02:11:31,279 - INFO - DIAGNOSTIC: Search 5 - Endpoint: screenname.php
+2025-09-12 02:11:31,279 - INFO - DIAGNOSTIC: Search 5 - Parameters: {'query': None, 'screenname': 'ASCEorg', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-12 02:11:31,279 - INFO - DIAGNOSTIC: Search 5 - Reasoning: Fetch ASCEorg profile metadata (followers, bio, verification) to assess credibility and prioritize t...
+2025-09-12 02:11:31,279 - INFO - DIAGNOSTIC: Search 6 - Endpoint: trends.php
+2025-09-12 02:11:31,279 - INFO - DIAGNOSTIC: Search 6 - Parameters: {'query': None, 'screenname': None, 'country': 'UnitedStates', 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-12 02:11:31,279 - INFO - DIAGNOSTIC: Search 6 - Reasoning: Check national trends to see whether bridge-related testing or incidents are currently trending; thi...
+2025-09-12 02:11:31,279 - INFO - DIAGNOSTIC: Endpoint diversity score: 0.67
+2025-09-12 02:11:31,279 - INFO - DIAGNOSTIC: Endpoints used: ['search.php', 'timeline.php', 'screenname.php', 'trends.php']
+2025-09-12 02:11:35,912 - INFO - Completed investigation session 538e6dad-2817-4f0d-8d52-c3a243afb927 - 1 searches, 0 results
+2025-09-12 02:12:02,836 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-09-12 02:12:04,430 - INFO - Loaded configuration from C:\Users\Brian\AppData\Local\Temp\tmp74769xoo.yaml
+2025-09-12 02:12:04,430 - INFO - Configuration validation passed
+2025-09-12 02:12:04,430 - INFO - Model manager initialized with config: C:\Users\Brian\AppData\Local\Temp\tmp74769xoo.yaml
+2025-09-12 02:12:04,672 - INFO - ConcreteInvestigationBridge initialized - architectural integration active
+2025-09-12 02:12:04,673 - INFO - Started investigation session 51b90784-a04e-45bf-b00f-63f5538971a3 for query: test emergent question generation...
+2025-09-12 02:12:04,673 - INFO - DIAGNOSTIC: Prompt size: 8008 chars, 953 words
+2025-09-12 02:12:04,673 - INFO - DIAGNOSTIC: Prompt lines: 208 lines
+2025-09-12 02:12:04,683 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-12 02:12:37,637 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-12 02:12:37,702 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-12 02:12:37,704 - INFO - DIAGNOSTIC: Raw LLM response captured
+2025-09-12 02:12:37,704 - INFO - DIAGNOSTIC: Decision type: gap_filling
+2025-09-12 02:12:37,704 - INFO - DIAGNOSTIC: Searches count: 5
+2025-09-12 02:12:37,704 - INFO - DIAGNOSTIC: Reasoning length: 766 chars
+2025-09-12 02:12:37,704 - INFO - DIAGNOSTIC: Search 1 - Endpoint: search.php
+2025-09-12 02:12:37,704 - INFO - DIAGNOSTIC: Search 1 - Parameters: {'query': '"emergent question generation"', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Latest', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-12 02:12:37,704 - INFO - DIAGNOSTIC: Search 1 - Reasoning: Target exact-phrase mentions of 'emergent question generation' to find explicit uses of the phrase i...
+2025-09-12 02:12:37,704 - INFO - DIAGNOSTIC: Search 2 - Endpoint: search.php
+2025-09-12 02:12:37,705 - INFO - DIAGNOSTIC: Search 2 - Parameters: {'query': 'emergent behaviour (question OR questions OR "question generation" OR "questioning") (emergent OR emergence OR "emergent behavior")', 'screenname': None, 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': 'Top', 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-12 02:12:37,705 - INFO - DIAGNOSTIC: Search 2 - Reasoning: Broader top-post search using related terms and Boolean operators to capture discussions that use va...
+2025-09-12 02:12:37,705 - INFO - DIAGNOSTIC: Search 3 - Endpoint: timeline.php
+2025-09-12 02:12:37,705 - INFO - DIAGNOSTIC: Search 3 - Parameters: {'query': None, 'screenname': 'OpenAI', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-12 02:12:37,705 - INFO - DIAGNOSTIC: Search 3 - Reasoning: Inspect the recent chronological posts from the official OpenAI account to see if they or their rese...
+2025-09-12 02:12:37,705 - INFO - DIAGNOSTIC: Search 4 - Endpoint: screenname.php
+2025-09-12 02:12:37,705 - INFO - DIAGNOSTIC: Search 4 - Parameters: {'query': None, 'screenname': 'DeepMind', 'country': None, 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-12 02:12:37,705 - INFO - DIAGNOSTIC: Search 4 - Reasoning: Get profile and credibility metadata for DeepMind (a leading AI research account) to verify if it is...
+2025-09-12 02:12:37,705 - INFO - DIAGNOSTIC: Search 5 - Endpoint: trends.php
+2025-09-12 02:12:37,705 - INFO - DIAGNOSTIC: Search 5 - Parameters: {'query': None, 'screenname': None, 'country': 'UnitedStates', 'rest_id': None, 'rest_ids': None, 'cursor': None, 'search_type': None, 'id': None, 'tweet_id': None, 'user': None, 'follows': None, 'list_id': None}
+2025-09-12 02:12:37,705 - INFO - DIAGNOSTIC: Search 5 - Reasoning: Check current UnitedStates trending topics to determine whether emergent behavior or AI-related term...
+2025-09-12 02:12:37,705 - INFO - DIAGNOSTIC: Endpoint diversity score: 0.82
+2025-09-12 02:12:37,705 - INFO - DIAGNOSTIC: Endpoints used: ['search.php', 'timeline.php', 'screenname.php', 'trends.php']
+2025-09-12 02:12:57,457 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-12 02:13:31,137 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-12 02:13:31,138 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-12 02:13:31,139 - INFO - {"event": "datapoint_added", "datapoint_id": "c3552701-6054-4bfa-9e65-95ceea1be2aa", "pending_count": 1, "timestamp": "2025-09-12T02:13:31.139597"}
+2025-09-12 02:13:31,140 - INFO - {"event": "datapoint_added", "datapoint_id": "bd03611f-2bf1-404d-8182-bb06aa436b9d", "pending_count": 2, "timestamp": "2025-09-12T02:13:31.140597"}
+2025-09-12 02:13:31,140 - INFO - {"event": "datapoint_added", "datapoint_id": "47950a23-38ce-48dc-8bcb-1d5c00f4e479", "pending_count": 3, "timestamp": "2025-09-12T02:13:31.140597"}
+2025-09-12 02:13:31,141 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-12 02:13:38,490 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-12 02:13:38,492 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-12 02:13:38,493 - INFO - {"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-12T02:13:38.493457"}
+2025-09-12 02:13:38,493 - INFO - {"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-12T02:13:38.493457"}
+2025-09-12 02:13:38,495 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-12 02:13:53,819 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-12 02:13:53,824 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-12 02:13:53,825 - INFO - {"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-12T02:13:53.825128"}
+2025-09-12 02:13:53,826 - INFO - {"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Conceptual emergence: discovering higher-level behaviours from basic principles", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Model-level emergent behaviors and unexpected capabilities in deployed systems", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-12T02:13:53.826128"}
+2025-09-12 02:13:53,827 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-12 02:14:12,289 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-12 02:14:12,292 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-12 02:14:12,293 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-12T02:14:12.293940"}
+2025-09-12 02:14:12,294 - INFO - Bridge notification: Insight created - Emergence vs. Prompt-Induced Behavior: Distinguishing Origins
+2025-09-12 02:14:12,294 - INFO - Bridge calling detect_emergent_questions with 1 new insight
+2025-09-12 02:14:12,295 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-12 02:14:47,380 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-12 02:14:47,394 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-12 02:14:47,395 - INFO - Bridge integration: Created 11 emergent questions, 11 SPAWNS edges
+2025-09-12 02:14:47,396 - INFO - Bridge integration: 11 emergent questions created from insight
+2025-09-12 02:14:47,396 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Emergence vs. Prompt-Induced Behavior: Distinguishing Origins", "insight_confidence": 0.6, "timestamp": "2025-09-12T02:14:47.396877"}
+2025-09-12 02:14:47,397 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-12 02:15:02,699 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-12 02:15:02,702 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-12 02:15:02,703 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-12T02:15:02.703703"}
+2025-09-12 02:15:02,703 - INFO - Bridge notification: Insight created - Emergence vs. Prompt-Induced Behavior: Distinguishing Origins (strengthened)
+2025-09-12 02:15:02,703 - INFO - Bridge calling detect_emergent_questions with 1 new insight
+2025-09-12 02:15:02,705 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-12 02:15:39,226 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-12 02:15:39,237 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-12 02:15:39,238 - INFO - Bridge integration: Created 11 emergent questions, 11 SPAWNS edges
+2025-09-12 02:15:39,239 - INFO - Bridge integration: 11 emergent questions created from insight
+2025-09-12 02:15:39,239 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Emergence vs. Prompt-Induced Behavior: Distinguishing Origins (strengthened)", "insight_confidence": 0.75, "timestamp": "2025-09-12T02:15:39.239031"}
+2025-09-12 02:15:39,239 - INFO - {"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-12T02:15:39.239031"}
+2025-09-12 02:15:39,239 - INFO - {"event": "datapoint_added", "datapoint_id": "65e016dc-1260-46fb-8c36-8211d6d83ee3", "pending_count": 1, "timestamp": "2025-09-12T02:15:39.239031"}
+2025-09-12 02:15:39,239 - INFO - {"event": "datapoint_added", "datapoint_id": "bcaeac2c-6491-46b6-b7ba-640faacc33ac", "pending_count": 2, "timestamp": "2025-09-12T02:15:39.239031"}
+2025-09-12 02:15:39,239 - INFO - {"event": "datapoint_added", "datapoint_id": "e5c0dc02-dcaa-4a0b-b457-d66cd836a8d9", "pending_count": 3, "timestamp": "2025-09-12T02:15:39.239031"}
+2025-09-12 02:15:39,241 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-12 02:15:48,641 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-12 02:15:48,644 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-12 02:15:48,644 - INFO - {"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-12T02:15:48.644459"}
+2025-09-12 02:15:48,645 - INFO - {"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-12T02:15:48.645461"}
+2025-09-12 02:15:48,646 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-12 02:16:10,069 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-12 02:16:10,073 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-12 02:16:10,074 - INFO - {"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-12T02:16:10.074096"}
+2025-09-12 02:16:10,075 - INFO - {"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Curiosity about underlying mechanisms of emergent behavior in simple and complex systems", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Communication and dissemination of research on emergent / OOD behaviour in LLMs (event/poster + research focus)", "datapoint_count": 2, "synthesis_worthy": false}], "timestamp": "2025-09-12T02:16:10.075096"}
+2025-09-12 02:16:10,076 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-12 02:16:35,626 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-12 02:16:35,630 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-12 02:16:35,630 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-12T02:16:35.630451"}
+2025-09-12 02:16:35,630 - INFO - Bridge notification: Insight created - Emergence vs. Prompt-Induced Behavior: Distinguishing Origins (strengthened)
+2025-09-12 02:16:35,631 - INFO - Bridge calling detect_emergent_questions with 1 new insight
+2025-09-12 02:16:35,632 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-12 02:17:11,372 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-12 02:17:11,376 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-12 02:17:11,377 - INFO - Bridge integration: Created 12 emergent questions, 12 SPAWNS edges
+2025-09-12 02:17:11,377 - INFO - Bridge integration: 12 emergent questions created from insight
+2025-09-12 02:17:11,378 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Emergence vs. Prompt-Induced Behavior: Distinguishing Origins (strengthened)", "insight_confidence": 0.82, "timestamp": "2025-09-12T02:17:11.378857"}
+2025-09-12 02:17:11,378 - INFO - {"event": "synthesis_completed", "insights_created": 1, "timestamp": "2025-09-12T02:17:11.378857"}
+2025-09-12 02:17:11,379 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-12 02:17:37,819 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-12 02:17:37,819 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-12 02:17:37,820 - INFO - {"event": "datapoint_added", "datapoint_id": "c3552701-6054-4bfa-9e65-95ceea1be2aa", "pending_count": 1, "timestamp": "2025-09-12T02:17:37.820830"}
+2025-09-12 02:17:37,821 - INFO - {"event": "datapoint_added", "datapoint_id": "bd03611f-2bf1-404d-8182-bb06aa436b9d", "pending_count": 2, "timestamp": "2025-09-12T02:17:37.821828"}
+2025-09-12 02:17:37,821 - INFO - {"event": "datapoint_added", "datapoint_id": "47950a23-38ce-48dc-8bcb-1d5c00f4e479", "pending_count": 3, "timestamp": "2025-09-12T02:17:37.821828"}
+2025-09-12 02:17:37,822 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-12 02:17:48,689 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-12 02:17:48,691 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-12 02:17:48,692 - INFO - {"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-12T02:17:48.692591"}
+2025-09-12 02:17:48,692 - INFO - {"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-12T02:17:48.692591"}
+2025-09-12 02:17:48,694 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-12 02:18:07,638 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-12 02:18:07,642 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-12 02:18:07,643 - INFO - {"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-12T02:18:07.643548"}
+2025-09-12 02:18:07,644 - INFO - {"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Conceptual emergence \u2014 when higher-level behaviors arise from base principles", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Observed model-level emergent capabilities (multimodal/tool-like behaviour)", "datapoint_count": 2, "synthesis_worthy": true}], "timestamp": "2025-09-12T02:18:07.644488"}
+2025-09-12 02:18:07,645 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-12 02:18:34,478 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-12 02:18:34,481 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-12 02:18:34,482 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-12T02:18:34.482380"}
+2025-09-12 02:18:34,482 - INFO - Bridge notification: Insight created - Emergence vs. Prompt-Induced Behavior: Distinction Strengthened by Discoverability and Persistent Personality Signals
+2025-09-12 02:18:34,483 - INFO - Bridge calling detect_emergent_questions with 1 new insight
+2025-09-12 02:18:34,484 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-12 02:19:09,633 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-12 02:19:09,643 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-12 02:19:09,644 - INFO - Bridge integration: Created 12 emergent questions, 12 SPAWNS edges
+2025-09-12 02:19:09,644 - INFO - Bridge integration: 12 emergent questions created from insight
+2025-09-12 02:19:09,644 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Emergence vs. Prompt-Induced Behavior: Distinction Strengthened by Discoverability and Persistent Personality Signals", "insight_confidence": 0.86, "timestamp": "2025-09-12T02:19:09.644549"}
+2025-09-12 02:19:09,646 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-12 02:19:28,371 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-12 02:19:28,374 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-12 02:19:28,374 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-12T02:19:28.374145"}
+2025-09-12 02:19:28,375 - INFO - Bridge notification: Insight created - Distinction Strengthened by Discoverability and Persistent Personality Signals
+2025-09-12 02:19:28,375 - INFO - Bridge calling detect_emergent_questions with 1 new insight
+2025-09-12 02:19:28,377 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-12 02:19:57,142 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-12 02:19:57,156 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-12 02:19:57,157 - INFO - Bridge integration: Created 10 emergent questions, 10 SPAWNS edges
+2025-09-12 02:19:57,157 - INFO - Bridge integration: 10 emergent questions created from insight
+2025-09-12 02:19:57,157 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Distinction Strengthened by Discoverability and Persistent Personality Signals", "insight_confidence": 0.9, "timestamp": "2025-09-12T02:19:57.157108"}
+2025-09-12 02:19:57,157 - INFO - {"event": "synthesis_completed", "insights_created": 2, "timestamp": "2025-09-12T02:19:57.157108"}
+2025-09-12 02:19:57,157 - INFO - {"event": "datapoint_added", "datapoint_id": "65e016dc-1260-46fb-8c36-8211d6d83ee3", "pending_count": 1, "timestamp": "2025-09-12T02:19:57.157108"}
+2025-09-12 02:19:57,158 - INFO - {"event": "datapoint_added", "datapoint_id": "bcaeac2c-6491-46b6-b7ba-640faacc33ac", "pending_count": 2, "timestamp": "2025-09-12T02:19:57.158967"}
+2025-09-12 02:19:57,158 - INFO - {"event": "datapoint_added", "datapoint_id": "e5c0dc02-dcaa-4a0b-b457-d66cd836a8d9", "pending_count": 3, "timestamp": "2025-09-12T02:19:57.158967"}
+2025-09-12 02:19:57,159 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-12 02:20:04,908 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-12 02:20:04,910 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-12 02:20:04,911 - INFO - {"event": "llm_call", "operation": "synthesis_decision", "success": true, "result_type": "SynthesisDecision", "error": null, "timestamp": "2025-09-12T02:20:04.911500"}
+2025-09-12 02:20:04,911 - INFO - {"event": "synthesis_triggered", "pending_count": 3, "timestamp": "2025-09-12T02:20:04.911500"}
+2025-09-12 02:20:04,912 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-12 02:20:28,627 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-12 02:20:28,631 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-12 02:20:28,632 - INFO - {"event": "llm_call", "operation": "semantic_grouping", "success": true, "result_type": "SemanticGrouping", "error": null, "timestamp": "2025-09-12T02:20:28.632277"}
+2025-09-12 02:20:28,632 - INFO - {"event": "semantic_grouping", "input_datapoint_count": 3, "output_groups": 2, "groups": [{"theme": "Emergence, underlying mechanisms, and \u2018what\u2019s going on under the hood\u2019", "datapoint_count": 2, "synthesis_worthy": true}, {"theme": "Research dissemination / community touchpoint (ICML poster on emergent & OOD behaviour)", "datapoint_count": 2, "synthesis_worthy": false}], "timestamp": "2025-09-12T02:20:28.632277"}
+2025-09-12 02:20:28,633 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-12 02:20:57,841 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-12 02:20:57,844 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-12 02:20:57,845 - INFO - {"event": "llm_call", "operation": "insight_synthesis", "success": true, "result_type": "InsightSynthesis", "error": null, "timestamp": "2025-09-12T02:20:57.844063"}
+2025-09-12 02:20:57,845 - INFO - Bridge notification: Insight created - Strengthen: Discoverability & Internal-Mechanism Interest
+2025-09-12 02:20:57,845 - INFO - Bridge calling detect_emergent_questions with 1 new insight
+2025-09-12 02:20:57,846 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-12 02:21:22,347 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-12 02:21:22,357 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-12 02:21:22,358 - INFO - Bridge integration: Created 9 emergent questions, 9 SPAWNS edges
+2025-09-12 02:21:22,359 - INFO - Bridge integration: 9 emergent questions created from insight
+2025-09-12 02:21:22,359 - INFO - {"event": "insight_creation", "success": true, "insight_title": "Strengthen: Discoverability & Internal-Mechanism Interest", "insight_confidence": 0.92, "timestamp": "2025-09-12T02:21:22.359142"}
+2025-09-12 02:21:22,359 - INFO - {"event": "synthesis_completed", "insights_created": 1, "timestamp": "2025-09-12T02:21:22.359142"}
+2025-09-12 02:21:22,361 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-12 02:21:42,089 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-12 02:21:42,101 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-12 02:21:42,105 - INFO - Loaded configuration from C:\Users\Brian\projects\twitterexplorer\twitterexplorer\config\models.yaml
+2025-09-12 02:21:42,105 - INFO - Configuration validation passed
+2025-09-12 02:21:42,105 - INFO - Model manager initialized with config: C:\Users\Brian\projects\twitterexplorer\twitterexplorer\config\models.yaml
+2025-09-12 02:21:42,107 - INFO - 
+LiteLLM completion() model= gpt-5-mini; provider = openai
+2025-09-12 02:21:48,699 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-12 02:21:48,700 - INFO - Wrapper: Completed Call, calling success_handler
+2025-09-12 02:21:48,707 - INFO - Completed investigation session 51b90784-a04e-45bf-b00f-63f5538971a3 - 3 searches, 93 results

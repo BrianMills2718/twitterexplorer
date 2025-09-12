@@ -1,0 +1,295 @@
+{
+  "nodes": {
+    "129961c6-40a6-4cc7-a444-5ff9fd48bc70": {
+      "id": "129961c6-40a6-4cc7-a444-5ff9fd48bc70",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "test emergent question generation",
+        "is_root": true,
+        "investigation_goal": "test emergent question generation"
+      },
+      "created_at": "2025-09-12T01:54:23.548596"
+    },
+    "2846f788-3433-4378-a39e-4d43911325a9": {
+      "id": "2846f788-3433-4378-a39e-4d43911325a9",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Direct, exact-phrase search for the investigation's core phrase to find any mention of 'emergent question generation' in recent tweets. Using Latest prioritizes newly appearing examples for testing emergent question generation in live conversations.",
+        "parent_analytic_question": "129961c6-40a6-4cc7-a444-5ff9fd48bc70"
+      },
+      "created_at": "2025-09-12T01:54:57.374387"
+    },
+    "e2307982-8cae-41b6-9887-8d62ace5a29a": {
+      "id": "e2307982-8cae-41b6-9887-8d62ace5a29a",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "\"emergent question generation\"",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-12T01:54:57.374387"
+    },
+    "a82cb454-2ee0-45ad-a6d9-26efdb263b53": {
+      "id": "a82cb454-2ee0-45ad-a6d9-26efdb263b53",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Broader topical search combining 'emergent abilities' with phrase-level matches for question generation to capture related discussion that may not use the exact investigation phrase but is conceptually relevant. Using Top surfaces influential or highly engaged posts for pattern spotting.",
+        "parent_analytic_question": "129961c6-40a6-4cc7-a444-5ff9fd48bc70"
+      },
+      "created_at": "2025-09-12T01:54:57.374387"
+    },
+    "9ee6acd0-a19b-4415-8b55-8ba677031050": {
+      "id": "9ee6acd0-a19b-4415-8b55-8ba677031050",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "emergent abilities \"question generation\" OR \"question-generation\"",
+          "search_type": "Top"
+        }
+      },
+      "created_at": "2025-09-12T01:54:57.374387"
+    },
+    "b3fd3621-d497-402c-96a9-ea5560642451": {
+      "id": "b3fd3621-d497-402c-96a9-ea5560642451",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Pull OpenAI's recent posts to check whether an influential AI account has posted about emergent behaviors, question generation, or related research; this helps validate provenance and locate candidate tweets for deeper conversation analysis.",
+        "parent_analytic_question": "129961c6-40a6-4cc7-a444-5ff9fd48bc70"
+      },
+      "created_at": "2025-09-12T01:54:57.374387"
+    },
+    "9f12a6d6-6784-41c8-a5e2-4f9b4e6a12e8": {
+      "id": "9f12a6d6-6784-41c8-a5e2-4f9b4e6a12e8",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "OpenAI"
+        }
+      },
+      "created_at": "2025-09-12T01:54:57.374387"
+    },
+    "a4e5e1a6-7da0-4b68-91f2-5b7f8d31f13d": {
+      "id": "a4e5e1a6-7da0-4b68-91f2-5b7f8d31f13d",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Retrieve who OpenAI follows to identify relevant researchers, labs, or commentators who may be posting about emergent question generation\u2014useful for building a short list of authoritative accounts to follow and to seed further targeted searches or network mapping.",
+        "parent_analytic_question": "129961c6-40a6-4cc7-a444-5ff9fd48bc70"
+      },
+      "created_at": "2025-09-12T01:54:57.374387"
+    },
+    "98a2eee0-21a2-41c7-a412-edc396b10661": {
+      "id": "98a2eee0-21a2-41c7-a412-edc396b10661",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "following.php",
+        "parameters": {
+          "screenname": "OpenAI"
+        }
+      },
+      "created_at": "2025-09-12T01:54:57.374387"
+    },
+    "f47d88ad-e01c-4db6-8381-2c4851584294": {
+      "id": "f47d88ad-e01c-4db6-8381-2c4851584294",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Check trending topics in the UnitedStates to detect whether related terms (e.g., 'emergent', 'emergent abilities', 'question generation', 'prompt engineering') are gaining traction; this helps decide whether to scale the investigation for broader public discourse.",
+        "parent_analytic_question": "129961c6-40a6-4cc7-a444-5ff9fd48bc70"
+      },
+      "created_at": "2025-09-12T01:54:57.374387"
+    },
+    "a1e6e279-6245-4a1e-a998-02d3579f0771": {
+      "id": "a1e6e279-6245-4a1e-a998-02d3579f0771",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "trends.php",
+        "parameters": {
+          "country": "UnitedStates"
+        }
+      },
+      "created_at": "2025-09-12T01:54:57.374387"
+    },
+    "400948ff-9cf6-46ba-810e-2d68a56d8208": {
+      "id": "400948ff-9cf6-46ba-810e-2d68a56d8208",
+      "node_type": "Insight",
+      "properties": {
+        "content": "The results are almost entirely product and release announcements (ChatGPT features, model updates, APIs, hiring, livestreams), not research or methods about 'emergent question generation'.",
+        "insight_type": "evaluation_derived",
+        "title": "The results are almost entirely product...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.2,
+        "key_evidence": [
+          "The results are almost entirely product and release announcements (ChatGPT features, model updates, APIs, hiring, livestreams), not research or methods about 'emergent question generation'."
+        ]
+      },
+      "created_at": "2025-09-12T01:56:01.761983"
+    },
+    "41dc83d6-ca09-4f2c-b01a-43abb0532be3": {
+      "id": "41dc83d6-ca09-4f2c-b01a-43abb0532be3",
+      "node_type": "Insight",
+      "properties": {
+        "content": "A few items are tangentially relevant as enablers: branching conversations (result 4) and Projects (result 5) could support exploring multiple generated-question threads; Realtime API and gpt-realtime (results 7 and 8) could enable live/voice question-generation experiments.",
+        "insight_type": "evaluation_derived",
+        "title": "A few items are tangentially relevant...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.2,
+        "key_evidence": [
+          "A few items are tangentially relevant as enablers: branching conversations (result 4) and Projects (result 5) could support exploring multiple generated-question threads; Realtime API and gpt-realtime"
+        ]
+      },
+      "created_at": "2025-09-12T01:56:01.761983"
+    },
+    "7818c856-fbc2-4bc6-970e-906fcd7911fd": {
+      "id": "7818c856-fbc2-4bc6-970e-906fcd7911fd",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Result 2 (new research explaining why LLMs hallucinate) is potentially relevant for understanding failure modes when models generate novel questions (hallucination, plausibility issues).",
+        "insight_type": "evaluation_derived",
+        "title": "Result 2 (new research explaining why...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.2,
+        "key_evidence": [
+          "Result 2 (new research explaining why LLMs hallucinate) is potentially relevant for understanding failure modes when models generate novel questions (hallucination, plausibility issues)."
+        ]
+      },
+      "created_at": "2025-09-12T01:56:01.761983"
+    },
+    "91c2442c-a712-48df-9502-2ce5a6275d3d": {
+      "id": "91c2442c-a712-48df-9502-2ce5a6275d3d",
+      "node_type": "Insight",
+      "properties": {
+        "content": "Model behavior tuning (result 19: making GPT-5 'warmer') and availability of different models (result 17) indicate tooling/options that could affect question-generation style and evaluation.",
+        "insight_type": "evaluation_derived",
+        "title": "Model behavior tuning (result 19: making...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.2,
+        "key_evidence": [
+          "Model behavior tuning (result 19: making GPT-5 'warmer') and availability of different models (result 17) indicate tooling/options that could affect question-generation style and evaluation."
+        ]
+      },
+      "created_at": "2025-09-12T01:56:01.761983"
+    },
+    "00173b24-3345-4414-9352-d14a0242ddf8": {
+      "id": "00173b24-3345-4414-9352-d14a0242ddf8",
+      "node_type": "Insight",
+      "properties": {
+        "content": "No result explicitly addresses methodologies, benchmarks, datasets, metrics, or prior literature on emergent question generation\u2014so actionable experimental detail is missing.",
+        "insight_type": "evaluation_derived",
+        "title": "No result explicitly addresses methodologies, benchmarks,...",
+        "confidence": 0.7,
+        "investigation_relevance": 0.2,
+        "key_evidence": [
+          "No result explicitly addresses methodologies, benchmarks, datasets, metrics, or prior literature on emergent question generation\u2014so actionable experimental detail is missing."
+        ]
+      },
+      "created_at": "2025-09-12T01:56:01.761983"
+    }
+  },
+  "edges": [
+    {
+      "id": "23f27fd9-8f12-4edd-b583-fc0031a39611",
+      "source_id": "129961c6-40a6-4cc7-a444-5ff9fd48bc70",
+      "target_id": "2846f788-3433-4378-a39e-4d43911325a9",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-12T01:54:57.374387"
+    },
+    {
+      "id": "566b851d-9baf-4506-8a5c-2817633dd721",
+      "source_id": "2846f788-3433-4378-a39e-4d43911325a9",
+      "target_id": "e2307982-8cae-41b6-9887-8d62ace5a29a",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-12T01:54:57.374387"
+    },
+    {
+      "id": "60396120-0acd-4c19-9ae9-44b801fbf173",
+      "source_id": "129961c6-40a6-4cc7-a444-5ff9fd48bc70",
+      "target_id": "a82cb454-2ee0-45ad-a6d9-26efdb263b53",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-12T01:54:57.374387"
+    },
+    {
+      "id": "c2e3acb9-1c81-4e02-b293-ca75d4351872",
+      "source_id": "a82cb454-2ee0-45ad-a6d9-26efdb263b53",
+      "target_id": "9ee6acd0-a19b-4415-8b55-8ba677031050",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-12T01:54:57.374387"
+    },
+    {
+      "id": "f36b4b46-26e1-41ae-97bf-c642585f6506",
+      "source_id": "129961c6-40a6-4cc7-a444-5ff9fd48bc70",
+      "target_id": "b3fd3621-d497-402c-96a9-ea5560642451",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-12T01:54:57.374387"
+    },
+    {
+      "id": "1115572c-ddce-4ce9-bf71-1ab5fff3ffd5",
+      "source_id": "b3fd3621-d497-402c-96a9-ea5560642451",
+      "target_id": "9f12a6d6-6784-41c8-a5e2-4f9b4e6a12e8",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-12T01:54:57.374387"
+    },
+    {
+      "id": "8f46ed35-1027-4a61-a014-57e8ce6227e9",
+      "source_id": "129961c6-40a6-4cc7-a444-5ff9fd48bc70",
+      "target_id": "a4e5e1a6-7da0-4b68-91f2-5b7f8d31f13d",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-12T01:54:57.374387"
+    },
+    {
+      "id": "191161b2-e6ea-428c-9802-8e18fe9a9549",
+      "source_id": "a4e5e1a6-7da0-4b68-91f2-5b7f8d31f13d",
+      "target_id": "98a2eee0-21a2-41c7-a412-edc396b10661",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-12T01:54:57.374387"
+    },
+    {
+      "id": "5ae4815e-f6e4-4ad6-92d8-2214bedbcca7",
+      "source_id": "129961c6-40a6-4cc7-a444-5ff9fd48bc70",
+      "target_id": "f47d88ad-e01c-4db6-8381-2c4851584294",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-12T01:54:57.374387"
+    },
+    {
+      "id": "8bcecb1f-2692-4c64-8841-07756317d230",
+      "source_id": "f47d88ad-e01c-4db6-8381-2c4851584294",
+      "target_id": "a1e6e279-6245-4a1e-a998-02d3579f0771",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-12T01:54:57.374387"
+    }
+  ],
+  "analytic_question": "129961c6-40a6-4cc7-a444-5ff9fd48bc70",
+  "created_at": "2025-09-12T01:56:01.763981"
+}

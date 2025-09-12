@@ -1,0 +1,261 @@
+{
+  "nodes": {
+    "e3ac3142-6678-47f8-9ee4-d6e761acf40a": {
+      "id": "e3ac3142-6678-47f8-9ee4-d6e761acf40a",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "test bridge creation",
+        "is_root": true,
+        "investigation_goal": "test bridge creation"
+      },
+      "created_at": "2025-09-12T02:10:45.717074"
+    },
+    "fc43a9a7-3cc8-4891-b3a0-32f173957232": {
+      "id": "fc43a9a7-3cc8-4891-b3a0-32f173957232",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Catch any recent tweets that use the exact phrase 'test bridge creation' across Twitter to establish whether the phrase is in active use and to collect candidate tweets for deeper conversation or media analysis.",
+        "parent_analytic_question": "e3ac3142-6678-47f8-9ee4-d6e761acf40a"
+      },
+      "created_at": "2025-09-12T02:11:31.281676"
+    },
+    "6887df84-7e96-4ee6-9b83-98fae2362312": {
+      "id": "6887df84-7e96-4ee6-9b83-98fae2362312",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "\"test bridge creation\"",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-12T02:11:31.281676"
+    },
+    "de76c9a3-317d-43f5-823f-4af9ebdda3a4": {
+      "id": "de76c9a3-317d-43f5-823f-4af9ebdda3a4",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Find high-engagement posts about bridge load testing and related experiments \u2014 these are likely to include photos/videos and authoritative commentary useful for verifying real-world bridge test creations.",
+        "parent_analytic_question": "e3ac3142-6678-47f8-9ee4-d6e761acf40a"
+      },
+      "created_at": "2025-09-12T02:11:31.281676"
+    },
+    "c18be0b1-abca-46b6-a42b-4e248f74c0b7": {
+      "id": "c18be0b1-abca-46b6-a42b-4e248f74c0b7",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "\"bridge load test\" OR \"bridge test\"",
+          "search_type": "Top"
+        }
+      },
+      "created_at": "2025-09-12T02:11:31.281676"
+    },
+    "f27f4e04-cf3a-4f48-953c-98b358c7d251": {
+      "id": "f27f4e04-cf3a-4f48-953c-98b358c7d251",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Target authoritative industry account ASCEorg for any posts about bridge testing or creation, giving credible leads and potential source material (reports, photos, event announcements).",
+        "parent_analytic_question": "e3ac3142-6678-47f8-9ee4-d6e761acf40a"
+      },
+      "created_at": "2025-09-12T02:11:31.281676"
+    },
+    "55897e84-2681-4b8d-a4d6-8990273ad6c6": {
+      "id": "55897e84-2681-4b8d-a4d6-8990273ad6c6",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "search.php",
+        "parameters": {
+          "query": "from:ASCEorg \"bridge\" OR \"bridge test\"",
+          "search_type": "Latest"
+        }
+      },
+      "created_at": "2025-09-12T02:11:31.281676"
+    },
+    "137648b8-5ae0-40ad-b701-5621ea1764ac": {
+      "id": "137648b8-5ae0-40ad-b701-5621ea1764ac",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Retrieve recent posts from the U.S. Army Corps of Engineers (USACEHQ) timeline to spot announcements, field tests, or project updates about bridge construction/testing that might not use the exact search phrase but are directly relevant to 'test bridge creation.'",
+        "parent_analytic_question": "e3ac3142-6678-47f8-9ee4-d6e761acf40a"
+      },
+      "created_at": "2025-09-12T02:11:31.281676"
+    },
+    "9719c52d-8ebc-4091-a13f-62e8dd3f18b5": {
+      "id": "9719c52d-8ebc-4091-a13f-62e8dd3f18b5",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "timeline.php",
+        "parameters": {
+          "screenname": "USACEHQ"
+        }
+      },
+      "created_at": "2025-09-12T02:11:31.281676"
+    },
+    "d0a5ca39-50a7-4721-971c-289862104ea0": {
+      "id": "d0a5ca39-50a7-4721-971c-289862104ea0",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Fetch ASCEorg profile metadata (followers, bio, verification) to assess credibility and prioritize their posts as authoritative sources for any discovered bridge test content.",
+        "parent_analytic_question": "e3ac3142-6678-47f8-9ee4-d6e761acf40a"
+      },
+      "created_at": "2025-09-12T02:11:31.281676"
+    },
+    "b486a41a-74a4-4486-9637-7e26e018e637": {
+      "id": "b486a41a-74a4-4486-9637-7e26e018e637",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "screenname.php",
+        "parameters": {
+          "screenname": "ASCEorg"
+        }
+      },
+      "created_at": "2025-09-12T02:11:31.281676"
+    },
+    "fa40b37e-23c6-4a87-989e-4a02dd1648bf": {
+      "id": "fa40b37e-23c6-4a87-989e-4a02dd1648bf",
+      "node_type": "InvestigationQuestion",
+      "properties": {
+        "text": "Strategic question: Check national trends to see whether bridge-related testing or incidents are currently trending; this helps prioritize which tweets/conversations to deep-dive next.",
+        "parent_analytic_question": "e3ac3142-6678-47f8-9ee4-d6e761acf40a"
+      },
+      "created_at": "2025-09-12T02:11:31.281676"
+    },
+    "613c5866-d8b9-44ee-ad06-465f9a00a52a": {
+      "id": "613c5866-d8b9-44ee-ad06-465f9a00a52a",
+      "node_type": "SearchQuery",
+      "properties": {
+        "endpoint": "trends.php",
+        "parameters": {
+          "country": "UnitedStates"
+        }
+      },
+      "created_at": "2025-09-12T02:11:31.281676"
+    }
+  },
+  "edges": [
+    {
+      "id": "5d9097cf-4ca0-4bec-88b5-f3195fb21537",
+      "source_id": "e3ac3142-6678-47f8-9ee4-d6e761acf40a",
+      "target_id": "fc43a9a7-3cc8-4891-b3a0-32f173957232",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-12T02:11:31.281676"
+    },
+    {
+      "id": "ffddffc5-0ad7-4d8a-bb93-982900daf250",
+      "source_id": "fc43a9a7-3cc8-4891-b3a0-32f173957232",
+      "target_id": "6887df84-7e96-4ee6-9b83-98fae2362312",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-12T02:11:31.281676"
+    },
+    {
+      "id": "7fae19d1-cc9c-4d41-8d3a-2922fde2d119",
+      "source_id": "e3ac3142-6678-47f8-9ee4-d6e761acf40a",
+      "target_id": "de76c9a3-317d-43f5-823f-4af9ebdda3a4",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-12T02:11:31.281676"
+    },
+    {
+      "id": "d8330857-ccd3-4f84-8712-43dd1326f7f6",
+      "source_id": "de76c9a3-317d-43f5-823f-4af9ebdda3a4",
+      "target_id": "c18be0b1-abca-46b6-a42b-4e248f74c0b7",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-12T02:11:31.281676"
+    },
+    {
+      "id": "cc3877fc-ead3-423e-949e-4495a73be5fb",
+      "source_id": "e3ac3142-6678-47f8-9ee4-d6e761acf40a",
+      "target_id": "f27f4e04-cf3a-4f48-953c-98b358c7d251",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-12T02:11:31.281676"
+    },
+    {
+      "id": "18e097dc-894f-4716-a7e6-e17e370fee4e",
+      "source_id": "f27f4e04-cf3a-4f48-953c-98b358c7d251",
+      "target_id": "55897e84-2681-4b8d-a4d6-8990273ad6c6",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-12T02:11:31.281676"
+    },
+    {
+      "id": "b5fbbde7-4293-4b6c-a109-cbcd18338ca7",
+      "source_id": "e3ac3142-6678-47f8-9ee4-d6e761acf40a",
+      "target_id": "137648b8-5ae0-40ad-b701-5621ea1764ac",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-12T02:11:31.281676"
+    },
+    {
+      "id": "3486aeb8-ace7-4b28-9f02-1ad2bab120ba",
+      "source_id": "137648b8-5ae0-40ad-b701-5621ea1764ac",
+      "target_id": "9719c52d-8ebc-4091-a13f-62e8dd3f18b5",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-12T02:11:31.281676"
+    },
+    {
+      "id": "a2a64107-148c-4c8a-a343-40268e268d19",
+      "source_id": "e3ac3142-6678-47f8-9ee4-d6e761acf40a",
+      "target_id": "d0a5ca39-50a7-4721-971c-289862104ea0",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-12T02:11:31.281676"
+    },
+    {
+      "id": "934eff99-985f-4a4d-861f-bef16577f071",
+      "source_id": "d0a5ca39-50a7-4721-971c-289862104ea0",
+      "target_id": "b486a41a-74a4-4486-9637-7e26e018e637",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-12T02:11:31.281676"
+    },
+    {
+      "id": "c6e84adb-3ab9-43e9-8b6f-387caa68874e",
+      "source_id": "e3ac3142-6678-47f8-9ee4-d6e761acf40a",
+      "target_id": "fa40b37e-23c6-4a87-989e-4a02dd1648bf",
+      "edge_type": "MOTIVATES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-12T02:11:31.281676"
+    },
+    {
+      "id": "18ecdc95-885c-4bc4-af37-4fa7fa83e717",
+      "source_id": "fa40b37e-23c6-4a87-989e-4a02dd1648bf",
+      "target_id": "613c5866-d8b9-44ee-ad06-465f9a00a52a",
+      "edge_type": "OPERATIONALIZES",
+      "properties": {
+        "decision_type": "gap_filling"
+      },
+      "created_at": "2025-09-12T02:11:31.281676"
+    }
+  ],
+  "analytic_question": "e3ac3142-6678-47f8-9ee4-d6e761acf40a",
+  "created_at": "2025-09-12T02:11:35.912980"
+}

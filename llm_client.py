@@ -11,6 +11,15 @@ import json
 from typing import List, Dict, Any, Optional, Union
 from pydantic import BaseModel, Field
 from dotenv import load_dotenv
+from datetime import datetime
+
+# Import LLM call tracer
+try:
+    from .utils.llm_call_tracer import get_tracer
+    TRACER_AVAILABLE = True
+except ImportError:
+    TRACER_AVAILABLE = False
+    get_tracer = lambda: None
 
 # Import litellm with error handling
 try:
@@ -122,6 +131,36 @@ class LiteLLMClient:
         """
         if not LITELLM_AVAILABLE:
             raise RuntimeError("LiteLLM not available")
+        
+        # Track LLM call with enhanced visibility
+        tracer = get_tracer() if TRACER_AVAILABLE else None
+        call_id = None
+        data_size = sum(len(str(msg.get('content', ''))) for msg in messages)
+        purpose = "completion"
+        if 'purpose' in kwargs:
+            purpose = kwargs.pop('purpose')
+        
+        # Add stack trace for call source identification
+        import traceback
+        caller_info = traceback.extract_stack()[-3]  # Get the caller's info
+        caller_location = f"{caller_info.filename.split('/')[-1]}:{caller_info.lineno}:{caller_info.name}"
+        
+        # CONSOLE VISIBILITY - Print every LLM call in real-time
+        print(f"LLM CALL #{len(tracer.calls) + 1 if tracer else '?'}: {purpose}")
+        print(f"   Called from: {caller_location}")
+        print(f"   Model: {model}")
+        print(f"   Input size: {data_size} chars")
+        print(f"   Timestamp: {datetime.now().strftime('%H:%M:%S')}")
+        
+        if tracer:
+            call_id = tracer.start_call(
+                component="llm_client", 
+                purpose=purpose,
+                data_size=data_size,
+                model=model
+            )
+            # Add caller info to metadata
+            tracer.calls[call_id].metadata['caller_location'] = caller_location
             
         try:
             # Prepare parameters for direct litellm.completion call
@@ -228,9 +267,30 @@ class LiteLLMClient:
                     print(f"Raw content: {content[:200] if 'content' in locals() else 'None'}")
                     response.choices[0].message.parsed = None
             
+            # Track successful completion
+            response_size = len(str(response.choices[0].message.content)) if response.choices and response.choices[0].message else 0
+            duration_ms = (datetime.now().timestamp() - tracer.calls[call_id].timestamp.timestamp()) * 1000 if tracer and call_id is not None else 0
+            
+            print(f"LLM CALL COMPLETED: {purpose}")
+            print(f"   Response size: {response_size} chars")
+            print(f"   Duration: {duration_ms:.0f}ms")
+            print(f"   Total calls this session: {len(tracer.calls) if tracer else '?'}")
+            print("   " + "="*50)
+            
+            if tracer and call_id is not None:
+                tracer.end_call(call_id, success=True, metadata={'response_size': response_size})
+            
             return response
             
         except Exception as e:
+            # Track failed completion with console output
+            print(f"LLM CALL FAILED: {purpose}")
+            print(f"   Called from: {caller_location}")
+            print(f"   Error: {str(e)[:100]}")
+            print("   " + "="*50)
+            
+            if tracer and call_id is not None:
+                tracer.end_call(call_id, success=False, error=str(e))
             # Re-raise with more context
             raise RuntimeError(f"LiteLLM completion failed: {e}")
     
@@ -246,6 +306,10 @@ class LiteLLMClient:
         Returns:
             Response text content
         """
+        # Add purpose for simple completions if not provided
+        if 'purpose' not in kwargs:
+            kwargs['purpose'] = "simple_completion"
+            
         messages = [{"role": "user", "content": prompt}]
         response = self.completion(model, messages, **kwargs)
         

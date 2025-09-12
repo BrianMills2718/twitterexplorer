@@ -470,6 +470,18 @@ class InvestigationEngine:
             
         session = InvestigationSession(query, config)
         
+        # Initialize LLM call tracking and periodic summaries
+        try:
+            from utils.call_summary_logger import get_summary_logger
+            summary_logger = get_summary_logger()
+            print("INVESTIGATION STARTED - LLM call tracking enabled")
+            print(f"   Query: {query}")
+            print(f"   Call summaries every 60 seconds")
+            print("="*70)
+        except ImportError:
+            summary_logger = None
+            print("WARNING: LLM call tracking not available")
+        
         # CREATE: Investigation context for goal-aware processing
         investigation_context = InvestigationContext(
             analytic_question=query,
@@ -538,7 +550,7 @@ class InvestigationEngine:
             details_container = None
         
         # Send initial progress update
-        self.send_progress_update(f"🚀 Starting investigation: {query}", "info")
+        self.send_progress_update(f"Starting investigation: {query}", "info")
         
         try:
             while session.should_continue()[0]:
@@ -590,6 +602,10 @@ class InvestigationEngine:
                     attempt = self._execute_search(search_plan, search_id, current_round.round_number)
                     session.add_search_attempt(attempt)
                     round_results.append(attempt)
+                    
+                    # Periodic LLM call summary
+                    if 'summary_logger' in locals():
+                        summary_logger.maybe_print_summary()
                     
                     # Send result update
                     if attempt.results_count > 0:
@@ -726,6 +742,10 @@ class InvestigationEngine:
             # End logging session
             investigation_logger.end_session(session)
             
+            # Print final LLM call summary
+            if 'summary_logger' in locals():
+                summary_logger.print_final_summary()
+            
             # Automatically export graph after every investigation
             self._export_investigation_graph(session)
             
@@ -820,6 +840,14 @@ class InvestigationEngine:
                     source = node.properties.get("source", "Twitter")
                     relevance = node.properties.get("relevance_score", 0.5)
                     visualizer.add_datapoint_node(content, source, relevance, node.created_at.isoformat() if node.created_at else None)
+                elif node.node_type == "Insight":
+                    insight_content = node.properties.get("content", "Pattern detected")
+                    confidence = node.properties.get("confidence", 0.5)
+                    visualizer.add_insight_node(insight_content, confidence)
+                elif node.node_type == "EmergentQuestion":
+                    question_text = node.properties.get("text", "Generated question")
+                    priority = node.properties.get("priority", 0.5)
+                    visualizer.add_emergentquestion_node(question_text, priority)
             
             # Add edges - create a node ID mapping first
             node_id_map = {}  # Map from InvestigationGraph node IDs to GraphVisualizer node IDs

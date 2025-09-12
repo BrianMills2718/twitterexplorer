@@ -6,6 +6,14 @@ import json
 import re
 from collections import defaultdict, Counter
 
+# Import LLM call tracer
+try:
+    from .utils.llm_call_tracer import get_tracer
+    TRACER_AVAILABLE = True
+except ImportError:
+    TRACER_AVAILABLE = False
+    get_tracer = lambda: None
+
 @dataclass
 class Pattern:
     """Represents a detected pattern across multiple findings"""
@@ -304,9 +312,16 @@ class CrossReferenceAnalyzer:
             """
             
             model = self.model_manager.get_model_for_operation("cross_reference")
+            
+            # Track cross-reference analysis call
+            tracer = get_tracer() if TRACER_AVAILABLE else None
+            if tracer:
+                tracer.log_trigger("findings_ready", "cross_reference_analyzer", "contradiction_detection")
+            
             response = self.llm_client.completion(
                 model=model,
-                messages=[{"role": "user", "content": contradiction_prompt}]
+                messages=[{"role": "user", "content": contradiction_prompt}],
+                purpose="contradiction_detection"
             )
             
             response_content = response.choices[0].message.content
