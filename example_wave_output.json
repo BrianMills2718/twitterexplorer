@@ -1,0 +1,203 @@
+{
+  "investigation_id": "example-wave-investigation",
+  "investigation_goal": "analyze impact of AI emergent behaviors on society",
+  "wave_architecture": {
+    "total_waves": 3,
+    "wave_transition_logic": "emergent_question_driven",
+    "completion_criteria": "convergence_threshold_reached"
+  },
+  "waves": [
+    {
+      "wave_number": 1,
+      "wave_type": "initial_discovery",
+      "driving_questions": [
+        "analyze impact of AI emergent behaviors on society"
+      ],
+      "wave_duration": "2025-09-12T10:00:00 - 2025-09-12T10:15:00",
+      "searches_executed": 5,
+      "insights_generated": 8,
+      "emergent_questions_created": 12,
+      "satisfaction_achieved": 0.65,
+      "wave_summary": "Initial exploration revealed key debates around AI consciousness, economic disruption, and regulatory responses.",
+      "key_discoveries": [
+        "Public discourse split between optimists and pessimists on AI impact",
+        "Major focus on job displacement concerns",
+        "Regulatory frameworks lagging behind technological development"
+      ]
+    },
+    {
+      "wave_number": 2,
+      "wave_type": "targeted_investigation",
+      "driving_questions": [
+        "What specific policy responses are being proposed for AI regulation?",
+        "How are different industries adapting to AI disruption?",
+        "What are the technical differences between emergent and programmed AI behaviors?"
+      ],
+      "wave_duration": "2025-09-12T10:15:00 - 2025-09-12T10:30:00",
+      "searches_executed": 8,
+      "insights_generated": 6,
+      "emergent_questions_created": 9,
+      "satisfaction_achieved": 0.78,
+      "wave_summary": "Deep dive into policy landscape and technical distinctions revealed regulatory gaps and industry-specific impacts.",
+      "key_discoveries": [
+        "EU leading with comprehensive AI regulation framework",
+        "Healthcare and finance showing rapid AI adoption",
+        "Technical consensus emerging on emergent behavior detection methods"
+      ]
+    },
+    {
+      "wave_number": 3,
+      "wave_type": "synthesis_validation",
+      "driving_questions": [
+        "How do proposed EU regulations address emergent AI behaviors?",
+        "What are healthcare industry's specific AI safety measures?",
+        "Can current detection methods reliably identify emergent behaviors?"
+      ],
+      "wave_duration": "2025-09-12T10:30:00 - 2025-09-12T10:40:00",
+      "searches_executed": 6,
+      "insights_generated": 4,
+      "emergent_questions_created": 3,
+      "satisfaction_achieved": 0.85,
+      "wave_summary": "Final validation confirmed regulatory-technical alignment and identified remaining research gaps.",
+      "key_discoveries": [
+        "EU AI Act specifically addresses emergent capability monitoring",
+        "Healthcare implementing real-time AI behavior monitoring",
+        "Detection methods still limited to post-hoc analysis"
+      ]
+    }
+  ],
+  "nodes": {
+    "root-question": {
+      "id": "root-001",
+      "node_type": "AnalyticQuestion",
+      "properties": {
+        "text": "analyze impact of AI emergent behaviors on society",
+        "is_root": true,
+        "investigation_goal": "analyze impact of AI emergent behaviors on society"
+      },
+      "wave_assignment": 1
+    },
+    "wave-1-questions": [
+      {
+        "id": "wq1-001",
+        "node_type": "WaveQuestion",
+        "properties": {
+          "text": "What are current public perceptions of AI emergent behaviors?",
+          "wave_number": 1,
+          "driving_searches": ["search-001", "search-002"]
+        }
+      }
+    ],
+    "wave-1-searches": [
+      {
+        "id": "search-001",
+        "node_type": "SearchQuery",
+        "properties": {
+          "endpoint": "search.php",
+          "parameters": {"query": "AI emergent behavior public opinion", "search_type": "Top"},
+          "wave_number": 1,
+          "driven_by_question": "wq1-001"
+        }
+      }
+    ],
+    "wave-1-data": [
+      {
+        "id": "data-001",
+        "node_type": "DataPoint",
+        "properties": {
+          "content": "Poll shows 67% of Americans concerned about AI developing unexpected behaviors",
+          "wave_number": 1,
+          "relevance_to_wave_goal": 0.9
+        }
+      }
+    ],
+    "wave-1-insights": [
+      {
+        "id": "insight-001",
+        "node_type": "Insight",
+        "properties": {
+          "content": "Public opinion polarized between techno-optimists (35%) and AI safety advocates (65%) regarding emergent behaviors",
+          "wave_number": 1,
+          "cross_wave_relevance": 0.8,
+          "spawned_questions": ["eq-001", "eq-002", "eq-003"]
+        }
+      }
+    ],
+    "wave-1-emergent-questions": [
+      {
+        "id": "eq-001",
+        "node_type": "EmergentQuestion",
+        "properties": {
+          "text": "What specific policy responses are being proposed for AI regulation?",
+          "emergence_reason": "Public concern about AI safety implies need for regulatory response",
+          "drives_next_wave": true,
+          "selected_for_wave_2": true,
+          "priority": 0.9
+        }
+      },
+      {
+        "id": "eq-002",
+        "node_type": "EmergentQuestion",
+        "properties": {
+          "text": "How are different industries adapting to AI disruption?",
+          "emergence_reason": "Need to understand practical implementation beyond public opinion",
+          "drives_next_wave": true,
+          "selected_for_wave_2": true,
+          "priority": 0.8
+        }
+      }
+    ],
+    "wave-2-questions": [
+      {
+        "id": "wq2-001",
+        "node_type": "WaveQuestion",
+        "properties": {
+          "text": "What specific policy responses are being proposed for AI regulation?",
+          "wave_number": 2,
+          "derived_from_emergent_question": "eq-001",
+          "driving_searches": ["search-010", "search-011"]
+        }
+      }
+    ],
+    "wave-transitions": [
+      {
+        "id": "transition-1-2",
+        "node_type": "WaveTransition",
+        "properties": {
+          "from_wave": 1,
+          "to_wave": 2,
+          "transition_logic": "Top 3 emergent questions by priority become wave 2 driving questions",
+          "selected_questions": ["eq-001", "eq-002", "eq-003"],
+          "transition_timestamp": "2025-09-12T10:15:00"
+        }
+      }
+    ]
+  },
+  "edges": {
+    "wave_progression": [
+      {"source": "root-001", "target": "wq1-001", "edge_type": "INITIATES", "wave": 1},
+      {"source": "wq1-001", "target": "search-001", "edge_type": "DRIVES", "wave": 1},
+      {"source": "search-001", "target": "data-001", "edge_type": "YIELDS", "wave": 1},
+      {"source": "data-001", "target": "insight-001", "edge_type": "SUPPORTS", "wave": 1},
+      {"source": "insight-001", "target": "eq-001", "edge_type": "SPAWNS", "wave": 1},
+      {"source": "eq-001", "target": "wq2-001", "edge_type": "EVOLVES_TO", "wave_transition": "1->2"},
+      {"source": "wq2-001", "target": "search-010", "edge_type": "DRIVES", "wave": 2}
+    ]
+  },
+  "wave_metrics": {
+    "total_searches": 19,
+    "total_insights": 18,
+    "total_emergent_questions": 24,
+    "questions_driving_next_wave": 12,
+    "unused_questions": 12,
+    "investigation_depth_score": 0.82,
+    "wave_coherence_score": 0.91,
+    "final_satisfaction": 0.85
+  },
+  "convergence_evidence": {
+    "wave_3_question_reduction": "Only 3 new questions vs 12 in wave 1",
+    "insight_synthesis_stability": "Core themes consistent across waves 2-3",
+    "satisfaction_plateau": "Wave 2: 0.78, Wave 3: 0.85 (diminishing returns)",
+    "investigation_completeness": "85% of driving questions resolved with high confidence"
+  }
+}

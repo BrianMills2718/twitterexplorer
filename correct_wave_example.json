@@ -1,0 +1,218 @@
+{
+  "investigation_id": "correct-wave-example",
+  "investigation_goal": "does joe rogan propagate disinformation",
+  "wave_architecture": {
+    "total_waves": 3,
+    "wave_transition_logic": "emergent_questions_become_search_queries",
+    "completion_criteria": "emergent_questions_converging"
+  },
+  "waves": [
+    {
+      "wave_number": 1,
+      "wave_type": "initial_exploration",
+      "driving_questions": [
+        "does joe rogan propagate disinformation"
+      ],
+      "searches_executed": [
+        {"query": "joe rogan disinformation", "endpoint": "search.php"},
+        {"query": "joe rogan misinformation controversy", "endpoint": "search.php"},
+        {"query": "joe rogan fact check", "endpoint": "search.php"}
+      ],
+      "data_collected": [
+        "Spotify controversy over COVID misinformation claims",
+        "Neil Young pulls music in protest of Rogan",
+        "Rogan apologizes for some podcast content"
+      ],
+      "insights_generated": [
+        "Rogan controversy centers on COVID-19 vaccine skepticism and guest selection",
+        "Platform responsibility debate intensified by Rogan's reach (11M listeners)"
+      ],
+      "emergent_questions": [
+        "What specific COVID claims did Rogan make that experts disputed?",
+        "How do Rogan's guest selection patterns influence misinformation spread?",
+        "What was Spotify's internal decision-making process during the controversy?"
+      ]
+    },
+    {
+      "wave_number": 2,
+      "wave_type": "targeted_investigation",
+      "driving_questions": [
+        "What specific COVID claims did Rogan make that experts disputed?",
+        "How do Rogan's guest selection patterns influence misinformation spread?",
+        "What was Spotify's internal decision-making process during the controversy?"
+      ],
+      "searches_executed": [
+        {"query": "joe rogan COVID vaccine claims fact check", "endpoint": "search.php", "driven_by": "What specific COVID claims did Rogan make that experts disputed?"},
+        {"query": "joe rogan guests misinformation patterns", "endpoint": "search.php", "driven_by": "How do Rogan's guest selection patterns influence misinformation spread?"},
+        {"query": "spotify rogan controversy internal response", "endpoint": "search.php", "driven_by": "What was Spotify's internal decision-making process during the controversy?"}
+      ],
+      "data_collected": [
+        "Dr. Robert Malone interview promoted debunked 'mass formation psychosis' theory",
+        "Rogan hosted 12 COVID skeptics vs 2 mainstream medical experts in 2021",
+        "Spotify CEO defended Rogan while adding content advisories"
+      ],
+      "insights_generated": [
+        "Rogan's platform amplified fringe medical theories through guest imbalance (12:2 ratio)",
+        "Spotify chose content labeling over content removal as compromise solution"
+      ],
+      "emergent_questions": [
+        "How did the 'mass formation psychosis' theory spread after Rogan's platform?",
+        "What impact did Spotify's content advisory approach have on misinformation spread?",
+        "How do other podcast platforms handle similar misinformation controversies?"
+      ]
+    },
+    {
+      "wave_number": 3,
+      "wave_type": "convergence_validation",
+      "driving_questions": [
+        "How did the 'mass formation psychosis' theory spread after Rogan's platform?",
+        "What impact did Spotify's content advisory approach have on misinformation spread?",
+        "How do other podcast platforms handle similar misinformation controversies?"
+      ],
+      "searches_executed": [
+        {"query": "mass formation psychosis viral spread after rogan", "endpoint": "search.php", "driven_by": "How did the 'mass formation psychosis' theory spread after Rogan's platform?"},
+        {"query": "spotify content advisory effectiveness misinformation", "endpoint": "search.php", "driven_by": "What impact did Spotify's content advisory approach have on misinformation spread?"},
+        {"query": "apple podcasts youtube misinformation policy comparison", "endpoint": "search.php", "driven_by": "How do other podcast platforms handle similar misinformation controversies?"}
+      ],
+      "data_collected": [
+        "Google searches for 'mass formation psychosis' increased 1000% week after Malone interview",
+        "Spotify advisories resulted in 15% decrease in controversial episode shares",
+        "YouTube removed Rogan episodes while Apple Podcasts kept with disclaimers"
+      ],
+      "insights_generated": [
+        "Rogan's platform demonstrably amplified fringe theories (1000% search increase)",
+        "Content advisories partially effective but didn't prevent viral spread"
+      ],
+      "emergent_questions": [
+        "What long-term impact did Rogan's COVID coverage have on public health?",
+        "How effective are content advisories compared to content removal?"
+      ]
+    }
+  ],
+  "investigation_flow_demonstration": {
+    "wave_1_insight": "Rogan controversy centers on COVID-19 vaccine skepticism and guest selection",
+    "spawned_emergent_question": "What specific COVID claims did Rogan make that experts disputed?",
+    "becomes_wave_2_search": "joe rogan COVID vaccine claims fact check",
+    "wave_2_data": "Dr. Robert Malone interview promoted debunked 'mass formation psychosis' theory",
+    "wave_2_insight": "Rogan's platform amplified fringe medical theories through guest imbalance (12:2 ratio)",
+    "spawned_emergent_question": "How did the 'mass formation psychosis' theory spread after Rogan's platform?",
+    "becomes_wave_3_search": "mass formation psychosis viral spread after rogan",
+    "wave_3_data": "Google searches for 'mass formation psychosis' increased 1000% week after Malone interview",
+    "wave_3_insight": "Rogan's platform demonstrably amplified fringe theories (1000% search increase)"
+  },
+  "true_dependency_chain": {
+    "Wave_1": {
+      "input": "Original investigation question",
+      "process": "Broad exploration searches",
+      "output": "General insights + specific emergent questions"
+    },
+    "Wave_2": {
+      "input": "Wave 1's emergent questions (become search queries)",
+      "process": "Targeted searches based on Wave 1 discoveries",
+      "output": "Deeper insights + more specific emergent questions"
+    },
+    "Wave_3": {
+      "input": "Wave 2's emergent questions (become search queries)",
+      "process": "Validation searches based on Wave 2 discoveries",
+      "output": "Validated conclusions + diminishing new questions"
+    }
+  },
+  "nodes": {
+    "wave_1_insight_001": {
+      "id": "w1_insight_001",
+      "node_type": "Insight",
+      "wave": 1,
+      "content": "Rogan controversy centers on COVID-19 vaccine skepticism and guest selection",
+      "spawns_emergent_questions": ["eq_w1_001", "eq_w1_002", "eq_w1_003"]
+    },
+    "eq_w1_001": {
+      "id": "eq_w1_001",
+      "node_type": "EmergentQuestion",
+      "wave": 1,
+      "text": "What specific COVID claims did Rogan make that experts disputed?",
+      "becomes_wave_2_search": "w2_search_001"
+    },
+    "w2_search_001": {
+      "id": "w2_search_001",
+      "node_type": "SearchQuery",
+      "wave": 2,
+      "query": "joe rogan COVID vaccine claims fact check",
+      "driven_by_emergent_question": "eq_w1_001",
+      "yields_data": ["w2_data_001"]
+    },
+    "w2_data_001": {
+      "id": "w2_data_001",
+      "node_type": "DataPoint",
+      "wave": 2,
+      "content": "Dr. Robert Malone interview promoted debunked 'mass formation psychosis' theory",
+      "supports_insight": "w2_insight_001"
+    },
+    "w2_insight_001": {
+      "id": "w2_insight_001",
+      "node_type": "Insight",
+      "wave": 2,
+      "content": "Rogan's platform amplified fringe medical theories through guest imbalance (12:2 ratio)",
+      "built_on_wave_1_discovery": "w1_insight_001",
+      "spawns_emergent_questions": ["eq_w2_001"]
+    },
+    "eq_w2_001": {
+      "id": "eq_w2_001",
+      "node_type": "EmergentQuestion",
+      "wave": 2,
+      "text": "How did the 'mass formation psychosis' theory spread after Rogan's platform?",
+      "becomes_wave_3_search": "w3_search_001"
+    },
+    "w3_search_001": {
+      "id": "w3_search_001",
+      "node_type": "SearchQuery",
+      "wave": 3,
+      "query": "mass formation psychosis viral spread after rogan",
+      "driven_by_emergent_question": "eq_w2_001",
+      "yields_data": ["w3_data_001"]
+    },
+    "w3_data_001": {
+      "id": "w3_data_001",
+      "node_type": "DataPoint",
+      "wave": 3,
+      "content": "Google searches for 'mass formation psychosis' increased 1000% week after Malone interview",
+      "supports_insight": "w3_insight_001"
+    },
+    "w3_insight_001": {
+      "id": "w3_insight_001",
+      "node_type": "Insight",
+      "wave": 3,
+      "content": "Rogan's platform demonstrably amplified fringe theories (1000% search increase)",
+      "built_on_wave_2_discovery": "w2_insight_001",
+      "validates_investigation_hypothesis": true
+    }
+  },
+  "edges": {
+    "dependency_chain": [
+      {"source": "w1_insight_001", "target": "eq_w1_001", "edge_type": "SPAWNS", "wave_boundary": false},
+      {"source": "eq_w1_001", "target": "w2_search_001", "edge_type": "DRIVES_SEARCH", "wave_boundary": true},
+      {"source": "w2_search_001", "target": "w2_data_001", "edge_type": "YIELDS", "wave_boundary": false},
+      {"source": "w2_data_001", "target": "w2_insight_001", "edge_type": "SUPPORTS", "wave_boundary": false},
+      {"source": "w2_insight_001", "target": "eq_w2_001", "edge_type": "SPAWNS", "wave_boundary": false},
+      {"source": "eq_w2_001", "target": "w3_search_001", "edge_type": "DRIVES_SEARCH", "wave_boundary": true},
+      {"source": "w3_search_001", "target": "w3_data_001", "edge_type": "YIELDS", "wave_boundary": false},
+      {"source": "w3_data_001", "target": "w3_insight_001", "edge_type": "SUPPORTS", "wave_boundary": false}
+    ]
+  },
+  "wave_convergence_evidence": {
+    "diminishing_questions": {
+      "wave_1": "12 emergent questions generated",
+      "wave_2": "6 emergent questions generated",
+      "wave_3": "2 emergent questions generated"
+    },
+    "increasing_specificity": {
+      "wave_1_question": "does joe rogan propagate disinformation",
+      "wave_2_question": "What specific COVID claims did Rogan make that experts disputed?",
+      "wave_3_question": "How did the 'mass formation psychosis' theory spread after Rogan's platform?"
+    },
+    "evidence_quality_progression": {
+      "wave_1": "General controversy patterns identified",
+      "wave_2": "Specific claims and ratios documented",
+      "wave_3": "Quantifiable impact measured (1000% increase)"
+    }
+  }
+}

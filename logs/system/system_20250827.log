@@ -2,9 +2,9 @@
 2025-08-27 10:16:31,422 - INFO - Started investigation session 50649578-becb-4687-986f-b1df69faea1a for query: What is Elon Musk's latest announcement about X pl...
 2025-08-27 10:16:31,422 - INFO - DIAGNOSTIC: Prompt size: 6843 chars, 793 words
 2025-08-27 10:16:31,422 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
-2025-08-27 10:16:31,432 - INFO - 
+2025-08-27 10:16:31,432 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 10:16:36,257 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 10:16:36,257 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 10:16:36,259 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 10:16:36,261 - INFO - DIAGNOSTIC: Raw LLM response captured
 2025-08-27 10:16:36,261 - INFO - DIAGNOSTIC: Decision type: gap_filling
@@ -21,18 +21,18 @@ LiteLLM completion() model= gemini-2.5-flash; provider = gemini
 2025-08-27 10:16:36,262 - INFO - DIAGNOSTIC: Search 3 - Reasoning: This search retrieves Elon Musk's user profile information. While not directly an announcement, it c...
 2025-08-27 10:16:36,262 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
 2025-08-27 10:16:36,262 - INFO - DIAGNOSTIC: Endpoints used: ['search.php', 'timeline.php', 'screenname.php']
-2025-08-27 10:16:52,378 - INFO - 
+2025-08-27 10:16:52,378 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 10:17:02,713 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 10:17:02,713 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 10:17:02,715 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 10:17:02,719 - INFO - Completed investigation session 50649578-becb-4687-986f-b1df69faea1a - 2 searches, 60 results
 2025-08-27 14:32:17,630 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
 2025-08-27 14:32:19,202 - INFO - Started investigation session 03d8baed-4e1e-420c-a3a4-ecb9ab528da0 for query: What is Elon Musk's latest announcement about X pl...
 2025-08-27 14:32:19,203 - INFO - DIAGNOSTIC: Prompt size: 6843 chars, 793 words
 2025-08-27 14:32:19,203 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
-2025-08-27 14:32:19,213 - INFO - 
+2025-08-27 14:32:19,213 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 14:32:24,270 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 14:32:24,270 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 14:32:24,272 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 14:32:24,274 - INFO - DIAGNOSTIC: Raw LLM response captured
 2025-08-27 14:32:24,274 - INFO - DIAGNOSTIC: Decision type: gap_filling
@@ -54,9 +54,9 @@ LiteLLM completion() model= gemini-2.5-flash; provider = gemini
 2025-08-27 15:29:43,904 - INFO - Started investigation session 90ddcdeb-7368-4bef-854d-58296bed4650 for query: What is Elon Musk's latest announcement about X pl...
 2025-08-27 15:29:43,905 - INFO - DIAGNOSTIC: Prompt size: 6843 chars, 793 words
 2025-08-27 15:29:43,905 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
-2025-08-27 15:29:43,915 - INFO - 
+2025-08-27 15:29:43,915 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 15:29:51,977 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 15:29:51,977 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 15:29:51,979 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 15:29:51,982 - INFO - DIAGNOSTIC: Raw LLM response captured
 2025-08-27 15:29:51,982 - INFO - DIAGNOSTIC: Decision type: gap_filling
@@ -75,9 +75,9 @@ LiteLLM completion() model= gemini-2.5-flash; provider = gemini
 2025-08-27 15:49:41,248 - INFO - Started investigation session 4d1e9a2c-37f2-4bac-8397-decb9c3ba935 for query: What is Elon Musk's latest announcement about X pl...
 2025-08-27 15:49:41,248 - INFO - DIAGNOSTIC: Prompt size: 6843 chars, 793 words
 2025-08-27 15:49:41,248 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
-2025-08-27 15:49:41,257 - INFO - 
+2025-08-27 15:49:41,257 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 15:49:53,201 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 15:49:53,201 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 15:49:53,203 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 15:49:53,205 - INFO - DIAGNOSTIC: Raw LLM response captured
 2025-08-27 15:49:53,206 - INFO - DIAGNOSTIC: Decision type: gap_filling
@@ -99,9 +99,9 @@ LiteLLM completion() model= gemini-2.5-flash; provider = gemini
 2025-08-27 15:52:00,026 - INFO - Started investigation session 13818e7b-689c-47e4-9e51-e135457ed8a0 for query: What is Elon Musk's latest announcement about X pl...
 2025-08-27 15:52:00,026 - INFO - DIAGNOSTIC: Prompt size: 6843 chars, 793 words
 2025-08-27 15:52:00,026 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
-2025-08-27 15:52:00,035 - INFO - 
+2025-08-27 15:52:00,035 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 15:52:07,486 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 15:52:07,486 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 15:52:07,488 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 15:52:07,490 - INFO - DIAGNOSTIC: Raw LLM response captured
 2025-08-27 15:52:07,491 - INFO - DIAGNOSTIC: Decision type: gap_filling
@@ -118,27 +118,27 @@ LiteLLM completion() model= gemini-2.5-flash; provider = gemini
 2025-08-27 15:52:07,491 - INFO - DIAGNOSTIC: Search 3 - Reasoning: To verify the correct Twitter handle for Elon Musk and gather basic profile information. This serves...
 2025-08-27 15:52:07,491 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
 2025-08-27 15:52:07,491 - INFO - DIAGNOSTIC: Endpoints used: ['timeline.php', 'search.php', 'screenname.php']
-2025-08-27 15:52:24,980 - INFO - 
+2025-08-27 15:52:24,980 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 15:52:51,167 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 15:52:51,167 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 15:52:51,168 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 15:52:51,170 - INFO - Completed investigation session 13818e7b-689c-47e4-9e51-e135457ed8a0 - 2 searches, 113 results
 2025-08-27 16:20:43,082 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
-2025-08-27 16:20:44,602 - INFO - 
+2025-08-27 16:20:44,602 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:20:50,705 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:20:50,705 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:20:50,706 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 16:21:19,877 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
-2025-08-27 16:21:21,416 - INFO - 
+2025-08-27 16:21:21,416 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:21:27,199 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:21:27,199 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:21:27,201 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 16:21:27,225 - INFO - Started investigation session fbf72524-5750-4a5d-b47b-0739e5b9dc0d for query: What is Elon Musk announcing about X platform?...
 2025-08-27 16:21:27,225 - INFO - DIAGNOSTIC: Prompt size: 6832 chars, 792 words
 2025-08-27 16:21:27,225 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
-2025-08-27 16:21:27,229 - INFO - 
+2025-08-27 16:21:27,229 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:21:31,413 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:21:31,413 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:21:31,414 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 16:21:31,415 - INFO - DIAGNOSTIC: Raw LLM response captured
 2025-08-27 16:21:31,416 - INFO - DIAGNOSTIC: Decision type: gap_filling
@@ -155,18 +155,18 @@ LiteLLM completion() model= gemini-2.5-flash; provider = gemini
 2025-08-27 16:21:31,417 - INFO - DIAGNOSTIC: Search 3 - Reasoning: Checking trending topics in a key region like the United States can indicate if any announcements re...
 2025-08-27 16:21:31,417 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
 2025-08-27 16:21:31,417 - INFO - DIAGNOSTIC: Endpoints used: ['timeline.php', 'search.php', 'trends.php']
-2025-08-27 16:21:41,177 - INFO - 
+2025-08-27 16:21:41,177 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:22:07,395 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:22:07,395 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:22:07,396 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 16:22:07,399 - INFO - Completed investigation session fbf72524-5750-4a5d-b47b-0739e5b9dc0d - 1 searches, 59 results
 2025-08-27 16:22:48,385 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
 2025-08-27 16:22:49,911 - INFO - Started investigation session 9776f37a-4adc-49eb-993d-5d475105e337 for query: Test investigation...
 2025-08-27 16:22:49,911 - INFO - DIAGNOSTIC: Prompt size: 6804 chars, 786 words
 2025-08-27 16:22:49,911 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
-2025-08-27 16:22:49,920 - INFO - 
+2025-08-27 16:22:49,920 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:22:58,821 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:22:58,821 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:22:58,823 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 16:22:58,825 - INFO - DIAGNOSTIC: Raw LLM response captured
 2025-08-27 16:22:58,825 - INFO - DIAGNOSTIC: Decision type: gap_filling
@@ -183,18 +183,18 @@ LiteLLM completion() model= gemini-2.5-flash; provider = gemini
 2025-08-27 16:22:58,826 - INFO - DIAGNOSTIC: Search 3 - Reasoning: To gain insight into the recent activities, announcements, and focus areas of a prominent and reputa...
 2025-08-27 16:22:58,826 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
 2025-08-27 16:22:58,826 - INFO - DIAGNOSTIC: Endpoints used: ['search.php', 'trends.php', 'timeline.php']
-2025-08-27 16:23:11,057 - INFO - 
+2025-08-27 16:23:11,057 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:23:52,923 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:23:52,923 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:23:52,924 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 16:23:52,926 - INFO - Completed investigation session 9776f37a-4adc-49eb-993d-5d475105e337 - 1 searches, 58 results
 2025-08-27 16:24:39,735 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
 2025-08-27 16:24:41,369 - INFO - Started investigation session 5271e3c2-5ac6-4f08-ae98-804d858a4ec7 for query: Test raw results debug...
 2025-08-27 16:24:41,369 - INFO - DIAGNOSTIC: Prompt size: 6808 chars, 788 words
 2025-08-27 16:24:41,369 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
-2025-08-27 16:24:41,379 - INFO - 
+2025-08-27 16:24:41,379 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:24:51,301 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:24:51,301 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:24:51,303 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 16:24:51,305 - INFO - DIAGNOSTIC: Raw LLM response captured
 2025-08-27 16:24:51,305 - INFO - DIAGNOSTIC: Decision type: gap_filling
@@ -211,18 +211,18 @@ LiteLLM completion() model= gemini-2.5-flash; provider = gemini
 2025-08-27 16:24:51,306 - INFO - DIAGNOSTIC: Search 3 - Reasoning: To obtain detailed profile information for a prominent global news organization. This search tests u...
 2025-08-27 16:24:51,306 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
 2025-08-27 16:24:51,306 - INFO - DIAGNOSTIC: Endpoints used: ['trends.php', 'search.php', 'screenname.php']
-2025-08-27 16:24:55,551 - INFO - 
+2025-08-27 16:24:55,551 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:25:14,425 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:25:14,425 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:25:14,426 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 16:25:14,428 - INFO - Completed investigation session 5271e3c2-5ac6-4f08-ae98-804d858a4ec7 - 1 searches, 50 results
 2025-08-27 16:25:47,476 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
 2025-08-27 16:25:49,031 - INFO - Started investigation session d2254ba4-418b-4618-bc71-d6628e7c7a8d for query: Test deep evaluation...
 2025-08-27 16:25:49,031 - INFO - DIAGNOSTIC: Prompt size: 6806 chars, 787 words
 2025-08-27 16:25:49,031 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
-2025-08-27 16:25:49,039 - INFO - 
+2025-08-27 16:25:49,039 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:25:56,522 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:25:56,522 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:25:56,524 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 16:25:56,527 - INFO - DIAGNOSTIC: Raw LLM response captured
 2025-08-27 16:25:56,527 - INFO - DIAGNOSTIC: Decision type: gap_filling
@@ -239,26 +239,26 @@ LiteLLM completion() model= gemini-2.5-flash; provider = gemini
 2025-08-27 16:25:56,528 - INFO - DIAGNOSTIC: Search 3 - Reasoning: To gather foundational profile information about a prominent organization associated with a high-imp...
 2025-08-27 16:25:56,528 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
 2025-08-27 16:25:56,528 - INFO - DIAGNOSTIC: Endpoints used: ['trends.php', 'search.php', 'screenname.php']
-2025-08-27 16:26:00,679 - INFO - 
+2025-08-27 16:26:00,679 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:26:08,395 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:26:08,395 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:26:08,396 - INFO - Wrapper: Completed Call, calling success_handler
-2025-08-27 16:26:08,398 - INFO - 
+2025-08-27 16:26:08,398 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:26:35,550 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:26:35,550 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:26:35,551 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 16:26:35,553 - INFO - Completed investigation session d2254ba4-418b-4618-bc71-d6628e7c7a8d - 1 searches, 50 results
 2025-08-27 16:27:44,024 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
-2025-08-27 16:27:45,573 - INFO - 
+2025-08-27 16:27:45,573 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:27:52,136 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:27:52,136 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:27:52,138 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 16:27:52,146 - INFO - Started investigation session b217fb8f-f822-4791-b052-b157da0e0ef2 for query: What is Elon Musk announcing about X platform?...
 2025-08-27 16:27:52,146 - INFO - DIAGNOSTIC: Prompt size: 6832 chars, 792 words
 2025-08-27 16:27:52,146 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
-2025-08-27 16:27:52,150 - INFO - 
+2025-08-27 16:27:52,150 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:28:02,298 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:28:02,298 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:28:02,299 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 16:28:02,300 - INFO - DIAGNOSTIC: Raw LLM response captured
 2025-08-27 16:28:02,301 - INFO - DIAGNOSTIC: Decision type: gap_filling
@@ -275,22 +275,22 @@ LiteLLM completion() model= gemini-2.5-flash; provider = gemini
 2025-08-27 16:28:02,302 - INFO - DIAGNOSTIC: Search 3 - Reasoning: This search will retrieve media (images, videos) posted by the official X account. Announcements are...
 2025-08-27 16:28:02,302 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
 2025-08-27 16:28:02,302 - INFO - DIAGNOSTIC: Endpoints used: ['timeline.php', 'search.php', 'usermedia.php']
-2025-08-27 16:28:11,596 - INFO - 
+2025-08-27 16:28:11,596 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:28:39,315 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:28:39,315 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:28:39,316 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 16:28:39,318 - INFO - Completed investigation session b217fb8f-f822-4791-b052-b157da0e0ef2 - 1 searches, 59 results
 2025-08-27 16:29:13,430 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
-2025-08-27 16:29:14,957 - INFO - 
+2025-08-27 16:29:14,957 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:29:20,418 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:29:20,418 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:29:20,420 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 16:29:20,428 - INFO - Started investigation session a33b84c2-7552-456c-bee8-6ca3c5252628 for query: What is Elon Musk announcing about X platform?...
 2025-08-27 16:29:20,429 - INFO - DIAGNOSTIC: Prompt size: 6832 chars, 792 words
 2025-08-27 16:29:20,429 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
-2025-08-27 16:29:20,432 - INFO - 
+2025-08-27 16:29:20,432 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:29:25,996 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:29:25,996 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:29:25,997 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 16:29:25,998 - INFO - DIAGNOSTIC: Raw LLM response captured
 2025-08-27 16:29:25,999 - INFO - DIAGNOSTIC: Decision type: gap_filling
@@ -307,18 +307,18 @@ LiteLLM completion() model= gemini-2.5-flash; provider = gemini
 2025-08-27 16:29:25,999 - INFO - DIAGNOSTIC: Search 3 - Reasoning: Announcements, especially those related to platform features or changes, often involve visual elemen...
 2025-08-27 16:29:25,999 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
 2025-08-27 16:29:26,000 - INFO - DIAGNOSTIC: Endpoints used: ['timeline.php', 'search.php', 'usermedia.php']
-2025-08-27 16:29:34,823 - INFO - 
+2025-08-27 16:29:34,823 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:29:56,094 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:29:56,094 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:29:56,095 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 16:29:56,098 - INFO - Completed investigation session a33b84c2-7552-456c-bee8-6ca3c5252628 - 1 searches, 59 results
 2025-08-27 16:30:27,512 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
 2025-08-27 16:30:29,050 - INFO - Started investigation session fb21928a-b80b-41c5-b27c-687ce7f0d20a for query: Debug findings creation...
 2025-08-27 16:30:29,051 - INFO - DIAGNOSTIC: Prompt size: 6809 chars, 787 words
 2025-08-27 16:30:29,051 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
-2025-08-27 16:30:29,060 - INFO - 
+2025-08-27 16:30:29,060 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:30:38,020 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:30:38,020 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:30:38,022 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 16:30:38,024 - INFO - DIAGNOSTIC: Raw LLM response captured
 2025-08-27 16:30:38,024 - INFO - DIAGNOSTIC: Decision type: gap_filling
@@ -335,22 +335,22 @@ LiteLLM completion() model= gemini-2.5-flash; provider = gemini
 2025-08-27 16:30:38,025 - INFO - DIAGNOSTIC: Search 3 - Reasoning: To analyze how a leading investigative journalism organization presents its findings, the types of s...
 2025-08-27 16:30:38,025 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
 2025-08-27 16:30:38,025 - INFO - DIAGNOSTIC: Endpoints used: ['trends.php', 'search.php', 'timeline.php']
-2025-08-27 16:30:43,434 - INFO - 
+2025-08-27 16:30:43,434 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:30:48,681 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:30:48,681 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:30:48,682 - INFO - Wrapper: Completed Call, calling success_handler
-2025-08-27 16:30:48,682 - INFO - 
+2025-08-27 16:30:48,682 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:31:08,396 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:31:08,396 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:31:08,402 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 16:31:08,404 - INFO - Completed investigation session fb21928a-b80b-41c5-b27c-687ce7f0d20a - 1 searches, 50 results
 2025-08-27 16:31:37,073 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
 2025-08-27 16:31:38,566 - INFO - Started investigation session 807df6ea-d524-428c-b9c7-aba105999f36 for query: What is Elon Musk saying about artificial intellig...
 2025-08-27 16:31:38,567 - INFO - DIAGNOSTIC: Prompt size: 6840 chars, 792 words
 2025-08-27 16:31:38,567 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
-2025-08-27 16:31:38,575 - INFO - 
+2025-08-27 16:31:38,575 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:31:44,293 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:31:44,293 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:31:44,294 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 16:31:44,296 - INFO - DIAGNOSTIC: Raw LLM response captured
 2025-08-27 16:31:44,297 - INFO - DIAGNOSTIC: Decision type: gap_filling
@@ -367,22 +367,22 @@ LiteLLM completion() model= gemini-2.5-flash; provider = gemini
 2025-08-27 16:31:44,297 - INFO - DIAGNOSTIC: Search 3 - Reasoning: Obtaining Elon Musk's profile information is a foundational step. It provides essential metadata abo...
 2025-08-27 16:31:44,297 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
 2025-08-27 16:31:44,297 - INFO - DIAGNOSTIC: Endpoints used: ['search.php', 'timeline.php', 'screenname.php']
-2025-08-27 16:31:53,117 - INFO - 
+2025-08-27 16:31:53,117 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:32:23,483 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:32:23,483 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:32:23,484 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 16:32:23,487 - INFO - Completed investigation session 807df6ea-d524-428c-b9c7-aba105999f36 - 1 searches, 60 results
-2025-08-27 16:32:23,487 - INFO - 
+2025-08-27 16:32:23,487 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:32:31,220 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:32:31,220 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:32:31,220 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 16:33:06,938 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
 2025-08-27 16:33:08,455 - INFO - Started investigation session 6cc39617-a764-4858-9f0d-3f8a6ec1525c for query: What is Elon Musk saying about AI...
 2025-08-27 16:33:08,455 - INFO - DIAGNOSTIC: Prompt size: 6819 chars, 791 words
 2025-08-27 16:33:08,455 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
-2025-08-27 16:33:08,464 - INFO - 
+2025-08-27 16:33:08,464 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:33:18,975 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:33:18,975 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:33:18,977 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 16:33:18,979 - INFO - DIAGNOSTIC: Raw LLM response captured
 2025-08-27 16:33:18,979 - INFO - DIAGNOSTIC: Decision type: gap_filling
@@ -399,18 +399,18 @@ LiteLLM completion() model= gemini-2.5-flash; provider = gemini
 2025-08-27 16:33:18,980 - INFO - DIAGNOSTIC: Search 3 - Reasoning: Understanding who Elon Musk follows can provide crucial context about his sources of information, co...
 2025-08-27 16:33:18,980 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
 2025-08-27 16:33:18,980 - INFO - DIAGNOSTIC: Endpoints used: ['search.php', 'timeline.php', 'following.php']
-2025-08-27 16:33:27,052 - INFO - 
+2025-08-27 16:33:27,052 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:34:01,485 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:34:01,485 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:34:01,486 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 16:34:01,489 - INFO - Completed investigation session 6cc39617-a764-4858-9f0d-3f8a6ec1525c - 1 searches, 60 results
 2025-08-27 16:34:31,121 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
 2025-08-27 16:34:32,596 - INFO - Started investigation session 03106067-1942-4962-94f5-7350b971b5f9 for query: What is Elon Musk saying about AI...
 2025-08-27 16:34:32,597 - INFO - DIAGNOSTIC: Prompt size: 6819 chars, 791 words
 2025-08-27 16:34:32,597 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
-2025-08-27 16:34:32,605 - INFO - 
+2025-08-27 16:34:32,605 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:34:37,312 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:34:37,312 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:34:37,324 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 16:34:37,326 - INFO - DIAGNOSTIC: Raw LLM response captured
 2025-08-27 16:34:37,326 - INFO - DIAGNOSTIC: Decision type: gap_filling
@@ -427,22 +427,22 @@ LiteLLM completion() model= gemini-2.5-flash; provider = gemini
 2025-08-27 16:34:37,327 - INFO - DIAGNOSTIC: Search 3 - Reasoning: By examining who Elon Musk follows, particularly for accounts related to AI, technology, or science,...
 2025-08-27 16:34:37,327 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
 2025-08-27 16:34:37,327 - INFO - DIAGNOSTIC: Endpoints used: ['search.php', 'timeline.php', 'following.php']
-2025-08-27 16:34:47,273 - INFO - 
+2025-08-27 16:34:47,273 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:35:33,462 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:35:33,462 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:35:33,463 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 16:35:33,466 - INFO - Completed investigation session 03106067-1942-4962-94f5-7350b971b5f9 - 1 searches, 60 results
 2025-08-27 16:35:44,920 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
-2025-08-27 16:35:46,403 - INFO - 
+2025-08-27 16:35:46,403 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:35:51,807 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:35:51,807 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:35:51,809 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 16:35:51,819 - INFO - Started investigation session 23f75a5c-8c95-4691-bc43-55186b2a4586 for query: What is Elon Musk announcing about X platform?...
 2025-08-27 16:35:51,819 - INFO - DIAGNOSTIC: Prompt size: 6832 chars, 792 words
 2025-08-27 16:35:51,819 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
-2025-08-27 16:35:51,823 - INFO - 
+2025-08-27 16:35:51,823 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:35:59,260 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:35:59,260 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:35:59,266 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 16:35:59,266 - INFO - DIAGNOSTIC: Raw LLM response captured
 2025-08-27 16:35:59,267 - INFO - DIAGNOSTIC: Decision type: gap_filling
@@ -462,26 +462,26 @@ LiteLLM completion() model= gemini-2.5-flash; provider = gemini
 2025-08-27 16:35:59,268 - INFO - DIAGNOSTIC: Search 4 - Reasoning: To identify if any recent announcements or developments related to Elon Musk or the X platform are g...
 2025-08-27 16:35:59,268 - INFO - DIAGNOSTIC: Endpoint diversity score: 0.78
 2025-08-27 16:35:59,268 - INFO - DIAGNOSTIC: Endpoints used: ['timeline.php', 'search.php', 'trends.php']
-2025-08-27 16:36:07,953 - INFO - 
+2025-08-27 16:36:07,953 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:36:21,027 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:36:21,027 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:36:21,028 - INFO - Wrapper: Completed Call, calling success_handler
-2025-08-27 16:36:21,030 - INFO - 
+2025-08-27 16:36:21,030 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:36:38,369 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:36:38,369 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:36:38,369 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 16:36:38,371 - INFO - Completed investigation session 23f75a5c-8c95-4691-bc43-55186b2a4586 - 1 searches, 59 results
 2025-08-27 16:37:25,691 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
-2025-08-27 16:37:27,173 - INFO - 
+2025-08-27 16:37:27,173 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:37:32,488 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:37:32,488 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:37:32,490 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 16:37:32,498 - INFO - Started investigation session 219ddad1-8a05-492e-96b5-1985ee09eec8 for query: What is Elon Musk announcing about X platform?...
 2025-08-27 16:37:32,498 - INFO - DIAGNOSTIC: Prompt size: 6832 chars, 792 words
 2025-08-27 16:37:32,498 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
-2025-08-27 16:37:32,502 - INFO - 
+2025-08-27 16:37:32,502 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:37:38,969 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:37:38,969 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:37:38,970 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 16:37:38,970 - INFO - DIAGNOSTIC: Raw LLM response captured
 2025-08-27 16:37:38,971 - INFO - DIAGNOSTIC: Decision type: gap_filling
@@ -498,22 +498,22 @@ LiteLLM completion() model= gemini-2.5-flash; provider = gemini
 2025-08-27 16:37:38,972 - INFO - DIAGNOSTIC: Search 3 - Reasoning: Important announcements, especially concerning product features or visual changes to a platform, are...
 2025-08-27 16:37:38,972 - INFO - DIAGNOSTIC: Endpoint diversity score: 1.00
 2025-08-27 16:37:38,972 - INFO - DIAGNOSTIC: Endpoints used: ['timeline.php', 'search.php', 'usermedia.php']
-2025-08-27 16:37:51,781 - INFO - 
+2025-08-27 16:37:51,781 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:38:13,772 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:38:13,772 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:38:13,773 - INFO - Wrapper: Completed Call, calling success_handler
-2025-08-27 16:38:13,775 - INFO - 
+2025-08-27 16:38:13,775 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:38:26,135 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:38:26,135 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:38:26,136 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 16:38:26,138 - INFO - Completed investigation session 219ddad1-8a05-492e-96b5-1985ee09eec8 - 1 searches, 59 results
 2025-08-27 16:39:09,975 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
 2025-08-27 16:39:11,465 - INFO - Started investigation session 4093d99d-b119-475a-a0c4-0c855d225047 for query: find me different takes on the current trump epste...
 2025-08-27 16:39:11,465 - INFO - DIAGNOSTIC: Prompt size: 6844 chars, 794 words
 2025-08-27 16:39:11,465 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
-2025-08-27 16:39:11,474 - INFO - 
+2025-08-27 16:39:11,474 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:39:18,661 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:39:18,661 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:39:18,664 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 16:39:18,666 - INFO - DIAGNOSTIC: Raw LLM response captured
 2025-08-27 16:39:18,666 - INFO - DIAGNOSTIC: Decision type: gap_filling
@@ -530,26 +530,26 @@ LiteLLM completion() model= gemini-2.5-flash; provider = gemini
 2025-08-27 16:39:18,666 - INFO - DIAGNOSTIC: Search 3 - Reasoning: Fox News typically offers a conservative perspective and is often supportive of Donald Trump. Examin...
 2025-08-27 16:39:18,666 - INFO - DIAGNOSTIC: Endpoint diversity score: 0.72
 2025-08-27 16:39:18,666 - INFO - DIAGNOSTIC: Endpoints used: ['search.php', 'timeline.php']
-2025-08-27 16:39:34,753 - INFO - 
+2025-08-27 16:39:34,753 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:40:28,991 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:40:28,991 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:40:28,992 - INFO - Wrapper: Completed Call, calling success_handler
-2025-08-27 16:40:28,994 - INFO - 
+2025-08-27 16:40:28,994 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:40:46,726 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:40:46,726 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:40:46,727 - INFO - Wrapper: Completed Call, calling success_handler
-2025-08-27 16:40:46,728 - INFO - 
+2025-08-27 16:40:46,728 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:41:11,881 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:41:11,881 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:41:11,881 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 16:41:11,885 - INFO - Completed investigation session 4093d99d-b119-475a-a0c4-0c855d225047 - 2 searches, 105 results
 2025-08-27 16:41:45,503 - INFO - HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
 2025-08-27 16:41:46,977 - INFO - Started investigation session 666b4d4d-78aa-40ec-9baf-4f008f615d89 for query: find me different takes on the current trump epste...
 2025-08-27 16:41:46,977 - INFO - DIAGNOSTIC: Prompt size: 6844 chars, 794 words
 2025-08-27 16:41:46,977 - INFO - DIAGNOSTIC: Prompt lines: 180 lines
-2025-08-27 16:41:46,985 - INFO - 
+2025-08-27 16:41:46,985 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:41:57,198 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:41:57,198 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:41:57,200 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 16:41:57,202 - INFO - DIAGNOSTIC: Raw LLM response captured
 2025-08-27 16:41:57,202 - INFO - DIAGNOSTIC: Decision type: gap_filling
@@ -566,12 +566,12 @@ LiteLLM completion() model= gemini-2.5-flash; provider = gemini
 2025-08-27 16:41:57,203 - INFO - DIAGNOSTIC: Search 3 - Reasoning: To obtain a contrasting, progressive perspective, examining The Young Turks' timeline will reveal ho...
 2025-08-27 16:41:57,203 - INFO - DIAGNOSTIC: Endpoint diversity score: 0.72
 2025-08-27 16:41:57,203 - INFO - DIAGNOSTIC: Endpoints used: ['search.php', 'timeline.php']
-2025-08-27 16:42:06,468 - INFO - 
+2025-08-27 16:42:06,468 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:42:44,874 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:42:44,874 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:42:44,884 - INFO - Wrapper: Completed Call, calling success_handler
-2025-08-27 16:42:44,886 - INFO - 
+2025-08-27 16:42:44,886 - INFO -
 LiteLLM completion() model= gemini-2.5-flash; provider = gemini
-2025-08-27 16:43:08,833 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8 "HTTP/1.1 200 OK"
+2025-08-27 16:43:08,833 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=REDACTED_GEMINI_API_KEY "HTTP/1.1 200 OK"
 2025-08-27 16:43:08,834 - INFO - Wrapper: Completed Call, calling success_handler
 2025-08-27 16:43:08,837 - INFO - Completed investigation session 666b4d4d-78aa-40ec-9baf-4f008f615d89 - 1 searches, 50 results

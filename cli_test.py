@@ -22,13 +22,13 @@ def main():
                        help='Maximum number of searches to perform (default: 15)')
     parser.add_argument('--satisfaction-threshold', type=float, default=0.6,
                        help='Satisfaction threshold for stopping investigation (default: 0.6)')
-    
+
     args = parser.parse_args()
-    
+
     # Set up API keys
     rapidapi_key = '7501a19221mshf1eb289b88dc8acp1d30e6jsn04f6eab32db3'
-    os.environ['GEMINI_API_KEY'] = 'AIzaSyAhwSgnnZrVbTECNCXDp1nODEVh3rtoTq8'
-    os.environ['OPENAI_API_KEY'] = 'REMOVED_OPENAI_API_KEY'
+    os.environ['GEMINI_API_KEY'] = 'REDACTED_GEMINI_API_KEY'
+    os.environ['OPENAI_API_KEY'] = 'REDACTED_OPENAI_API_KEY'
 
     # Create investigation engine with provider configuration
     print(f"Initializing TwitterExplorer Investigation Engine (using {args.provider})...")
@@ -55,7 +55,7 @@ def main():
     # Run investigation
     try:
         result = engine.conduct_investigation(query, config)
-        
+
         print("\nInvestigation Complete!")
         print(f"Searches performed: {len(result.search_history)}")
         print(f"Findings discovered: {len(result.accumulated_findings)}")
@@ -66,19 +66,19 @@ def main():
             insights = engine.graph.get_nodes_by_type('Insight')
             emergent_questions = engine.graph.get_nodes_by_type('EmergentQuestion')
             datapoints = engine.graph.get_nodes_by_type('DataPoint')
-            
+
             print(f"\nGraph State:")
             print(f"  DataPoints: {len(datapoints)}")
-            print(f"  Insights: {len(insights)}")  
+            print(f"  Insights: {len(insights)}")
             print(f"  Emergent Questions: {len(emergent_questions)}")
-            
+
             if insights:
                 print("\nGenerated Insights:")
                 for i, insight in enumerate(insights[:3]):
                     title = insight.properties.get('title', 'Untitled')
                     confidence = insight.properties.get('confidence', 'N/A')
                     print(f"  {i+1}. {title} (confidence: {confidence})")
-            
+
             if emergent_questions:
                 print("\nEmergent Questions (Sample):")
                 for i, eq in enumerate(emergent_questions[:5]):
@@ -87,7 +87,7 @@ def main():
                     print(f"  {i+1}. {display_text}")
 
         print("\nCLI investigation completed - Bridge integration and emergent questions working!")
-        
+
     except Exception as e:
         print(f"Error during investigation: {e}")
         import traceback
